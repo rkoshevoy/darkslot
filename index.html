@@ -53,27 +53,29 @@
 		<div class="tabs__wrapper">
 			
 			<div class="switchers">
-				<div class="switchers__switcher">Слоты</div>
-				<div class="switchers__switcher">Лобби</div>
-				<div class="switchers__switcher">Джекпоты</div>
-				<div class="switchers__switcher">Настольные</div>
-				<div class="switchers__switcher">Live диллер</div>
+				<div class="switchers__switcher"><div class="switchers__image switchers__image--first"></div>Слоты</div>
+				<div class="switchers__switcher"><div class="switchers__image switchers__image--second"></div>Лобби</div>
+				<div class="switchers__switcher"><div class="switchers__image switchers__image--third"></div>Джекпоты</div>
+				<div class="switchers__switcher"><div class="switchers__image switchers__image--fourth"></div>Настольные</div>
+				<div class="switchers__switcher"><div class="switchers__image switchers__image--fifth"></div>Live диллер</div>
 			</div>
 
 			<div class="tabs__selector">Провайдер</div>
 
 			<div class="tab">
 				<h2 class="tab__header">Самые популярные игры</h2>
-				<button class="tabs__button">Случайная игра</button>
+				<button class="tab__button">Случайная игра</button>
 
-				<div class="tab__variant"></div>
-				<div class="tab__variant"></div>
-				<div class="tab__variant"></div>
-				<div class="tab__variant"></div>
-				<div class="tab__variant"></div>
-				<div class="tab__variant"></div>
-				<div class="tab__variant"></div>
-				<div class="tab__variant"></div>
+				<div class="tab__variants-wrapper">
+					<div class="tab__variant"></div>
+					<div class="tab__variant"></div>
+					<div class="tab__variant"></div>
+					<div class="tab__variant"></div>
+					<div class="tab__variant"></div>
+					<div class="tab__variant"></div>
+					<div class="tab__variant"></div>
+					<div class="tab__variant"></div>
+				</div>
 			</div>
 		</div>		
 	</section>
@@ -82,7 +84,7 @@
 		<div class="jackpot__wrapper">
 			<h1 class="jackpot__header">$ 10 000 000,45</h1>
 			<h2 class="jackpot__underheader">Общий джекпот</h2>
-			<button class="jackpot__buton">Показать игры с джекпотом</button>
+			<button class="jackpot__button">Показать игры с джекпотом</button>
 			<span class="jackpot__background-text">#ничоси</span>
 			<div class="jackpot__image-wrapper">
 				<img src="img/viking.png" alt="viking" class="jackpot__image">
@@ -97,23 +99,31 @@
 			<div class="winners">
 				<div class="winners__winner">
 					<div class="winners__avatar"></div>
-					<span class="winners__name">mvarts</span>
-					<span class="winners__gain">11 mBTC в <a href="#" class="winners__game">Игре престолов</a></span>
+					<div class="winners__text">
+						<span class="winners__name">mvarts</span>
+						<span class="winners__gain">11 mBTC в <a href="#" class="winners__game">Игре престолов</a></span>
+					</div>
 				</div>
 				<div class="winners__winner">
 					<div class="winners__avatar"></div>
-					<span class="winners__name">mvarts</span>
-					<span class="winners__gain">11 mBTC в <a href="#" class="winners__game">Игре престолов</a></span>
+					<div class="winners__text">
+						<span class="winners__name">mvarts</span>
+						<span class="winners__gain">11 mBTC в <a href="#" class="winners__game">Игре престолов</a></span>
+					</div>
 				</div>
 				<div class="winners__winner">
 					<div class="winners__avatar"></div>
-					<span class="winners__name">mvarts</span>
-					<span class="winners__gain">11 mBTC в <a href="#" class="winners__game">Игре престолов</a></span>
+					<div class="winners__text">
+						<span class="winners__name">mvarts</span>
+						<span class="winners__gain">11 mBTC в <a href="#" class="winners__game">Игре престолов</a></span>
+					</div>
 				</div>
 				<div class="winners__winner">
 					<div class="winners__avatar"></div>
-					<span class="winners__name">mvarts</span>
-					<span class="winners__gain">11 mBTC в <a href="#" class="winners__game">Игре престолов</a></span>
+					<div class="winners__text">
+						<span class="winners__name">mvarts</span>
+						<span class="winners__gain">11 mBTC в <a href="#" class="winners__game">Игре престолов</a></span>
+					</div>
 				</div>
 			</div>
 
@@ -126,20 +136,22 @@
 			<h2 class="popular-gamnes__header">Самые популярные игры</h2>
 			<button class="popular-games__button">Случайная игра</button>
 
-			<div class="popular-games__preview"></div>
-			<div class="popular-games__preview"></div>
-			<div class="popular-games__preview"></div>
-			<div class="popular-games__preview"></div>
-			<div class="popular-games__preview"></div>
-			<div class="popular-games__preview"></div>
-			<div class="popular-games__preview"></div>
-			<div class="popular-games__preview"></div>
+			<div class="popular-games__preview-wrapper">
+				<div class="popular-games__preview"></div>
+				<div class="popular-games__preview"></div>
+				<div class="popular-games__preview"></div>
+				<div class="popular-games__preview"></div>
+				<div class="popular-games__preview"></div>
+				<div class="popular-games__preview"></div>
+				<div class="popular-games__preview"></div>
+				<div class="popular-games__preview"></div>
+			</div>
 		</div>
 	</section>
 
 	<section class="deposites">
 		<div class="deposites__wrapper">
-			<h1 class="deposites__header">Заработай 40% с депозитов вместе с Darkslot и 1000$ сверху</h1>
+			<h1 class="deposites__header">Заработай 40% с депозитов<br>вместе с Darkslot<br>и 1000$ сверху</h1>
 			<button class="deposites__button">Узнать больше</button>
 
 			<div class="deposites__image-wrapper">
@@ -151,62 +163,74 @@
 	<section class="games">
 		<div class="games__wrapper">
 
-			<h2 class="games__header">Игры</h2>
-			<ul class="games__list">
-				<li class="games__item">Игры</li>
-				<li class="games__item">Слоты</li>
-				<li class="games__item">Игры с джекпотом</li>
-				<li class="games__item">Настольные игры</li>
-				<li class="games__item">Рулетка</li>
-				<li class="games__item">Блэкджек</li>
-				<li class="games__item">Живое казино</li>
-			</ul>
+			<div class="games__list-wrapper">
+				<div class="games__column">
+					<h2 class="games__header">Игры</h2>
+					<ul class="games__list">
+						<li class="games__item"><a href="#">Игры</a></li>
+						<li class="games__item"><a href="#">Слоты</a></li>
+						<li class="games__item"><a href="#">Игры с джекпотом</a></li>
+						<li class="games__item"><a href="#">Настольные игры</a></li>
+						<li class="games__item"><a href="#">Рулетка</a></li>
+						<li class="games__item"><a href="#">Блэкджек</a></li>
+						<li class="games__item"><a href="#">Живое казино</a></li>
+					</ul>
+				</div>
 
-			<h2 class="games__header">Игры</h2>
-			<ul class="games__list">
-				<li class="games__item">Игры</li>
-				<li class="games__item">Слоты</li>
-				<li class="games__item">Игры с джекпотом</li>
-				<li class="games__item">Настольные игры</li>
-				<li class="games__item">Рулетка</li>
-				<li class="games__item">Блэкджек</li>
-				<li class="games__item">Живое казино</li>
-			</ul>
+				<div class="games__column">
+					<h2 class="games__header">Игры</h2>
+					<ul class="games__list">
+						<li class="games__item"><a href="#">Игры</a></li>
+						<li class="games__item"><a href="#">Слоты</a></li>
+						<li class="games__item"><a href="#">Игры с джекпотом</a></li>
+						<li class="games__item"><a href="#">Настольные игры</a></li>
+						<li class="games__item"><a href="#">Рулетка</a></li>
+						<li class="games__item"><a href="#">Блэкджек</a></li>
+						<li class="games__item"><a href="#">Живое казино</a></li>
+					</ul>
+				</div>
 
-			<h2 class="games__header">Игры</h2>
-			<ul class="games__list">
-				<li class="games__item">Игры</li>
-				<li class="games__item">Слоты</li>
-				<li class="games__item">Игры с джекпотом</li>
-				<li class="games__item">Настольные игры</li>
-				<li class="games__item">Рулетка</li>
-				<li class="games__item">Блэкджек</li>
-				<li class="games__item">Живое казино</li>
-			</ul>
 
-			<h2 class="games__header">Игры</h2>
-			<ul class="games__list">
-				<li class="games__item">Игры</li>
-				<li class="games__item">Слоты</li>
-				<li class="games__item">Игры с джекпотом</li>
-				<li class="games__item">Настольные игры</li>
-				<li class="games__item">Рулетка</li>
-				<li class="games__item">Блэкджек</li>
-				<li class="games__item">Живое казино</li>
-			</ul>
+				<div class="games__column">
+					<h2 class="games__header">Игры</h2>
+					<ul class="games__list">
+						<li class="games__item"><a href="#">Игры</a></li>
+						<li class="games__item"><a href="#">Слоты</a></li>
+						<li class="games__item"><a href="#">Игры с джекпотом</a></li>
+						<li class="games__item"><a href="#">Настольные игры</a></li>
+						<li class="games__item"><a href="#">Рулетка</a></li>
+						<li class="games__item"><a href="#">Блэкджек</a></li>
+						<li class="games__item"><a href="#">Живое казино</a></li>
+					</ul>
+				</div>
 
-			<ul class="games__social">
-				<li class="games__social-item games__social-item--fb"></li>
+
+				<div class="games__column">
+					<h2 class="games__header">Игры</h2>
+					<ul class="games__list">
+						<li class="games__item"><a href="#">Игры</a></li>
+						<li class="games__item"><a href="#">Слоты</a></li>
+						<li class="games__item"><a href="#">Игры с джекпотом</a></li>
+						<li class="games__item"><a href="#">Настольные игры</a></li>
+						<li class="games__item"><a href="#">Рулетка</a></li>
+						<li class="games__item"><a href="#">Блэкджек</a></li>
+						<li class="games__item"><a href="#">Живое казино</a></li>
+					</ul>
+				</div>
+			</div>
+
+			<div class="games__social">
+				<!-- <li class="games__social-item games__social-item--fb"></li>
 				<li class="games__social-item games__social-item--tw"></li>
 				<li class="games__social-item games__social-item--inst"></li>
-				<li class="games__social-item games__social-item--yt"></li>
-			</ul>
+				<li class="games__social-item games__social-item--yt"></li> -->
+			</div>
 		</div>
 	</section>
 
 	<section class="partners">
 		<div class="partners__wrapper">
-			<ul class="partners__list">
+			<!-- <ul class="partners__list">
 				<li class="partners__item">VISA</li>
 				<li class="partners__item">VISA</li>
 				<li class="partners__item">VISA</li>
@@ -216,7 +240,7 @@
 				<li class="partners__item">VISA</li>
 				<li class="partners__item">VISA</li>
 				<li class="partners__item">VISA</li>
-			</ul>
+			</ul> -->
 		</div>
 	</section>
 
