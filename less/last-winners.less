@@ -1,14 +1,22 @@
 .last-winners {
-	width: 100px;
-	background-color: #2b2b2b;
 	padding-top: 40px;
 	padding-bottom: 55px;
+	background-color: #2b2b2b;
 
 	&__wrapper {
 		width: 1200px;
 		margin: 0 auto; 
 		padding-top: 40px;
 		padding-bottom: 55px;
+
+		@media @tablet {
+			width: 768px;
+		}
+
+		@media @tablet {
+			.mobile-wrap;
+			text-align: center;
+		}
 	}
 
 	&__header {
@@ -29,17 +37,38 @@
 		&:hover {
 			background-color: #e4373d;
 		}
+
+		@media @mobile {
+			width: 280px;
+			max-width: 100%;
+			padding: 15px 20px;
+		}
 	}
 }
 
 .winners {
 	display: flex;
+	flex-wrap: wrap;
 	justify-content: space-between;
-	margin-bottom: 50px;
+	margin-bottom: 30px;
+
+	@media @mobile {
+		justify-content: space-around;
+	}
 
 	&__winner {
 		display: flex;
 		align-items: center;
+
+		@media @tablet {
+			margin-bottom: 20px;
+			width: 50%;
+		}
+
+		@media @mobile {
+			width: auto;
+			text-align: left;
+		}
 	}
 
 	&__avatar {
@@ -52,6 +81,10 @@
 
 	&__text {
 		width: 200px;
+
+		@media @mobile {
+			width: auto;
+		}
 	}
 
 	&__name {

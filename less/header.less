@@ -8,6 +8,14 @@
 		width: 1200px;
 		margin: 0 auto;
 		padding: 15px 0;
+
+		@media @tablet {
+			width: 768px;
+		}
+
+		@media @mobile {
+			.mobile-wrap;
+		}
 	}
 
 	&__first-button {
@@ -20,6 +28,10 @@
 		&:hover {
 			background-color: #de3137;
 		}
+
+		@media @mobile {
+			padding: 10px 15px;
+		}
 	}
 	
 	&__second-button {
@@ -31,15 +43,54 @@
 		&:hover {
 			background-color: #589f6c;
 		}
+
+		@media @mobile {
+			padding: 10px 15px;
+		}
 	}
 }
 
 .main-nav {
 	display: flex;
 
+	@media @tablet {
+		position: relative;
+
+		&__menu-button {
+			position: absolute;
+			width: 40px;
+			height: 40px;
+			cursor: pointer;
+		}
+
+		&__menu-line {
+			width: 40px;
+			height: 5px;
+			margin-bottom: 11px;
+			background-color: #fff;
+		}
+	}
+
+	@media @mobile {
+
+	}
+
 	&__logo {
 		display: inline-block;
+		width: 200px;
+		height: 40px;
 		margin-right: 50px; 
+		background-image: url('../img/logo.png');
+
+		@media @tablet {
+			margin-left: 50px;
+			margin-right: 10px;
+		}
+
+		@media @mobile {
+			width: 40px;
+			background-image: url('../img/favicon.png');
+		}
 	}
 
 	&__list {
@@ -48,6 +99,35 @@
 		a {
 			padding: 10px 0;
 		}
+
+		@media @tablet {
+			position: absolute;
+			left: 50px;
+			top: -500px;
+			z-index: 1;
+			width: 200px;
+			height: 300px;
+			padding: 0;
+			border: 1px solid #000;
+			background-color: #161616;
+			transition: 0.3s;
+		}
+
+		@media @mobile {
+			left: -10px;
+		}
+	}
+
+	@media @tablet {
+		&__list--show {
+			top: 58px;
+		}
+	}
+
+	@media @mobile {
+		&__list--show {
+			top: 55px;
+		}
 	}
 
 	&__item {
@@ -55,10 +135,31 @@
 		margin-right: 45px;
 
 		a {
-		transition: 0.1s;
+			transition: 0.1s;
 
 			&:hover {
 				color: #ececec;
+			}
+
+		}
+
+		@media @tablet {
+			display: block;
+			width: 100%;
+			margin-right: 0;
+			text-align: center;
+
+			a {
+				display: block;
+				width: 200px;
+				padding: 20px 0;
+			}
+		}
+
+		@media @mobile {
+			
+			a {
+				width: 100%;
 			}
 		}
 	}

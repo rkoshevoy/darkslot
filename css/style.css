@@ -1,3 +1,8 @@
+.mobile-wrap {
+  width: 100%;
+  padding-right: 10px;
+  padding-left: 10px;
+}
 @font-face {
   font-family: SFUIRegular;
   src: url(../fonts/SFUIDisplay-Bold.ttf), url("../fonts/SFUIDisplay-Bold.eot?#iefix") format("embedded-opentype"), url(../fonts/SFUIDisplay-Bold.woff) format('woff');
@@ -40,6 +45,10 @@ button {
   display: block;
   clear: both;
 }
+.viking-background {
+  background-image: url('../img/bg-viking.png');
+  background-position: bottom;
+}
 .header {
   background-color: #161616;
 }
@@ -75,7 +84,10 @@ button {
 }
 .main-nav__logo {
   display: inline-block;
+  width: 200px;
+  height: 40px;
   margin-right: 50px;
+  background-image: url('../img/logo.png');
 }
 .main-nav__list {
   padding: 10px 0;
@@ -93,14 +105,13 @@ button {
 .main-nav__item a:hover {
   color: #ececec;
 }
-.slider {
-  margin-bottom: -4px;
-}
 .slide {
   position: relative;
 }
 .slide__image-wrapper {
   width: 100%;
+  height: 500px;
+  background-image: url('../img/slide-image.png');
 }
 .slide__image {
   width: 100%;
@@ -113,6 +124,7 @@ button {
   position: absolute;
   top: 50%;
   left: 50%;
+  width: 500px;
   transform: translatey(-50%);
 }
 .slide__upper-text {
@@ -181,6 +193,9 @@ button {
 .tabs__selector:hover::after {
   border-right: 2px solid #fff;
   border-bottom: 2px solid #fff;
+}
+.switchers {
+  position: relative;
 }
 .switchers__switcher {
   position: relative;
@@ -258,19 +273,23 @@ button {
   width: 100%;
 }
 .tab__variant {
-  width: 285px;
+  width: calc(25% - 15px);
   height: 160px;
   background-color: #313131;
   margin-bottom: 20px;
+}
+.tab__variant:last-of-type {
+  display: none;
 }
 .tab--active {
   display: flex;
 }
 .jackpot__wrapper {
-  padding-top: 200px;
   position: relative;
+  padding-top: 200px;
   width: 1200px;
   margin: 0 auto;
+  padding-bottom: 95px;
 }
 .jackpot__header {
   margin-bottom: 20px;
@@ -284,7 +303,6 @@ button {
   text-transform: uppercase;
 }
 .jackpot__button {
-  margin-bottom: 95px;
   padding: 30px 65px;
   background-color: #ed383f;
   font-family: SFUIBold;
@@ -308,11 +326,14 @@ button {
   bottom: 0;
   right: -70px;
 }
+.jackpot__image {
+  width: 100%;
+  margin-bottom: -4px;
+}
 .last-winners {
-  width: 100px;
-  background-color: #2b2b2b;
   padding-top: 40px;
   padding-bottom: 55px;
+  background-color: #2b2b2b;
 }
 .last-winners__wrapper {
   width: 1200px;
@@ -339,8 +360,9 @@ button {
 }
 .winners {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
 }
 .winners__winner {
   display: flex;
@@ -399,14 +421,16 @@ button {
   width: 100%;
 }
 .games-preview__item {
-  width: 285px;
+  width: calc(25% - 15px);
   height: 155px;
   margin-bottom: 20px;
   background-color: #313131;
 }
+.games-preview__item:last-of-type {
+  display: none;
+}
 .deposites {
   background-image: url('../img/bg-deposites.png');
-  background-size: 100%;
   background-position: bottom;
 }
 .deposites__wrapper {
@@ -436,6 +460,9 @@ button {
   position: absolute;
   top: 220px;
   right: 0;
+}
+.deposites__image {
+  width: 100%;
 }
 .games {
   position: relative;
@@ -497,6 +524,7 @@ button {
   margin: 0 auto;
   padding: 180px 0;
   background-image: url('../img/partners.png');
+  background-size: 100% auto;
   background-position: center;
 }
 .footer__wrapper {
@@ -521,4 +549,286 @@ button {
   margin-right: 10px;
   font-size: 12px;
   color: #666666;
+}
+@media (max-width: 1200px) {
+  .header__wrapper {
+    width: 768px;
+  }
+  .main-nav {
+    position: relative;
+  }
+  .main-nav__menu-button {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+  }
+  .main-nav__menu-line {
+    width: 40px;
+    height: 5px;
+    margin-bottom: 11px;
+    background-color: #fff;
+  }
+  .main-nav__logo {
+    margin-left: 50px;
+    margin-right: 10px;
+  }
+  .main-nav__list {
+    position: absolute;
+    left: 50px;
+    top: -500px;
+    z-index: 1;
+    width: 200px;
+    height: 300px;
+    padding: 0;
+    border: 1px solid #000;
+    background-color: #161616;
+    transition: 0.3s;
+  }
+  .main-nav__list--show {
+    top: 58px;
+  }
+  .main-nav__item {
+    display: block;
+    width: 100%;
+    margin-right: 0;
+    text-align: center;
+  }
+  .main-nav__item a {
+    display: block;
+    width: 200px;
+    padding: 20px 0;
+  }
+  .slide__image-wrapper {
+    height: 400px;
+    background-size: auto 100%;
+    background-position: center;
+  }
+  .slide__wrapper {
+    width: 768px;
+  }
+  .slide__text {
+    width: 300px;
+  }
+  .slide__upper-text {
+    font-size: 25px;
+  }
+  .slide__header {
+    font-size: 40px;
+  }
+  .tabs__wrapper {
+    width: 768px;
+  }
+  .tab__variant {
+    width: calc(33.33% - 12px);
+  }
+  .tab__variant:last-of-type {
+    display: inline-block;
+  }
+  .jackpot__wrapper {
+    width: 768px;
+    padding-top: 100px;
+    padding-bottom: 150px;
+  }
+  .jackpot__image-wrapper {
+    width: 400px;
+  }
+  .last-winners__wrapper {
+    width: 768px;
+  }
+  .last-winners__wrapper {
+    width: 100%;
+    padding-right: 10px;
+    padding-left: 10px;
+    text-align: center;
+  }
+  .winners__winner {
+    margin-bottom: 20px;
+    width: 50%;
+  }
+  .popular-games__wrapper {
+    width: 768px;
+  }
+  .games-preview__item {
+    width: calc(33.33% - 12px);
+  }
+  .games-preview__item:last-of-type {
+    display: inline-block;
+  }
+  .deposites__wrapper {
+    width: 768px;
+  }
+  .deposites__image-wrapper {
+    top: auto;
+    bottom: 50px;
+    width: 400px;
+  }
+  .games__wrapper {
+    width: 768px;
+  }
+  .partners__wrapper {
+    width: 768px;
+    padding: 100px 0;
+  }
+  .footer__wrapper {
+    width: 768px;
+  }
+}
+@media (max-width: 768px) {
+  .header__wrapper {
+    width: 100%;
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+  .header__first-button {
+    padding: 10px 15px;
+  }
+  .header__second-button {
+    padding: 10px 15px;
+  }
+  .main-nav__logo {
+    width: 40px;
+    background-image: url('../img/favicon.png');
+  }
+  .main-nav__list {
+    left: -10px;
+  }
+  .main-nav__list--show {
+    top: 55px;
+  }
+  .main-nav__item a {
+    width: 100%;
+  }
+  .slide__image {
+    height: 400px;
+  }
+  .slide__wrapper {
+    width: 100%;
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+  .slide__text {
+    width: calc(50% - 20px);
+  }
+  .slide__header {
+    font-size: 30px;
+  }
+  .slide__button {
+    padding: 10px 15px;
+  }
+  .tabs::after {
+    display: none;
+  }
+  .tabs__wrapper {
+    width: 100%;
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+  .tab__variant {
+    width: 100%;
+  }
+  .tab__variant:nth-of-type(4),
+  .tab__variant:nth-of-type(5),
+  .tab__variant:nth-of-type(6),
+  .tab__variant:nth-of-type(7),
+  .tab__variant:nth-of-type(8),
+  .tab__variant:nth-of-type(9) {
+    display: none;
+  }
+  .jackpot__wrapper {
+    width: 100%;
+    padding-right: 10px;
+    padding-left: 10px;
+    padding-bottom: 300px;
+    text-align: center;
+  }
+  .jackpot__header {
+    font-size: 40px;
+    line-height: 40px;
+  }
+  .jackpot__button {
+    width: 100%;
+    max-width: 400px;
+    padding: 15px 20px;
+  }
+  .jackpot__background-text {
+    display: none;
+  }
+  .jackpot__image-wrapper {
+    width: 300px;
+    right: 0;
+  }
+  .last-winners__button {
+    width: 280px;
+    max-width: 100%;
+    padding: 15px 20px;
+  }
+  .winners {
+    justify-content: space-around;
+  }
+  .winners__winner {
+    width: auto;
+    text-align: left;
+  }
+  .winners__text {
+    width: auto;
+  }
+  .popular-games__wrapper {
+    width: 100%;
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+  .games-preview__item {
+    width: 100%;
+  }
+  .games-preview__item:nth-of-type(4),
+  .games-preview__item:nth-of-type(5),
+  .games-preview__item:nth-of-type(6),
+  .games-preview__item:nth-of-type(7),
+  .games-preview__item:nth-of-type(8),
+  .games-preview__item:nth-of-type(9) {
+    display: none;
+  }
+  .deposites__wrapper {
+    width: 100%;
+    padding-right: 10px;
+    padding-left: 10px;
+    text-align: center;
+    padding-top: 100px;
+    padding-bottom: 400px;
+  }
+  .games__wrapper {
+    width: 100%;
+    padding-right: 10px;
+    padding-left: 10px;
+    flex-wrap: wrap;
+  }
+  .games__list-wrapper {
+    flex-wrap: wrap;
+    margin-bottom: 0;
+  }
+  .games__column {
+    width: 50%;
+    margin-bottom: 30px;
+    text-align: center;
+  }
+  .games__social {
+    margin: 0 auto;
+    margin-bottom: 30px;
+  }
+  .partners__wrapper {
+    width: 100%;
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+  .footer__wrapper {
+    width: 100%;
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+}
+@media (max-width: 500px) {
+  .games__column {
+    width: 100%;
+  }
 }

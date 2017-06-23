@@ -15,6 +15,15 @@
 		justify-content: space-between;
 		width: 1200px;
 		margin: 0 auto;
+
+		@media @tablet {
+			width: 768px;
+		}
+
+		@media @mobile {
+			.mobile-wrap;
+			flex-wrap: wrap;
+		}
 	}
 
 	&__list-wrapper {
@@ -23,6 +32,25 @@
 		justify-content: space-between;
 		width: 840px;
 		margin-bottom: 65px;
+
+		@media @mobile {
+			flex-wrap: wrap;
+			margin-bottom: 0;
+		}
+	}
+
+	@media @mobile {
+		&__column {
+			width: 50%;
+			margin-bottom: 30px;
+			text-align: center;
+		}
+	}
+
+	@media (max-width: 500px) {
+		&__column {
+			width: 100%;
+		}
 	}
 
 	&__header {
@@ -48,5 +76,10 @@
 		width: 220px;
 		height: 45px;
 		background-image: url('../img/social.png');
+
+		@media @mobile {
+			margin: 0 auto;
+			margin-bottom: 30px;
+		}
 	}
 }

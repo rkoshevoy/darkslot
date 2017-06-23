@@ -1,16 +1,34 @@
 .jackpot {
 
 	&__wrapper {
-		padding-top: 200px;
 		position: relative;
+		padding-top: 200px;
 		width: 1200px;
 		margin: 0 auto;
+		padding-bottom: 95px;
+
+		@media @tablet {
+			width: 768px;
+			padding-top: 100px;
+			padding-bottom: 150px;
+		}
+
+		@media @mobile {
+			.mobile-wrap;
+			padding-bottom: 300px;
+			text-align: center;
+		}
 	}
 
 	&__header {
 		margin-bottom: 20px;
 		font-size: 80px;
 		line-height: 80px;
+
+		@media @mobile {
+			font-size: 40px;
+			line-height: 40px;
+		}
 	}
 
 	&__underheader {
@@ -21,7 +39,6 @@
 	}
 
 	&__button {
-		margin-bottom: 95px;
 		padding: 30px 65px;
 		background-color: #ed383f;
 		font-family: SFUIBold;
@@ -30,6 +47,12 @@
 
 		&:hover {
 			background-color: #e3353c;
+		}
+
+		@media @mobile {
+			width: 100%;
+			max-width: 400px;
+			padding: 15px 20px;
 		}
 	}
 
@@ -41,11 +64,29 @@
 		font-size: 176px;
 		line-height: 176px;
 		color: #191919;
+
+		@media @mobile {
+			display: none;
+		}
 	}
 
 	&__image-wrapper {
 		position: absolute;
 		bottom: 0;
 		right: -70px;
+
+		@media @tablet {
+			width: 400px;
+		}
+
+		@media @mobile {
+			width: 300px;
+			right: 0;
+		}
+	}
+
+	&__image {
+		width: 100%;
+		margin-bottom: -4px;
 	}
 }

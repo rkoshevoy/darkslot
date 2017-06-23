@@ -1,6 +1,5 @@
 .deposites {
 	background-image: url('../img/bg-deposites.png');
-	background-size: 100%;
 	background-position: bottom;
 
 	&__wrapper {
@@ -9,6 +8,17 @@
 		padding-bottom: 170px;
 		width: 1200px;
 		margin: 0 auto;
+
+		@media @tablet {
+			width: 768px;
+		}
+
+		@media @mobile {
+			.mobile-wrap;
+			text-align: center;
+			padding-top: 100px;
+			padding-bottom: 400px;
+		}
 	}
 
 	&__header {
@@ -34,5 +44,15 @@
 		position: absolute;
 		top: 220px;
 		right: 0;
+
+		@media @tablet {
+			top: auto;
+			bottom: 50px;
+			width: 400px;
+		}
+	}
+
+	&__image {
+		width: 100%;
 	}
 }
