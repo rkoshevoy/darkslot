@@ -78,6 +78,14 @@
 		}
 	}
 
+	&__switcher--active {
+		background-color: #ed383f;
+
+		.switchers__image {
+				background-image: url('../img/sprite-hover.png');
+			}
+	}
+
 	&__image {
 		position: absolute;
 		top: 22px;
@@ -105,7 +113,7 @@
 }
 
 .tab {
-	display: flex;
+	display: none;
 	flex-wrap: wrap;
 	justify-content: space-between;
 	align-items: center;
@@ -142,4 +150,8 @@
 		background-color: #313131;
 		margin-bottom: 20px;
 	}
+}
+
+.tab--active {
+	display: flex;
 }

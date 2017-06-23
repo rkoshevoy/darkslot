@@ -7,6 +7,8 @@
 	<title>Dark Slot</title>
 	<link rel="shortcut icon" href="img/favicon.png" type="image/png">
 	<link rel="stylesheet" href="css/style.min.css">
+	<link rel="stylesheet" href="css/slick.css">
+	<link rel="stylesheet" href="css/slick-theme.css">
 </head>
 <body>
 	
@@ -45,29 +47,103 @@
 			</div>
 		</div>
 
-		<div class="slider__button slider__button--left"></div>
-		<div class="slider__button slider__button--right"></div>
+		<div class="slide">
+			<div class="slide__image-wrapper">
+				<img src="img/slide-image.png" alt="slide" class="slide__image">
+			</div>
+			<div class="slide__wrapper">
+				<div class="slide__text">
+					<span class="slide__upper-text">Розыгрыш каждую неделю</span>
+					<h1 class="slide__header">100% кэшбэк</h1>
+					<button class="slide__button">Подробнее</button>
+				</div>
+			</div>
+		</div>
 	</section>
 
 	<section class="tabs">
 		<div class="tabs__wrapper">
 			
 			<div class="switchers">
-				<div class="switchers__switcher"><div class="switchers__image switchers__image--first"></div>Слоты</div>
-				<div class="switchers__switcher"><div class="switchers__image switchers__image--second"></div>Лобби</div>
-				<div class="switchers__switcher"><div class="switchers__image switchers__image--third"></div>Джекпоты</div>
-				<div class="switchers__switcher"><div class="switchers__image switchers__image--fourth"></div>Настольные</div>
-				<div class="switchers__switcher"><div class="switchers__image switchers__image--fifth"></div>Live диллер</div>
+				<div class="switchers__switcher switchers__switcher--first switchers__switcher--active"><div class="switchers__image switchers__image--first"></div>Слоты</div>
+				<div class="switchers__switcher switchers__switcher--second"><div class="switchers__image switchers__image--second"></div>Лобби</div>
+				<div class="switchers__switcher switchers__switcher--third"><div class="switchers__image switchers__image--third"></div>Джекпоты</div>
+				<div class="switchers__switcher switchers__switcher--fourth"><div class="switchers__image switchers__image--fourth"></div>Настольные</div>
+				<div class="switchers__switcher switchers__switcher--fifth"><div class="switchers__image switchers__image--fifth"></div>Live диллер</div>
 			</div>
 
 			<div class="tabs__selector">Провайдер</div>
 
-			<div class="tab">
+			<div class="tab tab--first tab--active">
 				<h2 class="tab__header">Самые популярные игры</h2>
 				<button class="tab__button">Случайная игра</button>
 
 				<div class="tab__variants-wrapper">
+					<div class="tab__variant">1</div>
 					<div class="tab__variant"></div>
+					<div class="tab__variant"></div>
+					<div class="tab__variant"></div>
+					<div class="tab__variant"></div>
+					<div class="tab__variant"></div>
+					<div class="tab__variant"></div>
+					<div class="tab__variant"></div>
+				</div>
+			</div>
+
+			<div class="tab tab--second">
+				<h2 class="tab__header">Самые популярные игры</h2>
+				<button class="tab__button">Случайная игра</button>
+
+				<div class="tab__variants-wrapper">
+					<div class="tab__variant">2</div>
+					<div class="tab__variant"></div>
+					<div class="tab__variant"></div>
+					<div class="tab__variant"></div>
+					<div class="tab__variant"></div>
+					<div class="tab__variant"></div>
+					<div class="tab__variant"></div>
+					<div class="tab__variant"></div>
+				</div>
+			</div>
+
+			<div class="tab tab--third">
+				<h2 class="tab__header">Самые популярные игры</h2>
+				<button class="tab__button">Случайная игра</button>
+
+				<div class="tab__variants-wrapper">
+					<div class="tab__variant">3</div>
+					<div class="tab__variant"></div>
+					<div class="tab__variant"></div>
+					<div class="tab__variant"></div>
+					<div class="tab__variant"></div>
+					<div class="tab__variant"></div>
+					<div class="tab__variant"></div>
+					<div class="tab__variant"></div>
+				</div>
+			</div>
+
+			<div class="tab tab--fourth">
+				<h2 class="tab__header">Самые популярные игры</h2>
+				<button class="tab__button">Случайная игра</button>
+
+				<div class="tab__variants-wrapper">
+					<div class="tab__variant">4</div>
+					<div class="tab__variant"></div>
+					<div class="tab__variant"></div>
+					<div class="tab__variant"></div>
+					<div class="tab__variant"></div>
+					<div class="tab__variant"></div>
+					<div class="tab__variant"></div>
+					<div class="tab__variant"></div>
+				</div>
+			</div>
+
+			<div class="tab tab--fifth">
+				<h2 class="tab__header">Самые популярные игры</h2>
+				<button class="tab__button">Случайная игра</button>
+
+				<div class="tab__variants-wrapper">
+					<div class="tab__variant">5</div>
 					<div class="tab__variant"></div>
 					<div class="tab__variant"></div>
 					<div class="tab__variant"></div>
@@ -136,15 +212,15 @@
 			<h2 class="popular-gamnes__header">Самые популярные игры</h2>
 			<button class="popular-games__button">Случайная игра</button>
 
-			<div class="popular-games__preview-wrapper">
-				<div class="popular-games__preview"></div>
-				<div class="popular-games__preview"></div>
-				<div class="popular-games__preview"></div>
-				<div class="popular-games__preview"></div>
-				<div class="popular-games__preview"></div>
-				<div class="popular-games__preview"></div>
-				<div class="popular-games__preview"></div>
-				<div class="popular-games__preview"></div>
+			<div class="games-preview">
+				<div class="games-preview__item"></div>
+				<div class="games-preview__item"></div>
+				<div class="games-preview__item"></div>
+				<div class="games-preview__item"></div>
+				<div class="games-preview__item"></div>
+				<div class="games-preview__item"></div>
+				<div class="games-preview__item"></div>
+				<div class="games-preview__item"></div>
 			</div>
 		</div>
 	</section>
@@ -248,11 +324,27 @@
 		<div class="footer__wrapper">
 			<div class="footer__copyright">Копирайт 2к17</div>
 			<div class="footer__development">
-				<span class="footer__developer">Разработка сайта</span> 
+				<span class="footer__developer">Разработка сайта: </span> 
 				<img src="img/crepla-logo.png" alt="crepla" class="footer__crepla-logo">
 			</div>
 		</div>
 	</footer>
+
+	<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+
+	<script type="text/javascript" src="js/slick.min.js"></script>
+
+	<script type="text/javascript">
+		$('.slider').slick({
+			infinite: true,
+			autoplay: true,
+			autoplaySpeed: 3000,
+			slidesToShow: 1,
+			arrows: true
+		});
+	</script>
+
+	<script type="text/javascript" src="js/tabs.js"></script>
 
 </body>
 </html>
