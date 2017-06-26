@@ -25,11 +25,33 @@
 				</div>
 
 				<ul class="main-nav__list">
-					<li class="main-nav__item"><a href="#">Игры</a></li>
-					<li class="main-nav__item"><a href="#">Акции</a></li>
+					<li class="main-nav__item main-nav__item--arrow main-nav__item--first"><a href="#">Игры</a>
+
+						<ul class="main-nav__dropdown main-nav__dropdown--first hidden">
+							<li class="main-nav__dropdown-item"><a href="#">Игра 1</a></li>
+							<li class="main-nav__dropdown-item"><a href="#">Игра 2</a></li>
+							<li class="main-nav__dropdown-item"><a href="#">Игра 3</a></li>
+						</ul>
+					</li>
+
+					<li class="main-nav__item main-nav__item--arrow main-nav__item--second"><a href="#">Акции
+					</a>
+
+					<ul class="main-nav__dropdown main-nav__dropdown--second hidden">
+						<li class="main-nav__dropdown-item"><a href="#">Акция 1</a></li>
+						<li class="main-nav__dropdown-item"><a href="#">Акция 2</a></li>
+						<li class="main-nav__dropdown-item"><a href="#">Акция 3</a></li>
+					</ul></li>
+
 					<li class="main-nav__item"><a href="#">Поддержка</a></li>
 					<li class="main-nav__item"><a href="#">Партнёрам</a></li>
-					<li class="main-nav__item"><a href="#">О нас</a></li>
+					<li class="main-nav__item main-nav__item--arrow main-nav__item--fifth"><a href="#">О нас</a>
+
+						<div class="main-nav__dropdown main-nav__dropdown--fifth hidden">
+							<p>Здесь всё о нас</p>
+						</div>
+
+					</li>
 				</ul>
 			</nav>
 
@@ -73,8 +95,8 @@
 			<div class="tabs__wrapper">
 
 				<div class="switchers">
-					<div class="switchers__switcher switchers__switcher--first switchers__switcher--active"><div class="switchers__image switchers__image--first"></div>Слоты</div>
-					<div class="switchers__switcher switchers__switcher--second"><div class="switchers__image switchers__image--second"></div>Лобби</div>
+					<div class="switchers__switcher switchers__switcher--first switchers__switcher--active"><div class="switchers__image switchers__image--first"></div>Лобби</div>
+					<div class="switchers__switcher switchers__switcher--second"><div class="switchers__image switchers__image--second"></div>Слоты</div>
 					<div class="switchers__switcher switchers__switcher--third"><div class="switchers__image switchers__image--third"></div>Джекпоты</div>
 					<div class="switchers__switcher switchers__switcher--fourth"><div class="switchers__image switchers__image--fourth"></div>Настольные</div>
 					<div class="switchers__switcher switchers__switcher--fifth"><div class="switchers__image switchers__image--fifth"></div>Live диллер</div>
@@ -311,6 +333,8 @@
 			</div>
 
 			<div class="games__social">
+				<span class="games__text">Следите за нами</span>
+				<div class="games__fake-social"></div>
 				<!-- <li class="games__social-item games__social-item--fb"></li>
 				<li class="games__social-item games__social-item--tw"></li>
 				<li class="games__social-item games__social-item--inst"></li>

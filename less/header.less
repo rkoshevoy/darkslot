@@ -7,7 +7,6 @@
 		justify-content: space-between;
 		width: 1200px;
 		margin: 0 auto;
-		padding: 15px 0;
 
 		@media @tablet {
 			width: 768px;
@@ -20,6 +19,8 @@
 
 	&__first-button {
 		padding: 15px 30px;
+		margin-top: 15px;
+		margin-bottom: 15px;
 		margin-right: 10px;
 		background-color: #ed383f;
 		transition: 0.1s;
@@ -36,6 +37,8 @@
 	
 	&__second-button {
 		padding: 15px 30px;
+		margin-top: 15px;
+		margin-bottom: 15px;
 		background-color: #5da972;
 		transition: 0.1s;
 		font-size: 16px;
@@ -69,10 +72,6 @@
 			margin-bottom: 11px;
 			background-color: #fff;
 		}
-	}
-
-	@media @mobile {
-
 	}
 
 	&__logo {
@@ -131,14 +130,18 @@
 	}
 
 	&__item {
+		position: relative;
 		display: inline-block;
-		margin-right: 45px;
 
 		a {
+			padding-top: 30px;
+			padding-bottom: 30px;
+			padding-left: 22px;
+			padding-right: 22px;
 			transition: 0.1s;
 
 			&:hover {
-				color: #ececec;
+				background-color: #ED383F;
 			}
 
 		}
@@ -160,6 +163,62 @@
 			
 			a {
 				width: 100%;
+			}
+		}
+	}
+
+	&__dropdown {
+		position: absolute;
+		z-index: 11;
+		top: 50px;
+		list-style: none;
+		transition: 0.1s;
+
+		p {
+			width: 200px;
+			height: 200px;
+			background-color: #313131;
+			line-height: 200px;
+			text-align: center;
+		}
+	}
+
+	&__dropdown-item {
+
+		a {
+			display: block;
+			width: 200px;
+			padding: 20px;
+			background-color: #313131;
+
+			&:hover {
+				background-color: #414141;
+			}
+		}
+	}
+
+	&__item--arrow {
+		position: relative;
+
+		&::after {
+			content: '';
+			position: absolute;
+			left: ~"calc(50% - 7px)";
+			bottom: -13px;
+			width: 10px;
+			height: 10px;
+			border-right: 1px solid #bf3136;
+			border-bottom: 1px solid #bf3136;
+			transform: rotate(45deg);
+		}
+
+		@media @tablet {
+
+			&::after {
+				right: 20px;
+				bottom: 23px;
+				left: auto;
+				transform: rotate(-45deg);
 			}
 		}
 	}

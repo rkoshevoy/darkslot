@@ -64,10 +64,11 @@ form * {
   justify-content: space-between;
   width: 1200px;
   margin: 0 auto;
-  padding: 15px 0;
 }
 .header__first-button {
   padding: 15px 30px;
+  margin-top: 15px;
+  margin-bottom: 15px;
   margin-right: 10px;
   background-color: #ed383f;
   transition: 0.1s;
@@ -78,6 +79,8 @@ form * {
 }
 .header__second-button {
   padding: 15px 30px;
+  margin-top: 15px;
+  margin-bottom: 15px;
   background-color: #5da972;
   transition: 0.1s;
   font-size: 16px;
@@ -102,14 +105,55 @@ form * {
   padding: 10px 0;
 }
 .main-nav__item {
+  position: relative;
   display: inline-block;
-  margin-right: 45px;
 }
 .main-nav__item a {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  padding-left: 22px;
+  padding-right: 22px;
   transition: 0.1s;
 }
 .main-nav__item a:hover {
-  color: #ececec;
+  background-color: #ED383F;
+}
+.main-nav__dropdown {
+  position: absolute;
+  z-index: 11;
+  top: 50px;
+  list-style: none;
+  transition: 0.1s;
+}
+.main-nav__dropdown p {
+  width: 200px;
+  height: 200px;
+  background-color: #313131;
+  line-height: 200px;
+  text-align: center;
+}
+.main-nav__dropdown-item a {
+  display: block;
+  width: 200px;
+  padding: 20px;
+  background-color: #313131;
+}
+.main-nav__dropdown-item a:hover {
+  background-color: #414141;
+}
+.main-nav__item--arrow {
+  position: relative;
+}
+.main-nav__item--arrow::after {
+  content: '';
+  position: absolute;
+  left: calc(50% - 7px);
+  bottom: -13px;
+  width: 10px;
+  height: 10px;
+  border-right: 1px solid #bf3136;
+  border-bottom: 1px solid #bf3136;
+  transform: rotate(45deg);
 }
 .slide {
   position: relative;
@@ -239,7 +283,7 @@ form * {
   height: 35px;
   background-image: url('../img/sprite.png');
 }
-.switchers__image--second {
+.switchers__image--first {
   background-position: -58px 0;
 }
 .switchers__image--third {
@@ -487,6 +531,7 @@ form * {
   justify-content: space-between;
   width: 1200px;
   margin: 0 auto;
+  margin-top: 40px;
 }
 .games__list-wrapper {
   position: relative;
@@ -510,7 +555,11 @@ form * {
 .games__item a {
   color: #c7c7c7;
 }
-.games__social {
+.games__text {
+  display: block;
+  margin-bottom: 20px;
+}
+.games__fake-social {
   width: 220px;
   height: 45px;
   background-image: url('../img/social.png');
@@ -540,6 +589,7 @@ form * {
   justify-content: space-between;
   width: 1200px;
   margin: 0 auto;
+  margin-bottom: 50px;
   padding: 10px 0;
 }
 .footer__copyright {
@@ -842,6 +892,138 @@ form * {
   margin: 20px 10px;
   background-color: #313131;
 }
+.blog {
+  background-image: url('../img/blog-bg.png');
+  background-size: contain;
+  border-bottom: 1px solid #383838;
+}
+.blog__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+.blog__header {
+  margin: 0 auto;
+  margin-bottom: 35px;
+  padding-top: 60px;
+  font-family: SFUIHeavy;
+  font-size: 30px;
+}
+.blog__text-wrapper {
+  width: 100%;
+}
+.blog__text {
+  width: 780px;
+  margin: 0 auto;
+  margin-bottom: 95px;
+  font-family: SFUIMedium;
+  font-size: 13px;
+  line-height: 27px;
+}
+.news {
+  position: relative;
+  width: 385px;
+  height: 285px;
+  margin-bottom: 20px;
+  background-image: url('../img/news-photo.jpg');
+  background-size: cover;
+}
+.news__header-wrapper {
+  position: relative;
+  width: 100%;
+  height: 235px;
+}
+.news__header {
+  position: absolute;
+  top: 50%;
+  margin: 0 auto;
+  transform: translatey(-50%);
+  font-size: 18px;
+  line-height: 31px;
+  text-transform: uppercase;
+}
+.news__button {
+  position: absolute;
+  right: 0;
+  height: 50px;
+  padding-left: 20px;
+  padding-right: 20px;
+  background-color: #ed383f;
+  font-size: 14px;
+  line-height: 50px;
+  font-family: SFUIMedium;
+}
+.news__button:hover {
+  background-color: #e3363d;
+}
+.blog-pagination {
+  width: 100%;
+  margin-top: 60px;
+  margin-bottom: 50px;
+}
+.blog-pagination__wrapper {
+  text-align: center;
+}
+.blog-pagination__page {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  border: 1px solid #383838;
+  cursor: pointer;
+  transition: 0.1s;
+}
+.blog-pagination__page:hover {
+  background-color: #ed383f;
+}
+.blog-pagination__page span {
+  line-height: 50px;
+}
+.blog-pagination__page--active {
+  background-color: #ed383f;
+}
+.blog-slider__wrapper {
+  width: 1200px;
+  height: 285px;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+.blog-slider__slide {
+  position: relative;
+  width: 100%;
+  height: 285px !important;
+  background-image: url('../img/slide-image.png');
+  background-position: center;
+}
+.blog-slider__text-wrapper {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translatey(-50%);
+}
+.blog-slider__header {
+  margin-bottom: 20px;
+  font-family: SFUIHeavy;
+  font-size: 40px;
+  text-transform: uppercase;
+}
+.blog-slider__text {
+  display: block;
+  margin-bottom: 40px;
+  font-size: 20px;
+}
+.blog-slider__button {
+  display: block;
+  padding: 20px 33px;
+  font-family: SFUIBold;
+  font-family: 18px;
+  background-color: #ed383f;
+}
+.blog-slider__button:hover {
+  background-color: #e3363d;
+}
 @media (min-width: 1700px) {
   .slide__image-wrapper {
     height: 550px;
@@ -898,6 +1080,12 @@ form * {
     display: block;
     width: 200px;
     padding: 20px 0;
+  }
+  .main-nav__item--arrow::after {
+    right: 20px;
+    bottom: 23px;
+    left: auto;
+    transform: rotate(-45deg);
   }
   .slide__image-wrapper {
     height: 400px;
@@ -971,6 +1159,18 @@ form * {
     padding: 100px 0;
   }
   .footer__wrapper {
+    width: 768px;
+  }
+  .blog__wrapper {
+    width: 768px;
+  }
+  .blog__text {
+    width: 700px;
+  }
+  .news {
+    width: 370px;
+  }
+  .blog-slider__wrapper {
     width: 768px;
   }
 }
@@ -1068,7 +1268,6 @@ form * {
   }
   .winners__winner {
     width: auto;
-    text-align: left;
   }
   .winners__text {
     width: auto;
@@ -1116,6 +1315,9 @@ form * {
     margin: 0 auto;
     margin-bottom: 30px;
   }
+  .games__text {
+    text-align: center;
+  }
   .partners__wrapper {
     width: 100%;
     padding-right: 10px;
@@ -1147,8 +1349,24 @@ form * {
   .search {
     width: 100%;
   }
+  .blog__wrapper {
+    width: 100%;
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+  .blog__text {
+    width: 100%;
+  }
+  .news {
+    width: 100%;
+  }
+  .blog-slider__wrapper {
+    width: 100%;
+    padding-right: 10px;
+    padding-left: 10px;
+  }
 }
-@media (max-width: 500px) {
+@media (max-width: 300px) {
   .games__column {
     width: 100%;
   }
