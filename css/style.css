@@ -40,6 +40,9 @@ button {
   cursor: pointer;
   outline: none;
 }
+form * {
+  outline: none;
+}
 .clearfix {
   content: '';
   display: block;
@@ -48,6 +51,9 @@ button {
 .viking-background {
   background-image: url('../img/bg-viking.png');
   background-position: bottom;
+}
+.hidden {
+  display: none;
 }
 .header {
   background-color: #161616;
@@ -112,6 +118,7 @@ button {
   width: 100%;
   height: 500px;
   background-image: url('../img/slide-image.png');
+  background-size: cover;
 }
 .slide__image {
   width: 100%;
@@ -550,6 +557,299 @@ button {
   font-size: 12px;
   color: #666666;
 }
+.fixed-bar {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 50px;
+  background-color: #313131;
+  transition: 0.3s;
+}
+.fixed-bar__wrapper {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+.fixed-bar__hider {
+  position: relative;
+  width: 52px;
+  height: 50px;
+  padding: 10px 0;
+  cursor: pointer;
+  transition: 0.1s;
+}
+.fixed-bar__hider::before {
+  content: '';
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  width: 15px;
+  height: 15px;
+  border-top: 2px solid #616161;
+  border-right: 2px solid #616161;
+  transform: rotate(45deg);
+  transition: 0.1s;
+}
+.fixed-bar__hider::after {
+  content: '';
+  position: absolute;
+  top: 10px;
+  right: -1px;
+  width: 1px;
+  height: 30px;
+  background-color: #414141;
+}
+.fixed-bar__hider:hover {
+  background-color: #ed383f;
+}
+.fixed-bar__hider:hover::before {
+  border-color: #fff;
+}
+.fixed-bar__shower {
+  width: 52px;
+  height: 50px;
+  cursor: pointer;
+  transition: 0.1s;
+}
+.fixed-bar__shower::before {
+  content: '';
+  position: absolute;
+  top: 15px;
+  left: 20px;
+  width: 15px;
+  height: 15px;
+  border-top: 2px solid #616161;
+  border-right: 2px solid #616161;
+  transform: rotate(-135deg);
+}
+.fixed-bar__shower p {
+  display: none;
+}
+.fixed-bar__top-games-button {
+  position: relative;
+  height: 50px;
+  margin-left: 1px;
+  padding-left: 60px;
+  padding-right: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-image: url('../img/gamepad.png');
+  background-position: 19px 12px;
+  cursor: pointer;
+  transition: 0.1s;
+}
+.fixed-bar__top-games-button:hover {
+  background-color: #ed383f;
+  background-image: url('../img/gamepad-active.png');
+}
+.fixed-bar__top-games-button:hover p {
+  color: #fff;
+}
+.fixed-bar__top-games-button::after {
+  content: '';
+  position: absolute;
+  top: 10px;
+  right: -1px;
+  width: 1px;
+  height: 30px;
+  background-color: #414141;
+}
+.fixed-bar__top-games-button p {
+  font-size: 13px;
+  line-height: 30px;
+  color: #999999;
+  transition: 0.1s;
+}
+.fixed-bar__chat {
+  position: relative;
+  width: 150px;
+  height: 50px;
+  padding-left: 62px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-image: url('../img/chat.png');
+  background-position: 18px 15px;
+  cursor: pointer;
+  transition: 0.1s;
+}
+.fixed-bar__chat:hover {
+  background-color: #ed383f;
+  background-image: url('../img/chat-active.png');
+}
+.fixed-bar__chat:hover p {
+  color: #fff;
+}
+.fixed-bar__chat::after {
+  content: '';
+  position: absolute;
+  top: 10px;
+  right: -1px;
+  width: 1px;
+  height: 30px;
+  background-color: #414141;
+}
+.fixed-bar__chat p {
+  font-size: 13px;
+  line-height: 30px;
+  color: #999999;
+  transition: 0.1s;
+}
+.fixed-bar__language {
+  height: 50px;
+  margin-left: 1px;
+  padding-left: 55px;
+  padding-right: 24px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-image: url('../img/flag-russian.png');
+  background-position: 19px 15px;
+  cursor: pointer;
+  transition: 0.1s;
+}
+.fixed-bar__language:hover {
+  background-color: #ed383f;
+}
+.fixed-bar__language:hover p {
+  color: #fff;
+}
+.fixed-bar__language p {
+  font-size: 13px;
+  line-height: 30px;
+  color: #999999;
+  transition: 0.1s;
+}
+.fixed-bar .fixed-bar__hider {
+  display: block;
+}
+.fixed-bar .fixed-bar__shower {
+  display: none;
+}
+.fixed-bar .fixed-bar__top-games-button {
+  display: block;
+}
+.fixed-bar .search {
+  display: block;
+}
+.fixed-bar .fixed-bar__chat {
+  display: block;
+}
+.fixed-bar .fixed-bar__language {
+  display: block;
+}
+.fixed-bar--collapsed {
+  width: 52px;
+  right: 0px;
+  transition: 0.3s;
+}
+.fixed-bar--collapsed:hover {
+  width: 172px;
+}
+.fixed-bar--collapsed:hover .fixed-bar__shower {
+  width: 172px;
+}
+.fixed-bar--collapsed:hover .fixed-bar__shower p {
+  position: relative;
+  display: block;
+  margin-left: 52px;
+  padding-left: 22px;
+  font-size: 13px;
+  line-height: 50px;
+  color: #999999;
+}
+.fixed-bar--collapsed:hover .fixed-bar__shower p::before {
+  content: '';
+  position: absolute;
+  top: 10px;
+  left: 0px;
+  width: 1px;
+  height: 30px;
+  background-color: #414141;
+}
+.fixed-bar--collapsed .fixed-bar__hider {
+  display: none;
+}
+.fixed-bar--collapsed .fixed-bar__shower {
+  display: block;
+}
+.fixed-bar--collapsed .fixed-bar__top-games-button {
+  display: none;
+}
+.fixed-bar--collapsed .search {
+  display: none;
+}
+.fixed-bar--collapsed .fixed-bar__chat {
+  display: none;
+}
+.fixed-bar--collapsed .fixed-bar__language {
+  display: none;
+}
+.search {
+  height: 50px;
+  margin-left: 1px;
+  flex-grow: 1;
+}
+.search__field {
+  height: 50px;
+  width: 100%;
+  padding-left: 38px;
+  border: none;
+  background-color: #323232;
+  color: #fff;
+  transition: 0.1s;
+  background-image: url('../img/magnifier.png');
+  background-position: 12px 18px;
+}
+.search__field::-webkit-input-placeholder {
+  font-family: SFUIRegular;
+  font-size: 13px;
+  color: #666666;
+}
+.search__field::-moz-placeholder {
+  font-family: SFUIRegular;
+  font-size: 13px;
+  color: #666666;
+}
+.search__field:-ms-input-placeholder {
+  font-family: SFUIRegular;
+  font-size: 13px;
+  color: #666666;
+}
+.search__field::placeholder {
+  font-family: SFUIRegular;
+  font-size: 13px;
+  color: #666666;
+}
+.search__field:focus {
+  background-color: #414141;
+}
+.top-games {
+  position: absolute;
+  bottom: 50px;
+  width: 100%;
+  height: 150px;
+  background-color: #212121;
+  transition: 0.1s;
+}
+.top-games__wrapper {
+  width: 1480px;
+  margin: 0 auto;
+}
+.top-games__slide {
+  display: inline-block;
+  width: 195px;
+  height: 110px !important;
+  margin: 20px 10px;
+  background-color: #313131;
+}
+@media (min-width: 1700px) {
+  .slide__image-wrapper {
+    height: 550px;
+  }
+  .slide__image-wrapper {
+    height: 600px;
+  }
+}
 @media (max-width: 1200px) {
   .header__wrapper {
     width: 768px;
@@ -825,6 +1125,27 @@ button {
     width: 100%;
     padding-right: 10px;
     padding-left: 10px;
+  }
+  .fixed-bar {
+    height: 250px;
+  }
+  .fixed-bar__wrapper {
+    flex-direction: column;
+  }
+  .fixed-bar__hider {
+    width: 100%;
+  }
+  .fixed-bar__top-games-button {
+    width: 100%;
+  }
+  .fixed-bar__chat {
+    width: 100%;
+  }
+  .fixed-bar__language {
+    width: 100%;
+  }
+  .search {
+    width: 100%;
   }
 }
 @media (max-width: 500px) {
