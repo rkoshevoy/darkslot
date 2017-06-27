@@ -1,0 +1,50 @@
+.partner {
+
+	&__wrapper {
+		position: relative;
+		width: 1200px;
+		margin: 0 auto;
+		padding-top: 130px;
+	}
+
+	&__text-wrapper {
+		position: relative;
+		width: 690px;
+
+		&::after {
+			content: '';
+			position: absolute;
+			z-index: -1;
+			top: 0;
+			right: 0;
+			width: 245px;
+			height: 70px;
+			background-color: #6ab980;
+		}
+	}
+
+	&__text {
+		margin-bottom: 40px;
+		font-size: 30px;
+		line-height: 60px;
+	}
+
+	&__button {
+		margin-bottom: 250px;
+		padding: 30px 55px;
+		background-color: #ed383f;
+		font-family: SFUIBold;
+		font-size: 18px;
+	}
+
+	&__image-wrapper {
+		position: absolute;
+		right: 0;
+		top: 90px;
+	}
+}
+
+.partner-bg {
+	background-image: url('../img/partners-bg.png');
+	background-size: 100% auto;
+}
