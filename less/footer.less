@@ -15,6 +15,7 @@
 
 		@media @mobile {
 			.mobile-wrap;
+			flex-wrap: wrap;
 		}
 	}
 
@@ -22,11 +23,23 @@
 		font-size: 13px;
 		line-height: 28px;
 		color: #b0b0b0;
+
+		@media @mobile {
+			width: 100%;
+			text-align: center;
+			margin-top: 20px;
+			margin-bottom: 30px;
+		}
 	}
 
 	&__development {
 		display: flex;
 		align-items: center;
+		width: 100%;
+
+		@media @mobile {
+			justify-content: center;
+		}
 	}
 
 	&__developer {

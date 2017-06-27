@@ -7,34 +7,10 @@
 
 	&__image-wrapper {
 		width: 100%;
-		height: 500px;
-		background-image: url('../img/slide-image.png');
-		background-size: cover;
-
-		@media (min-width: 1700px) {
-			height: 550px;
-		}
-
-		@media (min-width: 1700px) {
-			height: 600px;
-		}
-
-		@media @tablet {
-			height: 400px;
-			background-size: auto 100%;
-			background-position: center;
-		}
-
-		@media @mobile {
-		}
 	}
 
 	&__image {
 		width: 100%;
-
-		@media @mobile {
-			height: 400px;
-		}
 	}
 
 	&__wrapper {
@@ -74,6 +50,11 @@
 		@media @tablet {
 			font-size: 25px;
 		}
+
+		@media @mobile {
+			margin-bottom: 10px;
+			font-size: 16px;
+		}
 	}
 
 	&__header {
@@ -87,7 +68,8 @@
 		}
 
 		@media @mobile {
-			font-size: 30px;
+			margin-bottom: 10px;
+			font-size: 20px;
 		}
 	}
 
