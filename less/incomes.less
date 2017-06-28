@@ -1,5 +1,6 @@
 .incomes {
 	background-image: url('../img/bg-deposites.png');
+	background-position: bottom;
 	background-size: cover;
 
 	&__wrapper {
@@ -9,6 +10,14 @@
 		width: 1200px;
 		margin: 0 auto;
 		padding-bottom: 190px;
+
+		@media @tablet {
+			width: 768px;
+		}
+
+		@media @mobile {
+			.mobile-wrap;
+		} 
 	}
 
 	&__header {
@@ -49,6 +58,17 @@
 	padding-top: 70px;
 	background-position: left top;
 
+	&::before {
+		content: '';
+		position: absolute;
+		z-index: 1;
+		top: 87px;
+		left: 65px;
+		width: 50px;
+		height: 2px;
+		background-color: #fff;
+	}
+
 	&::after {
 		content: '';
 		position: absolute;
@@ -59,6 +79,16 @@
 		height: 135px;
 		background-color: #ED383F;
 		opacity: 0.8;
+	}
+
+	@media @tablet {
+		width: 340px;
+		margin: 0 auto;
+	}
+
+	@media @mobile {
+		width: 100%;
+		max-width: 340px
 	}
 
 	&__header {

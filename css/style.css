@@ -1072,6 +1072,7 @@ form * {
   width: 1200px;
   margin: 0 auto;
   padding-top: 130px;
+  padding-bottom: 250px;
 }
 .partner__text-wrapper {
   position: relative;
@@ -1093,16 +1094,22 @@ form * {
   line-height: 60px;
 }
 .partner__button {
-  margin-bottom: 250px;
   padding: 30px 55px;
   background-color: #ed383f;
   font-family: SFUIBold;
   font-size: 18px;
+  transition: 0.1s;
+}
+.partner__button:hover {
+  background-color: #e2383e;
 }
 .partner__image-wrapper {
   position: absolute;
   right: 0;
   top: 90px;
+}
+.partner__image {
+  width: 100%;
 }
 .partner-bg {
   background-image: url('../img/partners-bg.png');
@@ -1141,6 +1148,7 @@ form * {
   width: 208px;
   height: 208px;
   margin: 0 auto;
+  margin-top: 20px;
   margin-bottom: 60px;
   background-size: 100%;
 }
@@ -1164,6 +1172,7 @@ form * {
 }
 .incomes {
   background-image: url('../img/bg-deposites.png');
+  background-position: bottom;
   background-size: cover;
 }
 .incomes__wrapper {
@@ -1207,6 +1216,16 @@ form * {
   padding-left: 125px;
   padding-top: 70px;
   background-position: left top;
+}
+.income::before {
+  content: '';
+  position: absolute;
+  z-index: 1;
+  top: 87px;
+  left: 65px;
+  width: 50px;
+  height: 2px;
+  background-color: #fff;
 }
 .income::after {
   content: '';
@@ -1403,7 +1422,21 @@ form * {
     width: 350px;
   }
   .games__wrapper {
+    flex-wrap: wrap;
     width: 768px;
+  }
+  .games__list-wrapper {
+    width: 100%;
+  }
+  .games__social {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+  .games__text {
+    text-align: center;
+  }
+  .games__fake-social {
+    margin: 0 auto;
   }
   .partners__wrapper {
     width: 768px;
@@ -1436,6 +1469,35 @@ form * {
   }
   .entry-right .news {
     width: 375px;
+  }
+  .partner__wrapper {
+    width: 768px;
+  }
+  .partner__image-wrapper {
+    top: 320px;
+    right: 50px;
+    width: 300px;
+  }
+  .advantages__wrapper {
+    width: 768px;
+  }
+  .advantage {
+    width: 340px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+  }
+  .advantage__image {
+    margin-bottom: 40px;
+  }
+  .incomes__wrapper {
+    width: 768px;
+  }
+  .income {
+    width: 340px;
+    margin: 0 auto;
+  }
+  .prize__wrapper {
+    width: 768px;
   }
 }
 @media (max-width: 768px) {
@@ -1585,7 +1647,6 @@ form * {
     width: 100%;
     padding-right: 10px;
     padding-left: 10px;
-    flex-wrap: wrap;
   }
   .games__list-wrapper {
     flex-wrap: wrap;
@@ -1599,9 +1660,6 @@ form * {
   .games__social {
     margin: 0 auto;
     margin-bottom: 30px;
-  }
-  .games__text {
-    text-align: center;
   }
   .partners__wrapper {
     width: 100%;
@@ -1709,6 +1767,57 @@ form * {
   }
   .entry-right .news {
     width: 100%;
+  }
+  .partner__wrapper {
+    width: 100%;
+    padding-right: 10px;
+    padding-left: 10px;
+    padding-top: 50px;
+    padding-bottom: 350px;
+    text-align: center;
+  }
+  .partner__text-wrapper {
+    width: 100%;
+  }
+  .partner__text-wrapper::after {
+    display: none;
+  }
+  .partner__text {
+    font-size: 25px;
+    line-height: 40px;
+    text-align: center;
+  }
+  .partner__image-wrapper {
+    top: auto;
+    right: 50%;
+    bottom: 40px;
+    transform: translatex(50%);
+  }
+  .advantages__wrapper {
+    width: 100%;
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+  .advantage {
+    width: 100%;
+    max-width: 340px;
+  }
+  .incomes__wrapper {
+    width: 100%;
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+  .income {
+    width: 100%;
+    max-width: 340px;
+  }
+  .prize__wrapper {
+    width: 100%;
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+  .prize__back-text {
+    font-size: 40px;
   }
 }
 @media (max-width: 300px) {

@@ -7,6 +7,14 @@
 		width: 1200px;
 		margin: 0 auto;
 		margin-bottom: 120px;
+
+		@media @tablet {
+			width: 768px;
+		}
+
+		@media @mobile {
+			.mobile-wrap;
+		}
 	}
 
 	&__header {
@@ -33,12 +41,28 @@
 	width: 380px;
 	text-align: center;
 
+	@media @tablet {
+		width: 340px;
+		margin: 0 auto;
+		margin-bottom: 30px;
+	}
+
+	@media @mobile {
+		width: 100%;
+		max-width: 340px;
+	}
+
 	&__image {
 		width: 208px;
 		height: 208px;
 		margin: 0 auto;
+		margin-top: 20px;
 		margin-bottom: 60px;
 		background-size: 100%;
+
+		@media @tablet {
+			margin-bottom: 40px;
+		}
 	}
 
 	&__header {

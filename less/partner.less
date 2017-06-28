@@ -5,6 +5,18 @@
 		width: 1200px;
 		margin: 0 auto;
 		padding-top: 130px;
+		padding-bottom: 250px;
+
+		@media @tablet {
+			width: 768px;
+		}
+
+		@media @mobile {
+			.mobile-wrap;
+			padding-top: 50px;
+			padding-bottom: 350px;
+			text-align: center;
+		}
 	}
 
 	&__text-wrapper {
@@ -21,26 +33,61 @@
 			height: 70px;
 			background-color: #6ab980;
 		}
+
+		@media @mobile {
+			width: 100%;
+
+			&::after {
+				display: none;
+			}
+		}
 	}
 
 	&__text {
 		margin-bottom: 40px;
 		font-size: 30px;
 		line-height: 60px;
+
+		@media @mobile {
+			font-size: 25px;
+			line-height: 40px;
+			text-align: center;
+		}
 	}
 
 	&__button {
-		margin-bottom: 250px;
 		padding: 30px 55px;
 		background-color: #ed383f;
 		font-family: SFUIBold;
 		font-size: 18px;
+		transition: 0.1s;
+
+		&:hover {
+			background-color: #e2383e;
+		}
 	}
 
 	&__image-wrapper {
 		position: absolute;
 		right: 0;
 		top: 90px;
+
+		@media @tablet {
+			top: 320px;
+			right: 50px;
+			width: 300px;
+		}
+
+		@media @mobile {
+			top: auto;
+			right: 50%;
+			bottom: 40px;
+			transform: translatex(50%);
+		}
+	}
+
+	&__image {
+		width: 100%;
 	}
 }
 

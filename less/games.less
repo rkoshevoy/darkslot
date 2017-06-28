@@ -18,12 +18,12 @@
 		margin-top: 40px;
 
 		@media @tablet {
+			flex-wrap: wrap;
 			width: 768px;
 		}
 
 		@media @mobile {
 			.mobile-wrap;
-			flex-wrap: wrap;
 		}
 	}
 
@@ -34,6 +34,10 @@
 		width: 840px;
 		margin-bottom: 65px;
 
+		@media @tablet {
+			width: 100%;
+		}
+
 		@media @mobile {
 			flex-wrap: wrap;
 			margin-bottom: 0;
@@ -41,6 +45,7 @@
 	}
 
 	@media @mobile {
+
 		&__column {
 			width: 50%;
 			margin-bottom: 30px;
@@ -75,6 +80,11 @@
 
 	&__social {
 
+		@media @tablet {
+			width: 100%;
+			margin-bottom: 30px;
+		}
+
 		@media @mobile {
 			margin: 0 auto;
 			margin-bottom: 30px;
@@ -85,7 +95,7 @@
 		display: block;
 		margin-bottom: 20px;
 
-		@media @mobile {
+		@media @tablet {
 			text-align: center;
 		}
 	}
@@ -94,5 +104,9 @@
 		width: 220px;
 		height: 45px;
 		background-image: url('../img/social.png');
+
+		@media @tablet {
+			margin: 0 auto;
+		}
 	}
 }
