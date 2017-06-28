@@ -14,6 +14,8 @@
 
 		@media @mobile {
 			.mobile-wrap;
+			padding-top: 10px;
+			padding-bottom: 10px;
 		}
 	}
 
@@ -31,7 +33,7 @@
 		}
 
 		@media @mobile {
-			padding: 10px 15px;
+			display: none;
 		}
 	}
 	
@@ -48,19 +50,18 @@
 		}
 
 		@media @mobile {
-			padding: 10px 15px;
+			display: none;
 		}
 	}
 }
 
 .main-nav {
+	position: relative;
 	display: flex;
 
 	@media @tablet {
-		position: relative;
 
 		&__menu-button {
-			position: absolute;
 			width: 40px;
 			height: 40px;
 			cursor: pointer;
@@ -74,6 +75,11 @@
 		}
 	}
 
+	@media @mobile {
+		width: 100%;
+		justify-content: space-between;
+	} 
+
 	&__logo {
 		display: inline-block;
 		width: 200px;
@@ -82,13 +88,92 @@
 		background-image: url('../img/logo.png');
 
 		@media @tablet {
-			margin-left: 50px;
-			margin-right: 10px;
+			margin-left: 130px;
 		}
 
 		@media @mobile {
 			width: 40px;
+			margin: 0;
 			background-image: url('../img/favicon.png');
+		}
+	}
+
+	&__mobile-reg {
+		display: none;
+
+		@media @mobile {
+			display: inline-block;
+			width: 90px;
+			background-color: transparent;
+		}
+	}
+
+	&__mobile-enter {
+		display: none;
+
+		@media @mobile {
+			display: inline-block;
+			width: 90px;
+			background-color: transparent;
+		}
+	}
+
+	&__search-form {
+		display: none;
+
+		@media @mobile {
+			display: inline-block;
+			width: 40px;
+			height: 40px;
+		}
+	}
+
+	// &__magnifier {
+	// 	position: absolute;
+	// 	z-index: 0;
+	// 	width: 40px;
+	// 	height: 40px;
+
+	// 	&::before {
+	// 		content: '';
+	// 		position: absolute;
+	// 		left: 0;
+	// 		top: 0;
+	// 		width: 25px;
+	// 		height: 25px;
+	// 		border: 2px solid #fff;
+	// 		border-radius: 50%
+	// 	}
+
+	// 	&::after {
+	// 		content: '';
+	// 		position: absolute;
+	// 		right: 10px;
+	// 		bottom: 2px;
+	// 		width: 2px;
+	// 		height: 15px;
+	// 		background-color: #fff;
+	// 		transform: rotate(-45deg); 
+	// 	}
+	// }
+
+	&__search-field {
+		display: block;
+		height: 40px;
+		width: 40px;
+		border: none;
+		background-color: transparent;
+		transition: 0.3s;
+		background-image: url('../img/magnifier.png');
+		background-size: 100%;
+
+		&:focus {
+			position: absolute;
+			z-index: 100;
+			right: 0;
+			width: 100%;
+			background-color: #fff;
+			background-image: none;
 		}
 	}
 
@@ -101,9 +186,9 @@
 
 		@media @tablet {
 			position: absolute;
-			left: 50px;
+			left: 0;
 			top: -500px;
-			z-index: 1;
+			z-index: 11;
 			width: 200px;
 			height: 300px;
 			padding: 0;
@@ -125,7 +210,7 @@
 
 	@media @mobile {
 		&__list--show {
-			top: 55px;
+			top: 50px;
 		}
 	}
 
@@ -158,13 +243,6 @@
 				padding: 20px 0;
 			}
 		}
-
-		@media @mobile {
-			
-			a {
-				width: 100%;
-			}
-		}
 	}
 
 	&__dropdown {
@@ -184,7 +262,11 @@
 
 		@media @tablet {
 			top: 0;
-			left: 200px;
+			left: 199px;
+		}
+
+		@media @mobile {
+			top: -1px;
 		}
 	}
 

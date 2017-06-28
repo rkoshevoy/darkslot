@@ -6,7 +6,7 @@
 	width: 100%;
 	background-color: #313131;
 	transition: 0.3s;
-	opacity: 0.9;
+	opacity: 0.95;
 
 	&__wrapper {
 		display: flex;
@@ -60,6 +60,36 @@
 
 		@media @mobile {
 			width: 100%;
+
+			&::before {
+				top: 25px;
+				width: 30px;
+				height: 2px;
+				border: none;
+				background-color: #616161;
+			}
+
+			&::after {
+				top: 25px;
+				right: 20px;
+				width: 30px;
+				height: 2px;
+				background-color: #616161;
+				transform: rotate(-45deg);	
+				transition: 0.1s;			
+			}
+
+			&:hover {
+				background-color: transparent;
+
+				&::before {
+					background-color: #fff;
+				}
+
+				&::after {
+					background-color: #fff;			
+				}				
+			}
 		}
 	}
 
@@ -119,8 +149,7 @@
 		}
 
 		@media @mobile {
-
-			order: 2;
+			display: none;
 
 			&::after {
 				display: none;
@@ -172,6 +201,10 @@
 			&::after {
 				display: none;
 			}
+
+			&:hover {
+				background-color: transparent;
+			}
 		}
 
 		p {
@@ -204,6 +237,10 @@
 
 		@media @mobile {
 			order: 4;
+
+			&:hover {
+				background-color: transparent;
+			}
 		}
 
 		p {
@@ -214,10 +251,30 @@
 		}
 	}
 
-	.fixed-bar__hider,
-	.fixed-bar__top-games-button,
-	.search,
-	.fixed-bar__chat,
+	.fixed-bar__hider {
+		display: block;
+	}
+
+	.fixed-bar__top-games-button {
+		display: block;
+
+		@media @mobile {
+			display: none;
+		}
+	}
+
+	.search {
+		display: block;
+
+		@media @mobile {
+			display: none;
+		}
+	}
+
+	.fixed-bar__chat {
+		display: block;
+	}
+
 	.fixed-bar__language {
 		display: block;
 	}
@@ -295,8 +352,9 @@
 	flex-grow: 1;
 
 	@media @mobile {
-		width: 100%;
-		order: 1;
+		// width: 100%;
+		// order: 1;
+		display: none;	
 	}
 
 	&__field {
@@ -321,6 +379,7 @@
 		}
 
 		@media @mobile {
+			display: none;
 			padding-left: 0;
 			text-align: center;
 

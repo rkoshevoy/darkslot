@@ -174,9 +174,17 @@
 
 	&__text-wrapper {
 		position: absolute;
-		top: 50%;
+		bottom: 50%;
 		left: 50%;
-		transform: translatey(-50%);
+		transform: translatey(150%);
+
+		@media @tablet {
+			width: 300px;
+		}
+
+		@media @mobile {
+		transform: translatey(100%);
+		}
 	}
 
 	&__header {

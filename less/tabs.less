@@ -63,7 +63,7 @@
 		}
 
 		@media @mobile {
-			margin: 0 auto;
+			width: 100%;
 		}
 	}
 }
@@ -95,7 +95,8 @@
 		}
 
 		@media @mobile {
-			width: 100%;
+			display: none;
+			// width: 100%;
 		}
 	}
 
@@ -194,6 +195,21 @@
 			&:nth-of-type(9) {
 				display: none;
 			}
+		}
+	}
+
+	&__more-button {
+		display: block;
+		margin: 0 auto;
+		padding: 20px;
+		margin-top: 20px;
+		margin-bottom: 20px;
+		border: 2px solid #6ab980;
+		transition: 0.1s;
+		cursor: pointer;
+
+		&:hover {
+			background-color: #65ad79;
 		}
 	}
 }
