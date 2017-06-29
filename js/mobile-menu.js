@@ -28,7 +28,7 @@ $(document).ready(function() {
 		$('.main-nav__dropdown--fifth').toggleClass('hidden'),
 		$('.main-nav__dropdown--second').addClass('hidden'),
 		$('.main-nav__dropdown--first').addClass('hidden')
-	});$(document).ready(function() {
+	});
 
 	$('.fixed-bar__hider').click(function() {
 		$('.fixed-bar').addClass('fixed-bar--collapsed'),
@@ -57,5 +57,4 @@ $(document).ready(function() {
 	$('.main-nav__search-field').focusout(function() {
 		$('.main-nav__search-close').css('display', 'none')
 	});
-});
 });
