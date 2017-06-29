@@ -30,9 +30,10 @@
 				<button class="main-nav__mobile-enter">Вход</button>
 
 				<form action="#" class="main-nav__search-form">
-				<div class="main-nav__magnifier"></div>
+					<!-- <div class="main-nav__magnifier"></div> -->
 					<input type="search" class="main-nav__search-field">
 				</form>
+				<div class="main-nav__search-close"></div>
 
 				<ul class="main-nav__list">
 					<li class="main-nav__item main-nav__item--arrow main-nav__item--first"><a href="#">Игры</a>
@@ -109,7 +110,15 @@
 				<div class="switchers__switcher switchers__switcher--fifth"><div class="switchers__image switchers__image--fifth"></div>Live диллер</div>
 			</div>
 
-			<div class="tabs__selector">Провайдер</div>
+			<div class="tabs__select">Провайдер</div>
+
+			<!-- <form action="#">
+				<select name="provider" id="provider" class="tabs__select">
+					<option value="Провайдер 1"></option>
+					<option value="Провайдер 2"></option>
+					<option value="Провайдер 3"></option>
+				</select>
+			</form> -->
 
 			<div class="tab tab--first tab--active">
 				<h2 class="tab__header">Топ игры</h2>
@@ -360,7 +369,7 @@
 
 	<section class="partners">
 		<div class="partners__wrapper">
-		<img src="img/partners.png" alt="">
+			<img src="img/partners.png" alt="">
 			<!-- <ul class="partners__list">
 				<li class="partners__item">VISA</li>
 				<li class="partners__item">VISA</li>
@@ -380,7 +389,7 @@
 			<div class="footer__copyright"></div>
 			<div class="footer__development">
 				<span class="footer__developer">Разработка сайта: </span> 
-				<img src="img/crepla-logo.png" alt="crepla" class="footer__crepla-logo">
+				<a href="http://www.crepla.com/" target="blank"><img src="img/crepla-logo.png" alt="crepla" class="footer__crepla-logo"></a>
 			</div>
 		</div>
 	</footer>
@@ -394,6 +403,7 @@
 			<div class="fixed-bar__top-games-button"><p>Топ-игры</p></div>
 			<form action="#" class="search">
 				<input type="search" class="search__field" placeholder="Поиск">
+				<div class="search__close"></div>
 			</form>
 			<div class="fixed-bar__chat"><p>Онлайн-чат</p></div>
 			<div class="fixed-bar__language"><p>Русский</p></div>
@@ -451,7 +461,7 @@
 
 	<script type="text/javascript" src="js/mobile-menu.js"></script>
 
-	<script type="text/javascript" src="js/fixes-bar.js"></script>
+	<script type="text/javascript" src="js/fixed-bar.js"></script>
 
 </body>
 </html>

@@ -64,6 +64,7 @@
 .news {
 	position: relative;
 	max-width: 385px;
+	height: 286px;
 	margin-bottom: 20px;
 	background-size: cover;
 
@@ -74,6 +75,7 @@
 	@media @mobile {
 		max-width: none;
 		width: 100%;
+		height: auto;
 	}
 
 	&__photo {
@@ -101,7 +103,7 @@
 	&__button {
 		position: absolute;
 		right: 0;
-		bottom: 3px;
+		bottom: 0;
 		height: 50px;
 		padding-left: 20px;
 		padding-right: 20px;
@@ -113,37 +115,6 @@
 		&:hover {
 			background-color: #e3363d;
 		}
-	}
-}
-
-.blog-pagination {
-	width: 100%;
-	margin-top: 60px;
-	margin-bottom: 50px;
-
-	&__wrapper {
-		text-align: center;
-	}
-
-	&__page {
-		display: inline-block;
-		width: 50px;
-		height: 50px;
-		border: 1px solid #383838;
-		cursor: pointer;
-		transition: 0.1s;
-
-		&:hover {
-			background-color: #ed383f;
-		}
-
-		span {
-			line-height: 50px;
-		}
-	}
-
-	&__page--active {
-		background-color: #ed383f;
 	}
 }
 
@@ -223,6 +194,71 @@
 
 		@media @mobile {
 			padding: 5px 10px;
+		}
+	}
+}
+
+.blog-pagination {
+	width: 100%;
+	margin-top: 60px;
+	margin-bottom: 50px;
+
+	&__wrapper {
+		text-align: center;
+	}
+
+	&__page {
+		display: inline-block;
+		width: 50px;
+		height: 50px;
+		margin-bottom: 5px;
+		border: 1px solid #383838;
+		cursor: pointer;
+		transition: 0.1s;
+		vertical-align: middle;
+
+		&:hover {
+			background-color: #ed383f;
+		}
+
+		span {
+			line-height: 50px;
+		}
+	}
+
+	&__page--active {
+		background-color: #ed383f;
+	}
+
+	&__page--prev {
+		position: relative;
+
+		&::before {
+			content: '';
+			position: absolute;
+			top: 16px;
+			left: 20px;
+			width: 15px;
+			height: 15px;
+			border-right: 2px solid #fff;
+			border-bottom: 2px solid #fff;
+			transform: rotate(135deg);
+		}
+	}
+
+	&__page--next {
+		position: relative;
+
+		&::before {
+			content: '';
+			position: absolute;
+			top: 16px;
+			right: 20px;
+			width: 15px;
+			height: 15px;
+			border-right: 2px solid #fff;
+			border-bottom: 2px solid #fff;
+			transform: rotate(-45deg);
 		}
 	}
 }

@@ -3,7 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
 	<title>Dark Slot</title>
 	<link rel="shortcut icon" href="img/favicon.png" type="image/png">
 	<link rel="stylesheet" href="css/style.min.css">
@@ -30,9 +30,10 @@
 				<button class="main-nav__mobile-enter">Вход</button>
 
 				<form action="#" class="main-nav__search-form">
-				<div class="main-nav__magnifier"></div>
+					<!-- <div class="main-nav__magnifier"></div> -->
 					<input type="search" class="main-nav__search-field">
 				</form>
+				<div class="main-nav__search-close"></div>
 
 				<ul class="main-nav__list">
 					<li class="main-nav__item main-nav__item--arrow main-nav__item--first"><a href="#">Игры</a>
@@ -97,7 +98,7 @@
 						<div class="news__header-wrapper">
 							<h2 class="news__header">Lorem ipsum dolor sit amet consectetur adipiscing elit</h2>
 						</div>
-						<a href="#" class="news__button">Подробнее</a>
+						<a href="blog-one-news.html" class="news__button">Подробнее</a>
 					</div>
 
 					<div class="news">
@@ -105,7 +106,7 @@
 						<div class="news__header-wrapper">
 							<h2 class="news__header">Lorem ipsum dolor sit amet consectetur adipiscing elit</h2>
 						</div>
-						<a href="#" class="news__button">Подробнее</a>
+						<a href="blog-one-news.html" class="news__button">Подробнее</a>
 					</div>
 
 					<div class="news">
@@ -113,7 +114,7 @@
 						<div class="news__header-wrapper">
 							<h2 class="news__header">Lorem ipsum dolor sit amet consectetur adipiscing elit</h2>
 						</div>
-						<a href="#" class="news__button">Подробнее</a>
+						<a href="blog-one-news.html" class="news__button">Подробнее</a>
 					</div>
 
 					<div class="news">
@@ -121,7 +122,7 @@
 						<div class="news__header-wrapper">
 							<h2 class="news__header">Lorem ipsum dolor sit amet consectetur adipiscing elit</h2>
 						</div>
-						<a href="#" class="news__button">Подробнее</a>
+						<a href="blog-one-news.html" class="news__button">Подробнее</a>
 					</div>
 				</div>
 			</div>
@@ -219,7 +220,7 @@
 			<div class="footer__copyright"></div>
 			<div class="footer__development">
 				<span class="footer__developer">Разработка сайта: </span> 
-				<img src="img/crepla-logo.png" alt="crepla" class="footer__crepla-logo">
+				<a href="http://www.crepla.com/" target="blank"><img src="img/crepla-logo.png" alt="crepla" class="footer__crepla-logo"></a>
 			</div>
 		</div>
 	</footer>
@@ -233,6 +234,7 @@
 			<div class="fixed-bar__top-games-button"><p>Топ-игры</p></div>
 			<form action="#" class="search">
 				<input type="search" class="search__field" placeholder="Поиск">
+				<div class="search__close"></div>
 			</form>
 			<div class="fixed-bar__chat"><p>Онлайн-чат</p></div>
 			<div class="fixed-bar__language"><p>Русский</p></div>
@@ -276,13 +278,21 @@
 			}
 			]
 		});
+
+		$('.top-games__wrapper').slick({
+			infinite: true,
+			autoplay: true,
+			autoplaySpeed: 3000,
+			slidesToShow: 7,
+			arrows: false
+		});
 	</script>
 
 	<script type="text/javascript" src="js/tabs.js"></script>
 
 	<script type="text/javascript" src="js/mobile-menu.js"></script>
 
-	<script type="text/javascript" src="js/fixes-bar.js"></script>
+	<script type="text/javascript" src="js/fixed-bar.js"></script>
 
 </body>
 </html>
