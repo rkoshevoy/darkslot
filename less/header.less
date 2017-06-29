@@ -70,7 +70,7 @@
 		&__menu-line {
 			width: 40px;
 			height: 5px;
-			margin-bottom: 11px;
+			margin-bottom: 12px;
 			background-color: #fff;
 		}
 	}
@@ -171,7 +171,7 @@
 			position: absolute;
 			z-index: 100;
 			right: 0;
-			width: 100%;
+			width: ~"calc(100% - 50px)";
 			background-color: #fff;
 			background-image: none;
 		}
@@ -189,8 +189,8 @@
 			left: 0;
 			top: -500px;
 			z-index: 11;
-			width: 200px;
-			height: 300px;
+			width: 150px;
+			// height: 300px;
 			padding: 0;
 			border: 1px solid #000;
 			background-color: #161616;
@@ -199,6 +199,7 @@
 
 		@media @mobile {
 			left: -10px;
+			width: 150px;
 		}
 	}
 
@@ -233,13 +234,13 @@
 
 		@media @tablet {
 			display: block;
-			width: 100%;
+			width: 150px;
 			margin-right: 0;
 			text-align: center;
 
 			a {
 				display: block;
-				width: 200px;
+				width: 150px;
 				padding: 20px 0;
 			}
 		}
@@ -262,7 +263,7 @@
 
 		@media @tablet {
 			top: 0;
-			left: 199px;
+			left: 149px;
 		}
 
 		@media @mobile {
@@ -274,7 +275,7 @@
 
 		a {
 			display: block;
-			width: 200px;
+			// width: 150px;
 			padding: 20px;
 			background-color: #313131;
 

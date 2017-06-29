@@ -3,7 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
 	<title>Dark Slot</title>
 	<link rel="shortcut icon" href="img/favicon.png" type="image/png">
 	<link rel="stylesheet" href="css/style.min.css">
@@ -38,9 +38,10 @@
 					<li class="main-nav__item main-nav__item--arrow main-nav__item--first"><a href="#">Игры</a>
 
 						<ul class="main-nav__dropdown main-nav__dropdown--first hidden">
-							<li class="main-nav__dropdown-item"><a href="#">Игра 1</a></li>
-							<li class="main-nav__dropdown-item"><a href="#">Игра 2</a></li>
-							<li class="main-nav__dropdown-item"><a href="#">Игра 3</a></li>
+							<li class="main-nav__dropdown-item"><a href="#">NetEnt</a></li>
+							<li class="main-nav__dropdown-item"><a href="#">Amatic</a></li>
+							<li class="main-nav__dropdown-item"><a href="#">Ezugi</a></li>
+							<li class="main-nav__dropdown-item"><a href="#">Softswiss</a></li>
 						</ul>
 					</li>
 
@@ -57,9 +58,10 @@
 					<li class="main-nav__item main-nav__item--hider"><a href="partners.html">Партнёрам</a></li>
 					<li class="main-nav__item main-nav__item--arrow main-nav__item--fifth"><a href="#">О нас</a>
 
-						<div class="main-nav__dropdown main-nav__dropdown--fifth hidden">
-							<p>Здесь всё о нас</p>
-						</div>
+						<ul class="main-nav__dropdown main-nav__dropdown--fifth hidden">
+							<li class="main-nav__dropdown-item"><a href="#">О DarkSlot</a></li>
+							<li class="main-nav__dropdown-item"><a href="blog.html">Блог</a></li>
+						</ul>
 
 					</li>
 				</ul>
@@ -110,7 +112,7 @@
 			<div class="tabs__selector">Провайдер</div>
 
 			<div class="tab tab--first tab--active">
-				<h2 class="tab__header">Самые популярные игры</h2>
+				<h2 class="tab__header">Топ игры</h2>
 				<button class="tab__button">Случайная игра</button>
 
 				<div class="tab__variants-wrapper">
@@ -256,7 +258,7 @@
 
 	<section class="popular-games">
 		<div class="popular-games__wrapper">
-			<h2 class="popular-gamnes__header">Новые игры</h2>
+			<h2 class="popular-games__header">Новые игры</h2>
 			<button class="popular-games__button">Случайная игра</button>
 
 			<div class="games-preview">
@@ -270,6 +272,8 @@
 				<div class="games-preview__item"></div>
 				<div class="games-preview__item"></div>
 			</div>
+
+			<button class="popular-games__more-button">Показать больше</button>
 		</div>
 	</section>
 
@@ -356,6 +360,7 @@
 
 	<section class="partners">
 		<div class="partners__wrapper">
+		<img src="img/partners.png" alt="">
 			<!-- <ul class="partners__list">
 				<li class="partners__item">VISA</li>
 				<li class="partners__item">VISA</li>
@@ -438,7 +443,7 @@
 			autoplay: true,
 			autoplaySpeed: 3000,
 			slidesToShow: 7,
-			arrows: true
+			arrows: false
 		});
 	</script>
 
