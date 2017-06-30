@@ -59,7 +59,7 @@ form * {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  width: 1200px;
+  width: 1180px;
   margin: 0 auto;
 }
 .header__first-button {
@@ -232,7 +232,7 @@ form * {
   width: 100%;
 }
 .slide__wrapper {
-  width: 1200px;
+  width: 1180px;
   margin: 0 auto;
 }
 .slide__text {
@@ -276,7 +276,7 @@ form * {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  width: 1200px;
+  width: 1180px;
   margin: 0 auto;
 }
 .tabs__select-form {
@@ -422,7 +422,7 @@ form * {
 .jackpot__wrapper {
   position: relative;
   padding-top: 140px;
-  width: 1200px;
+  width: 1180px;
   margin: 0 auto;
   padding-bottom: 95px;
 }
@@ -471,7 +471,7 @@ form * {
   background-color: #2b2b2b;
 }
 .last-winners__wrapper {
-  width: 1200px;
+  width: 1180px;
   margin: 0 auto;
   padding-top: 40px;
   padding-bottom: 55px;
@@ -532,7 +532,7 @@ form * {
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
-  width: 1200px;
+  width: 1180px;
   margin: 0 auto;
 }
 .popular-games__header {
@@ -588,7 +588,7 @@ form * {
   position: relative;
   padding-top: 230px;
   padding-bottom: 170px;
-  width: 1200px;
+  width: 1180px;
   margin: 0 auto;
 }
 .deposites__header {
@@ -629,7 +629,7 @@ form * {
 .games__wrapper {
   display: flex;
   justify-content: space-between;
-  width: 1200px;
+  width: 1180px;
   margin: 0 auto;
   margin-top: 40px;
 }
@@ -680,7 +680,7 @@ form * {
   background-color: #313131;
 }
 .partners__wrapper {
-  width: 1200px;
+  width: 1180px;
   margin: 0 auto;
   padding: 40px 0;
 }
@@ -691,7 +691,7 @@ form * {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  width: 1200px;
+  width: 1180px;
   margin: 0 auto;
   margin-bottom: 50px;
   padding: 10px 0;
@@ -1075,7 +1075,7 @@ form * {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  width: 1200px;
+  width: 1180px;
   margin: 0 auto;
   text-align: center;
 }
@@ -1149,7 +1149,7 @@ form * {
   background-color: #e3363d;
 }
 .blog-slider__wrapper {
-  width: 1200px;
+  width: 1180px;
   margin: 0 auto;
   margin-bottom: 20px;
 }
@@ -1250,7 +1250,7 @@ form * {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  width: 1200px;
+  width: 1180px;
   margin: 0 auto;
 }
 .entry__header {
@@ -1295,7 +1295,7 @@ form * {
 }
 .partner__wrapper {
   position: relative;
-  width: 1200px;
+  width: 1180px;
   margin: 0 auto;
   padding-top: 130px;
   padding-bottom: 250px;
@@ -1304,13 +1304,17 @@ form * {
   position: relative;
   width: 690px;
 }
-.partner__text-wrapper::after {
+.partner__text-wrapper span {
+  position: relative;
+  display: inline-block;
+}
+.partner__text-wrapper span::after {
   content: '';
   position: absolute;
   z-index: -1;
-  top: 0;
-  right: 0;
-  width: 245px;
+  top: -5px;
+  right: -10px;
+  width: calc(100% + 25px);
   height: 70px;
   background-color: #6ab980;
 }
@@ -1345,7 +1349,7 @@ form * {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  width: 1200px;
+  width: 1180px;
   margin: 0 auto;
   margin-bottom: 120px;
 }
@@ -1406,7 +1410,7 @@ form * {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  width: 1200px;
+  width: 1180px;
   margin: 0 auto;
   padding-bottom: 190px;
 }
@@ -1501,7 +1505,7 @@ form * {
 }
 .prize__wrapper {
   position: relative;
-  width: 1200px;
+  width: 1180px;
   margin: 0 auto;
   text-align: center;
 }
@@ -1536,9 +1540,9 @@ form * {
   font-size: 18px;
   font-family: SFUIBold;
 }
-@media (max-width: 1200px) {
+@media (max-width: 1220px) {
   .header__wrapper {
-    width: 768px;
+    width: 748px;
   }
   .main-nav__menu-button {
     position: relative;
@@ -1616,7 +1620,7 @@ form * {
     transform: rotate(-45deg);
   }
   .slide__wrapper {
-    width: 768px;
+    width: 748px;
   }
   .slide__text {
     width: 300px;
@@ -1628,7 +1632,7 @@ form * {
     font-size: 40px;
   }
   .tabs__wrapper {
-    width: 768px;
+    width: 748px;
   }
   .tabs__select {
     width: 100%;
@@ -1646,7 +1650,7 @@ form * {
     display: inline-block;
   }
   .jackpot__wrapper {
-    width: 768px;
+    width: 748px;
     padding-top: 100px;
     padding-bottom: 50px;
   }
@@ -1654,14 +1658,14 @@ form * {
     width: 400px;
   }
   .last-winners__wrapper {
-    width: 768px;
+    width: 748px;
   }
   .winners__winner {
     margin-bottom: 20px;
     width: 50%;
   }
   .popular-games__wrapper {
-    width: 768px;
+    width: 748px;
   }
   .games-preview__item {
     width: calc(33.33% - 12px);
@@ -1670,7 +1674,7 @@ form * {
     display: inline-block;
   }
   .deposites__wrapper {
-    width: 768px;
+    width: 748px;
   }
   .deposites__image-wrapper {
     top: auto;
@@ -1679,7 +1683,7 @@ form * {
   }
   .games__wrapper {
     flex-wrap: wrap;
-    width: 768px;
+    width: 748px;
   }
   .games__list-wrapper {
     width: 100%;
@@ -1695,13 +1699,13 @@ form * {
     margin: 0 auto;
   }
   .partners__wrapper {
-    width: 768px;
+    width: 748px;
   }
   .footer__wrapper {
-    width: 768px;
+    width: 748px;
   }
   .blog__wrapper {
-    width: 768px;
+    width: 748px;
   }
   .blog__text {
     width: 700px;
@@ -1710,13 +1714,13 @@ form * {
     width: 370px;
   }
   .blog-slider__wrapper {
-    width: 768px;
+    width: 748px;
   }
   .blog-slider__text-wrapper {
     width: 300px;
   }
   .entry__wrapper {
-    width: 768px;
+    width: 748px;
   }
   .entry-left {
     width: 100%;
@@ -1729,7 +1733,7 @@ form * {
     width: 375px;
   }
   .partner__wrapper {
-    width: 768px;
+    width: 748px;
   }
   .partner__image-wrapper {
     top: 320px;
@@ -1737,7 +1741,7 @@ form * {
     width: 300px;
   }
   .advantages__wrapper {
-    width: 768px;
+    width: 748px;
   }
   .advantage {
     width: 340px;
@@ -1748,7 +1752,7 @@ form * {
     margin-bottom: 40px;
   }
   .incomes__wrapper {
-    width: 768px;
+    width: 748px;
   }
   .income {
     width: 340px;
@@ -1758,10 +1762,10 @@ form * {
     background-position: left;
   }
   .prize__wrapper {
-    width: 768px;
+    width: 748px;
   }
 }
-@media (max-width: 768px) {
+@media (max-width: 788px) {
   .header__wrapper {
     width: 100%;
     padding-right: 10px;
@@ -2098,8 +2102,9 @@ form * {
   .partner__text-wrapper {
     width: 100%;
   }
-  .partner__text-wrapper::after {
-    display: none;
+  .partner__text-wrapper span::after {
+    width: calc(100% + 20px);
+    height: 50px;
   }
   .partner__text {
     font-size: 25px;
