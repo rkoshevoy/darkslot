@@ -10,8 +10,12 @@ $(document).ready(function() {
 	});
 
 	$('.fixed-bar__top-games-button').click(function() {
-		$('.top-games').toggleClass('hidden')
-	})
+		$('.top-games').removeClass('hidden')
+	});
+
+	$('.top-games__close').click(function() {
+		$('.top-games').addClass('hidden')
+	});
 
 	// крестик поля поиска
 

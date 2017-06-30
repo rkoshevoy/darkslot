@@ -174,6 +174,17 @@ form * {
 .main-nav__item a:hover {
   background-color: #ED383F;
 }
+.main-nav__item span {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  padding-left: 22px;
+  padding-right: 22px;
+  transition: 0.1s;
+  cursor: pointer;
+}
+.main-nav__item span:hover {
+  background-color: #ED383F;
+}
 .main-nav__dropdown {
   position: absolute;
   z-index: 11;
@@ -268,20 +279,10 @@ form * {
   width: 1200px;
   margin: 0 auto;
 }
-.tabs__select {
+.tabs__select-form {
   position: relative;
-  padding-top: 28px;
-  padding-right: 100px;
-  padding-bottom: 25px;
-  padding-left: 10px;
-  border: none;
-  background-color: transparent;
-  font-size: 14px;
-  color: #fff;
-  cursor: pointer;
-  outline: none;
 }
-.tabs__select::after {
+.tabs__select-form::after {
   content: '';
   position: absolute;
   top: 25px;
@@ -293,13 +294,27 @@ form * {
   transform: rotate(45deg);
   transition: 0.1s;
 }
-.tabs__select:hover {
+.tabs__select-form:hover {
   background-color: #ed383f;
   transition: 0.1s;
 }
-.tabs__select:hover::after {
+.tabs__select-form:hover::after {
   border-right: 2px solid #fff;
   border-bottom: 2px solid #fff;
+}
+.tabs__select {
+  position: relative;
+  padding-top: 28px;
+  padding-right: 100px;
+  padding-bottom: 25px;
+  padding-left: 10px;
+  border: none;
+  background-color: #232323;
+  font-family: SFUIMedium;
+  font-size: 14px;
+  color: #fff;
+  cursor: pointer;
+  outline: none;
 }
 .switchers {
   position: relative;
@@ -406,7 +421,7 @@ form * {
 }
 .jackpot__wrapper {
   position: relative;
-  padding-top: 120px;
+  padding-top: 140px;
   width: 1200px;
   margin: 0 auto;
   padding-bottom: 95px;
@@ -435,7 +450,7 @@ form * {
 .jackpot__background-text {
   position: absolute;
   z-index: -1;
-  top: 55px;
+  top: 20px;
   left: -30px;
   font-size: 176px;
   line-height: 176px;
@@ -843,15 +858,17 @@ form * {
   padding-right: 24px;
   padding-top: 10px;
   padding-bottom: 10px;
+  border: none;
+  background-color: #313131;
   background-image: url('../img/flag-russian.png');
   background-position: 19px 15px;
+  font-family: SFUIRegular;
+  color: #999999;
   cursor: pointer;
   transition: 0.1s;
 }
 .fixed-bar__language:hover {
   background-color: #ed383f;
-}
-.fixed-bar__language:hover p {
   color: #fff;
 }
 .fixed-bar__language p {
@@ -1014,6 +1031,41 @@ form * {
   height: 110px !important;
   margin: 20px 10px;
   background-color: #313131;
+}
+.top-games__close {
+  position: absolute;
+  top: -25px;
+  right: 20px;
+  width: 90px;
+  height: 30px;
+  background-color: #313131;
+  cursor: pointer;
+}
+.top-games__close::before {
+  content: '';
+  position: absolute;
+  top: 13px;
+  left: 7px;
+  width: 15px;
+  height: 2px;
+  background-color: #5d5d5d;
+  transform: rotate(45deg);
+}
+.top-games__close::after {
+  content: '';
+  position: absolute;
+  top: 13px;
+  left: 7px;
+  width: 15px;
+  height: 2px;
+  background-color: #5d5d5d;
+  transform: rotate(-45deg);
+}
+.top-games__close p {
+  padding-left: 30px;
+  font-size: 13px;
+  line-height: 30px;
+  color: #969696;
 }
 .blog {
   background-image: url('../img/blog-bg.png');
@@ -1320,12 +1372,13 @@ form * {
   text-align: center;
 }
 .advantage__image {
-  width: 208px;
-  height: 208px;
+  width: 160px;
+  height: 170px;
   margin: 0 auto;
   margin-top: 20px;
   margin-bottom: 60px;
   background-size: 100%;
+  background-position: center;
 }
 .advantage__header {
   margin-bottom: 30px;
@@ -1489,6 +1542,7 @@ form * {
     width: 768px;
   }
   .main-nav__menu-button {
+    position: relative;
     width: 40px;
     height: 40px;
     cursor: pointer;
@@ -1498,6 +1552,26 @@ form * {
     height: 5px;
     margin-bottom: 12px;
     background-color: #fff;
+    transition: 0.3s;
+  }
+  .main-nav__menu-line--hidden {
+    margin-top: 17px;
+    opacity: 0;
+    transition: 0.3s;
+  }
+  .main-nav__menu-line--first {
+    position: absolute;
+    left: 0px;
+    top: 17px;
+    transform: rotate(45deg);
+    transition: 0.3s;
+  }
+  .main-nav__menu-line--third {
+    position: absolute;
+    left: 0px;
+    top: 17px;
+    transform: rotate(-45deg);
+    transition: 0.3s;
   }
   .main-nav__logo {
     margin-left: 130px;
@@ -1551,6 +1625,15 @@ form * {
   }
   .tabs__wrapper {
     width: 768px;
+  }
+  .tabs__select {
+    width: 100%;
+  }
+  .tabs__select-form {
+    width: 100%;
+  }
+  .switchers__switcher {
+    display: none;
   }
   .tab__variant {
     width: calc(33.33% - 12px);
@@ -1667,6 +1750,9 @@ form * {
     width: 340px;
     margin: 0 auto;
   }
+  .income--third {
+    background-position: left;
+  }
   .prize__wrapper {
     width: 768px;
   }
@@ -1745,12 +1831,6 @@ form * {
     width: 100%;
     padding-right: 10px;
     padding-left: 10px;
-  }
-  .tabs__select {
-    width: 100%;
-  }
-  .switchers__switcher {
-    display: none;
   }
   .tab__variant {
     width: 100%;

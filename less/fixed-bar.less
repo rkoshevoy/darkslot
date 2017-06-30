@@ -222,17 +222,18 @@
 		padding-right: 24px;
 		padding-top: 10px;
 		padding-bottom: 10px;
+		border: none;
+		background-color: #313131;
 		background-image: url('../img/flag-russian.png');
 		background-position: 19px 15px;
+		font-family: SFUIRegular;
+		color: #999999;
 		cursor: pointer;
 		transition: 0.1s;
 
 		&:hover {
 			background-color: #ed383f;
-
-			p {
-				color: #fff;
-			}
+			color: #fff;
 		}
 
 		@media @mobile {
@@ -455,5 +456,44 @@
 		height: 110px !important;
 		margin: 20px 10px;
 		background-color: #313131;
+	}
+
+	&__close {
+		position: absolute;
+		top: -25px;
+		right: 20px;
+		width: 90px;
+		height: 30px;
+		background-color: #313131;
+		cursor: pointer;
+
+		&::before {
+			content: '';
+			position: absolute;
+			top: 13px;
+			left: 7px;
+			width: 15px;
+			height: 2px;
+			background-color: #5d5d5d;
+			transform: rotate(45deg);
+		}
+
+		&::after {
+			content: '';
+			position: absolute;
+			top: 13px;
+			left: 7px;
+			width: 15px;
+			height: 2px;
+			background-color: #5d5d5d;
+			transform: rotate(-45deg);
+		}
+
+		p {
+			padding-left: 30px;
+			font-size: 13px;
+			line-height: 30px;
+			color: #969696;
+		}
 	}
 }
