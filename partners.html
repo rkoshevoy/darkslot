@@ -35,7 +35,7 @@
 				<div class="main-nav__search-close"></div>
 
 				<ul class="main-nav__list">
-					<li class="main-nav__item main-nav__item--arrow main-nav__item--first"><a href="#" class="">Игры</a>
+					<li class="main-nav__item main-nav__item--arrow main-nav__item--first"><span>Игры</span>
 
 						<ul class="main-nav__dropdown main-nav__dropdown--first hidden">
 							<li class="main-nav__dropdown-item"><a href="#">NetEnt</a></li>
@@ -45,8 +45,7 @@
 						</ul>
 					</li>
 
-					<li class="main-nav__item main-nav__item--arrow main-nav__item--second"><a href="#">Акции
-					</a>
+					<li class="main-nav__item main-nav__item--arrow main-nav__item--second"><span>Акции</span>
 
 					<ul class="main-nav__dropdown main-nav__dropdown--second hidden">
 						<li class="main-nav__dropdown-item"><a href="#">Акция 1</a></li>
@@ -56,7 +55,7 @@
 
 					<li class="main-nav__item main-nav__item--hider"><a href="#">Поддержка</a></li>
 					<li class="main-nav__item main-nav__item--hider"><a href="partners.html">Партнёрам</a></li>
-					<li class="main-nav__item main-nav__item--arrow main-nav__item--fifth"><a href="#">О нас</a>
+					<li class="main-nav__item main-nav__item--arrow main-nav__item--fifth"><span>О нас</span>
 
 						<ul class="main-nav__dropdown main-nav__dropdown--fifth hidden">
 							<li class="main-nav__dropdown-item"><a href="#">О DarkSlot</a></li>
@@ -261,7 +260,13 @@
 				<div class="search__close"></div>
 			</form>
 			<div class="fixed-bar__chat"><p>Онлайн-чат</p></div>
-			<div class="fixed-bar__language"><p>Русский</p></div>
+
+			<form action="#">
+				<select name="language" id="language" class="fixed-bar__language">
+					<option value="russian">Русский</option>
+					<option value="not-russian">Не русский</option>
+				</select>
+			</form>
 
 			<div class="top-games hidden">
 				<div class="top-games__wrapper">

@@ -1601,6 +1601,11 @@ form * {
     width: 150px;
     padding: 20px 0;
   }
+  .main-nav__item span {
+    display: block;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
   .main-nav__dropdown {
     top: 0;
     left: 149px;
