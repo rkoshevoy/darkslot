@@ -32,14 +32,18 @@
 
 	&__select-form {
 		position: relative;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		width: 200px;
 
 		&::after {
 			content: '';
 			position: absolute;
 			top: 25px;
 			right: 10px;
-			width: 15px;
-			height: 15px;
+			width: 12px;
+			height: 12px;
 			border-right: 2px solid #858585;
 			border-bottom: 2px solid #858585;
 			transform: rotate(45deg);
@@ -47,7 +51,6 @@
 		}
 
 		&:hover {
-			background-color: #ed383f;
 			transition: 0.1s;
 
 			&::after {
@@ -57,10 +60,15 @@
 		}
 	}
 
+	&__provider {
+		font-family: SFUIMedium;
+		font-size: 14px;
+	}
+
 	&__select {
 		position: relative;
 		padding-top: 28px;
-		padding-right: 100px;
+		padding-right: 35px;
 		padding-bottom: 25px;
 		padding-left: 10px;
 		border: none;
@@ -71,12 +79,14 @@
 		cursor: pointer;
 		outline: none;
 
-		@media @tablet {
-			width: 100%;
+		&:hover {
+			background-color: #ed383f;
+			transition: 0.1s;
 		}
 	}
 
 	@media @tablet {
+
 		&__select-form {
 			width: 100%;
 		}

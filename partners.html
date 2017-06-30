@@ -47,11 +47,12 @@
 
 					<li class="main-nav__item main-nav__item--arrow main-nav__item--second"><span>Акции</span>
 
-					<ul class="main-nav__dropdown main-nav__dropdown--second hidden">
-						<li class="main-nav__dropdown-item"><a href="#">Акция 1</a></li>
-						<li class="main-nav__dropdown-item"><a href="#">Акция 2</a></li>
-						<li class="main-nav__dropdown-item"><a href="#">Акция 3</a></li>
-					</ul></li>
+						<ul class="main-nav__dropdown main-nav__dropdown--second hidden">
+							<li class="main-nav__dropdown-item"><a href="#">Акция 1</a></li>
+							<li class="main-nav__dropdown-item"><a href="#">Акция 2</a></li>
+							<li class="main-nav__dropdown-item"><a href="#">Акция 3</a></li>
+						</ul>
+					</li>
 
 					<li class="main-nav__item main-nav__item--hider"><a href="#">Поддержка</a></li>
 					<li class="main-nav__item main-nav__item--hider"><a href="partners.html">Партнёрам</a></li>
@@ -223,7 +224,7 @@
 
 	<section class="partners">
 		<div class="partners__wrapper">
-		<img src="img/partners.png" alt="">
+			<img src="img/partners.png" alt="">
 			<!-- <ul class="partners__list">
 				<li class="partners__item">VISA</li>
 				<li class="partners__item">VISA</li>
@@ -284,6 +285,24 @@
 			</div>
 		</div>
 	</div>
+
+	<div id="preloader"></div>
+
+	<script type="text/javascript">
+		var preloader = document.getElementById("preloader");
+		function fadeOutnojquery(el){
+			el.style.opacity = 1;
+			var innerpreloader = setInterval(function() {
+				el.style.opacity = el.style.opacity - 0.05;
+				if (el.style.opacity <=0.05) {
+					clearInterval(innerpreloader);
+					preloader.style.display = "none";
+				}
+			},16);
+		}
+		window.onload = function(){setTimeout(function(){fadeOutnojquery(preloader);
+		},1000);};
+	</script>
 
 	<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
 

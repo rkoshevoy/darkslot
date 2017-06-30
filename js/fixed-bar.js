@@ -25,7 +25,7 @@ $(document).ready(function() {
 
 	$('.search__close').click(function() {
 		$('.search__close').css('display', 'none'),
-		$('.search__filed').focusout()
+		$('.search__field').focusout()
 	});
 
 	$('.search__field').focusout(function() {
