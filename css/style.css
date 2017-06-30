@@ -2009,6 +2009,7 @@ form * {
   }
   .fixed-bar__language {
     order: 2;
+    padding-right: 0;
   }
   .fixed-bar__language:hover {
     background-color: transparent;
