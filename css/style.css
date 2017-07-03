@@ -20,6 +20,7 @@
   src: url(../fonts/SFUIDisplay-Medium.ttf), url("../fonts/SFUIDisplay-Medium.eot?#iefix") format("embedded-opentype"), url(../fonts/SFUIDisplay-Medium.woff) format('woff');
 }
 body {
+  padding-top: 77px;
   background-color: #232323;
   color: #fff;
   font-family: SFUIRegular;
@@ -60,10 +61,15 @@ form * {
   left: 0;
   width: 100%;
   height: 100%;
-  background: #000 url(http://hello-site.ru//main/images/preloads/circles.svg) center center no-repeat;
-  background-size: 41px;
+  background: url('../img/preloader.gif') center center no-repeat;
+  background-size: 600px;
+  background-color: #0b0b12;
 }
 .header {
+  position: fixed;
+  z-index: 100;
+  top: 0;
+  width: 100%;
   background-color: #161616;
 }
 .header__wrapper {
@@ -997,14 +1003,15 @@ form * {
 }
 .search__close {
   position: absolute;
+  z-index: -1;
   right: 0;
   top: 0;
-  display: none;
   width: 50px;
   height: 50px;
   background-color: #414141;
   cursor: pointer;
   transition: 0.1s;
+  opacity: 0;
 }
 .search__close::before {
   content: '';
@@ -1562,6 +1569,292 @@ form * {
   font-size: 18px;
   font-family: SFUIBold;
 }
+.modal-registration {
+  display: flex;
+  flex-direction: row-reverse;
+  position: fixed;
+  z-index: 101;
+  top: -1000px;
+  left: 50%;
+  width: 945px;
+  padding: 20px;
+  background-image: url('../img/reg-bg.jpg');
+  background-size: cover;
+  transform: translate(-50%, -50%);
+  transition: 0.3s;
+}
+.modal-registration__character-wrapper {
+  position: absolute;
+  left: -35px;
+  top: -38px;
+  width: 400px;
+}
+.modal-registration__character {
+  width: 100%;
+}
+.modal-registration__close {
+  position: absolute;
+  right: 23px;
+  top: 28px;
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  transition: 0.1s;
+}
+.modal-registration__close::before {
+  content: '';
+  position: absolute;
+  right: -3px;
+  top: 7px;
+  width: 25px;
+  height: 2px;
+  background-color: #989898;
+  transform: rotate(45deg);
+  transition: 0.1s;
+}
+.modal-registration__close::after {
+  content: '';
+  position: absolute;
+  right: -3px;
+  top: 7px;
+  width: 25px;
+  height: 2px;
+  background-color: #989898;
+  transform: rotate(135deg);
+  transition: 0.1s;
+}
+.modal-registration__close:hover::before {
+  background-color: #fff;
+}
+.modal-registration__close:hover::after {
+  background-color: #fff;
+}
+.registration-form {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 560px;
+  margin-top: 20px;
+}
+.registration-form__header {
+  width: 100%;
+  margin-bottom: 40px;
+  font-size: 25px;
+  text-transform: uppercase;
+}
+.registration-form input {
+  font-family: SFUIRegular;
+  font-size: 14px;
+  color: #999999;
+}
+.registration-form input::-webkit-input-placeholder {
+  font-family: SFUIRegular;
+  color: #999999;
+}
+.registration-form input::-moz-placeholder {
+  font-family: SFUIRegular;
+  color: #999999;
+}
+.registration-form input:-ms-input-placeholder {
+  font-family: SFUIRegular;
+  color: #999999;
+}
+.registration-form input::placeholder {
+  font-family: SFUIRegular;
+  color: #999999;
+}
+.registration-form input[type=submit] {
+  color: #fff;
+}
+.registration-form__name,
+.registration-form__surname,
+.registration-form__password,
+.registration-form__password-confirm,
+.registration-form__code {
+  width: 270px;
+  height: 45px;
+  margin-bottom: 20px;
+  padding: 0 13px;
+  border: none;
+  background-color: #fff;
+}
+.registration-form__currency {
+  display: block;
+  position: relative;
+  width: 270px;
+  height: 45px;
+  margin-bottom: 20px;
+  padding-left: 13px;
+  padding: 0 13px;
+  border: none;
+  font-family: SFUIRegular;
+  color: #999999;
+  cursor: pointer;
+}
+.registration-form__label-checkbox {
+  display: inline-block;
+  position: relative;
+  padding-left: 30px;
+  margin-bottom: 30px;
+  font-size: 14px;
+  line-height: 20px;
+  cursor: pointer;
+}
+.registration-form__checkbox {
+  position: absolute;
+  left: 0;
+  opacity: 0;
+  cursor: pointer;
+}
+.registration-form__checkbox:not(checked) + label::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  width: 18px;
+  height: 18px;
+  border: 1px solid #e3e3e3;
+  background-color: #fff;
+}
+.registration-form__checkbox:checked + label::after {
+  content: '';
+  position: absolute;
+  top: 5px;
+  left: 3px;
+  width: 13px;
+  height: 5px;
+  border-top: 1px solid #f38084;
+  border-right: 1px solid #f38084;
+  transform: rotate(135deg);
+}
+.registration-form__button {
+  width: 100%;
+  padding: 20px;
+  border: none;
+  background-color: #ed383f;
+  font-family: SFUIMedium;
+  font-size: 14px;
+  color: #fff;
+  cursor: pointer;
+  transition: 0.1s;
+}
+.registration-form__button:hover {
+  background-color: #dd363c;
+}
+.modal-bg {
+  position: fixed;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+  opacity: 0;
+  transition: 0.3s;
+}
+.modal-enter {
+  position: fixed;
+  z-index: 101;
+  top: -1000px;
+  left: 50%;
+  display: flex;
+  flex-direction: row-reverse;
+  flex-wrap: wrap;
+  width: 735px;
+  padding: 20px;
+  transform: translate(-50%, -50%);
+  background-image: url('../img/reg-bg.jpg');
+  background-size: cover;
+  transition: 0.3s;
+}
+.modal-enter__character-wrapper {
+  position: absolute;
+  left: -42px;
+  top: -18px;
+  width: 380px;
+}
+.modal-enter__character {
+  width: 100%;
+}
+.modal-enter__close {
+  position: absolute;
+  right: 23px;
+  top: 28px;
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  transition: 0.1s;
+}
+.modal-enter__close::before {
+  content: '';
+  position: absolute;
+  right: -3px;
+  top: 7px;
+  width: 25px;
+  height: 2px;
+  background-color: #989898;
+  transform: rotate(45deg);
+  transition: 0.1s;
+}
+.modal-enter__close::after {
+  content: '';
+  position: absolute;
+  right: -3px;
+  top: 7px;
+  width: 25px;
+  height: 2px;
+  background-color: #989898;
+  transform: rotate(135deg);
+  transition: 0.1s;
+}
+.modal-enter__close:hover::before {
+  background-color: #fff;
+}
+.modal-enter__close:hover::after {
+  background-color: #fff;
+}
+.modal-enter__wrapper {
+  text-align: center;
+}
+.modal-enter__forgot-pass {
+  display: -inline-block;
+  margin: 0 auto;
+  color: #d9d9d9;
+  text-decoration: underline;
+  transition: 0.1s;
+}
+.modal-enter__forgot-pass:hover {
+  color: #fff;
+}
+.enter-form {
+  width: 350px;
+}
+.enter-form__header {
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+.enter-form__email,
+.enter-form__password {
+  width: 100%;
+  height: 45px;
+  padding: 0 13px;
+  margin-bottom: 20px;
+  border: none;
+}
+.enter-form__button {
+  width: 100%;
+  padding: 20px;
+  margin-bottom: 30px;
+  border: none;
+  background-color: #ed383f;
+  font-family: SFUIMedium;
+  font-size: 14px;
+  color: #fff;
+  cursor: pointer;
+  transition: 0.1s;
+}
+.enter-form__button:hover {
+  background-color: #dd363c;
+}
 @media (max-width: 1220px) {
   .header__wrapper {
     width: 748px;
@@ -1782,6 +2075,20 @@ form * {
   }
   .prize__wrapper {
     width: 748px;
+  }
+  .modal-registration {
+    width: 750px;
+  }
+  .modal-registration__character-wrapper {
+    top: 170px;
+    width: 200px;
+  }
+  .modal-enter {
+    width: 550px;
+  }
+  .modal-enter__character-wrapper {
+    top: 150px;
+    width: 200px;
   }
 }
 @media (max-width: 788px) {
@@ -2172,6 +2479,35 @@ form * {
   }
   .prize__back-text {
     font-size: 40px;
+  }
+  .modal-registration {
+    width: calc(100% - 20px);
+  }
+  .modal-registration__character-wrapper {
+    display: none;
+  }
+  .registration-form__name,
+  .registration-form__surname,
+  .registration-form__password,
+  .registration-form__password-confirm,
+  .registration-form__code {
+    width: 100%;
+    height: 30px;
+  }
+  .registration-form__currency {
+    width: 100%;
+    height: 30px;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+  .modal-enter {
+    width: calc(100% - 20px);
+  }
+  .modal-enter__character-wrapper {
+    display: none;
+  }
+  .enter-form {
+    width: 100%;
   }
 }
 @media (max-width: 300px) {

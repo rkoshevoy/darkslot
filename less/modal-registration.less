@@ -1,0 +1,224 @@
+.modal-registration {
+	display: flex;
+	flex-direction: row-reverse;
+	position: fixed;
+	z-index: 101;
+	top: -1000px;
+	// top: 50%;
+	left: 50%;
+	width: 945px;
+	padding: 20px;
+	background-image: url('../img/reg-bg.jpg');
+	background-size: cover;
+	transform: translate(-50%, -50%);
+	transition: 0.3s;
+
+	@media @tablet {
+		width: 750px;
+	}
+
+	@media @mobile {
+		width: ~"calc(100% - 20px)";
+	}
+
+	&__character-wrapper {
+		position: absolute;
+		left: -35px;
+		top: -38px;
+		width: 400px;
+
+		@media @tablet {
+			top: 170px;
+			width: 200px;
+		}
+
+		@media @mobile {
+			display: none;
+		}
+	}
+
+	&__character {
+		width: 100%;
+	}
+
+	&__close {
+		position: absolute;
+		right: 23px;
+		top: 28px;
+		width: 20px;
+		height: 20px;
+		cursor: pointer;
+		transition: 0.1s;
+
+		&::before {
+			content: '';
+			position: absolute;
+			right: -3px;
+			top: 7px;
+			width: 25px;
+			height: 2px;
+			background-color: #989898;
+			transform: rotate(45deg);
+			transition: 0.1s;
+		}
+
+		&::after {
+			content: '';
+			position: absolute;
+			right: -3px;
+			top: 7px;
+			width: 25px;
+			height: 2px;
+			background-color: #989898;
+			transform: rotate(135deg);
+			transition: 0.1s;
+		}
+
+		&:hover {
+
+			&::before {
+				background-color: #fff;
+			}
+
+			&::after {
+				background-color: #fff;
+			}
+		}
+	}
+}
+
+.registration-form {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	width: 560px;
+	margin-top: 20px;
+
+	&__header {
+		width: 100%;
+		margin-bottom: 40px;
+		font-size: 25px;
+		text-transform: uppercase;
+	}
+
+	input {
+		font-family: SFUIRegular;
+		font-size: 14px;
+		color: #999999;
+
+		&::placeholder {
+			font-family: SFUIRegular;
+			color: #999999;
+		}
+	}
+
+	input[type=submit] {
+		color: #fff;
+	}
+
+	&__name, 
+	&__surname,
+	&__password,
+	&__password-confirm,
+	&__code {
+		width: 270px;
+		height: 45px;
+		margin-bottom: 20px;
+		padding: 0 13px;
+		border: none;
+		background-color: #fff;
+
+		@media @mobile {
+			width: 100%;
+			height: 30px;
+		}
+	}
+
+	&__currency {
+		display: block;
+		position: relative;
+		width: 270px;
+		height: 45px;
+		margin-bottom: 20px;
+		padding-left: 13px;
+		padding: 0 13px; 
+		border: none;
+		font-family: SFUIRegular;
+		color: #999999;
+		cursor: pointer;
+
+		@media @mobile {
+			width: 100%;
+			height: 30px;
+			padding-top: 0;
+			padding-bottom: 0;
+		}
+	}
+
+	&__label-checkbox {
+		display: inline-block;
+		position: relative;
+		padding-left: 30px;
+		margin-bottom: 30px;
+		font-size: 14px;
+		line-height: 20px;
+		cursor: pointer;
+	}
+
+	&__checkbox {
+		position: absolute;
+		left: 0;
+		opacity: 0;
+		cursor: pointer;
+	}
+
+	&__checkbox:not(checked) + label::before {
+		content: '';
+		position: absolute;
+		left: 0;
+		width: 18px;
+		height: 18px;
+		border: 1px solid #e3e3e3;
+		background-color: #fff;
+	}
+
+	&__checkbox:checked + label::after {
+		content: '';
+		position: absolute;
+		top: 5px;
+		left: 3px;
+		width: 13px;
+		height: 5px;
+		border-top: 1px solid #f38084;
+		border-right: 1px solid #f38084;
+		transform: rotate(135deg);
+	}
+
+	&__button {
+		width: 100%;
+		padding: 20px;
+		border: none;
+		background-color: #ed383f;
+		font-family: SFUIMedium;
+		font-size: 14px;
+		color: #fff;
+		cursor: pointer;
+		transition: 0.1s;
+
+		&:hover {
+			background-color: #dd363c;
+		}
+	}
+}
+
+.modal-bg {
+	position: fixed;
+	z-index: -1;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: #000;
+	opacity: 0;
+	transition: 0.3s;
+}

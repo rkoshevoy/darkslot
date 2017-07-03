@@ -1,7 +1,12 @@
 body {
+	padding-top: 77px;
 	background-color: #232323;
 	color: #fff;
 	font-family: SFUIRegular;
+
+	// @media (max-width: 788px) {
+	// 	padding-top: 60px;
+	// }
 }
 
 * {
@@ -46,6 +51,11 @@ form * {
 	left: 0;
 	width: 100%;
 	height: 100%;
-	background: #000 url(http://hello-site.ru//main/images/preloads/circles.svg) center center no-repeat;
-	background-size: 41px;
+	background: url('../img/preloader.gif') center center no-repeat;
+	background-size: 600px;
+	background-color: #0b0b12;
+
+	// @media (max-width: 788px) {
+	// 	background-size: 100% auto;
+	// }
 }

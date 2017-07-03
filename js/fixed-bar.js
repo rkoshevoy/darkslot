@@ -20,15 +20,15 @@ $(document).ready(function() {
 	// крестик поля поиска
 
 	$('.search__field').focus(function() {
-		$('.search__close').css('display', 'block')
+		$('.search__close').css('opacity', '1').css('z-index', '20')
 	});
 
 	$('.search__close').click(function() {
-		$('.search__close').css('display', 'none'),
+		$('.search__close').css('opacity', '0').css('z-index', '-1'),
 		$('.search__field').focusout()
 	});
 
 	$('.search__field').focusout(function() {
-		$('.search__close').css('display', 'none')
+		$('.search__close').css('opacity', '0').css('z-index', '-1')
 	});
 });
