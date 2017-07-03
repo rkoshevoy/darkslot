@@ -7,13 +7,22 @@
 
 	&__image-wrapper {
 		width: 100%;
+
+		@media @mobile {
+			position: relative;
+			height: 55vw;
+			overflow: hidden;
+		}
 	}
 
 	&__image {
 		width: 100%;
 
 		@media @mobile {
-			width: 100%;
+			position: absolute;
+			left: -35%;
+			height: 100%;
+			width: 170%;
 		}
 	}
 
@@ -41,7 +50,7 @@
 		}
 
 		@media @mobile {
-		transform: translatey(110%);			
+			transform: translatey(130%);			
 		}
 	}
 

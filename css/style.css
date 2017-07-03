@@ -1832,8 +1832,16 @@ form * {
   .main-nav__dropdown {
     top: -1px;
   }
+  .slide__image-wrapper {
+    position: relative;
+    height: 55vw;
+    overflow: hidden;
+  }
   .slide__image {
-    width: 100%;
+    position: absolute;
+    left: -35%;
+    height: 100%;
+    width: 170%;
   }
   .slide__wrapper {
     width: 100%;
@@ -1841,7 +1849,7 @@ form * {
     padding-left: 10px;
   }
   .slide__text {
-    transform: translatey(110%);
+    transform: translatey(130%);
   }
   .slide__upper-text {
     margin-bottom: 10px;
