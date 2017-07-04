@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+	<title>Dark Slot</title>
+	<link rel="shortcut icon" href="img/favicon.png" type="image/png">
+	<link rel="stylesheet" href="css/style.min.css">
+	<link rel="stylesheet" href="css/slick.css">
+	<link rel="stylesheet" href="css/slick-theme.css">
+</head>
+<body>
+	
+	<section class="error">
+		<div class="error__wrapper">
+			<div class="error__character-wrapper">
+				<img src="img/brain-monster.png" alt="brain monster!" class="error__character">
+			</div>
+
+			<div class="error-text">
+				<h1 class="error-text__header">Что-то пошло не так</h1>
+				<span class="error-text__bg-text">#УУУУПС</span>
+				<h2 class="error-text__underheader">Ты не должен здесь находиться.</h2>
+				<p class="error-text__bottom">Нажми на любое место сайта или кнопку Назад, чтобы вернуться в лобби.</p>
+			</div>
+		</div>
+	</section>
+
+	<!-- <div id="preloader"></div> -->
+
+	<script type="text/javascript">
+		var preloader = document.getElementById("preloader");
+		function fadeOutnojquery(el){
+			el.style.opacity = 1;
+			var innerpreloader = setInterval(function() {
+				el.style.opacity = el.style.opacity - 0.05;
+				if (el.style.opacity <=0.05) {
+					clearInterval(innerpreloader);
+					preloader.style.display = "none";
+				}
+			},16);
+		}
+		window.onload = function(){setTimeout(function(){fadeOutnojquery(preloader);
+		},1000);};
+	</script>
+
+	<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+
+	<script type="text/javascript" src="js/slick.min.js"></script>
+
+	<script type="text/javascript">
+		$('.slider').slick({
+			infinite: true,
+			autoplay: true,
+			autoplaySpeed: 3000,
+			slidesToShow: 1,
+			arrows: true,
+			responsive: [
+			{
+				breakpoint: 788,
+				settings: {
+					infinite: true,
+					autoplay: true,
+					autoplaySpeed: 3000,
+					slidesToShow: 1,
+					arrows: false
+				}
+			}
+			]
+		});
+
+		$('.top-games__wrapper').slick({
+			infinite: true,
+			autoplay: true,
+			autoplaySpeed: 3000,
+			slidesToShow: 7,
+			arrows: false
+		});
+	</script>
+
+	<script type="text/javascript" src="js/tabs.js"></script>
+
+	<script type="text/javascript" src="js/mobile-menu.js"></script>
+
+	<script type="text/javascript" src="js/fixed-bar.js"></script>
+
+	<script type="text/javascript" src="js/modals.js"></script>
+
+</body>
+</html>

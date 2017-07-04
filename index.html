@@ -79,11 +79,31 @@
 		<section class="slider">
 			<div class="slide">
 				<div class="slide__image-wrapper">
-					<img src="img/slide-image.png" alt="slide" class="slide__image">
+					<img src="img/slide-image-2.png" alt="slide" class="slide__image">
 				</div>
-				<div class="slide__wrapper">
-					<div class="slide__text">
-						<button class="slide__button">Подробнее</button>
+
+				<div class="slide__form-wrapper">
+
+					<form action="#" class="slide-reg">
+						<input type="email" placeholder="Email" class="slide-reg__email">
+						<input type="text" placeholder="Никнейм" class="slide-reg__nickname">
+						<select name="" id="slide-reg-select" class="slide-reg__select">
+							<option value="$">$</option>
+							<option value="$$">$$</option>
+							<option value="$$$">$$$</option>
+						</select>
+						<input type="password" placeholder="Пароль" class="slide-reg__password">
+
+						<input type="checkbox" id="slide-checkbox" class="slide-reg__checkbox">
+						<label for="slide-checkbox" class="slide-reg__label-checkbox">Мне 18 лет и я принимаю Положения и условия</label>
+
+						<input type="submit" class="slide-reg__button" value="Регистрация">
+					</form>
+
+					<div class="slide-bonus">
+						<span class="slide-bonus__first-line">20</span>
+						<span class="slide-bonus__second-line">фриспинов</span>
+						<span class="slide-bonus__third-line">- за регистрацию -</span>
 					</div>
 				</div>
 			</div>
@@ -141,7 +161,7 @@
 				</div>
 
 				<div class="tab tab--second">
-				<h2 class="tab__header">Топ игры</h2>
+					<h2 class="tab__header">Топ игры</h2>
 					<button class="tab__button">Случайная игра</button>
 
 					<div class="tab__variants-wrapper">
@@ -427,7 +447,7 @@
 		<form action="#" class="registration-form">
 			<h2 class="registration-form__header">Регистрация</h2>
 			<input type="email" name="email" placeholder="Email" class="registration-form__name">
-			<input type="text" name="surname" placeholder="Фамилия" class="registration-form__surname">
+			<input type="text" name="nickname" placeholder="Никнейм" class="registration-form__nickname">
 			<input type="password" name="password" placeholder="Пароль" class="registration-form__password">
 			<select name="currency" id="currency" class="registration-form__currency">
 				<option value="Валюта" selected disabled>Валюта</option>
@@ -487,7 +507,7 @@
 
 	<div class="modal-bg"></div> 
 
-	<div id="preloader"></div>
+	<!-- <div id="preloader"></div> -->
 
 	<script type="text/javascript">
 		var preloader = document.getElementById("preloader");

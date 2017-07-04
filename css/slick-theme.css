@@ -40,3 +40,7 @@
     transform: translate(360px, -20px) rotate(45deg);
   }
 }
+
+.slick-slide {
+  outline: none !important;
+}
