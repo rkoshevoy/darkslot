@@ -20,7 +20,6 @@
   src: url(../fonts/SFUIDisplay-Medium.ttf), url("../fonts/SFUIDisplay-Medium.eot?#iefix") format("embedded-opentype"), url(../fonts/SFUIDisplay-Medium.woff) format('woff');
 }
 body {
-  padding-top: 77px;
   background-color: #232323;
   color: #fff;
   font-family: SFUIRegular;
@@ -45,10 +44,8 @@ form * {
   -webkit-appearance: none;
   outline: none;
 }
-.clearfix {
-  content: '';
-  display: block;
-  clear: both;
+.main-wrapper {
+  margin-top: 60px;
 }
 .hidden {
   display: none;
@@ -62,7 +59,7 @@ form * {
   width: 100%;
   height: 100%;
   background: url('../img/preloader.gif') center center no-repeat;
-  background-size: 600px;
+  background-size: 100% auto;
   background-color: #0b0b12;
 }
 .header {
@@ -1645,7 +1642,7 @@ form * {
 .registration-form input {
   font-family: SFUIRegular;
   font-size: 14px;
-  color: #999999;
+  color: #000;
 }
 .registration-form input::-webkit-input-placeholder {
   font-family: SFUIRegular;
@@ -1749,7 +1746,6 @@ form * {
   height: 100%;
   background-color: #000;
   opacity: 0;
-  transition: 0.3s;
 }
 .modal-enter {
   position: fixed;
@@ -1839,6 +1835,33 @@ form * {
   padding: 0 13px;
   margin-bottom: 20px;
   border: none;
+  font-family: SFUIRegular;
+  color: #000;
+  font-size: 14px;
+}
+.enter-form__email::-webkit-input-placeholder,
+.enter-form__password::-webkit-input-placeholder {
+  font-family: SFUIRegular;
+  color: #999999;
+  font-size: 14px;
+}
+.enter-form__email::-moz-placeholder,
+.enter-form__password::-moz-placeholder {
+  font-family: SFUIRegular;
+  color: #999999;
+  font-size: 14px;
+}
+.enter-form__email:-ms-input-placeholder,
+.enter-form__password:-ms-input-placeholder {
+  font-family: SFUIRegular;
+  color: #999999;
+  font-size: 14px;
+}
+.enter-form__email::placeholder,
+.enter-form__password::placeholder {
+  font-family: SFUIRegular;
+  color: #999999;
+  font-size: 14px;
 }
 .enter-form__button {
   width: 100%;
@@ -1854,6 +1877,139 @@ form * {
 }
 .enter-form__button:hover {
   background-color: #dd363c;
+}
+.modal-contact {
+  display: flex;
+  flex-direction: row-reverse;
+  position: fixed;
+  z-index: 101;
+  top: -1000px;
+  left: 50%;
+  width: 800px;
+  padding: 30px;
+  background-image: url('../img/reg-bg.jpg');
+  background-size: cover;
+  transform: translate(-50%, -50%);
+  transition: 0.3s;
+}
+.modal-contact__character-wrapper {
+  position: absolute;
+  z-index: -1;
+  left: -48px;
+  top: -17px;
+  width: 390px;
+}
+.modal-contact__character {
+  width: 100%;
+}
+.modal-contact__close {
+  position: absolute;
+  right: 23px;
+  top: 28px;
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  transition: 0.1s;
+}
+.modal-contact__close::before {
+  content: '';
+  position: absolute;
+  right: -3px;
+  top: 7px;
+  width: 25px;
+  height: 2px;
+  background-color: #989898;
+  transform: rotate(45deg);
+  transition: 0.1s;
+}
+.modal-contact__close::after {
+  content: '';
+  position: absolute;
+  right: -3px;
+  top: 7px;
+  width: 25px;
+  height: 2px;
+  background-color: #989898;
+  transform: rotate(135deg);
+  transition: 0.1s;
+}
+.modal-contact__close:hover::before {
+  background-color: #fff;
+}
+.modal-contact__close:hover::after {
+  background-color: #fff;
+}
+.contact-form {
+  width: 460px;
+}
+.contact-form__header {
+  margin-top: 20px;
+  margin-bottom: 40px;
+  text-transform: uppercase;
+}
+.contact-form__email,
+.contact-form__text-field {
+  width: 100%;
+  margin-bottom: 20px;
+  border: none;
+  font-family: SFUIRegular;
+  color: #000;
+  font-size: 14px;
+}
+.contact-form__email::-webkit-input-placeholder,
+.contact-form__text-field::-webkit-input-placeholder {
+  font-family: SFUIRegular;
+  color: #999999;
+  font-size: 14px;
+}
+.contact-form__email::-moz-placeholder,
+.contact-form__text-field::-moz-placeholder {
+  font-family: SFUIRegular;
+  color: #999999;
+  font-size: 14px;
+}
+.contact-form__email:-ms-input-placeholder,
+.contact-form__text-field:-ms-input-placeholder {
+  font-family: SFUIRegular;
+  color: #999999;
+  font-size: 14px;
+}
+.contact-form__email::placeholder,
+.contact-form__text-field::placeholder {
+  font-family: SFUIRegular;
+  color: #999999;
+  font-size: 14px;
+}
+.contact-form__email {
+  height: 45px;
+  padding: 0 13px;
+}
+.contact-form__text-field {
+  height: 120px;
+  padding: 17px 13px;
+  resize: none;
+}
+.contact-form__button {
+  width: 100%;
+  padding: 20px;
+  border: none;
+  background-color: #ed383f;
+  font-family: SFUIMedium;
+  font-size: 14px;
+  color: #fff;
+  cursor: pointer;
+  transition: 0.1s;
+}
+.contact-form__button:hover {
+  background-color: #dd363c;
+}
+@media (min-width: 788px) {
+  .main-wrapper {
+    margin-top: 77px;
+  }
+  #preloader {
+    background-size: 600px;
+  }
 }
 @media (max-width: 1220px) {
   .header__wrapper {
@@ -2089,6 +2245,20 @@ form * {
   .modal-enter__character-wrapper {
     top: 150px;
     width: 200px;
+  }
+  .modal-contact {
+    width: 600px;
+  }
+  .modal-contact__character-wrapper {
+    width: 220px;
+    top: 220px;
+    left: -10px;
+  }
+  .contact-form {
+    width: 350px;
+  }
+  .contact-form {
+    width: 100%;
   }
 }
 @media (max-width: 788px) {
@@ -2486,6 +2656,9 @@ form * {
   .modal-registration__character-wrapper {
     display: none;
   }
+  .registration-form {
+    width: 100%;
+  }
   .registration-form__name,
   .registration-form__surname,
   .registration-form__password,
@@ -2493,12 +2666,17 @@ form * {
   .registration-form__code {
     width: 100%;
     height: 30px;
+    margin-bottom: 15px;
   }
   .registration-form__currency {
     width: 100%;
     height: 30px;
+    margin-bottom: 15px;
     padding-top: 0;
     padding-bottom: 0;
+  }
+  .registration-form__label-checkbox {
+    margin-bottom: 20px;
   }
   .modal-enter {
     width: calc(100% - 20px);
@@ -2508,6 +2686,12 @@ form * {
   }
   .enter-form {
     width: 100%;
+  }
+  .modal-contact {
+    width: calc(100% - 20px);
+  }
+  .modal-contact__character-wrapper {
+    display: none;
   }
 }
 @media (max-width: 300px) {

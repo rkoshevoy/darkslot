@@ -30,6 +30,22 @@ $(document).ready(function() {
 		$('.main-nav__dropdown--first').addClass('hidden')
 	});
 
+	// крестик меню 
+
+	$('.main-nav__menu-button').click(function() {
+		$('#first-line').toggleClass('main-nav__menu-line--first'),
+		$('#second-line').toggleClass('main-nav__menu-line--hidden'),
+		$('#third-line').toggleClass('main-nav__menu-line--third')
+	});
+
+	$('#menu-support').click(function() {
+		$('#first-line').toggleClass('main-nav__menu-line--first'),
+		$('#second-line').toggleClass('main-nav__menu-line--hidden'),
+		$('#third-line').toggleClass('main-nav__menu-line--third')
+	});
+
+	//fixed bar
+
 	$('.fixed-bar__hider').click(function() {
 		$('.fixed-bar').addClass('fixed-bar--collapsed'),
 		$('.top-games').addClass('hidden')
@@ -56,14 +72,6 @@ $(document).ready(function() {
 
 	$('.main-nav__search-field').focusout(function() {
 		$('.main-nav__search-close').css('display', 'none')
-	});
-
-	// крестик меню 
-
-	$('.main-nav__menu-button').click(function() {
-		$('#first-line').toggleClass('main-nav__menu-line--first'),
-		$('#second-line').toggleClass('main-nav__menu-line--hidden'),
-		$('#third-line').toggleClass('main-nav__menu-line--third')
 	});
 
 });
