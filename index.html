@@ -82,28 +82,34 @@
 					<img src="img/slide-image-2.png" alt="slide" class="slide__image">
 				</div>
 
-				<div class="slide__form-wrapper">
+				<div class="slide__form-bg">
+					<div class="slide__form-wrapper">
 
-					<form action="#" class="slide-reg">
-						<input type="email" placeholder="Email" class="slide-reg__email">
-						<input type="text" placeholder="Никнейм" class="slide-reg__nickname">
-						<select name="" id="slide-reg-select" class="slide-reg__select">
-							<option value="$">$</option>
-							<option value="$$">$$</option>
-							<option value="$$$">$$$</option>
-						</select>
-						<input type="password" placeholder="Пароль" class="slide-reg__password">
+						<div class="slide-bonus">
+							<span class="slide-bonus__first-line">20</span>
+							<span class="slide-bonus__second-line">фриспинов</span>
+							<span class="slide-bonus__third-line">- за регистрацию -</span>
+						</div>
 
-						<input type="checkbox" id="slide-checkbox" class="slide-reg__checkbox">
-						<label for="slide-checkbox" class="slide-reg__label-checkbox">Мне 18 лет и я принимаю Положения и условия</label>
+						<form action="#" class="slide-reg">
+							<input type="email" placeholder="Email" class="slide-reg__email">
+							<input type="text" placeholder="Никнейм" class="slide-reg__nickname">
+							<select name="" id="slide-reg-select" class="slide-reg__select">
+								<option value="currency" selected disabled>Валюта</option>
+								<option value="$">$</option>
+								<option value="$$">$$</option>
+								<option value="$$$">$$$</option>
+							</select>
+							<input type="password" placeholder="Пароль" class="slide-reg__password">
+							<input type="password" placeholder="Подтверждение пароля" class="slide-reg__password-confirm">
 
-						<input type="submit" class="slide-reg__button" value="Регистрация">
-					</form>
+							<input type="checkbox" id="slide-checkbox" class="slide-reg__checkbox">
+							<label for="slide-checkbox" class="slide-reg__label-checkbox">Мне 18 лет и я принимаю Положения и условия</label>
 
-					<div class="slide-bonus">
-						<span class="slide-bonus__first-line">20</span>
-						<span class="slide-bonus__second-line">фриспинов</span>
-						<span class="slide-bonus__third-line">- за регистрацию -</span>
+							<input type="submit" class="slide-reg__button" value="Регистрация">
+						</form>
+
+						<button class="slide__reg-button">Регистрация</button>
 					</div>
 				</div>
 			</div>
@@ -566,6 +572,8 @@
 	<script type="text/javascript" src="js/fixed-bar.js"></script>
 
 	<script type="text/javascript" src="js/modals.js"></script>
+
+	<script type="text/javascript" src="js/reg-password.js"></script>
 
 </body>
 </html>

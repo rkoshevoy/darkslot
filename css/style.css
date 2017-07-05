@@ -267,6 +267,7 @@ form * {
   text-transform: uppercase;
 }
 .slide__button {
+  font-family: SFUIMedium;
   padding: 25px 40px;
   background-color: #ed383f;
   font-size: 16px;
@@ -275,21 +276,28 @@ form * {
 .slide__button:hover {
   background-color: #ec262e;
 }
-.slide__form-wrapper {
+.slide__form-bg {
   display: flex;
   flex-direction: row-reverse;
   align-items: center;
   position: absolute;
-  top: 0;
   right: calc(50% - 190px);
-  height: 100%;
+  top: 0;
   width: calc(50% + 190px);
-  padding: 50px;
+  height: 100%;
   background-color: rgba(0, 0, 0, 0.5);
+}
+.slide__form-wrapper {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  width: 780px;
+}
+.slide__reg-button {
+  display: none;
 }
 .slide-bonus {
   width: 395px;
-  margin-top: -30px;
   text-align: center;
 }
 .slide-bonus > span {
@@ -309,12 +317,14 @@ form * {
   font-size: 21px;
 }
 .slide-reg {
+  position: relative;
   width: 330px;
 }
 .slide-reg__email,
 .slide-reg__nickname,
 .slide-reg__select,
-.slide-reg__password {
+.slide-reg__password,
+.slide-reg__password-confirm {
   width: 100%;
   margin-bottom: 18px;
   border: none;
@@ -325,30 +335,44 @@ form * {
 .slide-reg__email::-webkit-input-placeholder,
 .slide-reg__nickname::-webkit-input-placeholder,
 .slide-reg__select::-webkit-input-placeholder,
-.slide-reg__password::-webkit-input-placeholder {
+.slide-reg__password::-webkit-input-placeholder,
+.slide-reg__password-confirm::-webkit-input-placeholder {
   font-family: SFUIRegular;
   color: #999999;
 }
 .slide-reg__email::-moz-placeholder,
 .slide-reg__nickname::-moz-placeholder,
 .slide-reg__select::-moz-placeholder,
-.slide-reg__password::-moz-placeholder {
+.slide-reg__password::-moz-placeholder,
+.slide-reg__password-confirm::-moz-placeholder {
   font-family: SFUIRegular;
   color: #999999;
 }
 .slide-reg__email:-ms-input-placeholder,
 .slide-reg__nickname:-ms-input-placeholder,
 .slide-reg__select:-ms-input-placeholder,
-.slide-reg__password:-ms-input-placeholder {
+.slide-reg__password:-ms-input-placeholder,
+.slide-reg__password-confirm:-ms-input-placeholder {
   font-family: SFUIRegular;
   color: #999999;
 }
 .slide-reg__email::placeholder,
 .slide-reg__nickname::placeholder,
 .slide-reg__select::placeholder,
-.slide-reg__password::placeholder {
+.slide-reg__password::placeholder,
+.slide-reg__password-confirm::placeholder {
   font-family: SFUIRegular;
   color: #999999;
+}
+.slide-reg__password {
+  transition: 0.3s;
+}
+.slide-reg__password-confirm {
+  position: absolute;
+  z-index: -1;
+  top: 172px;
+  opacity: 0;
+  transition: 0.3s;
 }
 .slide-reg__select {
   font-family: SFUIRegular;
@@ -396,7 +420,7 @@ form * {
   border: none;
   background-color: #ed383f;
   font-family: SFUIMedium;
-  font-size: 14px;
+  font-size: 16px;
   color: #fff;
   cursor: pointer;
   transition: 0.1s;
@@ -1707,7 +1731,7 @@ form * {
   background-image: url('../img/reg-bg.jpg');
   background-size: cover;
   transform: translate(-50%, -50%);
-  transition: 0.3s;
+  transition: 0.6s;
 }
 .modal-registration__character-wrapper {
   position: absolute;
@@ -1797,7 +1821,7 @@ form * {
 .registration-form__password,
 .registration-form__password-confirm,
 .registration-form__code {
-  width: 270px;
+  width: 240px;
   height: 45px;
   margin-bottom: 20px;
   padding: 0 13px;
@@ -1807,7 +1831,7 @@ form * {
 .registration-form__currency {
   display: block;
   position: relative;
-  width: 270px;
+  width: 240px;
   height: 45px;
   margin-bottom: 20px;
   padding-left: 13px;
@@ -1889,7 +1913,7 @@ form * {
   transform: translate(-50%, -50%);
   background-image: url('../img/reg-bg.jpg');
   background-size: cover;
-  transition: 0.3s;
+  transition: 0.6s;
 }
 .modal-enter__character-wrapper {
   position: absolute;
@@ -2019,7 +2043,7 @@ form * {
   background-image: url('../img/reg-bg.jpg');
   background-size: cover;
   transform: translate(-50%, -50%);
-  transition: 0.3s;
+  transition: 0.6s;
 }
 .modal-contact__character-wrapper {
   position: absolute;
@@ -2236,7 +2260,7 @@ form * {
     padding: 0;
     border: 1px solid #000;
     background-color: #161616;
-    transition: 0.3s;
+    transition: 0.6s;
   }
   .main-nav__list--show {
     top: 58px;
@@ -2279,7 +2303,44 @@ form * {
   .slide__header {
     font-size: 40px;
   }
+  .slide__form-bg {
+    width: calc(50% + 100px);
+    right: calc(50% - 100px);
+  }
   .slide__form-wrapper {
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 470px;
+  }
+  .slide__form-wrapper {
+    width: 100%;
+  }
+  .slide__reg-button {
+    display: block;
+    width: 300px;
+    padding: 18px 20px;
+    border: none;
+    background-color: #ed383f;
+    font-family: SFUIMedium;
+    font-size: 16px;
+    color: #fff;
+    cursor: pointer;
+    transition: 0.1s;
+  }
+  .slide__reg-button:hover {
+    background-color: #dd363c;
+  }
+  .slide-bonus__first-line {
+    font-size: 90px;
+  }
+  .slide-bonus__second-line {
+    margin-bottom: 5px;
+    font-size: 30px;
+  }
+  .slide-bonus__third-line {
+    font-size: 16px;
+  }
+  .slide-reg {
     display: none;
   }
   .tabs__wrapper {
@@ -2413,11 +2474,14 @@ form * {
     width: 748px;
   }
   .modal-registration {
-    width: 750px;
+    width: 700px;
   }
   .modal-registration__character-wrapper {
     top: 170px;
     width: 200px;
+  }
+  .registration-form {
+    width: 500px;
   }
   .modal-enter {
     width: 550px;
@@ -2522,6 +2586,17 @@ form * {
   .slide__button {
     padding: 8px 10px;
   }
+  .slide__form-bg {
+    width: 100%;
+    right: auto;
+  }
+  .slide__reg-button {
+    width: auto;
+    padding: 8px 10px;
+  }
+  .slide-bonus__first-line {
+    font-size: 40px;
+  }
   .slide-reg__label-checkbox {
     margin-bottom: 20px;
   }
@@ -2609,6 +2684,10 @@ form * {
     text-align: center;
     padding-top: 100px;
     padding-bottom: 400px;
+  }
+  .deposites__header {
+    font-size: 32px;
+    line-height: 40px;
   }
   .deposites__image-wrapper {
     width: 300px;

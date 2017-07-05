@@ -85,6 +85,7 @@
 	}
 
 	&__button {
+		font-family: SFUIMedium;
 		padding: 25px 40px;
 		background-color: #ed383f;
 		font-size: 16px;
@@ -99,27 +100,74 @@
 		}
 	}
 
-	&__form-wrapper {
+	&__form-bg {
 		display: flex;
 		flex-direction: row-reverse;
 		align-items: center;
 		position: absolute;
-		top: 0;
 		right: ~"calc(50% - 190px)";
-		height: 100%;
+		top: 0;
 		width: ~"calc(50% + 190px)";
-		padding: 50px;
+		height: 100%;
 		background-color: rgba(0, 0, 0, 0.5);
 
 		@media @tablet {
-			display: none;
+			width: ~"calc(50% + 100px)";
+			right: ~"calc(50% - 100px)";
+		}
+
+		@media @mobile {
+			width: 100%;
+			right: auto;
+		}
+	}
+
+	&__form-wrapper {
+		display: flex;
+		align-items: center;
+		height: 100%;
+		width: 780px;
+
+		@media @tablet {
+			flex-wrap: wrap;
+			justify-content: center;
+			width: 470px;
+		}
+
+		@media @tablet {
+			width: 100%;
+		}
+	}
+
+	&__reg-button {
+		display: none;
+
+		@media @tablet {
+			display: block;
+			width: 300px;
+			padding: 18px 20px;
+			border: none;
+			background-color: #ed383f;
+			font-family: SFUIMedium;
+			font-size: 16px;
+			color: #fff;
+			cursor: pointer;
+			transition: 0.1s;
+
+			&:hover {
+				background-color: #dd363c;
+			}
+		}
+
+		@media @mobile {
+			width: auto;
+			padding: 8px 10px;
 		}
 	}
 }
 
 .slide-bonus {
 	width: 395px;
-	margin-top: -30px;
 	text-align: center;
 
 	> span {
@@ -129,6 +177,14 @@
 	&__first-line {
 		font-family: SFUIHeavy;
 		font-size: 175px;
+
+		@media @tablet {
+			font-size: 90px;
+		}
+
+		@media @mobile {
+			font-size: 40px;
+		}
 	}
 
 	&__second-line {
@@ -136,20 +192,35 @@
 		margin-bottom: 10px;
 		font-size: 38px;
 		text-transform: uppercase;
+
+		@media @tablet {
+		margin-bottom: 5px;
+			font-size: 30px;
+		}
 	}
 
 	&__third-line {
 		font-size: 21px;
+
+		@media @tablet {
+			font-size: 16px;
+		}
 	}
 }
 
 .slide-reg {
+	position: relative;
 	width: 330px;
+
+	@media @tablet {
+		display: none;
+	}
 
 	&__email,
 	&__nickname,
 	&__select,
-	&__password {
+	&__password,
+	&__password-confirm {
 		width: 100%;
 		margin-bottom: 18px;
 		border: none;
@@ -161,6 +232,18 @@
 			font-family: SFUIRegular;
 			color: #999999;
 		}
+	}
+
+	&__password {
+		transition: 0.3s;
+	}
+
+	&__password-confirm {
+		position: absolute;
+		z-index: -1;
+		top: 172px;
+		opacity: 0;
+		transition: 0.3s;
 	}
 
 	&__select {
@@ -218,7 +301,7 @@
 		border: none;
 		background-color: #ed383f;
 		font-family: SFUIMedium;
-		font-size: 14px;
+		font-size: 16px;
 		color: #fff;
 		cursor: pointer;
 		transition: 0.1s;
