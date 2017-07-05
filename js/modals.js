@@ -5,12 +5,17 @@ $(document).ready(function(){
 		$('.modal-registration').css('top', '50%')
 	});
 
+	$('.main-nav__mobile-reg').click(function() {
+		$('.modal-bg').css('opacity', '0.8').css('z-index', '100'),
+		$('.modal-registration').css('top', '50%')
+	});
+
 	$('.slide__reg-button').click(function() {
 		$('.modal-bg').css('opacity', '0.8').css('z-index', '100'),
 		$('.modal-registration').css('top', '50%')
 	});
 
-	$('.main-nav__mobile-reg').click(function() {
+	$('.registration__reg-button').click(function() {
 		$('.modal-bg').css('opacity', '0.8').css('z-index', '100'),
 		$('.modal-registration').css('top', '50%')
 	});

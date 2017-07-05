@@ -1,0 +1,122 @@
+.registration {
+	background-image: url('../img/wood-bg.png');
+	background-size: cover;
+	background-position: bottom;
+
+	&__wrapper {
+		position: relative;
+		display: flex;
+		flex-direction: row-reverse;
+		width: 1200px;
+		margin: 0 auto;
+		padding-top: 50px;
+		padding-bottom: 40px;
+
+		@media @tablet {
+			width: 748px;
+			flex-wrap: wrap;
+			flex-direction: row;
+			justify-content: center;
+		}
+
+		@media @mobile {
+			.mobile-wrap;
+		}
+	}
+
+	&__character-wrapper {
+		position: absolute;
+		top: -30px;
+		left: 350px;
+		width: 450px;
+
+		@media @tablet {
+			display: none;
+		}
+	}
+
+	&__character {
+		width: 100%;
+	}
+
+	&__reg-button {
+		display: none;
+
+		@media @tablet {
+			display: block;
+			width: 300px;
+			padding: 18px 20px;
+			border: none;
+			background-color: #ed383f;
+			font-family: SFUIMedium;
+			font-size: 16px;
+			color: #fff;
+			cursor: pointer;
+			transition: 0.1s;
+
+			&:hover {
+				background-color: #dd363c;
+			}
+		}
+
+		@media @mobile {
+			width: auto;
+		}
+	}
+}
+
+.registration-bonus {
+	position: absolute;
+	top: -43px;
+	left: 0;
+	width: 580px;
+	padding-top: 50px;
+	padding-right: 200px;
+	padding-bottom: 60px;
+	padding-left: 30px;
+	background-color: rgba(237, 56, 63, 0.9);
+
+	@media @tablet {
+		position: relative;
+		display: block;
+		padding: 30px;
+		text-align: center;
+	}
+
+	@media @mobile {
+		width: 100%;
+	}
+
+	&__header {
+		margin-bottom: 20px;
+		font-size: 20px;
+		text-transform: uppercase;
+
+		@media @mobile {
+			margin-bottom: 10px;
+			font-size: 16px;
+		}
+	}
+
+	&__underheader {
+		margin-bottom: 20px;
+		font-size: 30px;
+		line-height: 43px;
+		font-family: SFUIBold;
+		text-transform: uppercase;
+
+		@media @mobile {
+			margin-bottom: 10px;
+			font-size: 20px;
+			line-height: 25px;
+		}
+	}
+
+	&__count {
+		font-size: 80px;
+
+		@media @mobile {
+			font-size: 30px;
+		}
+	}
+}

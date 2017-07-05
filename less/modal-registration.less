@@ -128,12 +128,16 @@
 	&__password,
 	&__password-confirm,
 	&__code {
-		width: 240px;
+		width: 270px;
 		height: 45px;
 		margin-bottom: 20px;
 		padding: 0 13px;
 		border: none;
 		background-color: #fff;
+
+		@media @tablet {
+			width: 240px;
+		}
 
 		@media @mobile {
 			width: 100%;
@@ -145,7 +149,7 @@
 	&__currency {
 		display: block;
 		position: relative;
-		width: 240px;
+		width: 270px;
 		height: 45px;
 		margin-bottom: 20px;
 		padding-left: 13px;
@@ -154,6 +158,10 @@
 		font-family: SFUIRegular;
 		color: #999999;
 		cursor: pointer;
+
+		@media @tablet {
+			width: 240px;
+		}
 
 		@media @mobile {
 			width: 100%;

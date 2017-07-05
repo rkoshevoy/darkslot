@@ -316,118 +316,6 @@ form * {
 .slide-bonus__third-line {
   font-size: 21px;
 }
-.slide-reg {
-  position: relative;
-  width: 330px;
-}
-.slide-reg__email,
-.slide-reg__nickname,
-.slide-reg__select,
-.slide-reg__password,
-.slide-reg__password-confirm {
-  width: 100%;
-  margin-bottom: 18px;
-  border: none;
-  padding: 12px 13px;
-  font-family: SFUIRegular;
-  color: #000;
-}
-.slide-reg__email::-webkit-input-placeholder,
-.slide-reg__nickname::-webkit-input-placeholder,
-.slide-reg__select::-webkit-input-placeholder,
-.slide-reg__password::-webkit-input-placeholder,
-.slide-reg__password-confirm::-webkit-input-placeholder {
-  font-family: SFUIRegular;
-  color: #999999;
-}
-.slide-reg__email::-moz-placeholder,
-.slide-reg__nickname::-moz-placeholder,
-.slide-reg__select::-moz-placeholder,
-.slide-reg__password::-moz-placeholder,
-.slide-reg__password-confirm::-moz-placeholder {
-  font-family: SFUIRegular;
-  color: #999999;
-}
-.slide-reg__email:-ms-input-placeholder,
-.slide-reg__nickname:-ms-input-placeholder,
-.slide-reg__select:-ms-input-placeholder,
-.slide-reg__password:-ms-input-placeholder,
-.slide-reg__password-confirm:-ms-input-placeholder {
-  font-family: SFUIRegular;
-  color: #999999;
-}
-.slide-reg__email::placeholder,
-.slide-reg__nickname::placeholder,
-.slide-reg__select::placeholder,
-.slide-reg__password::placeholder,
-.slide-reg__password-confirm::placeholder {
-  font-family: SFUIRegular;
-  color: #999999;
-}
-.slide-reg__password {
-  transition: 0.3s;
-}
-.slide-reg__password-confirm {
-  position: absolute;
-  z-index: -1;
-  top: 172px;
-  opacity: 0;
-  transition: 0.3s;
-}
-.slide-reg__select {
-  font-family: SFUIRegular;
-  color: #999999;
-  cursor: pointer;
-}
-.slide-reg__label-checkbox {
-  display: inline-block;
-  position: relative;
-  padding-left: 30px;
-  margin-bottom: 20px;
-  font-size: 12px;
-  line-height: 20px;
-  cursor: pointer;
-}
-.slide-reg__checkbox {
-  position: absolute;
-  left: 0;
-  opacity: 0;
-  cursor: pointer;
-}
-.slide-reg__checkbox:not(checked) + label::before {
-  content: '';
-  position: absolute;
-  left: 0;
-  width: 18px;
-  height: 18px;
-  border: 1px solid #e3e3e3;
-  background-color: #fff;
-}
-.slide-reg__checkbox:checked + label::after {
-  content: '';
-  position: absolute;
-  top: 5px;
-  left: 3px;
-  width: 13px;
-  height: 5px;
-  border-top: 1px solid #f38084;
-  border-right: 1px solid #f38084;
-  transform: rotate(135deg);
-}
-.slide-reg__button {
-  width: 100%;
-  padding: 18px 20px;
-  border: none;
-  background-color: #ed383f;
-  font-family: SFUIMedium;
-  font-size: 16px;
-  color: #fff;
-  cursor: pointer;
-  transition: 0.1s;
-}
-.slide-reg__button:hover {
-  background-color: #dd363c;
-}
 .tabs {
   position: relative;
 }
@@ -1821,7 +1709,7 @@ form * {
 .registration-form__password,
 .registration-form__password-confirm,
 .registration-form__code {
-  width: 240px;
+  width: 270px;
   height: 45px;
   margin-bottom: 20px;
   padding: 0 13px;
@@ -1831,7 +1719,7 @@ form * {
 .registration-form__currency {
   display: block;
   position: relative;
-  width: 240px;
+  width: 270px;
   height: 45px;
   margin-bottom: 20px;
   padding-left: 13px;
@@ -2204,6 +2092,175 @@ form * {
   color: #e6e6e6;
   font-size: 14px;
 }
+.registration-form-mini {
+  position: relative;
+  width: 370px;
+  padding: 20px;
+}
+.registration-form-mini__email,
+.registration-form-mini__nickname,
+.registration-form-mini__select,
+.registration-form-mini__password,
+.registration-form-mini__password-confirm {
+  width: 100%;
+  margin-bottom: 18px;
+  border: none;
+  padding: 12px 13px;
+  font-family: SFUIRegular;
+  color: #000;
+}
+.registration-form-mini__email::-webkit-input-placeholder,
+.registration-form-mini__nickname::-webkit-input-placeholder,
+.registration-form-mini__select::-webkit-input-placeholder,
+.registration-form-mini__password::-webkit-input-placeholder,
+.registration-form-mini__password-confirm::-webkit-input-placeholder {
+  font-family: SFUIRegular;
+  color: #999999;
+}
+.registration-form-mini__email::-moz-placeholder,
+.registration-form-mini__nickname::-moz-placeholder,
+.registration-form-mini__select::-moz-placeholder,
+.registration-form-mini__password::-moz-placeholder,
+.registration-form-mini__password-confirm::-moz-placeholder {
+  font-family: SFUIRegular;
+  color: #999999;
+}
+.registration-form-mini__email:-ms-input-placeholder,
+.registration-form-mini__nickname:-ms-input-placeholder,
+.registration-form-mini__select:-ms-input-placeholder,
+.registration-form-mini__password:-ms-input-placeholder,
+.registration-form-mini__password-confirm:-ms-input-placeholder {
+  font-family: SFUIRegular;
+  color: #999999;
+}
+.registration-form-mini__email::placeholder,
+.registration-form-mini__nickname::placeholder,
+.registration-form-mini__select::placeholder,
+.registration-form-mini__password::placeholder,
+.registration-form-mini__password-confirm::placeholder {
+  font-family: SFUIRegular;
+  color: #999999;
+}
+.registration-form-mini__password {
+  transition: 0.3s;
+}
+.registration-form-mini__password-confirm {
+  width: 330px;
+  position: absolute;
+  z-index: -1;
+  top: 192px;
+  opacity: 0;
+  transition: 0.3s;
+}
+.registration-form-mini__select {
+  font-family: SFUIRegular;
+  color: #999999;
+  cursor: pointer;
+}
+.registration-form-mini__label-checkbox {
+  display: inline-block;
+  position: relative;
+  padding-left: 30px;
+  margin-bottom: 20px;
+  font-size: 12px;
+  line-height: 20px;
+  cursor: pointer;
+}
+.registration-form-mini__checkbox {
+  position: absolute;
+  left: 0;
+  opacity: 0;
+  cursor: pointer;
+}
+.registration-form-mini__checkbox:not(checked) + label::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  width: 18px;
+  height: 18px;
+  border: 1px solid #e3e3e3;
+  background-color: #fff;
+}
+.registration-form-mini__checkbox:checked + label::after {
+  content: '';
+  position: absolute;
+  top: 5px;
+  left: 3px;
+  width: 13px;
+  height: 5px;
+  border-top: 1px solid #f38084;
+  border-right: 1px solid #f38084;
+  transform: rotate(135deg);
+}
+.registration-form-mini__button {
+  width: 100%;
+  padding: 18px 20px;
+  border: none;
+  background-color: #ed383f;
+  font-family: SFUIMedium;
+  font-size: 16px;
+  color: #fff;
+  cursor: pointer;
+  transition: 0.1s;
+}
+.registration-form-mini__button:hover {
+  background-color: #dd363c;
+}
+.registration-form-mini--bottom {
+  background-color: rgba(76, 133, 161, 0.8);
+}
+.registration {
+  background-image: url('../img/wood-bg.png');
+  background-size: cover;
+  background-position: bottom;
+}
+.registration__wrapper {
+  position: relative;
+  display: flex;
+  flex-direction: row-reverse;
+  width: 1200px;
+  margin: 0 auto;
+  padding-top: 50px;
+  padding-bottom: 40px;
+}
+.registration__character-wrapper {
+  position: absolute;
+  top: -30px;
+  left: 350px;
+  width: 450px;
+}
+.registration__character {
+  width: 100%;
+}
+.registration__reg-button {
+  display: none;
+}
+.registration-bonus {
+  position: absolute;
+  top: -43px;
+  left: 0;
+  width: 580px;
+  padding-top: 50px;
+  padding-right: 200px;
+  padding-bottom: 60px;
+  padding-left: 30px;
+  background-color: rgba(237, 56, 63, 0.9);
+}
+.registration-bonus__header {
+  margin-bottom: 20px;
+  font-size: 20px;
+  text-transform: uppercase;
+}
+.registration-bonus__underheader {
+  margin-bottom: 20px;
+  font-size: 30px;
+  line-height: 43px;
+  font-family: SFUIBold;
+  text-transform: uppercase;
+}
+.registration-bonus__count {
+  font-size: 80px;
+}
 @media (min-width: 788px) {
   .main-wrapper {
     margin-top: 77px;
@@ -2339,9 +2396,6 @@ form * {
   }
   .slide-bonus__third-line {
     font-size: 16px;
-  }
-  .slide-reg {
-    display: none;
   }
   .tabs__wrapper {
     width: 748px;
@@ -2483,6 +2537,16 @@ form * {
   .registration-form {
     width: 500px;
   }
+  .registration-form__name,
+  .registration-form__nickname,
+  .registration-form__password,
+  .registration-form__password-confirm,
+  .registration-form__code {
+    width: 240px;
+  }
+  .registration-form__currency {
+    width: 240px;
+  }
   .modal-enter {
     width: 550px;
   }
@@ -2506,6 +2570,39 @@ form * {
   }
   .error {
     background-position: center -200px;
+  }
+  .registration-form-mini {
+    display: none;
+  }
+  .registration__wrapper {
+    width: 748px;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+  }
+  .registration__character-wrapper {
+    display: none;
+  }
+  .registration__reg-button {
+    display: block;
+    width: 300px;
+    padding: 18px 20px;
+    border: none;
+    background-color: #ed383f;
+    font-family: SFUIMedium;
+    font-size: 16px;
+    color: #fff;
+    cursor: pointer;
+    transition: 0.1s;
+  }
+  .registration__reg-button:hover {
+    background-color: #dd363c;
+  }
+  .registration-bonus {
+    position: relative;
+    display: block;
+    padding: 30px;
+    text-align: center;
   }
 }
 @media (max-width: 788px) {
@@ -2596,9 +2693,6 @@ form * {
   }
   .slide-bonus__first-line {
     font-size: 40px;
-  }
-  .slide-reg__label-checkbox {
-    margin-bottom: 20px;
   }
   .tabs::after {
     display: none;
@@ -2970,6 +3064,32 @@ form * {
   .error-text__bg-text {
     top: -80px;
     font-size: 50px;
+  }
+  .registration-form-mini__label-checkbox {
+    margin-bottom: 20px;
+  }
+  .registration__wrapper {
+    width: 100%;
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+  .registration__reg-button {
+    width: auto;
+  }
+  .registration-bonus {
+    width: 100%;
+  }
+  .registration-bonus__header {
+    margin-bottom: 10px;
+    font-size: 16px;
+  }
+  .registration-bonus__underheader {
+    margin-bottom: 10px;
+    font-size: 20px;
+    line-height: 25px;
+  }
+  .registration-bonus__count {
+    font-size: 30px;
   }
 }
 @media (max-width: 300px) {

@@ -1,0 +1,109 @@
+.registration-form-mini {
+	position: relative;
+	width: 370px;
+	padding: 20px;
+
+	@media @tablet {
+		display: none;
+	}
+
+	&__email,
+	&__nickname,
+	&__select,
+	&__password,
+	&__password-confirm {
+		width: 100%;
+		margin-bottom: 18px;
+		border: none;
+		padding: 12px 13px;
+		font-family: SFUIRegular;
+		color: #000;
+
+		&::placeholder {
+			font-family: SFUIRegular;
+			color: #999999;
+		}
+	}
+
+	&__password {
+		transition: 0.3s;
+	}
+
+	&__password-confirm {
+		width: 330px;
+		position: absolute;
+		z-index: -1;
+		top: 192px;
+		opacity: 0;
+		transition: 0.3s;
+	}
+
+	&__select {
+		font-family: SFUIRegular;
+		color: #999999;
+		cursor: pointer;
+	}
+
+	&__label-checkbox {
+		display: inline-block;
+		position: relative;
+		padding-left: 30px;
+		margin-bottom: 20px;
+		font-size: 12px;
+		line-height: 20px;
+		cursor: pointer;
+
+		@media @mobile {
+			margin-bottom: 20px;
+		}
+	}
+
+	&__checkbox {
+		position: absolute;
+		left: 0;
+		opacity: 0;
+		cursor: pointer;
+	}
+
+	&__checkbox:not(checked) + label::before {
+		content: '';
+		position: absolute;
+		left: 0;
+		width: 18px;
+		height: 18px;
+		border: 1px solid #e3e3e3;
+		background-color: #fff;
+	}
+
+	&__checkbox:checked + label::after {
+		content: '';
+		position: absolute;
+		top: 5px;
+		left: 3px;
+		width: 13px;
+		height: 5px;
+		border-top: 1px solid #f38084;
+		border-right: 1px solid #f38084;
+		transform: rotate(135deg);
+	}
+
+	&__button {
+		width: 100%;
+		padding: 18px 20px;
+		border: none;
+		background-color: #ed383f;
+		font-family: SFUIMedium;
+		font-size: 16px;
+		color: #fff;
+		cursor: pointer;
+		transition: 0.1s;
+
+		&:hover {
+			background-color: #dd363c;
+		}
+	}
+}
+
+.registration-form-mini--bottom {
+	background-color: rgba(76, 133, 161, 0.8);
+}

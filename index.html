@@ -91,22 +91,22 @@
 							<span class="slide-bonus__third-line">- за регистрацию -</span>
 						</div>
 
-						<form action="#" class="slide-reg">
-							<input type="email" placeholder="Email" class="slide-reg__email">
-							<input type="text" placeholder="Никнейм" class="slide-reg__nickname">
-							<select name="" id="slide-reg-select" class="slide-reg__select">
+						<form action="#" class="registration-form-mini">
+							<input type="email" placeholder="Email" class="registration-form-mini__email">
+							<input type="text" placeholder="Никнейм" class="registration-form-mini__nickname">
+							<select name="" id="slide-reg-select" class="registration-form-mini__select">
 								<option value="currency" selected disabled>Валюта</option>
 								<option value="$">$</option>
 								<option value="$$">$$</option>
 								<option value="$$$">$$$</option>
 							</select>
-							<input type="password" placeholder="Пароль" class="slide-reg__password">
-							<input type="password" placeholder="Подтверждение пароля" class="slide-reg__password-confirm">
+							<input type="password" placeholder="Пароль" class="registration-form-mini__password">
+							<input type="password" placeholder="Подтверждение пароля" class="registration-form-mini__password-confirm">
 
-							<input type="checkbox" id="slide-checkbox" class="slide-reg__checkbox">
-							<label for="slide-checkbox" class="slide-reg__label-checkbox">Мне 18 лет и я принимаю Положения и условия</label>
+							<input type="checkbox" id="slide-checkbox" class="registration-form-mini__checkbox">
+							<label for="slide-checkbox" class="registration-form-mini__label-checkbox">Мне 18 лет и я принимаю Положения и условия</label>
 
-							<input type="submit" class="slide-reg__button" value="Регистрация">
+							<input type="submit" class="registration-form-mini__button" value="Регистрация">
 						</form>
 
 						<button class="slide__reg-button">Регистрация</button>
@@ -289,6 +289,42 @@
 				</div>
 
 				<button class="last-winners__button">Призыв к действию</button>
+			</div>
+		</section>
+
+		<section class="registration">
+			<div class="registration__wrapper">
+
+				<div class="registration-bonus">
+					<h3 class="registration-bonus__header">Зарегистрируйся и получи</h3>
+					<h3 class="registration-bonus__underheader">Приветственный бонус</h3>	
+					<span class="registration-bonus__count">1800$</span>
+				</div>
+
+				<div class="registration__character-wrapper">
+					<img src="img/tiger.png" alt="toger" class="registration__character">
+				</div>
+
+				<form action="#" class="registration-form-mini registration-form-mini--bottom">
+					<input type="email" placeholder="Email" class="registration-form-mini__email">
+					<input type="text" placeholder="Никнейм" class="registration-form-mini__nickname">
+					<select name="" id="bottom-reg-select" class="registration-form-mini__select">
+						<option value="currency" selected disabled>Валюта</option>
+						<option value="$">$</option>
+						<option value="$$">$$</option>
+						<option value="$$$">$$$</option>
+					</select>
+					<input type="password" placeholder="Пароль" class="registration-form-mini__password">
+					<input type="password" placeholder="Подтверждение пароля" class="registration-form-mini__password-confirm">
+
+					<input type="checkbox" id="bottom-form-checkbox" class="registration-form-mini__checkbox">
+					<label for="bottom-form-checkbox" class="registration-form-mini__label-checkbox">Мне 18 лет и я принимаю Положения и условия</label>
+
+					<input type="submit" class="registration-form-mini__button" value="Регистрация">
+				</form>
+
+				<button class="registration__reg-button">Регистрация</button>
+				
 			</div>
 		</section>
 
@@ -513,7 +549,7 @@
 
 	<div class="modal-bg"></div> 
 
-	<div id="preloader"></div>
+	<!-- <div id="preloader"></div> -->
 
 	<script type="text/javascript">
 		var preloader = document.getElementById("preloader");
