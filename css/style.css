@@ -47,6 +47,7 @@ button {
   color: #fff;
   cursor: pointer;
   outline: none;
+  transition: 0.1s;
 }
 form * {
   -webkit-appearance: none;
@@ -210,35 +211,23 @@ form * {
 .main-nav__dropdown {
   position: absolute;
   z-index: -1;
-  top: -500px;
+  top: 50px;
   width: auto;
   list-style: none;
   opacity: 0;
   transition: 0.3s;
 }
-.main-nav__dropdown p {
-  width: 200px;
-  height: 200px;
-  background-color: #313131;
-  line-height: 200px;
-  text-align: center;
-}
 .main-nav__dropdown-item a {
   display: block;
   width: 200px;
-  padding: 20px;
+  height: 0;
+  padding: 0;
+  font-size: 0;
   background-color: #313131;
+  transition: 0.3s;
 }
 .main-nav__dropdown-item a:hover {
   background-color: #414141;
-}
-.main-nav__item--active {
-  transition: 0.6s;
-}
-.main-nav__item--active .main-nav__dropdown {
-  z-index: 100;
-  top: 49px;
-  opacity: 1;
 }
 .main-nav__item--arrow {
   position: relative;
@@ -296,10 +285,9 @@ form * {
   padding: 25px 40px;
   background-color: #ed383f;
   font-size: 16px;
-  transition: 0.1s;
 }
 .slide__button:hover {
-  background-color: #ec262e;
+  background-color: #de3137;
 }
 .slide__form-bg {
   display: flex;
@@ -474,10 +462,9 @@ form * {
   margin-top: 20px;
   margin-bottom: 20px;
   background-color: #6ab980;
-  transition: 0.1s;
 }
 .tab__button:hover {
-  background-color: #65ad79;
+  background-color: #589f6c;
 }
 .tab__variants-wrapper {
   display: flex;
@@ -533,10 +520,9 @@ form * {
   background-color: #ed383f;
   font-family: SFUIBold;
   font-size: 18px;
-  transition: 0.1s;
 }
 .jackpot__button:hover {
-  background-color: #e3353c;
+  background-color: #de3137;
 }
 .jackpot__background-text {
   position: absolute;
@@ -582,7 +568,7 @@ form * {
   line-height: 18px;
 }
 .last-winners__button:hover {
-  background-color: #e4373d;
+  background-color: #de3137;
 }
 .winners {
   display: flex;
@@ -638,7 +624,7 @@ form * {
   font-size: 14px;
 }
 .popular-games__button:hover {
-  background-color: #67b37c;
+  background-color: #589f6c;
 }
 .popular-games__more-button {
   display: block;
@@ -654,7 +640,7 @@ form * {
   cursor: pointer;
 }
 .popular-games__more-button:hover {
-  background-color: #65ad79;
+  background-color: #6ab980;
 }
 .games-preview {
   display: flex;
@@ -693,10 +679,9 @@ form * {
   background-color: #ed383f;
   font-family: SFUIBold;
   font-size: 18px;
-  transition: 0.1s;
 }
 .deposites__button:hover {
-  background-color: #e6373e;
+  background-color: #de3137;
 }
 .deposites__image-wrapper {
   position: absolute;
@@ -1246,7 +1231,7 @@ form * {
   font-family: SFUIMedium;
 }
 .news__button:hover {
-  background-color: #e3363d;
+  background-color: #de3137;
 }
 .blog-slider__wrapper {
   width: 1180px;
@@ -1285,7 +1270,7 @@ form * {
   background-color: #ed383f;
 }
 .blog-slider__button:hover {
-  background-color: #e3363d;
+  background-color: #de3137;
 }
 .blog-pagination {
   width: 100%;
@@ -1428,10 +1413,9 @@ form * {
   background-color: #ed383f;
   font-family: SFUIBold;
   font-size: 18px;
-  transition: 0.1s;
 }
 .partner__button:hover {
-  background-color: #e2383e;
+  background-color: #de3137;
 }
 .partner__image-wrapper {
   position: absolute;
@@ -1640,6 +1624,9 @@ form * {
   font-size: 18px;
   font-family: SFUIBold;
 }
+.prize__button:hover {
+  background-color: #de3137;
+}
 .modal-registration {
   display: flex;
   flex-direction: row-reverse;
@@ -1804,12 +1791,9 @@ form * {
   background-color: #ed383f;
   font-family: SFUIMedium;
   font-size: 14px;
-  color: #fff;
-  cursor: pointer;
-  transition: 0.1s;
 }
 .registration-form__button:hover {
-  background-color: #dd363c;
+  background-color: #de3137;
 }
 .modal-bg {
   position: fixed;
@@ -1950,7 +1934,7 @@ form * {
   transition: 0.1s;
 }
 .enter-form__button:hover {
-  background-color: #dd363c;
+  background-color: #de3137;
 }
 .modal-contact {
   display: flex;
@@ -2071,12 +2055,9 @@ form * {
   background-color: #ed383f;
   font-family: SFUIMedium;
   font-size: 14px;
-  color: #fff;
-  cursor: pointer;
-  transition: 0.1s;
 }
 .contact-form__button:hover {
-  background-color: #dd363c;
+  background-color: #de3137;
 }
 .error {
   background-image: url('../img/404-bg.png');
@@ -2237,7 +2218,7 @@ form * {
   transition: 0.1s;
 }
 .registration-form-mini__button:hover {
-  background-color: #dd363c;
+  background-color: #de3137;
 }
 .registration-form-mini--bottom {
   background-color: rgba(76, 133, 161, 0.8);
@@ -2246,7 +2227,7 @@ form * {
   background-color: #6ab980;
 }
 .registration-form-mini--bottom .registration-form-mini__button:hover {
-  background-color: #5da471;
+  background-color: #589f6c;
 }
 .registration {
   background-image: url('../img/wood-bg.png');
@@ -2340,11 +2321,9 @@ form * {
   font-family: SFUIBold;
   font-size: 18px;
   background-color: #ed383f;
-  cursor: pointer;
-  transition: 0.1s;
 }
 .greeting-bonus__button:hover {
-  background-color: #e2353c;
+  background-color: #de3137;
 }
 .deposit {
   width: 33.33%;
@@ -2492,11 +2471,9 @@ form * {
   font-family: SFUIBold;
   font-size: 18px;
   background-color: #ed383f;
-  cursor: pointer;
-  transition: 0.1s;
 }
 .bonus-more__button:hover {
-  background-color: #e2353c;
+  background-color: #de3137;
 }
 @media (min-width: 788px) {
   .main-wrapper {
@@ -2513,6 +2490,13 @@ form * {
     z-index: 100;
     top: 49px;
     opacity: 1;
+  }
+  .main-nav__item--first:hover .main-nav__dropdown-item a,
+  .main-nav__item--second:hover .main-nav__dropdown-item a,
+  .main-nav__item--fifth:hover .main-nav__dropdown-item a {
+    height: auto;
+    padding: 20px;
+    font-size: 16px;
   }
 }
 @media (max-width: 1220px) {
@@ -2590,7 +2574,14 @@ form * {
     width: 100%;
   }
   .main-nav__item--active .main-nav__dropdown {
-    top: 0;
+    z-index: 100;
+    top: 49px;
+    opacity: 1;
+  }
+  .main-nav__item--active .main-nav__dropdown-item a {
+    height: auto;
+    padding: 20px;
+    font-size: 16px;
   }
   .main-nav__item--arrow span::after {
     right: 20px;
@@ -2847,7 +2838,7 @@ form * {
     transition: 0.1s;
   }
   .registration__reg-button:hover {
-    background-color: #dd363c;
+    background-color: #de3137;
   }
   .registration-bonus {
     position: relative;
@@ -2925,13 +2916,13 @@ form * {
     top: 50px;
   }
   .main-nav__dropdown {
-    position: absolute;
-    top: 59px;
-    left: 0;
-  }
-  .main-nav__item--active .main-nav__dropdown {
     position: relative;
     top: 0;
+    left: 0;
+  }
+  .main-nav__dropdown a {
+    padding: 0;
+    font-size: 0;
   }
   .main-nav__item--arrow span::after {
     transform: rotate(45deg);
@@ -3416,6 +3407,17 @@ form * {
   }
   .bonus-more__button {
     width: 100%;
+  }
+}
+@media (max-width: 1220px) and (max-width: 1220px) {
+  .main-nav__item--active .main-nav__dropdown {
+    top: 0;
+  }
+}
+@media (max-width: 1220px) and (max-width: 788px) {
+  .main-nav__item--active .main-nav__dropdown {
+    position: relative;
+    top: 0;
   }
 }
 @media (max-width: 300px) {
