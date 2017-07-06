@@ -322,6 +322,7 @@
 		@media @mobile {
 			position: absolute;
 			top: 59px;
+			left: 0;
 		}
 	}
 
@@ -382,7 +383,15 @@
 				top: 23px;
 				bottom: auto;
 				left: auto;
+				transform: rotate(-45deg);
 			}
+		}
+
+		@media @mobile {
+
+			&::after {
+				transform: rotate(45deg);
+			}			
 		}
 	}
 }

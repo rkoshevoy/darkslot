@@ -2362,6 +2362,7 @@ form * {
     top: 23px;
     bottom: auto;
     left: auto;
+    transform: rotate(-45deg);
   }
   .slide__wrapper {
     width: 748px;
@@ -2668,10 +2669,14 @@ form * {
   .main-nav__dropdown {
     position: absolute;
     top: 59px;
+    left: 0;
   }
   .main-nav__item--active .main-nav__dropdown {
     position: relative;
     top: 0;
+  }
+  .main-nav__item--arrow::after {
+    transform: rotate(45deg);
   }
   .slide__image-wrapper {
     position: relative;
