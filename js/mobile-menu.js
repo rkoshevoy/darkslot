@@ -2,7 +2,8 @@ $(document).ready(function() {
 
 	$('.main-nav__menu-button').click(function() {
 		$('.main-nav__list').toggleClass('main-nav__list--show');
-		$('.main-nav__item').removeClass('main-nav__item--active')
+		$('.main-nav__item').removeClass('main-nav__item--active');
+		$('.main-nav__item').find('.main-nav__dropdown').removeClass('main-nav__item--active')
 	});
 
 	$('.main-nav__item--hider, .main-nav__dropdown-item').click(function() {

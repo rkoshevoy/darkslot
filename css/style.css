@@ -214,11 +214,13 @@ form * {
   top: 50px;
   width: auto;
   list-style: none;
+  opacity: 0;
   transition: 0.3s;
 }
 .main-nav__dropdown-item a {
   display: block;
-  width: 200px;
+  white-space: pre;
+  width: auto;
   height: 0;
   padding: 0;
   font-size: 0;
@@ -431,6 +433,7 @@ form * {
   width: 35px;
   height: 35px;
   background-image: url('../img/sprite.png');
+  transition: 0.1s;
 }
 .switchers__image--first {
   background-position: -58px 0;
@@ -1790,6 +1793,9 @@ form * {
   background-color: #ed383f;
   font-family: SFUIMedium;
   font-size: 14px;
+  color: #fff;
+  transition: 0.1s;
+  cursor: pointer;
 }
 .registration-form__button:hover {
   background-color: #de3137;
@@ -2054,6 +2060,9 @@ form * {
   background-color: #ed383f;
   font-family: SFUIMedium;
   font-size: 14px;
+  color: #fff;
+  transition: 0.1s;
+  cursor: pointer;
 }
 .contact-form__button:hover {
   background-color: #de3137;
@@ -2553,13 +2562,11 @@ form * {
   }
   .main-nav__item {
     display: block;
-    width: 100%;
     margin-right: 0;
     text-align: center;
   }
-  .main-nav__item a {
+  .main-nav__item > a {
     display: block;
-    width: 100%;
     padding: 20px 0;
   }
   .main-nav__item span {
@@ -2568,9 +2575,11 @@ form * {
     padding-bottom: 20px;
   }
   .main-nav__dropdown {
-    top: -50px;
-    left: 248px;
-    width: 100%;
+    top: 0px;
+    left: 249px;
+  }
+  .main-nav__item--active {
+    opacity: 1;
   }
   .main-nav__item--active .main-nav__dropdown {
     z-index: 100;
@@ -2609,9 +2618,6 @@ form * {
     flex-wrap: wrap;
     justify-content: center;
     width: 470px;
-  }
-  .slide__form-wrapper {
-    width: 100%;
   }
   .slide__reg-button {
     display: block;
@@ -2960,9 +2966,16 @@ form * {
     width: 100%;
     right: auto;
   }
+  .slide__form-wrapper {
+    flex-direction: column;
+    width: 100%;
+  }
   .slide__reg-button {
     width: auto;
     padding: 8px 10px;
+  }
+  .slide-bonus {
+    margin-bottom: 5%;
   }
   .slide-bonus__first-line {
     font-size: 40px;
@@ -3410,12 +3423,6 @@ form * {
 }
 @media (max-width: 1220px) and (max-width: 1220px) {
   .main-nav__item--active .main-nav__dropdown {
-    top: 0;
-  }
-}
-@media (max-width: 1220px) and (max-width: 788px) {
-  .main-nav__item--active .main-nav__dropdown {
-    position: relative;
     top: 0;
   }
 }

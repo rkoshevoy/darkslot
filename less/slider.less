@@ -130,7 +130,8 @@
 			width: 470px;
 		}
 
-		@media @tablet {
+		@media @mobile {
+			flex-direction: column;
 			width: 100%;
 		}
 	}
@@ -165,6 +166,10 @@
 .slide-bonus {
 	width: 395px;
 	text-align: center;
+
+	@media @mobile {
+		margin-bottom: 5%;
+	}
 
 	> span {
 		display: block;

@@ -253,13 +253,11 @@
 
 		@media @tablet {
 			display: block;
-			width: 100%;
 			margin-right: 0;
 			text-align: center;
 
-			a {
+			> a {
 				display: block;
-				width: 100%;
 				padding: 20px 0;
 			}
 		}
@@ -327,12 +325,12 @@
 		top: 50px;
 		width: auto;
 		list-style: none;
+		opacity: 0;
 		transition: 0.3s;
 
 		@media @tablet {
-			top: -50px;
-			left: 248px;
-			width: 100%;
+			top: 0px;
+			left: 249px;
 		}
 
 		@media @mobile {
@@ -351,7 +349,8 @@
 
 		a {
 			display: block;
-			width: 200px;
+			white-space: pre;
+			width: auto;
 			height: 0;
 			padding: 0;
 			font-size: 0;
@@ -367,6 +366,7 @@
 	@media @tablet {
 
 		&__item--active {
+			opacity: 1;
 
 			.main-nav__dropdown {
 				z-index: 100;
@@ -378,8 +378,6 @@
 				}
 
 				@media @mobile {
-					position: relative;
-					top: 0;
 				}
 			}
 
