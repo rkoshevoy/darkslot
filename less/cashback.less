@@ -1,0 +1,95 @@
+.cashback {
+	background-color: #212121;
+
+	&__wrapper {
+		width: 1000px;
+		margin: 0 auto;
+		padding-top: 45px;
+		padding-bottom: 55px;
+		background-image: url('../img/coins-in-bag.png');
+		background-position: left center;
+
+		@media @tablet {
+			width: 748px;
+		}
+
+		@media @mobile {
+			width: 100%;
+			background-position: 20px 40px;
+		}
+	}
+
+	&__text-wrapper {
+		position: relative;
+		padding-top: 55px;
+		padding-bottom: 40px;
+		padding-left: 140px;
+
+		&::before {
+			content: '';
+			position: absolute;
+			z-index: 1;
+			top: 75px;
+			left: 67px;
+			width: 50px;
+			height: 2px;
+			background-color: #fff;
+		}
+
+		&::after {
+			content: '';
+			position: absolute;
+			z-index: 0;
+			top: 30px;
+			left: 92px;
+			width: 135px;
+			height: 135px;
+			background-color: rgba(237, 56, 63, 0.8);
+		}
+
+		@media @mobile {
+			padding-top: 35px;
+		}
+	}
+
+	&__header {
+		position: relative;
+		z-index: 1;
+		margin-bottom: 10px;
+		font-size: 36px;
+		font-family: SFUIHeavy;
+		text-transform: uppercase;
+
+		@media @mobile {
+			font-size: 26px;
+		}
+	}
+
+	&__text {
+		position: relative;
+		z-index: 1;
+		font-size: 16px;
+
+		span {
+			display: inline-block;
+			border-bottom: 1px dashed #fff;
+		}
+	}
+
+	&__question {
+		display: inline-block;
+		width: 18px;
+		height: 18px;
+		background-color: #ed383f;
+		border-radius: 50%;
+		font-size: 12px;
+		line-height: 18px;
+		text-align: center;
+		cursor: pointer;
+		transition: 0.1s;
+
+		&:hover {
+			background-color: #fe4047;
+		}
+	}
+}

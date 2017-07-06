@@ -1,0 +1,51 @@
+.bonus-more {
+
+	&__wrapper {
+		display: flex;
+		flex-wrap: wrap;
+		width: 1200px;
+		margin: 0 auto;
+		padding-top: 60px;
+		padding-bottom: 75px;
+
+		@media @tablet {
+			width: 748px;
+			justify-content: center;
+		}
+
+		@media @mobile {
+			.mobile-wrap;
+		}
+	}
+
+	&__text {
+		width: 100%;
+		margin-bottom: 50px;
+		font-family: SFUIHeavy;
+		font-size: 20px;
+		text-align: center;
+	}
+
+	&__button-wrapper {
+		width: 100%;
+		text-align: center;
+	}
+
+	&__button {
+		width: 280px;
+		padding: 28px;
+		font-family: SFUIBold;
+		font-size: 18px;
+		background-color: #ed383f;
+		cursor: pointer;
+		transition: 0.1s;
+
+		&:hover {
+			background-color: #e2353c;
+		}
+
+		@media @mobile {
+			width: 100%;
+		}
+	}
+}

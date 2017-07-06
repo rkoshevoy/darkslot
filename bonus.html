@@ -82,35 +82,37 @@
 				<h2 class="greeting-bonus__header">Приветственный бонус</h2>
 				<span class="greeting-bonus__count">90000 руб</span>
 
-				<div class="deposit">
+				<div class="deposit deposit--first">
 					<span class="deposit__percents">100%</span>
 					<span class="deposit__number">Первый депозит</span>
 				</div>
 
-				<div class="deposit">
+				<div class="deposit deposit--second">
 					<span class="deposit__percents">50%</span>
 					<span class="deposit__number">Второй депозит</span>
 				</div>
 
-				<div class="deposit">
+				<div class="deposit deposit--third">
 					<span class="deposit__percents">200%</span>
 					<span class="deposit__number">Третий депозит</span>
 				</div>
 
-				<button class="greeting-bonus__button">Призыв к действию</button>
-
-				<div class="deposit-condition">
-					<span class="deposit-uslovie__count">500 руб</span>
-					<span class="deposit-uslovie__description">Минимальный депозит</span>
+				<div class="greeting-bonus__button-wrapper">
+					<button class="greeting-bonus__button">Призыв к действию</button>
 				</div>
 
 				<div class="deposit-condition">
-					<span class="deposit-uslovie__count">35 000 руб</span>
-					<span class="deposit-uslovie__description">Максимальный размер бонуса</span>
+					<span class="deposit-condition__count">500 руб</span>
+					<span class="deposit-condition__description">Минимальный депозит</span>
 				</div>
 
 				<div class="deposit-condition">
-					<span class="deposit-uslovie__description">Минимальный депозит</span>
+					<span class="deposit-condition__count">35 000 руб</span>
+					<span class="deposit-condition__description">Максимальный размер бонуса</span>
+				</div>
+
+				<div class="deposit-condition">
+					<span class="deposit-condition__description">Вы так же можете отказаться от бонусов в личном кабинете</span>
 				</div>
 			</div>
 		</section>
@@ -118,8 +120,12 @@
 		<section class="cashback">
 			<div class="cashback__wrapper">
 
-				<h2 class="cashback__header">Акция 100% кэшбек</h2>
-				<span class="cashback__text">Для каждого игрока достигшего <span>2-го и выше уровня</span></span>
+				<div class="cashback__text-wrapper">
+					<h2 class="cashback__header">Акция 100% кэшбек</h2>
+					<span class="cashback__text">Для каждого игрока достигшего <span>2-го и выше уровня</span></span>
+
+					<span class="cashback__question">?</span>
+				</div>
 				
 			</div>
 		</section>
@@ -128,20 +134,22 @@
 			<div class="bonus-more__wrapper">
 
 				<div class="deposit-condition">
-					<span class="deposit-uslovie__description">Отыгрывать бонус можно только в слотах.</span>
+					<span class="deposit-condition__description">Отыгрывать бонус можно только в слотах.</span>
 				</div>
 
 				<div class="deposit-condition">
-					<span class="deposit-uslovie__description">Максимальная ставка при это не должна превышать 5$(300р.)</span>
+					<span class="deposit-condition__description">Максимальная ставка при это не должна превышать 5$(300р.)</span>
 				</div>
 
 				<div class="deposit-condition">
-					<span class="deposit-uslovie__description">Требования по отыгрышу бонусов(вейджер) х40</span>
+					<span class="deposit-condition__description">Требования по отыгрышу бонусов(вейджер) х40</span>
 				</div>
 
 				<p class="bonus-more__text">Так же к этому предложению действуют стандартные положения и условия </p>
 
-				<button class="bonus-more__button">Узнать больше</button>
+				<div class="bonus-more__button-wrapper">
+					<button class="bonus-more__button">Узнать больше</button>
+				</div>
 
 			</div>			
 		</section>
@@ -267,13 +275,13 @@
 
 	<section class="modal-registration">
 		<div class="modal-registration__character-wrapper">
-			<img src="img/rat.png" alt="" class="modal-registration__character">
+			<img src="img/rat.png" alt="rat" class="modal-registration__character">
 		</div>
 
 		<form action="#" class="registration-form">
 			<h2 class="registration-form__header">Регистрация</h2>
 			<input type="email" name="email" placeholder="Email" class="registration-form__name">
-			<input type="text" name="surname" placeholder="Фамилия" class="registration-form__surname">
+			<input type="text" name="nickname" placeholder="Никнейм" class="registration-form__nickname">
 			<input type="password" name="password" placeholder="Пароль" class="registration-form__password">
 			<select name="currency" id="currency" class="registration-form__currency">
 				<option value="Валюта" selected disabled>Валюта</option>
@@ -333,7 +341,7 @@
 
 	<div class="modal-bg"></div> 
 
-	<!-- <div id="preloader"></div> -->
+	<div id="preloader"></div>
 
 	<script type="text/javascript">
 		var preloader = document.getElementById("preloader");

@@ -19,6 +19,14 @@
   font-family: SFUIMedium;
   src: url(../fonts/SFUIDisplay-Medium.ttf), url("../fonts/SFUIDisplay-Medium.eot?#iefix") format("embedded-opentype"), url(../fonts/SFUIDisplay-Medium.woff) format('woff');
 }
+@font-face {
+  font-family: SFUIThin;
+  src: url(../fonts/SFUIDisplay-Thin.ttf), url("../fonts/SFUIDisplay-Thin.eot?#iefix") format("embedded-opentype"), url(../fonts/SFUIDisplay-Thin.woff) format('woff');
+}
+@font-face {
+  font-family: SFUILight;
+  src: url(../fonts/SFUIDisplay-Light.ttf), url("../fonts/SFUIDisplay-Light.eot?#iefix") format("embedded-opentype"), url(../fonts/SFUIDisplay-Light.woff) format('woff');
+}
 body {
   background-color: #232323;
   color: #fff;
@@ -202,7 +210,7 @@ form * {
 .main-nav__dropdown {
   position: absolute;
   z-index: -1;
-  top: 0;
+  top: -500px;
   width: auto;
   list-style: none;
   opacity: 0;
@@ -217,7 +225,7 @@ form * {
 }
 .main-nav__dropdown-item a {
   display: block;
-  width: 100%;
+  width: 200px;
   padding: 20px;
   background-color: #313131;
 }
@@ -235,17 +243,23 @@ form * {
 .main-nav__item--arrow {
   position: relative;
 }
-.main-nav__item--arrow::after {
+.main-nav__item--arrow span {
+  position: relative;
+}
+.main-nav__item--arrow span::after {
   content: '';
   position: absolute;
   left: calc(50% - 7px);
-  bottom: -13px;
+  bottom: 13px;
   width: 10px;
   height: 10px;
   border-right: 1px solid #bf3136;
   border-bottom: 1px solid #bf3136;
   transform: rotate(45deg);
-  transition: 0.3s;
+  transition: 0.1s;
+}
+.main-nav__item--arrow:hover span::after {
+  border-color: #fff;
 }
 .slide {
   position: relative;
@@ -695,6 +709,14 @@ form * {
 .games {
   position: relative;
 }
+.games::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 1px;
+  background-color: #313131;
+}
 .games::after {
   content: '';
   position: absolute;
@@ -708,7 +730,7 @@ form * {
   justify-content: space-between;
   width: 1180px;
   margin: 0 auto;
-  margin-top: 40px;
+  padding-top: 40px;
 }
 .games__list-wrapper {
   position: relative;
@@ -1565,7 +1587,7 @@ form * {
   background-position: left 25px;
 }
 .income--second {
-  background-image: url('../img/coins-many.png');
+  background-image: url('../img/coins-in-bag.png');
   background-position: left 15px;
 }
 .income--third {
@@ -2220,6 +2242,12 @@ form * {
 .registration-form-mini--bottom {
   background-color: rgba(76, 133, 161, 0.8);
 }
+.registration-form-mini--bottom .registration-form-mini__button {
+  background-color: #6ab980;
+}
+.registration-form-mini--bottom .registration-form-mini__button:hover {
+  background-color: #5da471;
+}
 .registration {
   background-image: url('../img/wood-bg.png');
   background-size: cover;
@@ -2261,6 +2289,7 @@ form * {
   margin-bottom: 20px;
   font-size: 20px;
   text-transform: uppercase;
+  font-family: SFUILight;
 }
 .registration-bonus__underheader {
   margin-bottom: 20px;
@@ -2271,6 +2300,203 @@ form * {
 }
 .registration-bonus__count {
   font-size: 80px;
+  font-family: SFUIHeavy;
+}
+.greeting-bonus {
+  background-image: url('../img/money-bg.png');
+  background-size: cover;
+}
+.greeting-bonus__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  width: 1200px;
+  margin: 0 auto;
+  padding-top: 110px;
+}
+.greeting-bonus__header {
+  width: 100%;
+  margin-bottom: 10px;
+  font-size: 30px;
+  font-family: SFUIBold;
+  text-align: center;
+  text-transform: uppercase;
+}
+.greeting-bonus__count {
+  display: block;
+  width: 100%;
+  margin-bottom: 60px;
+  font-family: SFUIHeavy;
+  font-size: 100px;
+  text-align: center;
+}
+.greeting-bonus__button-wrapper {
+  width: 100%;
+  margin-bottom: 90px;
+  text-align: center;
+}
+.greeting-bonus__button {
+  width: 380px;
+  padding: 28px;
+  font-family: SFUIBold;
+  font-size: 18px;
+  background-color: #ed383f;
+  cursor: pointer;
+  transition: 0.1s;
+}
+.greeting-bonus__button:hover {
+  background-color: #e2353c;
+}
+.deposit {
+  width: 33.33%;
+  margin-bottom: 100px;
+  padding-left: 120px;
+}
+.deposit__percents {
+  display: block;
+  font-family: SFUIBold;
+  font-size: 40px;
+}
+.deposit__number {
+  font-family: SFUIThin;
+  font-size: 25px;
+  text-transform: uppercase;
+}
+.deposit--first {
+  background-image: url('../img/coins.png');
+  background-size: 92px;
+}
+.deposit--second {
+  background-image: url('../img/coins-less.png');
+}
+.deposit--third {
+  background-image: url('../img/coins-many.png');
+}
+.deposit-condition {
+  position: relative;
+  width: 33.33%;
+  padding-top: 70px;
+  margin-bottom: 120px;
+}
+.deposit-condition::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 1px;
+  height: 50px;
+  background-color: #fff;
+}
+.deposit-condition__count {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 25px;
+  font-family: SFUIHeavy;
+}
+.deposit-condition__description {
+  display: block;
+  max-width: 250px;
+  font-size: 16px;
+  font-family: SFUIMedium;
+}
+.cashback {
+  background-color: #212121;
+}
+.cashback__wrapper {
+  width: 1000px;
+  margin: 0 auto;
+  padding-top: 45px;
+  padding-bottom: 55px;
+  background-image: url('../img/coins-in-bag.png');
+  background-position: left center;
+}
+.cashback__text-wrapper {
+  position: relative;
+  padding-top: 55px;
+  padding-bottom: 40px;
+  padding-left: 140px;
+}
+.cashback__text-wrapper::before {
+  content: '';
+  position: absolute;
+  z-index: 1;
+  top: 75px;
+  left: 67px;
+  width: 50px;
+  height: 2px;
+  background-color: #fff;
+}
+.cashback__text-wrapper::after {
+  content: '';
+  position: absolute;
+  z-index: 0;
+  top: 30px;
+  left: 92px;
+  width: 135px;
+  height: 135px;
+  background-color: rgba(237, 56, 63, 0.8);
+}
+.cashback__header {
+  position: relative;
+  z-index: 1;
+  margin-bottom: 10px;
+  font-size: 36px;
+  font-family: SFUIHeavy;
+  text-transform: uppercase;
+}
+.cashback__text {
+  position: relative;
+  z-index: 1;
+  font-size: 16px;
+}
+.cashback__text span {
+  display: inline-block;
+  border-bottom: 1px dashed #fff;
+}
+.cashback__question {
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  background-color: #ed383f;
+  border-radius: 50%;
+  font-size: 12px;
+  line-height: 18px;
+  text-align: center;
+  cursor: pointer;
+  transition: 0.1s;
+}
+.cashback__question:hover {
+  background-color: #fe4047;
+}
+.bonus-more__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  width: 1200px;
+  margin: 0 auto;
+  padding-top: 60px;
+  padding-bottom: 75px;
+}
+.bonus-more__text {
+  width: 100%;
+  margin-bottom: 50px;
+  font-family: SFUIHeavy;
+  font-size: 20px;
+  text-align: center;
+}
+.bonus-more__button-wrapper {
+  width: 100%;
+  text-align: center;
+}
+.bonus-more__button {
+  width: 280px;
+  padding: 28px;
+  font-family: SFUIBold;
+  font-size: 18px;
+  background-color: #ed383f;
+  cursor: pointer;
+  transition: 0.1s;
+}
+.bonus-more__button:hover {
+  background-color: #e2353c;
 }
 @media (min-width: 788px) {
   .main-wrapper {
@@ -2278,6 +2504,15 @@ form * {
   }
   #preloader {
     background-size: 600px;
+  }
+}
+@media (min-width: 1200px) {
+  .main-nav__item--first:hover .main-nav__dropdown,
+  .main-nav__item--second:hover .main-nav__dropdown,
+  .main-nav__item--fifth:hover .main-nav__dropdown {
+    z-index: 100;
+    top: 49px;
+    opacity: 1;
   }
 }
 @media (max-width: 1220px) {
@@ -2324,7 +2559,7 @@ form * {
     left: 0;
     top: -500px;
     z-index: 11;
-    width: 150px;
+    width: 250px;
     padding: 0;
     border: 1px solid #000;
     background-color: #161616;
@@ -2351,13 +2586,13 @@ form * {
   }
   .main-nav__dropdown {
     top: -50px;
-    left: 148px;
+    left: 248px;
     width: 100%;
   }
   .main-nav__item--active .main-nav__dropdown {
     top: 0;
   }
-  .main-nav__item--arrow::after {
+  .main-nav__item--arrow span::after {
     right: 20px;
     top: 23px;
     bottom: auto;
@@ -2620,6 +2855,29 @@ form * {
     padding: 30px;
     text-align: center;
   }
+  .greeting-bonus__wrapper {
+    justify-content: center;
+    width: 748px;
+    padding-top: 60px;
+  }
+  .greeting-bonus__button-wrapper {
+    margin-bottom: 50px;
+  }
+  .deposit {
+    width: 50%;
+    margin-bottom: 50px;
+  }
+  .deposit-condition {
+    width: 50%;
+    margin-bottom: 60px;
+  }
+  .cashback__wrapper {
+    width: 748px;
+  }
+  .bonus-more__wrapper {
+    width: 748px;
+    justify-content: center;
+  }
 }
 @media (max-width: 788px) {
   .header__wrapper {
@@ -2675,7 +2933,7 @@ form * {
     position: relative;
     top: 0;
   }
-  .main-nav__item--arrow::after {
+  .main-nav__item--arrow span::after {
     transform: rotate(45deg);
   }
   .slide__image-wrapper {
@@ -3115,6 +3373,49 @@ form * {
   }
   .registration-bonus__count {
     font-size: 30px;
+  }
+  .greeting-bonus__wrapper {
+    width: 100%;
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+  .greeting-bonus__count {
+    font-size: 40px;
+  }
+  .greeting-bonus__button {
+    width: 100%;
+  }
+  .deposit {
+    width: 100%;
+  }
+  .deposit__percents {
+    font-size: 26px;
+  }
+  .deposit__number {
+    font-size: 20px;
+  }
+  .deposit-condition {
+    width: 100%;
+    padding-top: 0;
+    padding-left: 10px;
+  }
+  .cashback__wrapper {
+    width: 100%;
+    background-position: 20px 40px;
+  }
+  .cashback__text-wrapper {
+    padding-top: 35px;
+  }
+  .cashback__header {
+    font-size: 26px;
+  }
+  .bonus-more__wrapper {
+    width: 100%;
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+  .bonus-more__button {
+    width: 100%;
   }
 }
 @media (max-width: 300px) {
