@@ -332,13 +332,24 @@
 			</div>
 		</div>
 
-		<section class="modal-registration">
+	<section class="modal-registration">
 		<div class="modal-registration__character-wrapper">
 			<img src="img/rat.png" alt="rat" class="modal-registration__character">
 		</div>
 
 		<form action="#" class="registration-form">
 			<h2 class="registration-form__header">Регистрация</h2>
+
+			<div class="social-enter social-enter--reg">
+				<span class="social-enter__text">Войти с помощью:</span>
+
+				<div class="social-enter__socials">
+					<button class="social-enter__soc social-enter__soc--fb"></button>
+					<button class="social-enter__soc social-enter__soc--vk"></button>
+					<button class="social-enter__soc social-enter__soc--tw"></button>
+				</div>
+			</div>
+
 			<input type="email" name="email" placeholder="Email" class="registration-form__name">
 			<input type="text" name="nickname" placeholder="Никнейм" class="registration-form__nickname">
 			<input type="password" name="password" placeholder="Пароль" class="registration-form__password">
@@ -362,26 +373,36 @@
 		<div class="modal-registration__close"></div>
 	</section>
 
-		<section class="modal-enter">
-			<div class="modal-enter__character-wrapper">
-				<img src="img/bear.png" alt="" class="modal-enter__character">
-			</div>
+	<section class="modal-enter">
+		<div class="modal-enter__character-wrapper">
+			<img src="img/bear.png" alt="bear" class="modal-enter__character">
+		</div>
 
-			<div class="modal-enter__wrapper">
+		<div class="modal-enter__wrapper">
 
-				<form action="#" class="enter-form">
-					<h2 class="enter-form__header">Авторизация</h2>
+			<form action="#" class="enter-form">
+				<h2 class="enter-form__header">Авторизация</h2>
 
-					<input type="email" class="enter-form__email" placeholder="Email">
-					<input type="password" class="enter-form__password" placeholder="Пароль">
-					<input type="button" class="enter-form__button" value="Войти">
-				</form>
+				<input type="email" class="enter-form__email" placeholder="Email">
+				<input type="password" class="enter-form__password" placeholder="Пароль">
+				<input type="button" class="enter-form__button" value="Войти">
 
-				<a href="#" class="modal-enter__forgot-pass">Я забыл пароль</a>
-			</div>
+				<div class="social-enter">
+					<span class="social-enter__text">Войти с помощью:</span>
 
-			<div class="modal-enter__close"></div>
-		</section>
+					<div class="social-enter__socials">
+						<button class="social-enter__soc social-enter__soc--fb"></button>
+						<button class="social-enter__soc social-enter__soc--vk"></button>
+						<button class="social-enter__soc social-enter__soc--tw"></button>
+					</div>
+				</div>
+			</form>
+
+			<a href="#" class="modal-enter__forgot-pass">Я забыл пароль</a>
+		</div>
+
+		<div class="modal-enter__close"></div>
+	</section>
 
 	<section class="modal-contact">
 		<div class="modal-contact__character-wrapper">

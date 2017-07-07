@@ -271,6 +271,17 @@
 
 		<form action="#" class="registration-form">
 			<h2 class="registration-form__header">Регистрация</h2>
+
+			<div class="social-enter social-enter--reg">
+				<span class="social-enter__text">Войти с помощью:</span>
+
+				<div class="social-enter__socials">
+					<button class="social-enter__soc social-enter__soc--fb"></button>
+					<button class="social-enter__soc social-enter__soc--vk"></button>
+					<button class="social-enter__soc social-enter__soc--tw"></button>
+				</div>
+			</div>
+
 			<input type="email" name="email" placeholder="Email" class="registration-form__name">
 			<input type="text" name="nickname" placeholder="Никнейм" class="registration-form__nickname">
 			<input type="password" name="password" placeholder="Пароль" class="registration-form__password">
@@ -296,7 +307,7 @@
 
 	<section class="modal-enter">
 		<div class="modal-enter__character-wrapper">
-			<img src="img/bear.png" alt="" class="modal-enter__character">
+			<img src="img/bear.png" alt="bear" class="modal-enter__character">
 		</div>
 
 		<div class="modal-enter__wrapper">
@@ -307,6 +318,16 @@
 				<input type="email" class="enter-form__email" placeholder="Email">
 				<input type="password" class="enter-form__password" placeholder="Пароль">
 				<input type="button" class="enter-form__button" value="Войти">
+
+				<div class="social-enter">
+					<span class="social-enter__text">Войти с помощью:</span>
+
+					<div class="social-enter__socials">
+						<button class="social-enter__soc social-enter__soc--fb"></button>
+						<button class="social-enter__soc social-enter__soc--vk"></button>
+						<button class="social-enter__soc social-enter__soc--tw"></button>
+					</div>
+				</div>
 			</form>
 
 			<a href="#" class="modal-enter__forgot-pass">Я забыл пароль</a>

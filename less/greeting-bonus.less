@@ -10,7 +10,7 @@
 		padding-top: 110px;
 
 		@media @tablet {
-			justify-content: center;
+			justify-content: space-around;
 			width: 748px;
 			padding-top: 60px;
 		}
@@ -80,7 +80,8 @@
 	}
 
 	@media @mobile {
-		width: 100%;
+		width: auto;
+		min-height: 80px;
 	}
 
 	&__percents {
@@ -124,14 +125,15 @@
 	margin-bottom: 120px;
 
 	@media @tablet {
-		width: 50%;
+		width: 25%;
 		margin-bottom: 60px;
+		padding-top: 0;
+		padding-left: 10px;
 	}
 
 	@media @mobile {
 		width: 100%;
-		padding-top: 0;
-		padding-left: 10px;
+		text-align: center;
 	}
 
 	&::before {
@@ -156,5 +158,9 @@
 		max-width: 250px;
 		font-size: 16px;
 		font-family: SFUIMedium;
+
+		@media @mobile {
+			max-width: none;
+		}
 	}
 }

@@ -114,6 +114,7 @@
 		height: 40px;
 		margin-right: 50px; 
 		background-image: url('../img/logo.png');
+		background-position: center;
 
 		@media @tablet {
 			margin-left: 130px;
@@ -123,6 +124,7 @@
 			width: 40px;
 			margin: 0;
 			background-image: url('../img/favicon.png');
+		background-position: center;
 		}
 	}
 
@@ -270,7 +272,7 @@
 			transition: 0.1s;
 
 			&:hover {
-				background-color: #ED383F;
+				background-color: #090909;
 			}
 		}
 
@@ -283,13 +285,17 @@
 			cursor: pointer;
 
 			&:hover {
-				background-color: #ED383F;
+				background-color: #090909;
 			}
 
 			@media @tablet {
 				display: block;
 				padding-top: 20px;
 				padding-bottom: 20px;
+			}
+
+			span {
+				display: block;
 			}
 		}			
 	}
@@ -321,7 +327,6 @@
 
 	&__dropdown {
 		position: absolute;
-		z-index: -1;
 		top: 50px;
 		width: auto;
 		list-style: none;
@@ -354,11 +359,11 @@
 			height: 0;
 			padding: 0;
 			font-size: 0;
-			background-color: #313131;
+			background-color: rgba(9, 9, 9, 0.95);
 			transition: 0.3s;
 
 			&:hover {
-				background-color: #414141;
+				background-color: #ed383f;
 			}
 		}
 	}
@@ -378,6 +383,7 @@
 				}
 
 				@media @mobile {
+					z-index: 1;
 				}
 			}
 
@@ -397,21 +403,26 @@
 
 		span {
 			position: relative;
+			padding-left: 10px;
+			padding-right: 40px;
 
 			&::after {
 				content: '';
 				position: absolute;
-				left: ~"calc(50% - 7px)";
-				bottom: 13px;
-				width: 10px;
-				height: 10px;
-				border-right: 1px solid #bf3136;
-				border-bottom: 1px solid #bf3136;
+				top: 33px;
+				right: 15px;
+				// left: ~"calc(50% - 7px)";
+				// bottom: 13px;
+				width: 8px;
+				height: 8px;
+				border-right: 1px solid #303030;
+				border-bottom: 1px solid #303030;
 				transform: rotate(45deg);
 				transition: 0.1s;
 			}
 
 			@media @tablet {
+				padding: 20px;
 
 				&::after {
 					right: 20px;
