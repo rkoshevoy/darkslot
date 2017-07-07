@@ -116,7 +116,7 @@ form * {
 }
 .main-nav__logo {
   display: inline-block;
-  width: 200px;
+  width: 160px;
   height: 40px;
   margin-right: 50px;
   background-image: url('../img/logo.png');

@@ -44,3 +44,6 @@
 .slick-slide {
   outline: none !important;
 }
+.slick-slide a {
+  outline: none !important;
+}
