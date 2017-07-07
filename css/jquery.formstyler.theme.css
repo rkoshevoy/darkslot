@@ -8,10 +8,7 @@
 	background-color: #fff;
 	transition: 0.1s;
 }
-.jq-selectbox__select:hover {
-	background-color: #e8e8e8;
-}
-.jq-selectbox__select:after {
+.jq-selectbox__select::after {
 	content: '';
 	position: absolute;
 	right: 12px;
@@ -29,7 +26,7 @@
 .jq-selectbox__dropdown {
 	box-sizing: border-box;
 	width: 100%;
-	margin-top: 4px;
+	margin-top: 2px;
 	padding-left: 0;
 	background: #FFF;
 }
@@ -68,7 +65,7 @@
 		padding-bottom: 6px;
 	}
 
-	.jq-selectbox__select:after {
+	.jq-selectbox__select::after {
 		right: 12px;
 		top: 10px;
 	}
