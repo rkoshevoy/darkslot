@@ -9,6 +9,8 @@
 	<link rel="stylesheet" href="css/style.min.css">
 	<link rel="stylesheet" href="css/slick.css">
 	<link rel="stylesheet" href="css/slick-theme.css">
+	<link rel="stylesheet" href="css/jquery.formstyler.css">
+	<link rel="stylesheet" href="css/jquery.formstyler.theme.css">
 </head>
 <body>
 	
@@ -355,9 +357,10 @@
 			<input type="password" name="password" placeholder="Пароль" class="registration-form__password">
 			<select name="currency" id="currency" class="registration-form__currency">
 				<option value="Валюта" selected disabled>Валюта</option>
-				<option value="$">$</option>
-				<option value="$$">$$</option>
-				<option value="$$$">$$$</option>
+				<option value="rub">Рубли</option>
+				<option value="euro">Евро</option>
+				<option value="dollar">Доллары</option>
+				<option value="btc">Биткоины</option>
 			</select>
 			<input type="password" name="password-confirm" placeholder="Подтверждение пароля" class="registration-form__password-confirm">
 			<input type="text" name="code" placeholder="Бонусный код" class="registration-form__code">
@@ -480,6 +483,12 @@
 		<script type="text/javascript" src="js/fixed-bar.js"></script>
 
 		<script type="text/javascript" src="js/modals.js"></script>
+
+	<script type="text/javascript" src="js/jquery.formstyler.min.js"></script>
+
+	<script type="text/javascript">
+		$('.registration-form-mini__select, .registration-form-mini__select, .registration-form__currency').styler();
+	</script>
 
 	</body>
 	</html>

@@ -1750,11 +1750,9 @@ form * {
   position: relative;
   width: 270px;
   height: 45px;
-  margin-bottom: 20px;
-  padding-left: 13px;
-  padding: 0 13px;
   border: none;
   font-family: SFUIRegular;
+  font-size: 14px;
   color: #999999;
   cursor: pointer;
 }
@@ -2128,7 +2126,6 @@ form * {
 }
 .registration-form-mini__email,
 .registration-form-mini__nickname,
-.registration-form-mini__select,
 .registration-form-mini__password,
 .registration-form-mini__password-confirm {
   width: 100%;
@@ -2140,7 +2137,6 @@ form * {
 }
 .registration-form-mini__email::-webkit-input-placeholder,
 .registration-form-mini__nickname::-webkit-input-placeholder,
-.registration-form-mini__select::-webkit-input-placeholder,
 .registration-form-mini__password::-webkit-input-placeholder,
 .registration-form-mini__password-confirm::-webkit-input-placeholder {
   font-family: SFUIRegular;
@@ -2148,7 +2144,6 @@ form * {
 }
 .registration-form-mini__email::-moz-placeholder,
 .registration-form-mini__nickname::-moz-placeholder,
-.registration-form-mini__select::-moz-placeholder,
 .registration-form-mini__password::-moz-placeholder,
 .registration-form-mini__password-confirm::-moz-placeholder {
   font-family: SFUIRegular;
@@ -2156,7 +2151,6 @@ form * {
 }
 .registration-form-mini__email:-ms-input-placeholder,
 .registration-form-mini__nickname:-ms-input-placeholder,
-.registration-form-mini__select:-ms-input-placeholder,
 .registration-form-mini__password:-ms-input-placeholder,
 .registration-form-mini__password-confirm:-ms-input-placeholder {
   font-family: SFUIRegular;
@@ -2164,7 +2158,6 @@ form * {
 }
 .registration-form-mini__email::placeholder,
 .registration-form-mini__nickname::placeholder,
-.registration-form-mini__select::placeholder,
 .registration-form-mini__password::placeholder,
 .registration-form-mini__password-confirm::placeholder {
   font-family: SFUIRegular;
@@ -2185,7 +2178,9 @@ form * {
 .registration-form-mini__select {
   font-family: SFUIRegular;
   color: #999999;
-  cursor: pointer;
+  width: 100%;
+  margin-bottom: 18px;
+  font-size: 13px;
 }
 .registration-form-mini__label-checkbox {
   display: inline-block;
