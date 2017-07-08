@@ -10,7 +10,6 @@
 	<link rel="stylesheet" href="css/slick.css">
 	<link rel="stylesheet" href="css/slick-theme.css">
 	<link rel="stylesheet" href="css/jquery.formstyler.css">
-	<link rel="stylesheet" href="css/jquery.formstyler.theme.css">
 </head>
 <body>
 	
@@ -274,7 +273,11 @@
 
 				<div class="games__social">
 					<span class="games__text">Следите за нами</span>
-					<div class="games__fake-social"></div>
+					<div class="games__social-list">
+						<a href="#" target="blank"><img src="img/social-icons/fb-big.png" alt=""></a>
+						<a href="#" target="blank"><img src="img/social-icons/tw-big.png" alt=""></a>
+						<a href="#" target="blank"><img src="img/social-icons/yt-big.png" alt=""></a>
+					</div>
 				</div>
 			</div>
 		</section>
@@ -289,49 +292,50 @@
 			<div class="footer__wrapper">
 				<div class="footer__copyright"></div>
 				<div class="footer__development">
-					<span class="footer__developer">Разработка сайта: </span> 
+					<span class="footer__developer">Дизайн сайта: </span> 
 					<a href="http://www.crepla.com/" target="blank"><img src="img/crepla-logo.png" alt="crepla" class="footer__crepla-logo"></a>
 				</div>
 			</div>
 		</footer>
 	</div>
 
-		<div class="fixed-bar">
-			<div class="fixed-bar__wrapper">
-				<div class="fixed-bar__hider"></div>
-				<div class="fixed-bar__shower hidden">
-					<p>Показать бар</p>
+	<div class="fixed-bar">
+		<div class="fixed-bar__wrapper">
+			<div class="fixed-bar__hider"></div>
+			<div class="fixed-bar__shower hidden">
+				<p>Показать бар</p>
+			</div>
+			<div class="fixed-bar__top-games-button"><p>Топ-игры</p></div>
+			<form action="#" class="search">
+				<input type="search" class="search__field" placeholder="Поиск">
+				<div class="search__close"></div>
+			</form>
+			<div class="fixed-bar__chat"><p>Онлайн-чат</p></div>
+
+			<form action="#">
+				<img src="img/flag-russian.png" alt="ru">
+				<select name="language" id="language" class="fixed-bar__language">
+					<option value="russian">Русский</option>
+					<option value="not-russian">Не русский</option>
+				</select>
+			</form>
+
+			<div class="top-games hidden">
+				<div class="top-games__wrapper">
+					<div class="top-games__slide">1</div>
+					<div class="top-games__slide">2</div>
+					<div class="top-games__slide">3</div>
+					<div class="top-games__slide">4</div>
+					<div class="top-games__slide">5</div>
+					<div class="top-games__slide">6</div>
+					<div class="top-games__slide">7</div>
+					<div class="top-games__slide">8</div>
 				</div>
-				<div class="fixed-bar__top-games-button"><p>Топ-игры</p></div>
-				<form action="#" class="search">
-					<input type="search" class="search__field" placeholder="Поиск">
-					<div class="search__close"></div>
-				</form>
-				<div class="fixed-bar__chat"><p>Онлайн-чат</p></div>
 
-				<form action="#">
-					<select name="language" id="language" class="fixed-bar__language">
-						<option value="russian">Русский</option>
-						<option value="not-russian">Не русский</option>
-					</select>
-				</form>
-
-				<div class="top-games hidden">
-					<div class="top-games__wrapper">
-						<div class="top-games__slide">1</div>
-						<div class="top-games__slide">2</div>
-						<div class="top-games__slide">3</div>
-						<div class="top-games__slide">4</div>
-						<div class="top-games__slide">5</div>
-						<div class="top-games__slide">6</div>
-						<div class="top-games__slide">7</div>
-						<div class="top-games__slide">8</div>
-					</div>
-
-					<div class="top-games__close"><p>Закрыть</p></div>
-				</div>
+				<div class="top-games__close"><p>Закрыть</p></div>
 			</div>
 		</div>
+	</div>
 
 	<section class="modal-registration">
 		<div class="modal-registration__character-wrapper">

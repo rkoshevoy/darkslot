@@ -10,7 +10,6 @@
 	<link rel="stylesheet" href="css/slick.css">
 	<link rel="stylesheet" href="css/slick-theme.css">
 	<link rel="stylesheet" href="css/jquery.formstyler.css">
-	<link rel="stylesheet" href="css/jquery.formstyler.theme.css">
 </head>
 <body>
 	
@@ -134,6 +133,52 @@
 						<img src="img/slot-of-day.png" alt="slide" class="slide__image">
 					</a>
 				</div>
+			</div> 
+
+			<div class="slide">
+				<div class="slide__image-wrapper">
+					<img src="img/wood-bg.png" alt="slide" class="slide__image">
+				</div>
+
+				<div class="slide__content-wrapper">
+
+					<section class="registration registration--slide">
+						<div class="registration__wrapper">
+
+							<div class="registration-bonus">
+								<h3 class="registration-bonus__header">Зарегистрируйся и получи</h3>
+								<h3 class="registration-bonus__underheader">Приветственный бонус</h3>	
+								<span class="registration-bonus__count">1800$</span>
+							</div>
+
+							<div class="registration__character-wrapper">
+								<img src="img/tiger.png" alt="toger" class="registration__character">
+							</div>
+
+							<form action="#" class="registration-form-mini registration-form-mini--slide">
+								<input type="email" placeholder="Email" class="registration-form-mini__email">
+								<input type="text" placeholder="Никнейм" class="registration-form-mini__nickname">
+								<select name="" id="bottom-reg-select" class="registration-form-mini__select">
+									<option value="currency" selected disabled>Валюта</option>
+									<option value="rub">Рубли</option>
+									<option value="euro">Евро</option>
+									<option value="dollar">Доллары</option>
+									<option value="btc">Биткоины</option>
+								</select>
+								<input type="password" placeholder="Пароль" class="registration-form-mini__password">
+								<input type="password" placeholder="Подтверждение пароля" class="registration-form-mini__password-confirm">
+
+								<input type="checkbox" id="bottom-form-checkbox" class="registration-form-mini__checkbox">
+								<label for="bottom-form-checkbox" class="registration-form-mini__label-checkbox">Мне 18 лет и я принимаю Положения и условия</label>
+
+								<input type="submit" class="registration-form-mini__button" value="Регистрация">
+							</form>
+
+							<button class="registration__reg-button">Регистрация</button>
+
+						</div>
+					</section>
+				</div>
 			</div>
 
 			<div class="slide">
@@ -143,7 +188,6 @@
 					</a>
 				</div>
 			</div>
-
 		</section>
 
 		<section class="tabs">
@@ -446,7 +490,11 @@
 
 				<div class="games__social">
 					<span class="games__text">Следите за нами</span>
-					<div class="games__fake-social"></div>
+					<div class="games__social-list">
+						<a href="#" target="blank"><img src="img/social-icons/fb-big.png" alt=""></a>
+						<a href="#" target="blank"><img src="img/social-icons/tw-big.png" alt=""></a>
+						<a href="#" target="blank"><img src="img/social-icons/yt-big.png" alt=""></a>
+					</div>
 				</div>
 			</div>
 		</section>
@@ -461,7 +509,7 @@
 			<div class="footer__wrapper">
 				<div class="footer__copyright"></div>
 				<div class="footer__development">
-					<span class="footer__developer">Разработка сайта: </span> 
+					<span class="footer__developer">Дизайн сайта: </span> 
 					<a href="http://www.crepla.com/" target="blank"><img src="img/crepla-logo.png" alt="crepla" class="footer__crepla-logo"></a>
 				</div>
 			</div>
@@ -483,6 +531,7 @@
 			<div class="fixed-bar__chat"><p>Онлайн-чат</p></div>
 
 			<form action="#">
+				<img src="img/flag-russian.png" alt="ru">
 				<select name="language" id="language" class="fixed-bar__language">
 					<option value="russian">Русский</option>
 					<option value="not-russian">Не русский</option>
@@ -661,7 +710,7 @@
 	<script type="text/javascript" src="js/jquery.formstyler.min.js"></script>
 
 	<script type="text/javascript">
-		$('.registration-form-mini__select, .registration-form__currency').styler();
+		$('select').styler();
 	</script>
 
 </body>

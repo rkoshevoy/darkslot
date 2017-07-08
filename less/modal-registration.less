@@ -235,6 +235,132 @@
 			background-color: #de3137;
 		}
 	}
+
+	.jq-selectbox,
+	.jq-select-multiple {
+		position: relative;
+		display: inline-block;
+	}
+	.jq-selectbox select,
+	.jq-select-multiple select {
+		position: absolute;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		margin: 0;
+		padding: 0;
+		opacity: 0;
+	}
+	.jq-selectbox li,
+	.jq-select-multiple li {
+		-webkit-user-select: none;
+		-moz-user-select: none;
+		-ms-user-select: none;
+		user-select: none;
+		white-space: nowrap;
+	}
+	.jq-selectbox {
+		z-index: 10;
+	}
+	.jq-selectbox__select {
+		position: relative;
+	}
+	.jq-selectbox__select-text {
+		overflow: hidden;
+		-webkit-user-select: none;
+		-moz-user-select: none;
+		-ms-user-select: none;
+		user-select: none;
+		white-space: nowrap;
+		text-overflow: ellipsis;
+	}
+	.jq-selectbox__dropdown {
+		position: absolute;
+	}
+	.jq-selectbox__dropdown ul {
+		position: relative;
+		overflow: auto;
+		overflow-x: hidden;
+		list-style: none;
+		-webkit-overflow-scrolling: touch;
+	}
+
+	.jq-selectbox {
+		cursor: pointer;
+	}
+	.jq-selectbox__select {
+		position: relative;
+		width: 100%;
+		padding: 15px;
+		background-color: #fff;
+		transition: 0.1s;
+	}
+	.jq-selectbox__select::after {
+		content: '';
+		position: absolute;
+		right: 12px;
+		top: 17px;
+		width: 7px;
+		height: 7px;
+		border-top: 1px solid #b7b7b7;
+		border-right: 1px solid #b7b7b7;
+		transform: rotate(135deg);
+	}
+	.jq-selectbox__select-text {
+		display: block;
+		width: 100%;
+	}
+	.jq-selectbox__dropdown {
+		box-sizing: border-box;
+		width: 100%;
+		top: 47px;
+		padding-left: 0;
+		background: #FFF;
+	}
+	.jq-selectbox ul {
+		margin: 0;
+		padding: 0;
+	}
+	.jq-selectbox li {
+		min-height: 18px;
+		padding: 5px 12px;
+		color: #231F20;
+		transition: 0.1s;
+	}
+	.jq-selectbox li.selected {
+		background-color: #e8e8e8;
+		color: #000;
+	}
+	.jq-selectbox li.disabled {
+		color: #bababa;
+	}
+	.jq-selectbox li.disabled:hover {
+		color: #d5d5d5;
+	}
+	.jq-selectbox li:hover {
+		background-color: #e8e8e8;
+		color: #000;
+	}
+	.jq-selectbox li.option {
+		padding-left: 25px;
+	}
+
+	@media (max-width: 788px) {
+
+		.jq-selectbox__select {
+			padding-top: 6px;
+			padding-bottom: 6px;
+		}
+
+		.jq-selectbox__select::after {
+			right: 12px;
+			top: 10px;
+		}
+		.jq-selectbox__dropdown {
+			top: 29px;
+		}
+	}
 }
 
 .modal-bg {

@@ -25,6 +25,7 @@
 		width: 1180px;
 		margin: 0 auto;
 		padding-top: 40px;
+		padding-bottom: 65px;
 
 		@media @tablet {
 			flex-wrap: wrap;
@@ -41,7 +42,6 @@
 		display: flex;
 		justify-content: space-between;
 		width: 840px;
-		margin-bottom: 65px;
 
 		@media @tablet {
 			width: 100%;
@@ -117,13 +117,15 @@
 		}
 	}
 
-	&__fake-social {
-		width: 220px;
-		height: 45px;
-		background-image: url('../img/social.png');
+	&__social-list {
+		display: flex;
 
-		@media @tablet {
-			margin: 0 auto;
+		a {
+			margin-right: 20px;
+
+			&::last-child {
+				margin-right: 0;
+			}
 		}
 	}
 }
