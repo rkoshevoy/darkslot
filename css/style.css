@@ -1030,7 +1030,7 @@ form * {
   display: none;
 }
 .fixed-bar .jq-selectbox {
-  width: 120px;
+  width: 100px;
   display: inline-block;
   font-family: SFUIRegular;
   font-size: 14px;
@@ -1039,6 +1039,7 @@ form * {
   position: relative;
   width: 100%;
   padding: 16px;
+  padding-left: 5px;
 }
 .fixed-bar .jq-selectbox__select-text {
   display: block;
@@ -1075,7 +1076,7 @@ form * {
   color: #000;
 }
 .fixed-bar .jq-selectbox li.option {
-  padding-left: 25px;
+  padding-left: 15px;
 }
 .fixed-bar--collapsed {
   width: 52px;
@@ -1110,7 +1111,8 @@ form * {
 .fixed-bar--collapsed .fixed-bar__top-games-button,
 .fixed-bar--collapsed .search,
 .fixed-bar--collapsed .fixed-bar__chat,
-.fixed-bar--collapsed .fixed-bar__language {
+.fixed-bar--collapsed .fixed-bar__language,
+.fixed-bar--collapsed form {
   display: none;
 }
 .fixed-bar--collapsed .fixed-bar__shower {
@@ -2280,7 +2282,7 @@ form * {
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-  max-width: 1200px;
+  max-width: 1180px;
   height: 100vh;
   margin: 0 auto;
 }
@@ -2567,7 +2569,7 @@ form * {
   position: relative;
   display: flex;
   flex-direction: row-reverse;
-  width: 1200px;
+  width: 1180px;
   margin: 0 auto;
   padding-top: 50px;
   padding-bottom: 40px;
@@ -2641,7 +2643,7 @@ form * {
 .greeting-bonus__wrapper {
   display: flex;
   flex-wrap: wrap;
-  width: 1200px;
+  width: 1180px;
   margin: 0 auto;
   padding-top: 110px;
 }
@@ -2800,7 +2802,7 @@ form * {
 .bonus-more__wrapper {
   display: flex;
   flex-wrap: wrap;
-  width: 1200px;
+  width: 1180px;
   margin: 0 auto;
   padding-top: 60px;
   padding-bottom: 75px;
@@ -2863,6 +2865,184 @@ form * {
 .social-enter--reg {
   background-color: rgba(60, 60, 60, 0.5);
   border: none;
+}
+.slot-of-day-image {
+  width: 100%;
+}
+.slot-of-day-image__inner {
+  width: 100%;
+}
+.slot-of-day {
+  background-image: url('../img/money-bg-2.png');
+  background-size: contain;
+}
+.slot-of-day__wrapper {
+  width: 1180px;
+  margin: 0 auto;
+  padding-top: 80px;
+  padding-bottom: 110px;
+}
+.half-cashback {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.half-cashback__text-wrapper {
+  width: 530px;
+  margin-bottom: 100px;
+}
+.half-cashback__header {
+  margin-bottom: 20px;
+  font-family: SFUIHeavy;
+  font-size: 36px;
+  line-height: 64px;
+}
+.half-cashback__text {
+  font-size: 15px;
+  line-height: 31px;
+}
+.half-cashback__image {
+  width: 430px;
+  height: 220px;
+  background-color: #181818;
+}
+.half-cashback__button-wrapper {
+  width: 100%;
+  text-align: center;
+}
+.half-cashback__button {
+  width: 280px;
+  margin: 0 auto;
+  margin-bottom: 75px;
+  padding: 25px;
+  background-color: #ed383f;
+  font-family: SFUIBold;
+  font-size: 18px;
+}
+.half-cashback__button:hover {
+  background-color: #de3137;
+}
+.half-cashback__article-wrapper {
+  width: 980px;
+  margin: 0 auto;
+  margin-bottom: 50px;
+  text-align: center;
+}
+.half-cashback__article {
+  font-size: 16px;
+  line-height: 29px;
+}
+.half-cashback__button-details {
+  width: 280px;
+  padding: 25px;
+  border: 1px solid #6ab980;
+  background-color: transparent;
+  font-family: SFUIBold;
+  font-size: 18px;
+}
+.half-cashback__button-details:hover {
+  background-color: #6ab980;
+}
+.timer {
+  width: 100%;
+}
+.timer__wrapper {
+  display: flex;
+  justify-content: space-between;
+  width: 500px;
+  margin: 0 auto;
+  margin-bottom: 75px;
+  text-align: center;
+}
+.timer__numbers-wrapper {
+  width: 100px;
+}
+.timer__numbers {
+  display: block;
+  font-size: 80px;
+  line-height: 80px;
+  text-align: center;
+  font-family: SFUIBold;
+}
+.timer__separator {
+  font-size: 80px;
+  line-height: 80px;
+  font-family: SFUILight;
+}
+.timer__numbers-text {
+  display: block;
+  font-size: 18px;
+  font-family: SFUIRegular;
+}
+.cashback-games__wrapper {
+  width: 980px;
+  padding-bottom: 120px;
+  margin: 0 auto;
+}
+.cashback-games__header {
+  margin-bottom: 30px;
+  font-size: 36px;
+  font-family: SFUIHeavy;
+  text-align: center;
+}
+.cashback-games__text {
+  margin-bottom: 70px;
+  font-size: 16px;
+  line-height: 29px;
+  text-align: center;
+}
+.cashback-game {
+  margin-bottom: 25px;
+  padding: 20px;
+  background-color: #1c1c1c;
+}
+.cashback-game__wrapper {
+  display: flex;
+}
+.cashback-game__text-wrapper {
+  width: 100%;
+  padding-right: 20px;
+}
+.cashback-game__date-wrapper {
+  padding-left: 55px;
+  margin-bottom: 21px;
+  background-image: url('../img/mini-calendar.png');
+  text-align: left;
+}
+.cashback-game__date {
+  display: block;
+  font-size: 16px;
+  line-height: 22px;
+  font-family: SFUIMedium;
+}
+.cashback-game__period {
+  display: block;
+  font-size: 14px;
+  line-height: 22px;
+  color: #999999;
+}
+.cashback-game__image {
+  flex-shrink: 0;
+  width: 340px;
+  height: 180px;
+  background-color: #161616;
+}
+.cashback-game__header {
+  margin-bottom: 27px;
+  font-size: 24px;
+  font-family: SFUIBold;
+  text-transform: uppercase;
+}
+.cashback-game__button {
+  width: 230px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #ed383f;
+  font-family: SFUIBold;
+  font-size: 16px;
+}
+.cashback-game__button:hover {
+  background-color: #de3137;
 }
 @media (min-width: 788px) {
   .main-wrapper {
@@ -3078,16 +3258,25 @@ form * {
   .games__wrapper {
     flex-wrap: wrap;
     width: 748px;
+    padding-bottom: 40px;
   }
   .games__list-wrapper {
     width: 100%;
+    margin-bottom: 20px;
   }
   .games__social {
     width: 100%;
-    margin-bottom: 30px;
   }
   .games__text {
     text-align: center;
+  }
+  .games__social-list {
+    justify-content: space-between;
+    width: 150px;
+    margin: 0 auto;
+  }
+  .games__social-list a {
+    margin-right: 0;
   }
   .partners__wrapper {
     width: 748px;
@@ -3276,6 +3465,23 @@ form * {
   .bonus-more__wrapper {
     width: 748px;
     justify-content: space-between;
+  }
+  .slot-of-day__wrapper {
+    width: 748px;
+  }
+  .half-cashback__text-wrapper {
+    width: 400px;
+  }
+  .half-cashback__header {
+    font-size: 26px;
+    line-height: 40px;
+  }
+  .half-cashback__image {
+    width: 300px;
+    height: 180px;
+  }
+  .cashback-games__wrapper {
+    width: 748px;
   }
 }
 @media (max-width: 788px) {
@@ -3486,7 +3692,6 @@ form * {
   }
   .games__list-wrapper {
     flex-wrap: wrap;
-    margin-bottom: 0;
   }
   .games__column {
     width: 50%;
@@ -3495,7 +3700,6 @@ form * {
   }
   .games__social {
     margin: 0 auto;
-    margin-bottom: 30px;
   }
   .partners__wrapper {
     width: 100%;
@@ -3555,12 +3759,17 @@ form * {
   }
   .fixed-bar__chat {
     order: 1;
+    padding-left: 50px;
   }
   .fixed-bar__chat::after {
     display: none;
   }
   .fixed-bar__chat:hover {
     background-color: transparent;
+  }
+  .fixed-bar form img {
+    margin-left: 15px;
+    margin-right: 0;
   }
   .fixed-bar__language {
     order: 2;
@@ -3851,6 +4060,92 @@ form * {
   }
   .social-enter__text {
     font-size: 12px;
+  }
+  .slot-of-day-image {
+    position: relative;
+    height: 55vw;
+    overflow: hidden;
+  }
+  .slot-of-day-image__inner {
+    position: absolute;
+    left: -35%;
+    width: 170%;
+  }
+  .slot-of-day__wrapper {
+    width: 100%;
+    padding-right: 10px;
+    padding-left: 10px;
+    padding-top: 30px;
+    padding-bottom: 40px;
+  }
+  .half-cashback__text-wrapper {
+    width: 100%;
+    margin-bottom: 40px;
+    text-align: center;
+  }
+  .half-cashback__text {
+    line-height: 20px;
+  }
+  .half-cashback__image {
+    width: 100%;
+    margin-bottom: 40px;
+  }
+  .half-cashback__button {
+    max-width: 100%;
+    margin-bottom: 40px;
+  }
+  .half-cashback__article {
+    line-height: 20px;
+  }
+  .half-cashback__button-details {
+    max-width: 100%;
+  }
+  .timer__wrapper {
+    width: 100%;
+    max-width: 300px;
+    margin-bottom: 40px;
+  }
+  .timer__numbers {
+    font-size: 40px;
+    line-height: 40px;
+  }
+  .timer__separator {
+    font-size: 40px;
+    line-height: 40px;
+  }
+  .timer__numbers-text {
+    font-size: 14px;
+  }
+  .cashback-games__wrapper {
+    width: 100%;
+    padding-right: 10px;
+    padding-left: 10px;
+    padding-bottom: 40px;
+  }
+  .cashback-games__header {
+    margin-bottom: 20px;
+    font-size: 26px;
+  }
+  .cashback-games__text {
+    margin-bottom: 40px;
+    font-size: 20px;
+  }
+  .cashback-game__wrapper {
+    width: 100%;
+    flex-wrap: wrap;
+  }
+  .cashback-game__text-wrapper {
+    order: 2;
+    padding-right: 0;
+    text-align: center;
+  }
+  .cashback-game__image {
+    order: 1;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .cashback-game__button {
+    max-width: 100%;
   }
 }
 @media (max-width: 1220px) and (max-width: 1220px) {

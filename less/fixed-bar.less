@@ -197,6 +197,7 @@
 
 		@media @mobile {
 			order: 1;
+			padding-left: 50px;
 
 			&::after {
 				display: none;
@@ -216,11 +217,17 @@
 	}
 
 	form {
+
 		img {
 			margin-top: -3px;
 			margin-right: 5px;
 			margin-left: 20px;
 			vertical-align: middle;
+
+			@media @mobile {
+				margin-left: 15px;
+				margin-right: 0;
+			}
 		}
 	}
 
@@ -288,7 +295,7 @@
 	
 
 	.jq-selectbox {
-		width: 120px;
+		width: 100px;
 		display: inline-block;
 		font-family: SFUIRegular;
 		font-size: 14px;
@@ -297,6 +304,7 @@
 		position: relative;
 		width: 100%;
 		padding: 16px;
+		padding-left: 5px;
 	}
 	.jq-selectbox__select-text {
 		display: block;
@@ -333,7 +341,7 @@
 		color: #000;
 	}
 	.jq-selectbox li.option {
-		padding-left: 25px;
+		padding-left: 15px;
 	}
 }
 
@@ -390,7 +398,8 @@
 	.fixed-bar__top-games-button,
 	.search,
 	.fixed-bar__chat,
-	.fixed-bar__language {
+	.fixed-bar__language,
+	form {
 		display: none;
 	}
 

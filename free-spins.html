@@ -50,8 +50,8 @@
 
 						<ul class="main-nav__dropdown">
 							<li class="main-nav__dropdown-item"><a href="bonus.html">Приветственный бонус</a></li>
-							<li class="main-nav__dropdown-item"><a href="#">Акция 2</a></li>
-							<li class="main-nav__dropdown-item"><a href="#">Акция 3</a></li>
+							<li class="main-nav__dropdown-item"><a href="slot-of-day.html">Слот дня</a></li>
+							<li class="main-nav__dropdown-item"><a href="free-spins.html">Фриспины</a></li>
 						</ul>
 					</li>
 
@@ -77,7 +77,42 @@
 
 	<div class="main-wrapper">
 
-		
+		<section class="registration">
+			<div class="registration__wrapper">
+
+				<div class="registration-bonus">
+					<h3 class="registration-bonus__header">Зарегистрируйся и получи</h3>
+					<h3 class="registration-bonus__underheader">Приветственный бонус</h3>	
+					<span class="registration-bonus__count">1800$</span>
+				</div>
+
+				<div class="registration__character-wrapper">
+					<img src="img/tiger.png" alt="toger" class="registration__character">
+				</div>
+
+				<form action="#" class="registration-form-mini registration-form-mini--bottom">
+					<input type="email" placeholder="Email" class="registration-form-mini__email">
+					<input type="text" placeholder="Никнейм" class="registration-form-mini__nickname">
+					<select name="" id="bottom-reg-select" class="registration-form-mini__select">
+						<option value="currency" selected disabled>Валюта</option>
+						<option value="rub">Рубли</option>
+						<option value="euro">Евро</option>
+						<option value="dollar">Доллары</option>
+						<option value="btc">Биткоины</option>
+					</select>
+					<input type="password" placeholder="Пароль" class="registration-form-mini__password">
+					<input type="password" placeholder="Подтверждение пароля" class="registration-form-mini__password-confirm">
+
+					<input type="checkbox" id="bottom-form-checkbox" class="registration-form-mini__checkbox">
+					<label for="bottom-form-checkbox" class="registration-form-mini__label-checkbox">Мне 18 лет и я принимаю Положения и условия</label>
+
+					<input type="submit" class="registration-form-mini__button" value="Регистрация">
+				</form>
+
+				<button class="registration__reg-button">Регистрация</button>
+				
+			</div>
+		</section>
 
 		<section class="games">
 			<div class="games__wrapper">
@@ -360,7 +395,7 @@
 	<script type="text/javascript" src="js/jquery.formstyler.min.js"></script>
 
 	<script type="text/javascript">
-		$('.registration-form-mini__select, .registration-form__currency').styler();
+		$('select').styler();
 	</script>
 
 </body>
