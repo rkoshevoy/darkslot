@@ -272,12 +272,14 @@ form * {
 .slide__wrapper {
   width: 1180px;
   margin: 0 auto;
+  text-align: center;
 }
 .slide__text {
   position: absolute;
-  bottom: 50%;
+  top: 50%;
   left: 50%;
-  transform: translatey(150%);
+  transform: translatey(-50%);
+  text-align: left;
 }
 .slide__upper-text {
   display: block;
@@ -297,16 +299,18 @@ form * {
   text-align: center;
 }
 .slide__button {
-  display: block;
+  display: inline-block;
   font-family: SFUIMedium;
   max-width: 170px;
-  margin: 0 auto;
   padding: 25px 40px;
   background-color: #ed383f;
   font-size: 16px;
 }
 .slide__button:hover {
   background-color: #de3137;
+}
+.slide__button--centered {
+  margin: 0 auto;
 }
 .slide__form-bg {
   display: flex;
@@ -356,6 +360,11 @@ form * {
 }
 .slide-bonus__third-line {
   font-size: 21px;
+  margin-bottom: 15px;
+}
+.slide-bonus__link {
+  display: inline-block;
+  border-bottom: 1px dashed #fff;
 }
 .tabs {
   position: relative;
@@ -3189,7 +3198,7 @@ form * {
   .main-nav__item--second:hover .main-nav__dropdown-item a,
   .main-nav__item--fifth:hover .main-nav__dropdown-item a {
     height: auto;
-    padding: 20px;
+    padding: 15px;
     font-size: 16px;
   }
 }
@@ -3325,13 +3334,14 @@ form * {
     background-color: #dd363c;
   }
   .slide-bonus__first-line {
-    font-size: 90px;
+    font-size: 80px;
   }
   .slide-bonus__second-line {
     margin-bottom: 5px;
     font-size: 30px;
   }
   .slide-bonus__third-line {
+    margin-bottom: 10px;
     font-size: 16px;
   }
   .tabs__wrapper {
@@ -3716,9 +3726,6 @@ form * {
     padding-right: 10px;
     padding-left: 10px;
   }
-  .slide__text {
-    transform: translatey(130%);
-  }
   .slide__upper-text {
     margin-bottom: 10px;
     font-size: 16px;
@@ -3734,6 +3741,7 @@ form * {
     padding: 8px 10px;
   }
   .slide__button {
+    display: inline-block;
     padding: 8px 10px;
     max-width: 120px;
   }
@@ -3750,6 +3758,7 @@ form * {
     padding: 8px 10px;
   }
   .slide-bonus {
+    width: 100%;
     margin-bottom: 5%;
   }
   .slide-bonus__first-line {
