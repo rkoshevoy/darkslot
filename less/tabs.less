@@ -212,30 +212,46 @@
 	&__variants-wrapper {
 		display: flex;
 		flex-wrap: wrap;
-		justify-content: space-between;
 		width: 100%;
 	}
 
 	&__variant {
-		width: ~"calc(25% - 15px)";
+		display: block;
+		width: 280px;
 		height: 160px;
+		margin-right: 20px;
 		background-color: #313131;
 		margin-bottom: 20px;
 
-		&:last-of-type {
+		&:last-child {
 			display: none;
 		}
 
-		@media @tablet {
-			width: ~"calc(33.33% - 12px)";
+		&:nth-child(4n) {
+			margin-right: 0;
+		}
 
-			&:last-of-type {
+		@media @tablet {
+			width: 240px;
+			margin-right: 14px;
+			margin-bottom: 15px;
+
+			&:nth-child(3n) {
+				margin-right: 0;
+			}
+
+			&:nth-child(4n) {
+				margin-right: 14px;
+			}
+
+			&:last-child {
 				display: inline-block;
 			}
 		}
 
 		@media @mobile {
 			width: 100%;
+			margin-right: 0;
 
 			&:nth-of-type(4),
 			&:nth-of-type(5),

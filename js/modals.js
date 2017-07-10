@@ -9,7 +9,7 @@ $(document).ready(function () {
 		$('.modal-enter').css('top', '50%')
 	});
 
-	$('#menu-support').click(function () {
+	$('#menu-support, .games__item--support').click(function () {
 		$('.modal-bg').css({'opacity': '0.8', 'z-index': '100'});
 		$('.modal-contact').css('top', '50%')
 	});
