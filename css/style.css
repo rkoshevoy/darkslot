@@ -2866,17 +2866,17 @@ form * {
   background-color: rgba(60, 60, 60, 0.5);
   border: none;
 }
-.slot-of-day-image {
+.day-slot-image {
   width: 100%;
 }
-.slot-of-day-image__inner {
+.day-slot-image__inner {
   width: 100%;
 }
-.slot-of-day {
+.day-slot {
   background-image: url('../img/money-bg-2.png');
   background-size: contain;
 }
-.slot-of-day__wrapper {
+.day-slot__wrapper {
   width: 1180px;
   margin: 0 auto;
   padding-top: 80px;
@@ -3466,7 +3466,7 @@ form * {
     width: 748px;
     justify-content: space-between;
   }
-  .slot-of-day__wrapper {
+  .day-slot__wrapper {
     width: 748px;
   }
   .half-cashback__text-wrapper {
@@ -4061,17 +4061,17 @@ form * {
   .social-enter__text {
     font-size: 12px;
   }
-  .slot-of-day-image {
+  .day-slot-image {
     position: relative;
     height: 55vw;
     overflow: hidden;
   }
-  .slot-of-day-image__inner {
+  .day-slot-image__inner {
     position: absolute;
     left: -35%;
     width: 170%;
   }
-  .slot-of-day__wrapper {
+  .day-slot__wrapper {
     width: 100%;
     padding-right: 10px;
     padding-left: 10px;
