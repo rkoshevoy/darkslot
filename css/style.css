@@ -772,13 +772,15 @@ form * {
   width: 1180px;
   margin: 0 auto;
   padding-top: 40px;
-  padding-bottom: 65px;
+  padding-bottom: 40px;
 }
 .games__list-wrapper {
   position: relative;
   display: flex;
-  justify-content: space-between;
-  width: 840px;
+  width: 100%;
+}
+.games__column {
+  margin-right: 100px;
 }
 .games__header {
   margin-bottom: 15px;
@@ -798,6 +800,9 @@ form * {
 }
 .games__item:hover a {
   color: #fff;
+}
+.games__social {
+  flex-shrink: 0;
 }
 .games__text {
   display: block;
@@ -3379,11 +3384,15 @@ form * {
   .games__wrapper {
     flex-wrap: wrap;
     width: 748px;
-    padding-bottom: 40px;
   }
   .games__list-wrapper {
+    justify-content: space-around;
     width: 100%;
     margin-bottom: 20px;
+    text-align: center;
+  }
+  .games__column {
+    margin-right: 0;
   }
   .games__social {
     width: 100%;
@@ -4371,7 +4380,7 @@ form * {
     z-index: 1;
   }
 }
-@media (max-width: 300px) {
+@media (max-width: 450px) {
   .games__column {
     width: 100%;
   }
