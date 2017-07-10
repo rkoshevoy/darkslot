@@ -44,7 +44,7 @@
 		transform: translatey(150%);
 
 		@media @tablet {
-			width: 300px;
+			// width: 300px;
 		}
 
 		@media @mobile {
@@ -83,8 +83,33 @@
 		}
 	}
 
+	&__button-wrapper {
+		position: absolute;
+		bottom: 15px;
+		width: 100%;
+		text-align: center;
+
+		@media @tablet {
+			.slide__button {
+				padding: 20px;
+				bottom: 10px;
+			}
+		}
+
+		@media @mobile {
+			bottom: 5px;
+
+			.slide__button {
+				padding: 8px 10px;
+			}
+		}
+	}
+
 	&__button {
+		display: block;
 		font-family: SFUIMedium;
+		max-width: 170px;
+		margin: 0 auto;
 		padding: 25px 40px;
 		background-color: #ed383f;
 		font-size: 16px;
@@ -95,6 +120,7 @@
 
 		@media @mobile {
 			padding: 8px 10px;
+			max-width: 120px;
 		}
 	}
 
@@ -207,7 +233,7 @@
 		text-transform: uppercase;
 
 		@media @tablet {
-		margin-bottom: 5px;
+			margin-bottom: 5px;
 			font-size: 30px;
 		}
 	}

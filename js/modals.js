@@ -1,5 +1,5 @@
 $(document).ready(function () {
-	$('.header__first-button, .main-nav__mobile-reg, .slide__reg-button, .registration__reg-button').click(function () {
+	$('.header__first-button, .main-nav__mobile-reg, .slide__reg-button, .registration__reg-button, .statistics__button').click(function () {
 		$('.modal-bg').css({'opacity': '0.8', 'z-index': '100'});
 		$('.modal-registration').css('top', '50%')
 	});
