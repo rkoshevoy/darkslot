@@ -33,14 +33,21 @@
 	}
 
 	&__button {
+		display: block;
 		width: 280px;
 		padding: 25px;
 		background-color: #ed383f;
 		font-family: SFUIBold;
 		font-size: 18px;
+		text-align: center;
 
 		&:hover {
 			background-color: #de3137;
+		}
+
+		@media @mobile {
+			max-width: 100%;
+			margin: 0 auto;
 		}
 	}
 

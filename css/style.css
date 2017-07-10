@@ -599,15 +599,13 @@ form * {
   margin-bottom: -4px;
 }
 .last-winners {
-  padding-top: 40px;
-  padding-bottom: 55px;
   background-color: #2b2b2b;
 }
 .last-winners__wrapper {
   width: 1180px;
   margin: 0 auto;
-  padding-top: 40px;
-  padding-bottom: 55px;
+  padding-top: 80px;
+  padding-bottom: 100px;
 }
 .last-winners__header {
   margin-bottom: 65px;
@@ -730,11 +728,13 @@ form * {
   line-height: 60px;
 }
 .deposites__button {
+  display: block;
   width: 280px;
   padding: 25px;
   background-color: #ed383f;
   font-family: SFUIBold;
   font-size: 18px;
+  text-align: center;
 }
 .deposites__button:hover {
   background-color: #de3137;
@@ -3791,6 +3791,8 @@ form * {
     padding-right: 10px;
     padding-left: 10px;
     text-align: center;
+    padding-top: 40px;
+    padding-bottom: 40px;
   }
   .last-winners__button {
     width: 280px;
@@ -3833,6 +3835,10 @@ form * {
   .deposites__header {
     font-size: 32px;
     line-height: 40px;
+  }
+  .deposites__button {
+    max-width: 100%;
+    margin: 0 auto;
   }
   .deposites__image-wrapper {
     width: 300px;
