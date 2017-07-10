@@ -3059,6 +3059,11 @@ form * {
 .free-spins-image__inner {
   width: 100%;
 }
+.free-spins {
+  background-image: url('../img/hands-card-bg.jpg');
+  background-size: contain;
+  background-position: center top;
+}
 .free-spins__wrapper {
   position: relative;
   width: 1180px;
@@ -3071,6 +3076,7 @@ form * {
   width: 700px;
 }
 .free-spins__header {
+  margin-bottom: 20px;
   font-size: 45px;
   line-height: 74px;
   font-family: SFUIHeavy;
@@ -3089,12 +3095,14 @@ form * {
   width: 100%;
 }
 .statistics {
+  background-image: url('../img/table-bg.jpg');
   background-size: contain;
+  background-position: center 0;
 }
 .statistics__wrapper {
   width: 1180px;
   margin: 0 auto;
-  padding-top: 50px;
+  padding-top: 100px;
   padding-bottom: 140px;
 }
 .statistics__columns-wrapper {
@@ -3611,7 +3619,6 @@ form * {
     width: 500px;
   }
   .free-spins__header {
-    margin-bottom: 20px;
     font-size: 30px;
     line-height: 40px;
   }
