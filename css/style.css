@@ -729,6 +729,7 @@ form * {
 }
 .deposites {
   background-image: url('../img/bg-deposites.png');
+  background-size: cover;
   background-position: bottom;
 }
 .deposites__wrapper {
