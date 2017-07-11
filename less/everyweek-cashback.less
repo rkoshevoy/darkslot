@@ -1,0 +1,122 @@
+.everyweek-cashback {
+	background-image: url('../img/money-bg-3.png');
+	background-size: cover;
+	background-position: top;
+
+	&__wrapper {
+		position: relative;
+		width: 1180px;
+		margin: 0 auto;
+		padding-top: 240px;
+		padding-bottom: 50px;
+		text-align: center;
+	}
+
+	&__header {
+		position: relative;
+		z-index: 1;
+		margin-bottom: 70px;
+		font-size: 36px;
+		text-transform: uppercase;
+		font-family: SFUIHeavy;
+	}
+
+	&__back-text {
+		position: absolute;
+		z-index: 0;
+		top: 190px;
+		left: 50%;
+		transform: translatex(-50%);
+		font-size: 120px;
+		color: #212121;
+		text-transform: uppercase;
+	}
+
+	&__text {
+		margin-bottom: 65px;
+		font-size: 18px;
+		line-height: 36px;
+	}
+
+	&__condition {
+		display: inline-block;
+		padding: 20px;
+		background-color: #333333;
+	}
+}
+
+.places {
+	display: flex;
+	justify-content: space-around;
+	margin-bottom: 70px;
+
+	&__item {
+		width: 320px;
+		padding-top: 40px;
+		padding-bottom: 20px;
+		background-position: center;
+	}
+
+	&__item--second {
+		background-image: url('../img/second-place.png');
+	}
+
+	&__item--first {
+		background-image: url('../img/first-place.png');
+	}
+
+	&__item--third {
+		background-image: url('../img/third-place.png');
+	}
+
+	&__header {
+		font-size: 60px;
+	}
+
+	&__bottom-text {
+		font-size: 18px;
+	}
+}
+
+.broadcast {
+	background-color: #1a1a1a;
+
+	&__wrapper {
+		display: flex;
+		width: 1180px;
+		margin: 0 auto;
+		padding: 80px 0;
+	}
+
+	&__text-wrapper {
+		width: 100%;
+	}
+
+	&__header {
+		width: 540px;
+		margin-bottom: 40px;
+		font-size: 20px;
+		line-height: 37px;
+		font-family: SFUIBold;
+		text-transform: uppercase;
+	}
+
+	&__image-wrapper {
+		flex-shrink: 0;
+		width: 580px;
+		height: 330px;
+		background-color: #141414;
+	}
+
+	&__button {
+		width: 345px;
+		padding: 25px;
+		background-color: #6ab980;
+		font-family: SFUIBold;
+		font-size: 16px;
+
+		&:hover {
+			background-color: #589f6c;
+		}
+	}
+}
