@@ -3283,10 +3283,16 @@ form * {
     display: block;
     padding: 20px 0;
   }
+  .main-nav__item a:hover {
+    background-color: #161616;
+  }
   .main-nav__item span {
     display: block;
     padding-top: 20px;
     padding-bottom: 20px;
+  }
+  .main-nav__item span:hover {
+    background-color: #161616;
   }
   .main-nav__dropdown {
     top: 0px;
