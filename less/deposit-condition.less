@@ -5,6 +5,16 @@
 		width: 1180px;
 		margin: 0 auto;
 		padding: 35px;
+
+		@media @tablet {
+			justify-content: space-around;
+			width: 748px;
+		}
+
+		@media @mobile {
+			.mobile-wrap;
+			flex-wrap: wrap;
+		}
 	}
 }
 
@@ -45,7 +55,7 @@
 
 	&__description {
 		display: block;
-		max-width: 250px;
+		max-width: 300px;
 		font-size: 16px;
 		font-family: SFUIMedium;
 

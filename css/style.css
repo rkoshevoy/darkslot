@@ -3176,6 +3176,9 @@ form * {
 .timer--everyweek .timer__wrapper {
   width: 100%;
 }
+.timer--everyweek .timer__numbers-wrapper:first-child {
+  width: 50px;
+}
 .timer--everyweek .timer__numbers {
   font-size: 48px;
   line-height: 48px;
@@ -3217,13 +3220,13 @@ form * {
 }
 .deposit-condition__description {
   display: block;
-  max-width: 250px;
+  max-width: 300px;
   font-size: 16px;
   font-family: SFUIMedium;
 }
 .everyweek-cashback {
   background-image: url('../img/money-bg-3.png');
-  background-size: cover;
+  background-size: contain;
   background-position: top;
 }
 .everyweek-cashback__wrapper {
@@ -3261,6 +3264,20 @@ form * {
   display: inline-block;
   padding: 20px;
   background-color: #333333;
+}
+.everyweek-cashback__second-level {
+  display: inline-block;
+  border-bottom: 1px dashed #fff;
+}
+.everyweek-cashback__hint {
+  display: inline-block;
+  width: 18px;
+  margin-left: 5px;
+  border-radius: 50%;
+  background-color: #ed383f;
+  font-size: 12px;
+  line-height: 18px;
+  cursor: pointer;
 }
 .places {
   display: flex;
@@ -3817,11 +3834,55 @@ form * {
   .statistics__text-wrapper {
     width: 100%;
   }
+  .timer--everyweek {
+    margin: 0 auto;
+  }
+  .deposit-conditions__wrapper {
+    justify-content: space-around;
+    width: 748px;
+  }
   .deposit-condition {
     width: 25%;
     margin-bottom: 60px;
     padding-top: 0;
     padding-left: 10px;
+  }
+  .everyweek-cashback__wrapper {
+    width: 748px;
+    padding-top: 100px;
+  }
+  .everyweek-cashback__back-text {
+    top: 52px;
+    color: #1d1d1d;
+  }
+  .places {
+    flex-wrap: wrap;
+  }
+  .places__item--second {
+    order: 2;
+    width: 50%;
+  }
+  .places__item--first {
+    order: 1;
+    width: 100%;
+  }
+  .places__item--third {
+    order: 3;
+    width: 50%;
+  }
+  .broadcast__wrapper {
+    flex-wrap: wrap;
+    width: 748px;
+  }
+  .broadcast__text-wrapper {
+    margin-bottom: 30px;
+    text-align: center;
+  }
+  .broadcast__header {
+    width: 100%;
+  }
+  .broadcast__image-wrapper {
+    width: 100%;
   }
 }
 @media (max-width: 788px) {
@@ -4545,12 +4606,64 @@ form * {
   .timer__numbers-text {
     font-size: 14px;
   }
+  .timer--everyweek {
+    width: 100%;
+  }
+  .deposit-conditions__wrapper {
+    width: 100%;
+    padding-right: 10px;
+    padding-left: 10px;
+    flex-wrap: wrap;
+  }
   .deposit-condition {
     width: 100%;
     text-align: center;
   }
   .deposit-condition__description {
     max-width: none;
+  }
+  .everyweek-cashback__wrapper {
+    width: 100%;
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+  .everyweek-cashback__header {
+    margin-bottom: 40px;
+    font-size: 26px;
+  }
+  .everyweek-cashback__back-text {
+    font-size: 40px;
+  }
+  .everyweek-cashback__text {
+    margin-bottom: 40px;
+    font-size: 16px;
+    line-height: 20px;
+  }
+  .places {
+    margin-bottom: 40px;
+  }
+  .places__item--second {
+    width: 100%;
+  }
+  .places__item--third {
+    width: 100%;
+    padding-top: 20px;
+  }
+  .broadcast__wrapper {
+    width: 100%;
+    padding-right: 10px;
+    padding-left: 10px;
+    padding: 40px 10px;
+  }
+  .broadcast__header {
+    font-size: 18px;
+    line-height: 22px;
+  }
+  .broadcast__image-wrapper {
+    height: 55vw;
+  }
+  .broadcast__button {
+    max-width: 100%;
   }
 }
 @media (max-width: 1220px) and (max-width: 1220px) {

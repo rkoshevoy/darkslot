@@ -58,8 +58,20 @@
 .timer--everyweek {
 	width: 450px;
 
+	@media @tablet {
+		margin: 0 auto;
+	}
+
+	@media @mobile {
+		width: 100%;
+	}
+
 	.timer__wrapper {
 		width: 100%;
+	}
+
+	.timer__numbers-wrapper:first-child {
+		width: 50px;
 	}
 
 	.timer__numbers {
