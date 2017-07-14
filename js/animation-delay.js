@@ -1,9 +1,7 @@
 $(document).ready(function() {
 	var content = $('.content');
-	var visible = $('.visible');
-	var hidden = $('.hidden');
 	$(content).viewportChecker({
-		classToAdd: 'visible animated fadeInUp',
-		offset: 100
+		classToAdd: 'animated bounce',
+		offset: 300
 	});
 });
