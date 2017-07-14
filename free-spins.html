@@ -275,62 +275,64 @@
 		</div>
 	</div>
 
-	<section class="modal-registration">
-		<div class="modal-registration__character-wrapper">
-			<img src="img/rat.png" alt="rat" class="modal-registration__character">
+	<section class="modal modal--registration">
+		<div class="modal__character-wrapper">
+			<img src="img/rat.png" alt="rat" class="modal__character">
 		</div>
 
-		<form action="#" class="registration-form">
-			<h2 class="registration-form__header">Регистрация</h2>
+		<div class="modal__wrapper">
 
-			<div class="social-enter social-enter--reg">
-				<span class="social-enter__text">Войти с помощью:</span>
+			<form action="#" class="modal-form modal-form--registration">
+				<h2 class="modal-form__header">Регистрация</h2>
 
-				<div class="social-enter__socials">
-					<button class="social-enter__soc social-enter__soc--fb"></button>
-					<button class="social-enter__soc social-enter__soc--vk"></button>
-					<button class="social-enter__soc social-enter__soc--tw"></button>
+				<div class="social-enter social-enter--reg">
+					<span class="social-enter__text">Войти с помощью:</span>
+
+					<div class="social-enter__socials">
+						<button class="social-enter__soc social-enter__soc--fb"></button>
+						<button class="social-enter__soc social-enter__soc--vk"></button>
+						<button class="social-enter__soc social-enter__soc--tw"></button>
+					</div>
 				</div>
-			</div>
 
-			<input type="email" name="email" placeholder="Email" class="registration-form__name">
-			<input type="text" name="nickname" placeholder="Никнейм" class="registration-form__nickname">
-			<input type="password" name="password" placeholder="Пароль" class="registration-form__password">
-			<input type="password" name="password-confirm" placeholder="Подтверждение пароля" class="registration-form__password-confirm">
-			<select name="currency" id="currency" class="registration-form__currency">
-				<option value="Валюта" selected disabled>Валюта</option>
-				<option value="rub">Рубли</option>
-				<option value="euro">Евро</option>
-				<option value="dollar">Доллары</option>
-				<option value="btc">Биткоины</option>
-			</select>
-			<input type="text" name="code" placeholder="Бонусный код" class="registration-form__code">
+				<input type="email" name="email" placeholder="Email" class="modal-form__input">
+				<input type="text" name="nickname" placeholder="Никнейм" class="modal-form__input">
+				<input type="password" name="password" placeholder="Пароль" class="modal-form__input">
+				<input type="password" name="password-confirm" placeholder="Подтверждение пароля" class="modal-form__input">
+				<select name="currency" id="currency" class="modal-form__currency">
+					<option value="Валюта" selected disabled>Валюта</option>
+					<option value="rub">Рубли</option>
+					<option value="euro">Евро</option>
+					<option value="dollar">Доллары</option>
+					<option value="btc">Биткоины</option>
+				</select>
+				<input type="text" name="code" placeholder="Бонусный код" class="modal-form__input">
 
-			<div class="registration-form__checkbox-wrapper">
-				<input type="checkbox" id="reg-checkbox" class="registration-form__checkbox">
-				<label for="reg-checkbox" class="registration-form__label-checkbox">Мне есть 18 лет и я принимаю Положения и условия</label>
-			</div>
+				<div class="modal-form__checkbox-wrapper">
+					<input type="checkbox" id="reg-checkbox" class="modal-form__checkbox">
+					<label for="reg-checkbox" class="modal-form__label-checkbox">Мне есть 18 лет и я принимаю Положения и условия</label>
+				</div>
 
-			<input type="submit" value="Регистрация" class="registration-form__button">
-		</form>
+				<input type="submit" value="Регистрация" class="modal-form__button">
+			</form>
+		</div>
 
-		<div class="modal-registration__close"></div>
+		<div class="modal__close"></div>
 	</section>
 
-
-	<section class="modal-enter">
-		<div class="modal-enter__character-wrapper">
-			<img src="img/bear.png" alt="bear" class="modal-enter__character">
+	<section class="modal modal--enter">
+		<div class="modal__character-wrapper">
+			<img src="img/bear.png" alt="bear" class="modal__character">
 		</div>
 
-		<div class="modal-enter__wrapper">
+		<div class="modal__wrapper">
 
-			<form action="#" class="enter-form">
-				<h2 class="enter-form__header">Авторизация</h2>
+			<form action="#" class="modal-form modal-form--enter">
+				<h2 class="modal-form__header">Авторизация</h2>
 
-				<input type="email" class="enter-form__email" placeholder="Email">
-				<input type="password" class="enter-form__password" placeholder="Пароль">
-				<input type="button" class="enter-form__button" value="Войти">
+				<input type="email" class="modal-form__input" placeholder="Email">
+				<input type="password" class="modal-form__input" placeholder="Пароль">
+				<input type="submit" class="modal-form__button" value="Войти">
 
 				<div class="social-enter">
 					<span class="social-enter__text">Войти с помощью:</span>
@@ -343,25 +345,58 @@
 				</div>
 			</form>
 
-			<a href="#" class="modal-enter__forgot-pass">Я забыл пароль</a>
+			<button class="modal-form__forgot-pass">Я забыл пароль</button>
 		</div>
 
-		<div class="modal-enter__close"></div>
+		<div class="modal__close"></div>
 	</section>
 
-	<section class="modal-contact">
-		<div class="modal-contact__character-wrapper">
-			<img src="img/tiger.png" alt="tiger" class="modal-contact__character">
+	<section class="modal modal--contact">
+		<div class="modal__character-wrapper">
+			<img src="img/tiger.png" alt="tiger" class="modal__character">
 		</div>
 
-		<form action="#" class="contact-form">
-			<h2 class="contact-form__header">Форма контакта</h2>
-			<input type="email" class="contact-form__email" placeholder="Email">
-			<textarea name="textarea-contact" id="text-contact" cols="30" rows="10" class="contact-form__text-field" placeholder="Текст..."></textarea>
-			<input type="submit" class="contact-form__button" value="Отправить">
-		</form>
+		<div class="modal__wrapper">
 
-		<div class="modal-contact__close"></div>
+			<form action="#" class="modal-form modal-form--contact">
+				<h2 class="modal-form__header">Форма контакта</h2>
+				<input type="email" class="modal-form__input" placeholder="Email">
+				<textarea name="textarea-contact" id="text-contact" cols="30" rows="10" class="modal-form__text-field" placeholder="Текст..."></textarea>
+				<input type="submit" class="modal-form__button" value="Отправить">
+			</form>
+		</div>
+
+		<div class="modal__close"></div>
+	</section>
+
+	<section class="modal modal--recovery">
+		<div class="modal__wrapper">
+			<form action="#" class="modal-form modal-form--recovery">
+				<h2 class="modal-form__header">Забыли пароль?</h2>
+				<p class="modal-form__text">Введите свой электронный адрес, и Вам будут высланы инструкции по замене пароля. <br>По дальнейшим вопросам Вы можете связаться с нами через страницу <span class="modal-form__support">поддержка</span></p>
+
+				<input type="email" class="modal-form__input" placeholder="Email">
+				<input type="submit" class="modal-form__button" value="Восстановить пароль" id="forgot-button">
+			</form>
+
+			<span class="modal-form__not-recieve">Не получили инструкций для разблокировки?</span>
+			<span class="modal-form__not-recieve">Не получили инструкций для подтверждения?</span>
+		</div>
+
+		<div class="modal__close"></div>
+	</section>
+
+	<section class="modal modal--new-password">
+		<div class="modal__wrapper">
+			<form action="#" class="modal-form modal-form--new-password">
+				<h2 class="modal-form__header">Изменить пароль</h2>
+				<input type="password" class="modal-form__input" placeholder="Новый пароль">
+				<input type="password" class="modal-form__input" placeholder="Повторите новый пароль">
+				<input type="submit" class="modal-form__button">
+			</form>
+		</div>
+
+		<div class="modal__close"></div>
 	</section>
 
 	<div class="modal-bg"></div> 
