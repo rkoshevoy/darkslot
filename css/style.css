@@ -1771,30 +1771,26 @@ form * {
 .prize__button:hover {
   background-color: #de3137;
 }
-.modal-registration {
+.modal {
   display: flex;
   flex-direction: row-reverse;
   position: fixed;
   z-index: 101;
   top: -1000px;
   left: 50%;
-  width: 945px;
   padding: 20px;
   background-image: url('../img/reg-bg.jpg');
   background-size: cover;
   transform: translate(-50%, -50%);
   transition: 0.6s;
 }
-.modal-registration__character-wrapper {
+.modal__character-wrapper {
   position: absolute;
-  left: -35px;
-  top: -8px;
-  width: 400px;
 }
-.modal-registration__character {
+.modal__character {
   width: 100%;
 }
-.modal-registration__close {
+.modal__close {
   position: absolute;
   right: 23px;
   top: 28px;
@@ -1803,7 +1799,7 @@ form * {
   cursor: pointer;
   transition: 0.1s;
 }
-.modal-registration__close::before {
+.modal__close::before {
   content: '';
   position: absolute;
   right: -3px;
@@ -1814,7 +1810,7 @@ form * {
   transform: rotate(45deg);
   transition: 0.1s;
 }
-.modal-registration__close::after {
+.modal__close::after {
   content: '';
   position: absolute;
   right: -3px;
@@ -1825,62 +1821,97 @@ form * {
   transform: rotate(135deg);
   transition: 0.1s;
 }
-.modal-registration__close:hover::before {
+.modal__close:hover::before {
   background-color: #fff;
 }
-.modal-registration__close:hover::after {
+.modal__close:hover::after {
   background-color: #fff;
 }
-.registration-form {
+.modal--registration {
+  width: 945px;
+}
+.modal--registration .modal__character-wrapper {
+  left: -35px;
+  top: -8px;
+  width: 400px;
+}
+.modal--enter {
+  width: 735px;
+}
+.modal--enter .modal__character-wrapper {
+  position: absolute;
+  left: -42px;
+  top: 12px;
+  width: 380px;
+}
+.modal--contact {
+  width: 800px;
+}
+.modal--contact .modal__character-wrapper {
+  position: absolute;
+  z-index: -1;
+  left: -48px;
+  top: -17px;
+  width: 390px;
+}
+.modal--recovery,
+.modal--new-password {
+  width: 500px;
+}
+.modal-form {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  width: 560px;
-  margin-top: 20px;
 }
-.registration-form__header {
+.modal-form__header {
   width: 100%;
+  margin-top: 20px;
   margin-bottom: 40px;
   font-size: 25px;
   text-transform: uppercase;
 }
-.registration-form input {
-  font-family: SFUIRegular;
-  font-size: 14px;
-  color: #000;
+.modal-form__text {
+  margin-bottom: 20px;
 }
-.registration-form input::-webkit-input-placeholder {
-  font-family: SFUIRegular;
-  color: #999999;
-}
-.registration-form input::-moz-placeholder {
-  font-family: SFUIRegular;
-  color: #999999;
-}
-.registration-form input:-ms-input-placeholder {
-  font-family: SFUIRegular;
-  color: #999999;
-}
-.registration-form input::placeholder {
-  font-family: SFUIRegular;
-  color: #999999;
-}
-.registration-form input[type=submit] {
-  color: #fff;
-}
-.registration-form__name,
-.registration-form__nickname,
-.registration-form__password,
-.registration-form__password-confirm,
-.registration-form__code {
-  width: 270px;
+.modal-form__input {
   height: 45px;
   margin-bottom: 20px;
   padding: 0 13px;
   border: none;
   background-color: #fff;
+  font-family: SFUIRegular;
+  font-size: 14px;
+  color: #000;
 }
-.registration-form__currency {
+.modal-form__input::-webkit-input-placeholder {
+  font-family: SFUIRegular;
+  color: #999999;
+}
+.modal-form__input::-moz-placeholder {
+  font-family: SFUIRegular;
+  color: #999999;
+}
+.modal-form__input:-ms-input-placeholder {
+  font-family: SFUIRegular;
+  color: #999999;
+}
+.modal-form__input::placeholder {
+  font-family: SFUIRegular;
+  color: #999999;
+}
+.modal-form__text-field {
+  height: 120px;
+  margin-bottom: 20px;
+  padding: 17px 13px;
+  border: none;
+  background-color: #fff;
+  font-family: SFUIRegular;
+  font-size: 14px;
+  color: #000;
+  resize: none;
+  overflow: hidden;
+}
+.modal-form__currency {
   display: block;
   position: relative;
   width: 270px;
@@ -1891,7 +1922,7 @@ form * {
   color: #999999;
   cursor: pointer;
 }
-.registration-form__label-checkbox {
+.modal-form__label-checkbox {
   display: inline-block;
   position: relative;
   padding-left: 30px;
@@ -1900,13 +1931,13 @@ form * {
   line-height: 20px;
   cursor: pointer;
 }
-.registration-form__checkbox {
+.modal-form__checkbox {
   position: absolute;
   left: 0;
   opacity: 0;
   cursor: pointer;
 }
-.registration-form__checkbox:not(checked) + label::before {
+.modal-form__checkbox:not(checked) + label::before {
   content: '';
   position: absolute;
   left: 0;
@@ -1915,7 +1946,7 @@ form * {
   border: 1px solid #e3e3e3;
   background-color: #fff;
 }
-.registration-form__checkbox:checked + label::after {
+.modal-form__checkbox:checked + label::after {
   content: '';
   position: absolute;
   top: 5px;
@@ -1926,7 +1957,7 @@ form * {
   border-right: 1px solid #f38084;
   transform: rotate(135deg);
 }
-.registration-form__button {
+.modal-form__button {
   width: 100%;
   padding: 20px;
   border: none;
@@ -1937,16 +1968,37 @@ form * {
   transition: 0.1s;
   cursor: pointer;
 }
-.registration-form__button:hover {
+.modal-form__button:hover {
   background-color: #de3137;
 }
-.registration-form .jq-selectbox,
-.registration-form .jq-select-multiple {
+.modal-form__forgot-pass {
+  display: block;
+  margin: 0 auto;
+  background-color: transparent;
+  color: #d9d9d9;
+  font-size: 14px;
+  text-decoration: underline;
+  transition: 0.1s;
+  font-family: SFUIRegular;
+  cursor: pointer;
+}
+.modal-form__forgot-pass:hover {
+  color: #fff;
+}
+.modal-form__not-recieve,
+.modal-form__support {
+  display: inline-block;
+  cursor: pointer;
+  transitin: 0.1s;
+  text-decoration: underline;
+}
+.modal-form .jq-selectbox,
+.modal-form .jq-select-multiple {
   position: relative;
   display: inline-block;
 }
-.registration-form .jq-selectbox select,
-.registration-form .jq-select-multiple select {
+.modal-form .jq-selectbox select,
+.modal-form .jq-select-multiple select {
   position: absolute;
   top: 0;
   right: 0;
@@ -1956,21 +2008,21 @@ form * {
   padding: 0;
   opacity: 0;
 }
-.registration-form .jq-selectbox li,
-.registration-form .jq-select-multiple li {
+.modal-form .jq-selectbox li,
+.modal-form .jq-select-multiple li {
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
   white-space: nowrap;
 }
-.registration-form .jq-selectbox {
+.modal-form .jq-selectbox {
   z-index: 10;
 }
-.registration-form .jq-selectbox__select {
+.modal-form .jq-selectbox__select {
   position: relative;
 }
-.registration-form .jq-selectbox__select-text {
+.modal-form .jq-selectbox__select-text {
   overflow: hidden;
   -webkit-user-select: none;
   -moz-user-select: none;
@@ -1979,27 +2031,27 @@ form * {
   white-space: nowrap;
   text-overflow: ellipsis;
 }
-.registration-form .jq-selectbox__dropdown {
+.modal-form .jq-selectbox__dropdown {
   position: absolute;
 }
-.registration-form .jq-selectbox__dropdown ul {
+.modal-form .jq-selectbox__dropdown ul {
   position: relative;
   overflow: auto;
   overflow-x: hidden;
   list-style: none;
   -webkit-overflow-scrolling: touch;
 }
-.registration-form .jq-selectbox {
+.modal-form .jq-selectbox {
   cursor: pointer;
 }
-.registration-form .jq-selectbox__select {
+.modal-form .jq-selectbox__select {
   position: relative;
   width: 100%;
   padding: 15px;
   background-color: #fff;
   transition: 0.1s;
 }
-.registration-form .jq-selectbox__select::after {
+.modal-form .jq-selectbox__select::after {
   content: '';
   position: absolute;
   right: 12px;
@@ -2010,43 +2062,73 @@ form * {
   border-right: 1px solid #b7b7b7;
   transform: rotate(135deg);
 }
-.registration-form .jq-selectbox__select-text {
+.modal-form .jq-selectbox__select-text {
   display: block;
   width: 100%;
 }
-.registration-form .jq-selectbox__dropdown {
+.modal-form .jq-selectbox__dropdown {
   box-sizing: border-box;
   width: 100%;
   top: 47px;
   padding-left: 0;
   background: #FFF;
 }
-.registration-form .jq-selectbox ul {
+.modal-form .jq-selectbox ul {
   margin: 0;
   padding: 0;
 }
-.registration-form .jq-selectbox li {
+.modal-form .jq-selectbox li {
   min-height: 18px;
   padding: 5px 12px;
   color: #231F20;
   transition: 0.1s;
 }
-.registration-form .jq-selectbox li.selected {
+.modal-form .jq-selectbox li.selected {
   background-color: #e8e8e8;
   color: #000;
 }
-.registration-form .jq-selectbox li.disabled {
+.modal-form .jq-selectbox li.disabled {
   color: #bababa;
 }
-.registration-form .jq-selectbox li.disabled:hover {
+.modal-form .jq-selectbox li.disabled:hover {
   color: #d5d5d5;
 }
-.registration-form .jq-selectbox li:hover {
+.modal-form .jq-selectbox li:hover {
   background-color: #e8e8e8;
   color: #000;
 }
-.registration-form .jq-selectbox li.option {
+.modal-form .jq-selectbox li.option {
   padding-left: 25px;
+}
+.modal-form--registration {
+  width: 560px;
+}
+.modal-form--registration .modal-form__input {
+  width: 270px;
+}
+.modal-form--enter {
+  width: 350px;
+}
+.modal-form--enter .modal-form__input {
+  width: 100%;
+}
+.modal-form--enter .modal-form__button {
+  margin-bottom: 20px;
+}
+.modal-form--contact {
+  width: 460px;
+}
+.modal-form--contact .modal-form__input,
+.modal-form--contact .modal-form__text-field {
+  width: 100%;
+}
+.modal-form--recovery .modal-form__input,
+.modal-form--new-password .modal-form__input {
+  width: 100%;
+}
+.modal-form--recovery .modal-form__button,
+.modal-form--new-password .modal-form__button {
+  margin-bottom: 20px;
 }
 .modal-bg {
   position: fixed;
@@ -2058,262 +2140,43 @@ form * {
   background-color: #000;
   opacity: 0;
 }
-.modal-enter {
-  position: fixed;
-  z-index: 101;
-  top: -1000px;
-  left: 50%;
+.social-enter {
   display: flex;
-  flex-direction: row-reverse;
-  flex-wrap: wrap;
-  width: 735px;
-  padding: 20px;
-  transform: translate(-50%, -50%);
-  background-image: url('../img/reg-bg.jpg');
-  background-size: cover;
-  transition: 0.6s;
-}
-.modal-enter__wrapper {
-  text-align: center;
-}
-.modal-enter__character-wrapper {
-  position: absolute;
-  left: -42px;
-  top: 12px;
-  width: 380px;
-}
-.modal-enter__character {
+  justify-content: space-between;
+  align-items: center;
   width: 100%;
+  margin-bottom: 25px;
+  padding: 12px;
+  border: 1px solid #5d5d5d;
 }
-.modal-enter__close {
-  position: absolute;
-  right: 23px;
-  top: 28px;
-  width: 20px;
-  height: 20px;
-  cursor: pointer;
-  transition: 0.1s;
-}
-.modal-enter__close::before {
-  content: '';
-  position: absolute;
-  right: -3px;
-  top: 7px;
-  width: 25px;
-  height: 2px;
-  background-color: #989898;
-  transform: rotate(45deg);
-  transition: 0.1s;
-}
-.modal-enter__close::after {
-  content: '';
-  position: absolute;
-  right: -3px;
-  top: 7px;
-  width: 25px;
-  height: 2px;
-  background-color: #989898;
-  transform: rotate(135deg);
-  transition: 0.1s;
-}
-.modal-enter__close:hover::before {
-  background-color: #fff;
-}
-.modal-enter__close:hover::after {
-  background-color: #fff;
-}
-.modal-enter__forgot-pass {
-  display: -inline-block;
-  margin: 0 auto;
+.social-enter__text {
+  display: block;
+  font-size: 14px;
   color: #d9d9d9;
-  text-decoration: underline;
-  transition: 0.1s;
 }
-.modal-enter__forgot-pass:hover {
-  color: #fff;
-}
-.enter-form {
-  width: 350px;
-}
-.enter-form__header {
-  margin-top: 20px;
-  margin-bottom: 40px;
-}
-.enter-form__email,
-.enter-form__password {
-  width: 100%;
-  height: 45px;
-  padding: 0 13px;
-  margin-bottom: 20px;
-  border: none;
-  font-family: SFUIRegular;
-  color: #000;
-  font-size: 14px;
-}
-.enter-form__email::-webkit-input-placeholder,
-.enter-form__password::-webkit-input-placeholder {
-  font-family: SFUIRegular;
-  color: #999999;
-  font-size: 14px;
-}
-.enter-form__email::-moz-placeholder,
-.enter-form__password::-moz-placeholder {
-  font-family: SFUIRegular;
-  color: #999999;
-  font-size: 14px;
-}
-.enter-form__email:-ms-input-placeholder,
-.enter-form__password:-ms-input-placeholder {
-  font-family: SFUIRegular;
-  color: #999999;
-  font-size: 14px;
-}
-.enter-form__email::placeholder,
-.enter-form__password::placeholder {
-  font-family: SFUIRegular;
-  color: #999999;
-  font-size: 14px;
-}
-.enter-form__button {
-  width: 100%;
-  padding: 20px;
-  margin-bottom: 14px;
-  border: none;
-  background-color: #ed383f;
-  font-family: SFUIMedium;
-  font-size: 14px;
-  color: #fff;
-  cursor: pointer;
-  transition: 0.1s;
-}
-.enter-form__button:hover {
-  background-color: #de3137;
-}
-.modal-contact {
+.social-enter__socials {
   display: flex;
-  flex-direction: row-reverse;
-  position: fixed;
-  z-index: 101;
-  top: -1000px;
-  left: 50%;
-  width: 800px;
-  padding: 30px;
-  background-image: url('../img/reg-bg.jpg');
-  background-size: cover;
-  transform: translate(-50%, -50%);
-  transition: 0.6s;
+  justify-content: space-between;
+  width: 94px;
+  height: 26px;
 }
-.modal-contact__character-wrapper {
-  position: absolute;
-  z-index: -1;
-  left: -48px;
-  top: -17px;
-  width: 390px;
+.social-enter__soc {
+  width: 26px;
+  height: 26px;
+  background-size: 100%;
 }
-.modal-contact__character {
-  width: 100%;
+.social-enter__soc--fb {
+  background-image: url('../img/social-icons/facebook.png');
 }
-.modal-contact__close {
-  position: absolute;
-  right: 23px;
-  top: 28px;
-  width: 20px;
-  height: 20px;
-  cursor: pointer;
-  transition: 0.1s;
+.social-enter__soc--vk {
+  background-image: url('../img/social-icons/vk.png');
 }
-.modal-contact__close::before {
-  content: '';
-  position: absolute;
-  right: -3px;
-  top: 7px;
-  width: 25px;
-  height: 2px;
-  background-color: #989898;
-  transform: rotate(45deg);
-  transition: 0.1s;
+.social-enter__soc--tw {
+  background-image: url('../img/social-icons/twitter.png');
 }
-.modal-contact__close::after {
-  content: '';
-  position: absolute;
-  right: -3px;
-  top: 7px;
-  width: 25px;
-  height: 2px;
-  background-color: #989898;
-  transform: rotate(135deg);
-  transition: 0.1s;
-}
-.modal-contact__close:hover::before {
-  background-color: #fff;
-}
-.modal-contact__close:hover::after {
-  background-color: #fff;
-}
-.contact-form {
-  width: 460px;
-}
-.contact-form__header {
-  margin-top: 20px;
-  margin-bottom: 40px;
-  text-transform: uppercase;
-}
-.contact-form__email,
-.contact-form__text-field {
-  width: 100%;
-  margin-bottom: 20px;
+.social-enter--reg {
+  background-color: rgba(60, 60, 60, 0.5);
   border: none;
-  font-family: SFUIRegular;
-  color: #000;
-  font-size: 14px;
-}
-.contact-form__email::-webkit-input-placeholder,
-.contact-form__text-field::-webkit-input-placeholder {
-  font-family: SFUIRegular;
-  color: #999999;
-  font-size: 14px;
-}
-.contact-form__email::-moz-placeholder,
-.contact-form__text-field::-moz-placeholder {
-  font-family: SFUIRegular;
-  color: #999999;
-  font-size: 14px;
-}
-.contact-form__email:-ms-input-placeholder,
-.contact-form__text-field:-ms-input-placeholder {
-  font-family: SFUIRegular;
-  color: #999999;
-  font-size: 14px;
-}
-.contact-form__email::placeholder,
-.contact-form__text-field::placeholder {
-  font-family: SFUIRegular;
-  color: #999999;
-  font-size: 14px;
-}
-.contact-form__email {
-  height: 45px;
-  padding: 0 13px;
-}
-.contact-form__text-field {
-  height: 120px;
-  padding: 17px 13px;
-  resize: none;
-  overflow: hidden;
-}
-.contact-form__button {
-  width: 100%;
-  padding: 20px;
-  border: none;
-  background-color: #ed383f;
-  font-family: SFUIMedium;
-  font-size: 14px;
-  color: #fff;
-  transition: 0.1s;
-  cursor: pointer;
-}
-.contact-form__button:hover {
-  background-color: #de3137;
 }
 .error {
   background-image: url('../img/404-bg.png');
@@ -2842,44 +2705,6 @@ form * {
 }
 .bonus-more__button:hover {
   background-color: #de3137;
-}
-.social-enter {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 100%;
-  margin-bottom: 25px;
-  padding: 12px;
-  border: 1px solid #5d5d5d;
-}
-.social-enter__text {
-  display: block;
-  font-size: 14px;
-  color: #d9d9d9;
-}
-.social-enter__socials {
-  display: flex;
-  justify-content: space-between;
-  width: 94px;
-  height: 26px;
-}
-.social-enter__soc {
-  width: 26px;
-  height: 26px;
-  background-size: 100%;
-}
-.social-enter__soc--fb {
-  background-image: url('../img/social-icons/facebook.png');
-}
-.social-enter__soc--vk {
-  background-image: url('../img/social-icons/vk.png');
-}
-.social-enter__soc--tw {
-  background-image: url('../img/social-icons/twitter.png');
-}
-.social-enter--reg {
-  background-color: rgba(60, 60, 60, 0.5);
-  border: none;
 }
 .day-slot-image {
   width: 100%;
@@ -3745,47 +3570,40 @@ form * {
   .prize__wrapper {
     width: 748px;
   }
-  .modal-registration {
+  .modal--registration {
     width: 700px;
   }
-  .modal-registration__character-wrapper {
+  .modal--registration .modal__character-wrapper {
     top: 210px;
     width: 200px;
   }
-  .registration-form {
-    width: 500px;
-  }
-  .registration-form__name,
-  .registration-form__nickname,
-  .registration-form__password,
-  .registration-form__password-confirm,
-  .registration-form__code {
-    width: 240px;
-  }
-  .registration-form__currency {
-    width: 240px;
-  }
-  .modal-enter {
+  .modal--enter {
     width: 550px;
   }
-  .modal-enter__character-wrapper {
+  .modal--enter .modal__character-wrapper {
     top: 180px;
     left: -20px;
     width: 200px;
   }
-  .modal-contact {
+  .modal--contact {
     width: 600px;
   }
-  .modal-contact__character-wrapper {
+  .modal--contact .modal__character-wrapper {
     width: 220px;
-    top: 220px;
+    top: 150px;
     left: -10px;
   }
-  .contact-form {
-    width: 350px;
+  .modal-form__currency {
+    width: 240px;
   }
-  .contact-form {
-    width: 100%;
+  .modal-form--registration {
+    width: 500px;
+  }
+  .modal-form--registration .modal-form__input {
+    width: 240px;
+  }
+  .modal-form--contact {
+    width: 350px;
   }
   .error {
     background-position: center -200px;
@@ -4410,68 +4228,55 @@ form * {
   .prize__back-text {
     font-size: 40px;
   }
-  .modal-registration {
+  .modal {
     width: calc(100% - 20px);
   }
-  .modal-registration__character-wrapper {
+  .modal__character-wrapper {
     display: none;
   }
-  .registration-form {
+  .modal-form {
     width: 100%;
   }
-  .registration-form__header {
+  .modal-form__header {
     font-size: 18px;
     margin-bottom: 20px;
   }
-  .registration-form__name,
-  .registration-form__nickname,
-  .registration-form__password,
-  .registration-form__password-confirm,
-  .registration-form__code {
+  .modal-form__input {
     width: 100%;
     height: 30px;
     margin-bottom: 15px;
   }
-  .registration-form__currency {
+  .modal-form__currency {
     width: 100%;
     height: 30px;
     margin-bottom: 15px;
     padding-top: 0;
     padding-bottom: 0;
   }
-  .registration-form__label-checkbox {
+  .modal-form__label-checkbox {
     margin-bottom: 20px;
     font-size: 12px;
     line-height: 15px;
   }
-  .registration-form .jq-selectbox__select {
+  .modal-form .jq-selectbox__select {
     padding-top: 6px;
     padding-bottom: 6px;
   }
-  .registration-form .jq-selectbox__select::after {
+  .modal-form .jq-selectbox__select::after {
     right: 12px;
     top: 10px;
   }
-  .registration-form .jq-selectbox__dropdown {
+  .modal-form .jq-selectbox__dropdown {
     top: 29px;
   }
-  .modal-enter {
-    width: calc(100% - 20px);
-  }
-  .modal-enter__wrapper {
+  .modal-form--registration .modal-form__input {
     width: 100%;
   }
-  .modal-enter__character-wrapper {
-    display: none;
-  }
-  .enter-form {
+  .modal-form--contact {
     width: 100%;
   }
-  .modal-contact {
-    width: calc(100% - 20px);
-  }
-  .modal-contact__character-wrapper {
-    display: none;
+  .social-enter__text {
+    font-size: 12px;
   }
   .error__character-wrapper {
     width: 200px;
@@ -4556,9 +4361,6 @@ form * {
   }
   .bonus-more__button {
     max-width: 100%;
-  }
-  .social-enter__text {
-    font-size: 12px;
   }
   .day-slot-image {
     position: relative;
