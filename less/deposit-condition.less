@@ -1,7 +1,8 @@
-.deposit-conditions {
+.conditions {
 
 	&__wrapper {
 		display: flex;
+		flex-wrap: wrap;
 		width: 1180px;
 		margin: 0 auto;
 		padding: 35px;
@@ -13,12 +14,33 @@
 
 		@media @mobile {
 			.mobile-wrap;
-			flex-wrap: wrap;
 		}
+	}
+
+	&__header {
+		width: 100%;
+		margin-bottom: 40px;
+		font-size: 30px;
+		font-family: SFUIHeavy;
+		text-transform: uppercase;
+	}
+
+	&__text-wrapper {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
 	}
 }
 
-.deposit-condition {
+.conditions--reload {
+
+	.conditions__wrapper {
+		display: block;
+		padding: 0;
+	}
+}
+
+.condition {
 	position: relative;
 	width: 33.33%;
 	padding-top: 70px;
@@ -62,5 +84,22 @@
 		@media @mobile {
 			max-width: none;
 		}
+	}
+}
+
+.condition--reload {
+	width: 280px;
+	margin-bottom: 70px;
+
+	@media @tablet {
+		width: 365px;
+	}
+
+	@media @mobile {
+		width: ~"calc(50% - 10px)";
+	}
+
+	@media (max-width: 550px) {
+		width: 100%;
 	}
 }

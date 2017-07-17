@@ -28,7 +28,6 @@
   src: url(../fonts/SFUIDisplay-Light.ttf), url("../fonts/SFUIDisplay-Light.eot?#iefix") format("embedded-opentype"), url(../fonts/SFUIDisplay-Light.woff) format('woff');
 }
 body {
-  background-color: #232323;
   color: #fff;
   font-family: SFUIRegular;
   overflow-x: hidden;
@@ -57,6 +56,10 @@ form * {
 }
 .main-wrapper {
   margin-top: 60px;
+  padding-bottom: 50px;
+  background-image: url('../img/main-bg.jpg');
+  background-repeat: repeat;
+  background-color: #232323;
 }
 .hidden {
   display: none;
@@ -257,6 +260,9 @@ form * {
 }
 .main-nav__item--arrow:hover span::after {
   border-color: #fff;
+}
+.slider {
+  background-color: #232323;
 }
 .slide {
   position: relative;
@@ -867,7 +873,6 @@ form * {
   justify-content: space-between;
   width: 1180px;
   margin: 0 auto;
-  margin-bottom: 50px;
   padding: 10px 0;
 }
 .footer__copyright {
@@ -3035,19 +3040,36 @@ form * {
   font-size: 14px;
   line-height: 14px;
 }
-.deposit-conditions__wrapper {
+.conditions__wrapper {
   display: flex;
+  flex-wrap: wrap;
   width: 1180px;
   margin: 0 auto;
   padding: 35px;
 }
-.deposit-condition {
+.conditions__header {
+  width: 100%;
+  margin-bottom: 40px;
+  font-size: 30px;
+  font-family: SFUIHeavy;
+  text-transform: uppercase;
+}
+.conditions__text-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.conditions--reload .conditions__wrapper {
+  display: block;
+  padding: 0;
+}
+.condition {
   position: relative;
   width: 33.33%;
   padding-top: 70px;
   margin-bottom: 120px;
 }
-.deposit-condition::before {
+.condition::before {
   content: '';
   position: absolute;
   left: 0;
@@ -3056,17 +3078,21 @@ form * {
   height: 50px;
   background-color: #fff;
 }
-.deposit-condition__count {
+.condition__count {
   display: block;
   margin-bottom: 10px;
   font-size: 25px;
   font-family: SFUIHeavy;
 }
-.deposit-condition__description {
+.condition__description {
   display: block;
   max-width: 300px;
   font-size: 16px;
   font-family: SFUIMedium;
+}
+.condition--reload {
+  width: 280px;
+  margin-bottom: 70px;
 }
 .everyweek-cashback {
   background-image: url('../img/money-bg-3.png');
@@ -3254,6 +3280,76 @@ form * {
 .dignity__text {
   font-size: 14px;
   line-height: 24px;
+}
+.reload-bonus {
+  background-image: url('../img/chips-bg.png');
+  background-size: cover;
+}
+.reload-bonus__wrapper {
+  width: 1180px;
+  margin: 0 auto;
+  padding-top: 90px;
+}
+.reload-bonus__header {
+  position: relative;
+  z-index: 1;
+  margin-bottom: 70px;
+  font-size: 48px;
+  font-family: SFUIHeavy;
+  text-transform: uppercase;
+}
+.reload-bonus__header::after {
+  content: '';
+  position: absolute;
+  z-index: -1;
+  left: -15px;
+  top: -20px;
+  width: 520px;
+  height: 100px;
+  background-color: #ed383f;
+  transform: rotate(-1deg);
+}
+.reload-bonus__text-wrapper {
+  width: 800px;
+  margin-bottom: 80px;
+}
+.reload-bonus__text {
+  font-size: 24px;
+  line-height: 44px;
+}
+.levels {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 70px;
+}
+.level {
+  position: relative;
+  width: 280px;
+  padding: 35px 30px;
+  background-color: #181818;
+}
+.level > * {
+  display: block;
+}
+.level__up-text {
+  margin-bottom: 5px;
+  font-size: 24px;
+  font-family: SFUIBold;
+}
+.level__money-amount {
+  font-size: 40px;
+  font-family: SFUIHeavy;
+}
+.level__description {
+  position: absolute;
+  right: -25px;
+  bottom: 45px;
+  font-size: 16px;
+  font-family: SFUIMedium;
+  color: #393939;
+  text-transform: uppercase;
+  transform: rotate(-90deg);
 }
 @media (min-width: 788px) {
   .main-wrapper {
@@ -3744,15 +3840,18 @@ form * {
   .timer--everyweek {
     margin: 0 auto;
   }
-  .deposit-conditions__wrapper {
+  .conditions__wrapper {
     justify-content: space-around;
     width: 748px;
   }
-  .deposit-condition {
+  .condition {
     width: 25%;
     margin-bottom: 60px;
     padding-top: 0;
     padding-left: 10px;
+  }
+  .condition--reload {
+    width: 365px;
   }
   .everyweek-cashback__wrapper {
     width: 748px;
@@ -3811,6 +3910,26 @@ form * {
     width: 160px;
     height: 150px;
     background-size: 100%;
+  }
+  .reload-bonus__wrapper {
+    width: 748px;
+  }
+  .reload-bonus__wrapper {
+    width: 100%;
+    padding-right: 10px;
+    padding-left: 10px;
+    padding-top: 40px;
+  }
+  .reload-bonus__text-wrapper {
+    width: 100%;
+    margin-bottom: 40px;
+  }
+  .levels {
+    margin-bottom: 40px;
+  }
+  .level {
+    width: 365px;
+    margin-bottom: 20px;
   }
 }
 @media (max-width: 788px) {
@@ -4525,18 +4644,20 @@ form * {
   .timer--everyweek {
     width: 100%;
   }
-  .deposit-conditions__wrapper {
+  .conditions__wrapper {
     width: 100%;
     padding-right: 10px;
     padding-left: 10px;
-    flex-wrap: wrap;
   }
-  .deposit-condition {
+  .condition {
     width: 100%;
     text-align: center;
   }
-  .deposit-condition__description {
+  .condition__description {
     max-width: none;
+  }
+  .condition--reload {
+    width: calc(50% - 10px);
   }
   .everyweek-cashback__wrapper {
     width: 100%;
@@ -4623,6 +4744,25 @@ form * {
   .dignity__header {
     margin-bottom: 10px;
   }
+  .reload-bonus__header {
+    margin-bottom: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 32px;
+    background-color: #ed383f;
+    text-align: center;
+  }
+  .reload-bonus__header::after {
+    display: none;
+  }
+  .reload-bonus__text {
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
+  }
+  .level {
+    width: calc(50% - 10px);
+  }
 }
 @media (max-width: 1220px) and (max-width: 1220px) {
   .main-nav__item--active .main-nav__dropdown {
@@ -4651,5 +4791,13 @@ form * {
   }
   .statistics__column::after {
     display: none;
+  }
+}
+@media (max-width: 550px) {
+  .condition--reload {
+    width: 100%;
+  }
+  .level {
+    width: 100%;
   }
 }
