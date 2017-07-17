@@ -1,13 +1,13 @@
 $(document).ready(function() {
 	var content = $('.content'),
-	slider = $('.slider--about');
+	anim = $('.anim');
 
 	$(content).viewportChecker({
 		classToAdd: 'animated bounce',
 		offset: 300
 	});
 
-	$(slider).viewportChecker({
+	$(anim).viewportChecker({
 		classToAdd: 'animated tada',
 		offset: 300
 	});

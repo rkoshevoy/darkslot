@@ -740,6 +740,7 @@ form * {
   margin: 0 auto;
 }
 .deposites__header {
+  width: 50%;
   margin-bottom: 40px;
   font-size: 40px;
   line-height: 60px;
@@ -2516,6 +2517,7 @@ form * {
   text-transform: uppercase;
 }
 .registration-bonus__count {
+  display: block;
   font-size: 80px;
   font-family: SFUIHeavy;
 }
@@ -2594,9 +2596,15 @@ form * {
   font-size: 40px;
 }
 .deposit__number {
+  display: block;
   font-family: SFUIThin;
   font-size: 25px;
   text-transform: uppercase;
+}
+.deposit__undertext {
+  display: block;
+  font-family: SFUIThin;
+  font-size: 15px;
 }
 .deposit--first {
   background-image: url('../img/coins.png');
@@ -2885,6 +2893,17 @@ form * {
 .free-spins__underheder-text {
   font-size: 18px;
   line-height: 31px;
+}
+.free-spins__button {
+  display: inline-block;
+  margin-top: 30px;
+  padding: 30px 65px;
+  background-color: #ed383f;
+  font-family: SFUIBold;
+  font-size: 18px;
+}
+.free-spins__button:hover {
+  background-color: #de3137;
 }
 .free-spins__coin-image-wrapper {
   position: absolute;
@@ -4454,6 +4473,10 @@ form * {
   .free-spins__header {
     font-size: 24px;
     line-height: 30px;
+  }
+  .free-spins__button {
+    max-width: 100%;
+    padding: 15px 20px;
   }
   .free-spins__coin-image-wrapper {
     display: none;

@@ -1,5 +1,5 @@
 $(document).ready(function () {
-	$('.header__first-button, .main-nav__mobile-reg, .slide__reg-button, .registration__reg-button, .statistics__button').click(function () {
+	$('.header__first-button, .main-nav__mobile-reg, .slide__reg-button, .registration__reg-button, .statistics__button, .greeting-bonus__button').click(function () {
 		$('.modal-bg').css({'opacity': '0.8', 'z-index': '100'});
 		$('.modal--registration').css('top', '50%')
 	});
@@ -28,7 +28,7 @@ $(document).ready(function () {
 
 	$('.modal__close').click(function () {
 		$('.modal-bg').css({'opacity': '0', 'z-index': '-1'});
-		$('.modal--registration, .modal--enter, .modal--contact, .modal--recovery, .modal--new-password').css('top', '-1000px')
+		$('.modal').css('top', '-1000px')
 	});
 
 	$('.modal-form__forgot-pass').click(function () {

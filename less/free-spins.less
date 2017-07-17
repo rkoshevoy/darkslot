@@ -78,6 +78,24 @@
 		line-height: 31px;
 	}
 
+	&__button {
+		display: inline-block;
+		margin-top: 30px;
+		padding: 30px 65px;
+		background-color: #ed383f;
+		font-family: SFUIBold;
+		font-size: 18px;
+
+		&:hover {
+			background-color: #de3137;
+		}
+
+		@media @mobile {
+			max-width: 100%;
+			padding: 15px 20px;
+		}
+	}
+
 	&__coin-image-wrapper {
 		position: absolute;
 		top: 25px;
