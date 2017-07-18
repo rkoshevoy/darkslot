@@ -65,3 +65,44 @@ form {
 		background-size: 600px;
 	}
 }
+
+.buttons-level {
+
+	&__wrapper {
+		display: flex;
+		justify-content: space-between;
+		flex-wrap: wrap;
+		width: 1180px;
+		margin: 0 auto;
+		padding-top: 20px;
+		padding-bottom: 20px;
+
+		@media @tablet {
+			width: 748px;
+		}
+
+		@media @mobile {
+			.mobile-wrap;
+		}
+	}
+
+	&__button {
+		width: 30%;
+		padding: 20px;		
+		background-color: #ed383f;
+		font-family: SFUIBold;
+		font-size: 18px;
+
+		&:hover {
+			background-color: #de3137;
+		}
+
+		@media @tablet {
+			margin-bottom: 10px;
+		}
+
+		@media (max-width: 550px) {			
+			width: 100%;
+		}
+	}
+}

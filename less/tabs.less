@@ -213,6 +213,10 @@
 		display: flex;
 		flex-wrap: wrap;
 		width: 100%;
+
+		@media @mobile {
+			justify-content: space-between;
+		}
 	}
 
 	&__variant {
@@ -250,10 +254,10 @@
 		}
 
 		@media @mobile {
-			width: 100%;
+			width: ~"calc(50% - 10px)";
 			margin-right: 0;
+			margin-bottom: 20px;
 
-			&:nth-of-type(4),
 			&:nth-of-type(5),
 			&:nth-of-type(6),
 			&:nth-of-type(7),
@@ -261,6 +265,14 @@
 			&:nth-of-type(9) {
 				display: none;
 			}
+
+			&:nth-child(4n) {
+				margin-right: 0;
+			}
+		}
+
+		@media (max-width: 550px) {
+			width: 100%;
 		}
 	}
 

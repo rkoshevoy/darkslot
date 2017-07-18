@@ -39,4 +39,29 @@ $(document).ready(function () {
 		$('.modal-bg').css({'opacity': '0', 'z-index': '-1'});
 		$('.modal--registration, .modal--enter, .modal--contact, .modal--recovery, .modal--new-password').css('top', '-1000px')
 	});
+
+	$('#button1').click(function() {
+		$('.level-modal--second').css({'top': '50%'});
+		$('.level-modal-bg').css({'opacity': '0.8', 'z-index': '100'});
+	});
+
+	$('#button2').click(function() {
+		$('.level-modal--third').css({'top': '50%'});
+		$('.level-modal-bg').css({'opacity': '0.8', 'z-index': '100'});
+	});
+
+	$('#button3').click(function() {
+		$('.level-modal--fourth').css({'top': '50%'});
+		$('.level-modal-bg').css({'opacity': '0.8', 'z-index': '100'});
+	});
+
+	$('.level-modal__close').click(function() {
+		$('.level-modal').css({'top': '-1000px'});
+		$('.level-modal-bg').css({'opacity': '0', 'z-index': '-1'});
+	});
+
+	$('.level-modal-bg').click(function () {
+		$('.level-modal-bg').css({'opacity': '0', 'z-index': '-1'});
+		$('.level-modal').css('top', '-1000px')
+	});
 });
