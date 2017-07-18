@@ -11,7 +11,7 @@
 			width: 748px;
 		} 
 
-		@media @tablet {
+		@media @mobile {
 			.mobile-wrap;
 			padding-top: 40px;
 		}
@@ -87,7 +87,6 @@
 .level {
 	position: relative;
 	width: 280px;
-	padding: 35px 30px;
 	background-color: #181818;
 
 	@media @tablet {
@@ -103,8 +102,14 @@
 		width: 100%;
 	}
 
-	> * {		
-		display: block;
+	&__text-wrapper {
+		position: relative;
+		z-index: 1;
+		padding: 35px 30px;
+
+		> * {		
+			display: block;
+		}
 	}
 
 	&__up-text {
@@ -127,5 +132,16 @@
 		color: #393939;
 		text-transform: uppercase;
 		transform: rotate(-90deg);
+	}
+
+	&__image-wrapper {
+		position: absolute;
+		z-index: -1;
+		top: -45px;
+		left: 20px;
+	}
+
+	&__image {
+		width: 100%;
 	}
 }

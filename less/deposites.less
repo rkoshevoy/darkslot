@@ -18,7 +18,7 @@
 			.mobile-wrap;
 			text-align: center;
 			padding-top: 100px;
-			padding-bottom: 400px;
+			// padding-bottom: 400px;
 		}
 	}
 
@@ -27,6 +27,10 @@
 		margin-bottom: 40px;
 		font-size: 40px;
 		line-height: 60px;
+
+		@media @tablet {
+			width: 100%;
+		}
 
 		@media @mobile {
 			font-size: 32px;
@@ -61,15 +65,16 @@
 		@media @tablet {
 			top: auto;
 			bottom: 50px;
-			width: 350px;
+			width: 300px;
 		}
 
 		@media @mobile {
-			width: 300px;
-			left: 50%;
-			right: auto;
-			bottom: 90px;
-			transform: translatex(-50%);
+			display: none;
+			// width: 300px;
+			// left: 50%;
+			// right: auto;
+			// bottom: 90px;
+			// transform: translatex(-50%);
 		}
 	}
 

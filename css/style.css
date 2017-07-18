@@ -2902,10 +2902,10 @@ form * {
 .free-spins__button {
   display: inline-block;
   margin-top: 30px;
-  padding: 30px 65px;
+  padding: 20px;
   background-color: #ed383f;
-  font-family: SFUIBold;
-  font-size: 18px;
+  font-family: SFUIMedium;
+  font-size: 16px;
 }
 .free-spins__button:hover {
   background-color: #de3137;
@@ -3326,10 +3326,14 @@ form * {
 .level {
   position: relative;
   width: 280px;
-  padding: 35px 30px;
   background-color: #181818;
 }
-.level > * {
+.level__text-wrapper {
+  position: relative;
+  z-index: 1;
+  padding: 35px 30px;
+}
+.level__text-wrapper > * {
   display: block;
 }
 .level__up-text {
@@ -3350,6 +3354,15 @@ form * {
   color: #393939;
   text-transform: uppercase;
   transform: rotate(-90deg);
+}
+.level__image-wrapper {
+  position: absolute;
+  z-index: -1;
+  top: -45px;
+  left: 20px;
+}
+.level__image {
+  width: 100%;
 }
 @media (min-width: 788px) {
   .main-wrapper {
@@ -3584,10 +3597,13 @@ form * {
   .deposites__wrapper {
     width: 748px;
   }
+  .deposites__header {
+    width: 100%;
+  }
   .deposites__image-wrapper {
     top: auto;
     bottom: 50px;
-    width: 350px;
+    width: 300px;
   }
   .games__wrapper {
     flex-wrap: wrap;
@@ -3914,12 +3930,6 @@ form * {
   .reload-bonus__wrapper {
     width: 748px;
   }
-  .reload-bonus__wrapper {
-    width: 100%;
-    padding-right: 10px;
-    padding-left: 10px;
-    padding-top: 40px;
-  }
   .reload-bonus__text-wrapper {
     width: 100%;
     margin-bottom: 40px;
@@ -4130,7 +4140,6 @@ form * {
     padding-left: 10px;
     text-align: center;
     padding-top: 100px;
-    padding-bottom: 400px;
   }
   .deposites__header {
     font-size: 32px;
@@ -4141,11 +4150,7 @@ form * {
     margin: 0 auto;
   }
   .deposites__image-wrapper {
-    width: 300px;
-    left: 50%;
-    right: auto;
-    bottom: 90px;
-    transform: translatex(-50%);
+    display: none;
   }
   .games__wrapper {
     width: 100%;
@@ -4584,6 +4589,7 @@ form * {
     width: 100%;
     padding-right: 10px;
     padding-left: 10px;
+    text-align: center;
   }
   .free-spins__header-wrapper {
     width: 100%;
@@ -4595,7 +4601,7 @@ form * {
   }
   .free-spins__button {
     max-width: 100%;
-    padding: 15px 20px;
+    width: 280px;
   }
   .free-spins__coin-image-wrapper {
     display: none;
@@ -4743,6 +4749,12 @@ form * {
   }
   .dignity__header {
     margin-bottom: 10px;
+  }
+  .reload-bonus__wrapper {
+    width: 100%;
+    padding-right: 10px;
+    padding-left: 10px;
+    padding-top: 40px;
   }
   .reload-bonus__header {
     margin-bottom: 30px;
