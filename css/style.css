@@ -3389,9 +3389,136 @@ form * {
   left: 50%;
   top: -1000px;
   width: 840px;
-  background-color: rgba(0, 0, 0, 0.2);
+  background-color: rgba(35, 35, 35, 0.6);
   transform: translate(-50%, -50%);
   transition: 0.6s;
+}
+.level-modal__wrapper {
+  padding: 40px 25px;
+  padding-top: 80px;
+}
+.level-modal__header-wrapper {
+  position: absolute;
+  left: 20px;
+  top: -90px;
+}
+.level-modal__number {
+  font-size: 150px;
+  color: #6ab980;
+  font-family: SFUIHeavy;
+}
+.level-modal__greeting-wrapper {
+  position: absolute;
+  top: 60px;
+  left: 65px;
+}
+.level-modal__greeting {
+  display: block;
+  font-size: 26px;
+  font-family: SFUILight;
+  white-space: pre;
+}
+.level-modal__level {
+  display: block;
+  font-size: 30px;
+  font-family: SFUIHeavy;
+  text-transform: uppercase;
+}
+.level-modal__up-text {
+  display: block;
+  margin-bottom: 25px;
+  font-size: 18px;
+  font-family: SFUIMedium;
+}
+.level-modal__ability-wrapper {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.level-modal__close {
+  position: absolute;
+  right: -50px;
+  top: -50px;
+  width: 35px;
+  height: 35px;
+  cursor: pointer;
+}
+.level-modal__close::before {
+  content: '';
+  position: absolute;
+  top: 15px;
+  left: -4px;
+  width: 40px;
+  height: 2px;
+  background-color: #b7b7b7;
+  transform: rotate(45deg);
+  transition: 0.1s;
+}
+.level-modal__close::after {
+  content: '';
+  position: absolute;
+  top: 15px;
+  left: -4px;
+  width: 40px;
+  height: 2px;
+  background-color: #b7b7b7;
+  transform: rotate(-45deg);
+  transition: 0.1s;
+}
+.level-modal__close:hover::before {
+  background-color: #fff;
+}
+.level-modal__close:hover::after {
+  background-color: #fff;
+}
+.level-modal--fourth {
+  top: 50%;
+  background-color: rgba(0, 0, 0, 0.75);
+}
+.level-modal--fourth .level-modal__header-wrapper {
+  z-index: -1;
+  top: -100px;
+  left: -25px;
+}
+.level-modal--fourth .level-modal__number {
+  width: 80px;
+}
+.level-modal--fourth .level-modal__number img {
+  width: 100%;
+}
+.level-modal--fourth .level-modal__greeting-wrapper {
+  top: 70px;
+  left: 100px;
+}
+.level-modal--fourth .level-ability__up-text {
+  position: relative;
+}
+.level-modal--fourth .level-ability {
+  border-color: #ffff75;
+}
+.level-modal--fourth .level-ability__header {
+  margin-bottom: 0;
+  line-height: 31px;
+}
+.level-ability {
+  width: 250px;
+  padding: 25px;
+  border: 1px dashed #6ab980;
+}
+.level-ability__header {
+  margin-bottom: 10px;
+  font-size: 20px;
+  font-family: SFUIHeavy;
+  text-transform: uppercase;
+}
+.level-ability__text {
+  color: #afaeae;
+  font-size: 14px;
+  line-height: 23px;
+}
+.level-ability--fourth {
+  width: 385px;
+  margin-bottom: 20px;
 }
 .level-modal-bg {
   position: fixed;
@@ -3401,7 +3528,7 @@ form * {
   width: 100%;
   height: 100%;
   background-color: #2e2e2e;
-  opacity: 0;
+  opacity: 0.85;
 }
 @media (min-width: 788px) {
   .main-wrapper {
@@ -3986,6 +4113,22 @@ form * {
   .level {
     width: 365px;
     margin-bottom: 20px;
+  }
+  .level-modal {
+    width: 700px;
+  }
+  .level-modal__close {
+    right: 10px;
+    top: 15px;
+  }
+  .level-ability {
+    width: 205px;
+  }
+  .level-ability__header {
+    font-size: 16px;
+  }
+  .level-ability--fourth {
+    width: 315px;
   }
 }
 @media (max-width: 788px) {
@@ -4837,6 +4980,56 @@ form * {
   }
   .level {
     width: calc(50% - 10px);
+  }
+  .level-modal {
+    width: calc(100% - 20px);
+  }
+  .level-modal__wrapper {
+    padding: 10px;
+  }
+  .level-modal__header-wrapper {
+    position: relative;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+  }
+  .level-modal__number {
+    display: inline-block;
+    margin-right: 10px;
+    font-size: 100px;
+  }
+  .level-modal__greeting-wrapper {
+    position: relative;
+    top: 0;
+    left: 0;
+    display: inline-block;
+  }
+  .level-modal__greeting {
+    font-size: 20px;
+    white-space: normal;
+  }
+  .level-modal__level {
+    font-size: 20px;
+  }
+  .level-modal--fourth .level-modal__header-wrapper {
+    top: 0;
+    left: 0;
+  }
+  .level-modal--fourth .level-modal__greeting-wrapper {
+    top: 0;
+    left: 0;
+  }
+  .level-ability {
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 10px;
+  }
+  .level-ability:last-child {
+    margin-bottom: 0;
+  }
+  .level-ability__header {
+    margin-bottom: 0;
   }
 }
 @media (max-width: 550px) {
