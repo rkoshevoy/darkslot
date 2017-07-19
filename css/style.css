@@ -3472,7 +3472,6 @@ form * {
   background-color: #fff;
 }
 .level-modal--fourth {
-  top: 50%;
   background-color: rgba(0, 0, 0, 0.75);
 }
 .level-modal--fourth .level-modal__header-wrapper {
@@ -3522,13 +3521,13 @@ form * {
 }
 .level-modal-bg {
   position: fixed;
-  z-index: 100;
+  z-index: -1;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
   background-color: #2e2e2e;
-  opacity: 0.85;
+  opacity: 0;
 }
 @media (min-width: 788px) {
   .main-wrapper {
