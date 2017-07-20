@@ -3650,6 +3650,9 @@ form * {
   border-bottom: 1px dashed #484848;
   background-position: 0 center;
 }
+.prizes-table__item:last-child {
+  border-bottom: none;
+}
 .prizes-table__place {
   padding-left: 70px;
   padding-top: 40px;
@@ -3694,6 +3697,9 @@ form * {
 .places-tournament__tables-wrapper {
   display: flex;
   justify-content: space-between;
+}
+.places-tournament__more-button {
+  display: none;
 }
 .places-table {
   width: 540px;
@@ -4356,6 +4362,47 @@ form * {
   }
   .level-ability--fourth {
     width: 315px;
+  }
+  .tournament__wrapper {
+    width: 748px;
+  }
+  .tournament__header span::before {
+    top: -5px;
+    height: 50px;
+  }
+  .tournament__text-wrapper {
+    width: 700px;
+  }
+  .tables__wrapper {
+    width: 748px;
+  }
+  .prizes-table__column {
+    width: 360px;
+  }
+  .places-tournament {
+    padding-bottom: 25px;
+  }
+  .places-tournament__tables-wrapper {
+    flex-wrap: wrap;
+  }
+  .places-tournament__more-button {
+    display: block;
+    padding: 20px;
+    margin: 0 auto;
+    background-color: #ed383f;
+    transition: 0.1s;
+  }
+  .places-tournament__more-button:hover {
+    background-color: #de3137;
+  }
+  .places-table {
+    width: 100%;
+  }
+  .places-table:first-child {
+    margin-bottom: 20px;
+  }
+  .places-table:nth-child(2) {
+    display: none;
   }
 }
 @media (max-width: 788px) {
@@ -5088,6 +5135,12 @@ form * {
     padding-right: 10px;
     padding-left: 10px;
   }
+  .conditions--tournament .conditions__wrapper {
+    padding-bottom: 40px;
+  }
+  .conditions--tournament .condition {
+    margin-bottom: 40px;
+  }
   .condition {
     width: 100%;
     text-align: center;
@@ -5257,6 +5310,86 @@ form * {
   }
   .level-ability__header {
     margin-bottom: 0;
+  }
+  .tournament__wrapper {
+    width: 100%;
+    padding-right: 10px;
+    padding-left: 10px;
+    padding-top: 40px;
+  }
+  .tournament__header {
+    margin-bottom: 40px;
+    font-size: 32px;
+  }
+  .tournament__text-wrapper {
+    width: 100%;
+  }
+  .tournament__text {
+    font-size: 14px;
+    line-height: 20px;
+  }
+  .tables__wrapper {
+    width: 100%;
+    padding-right: 10px;
+    padding-left: 10px;
+    padding-bottom: 40px;
+  }
+  .tables__header {
+    margin-bottom: 40px;
+  }
+  .tables__condition-wrapper {
+    margin-bottom: 30px;
+    padding: 10px;
+  }
+  .prizes-table {
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+  }
+  .prizes-table__column {
+    width: 100%;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .prizes-table__column--left .prizes-table__item {
+    background-size: 30px;
+  }
+  .prizes-table__column--right .prizes-table__item {
+    background-size: 30px;
+  }
+  .prizes-table__place {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 40px;
+    font-size: 16px;
+  }
+  .prizes-table__amount {
+    font-size: 22px;
+  }
+  .places-tournament {
+    padding-top: 30px;
+    padding-right: 0;
+    padding-left: 0;
+  }
+  .places-tournament__header {
+    margin-bottom: 30px;
+    font-size: 20px;
+    text-align: center;
+  }
+  .places-tournament__header span::before {
+    left: -10px;
+    width: calc(100% + 20px);
+    height: 45px;
+  }
+  .places-table__cell-header {
+    padding: 10px 0;
+  }
+  .places-table__cell {
+    padding: 15px 0;
+  }
+  .places-table__cell:first-child {
+    padding-left: 15px;
+    background-position: 5px center;
+    background-size: 15px;
   }
 }
 @media (max-width: 550px) {

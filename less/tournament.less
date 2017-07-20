@@ -9,6 +9,15 @@
 		width: 1180px;
 		margin: 0 auto;
 		padding-top: 90px;
+
+		@media @tablet {
+			width: 748px;
+		}
+
+		@media @mobile {
+			.mobile-wrap;
+			padding-top: 40px;
+		}
 	}
 
 	&__header {
@@ -19,6 +28,11 @@
 		font-size: 48px;
 		font-family: SFUIHeavy;
 		text-transform: uppercase;
+
+		@media @mobile {
+			margin-bottom: 40px;
+			font-size: 32px;
+		}
 
 		span {
 			position: relative;
@@ -33,6 +47,13 @@
 				background-color: #ed383f;
 				width: ~"calc(100% + 40px)";
 				height: 75px;
+			}
+
+			@media @tablet {
+				&::before {
+					top: -5px;
+					height: 50px;
+				}
 			}
 		}
 	}
@@ -49,6 +70,14 @@
 		margin: 0 auto;
 		margin-bottom: 40px;
 		text-align: center;
+
+		@media @tablet {
+			width: 700px;
+		}
+
+		@media @mobile {
+			width: 100%;
+		}
 	}
 
 	&__text {
@@ -56,6 +85,11 @@
 		font-size: 16px;
 		line-height: 27px;
 		text-align: center;
+
+		@media @mobile {
+			font-size: 14px;
+			line-height: 20px;
+		}
 	}
 
 	&__rules {
@@ -72,6 +106,15 @@
 		width: 1180px;
 		margin: 0 auto;
 		padding-bottom: 80px;
+
+		@media @tablet {
+			width: 748px;
+		}
+
+		@media @mobile {
+			.mobile-wrap;
+			padding-bottom: 40px;
+		}
 	}
 
 	&__header {
@@ -80,6 +123,10 @@
 		font-family: SFUIBold;
 		text-align: center;
 		text-transform: uppercase;
+
+		@media @mobile {
+			margin-bottom: 40px;
+		}
 	}
 
 	&__condition-wrapper {
@@ -87,6 +134,11 @@
 		padding: 30px;
 		border: 3px dotted #464646;
 		text-align: center;
+
+		@media @mobile {
+			margin-bottom: 30px;
+			padding: 10px;
+		}
 	}
 }
 
@@ -95,12 +147,27 @@
 	justify-content: space-between;
 	margin-bottom: 60px;
 
+	@media @mobile {
+		flex-wrap: wrap;
+		margin-bottom: 30px;
+	}
+
 	&__column {
 		width: 580px;
 		padding-left: 30px;
 		padding-right: 30px;
 		background-color: #212121;
 		list-style: none;
+
+		@media @tablet {
+			width: 360px;
+		}
+
+		@media @mobile {
+			width: 100%;
+			padding-left: 10px;
+			padding-right: 10px;
+		}
 	}
 
 	&__column--left {		
@@ -118,6 +185,10 @@
 
 			&:last-child {
 				background-image: url('../img/places/cup-third.png');				
+			}
+
+			@media @mobile {
+				background-size: 30px;
 			}
 		}
 	}
@@ -137,6 +208,10 @@
 			&:last-child {
 				background-image: url('../img/places/star-sixth.png');				
 			}
+
+			@media @mobile {
+				background-size: 30px;
+			}
 		}
 	}
 
@@ -146,6 +221,10 @@
 		align-items: center;
 		border-bottom: 1px dashed #484848;
 		background-position: 0 center;
+
+		&:last-child {
+			border-bottom: none;
+		}
 	}
 
 	&__place {
@@ -155,12 +234,22 @@
 		font-size: 20px;
 		font-family: SFUIBold;
 		text-transform: uppercase;
-
+		
+		@media @mobile {
+			padding-top: 20px;
+			padding-bottom: 20px;
+			padding-left: 40px;
+			font-size: 16px;
+		}
 	}
 
 	&__amount {
 		font-size: 30px;
 		font-family: SFUIHeavy;
+
+		@media @mobile {
+			font-size: 22px;
+		}
 	}
 }
 
@@ -171,6 +260,16 @@
 	padding-left: 30px;
 	background-color: #191919;
 
+	@media @tablet {
+		padding-bottom: 25px;
+	}
+
+	@media @mobile {
+		padding-top: 30px;
+		padding-right: 0;
+		padding-left: 0;
+	}
+
 	&__header {
 		position: relative;
 		z-index: 1;
@@ -178,6 +277,12 @@
 		font-size: 24px;
 		font-family: SFUIHeavy;
 		text-transform: uppercase;
+
+		@media @mobile {
+			margin-bottom: 30px;
+			font-size: 20px;
+			text-align: center;
+		}
 
 		span {
 			position: relative;
@@ -193,12 +298,40 @@
 				height: 50px;
 				background-color: #ed383f;
 			}
+
+			@media @mobile {
+				&::before {
+					left: -10px;
+					width: ~"calc(100% + 20px)";
+					height: 45px;
+				}
+			}
 		}
 	}
 
 	&__tables-wrapper {
 		display: flex;
 		justify-content: space-between;
+
+		@media @tablet {
+			flex-wrap: wrap;
+		}
+	}
+
+	&__more-button {
+		display: none;
+
+		@media @tablet {
+			display: block;
+			padding: 20px;
+			margin: 0 auto;
+			background-color: #ed383f;
+			transition: 0.1s;
+
+			&:hover {
+				background-color: #de3137;
+			}
+		}
 	}
 }
 
@@ -209,6 +342,18 @@
 	font-size: 14px;
 	font-family: SFUIMedium;
 
+	@media @tablet {
+		width: 100%;
+
+		&:first-child {
+			margin-bottom: 20px;
+		}
+
+		&:nth-child(2) {
+			display: none;
+		}
+	}
+
 	&__row-header {
 		margin-left: 0;
 		padding-left: 0;
@@ -218,6 +363,10 @@
 		padding: 20px 0;
 		background-color: #6ab980;
 		text-align: center;
+
+		@media @mobile {
+			padding: 10px 0;
+		}
 
 		&:first-child {
 			width: 80px;
@@ -253,11 +402,21 @@
 		border-bottom: 1px solid #474747;
 		text-align: center;
 
+		@media @mobile {
+			padding: 15px 0;
+		}
+
 		&:first-child {
 			padding-left: 30px;
 			background-image: url('../img/places/star-sixth.png');
 			background-position: 20px center;
 			background-size: 20px;
+
+			@media @mobile {
+				padding-left: 15px;
+				background-position: 5px center;
+				background-size: 15px;
+			}
 		}
 
 		&:last-child {
