@@ -3064,7 +3064,8 @@ form * {
   flex-wrap: wrap;
   width: 1180px;
   margin: 0 auto;
-  padding: 35px;
+  padding-top: 35px;
+  padding-bottom: 35px;
 }
 .conditions__header {
   width: 100%;
@@ -3081,6 +3082,12 @@ form * {
 .conditions--reload .conditions__wrapper {
   display: block;
   padding: 0;
+}
+.conditions--tournament .conditions__wrapper {
+  padding-bottom: 80px;
+}
+.conditions--tournament .condition {
+  margin-bottom: 0;
 }
 .condition {
   position: relative;
@@ -3528,6 +3535,227 @@ form * {
   height: 100%;
   background-color: #2e2e2e;
   opacity: 0;
+}
+.tournament-bg {
+  background-image: url('../img/roulette.png');
+  background-size: contain;
+}
+.tournament__wrapper {
+  width: 1180px;
+  margin: 0 auto;
+  padding-top: 90px;
+}
+.tournament__header {
+  position: relative;
+  z-index: 1;
+  margin-bottom: 80px;
+  text-align: center;
+  font-size: 48px;
+  font-family: SFUIHeavy;
+  text-transform: uppercase;
+}
+.tournament__header span {
+  position: relative;
+  z-index: -1;
+}
+.tournament__header span::before {
+  content: '';
+  position: absolute;
+  z-index: -1;
+  left: -20px;
+  top: -10px;
+  background-color: #ed383f;
+  width: calc(100% + 40px);
+  height: 75px;
+}
+.tournament__text-header {
+  font-size: 18px;
+  line-height: 22px;
+  text-transform: uppercase;
+  text-align: center;
+}
+.tournament__text-wrapper {
+  width: 980px;
+  margin: 0 auto;
+  margin-bottom: 40px;
+  text-align: center;
+}
+.tournament__text {
+  margin-bottom: 10px;
+  font-size: 16px;
+  line-height: 27px;
+  text-align: center;
+}
+.tournament__rules {
+  display: inline-block;
+  margin: 0 auto;
+  border-bottom: 2px dotted #fff;
+  text-align: center;
+}
+.tables__wrapper {
+  width: 1180px;
+  margin: 0 auto;
+  padding-bottom: 80px;
+}
+.tables__header {
+  margin-bottom: 60px;
+  font-size: 20px;
+  font-family: SFUIBold;
+  text-align: center;
+  text-transform: uppercase;
+}
+.tables__condition-wrapper {
+  margin-bottom: 50px;
+  padding: 30px;
+  border: 3px dotted #464646;
+  text-align: center;
+}
+.prizes-table {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 60px;
+}
+.prizes-table__column {
+  width: 580px;
+  padding-left: 30px;
+  padding-right: 30px;
+  background-color: #212121;
+  list-style: none;
+}
+.prizes-table__column--left {
+  border: 2px solid #d6d62f;
+}
+.prizes-table__column--left .prizes-table__item:first-child {
+  background-image: url('../img/places/cup-first.png');
+}
+.prizes-table__column--left .prizes-table__item:nth-child(2) {
+  background-image: url('../img/places/cup-second.png');
+}
+.prizes-table__column--left .prizes-table__item:last-child {
+  background-image: url('../img/places/cup-third.png');
+}
+.prizes-table__column--right .prizes-table__item:first-child {
+  background-image: url('../img/places/star-fourth.png');
+}
+.prizes-table__column--right .prizes-table__item:nth-child(2) {
+  background-image: url('../img/places/star-fifth.png');
+}
+.prizes-table__column--right .prizes-table__item:last-child {
+  background-image: url('../img/places/star-sixth.png');
+}
+.prizes-table__item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px dashed #484848;
+  background-position: 0 center;
+}
+.prizes-table__place {
+  padding-left: 70px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  font-size: 20px;
+  font-family: SFUIBold;
+  text-transform: uppercase;
+}
+.prizes-table__amount {
+  font-size: 30px;
+  font-family: SFUIHeavy;
+}
+.places-tournament {
+  padding-top: 60px;
+  padding-right: 30px;
+  padding-bottom: 35px;
+  padding-left: 30px;
+  background-color: #191919;
+}
+.places-tournament__header {
+  position: relative;
+  z-index: 1;
+  margin-bottom: 50px;
+  font-size: 24px;
+  font-family: SFUIHeavy;
+  text-transform: uppercase;
+}
+.places-tournament__header span {
+  position: relative;
+  z-index: -1;
+}
+.places-tournament__header span::before {
+  content: '';
+  position: absolute;
+  z-index: -1;
+  left: -15px;
+  top: -10px;
+  width: calc(100% + 30px);
+  height: 50px;
+  background-color: #ed383f;
+}
+.places-tournament__tables-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+.places-table {
+  width: 540px;
+  border-spacing: 0;
+  border: 1px solid #474747;
+  font-size: 14px;
+  font-family: SFUIMedium;
+}
+.places-table__row-header {
+  margin-left: 0;
+  padding-left: 0;
+}
+.places-table__cell-header {
+  padding: 20px 0;
+  background-color: #6ab980;
+  text-align: center;
+}
+.places-table__cell-header:first-child {
+  width: 80px;
+}
+.places-table__cell-header:nth-child(2) {
+  width: 135px;
+  background-color: #349d5e;
+}
+.places-table__cell-header:nth-child(3) {
+  width: 165px;
+}
+.places-table__cell-header:last-child {
+  width: 160px;
+}
+.places-table__row:last-child .places-table__cell {
+  border-bottom: none;
+}
+.places-table__cell {
+  padding: 25px 0;
+  border-right: 1px solid #2c2c2c;
+  border-bottom: 1px solid #474747;
+  text-align: center;
+}
+.places-table__cell:first-child {
+  padding-left: 30px;
+  background-image: url('../img/places/star-sixth.png');
+  background-position: 20px center;
+  background-size: 20px;
+}
+.places-table__cell:last-child {
+  border-right: 0;
+}
+.places-table__cell--first:first-child {
+  background-image: url('../img/places/cup-first.png');
+}
+.places-table__cell--second:first-child {
+  background-image: url('../img/places/cup-second.png');
+}
+.places-table__cell--third:first-child {
+  background-image: url('../img/places/cup-third.png');
+}
+.places-table__cell--fourth:first-child {
+  background-image: url('../img/places/star-fourth.png');
+}
+.places-table__cell--fifth:first-child {
+  background-image: url('../img/places/star-fifth.png');
 }
 @media (min-width: 788px) {
   .main-wrapper {

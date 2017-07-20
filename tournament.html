@@ -83,121 +83,282 @@
 
 	<div class="main-wrapper">
 
-		<section class="tournament">
-			<div class="tournament__wrapper">
-				<h1 class="tournament__header">Турнир <span>1000$</span> каждую пятницу</h1>
+		<div class="tournament-bg">
 
-				<p class="tournament__text">Правила: <br>Турнир проводится по пятницам с 01:00 до 23:00 (МСК). В турнире принимают участие все клиенты Казино, которые сделали депозит в пятницу после 01:00(МСК) В турнире участвуют все игры из разделов «Слоты». Победители турнира определяются автоматически, исходя из самого крупного значения среднего выигрыша за время турнира.</p>
+			<section class="tournament">
+				<div class="tournament__wrapper">
+					<h1 class="tournament__header">Турнир <span>1000$</span> каждую пятницу</h1>
 
-				<a href="#" class="tournament__rules">Правила</a>
+					<div class="tournament__text-wrapper">
+						<h4 class="tournament__text-header">Правила:</h4>
+						<p class="tournament__text">Турнир проводится по пятницам с 01:00 до 23:00 (МСК). В турнире принимают участие все клиенты Казино, которые сделали депозит в пятницу после 01:00(МСК) В турнире участвуют все игры из разделов «Слоты». Победители турнира определяются автоматически, исходя из самого крупного значения среднего выигрыша за время турнира.</p>
+						<a href="#" class="tournament__rules">Полные правила</a>
+					</div>
 
-				<div class="conditions">
-					<div class="conditions__wrapper">
+					<div class="conditions conditions--tournament">
+						<div class="conditions__wrapper">
 
-						<div class="condition">
-							<span class="condition__count">500 руб</span>
-							<span class="condition__description">Минимальный депозит</span>
-						</div>
+							<div class="condition">
+								<span class="condition__description">Для участия достаточно внести внести vинимальный депозит в пятницу после 01:00(Мск ). И играть в слотах и автоматах</span>
+							</div>
 
-						<div class="condition">
-							<span class="condition__count">35 000 руб</span>
-							<span class="condition__description">Максимальный размер бонуса</span>
-						</div>
+							<div class="condition">
+								<span class="condition__description">Ваше место в турнире зависит от ваших выигрышей поделённых на кол-во раундов (спинов)</span>
+							</div>
 
-						<div class="condition">
-							<span class="condition__description">Вы так же можете отказаться от бонусов в личном кабинете</span>
+							<div class="condition">
+								<span class="condition__description">Минимальное кол-во раундов для участия - 500</span>
+							</div>
 						</div>
 					</div>
 				</div>
-			</div>
-		</section>
+			</section>
 
-		<section class="tables">
-			<div class="tables__wrapper">
-				<h3 class="tables__header">Места распределяются согласно таблице</h3>
+			<section class="tables">
+				<div class="tables__wrapper">
+					<h3 class="tables__header">Места распределяются согласно таблице</h3>
 
-				<div class="prizes-table">
-					<ul class="prizes-table__column">
-						<li class="prizes-table__item">
-							<div class="prizes-table__place">1 место</div>
-							<div class="prizes-table__amount">300$</div>
-						</li>
-						<li class="prizes-table__item">
-							<div class="prizes-table__place">2 место</div>
-							<div class="prizes-table__amount">150$</div>
-						</li>
-						<li class="prizes-table__item">
-							<div class="prizes-table__place">3 место</div>
-							<div class="prizes-table__amount">100$</div>
-						</li>
-					</ul>
-					<ul class="prizes-table__column">
-						<li class="prizes-table__item">
-							<div class="prizes-table__place">4 место</div>
-							<div class="prizes-table__amount">300$</div>
-						</li>
-						<li class="prizes-table__item">
-							<div class="prizes-table__place">5-9 место</div>
-							<div class="prizes-table__amount">150$</div>
-						</li>
-						<li class="prizes-table__item">
-							<div class="prizes-table__place">10-30 место</div>
-							<div class="prizes-table__amount">100$</div>
-						</li>
-					</ul>
+					<div class="prizes-table">
+						<ul class="prizes-table__column prizes-table__column--left">
+							<li class="prizes-table__item">
+								<div class="prizes-table__place">1 место</div>
+								<div class="prizes-table__amount">300$</div>
+							</li>
+							<li class="prizes-table__item">
+								<div class="prizes-table__place">2 место</div>
+								<div class="prizes-table__amount">150$</div>
+							</li>
+							<li class="prizes-table__item">
+								<div class="prizes-table__place">3 место</div>
+								<div class="prizes-table__amount">100$</div>
+							</li>
+						</ul>
+						<ul class="prizes-table__column prizes-table__column--right">
+							<li class="prizes-table__item">
+								<div class="prizes-table__place">4 место</div>
+								<div class="prizes-table__amount">300$</div>
+							</li>
+							<li class="prizes-table__item">
+								<div class="prizes-table__place">5-9 место</div>
+								<div class="prizes-table__amount">150$</div>
+							</li>
+							<li class="prizes-table__item">
+								<div class="prizes-table__place">10-30 место</div>
+								<div class="prizes-table__amount">100$</div>
+							</li>
+						</ul>
+					</div>
+
+					<div class="tables__condition-wrapper">
+						<p class="tables__condition">Все выигрыши требуют отыгрыша х3, в течении 30-ти дней после его начисления.</p>
+					</div>
+
+					<div class="places-tournament">
+						<h2 class="places-tournament__header">Таблица <span>победителей</span></h2>
+
+						<div class="places-tournament__tables-wrapper">
+							<table class="places-table">
+								<tr class="places-table__row-header">
+									<td class="places-table__cell-header">Место</td>
+									<td class="places-table__cell-header">Приз</td>
+									<td class="places-table__cell-header">Счастливчик</td>
+									<td class="places-table__cell-header">Баллы</td>
+								</tr>
+								<tr class="places-table__row">
+									<td class="places-table__cell places-table__cell--first">1</td>
+									<td class="places-table__cell">100 000$</td>
+									<td class="places-table__cell">nickname</td>
+									<td class="places-table__cell">77777.7</td>
+								</tr>
+								<tr class="places-table__row">
+									<td class="places-table__cell places-table__cell--second">2</td>
+									<td class="places-table__cell">100 000$</td>
+									<td class="places-table__cell">nickname</td>
+									<td class="places-table__cell">77777.7</td>
+								</tr>
+								<tr class="places-table__row">
+									<td class="places-table__cell places-table__cell--third">3</td>
+									<td class="places-table__cell">100 000$</td>
+									<td class="places-table__cell">nickname</td>
+									<td class="places-table__cell">77777.7</td>
+								</tr>
+								<tr class="places-table__row">
+									<td class="places-table__cell places-table__cell--fourth">4</td>
+									<td class="places-table__cell">100 000$</td>
+									<td class="places-table__cell">nickname</td>
+									<td class="places-table__cell">77777.7</td>
+								</tr>
+								<tr class="places-table__row">
+									<td class="places-table__cell places-table__cell--fifth">5</td>
+									<td class="places-table__cell">100 000$</td>
+									<td class="places-table__cell">nickname</td>
+									<td class="places-table__cell">77777.7</td>
+								</tr>
+								<tr class="places-table__row">
+									<td class="places-table__cell places-table__cell--fifth">6</td>
+									<td class="places-table__cell">100 000$</td>
+									<td class="places-table__cell">nickname</td>
+									<td class="places-table__cell">77777.7</td>
+								</tr>
+								<tr class="places-table__row">
+									<td class="places-table__cell places-table__cell--fifth">7</td>
+									<td class="places-table__cell">100 000$</td>
+									<td class="places-table__cell">nickname</td>
+									<td class="places-table__cell">77777.7</td>
+								</tr>
+								<tr class="places-table__row">
+									<td class="places-table__cell places-table__cell--fifth">8</td>
+									<td class="places-table__cell">100 000$</td>
+									<td class="places-table__cell">nickname</td>
+									<td class="places-table__cell">77777.7</td>
+								</tr>
+								<tr class="places-table__row">
+									<td class="places-table__cell places-table__cell--fifth">9</td>
+									<td class="places-table__cell">100 000$</td>
+									<td class="places-table__cell">nickname</td>
+									<td class="places-table__cell">77777.7</td>
+								</tr>
+								<tr class="places-table__row">
+									<td class="places-table__cell">10</td>
+									<td class="places-table__cell">100 000$</td>
+									<td class="places-table__cell">nickname</td>
+									<td class="places-table__cell">77777.7</td>
+								</tr>
+								<tr class="places-table__row">
+									<td class="places-table__cell">11</td>
+									<td class="places-table__cell">100 000$</td>
+									<td class="places-table__cell">nickname</td>
+									<td class="places-table__cell">77777.7</td>
+								</tr>
+								<tr class="places-table__row">
+									<td class="places-table__cell">12</td>
+									<td class="places-table__cell">100 000$</td>
+									<td class="places-table__cell">nickname</td>
+									<td class="places-table__cell">77777.7</td>
+								</tr>
+								<tr class="places-table__row">
+									<td class="places-table__cell">13</td>
+									<td class="places-table__cell">100 000$</td>
+									<td class="places-table__cell">nickname</td>
+									<td class="places-table__cell">77777.7</td>
+								</tr>
+								<tr class="places-table__row">
+									<td class="places-table__cell">14</td>
+									<td class="places-table__cell">100 000$</td>
+									<td class="places-table__cell">nickname</td>
+									<td class="places-table__cell">77777.7</td>
+								</tr>
+								<tr class="places-table__row">
+									<td class="places-table__cell">15</td>
+									<td class="places-table__cell">100 000$</td>
+									<td class="places-table__cell">nickname</td>
+									<td class="places-table__cell">77777.7</td>
+								</tr>
+							</table>
+							<table class="places-table">
+								<tr class="places-table__row-header">
+									<td class="places-table__cell-header">Место</td>
+									<td class="places-table__cell-header">Приз</td>
+									<td class="places-table__cell-header">Счастливчик</td>
+									<td class="places-table__cell-header">Баллы</td>
+								</tr>
+								<tr class="places-table__row">
+									<td class="places-table__cell">16</td>
+									<td class="places-table__cell">100 000$</td>
+									<td class="places-table__cell">nickname</td>
+									<td class="places-table__cell">77777.7</td>
+								</tr>
+								<tr class="places-table__row">
+									<td class="places-table__cell">17</td>
+									<td class="places-table__cell">100 000$</td>
+									<td class="places-table__cell">nickname</td>
+									<td class="places-table__cell">77777.7</td>
+								</tr>
+								<tr class="places-table__row">
+									<td class="places-table__cell">18</td>
+									<td class="places-table__cell">100 000$</td>
+									<td class="places-table__cell">nickname</td>
+									<td class="places-table__cell">77777.7</td>
+								</tr>
+								<tr class="places-table__row">
+									<td class="places-table__cell">19</td>
+									<td class="places-table__cell">100 000$</td>
+									<td class="places-table__cell">nickname</td>
+									<td class="places-table__cell">77777.7</td>
+								</tr>
+								<tr class="places-table__row">
+									<td class="places-table__cell">20</td>
+									<td class="places-table__cell">100 000$</td>
+									<td class="places-table__cell">nickname</td>
+									<td class="places-table__cell">77777.7</td>
+								</tr>
+								<tr class="places-table__row">
+									<td class="places-table__cell">21</td>
+									<td class="places-table__cell">100 000$</td>
+									<td class="places-table__cell">nickname</td>
+									<td class="places-table__cell">77777.7</td>
+								</tr>
+								<tr class="places-table__row">
+									<td class="places-table__cell">22</td>
+									<td class="places-table__cell">100 000$</td>
+									<td class="places-table__cell">nickname</td>
+									<td class="places-table__cell">77777.7</td>
+								</tr>
+								<tr class="places-table__row">
+									<td class="places-table__cell">23</td>
+									<td class="places-table__cell">100 000$</td>
+									<td class="places-table__cell">nickname</td>
+									<td class="places-table__cell">77777.7</td>
+								</tr>
+								<tr class="places-table__row">
+									<td class="places-table__cell">24</td>
+									<td class="places-table__cell">100 000$</td>
+									<td class="places-table__cell">nickname</td>
+									<td class="places-table__cell">77777.7</td>
+								</tr>
+								<tr class="places-table__row">
+									<td class="places-table__cell">25</td>
+									<td class="places-table__cell">100 000$</td>
+									<td class="places-table__cell">nickname</td>
+									<td class="places-table__cell">77777.7</td>
+								</tr>
+								<tr class="places-table__row">
+									<td class="places-table__cell">26</td>
+									<td class="places-table__cell">100 000$</td>
+									<td class="places-table__cell">nickname</td>
+									<td class="places-table__cell">77777.7</td>
+								</tr>
+								<tr class="places-table__row">
+									<td class="places-table__cell">27</td>
+									<td class="places-table__cell">100 000$</td>
+									<td class="places-table__cell">nickname</td>
+									<td class="places-table__cell">77777.7</td>
+								</tr>
+								<tr class="places-table__row">
+									<td class="places-table__cell">28</td>
+									<td class="places-table__cell">100 000$</td>
+									<td class="places-table__cell">nickname</td>
+									<td class="places-table__cell">77777.7</td>
+								</tr>
+								<tr class="places-table__row">
+									<td class="places-table__cell">29</td>
+									<td class="places-table__cell">100 000$</td>
+									<td class="places-table__cell">nickname</td>
+									<td class="places-table__cell">77777.7</td>
+								</tr>
+								<tr class="places-table__row">
+									<td class="places-table__cell">30</td>
+									<td class="places-table__cell">100 000$</td>
+									<td class="places-table__cell">nickname</td>
+									<td class="places-table__cell">77777.7</td>
+								</tr>
+							</table>
+						</div>
+					</div>
 				</div>
+			</section>
 
-				<div class="tables__condition-wrapper">
-					<p class="tables__condition">Все выигрыши требуют отыгрыша х3, в течении 30-ти дней после его начисления.</p>
-				</div>
-
-				<div class="places-table">
-					<h2 class="places-table__header">Таблица <span>победителей</span></h2>
-
-					<table>
-						<tr>
-							<td>1</td>
-							<td>100 000$</td>
-							<td>nickname</td>
-							<td>77777.7</td>
-						</tr>
-						<tr>
-							<td>1</td>
-							<td>100 000$</td>
-							<td>nickname</td>
-							<td>77777.7</td>
-						</tr>
-						<tr>
-							<td>1</td>
-							<td>100 000$</td>
-							<td>nickname</td>
-							<td>77777.7</td>
-						</tr>
-					</table>
-
-					<table>
-						<tr>
-							<td>1</td>
-							<td>100 000$</td>
-							<td>nickname</td>
-							<td>77777.7</td>
-						</tr>
-						<tr>
-							<td>1</td>
-							<td>100 000$</td>
-							<td>nickname</td>
-							<td>77777.7</td>
-						</tr>
-						<tr>
-							<td>1</td>
-							<td>100 000$</td>
-							<td>nickname</td>
-							<td>77777.7</td>
-						</tr>
-					</table>
-				</div>
-			</div>
-		</section>
+		</div>
 
 		<section class="slider">
 			<div class="slide">
