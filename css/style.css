@@ -2542,8 +2542,13 @@ form * {
 }
 .registration-bonus__count {
   display: block;
+  margin-bottom: 20px;
   font-size: 80px;
   font-family: SFUIHeavy;
+}
+.registration-bonus__details {
+  display: inline-block;
+  border-bottom: 1px dashed #fff;
 }
 .registration--slide {
   background-image: none;
