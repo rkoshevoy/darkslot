@@ -61,9 +61,15 @@ $(document).ready(function () {
 		$('.level-modal').css('top', '-1000px')
 	});
 
-	$('.main-nav__dropdown-button, .games__item--rules').click(function(event) {
+	$('.main-nav__dropdown-rules, .games__item--rules').click(function(event) {
 		event.preventDefault();
 		$('.modal-about--rules').css({'top': '50%'});
+		$('.modal-bg').css({'opacity': '0.8', 'z-index': '100'});
+	});
+
+	$('.main-nav__dropdown-policy, .games__item--policy').click(function(event) {
+		event.preventDefault();
+		$('.modal-about--policy').css({'top': '50%'});
 		$('.modal-bg').css({'opacity': '0.8', 'z-index': '100'});
 	});
 });

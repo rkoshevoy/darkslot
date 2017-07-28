@@ -844,13 +844,15 @@ form * {
   transition: 0.1s;
 }
 .games__item--support,
-.games__item--rules {
+.games__item--rules,
+.games__item--policy {
   color: #c7c7c7;
   transition: 0.1s;
   cursor: pointer;
 }
 .games__item--support:hover,
-.games__item--rules:hover {
+.games__item--rules:hover,
+.games__item--policy:hover {
   color: #fff;
 }
 .games__social {
@@ -5147,7 +5149,6 @@ form * {
     width: calc(100% - 20px);
   }
   .modal-about__list-item {
-    font-size: 12px;
     line-height: 18px;
   }
   .error__character-wrapper {
