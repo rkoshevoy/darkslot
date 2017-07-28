@@ -10,6 +10,7 @@
 	<link rel="stylesheet" href="css/slick.css">
 	<link rel="stylesheet" href="css/slick-theme.css">
 	<link rel="stylesheet" href="css/jquery.formstyler.css">
+	<link rel="stylesheet" href="css/jquery.mCustomScrollbar.css">
 </head>
 <body>
 	
@@ -66,8 +67,9 @@
 						<ul class="main-nav__dropdown">
 							<li class="main-nav__dropdown-item"><a href="about.html">О DarkSlot</a></li>
 							<li class="main-nav__dropdown-item"><a href="blog.html">Блог</a></li>
-							<li class="main-nav__dropdown-item"><a href="#">Правила и условия</a></li>
+							<li class="main-nav__dropdown-item"><a href="#" class="main-nav__dropdown-button">Правила и условия</a></li>
 							<li class="main-nav__dropdown-item"><a href="#">Политика конфиденциальности</a></li>
+							<li class="main-nav__dropdown-item"><a href="levels.html">Уровни</a></li>
 						</ul>
 
 					</li>
@@ -87,7 +89,7 @@
 			<section class="partner">
 				<div class="partner__wrapper">
 					<div class="partner__text-wrapper">
-						<p class="partner__text">Стань партнером и получай до 45% с помощью нашей уникальной программы и до 1500$ за прохожодение уровней</p>
+						<p class="partner__text">Стань партнером и получай до 45% с помощью нашей уникальной программы и до 1500$ за прохождение уровней</p>
 						<button class="partner__button">Узнать больше</button>
 					</div>
 
@@ -97,27 +99,36 @@
 				</div>
 			</section>
 
-			<section class="advantages">
+			<section class="advantages">			
+
+				<div class="advantages-first">
+				<div class="advantages-first__wrapper">
+						<div class="advantages-first__item"><span class="advantages-first__text">Лучшие возможности получения доходов</span></div>
+						<div class="advantages-first__item"><span class="advantages-first__text">Персональные менеджеры</span></div>
+						<div class="advantages-first__item"><span class="advantages-first__text">Возможность индивидуальных комиссионных планов</span></div>
+					</div>
+				</div>
+
 				<div class="advantages__wrapper">
 
-					<h2 class="advantages__header">Lorem ipsum Lorem ipsum</h2>
+					<!-- <h2 class="advantages__header">Lorem ipsum Lorem ipsum</h2> -->
 
 					<div class="advantage advantage--ads">
 						<div class="advantage__image"></div>
 						<h2 class="advantage__header">Реклама</h2>
-						<p class="advantage__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat</p>
+						<p class="advantage__text">Darkslot входит в крупную сеть Softswiss , одного из лидеров рынка азартных онлайн игр и мировых брендов игровой индустрии. Мы предлагаем уникальные игры собственной разработки и сторонних брендов. Мы всегда предоставим вам лучшие баннеры и нарисуем уникальные под ваш индивидуальный заказ.</p>
 					</div>
 
 					<div class="advantage advantage--support">
 						<div class="advantage__image"></div>
 						<h2 class="advantage__header">Поддержка</h2>
-						<p class="advantage__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat</p>
+						<p class="advantage__text">Круглосуточное 24/7 поддержка и индивидуальное обслуживание наших клиентов. Персональные менеджеры и индивидуальная помощь.</p>
 					</div>
 
 					<div class="advantage advantage--rewards">
 						<div class="advantage__image"></div>
 						<h2 class="advantage__header">Вознаграждения</h2>
-						<p class="advantage__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat</p>
+						<p class="advantage__text">Мы даем вам до 45 % за вип уровень , +1500$ за достижение его в течении месяца. Так же мы  готовы предоставить индивидуальные условия для Вас.</p>
 					</div>
 				</div>
 			</section>
@@ -151,7 +162,7 @@
 			</div>
 		</section>
 
-		<section class="prize">
+		<!-- <section class="prize">
 			<div class="prize__wrapper">
 				<h2 class="prize__header">И это еще не все</h2>
 				<span class="prize__back-text">#фортуна</span>
@@ -159,7 +170,7 @@
 				<p class="prize__undertext">*В Акции принимают участие все партнеры достигшие 2-го и выше уровня по итогам месяца.</p>
 				<button class="prize__button">Узнать больше</button>
 			</div>
-		</section>
+		</section> -->
 
 		<section class="games">
 			<div class="games__wrapper">
@@ -196,6 +207,8 @@
 						<h2 class="games__header">О нас</h2>
 						<ul class="games__list">
 							<li class="games__item"><a href="#">Политика конфиденциальности</a></li>
+							<li class="games__item games__item--rules">Правила и условия</li>
+							<li class="games__item"><a href="levels.html">Уровни</a></li>
 							<li class="games__item games__item--support">Поддержка</li>
 							<li class="games__item"><a href="partners.html">Партнерам</a></li>
 							<li class="games__item"><a href="about.html">О Darkslot</a></li>
@@ -313,7 +326,7 @@
 			</form>
 		</div>
 
-		<div class="modal__close"></div>
+		<div class="modal-close"></div>
 	</section>
 
 	<section class="modal modal--enter">
@@ -344,7 +357,7 @@
 			<button class="modal-form__forgot-pass">Я забыл пароль</button>
 		</div>
 
-		<div class="modal__close"></div>
+		<div class="modal-close"></div>
 	</section>
 
 	<section class="modal modal--contact">
@@ -362,7 +375,7 @@
 			</form>
 		</div>
 
-		<div class="modal__close"></div>
+		<div class="modal-close"></div>
 	</section>
 
 	<section class="modal modal--recovery">
@@ -379,7 +392,7 @@
 			<span class="modal-form__not-recieve">Не получили инструкций для подтверждения?</span>
 		</div>
 
-		<div class="modal__close"></div>
+		<div class="modal-close"></div>
 	</section>
 
 	<section class="modal modal--new-password">
@@ -392,10 +405,33 @@
 			</form>
 		</div>
 
-		<div class="modal__close"></div>
+		<div class="modal-close"></div>
 	</section>
 
 	<div class="modal-bg"></div> 
+
+	<section class="modal-about modal-about--rules">
+		<div class="modal-about__wrapper">
+			<h1 class="modal-about__header">Правила и условия</h1>
+			<div class="modal-about__scroll-content">
+				<h2 class="modal-about__underheader">1. Общие положения</h2>
+				<ul class="modal-about__list">
+					<li class="modal-about__list-item">1.1 Наша компания принимает ставки  для игр казино. Все ставки принимаются исключительно в соответствии с настоящими правилами и являются подтверждением того, что участник казино знает настоящие правила и полностью с ними согласен.</li>
+					<li class="modal-about__list-item">1.2 Казино вправе без предварительного личного уведомления вносить любые изменения и дополнения в изложенные здесь правила, положения и порядок осуществления выплат. При этом условия ранее сделанных ставок остаются неизменными, а все последующие ставки, подчиняются измененным правилам.</li>
+					<li class="modal-about__list-item">1.3 Регистрация, открытие депозита и совершение ставок разрешено исключительно лицам, достигшим 18 летнего возраста, на которых возлагается полная ответственность как за законность азартных игр через Интернет в регионе их проживания, так и за предоставление сведений о выигрышах или проигрышах компетентным органам своей страны.</li>
+					<li class="modal-about__list-item">1.4 Казино полностью доверяет информации, предоставляемой клиентом при подаче заявки на открытие счета, и ответственности за несоответствие вышеупомянутой информации действительности не несет.</li>
+				</ul><h2 class="modal-about__underheader">1. Общие положения</h2>
+				<ul class="modal-about__list">
+					<li class="modal-about__list-item">1.1 Наша компания принимает ставки  для игр казино. Все ставки принимаются исключительно в соответствии с настоящими правилами и являются подтверждением того, что участник казино знает настоящие правила и полностью с ними согласен.</li>
+					<li class="modal-about__list-item">1.2 Казино вправе без предварительного личного уведомления вносить любые изменения и дополнения в изложенные здесь правила, положения и порядок осуществления выплат. При этом условия ранее сделанных ставок остаются неизменными, а все последующие ставки, подчиняются измененным правилам.</li>
+					<li class="modal-about__list-item">1.3 Регистрация, открытие депозита и совершение ставок разрешено исключительно лицам, достигшим 18 летнего возраста, на которых возлагается полная ответственность как за законность азартных игр через Интернет в регионе их проживания, так и за предоставление сведений о выигрышах или проигрышах компетентным органам своей страны.</li>
+					<li class="modal-about__list-item">1.4 Казино полностью доверяет информации, предоставляемой клиентом при подаче заявки на открытие счета, и ответственности за несоответствие вышеупомянутой информации действительности не несет.</li>
+				</ul>
+			</div>
+		</div>
+
+		<div class="modal-close modal-close--out"></div>
+	</section>
 
 	<div id="preloader"></div>
 
@@ -461,6 +497,14 @@
 
 	<script type="text/javascript">
 		$('select').styler();
+	</script>
+
+	<script type="text/javascript" src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+
+	<script>
+		$(window).on("load",function(){
+			$(".modal-about__scroll-content").mCustomScrollbar();
+		});
 	</script>
 
 </body>

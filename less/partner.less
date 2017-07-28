@@ -14,7 +14,7 @@
 		@media @mobile {
 			.mobile-wrap;
 			padding-top: 50px;
-			padding-bottom: 350px;
+			padding-bottom: 50px;
 			text-align: center;
 		}
 	}
@@ -87,15 +87,20 @@
 		}
 
 		@media @mobile {
-			top: auto;
-			right: 50%;
-			bottom: 40px;
-			transform: translatex(50%);
+			display: none;
+			// top: auto;
+			// right: 50%;
+			// bottom: 40px;
+			// transform: translatex(50%);
 		}
 	}
 
 	&__image {
 		width: 100%;
+
+		@media @mobile {
+			display: none;
+		}
 	}
 }
 

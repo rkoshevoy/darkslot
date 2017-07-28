@@ -26,9 +26,10 @@ $(document).ready(function () {
 		$('.modal--recovery').css('top', '-1000px')
 	});
 
-	$('.modal__close').click(function () {
+	$('.modal-close').click(function () {
 		$('.modal-bg').css({'opacity': '0', 'z-index': '-1'});
-		$('.modal').css('top', '-1000px')
+		$('.level-modal-bg').css({'opacity': '0', 'z-index': '-1'});
+		$('.modal, .level-modal, .modal-about').css('top', '-1000px');
 	});
 
 	$('.modal-form__forgot-pass').click(function () {
@@ -37,7 +38,7 @@ $(document).ready(function () {
 
 	$('.modal-bg').click(function () {
 		$('.modal-bg').css({'opacity': '0', 'z-index': '-1'});
-		$('.modal--registration, .modal--enter, .modal--contact, .modal--recovery, .modal--new-password, .modal-rules').css('top', '-1000px')
+		$('.modal, .modal-about').css('top', '-1000px')
 	});
 
 	$('#button1').click(function() {
@@ -55,19 +56,14 @@ $(document).ready(function () {
 		$('.level-modal-bg').css({'opacity': '0.8', 'z-index': '100'});
 	});
 
-	$('.level-modal__close').click(function() {
-		$('.level-modal').css({'top': '-1000px'});
-		$('.level-modal-bg').css({'opacity': '0', 'z-index': '-1'});
-	});
-
 	$('.level-modal-bg').click(function () {
 		$('.level-modal-bg').css({'opacity': '0', 'z-index': '-1'});
 		$('.level-modal').css('top', '-1000px')
 	});
 
-	$('.main-nav__dropdown-button').click(function(event) {
+	$('.main-nav__dropdown-button, .games__item--rules').click(function(event) {
 		event.preventDefault();
-		$('.modal-rules').css({'top': '50%'});
+		$('.modal-about--rules').css({'top': '50%'});
 		$('.modal-bg').css({'opacity': '0.8', 'z-index': '100'});
 	});
 });

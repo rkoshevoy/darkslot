@@ -843,12 +843,14 @@ form * {
   color: #c7c7c7;
   transition: 0.1s;
 }
-.games__item--support {
+.games__item--support,
+.games__item--rules {
   color: #c7c7c7;
   transition: 0.1s;
   cursor: pointer;
 }
-.games__item--support:hover {
+.games__item--support:hover,
+.games__item--rules:hover {
   color: #fff;
 }
 .games__social {
@@ -1606,19 +1608,27 @@ form * {
   margin: 0 auto;
   margin-bottom: 120px;
 }
-.advantages__header {
-  position: relative;
-  width: 100%;
-  margin-bottom: 80px;
-  font-size: 30px;
-  text-align: center;
-  text-transform: uppercase;
+.advantages-first__wrapper {
+  display: flex;
+  justify-content: space-between;
+  width: 1180px;
+  margin: 0 auto;
+  padding-bottom: 30px;
 }
-.advantages__header::after {
+.advantages-first__item {
+  width: 380px;
+  text-align: center;
+}
+.advantages-first__text {
+  position: relative;
+  display: block;
+  font-size: 20px;
+}
+.advantages-first__text::after {
   content: '';
   position: absolute;
   left: calc(50% - 90px);
-  bottom: -20px;
+  bottom: -10px;
   width: 180px;
   height: 3px;
   background-color: #ed383f;
@@ -1760,13 +1770,14 @@ form * {
   position: relative;
   width: 1180px;
   margin: 0 auto;
+  padding-bottom: 90px;
   text-align: center;
 }
 .prize__header {
   margin-top: 25px;
   margin-bottom: 45px;
   font-size: 35px;
-  text-align: centerf;
+  text-align: center;
 }
 .prize__back-text {
   position: absolute;
@@ -1787,7 +1798,6 @@ form * {
 }
 .prize__button {
   width: 280px;
-  margin-bottom: 90px;
   padding: 30px;
   background-color: #ed383f;
   font-size: 18px;
@@ -1815,7 +1825,7 @@ form * {
 .modal__character {
   width: 100%;
 }
-.modal__close {
+.modal-close {
   position: absolute;
   right: 23px;
   top: 28px;
@@ -1824,7 +1834,7 @@ form * {
   cursor: pointer;
   transition: 0.1s;
 }
-.modal__close::before {
+.modal-close::before {
   content: '';
   position: absolute;
   right: -3px;
@@ -1835,7 +1845,7 @@ form * {
   transform: rotate(45deg);
   transition: 0.1s;
 }
-.modal__close::after {
+.modal-close::after {
   content: '';
   position: absolute;
   right: -3px;
@@ -1846,11 +1856,29 @@ form * {
   transform: rotate(135deg);
   transition: 0.1s;
 }
-.modal__close:hover::before {
+.modal-close:hover::before {
   background-color: #fff;
 }
-.modal__close:hover::after {
+.modal-close:hover::after {
   background-color: #fff;
+}
+.modal-close--out {
+  right: -40px;
+  top: -40px;
+  width: 35px;
+  height: 35px;
+}
+.modal-close--out::before {
+  top: 15px;
+  left: -4px;
+  width: 40px;
+  height: 2px;
+}
+.modal-close--out::after {
+  top: 15px;
+  left: -4px;
+  width: 40px;
+  height: 2px;
 }
 .modal--registration {
   width: 945px;
@@ -2202,6 +2230,154 @@ form * {
 .social-enter--reg {
   background-color: rgba(60, 60, 60, 0.5);
   border: none;
+}
+.level-modal {
+  position: fixed;
+  z-index: 101;
+  left: 50%;
+  top: -1000px;
+  width: 840px;
+  background-color: rgba(35, 35, 35, 0.6);
+  transform: translate(-50%, -50%);
+  transition: 0.6s;
+}
+.level-modal__wrapper {
+  padding: 40px 25px;
+  padding-top: 80px;
+}
+.level-modal__header-wrapper {
+  position: absolute;
+  left: 20px;
+  top: -90px;
+}
+.level-modal__number {
+  font-size: 150px;
+  color: #6ab980;
+  font-family: SFUIHeavy;
+}
+.level-modal__greeting-wrapper {
+  position: absolute;
+  top: 60px;
+  left: 65px;
+}
+.level-modal__greeting {
+  display: block;
+  font-size: 26px;
+  font-family: SFUILight;
+  white-space: pre;
+}
+.level-modal__level {
+  display: block;
+  font-size: 30px;
+  font-family: SFUIHeavy;
+  text-transform: uppercase;
+}
+.level-modal__up-text {
+  display: block;
+  margin-bottom: 25px;
+  font-size: 18px;
+  font-family: SFUIMedium;
+}
+.level-modal__ability-wrapper {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.level-modal--fourth {
+  background-color: rgba(0, 0, 0, 0.75);
+}
+.level-modal--fourth .level-modal__header-wrapper {
+  z-index: -1;
+  top: -100px;
+  left: -25px;
+}
+.level-modal--fourth .level-modal__number {
+  width: 80px;
+}
+.level-modal--fourth .level-modal__number img {
+  width: 100%;
+}
+.level-modal--fourth .level-modal__greeting-wrapper {
+  top: 70px;
+  left: 100px;
+}
+.level-modal--fourth .level-ability__up-text {
+  position: relative;
+}
+.level-modal--fourth .level-ability {
+  border-color: #ffff75;
+}
+.level-modal--fourth .level-ability__header {
+  margin-bottom: 0;
+  line-height: 31px;
+}
+.level-ability {
+  width: 250px;
+  padding: 25px;
+  border: 1px dashed #6ab980;
+}
+.level-ability__header {
+  margin-bottom: 10px;
+  font-size: 20px;
+  font-family: SFUIHeavy;
+  text-transform: uppercase;
+}
+.level-ability__text {
+  color: #afaeae;
+  font-size: 14px;
+  line-height: 23px;
+}
+.level-ability--fourth {
+  width: 385px;
+  margin-bottom: 20px;
+}
+.level-modal-bg {
+  position: fixed;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #2e2e2e;
+  opacity: 0;
+}
+.modal-about {
+  position: fixed;
+  z-index: 101;
+  top: -1000px;
+  left: 50%;
+  width: 960px;
+  transform: translate(-50%, -50%);
+  background-color: rgba(0, 0, 0, 0.85);
+  transition: 0.6s;
+}
+.modal-about__wrapper {
+  padding: 30px 20px;
+  padding-right: 5px;
+}
+.modal-about__header {
+  margin-bottom: 25px;
+  font-family: SFUIHeavy;
+  font-size: 30px;
+  text-transform: uppercase;
+}
+.modal-about__scroll-content {
+  height: 300px;
+}
+.modal-about__underheader {
+  margin-bottom: 10px;
+  font-family: SFUIBold;
+  font-size: 18px;
+  text-transform: uppercase;
+}
+.modal-about__list {
+  list-style: none;
+}
+.modal-about__list-item {
+  margin-bottom: 10px;
+  font-size: 14px;
+  line-height: 22px;
+  color: #cccccc;
 }
 .error {
   background-image: url('../img/404-bg.png');
@@ -3395,152 +3571,6 @@ form * {
 .level__image {
   width: 100%;
 }
-.level-modal {
-  position: fixed;
-  z-index: 101;
-  left: 50%;
-  top: -1000px;
-  width: 840px;
-  background-color: rgba(35, 35, 35, 0.6);
-  transform: translate(-50%, -50%);
-  transition: 0.6s;
-}
-.level-modal__wrapper {
-  padding: 40px 25px;
-  padding-top: 80px;
-}
-.level-modal__header-wrapper {
-  position: absolute;
-  left: 20px;
-  top: -90px;
-}
-.level-modal__number {
-  font-size: 150px;
-  color: #6ab980;
-  font-family: SFUIHeavy;
-}
-.level-modal__greeting-wrapper {
-  position: absolute;
-  top: 60px;
-  left: 65px;
-}
-.level-modal__greeting {
-  display: block;
-  font-size: 26px;
-  font-family: SFUILight;
-  white-space: pre;
-}
-.level-modal__level {
-  display: block;
-  font-size: 30px;
-  font-family: SFUIHeavy;
-  text-transform: uppercase;
-}
-.level-modal__up-text {
-  display: block;
-  margin-bottom: 25px;
-  font-size: 18px;
-  font-family: SFUIMedium;
-}
-.level-modal__ability-wrapper {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-}
-.level-modal__close {
-  position: absolute;
-  right: -50px;
-  top: -50px;
-  width: 35px;
-  height: 35px;
-  cursor: pointer;
-}
-.level-modal__close::before {
-  content: '';
-  position: absolute;
-  top: 15px;
-  left: -4px;
-  width: 40px;
-  height: 2px;
-  background-color: #b7b7b7;
-  transform: rotate(45deg);
-  transition: 0.1s;
-}
-.level-modal__close::after {
-  content: '';
-  position: absolute;
-  top: 15px;
-  left: -4px;
-  width: 40px;
-  height: 2px;
-  background-color: #b7b7b7;
-  transform: rotate(-45deg);
-  transition: 0.1s;
-}
-.level-modal__close:hover::before {
-  background-color: #fff;
-}
-.level-modal__close:hover::after {
-  background-color: #fff;
-}
-.level-modal--fourth {
-  background-color: rgba(0, 0, 0, 0.75);
-}
-.level-modal--fourth .level-modal__header-wrapper {
-  z-index: -1;
-  top: -100px;
-  left: -25px;
-}
-.level-modal--fourth .level-modal__number {
-  width: 80px;
-}
-.level-modal--fourth .level-modal__number img {
-  width: 100%;
-}
-.level-modal--fourth .level-modal__greeting-wrapper {
-  top: 70px;
-  left: 100px;
-}
-.level-modal--fourth .level-ability__up-text {
-  position: relative;
-}
-.level-modal--fourth .level-ability {
-  border-color: #ffff75;
-}
-.level-modal--fourth .level-ability__header {
-  margin-bottom: 0;
-  line-height: 31px;
-}
-.level-ability {
-  width: 250px;
-  padding: 25px;
-  border: 1px dashed #6ab980;
-}
-.level-ability__header {
-  margin-bottom: 10px;
-  font-size: 20px;
-  font-family: SFUIHeavy;
-  text-transform: uppercase;
-}
-.level-ability__text {
-  color: #afaeae;
-  font-size: 14px;
-  line-height: 23px;
-}
-.level-ability--fourth {
-  width: 385px;
-  margin-bottom: 20px;
-}
-.level-modal-bg {
-  position: fixed;
-  z-index: -1;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: #2e2e2e;
-  opacity: 0;
-}
 .tournament-bg {
   background-image: url('../img/roulette.png');
   background-size: contain;
@@ -3767,22 +3797,6 @@ form * {
 }
 .places-table__cell--fifth:first-child {
   background-image: url('../img/places/star-fifth.png');
-}
-.modal-rules {
-  position: fixed;
-  z-index: 101;
-  top: -1000px;
-  left: 50%;
-  width: 960px;
-  transform: translate(-50%, -50%);
-  background-color: rgba(0, 0, 0, 0.85);
-  transition: 0.6s;
-}
-.modal-rules__wrapper {
-  padding: 30px 20px;
-}
-.modal-rules__list {
-  list-style: none;
 }
 @media (min-width: 788px) {
   .main-wrapper {
@@ -4107,13 +4121,16 @@ form * {
   .advantages__wrapper {
     width: 748px;
   }
+  .advantages-first__wrapper {
+    width: 748px;
+  }
   .advantage {
     width: 340px;
     margin: 0 auto;
     margin-bottom: 30px;
   }
   .advantage__image {
-    margin-bottom: 40px;
+    margin-bottom: 20px;
   }
   .incomes__wrapper {
     width: 748px;
@@ -4127,6 +4144,18 @@ form * {
   }
   .prize__wrapper {
     width: 748px;
+  }
+  .modal-close--out {
+    right: 15px;
+    top: 15px;
+    width: 25px;
+    height: 25px;
+  }
+  .modal-close--out::before {
+    width: 30px;
+  }
+  .modal-close--out::after {
+    width: 30px;
   }
   .modal--registration {
     width: 700px;
@@ -4162,6 +4191,24 @@ form * {
   }
   .modal-form--contact {
     width: 350px;
+  }
+  .level-modal {
+    width: 700px;
+  }
+  .level-ability {
+    width: 205px;
+  }
+  .level-ability__header {
+    font-size: 16px;
+  }
+  .level-ability--fourth {
+    width: 315px;
+  }
+  .modal-about {
+    width: 700px;
+  }
+  .modal-about__header {
+    font-size: 20px;
   }
   .error {
     background-position: center -200px;
@@ -4367,22 +4414,6 @@ form * {
   .level {
     width: 365px;
     margin-bottom: 20px;
-  }
-  .level-modal {
-    width: 700px;
-  }
-  .level-modal__close {
-    right: 10px;
-    top: 15px;
-  }
-  .level-ability {
-    width: 205px;
-  }
-  .level-ability__header {
-    font-size: 16px;
-  }
-  .level-ability--fourth {
-    width: 315px;
   }
   .tournament__wrapper {
     width: 748px;
@@ -4825,7 +4856,7 @@ form * {
     padding-right: 10px;
     padding-left: 10px;
     padding-top: 50px;
-    padding-bottom: 350px;
+    padding-bottom: 50px;
     text-align: center;
   }
   .partner__text-wrapper {
@@ -4841,24 +4872,48 @@ form * {
     text-align: center;
   }
   .partner__image-wrapper {
-    top: auto;
-    right: 50%;
-    bottom: 40px;
-    transform: translatex(50%);
+    display: none;
+  }
+  .partner__image {
+    display: none;
   }
   .advantages__wrapper {
     width: 100%;
     padding-right: 10px;
     padding-left: 10px;
+    margin-bottom: 40px;
+  }
+  .advantages-first__wrapper {
+    width: 100%;
+    padding-right: 10px;
+    padding-left: 10px;
+    flex-wrap: wrap;
+  }
+  .advantages-first__item {
+    width: 100%;
+    margin-bottom: 20px;
   }
   .advantage {
     width: 100%;
     max-width: 340px;
+    margin-bottom: 20px;
+  }
+  .advantage__header {
+    margin-bottom: 20px;
+    font-size: 22px;
   }
   .incomes__wrapper {
     width: 100%;
     padding-right: 10px;
     padding-left: 10px;
+    padding-bottom: 40px;
+  }
+  .incomes__header {
+    font-size: 30px;
+  }
+  .incomes__underheader {
+    margin-bottom: 40px;
+    font-size: 24px;
   }
   .income {
     width: 100%;
@@ -4868,9 +4923,17 @@ form * {
     width: 100%;
     padding-right: 10px;
     padding-left: 10px;
+    padding-bottom: 40px;
+  }
+  .prize__header {
+    margin-top: 15px;
+    margin-bottom: 30px;
   }
   .prize__back-text {
     font-size: 40px;
+  }
+  .prize__text {
+    margin-bottom: 20px;
   }
   .modal {
     width: calc(100% - 20px);
@@ -4922,6 +4985,63 @@ form * {
   .social-enter__text {
     font-size: 12px;
   }
+  .level-modal {
+    width: calc(100% - 20px);
+  }
+  .level-modal__wrapper {
+    padding: 10px;
+  }
+  .level-modal__header-wrapper {
+    position: relative;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+  }
+  .level-modal__number {
+    display: inline-block;
+    margin-right: 10px;
+    font-size: 100px;
+  }
+  .level-modal__greeting-wrapper {
+    position: relative;
+    top: 0;
+    left: 0;
+    display: inline-block;
+  }
+  .level-modal__greeting {
+    font-size: 20px;
+    white-space: normal;
+  }
+  .level-modal__level {
+    font-size: 20px;
+  }
+  .level-modal--fourth .level-modal__header-wrapper {
+    top: 0;
+    left: 0;
+  }
+  .level-modal--fourth .level-modal__greeting-wrapper {
+    top: 0;
+    left: 0;
+  }
+  .level-ability {
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 10px;
+  }
+  .level-ability:last-child {
+    margin-bottom: 0;
+  }
+  .level-ability__header {
+    margin-bottom: 0;
+  }
+  .modal-about {
+    width: calc(100% - 20px);
+  }
+  .modal-about__list-item {
+    font-size: 12px;
+    line-height: 18px;
+  }
   .error__character-wrapper {
     width: 200px;
   }
@@ -4942,6 +5062,7 @@ form * {
     width: 100%;
     padding-right: 10px;
     padding-left: 10px;
+    padding-top: 20px;
   }
   .registration__reg-button {
     width: auto;
@@ -4950,16 +5071,17 @@ form * {
     width: 100%;
   }
   .registration-bonus__header {
-    margin-bottom: 10px;
+    margin-bottom: 5px;
     font-size: 16px;
   }
   .registration-bonus__underheader {
-    margin-bottom: 10px;
+    margin-bottom: 5px;
     font-size: 20px;
     line-height: 25px;
   }
   .registration-bonus__count {
     font-size: 30px;
+    margin-bottom: 5px;
   }
   .registration--slide .registration-bonus {
     width: 100%;
@@ -5281,56 +5403,6 @@ form * {
   }
   .level {
     width: calc(50% - 10px);
-  }
-  .level-modal {
-    width: calc(100% - 20px);
-  }
-  .level-modal__wrapper {
-    padding: 10px;
-  }
-  .level-modal__header-wrapper {
-    position: relative;
-    top: 0;
-    left: 0;
-    display: flex;
-    align-items: center;
-  }
-  .level-modal__number {
-    display: inline-block;
-    margin-right: 10px;
-    font-size: 100px;
-  }
-  .level-modal__greeting-wrapper {
-    position: relative;
-    top: 0;
-    left: 0;
-    display: inline-block;
-  }
-  .level-modal__greeting {
-    font-size: 20px;
-    white-space: normal;
-  }
-  .level-modal__level {
-    font-size: 20px;
-  }
-  .level-modal--fourth .level-modal__header-wrapper {
-    top: 0;
-    left: 0;
-  }
-  .level-modal--fourth .level-modal__greeting-wrapper {
-    top: 0;
-    left: 0;
-  }
-  .level-ability {
-    width: 100%;
-    margin-bottom: 10px;
-    padding: 10px;
-  }
-  .level-ability:last-child {
-    margin-bottom: 0;
-  }
-  .level-ability__header {
-    margin-bottom: 0;
   }
   .tournament__wrapper {
     width: 100%;

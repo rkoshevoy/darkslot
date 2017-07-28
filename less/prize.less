@@ -13,6 +13,7 @@
 		position: relative;
 		width: 1180px;
 		margin: 0 auto;
+		padding-bottom: 90px;
 		text-align: center;
 
 		@media @tablet {
@@ -21,6 +22,7 @@
 
 		@media @mobile {
 			.mobile-wrap;
+			padding-bottom: 40px;
 		}
 	}
 
@@ -28,7 +30,12 @@
 		margin-top: 25px;
 		margin-bottom: 45px;
 		font-size: 35px;
-		text-align: centerf;
+		text-align: center;
+
+		@media @mobile {
+			margin-top: 15px;
+			margin-bottom: 30px;
+		}
 	}
 
 	&__back-text {
@@ -49,6 +56,10 @@
 
 	&__text {
 		margin-bottom: 40px;
+
+		@media @mobile {
+			margin-bottom: 20px;
+		}
 	}
 
 	&__undertext {
@@ -57,7 +68,6 @@
 
 	&__button {
 		width: 280px;
-		margin-bottom: 90px;
 		padding: 30px;
 		background-color: #ed383f;
 		font-size: 18px;
