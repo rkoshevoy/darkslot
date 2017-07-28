@@ -2313,11 +2313,12 @@ form * {
 }
 .level-ability {
   width: 250px;
-  padding: 25px;
+  padding: 10px;
   border: 1px dashed #6ab980;
+  text-align: center;
 }
 .level-ability__header {
-  margin-bottom: 10px;
+  margin-bottom: 5px;
   font-size: 20px;
   font-family: SFUIHeavy;
   text-transform: uppercase;
@@ -2330,6 +2331,28 @@ form * {
 .level-ability--fourth {
   width: 385px;
   margin-bottom: 20px;
+}
+.level-details__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 25px 30px;
+  background-color: rgba(35, 35, 35, 0.85);
+}
+.level-details__text {
+  font-size: 14px;
+  line-height: 24px;
+  color: #d0d0d0;
+  font-family: SFUIRegular;
+}
+.level-details__bottom-text span {
+  display: inline-block;
+  border-bottom: 2px solid #ed383f;
+}
+.level-details__button {
+  padding: 20px 25px;
+  background-color: #ed383f;
+  font-size: 14px;
 }
 .level-modal-bg {
   position: fixed;
@@ -3798,6 +3821,70 @@ form * {
 .places-table__cell--fifth:first-child {
   background-image: url('../img/places/star-fifth.png');
 }
+.levels__wrapper {
+  width: 1180px;
+  margin: 0 auto;
+  padding-top: 40px;
+}
+.levels__header-wrapper {
+  text-align: center;
+}
+.levels__header {
+  display: inline-block;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 30px;
+  font-family: SFUIHeavy;
+  text-transform: uppercase;
+  border-bottom: 3px solid #ed383f;
+}
+.level-modal--static {
+  position: relative;
+  z-index: 1;
+  top: 250px;
+  display: block;
+  width: 100%;
+}
+.level-modal--static:nth-child(2) {
+  margin-bottom: 150px;
+}
+.level-modal--static:nth-child(3) {
+  margin-bottom: 110px;
+}
+.level-modal--static:nth-child(4) {
+  margin-bottom: 140px;
+}
+.level-modal--static:last-child {
+  margin-bottom: 40px;
+}
+.level-modal--static .level-ability {
+  width: 355px;
+}
+.level-modal--static .level-modal__ability-wrapper {
+  margin-bottom: 20px;
+}
+.level-modal--static .level-ability--fourth {
+  width: 550px;
+}
+.level-modal--static .level-modal__level {
+  margin-top: 10px;
+}
+.level-modal--static .level-modal__about span {
+  display: inline-block;
+  border-bottom: 2px solid #ed383f;
+}
+.level-modal--static .level-modal__up-text {
+  position: relative;
+}
+.level-modal--static .level-modal__level {
+  white-space: pre;
+}
+.level-modal--static .level-modal__number {
+  width: 60px;
+}
+.level-modal--static .level-modal__number img {
+  width: 100%;
+}
 @media (min-width: 788px) {
   .main-wrapper {
     margin-top: 77px;
@@ -4456,6 +4543,12 @@ form * {
   .places-table:nth-child(2) {
     display: none;
   }
+  .level-modal--static .level-ability {
+    width: 200px;
+  }
+  .level-modal--static .level-ability--fourth {
+    width: 315px;
+  }
 }
 @media (max-width: 788px) {
   .buttons-level__wrapper {
@@ -5035,6 +5128,21 @@ form * {
   .level-ability__header {
     margin-bottom: 0;
   }
+  .level-details__wrapper {
+    flex-wrap: wrap;
+    padding: 10px;
+  }
+  .level-details__text {
+    width: 100%;
+    margin-bottom: 10px;
+    line-height: 18px;
+    text-align: center;
+  }
+  .level-details__button {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 10px 20px;
+  }
   .modal-about {
     width: calc(100% - 20px);
   }
@@ -5483,6 +5591,27 @@ form * {
     padding-left: 15px;
     background-position: 5px center;
     background-size: 15px;
+  }
+  .level-modal--static:nth-child(2) {
+    margin-bottom: 110px;
+  }
+  .level-modal--static:nth-child(3) {
+    margin-bottom: 55px;
+  }
+  .level-modal--static:nth-child(4) {
+    margin-bottom: 110px;
+  }
+  .level-modal--static:last-child {
+    margin-bottom: 10px;
+  }
+  .level-modal--static .level-ability {
+    width: 100%;
+  }
+  .level-modal--static .level-modal__about {
+    text-align: center;
+  }
+  .level-modal--static .level-modal__up-text {
+    text-align: center;
   }
 }
 @media (max-width: 550px) {

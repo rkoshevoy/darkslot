@@ -1,0 +1,122 @@
+.levels {
+
+	&__wrapper {
+		width: 1180px;
+		margin: 0 auto;
+		padding-top: 40px;
+	}
+
+	&__header-wrapper {
+		text-align: center;
+	}
+
+	&__header {
+		display: inline-block;
+		margin: 0 auto;
+		text-align: center;
+		font-size: 30px;
+		font-family: SFUIHeavy;
+		text-transform: uppercase;
+		border-bottom: 3px solid #ed383f;
+	}
+}
+
+.level-modal--static {
+	position: relative;
+	z-index: 1;
+	top: 250px;
+	display: block;
+	width: 100%;
+
+	&:nth-child(2) {
+		margin-bottom: 150px;
+
+		@media @mobile {
+			margin-bottom: 110px;
+		}
+	}
+
+	&:nth-child(3) {
+		margin-bottom: 110px;
+
+		@media @mobile {
+			margin-bottom: 55px;
+		}
+	}
+
+	&:nth-child(4) {
+		margin-bottom: 140px;
+
+		@media @mobile {
+			margin-bottom: 110px;
+		}
+	}
+
+	&:last-child {
+		margin-bottom: 40px;
+
+		@media @mobile {
+			margin-bottom: 10px;
+		}
+	}
+
+	.level-ability {
+		width: 355px;
+
+		@media @tablet {
+			width: 200px;
+		}
+
+		@media @mobile {
+			width: 100%;
+		}
+	}
+
+	.level-modal__ability-wrapper {
+		margin-bottom: 20px;
+	}
+
+	.level-ability--fourth {
+		width: 550px;
+
+		@media @tablet {
+			width: 315px;
+		}
+	}
+
+	.level-modal__level {
+		margin-top: 10px;
+	}
+
+	.level-modal__about {
+
+		@media @mobile {
+			text-align: center;
+		}
+
+		span {
+			display: inline-block;
+			border-bottom: 2px solid #ed383f;
+		}
+	}
+
+	.level-modal__up-text {
+		position: relative;
+
+		@media @mobile {
+			text-align: center;
+		}
+	}
+
+	.level-modal__level {
+		white-space: pre;
+	}
+
+	.level-modal__number {
+		width: 60px;
+
+		img {
+			width: 100%;
+		}
+	}
+}
