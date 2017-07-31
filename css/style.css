@@ -2350,13 +2350,17 @@ form * {
   line-height: 31px;
 }
 .level-ability {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
   width: 250px;
   padding: 10px;
   border: 1px dashed #6ab980;
   text-align: center;
 }
 .level-ability__header {
-  margin-bottom: 5px;
+  width: 100%;
   font-size: 20px;
   font-family: SFUIHeavy;
   text-transform: uppercase;
@@ -2366,9 +2370,13 @@ form * {
   font-size: 14px;
   line-height: 23px;
 }
-.level-ability--fourth {
+.level-ability--wide {
   width: 385px;
   margin-bottom: 20px;
+}
+.level-ability--wide:nth-child(3),
+.level-ability--wide:nth-child(4) {
+  margin-bottom: 0;
 }
 .level-details__wrapper {
   display: flex;
@@ -3884,7 +3892,7 @@ form * {
   width: 100%;
 }
 .level-modal--static:nth-child(2) {
-  margin-bottom: 150px;
+  margin-bottom: 180px;
 }
 .level-modal--static:nth-child(3) {
   margin-bottom: 110px;
@@ -3901,7 +3909,7 @@ form * {
 .level-modal--static .level-modal__ability-wrapper {
   margin-bottom: 20px;
 }
-.level-modal--static .level-ability--fourth {
+.level-modal--static .level-ability--wide {
   width: 550px;
 }
 .level-modal--static .level-modal__level {
@@ -4338,7 +4346,7 @@ form * {
   .level-ability__header {
     font-size: 16px;
   }
-  .level-ability--fourth {
+  .level-ability--wide {
     width: 315px;
   }
   .modal-about {
@@ -4596,7 +4604,7 @@ form * {
   .level-modal--static .level-ability {
     width: 200px;
   }
-  .level-modal--static .level-ability--fourth {
+  .level-modal--static .level-ability--wide {
     width: 315px;
   }
 }

@@ -820,6 +820,10 @@
 }
 
 .level-ability {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: center;
 	width: 250px;
 	padding: 10px;
 	border: 1px dashed #6ab980;
@@ -840,7 +844,7 @@
 	}
 
 	&__header {
-		margin-bottom: 5px;
+		width: 100%;
 		font-size: 20px;
 		font-family: SFUIHeavy;
 		text-transform: uppercase;
@@ -861,12 +865,17 @@
 	}
 }
 
-.level-ability--fourth {
+.level-ability--wide {
 	width: 385px;
 	margin-bottom: 20px;
 
 	@media @tablet {
 		width: 315px;
+	}
+
+	&:nth-child(3),
+	&:nth-child(4) {
+		margin-bottom: 0;
 	}
 }
 
