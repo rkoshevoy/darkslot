@@ -87,6 +87,7 @@ form * {
 }
 .buttons-level__button {
   width: 30%;
+  margin-bottom: 10px;
   padding: 20px;
   background-color: #ed383f;
   font-family: SFUIBold;
@@ -1827,6 +1828,30 @@ form * {
 .modal__character {
   width: 100%;
 }
+.modal__header {
+  margin-bottom: 15px;
+  font-family: SFUIBold;
+  font-size: 25px;
+  text-transform: uppercase;
+}
+.modal__text {
+  font-size: 14px;
+  line-height: 23px;
+  margin-bottom: 15px;
+}
+.modal__button {
+  padding: 20px 45px;
+  border: none;
+  background-color: #ed383f;
+  font-family: SFUIMedium;
+  font-size: 14px;
+  color: #fff;
+  transition: 0.1s;
+  cursor: pointer;
+}
+.modal__button:hover {
+  background-color: #de3137;
+}
 .modal-close {
   position: absolute;
   right: 23px;
@@ -1912,6 +1937,17 @@ form * {
 .modal--recovery,
 .modal--new-password {
   width: 500px;
+}
+.modal--activate {
+  width: 800px;
+}
+.modal--activate .modal__character-wrapper {
+  top: -12px;
+  left: -15px;
+  width: 280px;
+}
+.modal--activate .modal__wrapper {
+  width: 480px;
 }
 .modal-form {
   display: flex;
@@ -4269,6 +4305,18 @@ form * {
     top: 150px;
     left: -10px;
   }
+  .modal--activate {
+    width: 640px;
+  }
+  .modal--activate .modal__character-wrapper {
+    left: 15px;
+    top: auto;
+    bottom: 30px;
+    width: 150px;
+  }
+  .modal--activate .modal__wrapper {
+    width: 440px;
+  }
   .modal-form__currency {
     width: 240px;
   }
@@ -5032,9 +5080,22 @@ form * {
   }
   .modal {
     width: calc(100% - 20px);
+    padding: 10px;
   }
   .modal__character-wrapper {
     display: none;
+  }
+  .modal__button {
+    width: 100%;
+    padding: 20px;
+  }
+  .modal-close {
+    right: 10px;
+    top: 10px;
+  }
+  .modal-close--out {
+    top: 10px;
+    right: 10px;
   }
   .modal-form {
     width: 100%;

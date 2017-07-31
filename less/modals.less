@@ -13,6 +13,7 @@
 
 	@media @mobile {
 		width: ~"calc(100% - 20px)";
+		padding: 10px;
 	}
 
 	&__character-wrapper {
@@ -26,6 +27,39 @@
 	&__character {
 		width: 100%;
 	}
+
+	&__header {
+		margin-bottom: 15px;
+		font-family: SFUIBold;
+		font-size: 25px;
+		text-transform: uppercase;
+	} 
+
+	&__text {
+		font-size: 14px;
+		line-height: 23px;
+		margin-bottom: 15px;
+	}
+
+	&__button {
+		padding: 20px 45px;
+		border: none;
+		background-color: #ed383f;
+		font-family: SFUIMedium;
+		font-size: 14px;
+		color: #fff;
+		transition: 0.1s;
+		cursor: pointer;
+
+		&:hover {
+			background-color: #de3137;
+		}
+
+		@media @mobile {
+			width: 100%;
+			padding: 20px;
+		}
+	}
 }
 
 .modal-close {
@@ -36,6 +70,11 @@
 	height: 20px;
 	cursor: pointer;
 	transition: 0.1s;
+
+	@media @mobile {
+		right: 10px;
+		top: 10px;
+	}
 
 	&::before {
 		content: '';
@@ -107,6 +146,11 @@
 			width: 30px;
 		}
 	}
+
+	@media @mobile {
+		top: 10px;
+		right: 10px;
+	}
 }
 
 .modal--registration {
@@ -174,6 +218,35 @@
 .modal--recovery,
 .modal--new-password {
 	width: 500px;	
+}
+
+.modal--activate {
+	width: 800px;
+
+	@media @tablet {
+		width: 640px;
+	}
+
+	.modal__character-wrapper {
+		top: -12px;
+		left: -15px;
+		width: 280px;
+
+		@media @tablet {
+			left: 15px;
+			top: auto;
+			bottom: 30px;
+			width: 150px;
+		}
+	}
+
+	.modal__wrapper {
+		width: 480px;		
+
+		@media @tablet {
+			width: 440px;
+		}
+	}
 }
 
 .modal-form {

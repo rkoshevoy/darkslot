@@ -56,9 +56,14 @@ $(document).ready(function () {
 		$('.level-modal-bg').css({'opacity': '0.8', 'z-index': '100'});
 	});
 
+	$('#button4').click(function() {
+		$('.modal--activate').css({'top': '50%'});
+		$('.level-modal-bg').css({'opacity': '0.8', 'z-index': '100'});
+	});
+
 	$('.level-modal-bg').click(function () {
 		$('.level-modal-bg').css({'opacity': '0', 'z-index': '-1'});
-		$('.level-modal').css('top', '-1000px')
+		$('.modal, .level-modal').css('top', '-1000px')
 	});
 
 	$('.main-nav__dropdown-rules, .games__item--rules').click(function(event) {
