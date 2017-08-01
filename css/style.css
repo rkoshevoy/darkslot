@@ -1061,19 +1061,29 @@ form * {
   vertical-align: middle;
 }
 .fixed-bar__language {
+  align-items: center;
   height: 50px;
+  padding-left: 15px;
+  padding-right: 15px;
   margin-left: 1px;
   border: none;
   background-color: #313131;
   font-family: SFUIRegular;
   color: #999999;
   transition: 0.1s;
+  cursor: pointer;
 }
 .fixed-bar__language:hover {
   background-color: #ed383f;
   color: #fff;
 }
-.fixed-bar__language p {
+.fixed-bar__language:hover span {
+  color: #fff;
+}
+.fixed-bar__language img {
+  margin-right: 10px;
+}
+.fixed-bar__language span {
   font-size: 13px;
   line-height: 30px;
   color: #999999;
@@ -1092,7 +1102,7 @@ form * {
   display: block;
 }
 .fixed-bar .fixed-bar__language {
-  display: block;
+  display: flex;
 }
 .fixed-bar .fixed-bar__shower {
   display: none;
@@ -3401,7 +3411,7 @@ form * {
   left: 50%;
   transform: translatex(-50%);
   font-size: 120px;
-  color: #212121;
+  color: #151515;
   text-transform: uppercase;
 }
 .everyweek-cashback__text {
@@ -4936,7 +4946,7 @@ form * {
     display: none;
   }
   .fixed-bar__chat {
-    order: 1;
+    order: 2;
     padding-left: 50px;
   }
   .fixed-bar__chat::after {
@@ -4950,7 +4960,7 @@ form * {
     margin-right: 0;
   }
   .fixed-bar__language {
-    order: 2;
+    order: 1;
   }
   .fixed-bar__language:hover {
     background-color: transparent;

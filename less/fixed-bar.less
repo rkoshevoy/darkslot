@@ -196,7 +196,7 @@
 		}
 
 		@media @mobile {
-			order: 1;
+			order: 2;
 			padding-left: 50px;
 
 			&::after {
@@ -232,28 +232,40 @@
 	}
 
 	&__language {
+		align-items: center;
 		height: 50px;
+		padding-left: 15px;
+		padding-right: 15px;
 		margin-left: 1px;
 		border: none;
 		background-color: #313131;
 		font-family: SFUIRegular;
 		color: #999999;
 		transition: 0.1s;
+		cursor: pointer;
 
 		&:hover {
 			background-color: #ed383f;
 			color: #fff;
+
+			span {				
+				color: #fff;
+			}
 		}
 
 		@media @mobile {
-			order: 2;
+			order: 1;
 
 			&:hover {
 				background-color: transparent;
 			}
 		}
 
-		p {
+		img {
+			margin-right: 10px;
+		}
+
+		span {
 			font-size: 13px;
 			line-height: 30px;
 			color: #999999;
@@ -286,7 +298,7 @@
 	}
 
 	.fixed-bar__language {
-		display: block;
+		display: flex;
 	}
 
 	.fixed-bar__shower {
