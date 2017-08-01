@@ -57,9 +57,11 @@ form * {
 .main-wrapper {
   margin-top: 60px;
   padding-bottom: 50px;
+  background-color: #232323;
+}
+.main-wrapper--triangles {
   background-image: url('../img/main-bg.jpg');
   background-repeat: repeat;
-  background-color: #232323;
 }
 .hidden {
   display: none;
@@ -1081,7 +1083,7 @@ form * {
   color: #fff;
 }
 .fixed-bar__language img {
-  margin-right: 10px;
+  margin-right: 15px;
 }
 .fixed-bar__language span {
   font-size: 13px;
@@ -2300,8 +2302,17 @@ form * {
 }
 .level-modal__number {
   font-size: 150px;
-  color: #6ab980;
+  color: #56c074;
   font-family: SFUIHeavy;
+}
+.level-modal__number--first {
+  color: #56c074;
+}
+.level-modal__number--second {
+  color: #d6712d;
+}
+.level-modal__number--third {
+  color: #c2c2c2;
 }
 .level-modal__greeting-wrapper {
   position: absolute;
@@ -3419,6 +3430,18 @@ form * {
   font-size: 18px;
   line-height: 36px;
 }
+.everyweek-cashback__text span {
+  position: relative;
+}
+.everyweek-cashback__text span::after {
+  content: '';
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background-color: #ed383f;
+}
 .everyweek-cashback__condition {
   display: inline-block;
   padding: 20px;
@@ -3500,24 +3523,65 @@ form * {
 .broadcast__button:hover {
   background-color: #589f6c;
 }
+.cashback-image-wrapper {
+  background-image: url('../img/live-casino-girl.jpg');
+  background-size: 100%;
+}
 .cashback-description__wrapper {
   width: 1180px;
   margin: 0 auto;
-  padding-bottom: 100px;
+  padding-top: 40px;
+  text-align: center;
 }
 .cashback-description__header {
+  position: relative;
+  display: inline-block;
   margin-bottom: 20px;
   text-align: center;
-  font-size: 28px;
+  font-size: 36px;
   text-transform: uppercase;
+}
+.cashback-description__header::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -3px;
+  width: 100%;
+  height: 4px;
+  background-color: #ed383f;
+}
+.cashback-description__bottom {
+  display: block;
+  width: 540px;
+  margin-bottom: 10px;
+  padding: 50px 20px;
+  background-color: #191919;
+  font-family: SFUIHeavy;
+  font-size: 14px;
+  line-height: 22px;
 }
 .cashback-description__text-wrapper {
   width: 800px;
   margin: 0 auto;
+  margin-bottom: 20px;
 }
 .cashback-description__text {
+  font-size: 24px;
+  text-transform: uppercase;
   line-height: 22px;
   text-align: center;
+}
+.cashback-description__text span {
+  position: relative;
+}
+.cashback-description__text span::after {
+  content: '';
+  position: absolute;
+  bottom: -3px;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background-color: #ed383f;
 }
 .about__wrapper {
   width: 1180px;
@@ -3922,6 +3986,8 @@ form * {
   top: 250px !important;
   display: block;
   width: 100%;
+  border: 1px solid #161616;
+  box-shadow: 0 0 30px 0 #161616;
 }
 .level-modal--static:nth-child(2) {
   margin-bottom: 180px;
@@ -3962,6 +4028,40 @@ form * {
 }
 .level-modal--static .level-modal__number img {
   width: 100%;
+}
+.levels-ability {
+  background-color: #191919;
+}
+.levels-ability__wrapper {
+  width: 1180px;
+  margin: 0 auto;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+.ability-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 14px;
+  font-family: SFUIMedium;
+  border: 1px solid #474747;
+}
+.ability-table__header {
+  background-color: #6ab980;
+}
+.ability-table__row {
+  border-bottom: 1px solid #474747;
+}
+.ability-table__cell {
+  width: 120px;
+  padding: 20px;
+  text-align: center;
+}
+.ability-table__cell:first-child {
+  width: 720px;
+  text-align: left;
+}
+.ability-table__cell img {
+  width: 30px;
 }
 @media (min-width: 788px) {
   .main-wrapper {
@@ -4644,6 +4744,12 @@ form * {
   }
   .level-modal--static .level-ability--wide {
     width: 315px;
+  }
+  .levels-ability__wrapper {
+    width: 748px;
+  }
+  .ability-table__cell:first-child {
+    width: 300px;
   }
 }
 @media (max-width: 788px) {
@@ -5527,6 +5633,9 @@ form * {
     font-size: 16px;
     line-height: 20px;
   }
+  .everyweek-cashback__text span::after {
+    bottom: -3px;
+  }
   .places {
     margin-bottom: 40px;
   }
@@ -5557,6 +5666,9 @@ form * {
     width: 100%;
     padding-right: 10px;
     padding-left: 10px;
+  }
+  .cashback-description__bottom {
+    width: 100%;
   }
   .about__wrapper {
     width: 100%;
@@ -5725,6 +5837,20 @@ form * {
   }
   .level-modal--static .level-modal__up-text {
     text-align: center;
+  }
+  .levels-ability__wrapper {
+    width: 100%;
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+  .ability-table__cell {
+    padding: 10px;
+  }
+  .ability-table__cell img {
+    width: 20px;
+  }
+  .ability-table__cell span {
+    display: none;
   }
 }
 @media (max-width: 550px) {
