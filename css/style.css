@@ -3370,6 +3370,9 @@ form * {
   width: 280px;
   margin-bottom: 70px;
 }
+.condition--cashback {
+  margin-bottom: 20px;
+}
 .everyweek-cashback {
   background-image: url('../img/money-bg-3.png');
   background-size: contain;
@@ -3486,6 +3489,25 @@ form * {
 }
 .broadcast__button:hover {
   background-color: #589f6c;
+}
+.cashback-description__wrapper {
+  width: 1180px;
+  margin: 0 auto;
+  padding-bottom: 100px;
+}
+.cashback-description__header {
+  margin-bottom: 20px;
+  text-align: center;
+  font-size: 28px;
+  text-transform: uppercase;
+}
+.cashback-description__text-wrapper {
+  width: 800px;
+  margin: 0 auto;
+}
+.cashback-description__text {
+  line-height: 22px;
+  text-align: center;
 }
 .about__wrapper {
   width: 1180px;
@@ -4526,6 +4548,12 @@ form * {
     width: 100%;
     height: 470px;
   }
+  .cashback-description__wrapper {
+    width: 748px;
+  }
+  .cashback-description__text-wrapper {
+    width: 100%;
+  }
   .about__wrapper {
     width: 748px;
     padding-top: 40px;
@@ -5514,6 +5542,11 @@ form * {
   }
   .broadcast__button {
     max-width: 100%;
+  }
+  .cashback-description__wrapper {
+    width: 100%;
+    padding-right: 10px;
+    padding-left: 10px;
   }
   .about__wrapper {
     width: 100%;
