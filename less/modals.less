@@ -308,6 +308,15 @@
 		color: #000;
 		resize: none;
 		overflow: hidden;
+
+		&::placeholder {
+			font-family: SFUIRegular;
+			color: #999999;
+		}
+
+		@media @mobile {
+			padding: 7px 13px;
+		}
 	}
 
 	&__currency {

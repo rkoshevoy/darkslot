@@ -18,13 +18,13 @@
 
 		@media @mobile {
 			.mobile-wrap;
-			padding-top: 10px;
-			padding-bottom: 10px;
+			padding-top: 5px;
+			padding-bottom: 5px;
 		}
 	}
 
 	&__first-button {
-		padding: 15px 30px;
+		padding: 15px 20px;
 		margin-top: 15px;
 		margin-bottom: 15px;
 		margin-right: 10px;
@@ -42,7 +42,7 @@
 	}
 	
 	&__second-button {
-		padding: 15px 30px;
+		padding: 15px 20px;
 		margin-top: 15px;
 		margin-bottom: 15px;
 		background-color: #5da972;
@@ -67,46 +67,53 @@
 
 		&__menu-button {
 			position: relative;
-			width: 40px;
-			height: 40px;
+			width: 30px;
+			height: 30px;
 			cursor: pointer;
 		}
 
 		&__menu-line {
-			width: 40px;
-			height: 5px;
-			margin-bottom: 12px;
+			width: 30px;
+			height: 4px;
+			margin-bottom: 9px;
 			background-color: #fff;
-			transition: 0.3s;
 		}
 
 		&__menu-line--hidden {
 			margin-top: 17px;
 			opacity: 0;
-			transition: 0.3s;
 		}
 
 		&__menu-line--first {
 			position: absolute;
 			left: 0px;
-			top: 17px;
+			top: 12px;
 			transform: rotate(45deg);
-			transition: 0.3s;
 		}
 
 		&__menu-line--third {
 			position: absolute;
 			left: 0px;
-			top: 17px;
+			top: 12px;
 			transform: rotate(-45deg);
-			transition: 0.3s;
 		}
 	}
 
 	@media @mobile {
 		width: 100%;
 		justify-content: space-between;
+		align-items: center;
 	} 
+
+	&__mobile-reg {
+		padding: 5px 0;
+		border: 2px solid #ed383f;
+	}
+
+	&__mobile-enter {
+		padding: 5px 0;
+		border: 2px solid #5da972;
+	}
 
 	&__logo {
 		display: inline-block;
@@ -124,7 +131,7 @@
 			width: 40px;
 			margin: 0;
 			background-image: url('../img/favicon.png');
-		background-position: center;
+			background-position: center;
 		}
 	}
 
@@ -153,15 +160,15 @@
 
 		@media @mobile {
 			display: inline-block;
-			width: 40px;
-			height: 40px;
+			width: 30px;
+			height: 30px;
 		}
 	}
 
 	&__search-field {
 		display: block; 
-		height: 40px;
-		width: 40px;
+		height: 30px;
+		width: 30px;
 		border: none;
 		background-color: transparent;
 		transition: 0.3s;
@@ -172,7 +179,7 @@
 			position: absolute;
 			z-index: 20;
 			right: 0;
-			width: ~"calc(100% - 50px)";
+			width: ~"calc(100% - 40px)";
 			background-color: #fff;
 			background-image: none;
 		}
@@ -184,16 +191,17 @@
 		top: 0;
 		right: 0;
 		display: none;
-		width: 40px;
-		height: 40px;
+		width: 30px;
+		height: 30px;
+		margin-top: 5px;
 		background-color: #fff;
 		cursor: pointer;
 
 		&::before {
 			content: '';
 			position: absolute;
-			top: 7px;
-			right: 18px;
+			top: 2px;
+			right: 13px;
 			width: 2px;
 			height: 25px;
 			background-color: #666666;
@@ -203,8 +211,8 @@
 		&::after {
 			content: '';
 			position: absolute;
-			top: 7px;
-			right: 18px;
+			top: 2px;
+			right: 13px;
 			width: 2px;
 			height: 25px;
 			background-color: #666666;
@@ -245,7 +253,7 @@
 
 	@media @mobile {
 		&__list--show {
-			top: 50px;
+			top: 45px;
 		}
 	}
 
