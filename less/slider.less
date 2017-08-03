@@ -176,9 +176,10 @@
 		@media @tablet {
 			display: block;
 			width: 300px;
-			padding: 18px 20px;
-			border: none;
-			background-color: #ed383f;
+			padding: 16px 18px;
+			border: 2px solid @main-color;
+			background-color: transparent;
+
 			font-family: SFUIMedium;
 			font-size: 16px;
 			color: #fff;
@@ -186,7 +187,8 @@
 			transition: 0.1s;
 
 			&:hover {
-				background-color: #dd363c;
+				border-color: @main-color-hover;
+				background-color: @main-color-hover;
 			}
 		}
 
