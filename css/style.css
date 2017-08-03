@@ -2503,6 +2503,11 @@ form * {
   line-height: 22px;
   color: #cccccc;
 }
+.modal-about__list-item a {
+  display: inline-block;
+  color: #cccccc;
+  border-bottom: 1px dashed #cccccc;
+}
 .error {
   background-image: url('../img/404-bg.png');
   background-position: calc(50% - 360px) center;
