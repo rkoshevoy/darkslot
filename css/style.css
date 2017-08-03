@@ -125,15 +125,17 @@ form * {
   background-color: #de3137;
 }
 .header__second-button {
-  padding: 15px 20px;
+  padding: 12px 20px;
   margin-top: 15px;
   margin-bottom: 15px;
-  background-color: #5da972;
   transition: 0.1s;
   font-size: 16px;
+  background-color: transparent;
+  border: 3px solid #005fdc;
 }
 .header__second-button:hover {
-  background-color: #589f6c;
+  border: 3px solid #0257c8;
+  background-color: #0257c8;
 }
 .main-nav {
   position: relative;
@@ -145,7 +147,7 @@ form * {
 }
 .main-nav__mobile-enter {
   padding: 5px 0;
-  border: 2px solid #5da972;
+  border: 2px solid #005fdc;
 }
 .main-nav__logo {
   display: inline-block;
@@ -563,10 +565,10 @@ form * {
   padding: 20px;
   margin-top: 20px;
   margin-bottom: 20px;
-  background-color: #6ab980;
+  background-color: #005fdc;
 }
 .tab__button:hover {
-  background-color: #589f6c;
+  background-color: #0257c8;
 }
 .tab__variants-wrapper {
   display: flex;
@@ -593,12 +595,12 @@ form * {
   padding: 20px;
   margin-top: 20px;
   margin-bottom: 20px;
-  border: 2px solid #6ab980;
+  border: 2px solid #005fdc;
   transition: 0.1s;
   cursor: pointer;
 }
 .tab__more-button:hover {
-  background-color: #65ad79;
+  background-color: #0257c8;
 }
 .tab--active {
   display: flex;
@@ -724,11 +726,11 @@ form * {
   margin-top: 20px;
   margin-bottom: 20px;
   padding: 20px;
-  background-color: #6ab980;
+  background-color: #005fdc;
   font-size: 14px;
 }
 .popular-games__button:hover {
-  background-color: #589f6c;
+  background-color: #0257c8;
 }
 .popular-games__more-button {
   display: block;
@@ -736,7 +738,7 @@ form * {
   padding: 20px;
   margin-top: 20px;
   margin-bottom: 20px;
-  border: 2px solid #6ab980;
+  border: 2px solid #005fdc;
   background-color: transparent;
   font-family: SFUIBold;
   font-size: 16px;
@@ -744,7 +746,7 @@ form * {
   cursor: pointer;
 }
 .popular-games__more-button:hover {
-  background-color: #6ab980;
+  background-color: #0257c8;
 }
 .games-preview {
   display: flex;
@@ -1603,7 +1605,7 @@ form * {
   right: -10px;
   width: calc(100% + 25px);
   height: 70px;
-  background-color: #6ab980;
+  background-color: #005fdc;
 }
 .partner__text {
   margin-bottom: 40px;
@@ -1724,7 +1726,7 @@ form * {
   z-index: -1;
   width: 328px;
   height: 70px;
-  background-color: #6ab980;
+  background-color: #005fdc;
   opacity: 0.8;
 }
 .incomes__underheader {
@@ -2409,7 +2411,7 @@ form * {
   justify-content: center;
   width: 250px;
   padding: 10px;
-  border: 1px dashed #6ab980;
+  border: 1px dashed #005fdc;
   text-align: center;
 }
 .level-ability__header {
@@ -2772,10 +2774,10 @@ form * {
   background-color: rgba(76, 133, 161, 0.7);
 }
 .registration-form-mini--bottom .registration-form-mini__button {
-  background-color: #6ab980;
+  background-color: #005fdc;
 }
 .registration-form-mini--bottom .registration-form-mini__button:hover {
-  background-color: #589f6c;
+  background-color: #0257c8;
 }
 .registration-form-mini--slide {
   width: 450px;
@@ -2783,10 +2785,10 @@ form * {
   background-color: rgba(76, 133, 161, 0.7);
 }
 .registration-form-mini--slide .registration-form-mini__button {
-  background-color: #6ab980;
+  background-color: #005fdc;
 }
 .registration-form-mini--slide .registration-form-mini__button:hover {
-  background-color: #589f6c;
+  background-color: #0257c8;
 }
 .registration {
   background-image: url('../img/wood-bg.png');
@@ -3110,13 +3112,13 @@ form * {
 .half-cashback__button-details {
   width: 280px;
   padding: 25px;
-  border: 1px solid #6ab980;
+  border: 1px solid #005fdc;
   background-color: transparent;
   font-family: SFUIBold;
   font-size: 18px;
 }
 .half-cashback__button-details:hover {
-  background-color: #6ab980;
+  background-color: #0257c8;
 }
 .cashback-games__wrapper {
   width: 980px;
@@ -3555,12 +3557,12 @@ form * {
 .broadcast__button {
   width: 345px;
   padding: 25px;
-  background-color: #6ab980;
+  background-color: #005fdc;
   font-family: SFUIBold;
   font-size: 16px;
 }
 .broadcast__button:hover {
-  background-color: #589f6c;
+  background-color: #0257c8;
 }
 .cashback-image-wrapper {
   background-image: url('../img/live-casino-girl.jpg');
@@ -3954,7 +3956,7 @@ form * {
 }
 .places-table__cell-header {
   padding: 20px 0;
-  background-color: #6ab980;
+  background-color: #005fdc;
   text-align: center;
 }
 .places-table__cell-header:first-child {
@@ -3962,7 +3964,7 @@ form * {
 }
 .places-table__cell-header:nth-child(2) {
   width: 135px;
-  background-color: #349d5e;
+  background-color: #0257c8;
 }
 .places-table__cell-header:nth-child(3) {
   width: 165px;
@@ -4086,7 +4088,7 @@ form * {
   border: 1px solid #474747;
 }
 .ability-table__header {
-  background-color: #6ab980;
+  background-color: #005fdc;
 }
 .ability-table__row {
   border-bottom: 1px solid #474747;
@@ -4901,10 +4903,16 @@ form * {
   }
   .slide-bonus {
     width: 100%;
-    margin-bottom: 5%;
+    margin-bottom: 5px;
   }
   .slide-bonus__first-line {
-    font-size: 40px;
+    font-size: 30px;
+  }
+  .slide-bonus__second-line {
+    font-size: 22px;
+  }
+  .slide-bonus__third-line {
+    margin-bottom: 5px;
   }
   .tabs::after {
     display: none;
@@ -5440,19 +5448,24 @@ form * {
   }
   .registration-bonus__header {
     margin-bottom: 5px;
-    font-size: 16px;
+    font-size: 14px;
   }
   .registration-bonus__underheader {
-    margin-bottom: 5px;
-    font-size: 20px;
+    margin-bottom: 0
+			;
+    font-size: 16px;
     line-height: 25px;
   }
   .registration-bonus__count {
-    font-size: 30px;
-    margin-bottom: 5px;
+    font-size: 24px;
+    margin-bottom: 0;
+  }
+  .registration--slide .registration__wrapper {
+    padding-top: 0;
   }
   .registration--slide .registration-bonus {
     width: 100%;
+    margin-bottom: 5px;
   }
   .registration--slide .registration__reg-button {
     padding: 8px 10px;
