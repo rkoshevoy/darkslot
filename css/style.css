@@ -4834,11 +4834,14 @@ form * {
   .main-nav__list {
     left: -10px;
     width: calc(100% + 20px);
-    overflow: scroll;
+    overflow-y: scroll;
     max-height: calc(100vh - 90px);
   }
   .main-nav__list--show {
     top: 45px;
+  }
+  .main-nav__item {
+    font-size: 14px;
   }
   .main-nav__dropdown {
     position: relative;
