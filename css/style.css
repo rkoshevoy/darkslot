@@ -4834,6 +4834,8 @@ form * {
   .main-nav__list {
     left: -10px;
     width: calc(100% + 20px);
+    overflow: scroll;
+    max-height: calc(100vh - 90px);
   }
   .main-nav__list--show {
     top: 45px;
