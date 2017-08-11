@@ -1095,6 +1095,57 @@ form * {
   margin-left: 20px;
   vertical-align: middle;
 }
+.fixed-bar .language_selector {
+  min-width: 140px;
+}
+.fixed-bar .language_selector__dropdown-menu {
+  position: absolute;
+  bottom: 100%;
+  list-style-type: none;
+  background-color: #313131;
+  opacity: 0;
+  z-index: -1;
+  transition: .2s;
+}
+.fixed-bar .language_selector__dropdown-menu-item {
+  padding: 10px 20px;
+  min-width: 140px;
+  cursor: pointer;
+}
+.fixed-bar .language_selector__dropdown-menu-item:hover {
+  background-color: #414141;
+}
+.fixed-bar .language_selector__dropdown-menu-item:hover .flagName {
+  color: #fff;
+}
+.fixed-bar .language_selector__dropdown-menu-item .flagName {
+  color: #999999;
+}
+.fixed-bar .language_selector:hover .language_selector__dropdown-menu {
+  opacity: 1;
+  z-index: 1;
+}
+.fixed-bar .localeWrap {
+  display: inline-flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 13px;
+}
+.fixed-bar .flagContainer {
+  display: inline-block;
+  width: 22px;
+  height: 22px;
+  margin-right: 10px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.fixed-bar .flagContainer .flagImg {
+  display: inline-block;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
 .fixed-bar__language {
   align-items: center;
   height: 50px;
@@ -1138,6 +1189,7 @@ form * {
 }
 .fixed-bar .fixed-bar__language {
   display: flex;
+  width: 100%;
 }
 .fixed-bar .fixed-bar__shower {
   display: none;

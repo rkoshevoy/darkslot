@@ -214,7 +214,7 @@
 			</div>
 		</section>
 
-		<section class="tabs">
+		<section id="gamesPannel" class="tabs">
 			<div class="tabs__wrapper">
 
 				<div class="switchers">
@@ -336,7 +336,7 @@
 			<div class="jackpot__wrapper">
 				<h1 class="jackpot__header">$ 10 000 000,45</h1>
 				<h2 class="jackpot__underheader">Общий джекпот</h2>
-				<button class="jackpot__button">Показать игры с джекпотом</button>
+				<button id="gamesJackpot" class="jackpot__button">Показать игры с джекпотом</button>
 				<span class="jackpot__background-text">#ничоси</span>
 
 				<div class="jackpot__image-wrapper">
@@ -563,40 +563,45 @@
 			<div class="fixed-bar__shower hidden">
 				<p>Показать бар</p>
 			</div>
-			<div class="fixed-bar__top-games-button"><p>Топ-игры</p></div>
+			<div class="fixed-bar__top-games-button"><p id="topGamesBtn">Топ-игры</p></div>
 			<form action="#" class="search">
 				<input type="search" class="search__field" placeholder="Поиск">
 				<div class="search__close"></div>
 			</form>
 			<div class="fixed-bar__chat"><p>Онлайн-чат</p></div>
 
-			<div class="fixed-bar__language">
-				<img src="img/flag-russian.png" alt="ru">
-				<span>Русский</span>
+			<div class="language_selector">
+			  <div>
+			    <button class="fixed-bar__language" type="button">
+			      <span class="localeWrap">
+			        <span class="flagContainer">
+			          <img class="flagImg" src="./img/flags/flag-ru.png" alt="">
+			        </span>
+			        Русский
+			      </span>
+			      <span class="caret"></span>
+			    </button>
+			    <ul role="menu" class="language_selector__dropdown-menu">
+			      <li class="language_selector__dropdown-menu-item">
+			        <a class="localeWrap">
+			          <span class="flagContainer">
+									<img class="flagImg" src="./img/flags/flag-en.png" alt="">
+								</span>
+			          <span class="flagName">English</span>
+			        </a>
+			      </li>
+			    </ul>
+			  </div>
 			</div>
 
-			<!-- <form action="#">
-				<img src="img/flag-russian.png" alt="ru">
-				<select name="language" id="language" class="fixed-bar__language">
-					<option value="russian">Русский</option>
-					<option value="not-russian">Не русский</option>
-				</select>
-			</form> -->
 
-			<div class="top-games hidden">
-				<div class="top-games__wrapper">
-					<div class="top-games__slide">1</div>
-					<div class="top-games__slide">2</div>
-					<div class="top-games__slide">3</div>
-					<div class="top-games__slide">4</div>
-					<div class="top-games__slide">5</div>
-					<div class="top-games__slide">6</div>
-					<div class="top-games__slide">7</div>
-					<div class="top-games__slide">8</div>
-				</div>
 
-				<div class="top-games__close"><p>Закрыть</p></div>
-			</div>
+
+
+
+
+
+
 		</div>
 	</div>
 
@@ -1139,13 +1144,16 @@
 				]
 			});
 
-			$('.top-games__wrapper').slick({
-				infinite: true,
-				autoplay: true,
-				autoplaySpeed: 3000,
-				slidesToShow: 7,
-				arrows: false
+
+			$('body').on('click', '#topGamesBtn, #gamesJackpot', function(event) {
+				var anchor = $('#gamesPannel').offset().top - $('.header').height();
+
+				$('body, html').animate({scrollTop: anchor}, 1000);
 			});
+
+
+
+
 		});
 	</script>
 </body>
