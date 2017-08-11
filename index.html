@@ -13,8 +13,7 @@
 	<link rel="stylesheet" href="css/jquery.formstyler.css">
 	<link rel="stylesheet" href="css/jquery.mCustomScrollbar.css">
 </head>
-
-<body>
+<body class="page-home">
 
 	<header class="header">
 		<div class="header__wrapper">
@@ -41,7 +40,7 @@
 				<ul class="main-nav__list">
 					<li class="main-nav__item main-nav__item--arrow main-nav__item--first"><span>Игры</span>
 
-						<ul class="main-nav__dropdown">
+						<ul id="menu-games" class="main-nav__dropdown">
 							<li class="main-nav__dropdown-item"><a href="#">Лобби</a></li>
 							<li class="main-nav__dropdown-item"><a href="#">Слоты</a></li>
 							<li class="main-nav__dropdown-item"><a href="#">Джекпоты</a></li>
@@ -54,6 +53,7 @@
 
 						<ul class="main-nav__dropdown">
 							<li class="main-nav__dropdown-item"><a href="bonus.html">Приветственный бонус</a></li>
+							<li class="main-nav__dropdown-item"><a href="bonus.html">VIP Bonus</a></li>
 							<li class="main-nav__dropdown-item"><a href="reload-bonus.html">Reload бонус</a></li>
 							<li class="main-nav__dropdown-item"><a href="everyweek-cashback.html">Кэшбек</a></li>
 							<li class="main-nav__dropdown-item"><a href="everyweek-cashback.html">Live Casino Cashback</a></li>
@@ -485,7 +485,8 @@
 						<h2 class="games__header">Акции</h2>
 						<ul class="games__list">
 							<li class="games__item"><a href="bonus.html">Приветственный бонус</a></li>
-							<li class="games__item"><a href="#">Reload бонус</a></li>
+							<li class="games__item"><a href="bonus.html">VIP Bonus</a></li>
+							<li class="games__item"><a href="reload-bonus.html">Reload бонус</a></li>
 							<li class="games__item"><a href="everyweek-cashback.html">Кэшбек</a></li>
 							<li class="games__item"><a href="everyweek-cashback.html">Live Casino Cashback</a></li>
 							<li class="games__item"><a href="day-slot.html">Слот дня во вторник</a></li>
@@ -533,7 +534,6 @@
 					<img src="img/partners/9_itechlab.jpg" alt="itech lab">
 					<img src="img/partners/10_safesecure.jpg" alt="safe secure">
 					<img src="img/partners/11_sealofapproval.png" alt="seal of approval">
-					<img src="img/partners/12_askgamblers.png" alt="ask gamblers">
 					<img src="img/partners/13_softswiss.jpg" alt="softswiss">
 					<img src="img/partners/14_netent.svg" alt="netent">
 					<img src="img/partners/15_amatic.svg" alt="amatic">
@@ -594,14 +594,6 @@
 					</ul>
 				</div>
 			</div>
-
-
-
-
-
-
-
-
 
 		</div>
 	</div>
@@ -1113,22 +1105,6 @@
 
 	<div id="preloader"></div>
 
-	<script type="text/javascript">
-		var preloader = document.getElementById("preloader");
-		function fadeOutnojquery(el){
-			el.style.opacity = 1;
-			var innerpreloader = setInterval(function() {
-				el.style.opacity = el.style.opacity - 0.05;
-				if (el.style.opacity <= 0.05) {
-					clearInterval(innerpreloader);
-					preloader.style.display = "none";
-				}
-			},16);
-		}
-		window.onload = function(){setTimeout(function(){fadeOutnojquery(preloader);
-		},1000);};
-	</script>
-
 	<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
 
 	<script type="text/javascript" src="js/slick.min.js"></script>
@@ -1147,43 +1123,6 @@
 
 	<script type="text/javascript" src="js/jquery.mCustomScrollbar.concat.min.js"></script>
 
-	<script>
-		$(window).on("load",function(){
-			$('select').styler();
-
-			$(".modal-about__scroll-content").mCustomScrollbar();
-
-			$('.slider').slick({
-				infinite: true,
-				autoplay: true,
-				autoplaySpeed: 3000,
-				slidesToShow: 1,
-				arrows: true,
-				responsive: [
-				{
-					breakpoint: 788,
-					settings: {
-						infinite: true,
-						autoplay: true,
-						autoplaySpeed: 3000,
-						slidesToShow: 1,
-						arrows: false
-					}
-				}
-				]
-			});
-
-
-			$('body').on('click', '#topGamesBtn, #gamesJackpot', function(event) {
-				var anchor = $('#gamesPannel').offset().top - $('.header').height();
-
-				$('body, html').animate({scrollTop: anchor}, 1000);
-			});
-
-
-
-
-		});
-	</script>
+	<script type="text/javascript" src="js/main.js"></script>
 </body>
 </html>
