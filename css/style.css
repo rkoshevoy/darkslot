@@ -6002,6 +6002,9 @@ form * {
     margin-bottom: 40px;
     font-size: 32px;
   }
+  .tournament__header span::before {
+    top: -5px;
+  }
   .tournament__text-wrapper {
     width: 100%;
   }
