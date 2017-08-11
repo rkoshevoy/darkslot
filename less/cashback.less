@@ -6,8 +6,6 @@
 		margin: 0 auto;
 		padding-top: 45px;
 		padding-bottom: 55px;
-		background-image: url('../img/coins-in-bag.png');
-		background-position: left center;
 
 		@media @tablet {
 			width: 748px;
@@ -15,7 +13,31 @@
 
 		@media @mobile {
 			width: 100%;
+			padding-left: 10px;
+			padding-right: 10px;
 			background-position: 20px 40px;
+		}
+	}
+
+	&__first-line {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		margin-bottom: 80px;
+
+		@media @mobile {
+			flex-wrap: wrap;
+			text-align: center;
+		}
+	}
+
+	&__second-line {
+		display: flex;
+		justify-content: space-around;
+		align-items: center;
+
+		@media @tablet {
+			flex-wrap: wrap;
 		}
 	}
 
@@ -24,6 +46,8 @@
 		padding-top: 55px;
 		padding-bottom: 40px;
 		padding-left: 140px;
+		background-image: url('../img/coins-in-bag.png');
+		background-position: left center;
 
 		&::before {
 			content: '';
@@ -47,12 +71,33 @@
 			background-color: rgba(237, 56, 63, 0.8);
 		}
 
+		@media @tablet {
+
+			img {
+				width: 200px;
+			}
+		}
+
 		@media @mobile {
-			padding-top: 35px;
+			margin: 0 auto;
+			padding-top: 0;
+			padding-bottom: 0;
+			padding-left: 10px;
+			background-image: none;
+			text-align: center;
+
+			&::before {
+				display: none;
+			}
+
+			&::after {
+				display: none;
+			}
 		}
 	}
 
 	&__header {
+		display: block;
 		position: relative;
 		z-index: 1;
 		margin-bottom: 10px;
@@ -61,6 +106,7 @@
 		text-transform: uppercase;
 
 		@media @mobile {
+			margin: 0 auto;
 			font-size: 26px;
 		}
 	}
@@ -91,5 +137,134 @@
 		&:hover {
 			background-color: #fe4047;
 		}
+	}
+
+	&__not-all {
+		position: relative;
+		z-index: 1;
+		display: block;
+		width: 140px;
+		font-size: 30px;
+		line-height: 32px;
+		text-transform: uppercase;
+
+		&::after {
+			content: '!';
+			position: absolute;
+			z-index: -1;
+			top: -5px;
+			right: -5px;
+			font-size: 132px;
+			font-family: SFUIHeavy;
+			color: @secondary-color;
+		}
+
+		@media @tablet {			
+			margin-bottom: 40px;
+		}
+	}
+
+	&__advantages {
+		position: relative;
+		z-index: 1;
+		display: block;
+		width: 390px;
+		font-size: 18px;
+		line-height: 41px;
+		font-family: SFUIBold;
+
+		@media @tablet {			
+			margin-bottom: 40px;
+		}
+
+		@media @mobile {
+			text-align: center;
+		}
+	}
+
+	&__red {
+		position: relative;
+		z-index: -1;
+		display: inline-block;
+
+		&::before {
+			content: '';
+			position: absolute;
+			z-index: -1;
+			top: 3px;
+			left: -10px;
+			width: ~"calc(100% + 20px)";
+			height: 35px;
+			background-color: @main-color;
+		}
+	}
+
+	&__dashed {
+		display: inline-block;
+		border-bottom: 1px dashed #fff;
+	}
+
+	&__button {
+		width: 280px;
+		padding: 25px; 
+		background-color: @main-color;
+		text-transform: uppercase;
+		font-size: 18px;
+		font-family: SFUIBold;
+
+		&:hover {
+			background-color: @main-color-hover;
+		} 
+	}
+}
+
+.cashback--background {
+	margin-bottom: 30px;
+	background-image: url('../img/vip-bonus-bg.png');
+	background-size: cover;
+
+	.cashback__wrapper {
+		width: 1180px;
+
+		@media @tablet {
+			width: 748px;
+		}
+
+		@media @mobile {
+			.mobile-wrap;
+		}
+	}
+
+	.cashback__text-wrapper {
+		
+		@media @mobile {
+			margin-bottom: 40px;
+		}
+
+	}
+}
+
+.cashback-code {
+	display: block;
+	width: 380px;
+	padding: 30px 23px;
+	border: 2px dashed #fff;
+
+	@media @mobile {
+		padding: 10px;
+		margin: 0 auto;
+		text-align: center;
+	}
+
+	&__header {
+		display: block;
+		margin-bottom: 15px;
+		font-size: 16px;
+	}
+
+	&__code {
+		display: block;
+		font-size: 20px;
+		font-family: SFUIHeavy;
 	}
 }

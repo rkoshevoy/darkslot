@@ -70,7 +70,7 @@
 						<ul class="main-nav__dropdown">
 							<li class="main-nav__dropdown-item"><a href="about.html">О DarkSlot</a></li>
 							<li class="main-nav__dropdown-item"><a href="blog.html">Блог</a></li>
-							<li class="main-nav__dropdown-item"><a href="#" class="main-nav__dropdown-rules">Правила и условия</a></li>
+							<li class="main-nav__dropdown-item"><a href="#" class="main-nav__dropdown-rules">Положения и условия</a></li>
 							<li class="main-nav__dropdown-item"><a href="#" class="main-nav__dropdown-policy">Политика конфиденциальности</a></li>
 						</ul>
 
@@ -133,14 +133,29 @@
 			</div>
 		</section>
 
-		<section class="cashback">
+		<section class="cashback cashback--background">
 			<div class="cashback__wrapper">
 
-				<div class="cashback__text-wrapper">
-					<h2 class="cashback__header">Акция 100% кэшбек</h2>
-					<span class="cashback__text">Для каждого игрока достигшего <span>2-го и выше уровня</span></span>
+				<div class="cashback__first-line">
 
-					<span class="cashback__question">?</span>
+					<div class="cashback__text-wrapper">
+						<img src="img/vip-bonus-header.png" alt="" class="cashback__header">
+						<span class="cashback__text">Получите 100% бонусом при депозите 1000$</span>
+					</div>
+
+					<div class="cashback-code">
+						<span class="cashback-code__header">Во время депозита используйте VIP-код</span>
+						<span class="cashback-code__code">VIP1000</span>
+					</div>
+				</div>
+
+				<div class="cashback__second-line">
+					<span class="cashback__not-all">Это еще не все</span>
+
+					<p class="cashback__advantages">А так же вы получите <span class="cashback__red">3й уровень,</span> который даст вам массу <span class="cashback__dashed">преимуществ</span>
+					<a href="levels.html" class="cashback__question">?</a></p>
+
+					<button class="cashback__button">Депозит сейчас</button>
 				</div>
 
 			</div>
@@ -164,8 +179,45 @@
 				<p class="bonus-more__text">Так же к этому предложению действуют стандартные положения и условия </p>
 
 				<div class="bonus-more__button-wrapper">
-					<button class="bonus-more__button">Узнать больше</button>
+					<button class="bonus-more__button" id="bonus-rules-button">Узнать больше</button>
 				</div>
+
+			</div>
+		</section>
+
+		<section class="registration">
+			<div class="registration__wrapper">
+
+				<div class="registration-bonus">
+					<h3 class="registration-bonus__header">Зарегистрируйся и получи</h3>
+					<h3 class="registration-bonus__underheader">Приветственный бонус</h3>
+					<span class="registration-bonus__count">1800$</span>
+				</div>
+
+				<div class="registration__character-wrapper">
+					<img src="img/tiger.png" alt="toger" class="registration__character">
+				</div>
+
+				<form action="#" class="registration-form-mini registration-form-mini--bottom">
+					<input type="email" placeholder="Email" class="registration-form-mini__email">
+					<input type="text" placeholder="Никнейм" class="registration-form-mini__nickname">
+					<input type="password" placeholder="Пароль" class="registration-form-mini__password">
+					<input type="password" placeholder="Подтверждение пароля" class="registration-form-mini__password-confirm">
+					<select name="" id="bottom-reg-select" class="registration-form-mini__select">
+						<option value="currency" selected disabled>Валюта</option>
+						<option value="rub">Рубли</option>
+						<option value="euro">Евро</option>
+						<option value="dollar">Доллары</option>
+						<option value="btc">Биткоины</option>
+					</select>
+
+					<input type="checkbox" id="bottom-form-checkbox" class="registration-form-mini__checkbox">
+					<label for="bottom-form-checkbox" class="registration-form-mini__label-checkbox">Мне 18 лет и я принимаю Положения и условия</label>
+
+					<input type="submit" class="registration-form-mini__button" value="Регистрация">
+				</form>
+
+				<button class="registration__reg-button">Регистрация</button>
 
 			</div>
 		</section>
@@ -196,6 +248,7 @@
 							<li class="games__item"><a href="bonus.html">VIP Bonus</a></li>
 							<li class="games__item"><a href="reload-bonus.html">Reload бонус</a></li>
 							<li class="games__item"><a href="everyweek-cashback.html">Кэшбек</a></li>
+							<li class="games__item"><a href="everyweek-cashback.html">Live Casino Cashback</a></li>
 							<li class="games__item"><a href="day-slot.html">Слот дня во вторник</a></li>
 							<li class="games__item"><a href="free-spins.html">Фриспины в четверг</a></li>
 							<li class="games__item"><a href="tournament.html">Darkslot турнир</a></li>
@@ -207,7 +260,7 @@
 						<h2 class="games__header">О нас</h2>
 						<ul class="games__list">
 							<li class="games__item games__item--policy">Политика конфиденциальности</li>
-							<li class="games__item games__item--rules">Правила и условия</li>
+							<li class="games__item games__item--rules">Положения и условия</li>
 							<li class="games__item games__item--support">Поддержка</li>
 							<li class="games__item"><a href="partners.html">Партнерам</a></li>
 							<li class="games__item"><a href="about.html">О Darkslot</a></li>
@@ -262,48 +315,49 @@
 				</div>
 			</div>
 		</footer>
-
 	</div>
 
-	<div class="fixed-bar">
-		<div class="fixed-bar__wrapper">
-			<div class="fixed-bar__hider"></div>
-			<div class="fixed-bar__shower hidden">
-				<p>Показать бар</p>
-			</div>
-			<div class="fixed-bar__top-games-button"><p id="topGamesBtn">Топ-игры</p></div>
-			<form action="#" class="search">
-				<input type="search" class="search__field" placeholder="Поиск">
-				<div class="search__close"></div>
-			</form>
-			<div class="fixed-bar__chat"><p>Онлайн-чат</p></div>
+</div>
 
-			<div class="language_selector">
-			  <div>
-			    <button class="fixed-bar__language" type="button">
-			      <span class="localeWrap">
-			        <span class="flagContainer">
-			          <img class="flagImg" src="./img/flags/flag-ru.png" alt="">
-			        </span>
-			        Русский
-			      </span>
-			      <span class="caret"></span>
-			    </button>
-			    <ul role="menu" class="language_selector__dropdown-menu">
-			      <li class="language_selector__dropdown-menu-item">
-			        <a class="localeWrap">
-			          <span class="flagContainer">
-									<img class="flagImg" src="./img/flags/flag-en.png" alt="">
-								</span>
-			          <span class="flagName">English</span>
-			        </a>
-			      </li>
-			    </ul>
-			  </div>
-			</div>
-
+<div class="fixed-bar">
+	<div class="fixed-bar__wrapper">
+		<div class="fixed-bar__hider"></div>
+		<div class="fixed-bar__shower hidden">
+			<p>Показать бар</p>
 		</div>
+		<div class="fixed-bar__top-games-button"><p id="topGamesBtn">Топ-игры</p></div>
+		<form action="#" class="search">
+			<input type="search" class="search__field" placeholder="Поиск">
+			<div class="search__close"></div>
+		</form>
+		<div class="fixed-bar__chat"><p>Онлайн-чат</p></div>
+
+		<div class="language_selector">
+			<div>
+				<button class="fixed-bar__language" type="button">
+					<span class="localeWrap">
+						<span class="flagContainer">
+							<img class="flagImg" src="./img/flags/flag-ru.png" alt="">
+						</span>
+						Русский
+					</span>
+					<span class="caret"></span>
+				</button>
+				<ul role="menu" class="language_selector__dropdown-menu">
+					<li class="language_selector__dropdown-menu-item">
+						<a class="localeWrap">
+							<span class="flagContainer">
+								<img class="flagImg" src="./img/flags/flag-en.png" alt="">
+							</span>
+							<span class="flagName">English</span>
+						</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+
 	</div>
+</div>
 
 	<section class="modal modal--registration">
 		<div class="modal__character-wrapper">
@@ -584,10 +638,11 @@
 				<ul class="modal-about__list">
 					<li class="modal-about__list-item">1.29 Darkslot.com принимает только игроков, достигших восемнадцатилетнего возраста и использует все доступные методы для того, чтобы исключить регистрацию и игру несовершеннолетних в онлайн-казино. Казино оставляет за собой право потребовать подтверждение личности у любого клиента и, если окажется, что игрок не достиг совершеннолетия, доступ к Cайту будет запрещен. Мы понимаем, что благодаря открытому доступу в интернет, многие несовершеннолетние игроки все равно могут зарегистрироваться на Cайте и играть в онлайн-казино. Поэтому мы настоятельно рекомендуем родителям способствовать запрету доступа для их детей. Пожалуйста, ознакомитесь с соответствующей информацией на следующих сайтах:</li>
 					<li class="modal-about__list-item">
-					<a href="http://www.cyberpatrol.com/">www.cyberpatrol.com</a><br>
-					<a href="http://www.gamblock.com/">www.gamblock.com</a><br>
-					<a href="http://www.solidoak.com/">www.solidoak.com</a><br>
-					<a href="http://www.netnanny.com/">www.netnanny.com</a></li>
+						<a href="http://www.cyberpatrol.com/">www.cyberpatrol.com</a><br>
+						<a href="http://www.gamblock.com/">www.gamblock.com</a><br>
+						<a href="http://www.solidoak.com/">www.solidoak.com</a><br>
+						<a href="http://www.netnanny.com/">www.netnanny.com</a>
+					</li>
 				</ul>
 				<h2 class="modal-about__underheader">Бонусная логика</h2>
 				<ul class="modal-about__list">
@@ -619,30 +674,32 @@
 		<div class="modal-close modal-close--out"></div>
 	</section>
 
-		<section class="modal-about modal-about--policy">
-			<div class="modal-about__wrapper">
-				<h1 class="modal-about__header">Политика конфиденциальности</h1>
-				<div class="modal-about__scroll-content">
-					<ul class="modal-about__list">
-						<li class="modal-about__list-item">1. Игрок признает и подтверждает обоснованность действий казино DARKSLOT.com при запросе персональных данных игрока, необходимых для доступа к сайту, а также, для обеспечения игроку безопасного и максимально комфортного использования игр.</li>
-						<li class="modal-about__list-item">2. Казино DARKSLOT.com подтверждает, что при сборе персональных данных игрока, на казино DARKSLOT.com распространяется правовая мера "о защите персональных данных" Казино DARKSLOT.com обязано держать в сохранности личную информацию игрока, а также уважать конфиденциальность Игрока в соответствии с передовым деловым опытом и действующим законодательством.</li>
-						<li class="modal-about__list-item">3. Персональные данные игрока будут использоваться казино DARKSLOT.com исключительно для того, чтобы обеспечить игроку доступ к играм и проведения игроком операций, относящихся к использованию игр. Сотрудники казино DARKSLOT получают доступ к персональным данным Игрока исключительно в тех случаях, когда эта информация является необходимым условием для выполнения их служебных обязанностей.</li>
-						<li class="modal-about__list-item">4. Персональные данные игрока не будут переданы третьим лицам, если только подобное не является необходимым для обработки запросов игрока, связанных с использованием игр. Настоящим игрок соглашается на подобную передачу.</li>
-						<li class="modal-about__list-item">5. Игрок имеет право получить доступ к личной информации игрока, хранящейся в казино DARKSLOT.com, отправив запрос в письменном виде. Для принятия всех необходимых мер по обновлению персональных данных игрока, мы просим незамедлительно сообщить нам о любых изменениях в личной информации, хранящейся в казино DARKSLOT.com. В случае, если игрок считает, что информация о нём является неточной, неполной или некорректной, он вправе запросить её исправление. Кроме того, игрок имеет право запросить блокирование или удаление данных, которые были обработаны незаконно.</li>
-						<li class="modal-about__list-item">6. Для удобства пользования сайтом, а также для учёта посещаемости сайта и повышения качества обслуживания, казино DARKSLOT.com собирает cookie-файлы (небольшие информационные файлы), который высылает браузер игрока. Игрок может отключить сбор cookie-файлов (см. инструкции браузера о том, как это сделать), однако, нужно иметь в виду, что отключение сбора cookie-файлов может ограничить возможности игрока в использовании сайта.</li>
-						<li class="modal-about__list-item">7. Сайт регулярно предоставляет информацию об изменениях и/или дополнениях, о новых услугах и акциях, а также обо всём, что, по мнению сайта, может оказаться интересным и полезным для игрока. Если игрок не хочет получать новостные рассылки, он может отказаться от этой услуги в своем аккаунте.</li>
-					</ul>
-				</div>
+	<section class="modal-about modal-about--policy">
+		<div class="modal-about__wrapper">
+			<h1 class="modal-about__header">Политика конфиденциальности</h1>
+			<div class="modal-about__scroll-content">
+				<ul class="modal-about__list">
+					<li class="modal-about__list-item">1. Игрок признает и подтверждает обоснованность действий казино DARKSLOT.com при запросе персональных данных игрока, необходимых для доступа к сайту, а также, для обеспечения игроку безопасного и максимально комфортного использования игр.</li>
+					<li class="modal-about__list-item">2. Казино DARKSLOT.com подтверждает, что при сборе персональных данных игрока, на казино DARKSLOT.com распространяется правовая мера "о защите персональных данных" Казино DARKSLOT.com обязано держать в сохранности личную информацию игрока, а также уважать конфиденциальность Игрока в соответствии с передовым деловым опытом и действующим законодательством.</li>
+					<li class="modal-about__list-item">3. Персональные данные игрока будут использоваться казино DARKSLOT.com исключительно для того, чтобы обеспечить игроку доступ к играм и проведения игроком операций, относящихся к использованию игр. Сотрудники казино DARKSLOT получают доступ к персональным данным Игрока исключительно в тех случаях, когда эта информация является необходимым условием для выполнения их служебных обязанностей.</li>
+					<li class="modal-about__list-item">4. Персональные данные игрока не будут переданы третьим лицам, если только подобное не является необходимым для обработки запросов игрока, связанных с использованием игр. Настоящим игрок соглашается на подобную передачу.</li>
+					<li class="modal-about__list-item">5. Игрок имеет право получить доступ к личной информации игрока, хранящейся в казино DARKSLOT.com, отправив запрос в письменном виде. Для принятия всех необходимых мер по обновлению персональных данных игрока, мы просим незамедлительно сообщить нам о любых изменениях в личной информации, хранящейся в казино DARKSLOT.com. В случае, если игрок считает, что информация о нём является неточной, неполной или некорректной, он вправе запросить её исправление. Кроме того, игрок имеет право запросить блокирование или удаление данных, которые были обработаны незаконно.</li>
+					<li class="modal-about__list-item">6. Для удобства пользования сайтом, а также для учёта посещаемости сайта и повышения качества обслуживания, казино DARKSLOT.com собирает cookie-файлы (небольшие информационные файлы), который высылает браузер игрока. Игрок может отключить сбор cookie-файлов (см. инструкции браузера о том, как это сделать), однако, нужно иметь в виду, что отключение сбора cookie-файлов может ограничить возможности игрока в использовании сайта.</li>
+					<li class="modal-about__list-item">7. Сайт регулярно предоставляет информацию об изменениях и/или дополнениях, о новых услугах и акциях, а также обо всём, что, по мнению сайта, может оказаться интересным и полезным для игрока. Если игрок не хочет получать новостные рассылки, он может отказаться от этой услуги в своем аккаунте.</li>
+				</ul>
 			</div>
+		</div>
 
-			<div class="modal-close modal-close--out"></div>
-		</section>
+		<div class="modal-close modal-close--out"></div>
+	</section>
 
 	<div id="preloader"></div>
 
 	<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
 
 	<script type="text/javascript" src="js/slick.min.js"></script>
+
+	<script type="text/javascript" src="js/tabs.js"></script>
 
 	<script type="text/javascript" src="js/tabs.js"></script>
 
