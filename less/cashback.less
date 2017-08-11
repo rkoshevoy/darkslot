@@ -144,7 +144,6 @@
 		z-index: 1;
 		display: block;
 		width: 140px;
-		margin-bottom: 40px;
 		font-size: 30px;
 		line-height: 32px;
 		text-transform: uppercase;
@@ -159,6 +158,10 @@
 			font-family: SFUIHeavy;
 			color: @secondary-color;
 		}
+
+		@media @tablet {			
+			margin-bottom: 40px;
+		}
 	}
 
 	&__advantages {
@@ -166,10 +169,13 @@
 		z-index: 1;
 		display: block;
 		width: 390px;
-		margin-bottom: 40px;
 		font-size: 18px;
 		line-height: 41px;
 		font-family: SFUIBold;
+
+		@media @tablet {			
+			margin-bottom: 40px;
+		}
 
 		@media @mobile {
 			text-align: center;
@@ -241,24 +247,24 @@
 .cashback-code {
 	display: block;
 	width: 380px;
- 	padding: 30px 23px;
- 	border: 2px dashed #fff;
+	padding: 30px 23px;
+	border: 2px dashed #fff;
 
- 	@media @mobile {
+	@media @mobile {
 		padding: 10px;
 		margin: 0 auto;
 		text-align: center;
 	}
 
- 	&__header {
- 		display: block;
- 		margin-bottom: 15px;
- 		font-size: 16px;
- 	}
+	&__header {
+		display: block;
+		margin-bottom: 15px;
+		font-size: 16px;
+	}
 
- 	&__code {
- 		display: block;
- 		font-size: 20px;
- 		font-family: SFUIHeavy;
- 	}
- }
+	&__code {
+		display: block;
+		font-size: 20px;
+		font-family: SFUIHeavy;
+	}
+}

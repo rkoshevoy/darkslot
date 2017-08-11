@@ -132,16 +132,30 @@
 			</div>
 		</section>
 
-		<section class="cashback">
+		<section class="cashback cashback--background">
 			<div class="cashback__wrapper">
 
-				<div class="cashback__text-wrapper">
-					<h2 class="cashback__header">Акция 100% кэшбек</h2>
-					<span class="cashback__text">Для каждого игрока достигшего <span>2-го и выше уровня</span></span>
+				<div class="cashback__first-line">
 
-					<span class="cashback__question">?</span>
+					<div class="cashback__text-wrapper">
+						<img src="img/vip-bonus-header.png" alt="" class="cashback__header">
+						<span class="cashback__text">Получите 100% бонусом при депозите 1000$</span>
+					</div>
+
+					<div class="cashback-code">
+						<span class="cashback-code__header">Во время депозита используйте VIP-код</span>
+						<span class="cashback-code__code">VIP1000</span>
+					</div>
 				</div>
-				
+
+				<div class="cashback__second-line">
+					<span class="cashback__not-all">Это еще не все</span>
+
+					<p class="cashback__advantages">А так же вы получите <span class="cashback__red">3й уровень,</span> который даст вам массу <span class="cashback__dashed">преимуществ</span>
+					<a href="levels.html" class="cashback__question">?</a></p>
+
+					<button class="cashback__button">Депозит сейчас</button>
+				</div>
 			</div>
 		</section>
 
@@ -163,171 +177,48 @@
 				<p class="bonus-more__text">Так же к этому предложению действуют стандартные положения и условия </p>
 
 				<div class="bonus-more__button-wrapper">
-					<button class="bonus-more__button">Узнать больше</button>
+					<button class="bonus-more__button" id="bonus-rules-button">Узнать больше</button>
 				</div>
 
 			</div>			
 		</section> 
 
-		<section class="cashback cashback--background">
-			<div class="cashback__wrapper">
+		<section class="registration">
+			<div class="registration__wrapper">
 
-				<div class="cashback__first-line">
-
-					<div class="cashback__text-wrapper">
-						<img src="img/vip-bonus-header.png" alt="" class="cashback__header">
-						<span class="cashback__text">Получите 100% бонусом при депозите 1000$</span>
-					</div>
-
-					<div class="cashback-code">
-						<span class="cashback-code__header">Во время депозита используйте VIP-код</span>
-						<span class="cashback-code__code">VIP1000</span>
-					</div>
+				<div class="registration-bonus">
+					<h3 class="registration-bonus__header">Зарегистрируйся и получи</h3>
+					<h3 class="registration-bonus__underheader">Приветственный бонус</h3>	
+					<span class="registration-bonus__count">1800$</span>
 				</div>
 
-				<div class="cashback__second-line">
-					<span class="cashback__not-all">Это еще не все</span>
-
-					<p class="cashback__advantages">А так же вы получите <span class="cashback__red">3й уровень,</span> который даст вам массу <span class="cashback__dashed">преимуществ</span>
-
-						<span class="cashback__question">?</span></p>
-
-						<button class="cashback__button">Депозит сейчас</button>
-					</div>
+				<div class="registration__character-wrapper">
+					<img src="img/tiger.png" alt="toger" class="registration__character">
 				</div>
-			</section>
 
-			<section class="registration">
-				<div class="registration__wrapper">
+				<form action="#" class="registration-form-mini registration-form-mini--bottom">
+					<input type="email" placeholder="Email" class="registration-form-mini__email">
+					<input type="text" placeholder="Никнейм" class="registration-form-mini__nickname">
+					<input type="password" placeholder="Пароль" class="registration-form-mini__password">
+					<input type="password" placeholder="Подтверждение пароля" class="registration-form-mini__password-confirm">
+					<select name="" id="bottom-reg-select" class="registration-form-mini__select">
+						<option value="currency" selected disabled>Валюта</option>
+						<option value="rub">Рубли</option>
+						<option value="euro">Евро</option>
+						<option value="dollar">Доллары</option>
+						<option value="btc">Биткоины</option>
+					</select>
 
-					<div class="registration-bonus">
-						<h3 class="registration-bonus__header">Зарегистрируйся и получи</h3>
-						<h3 class="registration-bonus__underheader">Приветственный бонус</h3>	
-						<span class="registration-bonus__count">1800$</span>
-					</div>
+					<input type="checkbox" id="bottom-form-checkbox" class="registration-form-mini__checkbox">
+					<label for="bottom-form-checkbox" class="registration-form-mini__label-checkbox">Мне 18 лет и я принимаю Положения и условия</label>
 
-					<div class="registration__character-wrapper">
-						<img src="img/tiger.png" alt="toger" class="registration__character">
-					</div>
+					<input type="submit" class="registration-form-mini__button" value="Регистрация">
+				</form>
 
-					<form action="#" class="registration-form-mini registration-form-mini--bottom">
-						<input type="email" placeholder="Email" class="registration-form-mini__email">
-						<input type="text" placeholder="Никнейм" class="registration-form-mini__nickname">
-						<input type="password" placeholder="Пароль" class="registration-form-mini__password">
-						<input type="password" placeholder="Подтверждение пароля" class="registration-form-mini__password-confirm">
-						<select name="" id="bottom-reg-select" class="registration-form-mini__select">
-							<option value="currency" selected disabled>Валюта</option>
-							<option value="rub">Рубли</option>
-							<option value="euro">Евро</option>
-							<option value="dollar">Доллары</option>
-							<option value="btc">Биткоины</option>
-						</select>
+				<button class="registration__reg-button">Регистрация</button>
 
-						<input type="checkbox" id="bottom-form-checkbox" class="registration-form-mini__checkbox">
-						<label for="bottom-form-checkbox" class="registration-form-mini__label-checkbox">Мне 18 лет и я принимаю Положения и условия</label>
-
-						<input type="submit" class="registration-form-mini__button" value="Регистрация">
-					</form>
-
-					<button class="registration__reg-button">Регистрация</button>
-
-				</div>
-			</section>
-
-			<section class="games">
-				<div class="games__wrapper">
-
-					<div class="games__list-wrapper">
-						<div class="games__column">
-							<h2 class="games__header">Игры</h2>
-							<ul class="games__list">
-								<li class="games__item"><a href="#">NetEnt</a></li>
-								<li class="games__item"><a href="#">Amatic</a></li>
-								<li class="games__item"><a href="#">Ezugi</a></li>
-								<li class="games__item"><a href="#">Softswiss</a></li>
-								<li class="games__item"><a href="#">Лобби</a></li>
-								<li class="games__item"><a href="#">Слоты</a></li>
-								<li class="games__item"><a href="#">Джекпот</a></li>
-								<li class="games__item"><a href="#">Настольные</a></li>
-								<li class="games__item"><a href="#">Live диллер</a></li>
-							</ul>
-						</div>
-
-						<div class="games__column">
-							<h2 class="games__header">Акции</h2>
-							<ul class="games__list">
-								<li class="games__item"><a href="bonus.html">Приветственный бонус</a></li>
-								<li class="games__item"><a href="#">Reload бонус</a></li>
-								<li class="games__item"><a href="everyweek-cashback.html">Кэшбек</a></li>
-								<li class="games__item"><a href="everyweek-cashback.html">Live Casino Cashback</a></li>
-								<li class="games__item"><a href="day-slot.html">Слот дня во вторник</a></li>
-								<li class="games__item"><a href="free-spins.html">Фриспины в четверг</a></li>
-								<li class="games__item"><a href="tournament.html">Darkslot турнир</a></li>
-								<li class="games__item"><a href="levels.html">Уровни игроков</a></li>
-							</ul>
-						</div>
-
-						<div class="games__column">
-							<h2 class="games__header">О нас</h2>
-							<ul class="games__list">
-								<li class="games__item games__item--policy">Политика конфиденциальности</li>
-								<li class="games__item games__item--rules">Положения и условия</li>
-								<li class="games__item games__item--support">Поддержка</li>
-								<li class="games__item"><a href="partners.html">Партнерам</a></li>
-								<li class="games__item"><a href="about.html">О Darkslot</a></li>
-								<li class="games__item"><a href="blog.html">Блог</a></li>
-							</ul>
-						</div>
-					</div>
-
-					<div class="games__social">
-						<span class="games__text">Следите за нами</span>
-						<div class="games__social-list">
-							<a href="#" target="blank"><img src="img/social-icons/fb-big.png" alt=""></a>
-							<a href="#" target="blank"><img src="img/social-icons/tw-big.png" alt=""></a>
-							<a href="#" target="blank"><img src="img/social-icons/yt-big.png" alt=""></a>
-						</div>
-					</div>
-				</div>
-			</section>
-
-			<section class="partners">
-				<div class="partners__wrapper">
-					<div class="partners__images">
-						<img src="img/partners/1_visa.jpg" alt="visa">
-						<img src="img/partners/2_mastercard.jpg" alt="mastercard">
-						<img src="img/partners/3_skrill.jpg" alt="skrill">
-						<img src="img/partners/4_netever.jpg" alt="netever">
-						<img src="img/partners/5_paysafecard.jpg" alt="pay safe card">
-						<img src="img/partners/6_trustly.svg" alt="trustly">
-						<img src="img/partners/7_zimpler.svg" alt="zimpler">
-						<img src="img/partners/8_responsivegaming.jpg" alt="responsive gaming">
-						<img src="img/partners/9_itechlab.jpg" alt="itech lab">
-						<img src="img/partners/10_safesecure.jpg" alt="safe secure">
-						<img src="img/partners/11_sealofapproval.png" alt="seal of approval">
-						<img src="img/partners/12_askgamblers.png" alt="ask gamblers">
-						<img src="img/partners/13_softswiss.jpg" alt="softswiss">
-						<img src="img/partners/14_netent.svg" alt="netent">
-						<img src="img/partners/15_amatic.svg" alt="amatic">
-						<img src="img/partners/16_ezugi.svg" alt="ezugi">
-						<img src="img/partners/17_bitcoin.png" alt="bitcoin">
-						<img src="img/partners/18.jpg" alt="18+">
-					</div>
-
-					<p class="partners__text">Вебсайт Darkslot.com принадлежит компании Direx N.V., зарегистрированной и созданной в соответствии с законодательством Кюрасао и ее дочерним предприятием Direx Limited, зарегистрированными в Республике Кипр по адресу Stasinou 1, MITSI Building 1, 1st Floor, Flat/Office 4, Plateia Eleftherias, Nicosia. Деятельность Direx N.V. лицензирована и попадает под регулирование Antilephone N.V. Регистрационный номер Direx N.V.: 131879, адрес регистрации: E-Commerce Park Vredenberg, Curacao</p>
-				</div>
-			</section>
-
-			<footer class="footer">
-				<div class="footer__wrapper">
-					<div class="footer__copyright"></div>
-					<div class="footer__development">
-						<span class="footer__developer">Разработка сайта: </span> 
-						<a href="http://www.crepla.com/" target="blank"><img src="img/crepla-logo.png" alt="crepla" class="footer__crepla-logo"></a>
-					</div>
-				</div>
-				</footer>
-		</div>
+			</div>
+		</section>
 
 		<section class="games">
 			<div class="games__wrapper">
@@ -422,26 +313,121 @@
 				</div>
 			</div>
 		</footer>
-
 	</div>
 
-	<div class="fixed-bar">
-		<div class="fixed-bar__wrapper">
-			<div class="fixed-bar__hider"></div>
-			<div class="fixed-bar__shower hidden">
-				<p>Показать бар</p>
-			</div>
-			<div class="fixed-bar__top-games-button"><p>Топ-игры</p></div>
-			<form action="#" class="search">
-				<input type="search" class="search__field" placeholder="Поиск">
-				<div class="search__close"></div>
-			</form>
-			<div class="fixed-bar__chat"><p>Онлайн-чат</p></div>
+	<section class="games">
+		<div class="games__wrapper">
 
-			<div class="fixed-bar__language">
-				<img src="img/flag-russian.png" alt="ru">
-				<span>Русский</span>
+			<div class="games__list-wrapper">
+				<div class="games__column">
+					<h2 class="games__header">Игры</h2>
+					<ul class="games__list">
+						<li class="games__item"><a href="#">NetEnt</a></li>
+						<li class="games__item"><a href="#">Amatic</a></li>
+						<li class="games__item"><a href="#">Ezugi</a></li>
+						<li class="games__item"><a href="#">Softswiss</a></li>
+						<li class="games__item"><a href="#">Лобби</a></li>
+						<li class="games__item"><a href="#">Слоты</a></li>
+						<li class="games__item"><a href="#">Джекпот</a></li>
+						<li class="games__item"><a href="#">Настольные</a></li>
+						<li class="games__item"><a href="#">Live диллер</a></li>
+					</ul>
+				</div>
+
+				<div class="games__column">
+					<h2 class="games__header">Акции</h2>
+					<ul class="games__list">
+						<li class="games__item"><a href="bonus.html">Приветственный бонус</a></li>
+						<li class="games__item"><a href="#">Reload бонус</a></li>
+						<li class="games__item"><a href="everyweek-cashback.html">Кэшбек</a></li>
+						<li class="games__item"><a href="everyweek-cashback.html">Live Casino Cashback</a></li>
+						<li class="games__item"><a href="day-slot.html">Слот дня во вторник</a></li>
+						<li class="games__item"><a href="free-spins.html">Фриспины в четверг</a></li>
+						<li class="games__item"><a href="tournament.html">Darkslot турнир</a></li>
+						<li class="games__item"><a href="levels.html">Уровни игроков</a></li>
+					</ul>
+				</div>
+
+				<div class="games__column">
+					<h2 class="games__header">О нас</h2>
+					<ul class="games__list">
+						<li class="games__item games__item--policy">Политика конфиденциальности</li>
+						<li class="games__item games__item--rules">Положения и условия</li>
+						<li class="games__item games__item--support">Поддержка</li>
+						<li class="games__item"><a href="partners.html">Партнерам</a></li>
+						<li class="games__item"><a href="about.html">О Darkslot</a></li>
+						<li class="games__item"><a href="blog.html">Блог</a></li>
+					</ul>
+				</div>
 			</div>
+
+			<div class="games__social">
+				<span class="games__text">Следите за нами</span>
+				<div class="games__social-list">
+					<a href="#" target="blank"><img src="img/social-icons/fb-big.png" alt=""></a>
+					<a href="#" target="blank"><img src="img/social-icons/tw-big.png" alt=""></a>
+					<a href="#" target="blank"><img src="img/social-icons/yt-big.png" alt=""></a>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="partners">
+		<div class="partners__wrapper">
+			<div class="partners__images">
+				<img src="img/partners/1_visa.jpg" alt="visa">
+				<img src="img/partners/2_mastercard.jpg" alt="mastercard">
+				<img src="img/partners/3_skrill.jpg" alt="skrill">
+				<img src="img/partners/4_netever.jpg" alt="netever">
+				<img src="img/partners/5_paysafecard.jpg" alt="pay safe card">
+				<img src="img/partners/6_trustly.svg" alt="trustly">
+				<img src="img/partners/7_zimpler.svg" alt="zimpler">
+				<img src="img/partners/8_responsivegaming.jpg" alt="responsive gaming">
+				<img src="img/partners/9_itechlab.jpg" alt="itech lab">
+				<img src="img/partners/10_safesecure.jpg" alt="safe secure">
+				<img src="img/partners/11_sealofapproval.png" alt="seal of approval">
+				<img src="img/partners/12_askgamblers.png" alt="ask gamblers">
+				<img src="img/partners/13_softswiss.jpg" alt="softswiss">
+				<img src="img/partners/14_netent.svg" alt="netent">
+				<img src="img/partners/15_amatic.svg" alt="amatic">
+				<img src="img/partners/16_ezugi.svg" alt="ezugi">
+				<img src="img/partners/17_bitcoin.png" alt="bitcoin">
+				<img src="img/partners/18.jpg" alt="18+">
+			</div>
+
+			<p class="partners__text">Вебсайт Darkslot.com принадлежит компании Direx N.V., зарегистрированной и созданной в соответствии с законодательством Кюрасао и ее дочерним предприятием Direx Limited, зарегистрированными в Республике Кипр по адресу Stasinou 1, MITSI Building 1, 1st Floor, Flat/Office 4, Plateia Eleftherias, Nicosia. Деятельность Direx N.V. лицензирована и попадает под регулирование Antilephone N.V. Регистрационный номер Direx N.V.: 131879, адрес регистрации: E-Commerce Park Vredenberg, Curacao</p>
+		</div>
+	</section>
+
+	<footer class="footer">
+		<div class="footer__wrapper">
+			<div class="footer__copyright"></div>
+			<div class="footer__development">
+				<span class="footer__developer">Разработка сайта: </span> 
+				<a href="http://www.crepla.com/" target="blank"><img src="img/crepla-logo.png" alt="crepla" class="footer__crepla-logo"></a>
+			</div>
+		</div>
+	</footer>
+
+</div>
+
+<div class="fixed-bar">
+	<div class="fixed-bar__wrapper">
+		<div class="fixed-bar__hider"></div>
+		<div class="fixed-bar__shower hidden">
+			<p>Показать бар</p>
+		</div>
+		<div class="fixed-bar__top-games-button"><p>Топ-игры</p></div>
+		<form action="#" class="search">
+			<input type="search" class="search__field" placeholder="Поиск">
+			<div class="search__close"></div>
+		</form>
+		<div class="fixed-bar__chat"><p>Онлайн-чат</p></div>
+
+		<div class="fixed-bar__language">
+			<img src="img/flag-russian.png" alt="ru">
+			<span>Русский</span>
+		</div>
 
 			<!-- <form action="#">
 				<img src="img/flag-russian.png" alt="ru">

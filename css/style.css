@@ -3017,7 +3017,6 @@ form * {
   z-index: 1;
   display: block;
   width: 140px;
-  margin-bottom: 40px;
   font-size: 30px;
   line-height: 32px;
   text-transform: uppercase;
@@ -3037,7 +3036,6 @@ form * {
   z-index: 1;
   display: block;
   width: 390px;
-  margin-bottom: 40px;
   font-size: 18px;
   line-height: 41px;
   font-family: SFUIBold;
@@ -3194,7 +3192,7 @@ form * {
 .half-cashback__button-details {
   width: 280px;
   padding: 25px;
-  border: 1px solid #005fdc;
+  border: 2px solid #005fdc;
   background-color: transparent;
   font-family: SFUIBold;
   font-size: 18px;
@@ -3311,6 +3309,7 @@ form * {
 }
 .free-spins__button {
   display: inline-block;
+  width: 300px;
   margin-top: 30px;
   padding: 20px;
   background-color: #ed383f;
@@ -3915,6 +3914,7 @@ form * {
   margin: 0 auto;
   border-bottom: 2px dotted #fff;
   text-align: center;
+  background-color: transparent;
 }
 .tables__wrapper {
   width: 1180px;
@@ -4745,6 +4745,12 @@ form * {
   }
   .cashback__text-wrapper img {
     width: 200px;
+  }
+  .cashback__not-all {
+    margin-bottom: 40px;
+  }
+  .cashback__advantages {
+    margin-bottom: 40px;
   }
   .cashback--background .cashback__wrapper {
     width: 748px;
