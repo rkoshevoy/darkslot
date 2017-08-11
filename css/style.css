@@ -1491,6 +1491,7 @@ form * {
   height: calc(100% - 50px);
 }
 .news__header {
+  width: 100%;
   font-size: 18px;
   line-height: 31px;
   text-transform: uppercase;
@@ -4889,7 +4890,7 @@ form * {
     width: 748px;
   }
   .tournament__header span::before {
-    top: -5px;
+    top: 5px;
     height: 50px;
   }
   .tournament__text-wrapper {
