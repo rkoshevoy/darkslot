@@ -59,6 +59,9 @@
 	&__winner {
 		display: flex;
 		align-items: center;
+		flex-wrap: wrap;
+		flex-direction: column;
+		text-align: center;
 
 		@media @tablet {
 			margin-bottom: 20px;
@@ -71,10 +74,10 @@
 	}
 
 	&__avatar {
-		display: inline-block;
-		width: 60px;
-		height: 60px;
-		margin-right: 18px;
+		display: block;
+		width: 240px;
+		height: 150px;
+		margin-bottom: 18px;
 		background-color: #424242;
 	}
 
@@ -99,6 +102,8 @@
 	}
 
 	&__game {
+		display: block;
+		font-size: 14px;
 		color: #f9515e;
 		text-decoration: underline;
 	}
