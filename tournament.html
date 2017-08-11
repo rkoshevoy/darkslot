@@ -13,7 +13,7 @@
 	<link rel="stylesheet" href="css/jquery.mCustomScrollbar.css">
 </head>
 <body>
-	
+
 	<header class="header">
 		<div class="header__wrapper">
 
@@ -39,7 +39,7 @@
 				<ul class="main-nav__list">
 					<li class="main-nav__item main-nav__item--arrow main-nav__item--first"><span>Игры</span>
 
-						<ul class="main-nav__dropdown">
+						<ul id="menu-games" class="main-nav__dropdown">
 							<li class="main-nav__dropdown-item"><a href="#">Лобби</a></li>
 							<li class="main-nav__dropdown-item"><a href="#">Слоты</a></li>
 							<li class="main-nav__dropdown-item"><a href="#">Джекпоты</a></li>
@@ -52,6 +52,7 @@
 
 						<ul class="main-nav__dropdown">
 							<li class="main-nav__dropdown-item"><a href="bonus.html">Приветственный бонус</a></li>
+							<li class="main-nav__dropdown-item"><a href="bonus.html">VIP Bonus</a></li>
 							<li class="main-nav__dropdown-item"><a href="reload-bonus.html">Reload бонус</a></li>
 							<li class="main-nav__dropdown-item"><a href="everyweek-cashback.html">Кэшбек</a></li>
 							<li class="main-nav__dropdown-item"><a href="everyweek-cashback.html">Live Casino Cashback</a></li>
@@ -429,7 +430,7 @@
 				<div class="slide__button-wrapper">
 					<a href="day-slot.html" class="slide__button slide__button--centered">Подробнее</a>
 				</div>
-			</div> 
+			</div>
 
 			<div class="slide">
 				<div class="slide__image-wrapper">
@@ -443,7 +444,7 @@
 
 							<div class="registration-bonus">
 								<h3 class="registration-bonus__header">Зарегистрируйся и получи</h3>
-								<h3 class="registration-bonus__underheader">Приветственный бонус</h3>	
+								<h3 class="registration-bonus__underheader">Приветственный бонус</h3>
 								<span class="registration-bonus__count">1800$</span>
 							</div>
 
@@ -513,7 +514,8 @@
 						<h2 class="games__header">Акции</h2>
 						<ul class="games__list">
 							<li class="games__item"><a href="bonus.html">Приветственный бонус</a></li>
-							<li class="games__item"><a href="#">Reload бонус</a></li>
+							<li class="games__item"><a href="bonus.html">VIP Bonus</a></li>
+							<li class="games__item"><a href="reload-bonus.html">Reload бонус</a></li>
 							<li class="games__item"><a href="everyweek-cashback.html">Кэшбек</a></li>
 							<li class="games__item"><a href="day-slot.html">Слот дня во вторник</a></li>
 							<li class="games__item"><a href="free-spins.html">Фриспины в четверг</a></li>
@@ -560,7 +562,6 @@
 					<img src="img/partners/9_itechlab.jpg" alt="itech lab">
 					<img src="img/partners/10_safesecure.jpg" alt="safe secure">
 					<img src="img/partners/11_sealofapproval.png" alt="seal of approval">
-					<img src="img/partners/12_askgamblers.png" alt="ask gamblers">
 					<img src="img/partners/13_softswiss.jpg" alt="softswiss">
 					<img src="img/partners/14_netent.svg" alt="netent">
 					<img src="img/partners/15_amatic.svg" alt="amatic">
@@ -568,7 +569,7 @@
 					<img src="img/partners/17_bitcoin.png" alt="bitcoin">
 					<img src="img/partners/18.jpg" alt="18+">
 				</div>
-				
+
 				<p class="partners__text">Вебсайт Darkslot.com принадлежит компании Direx N.V., зарегистрированной и созданной в соответствии с законодательством Кюрасао и ее дочерним предприятием Direx Limited, зарегистрированными в Республике Кипр по адресу Stasinou 1, MITSI Building 1, 1st Floor, Flat/Office 4, Plateia Eleftherias, Nicosia. Деятельность Direx N.V. лицензирована и попадает под регулирование Antilephone N.V. Регистрационный номер Direx N.V.: 131879, адрес регистрации: E-Commerce Park Vredenberg, Curacao</p>
 			</div>
 		</section>
@@ -577,7 +578,7 @@
 			<div class="footer__wrapper">
 				<div class="footer__copyright"></div>
 				<div class="footer__development">
-					<span class="footer__developer">Разработка сайта: </span> 
+					<span class="footer__developer">Разработка сайта: </span>
 					<a href="http://www.crepla.com/" target="blank"><img src="img/crepla-logo.png" alt="crepla" class="footer__crepla-logo"></a>
 				</div>
 			</div>
@@ -591,40 +592,37 @@
 			<div class="fixed-bar__shower hidden">
 				<p>Показать бар</p>
 			</div>
-			<div class="fixed-bar__top-games-button"><p>Топ-игры</p></div>
+			<div class="fixed-bar__top-games-button"><p id="topGamesBtn">Топ-игры</p></div>
 			<form action="#" class="search">
 				<input type="search" class="search__field" placeholder="Поиск">
 				<div class="search__close"></div>
 			</form>
 			<div class="fixed-bar__chat"><p>Онлайн-чат</p></div>
 
-			<div class="fixed-bar__language">
-				<img src="img/flag-russian.png" alt="ru">
-				<span>Русский</span>
+			<div class="language_selector">
+			  <div>
+			    <button class="fixed-bar__language" type="button">
+			      <span class="localeWrap">
+			        <span class="flagContainer">
+			          <img class="flagImg" src="./img/flags/flag-ru.png" alt="">
+			        </span>
+			        Русский
+			      </span>
+			      <span class="caret"></span>
+			    </button>
+			    <ul role="menu" class="language_selector__dropdown-menu">
+			      <li class="language_selector__dropdown-menu-item">
+			        <a class="localeWrap">
+			          <span class="flagContainer">
+									<img class="flagImg" src="./img/flags/flag-en.png" alt="">
+								</span>
+			          <span class="flagName">English</span>
+			        </a>
+			      </li>
+			    </ul>
+			  </div>
 			</div>
 
-			<!-- <form action="#">
-				<img src="img/flag-russian.png" alt="ru">
-				<select name="language" id="language" class="fixed-bar__language">
-					<option value="russian">Русский</option>
-					<option value="not-russian">Не русский</option>
-				</select>
-			</form> -->
- 
-			<div class="top-games hidden">
-				<div class="top-games__wrapper">
-					<div class="top-games__slide">1</div>
-					<div class="top-games__slide">2</div>
-					<div class="top-games__slide">3</div>
-					<div class="top-games__slide">4</div>
-					<div class="top-games__slide">5</div>
-					<div class="top-games__slide">6</div>
-					<div class="top-games__slide">7</div>
-					<div class="top-games__slide">8</div>
-				</div>
-
-				<div class="top-games__close"><p>Закрыть</p></div>
-			</div>
 		</div>
 	</div>
 
@@ -867,14 +865,14 @@
 				</ul>
 				<h2 class="modal-about__underheader">Изменение правил и условий</h2>
 				<ul class="modal-about__list">
-					<li class="modal-about__list-item">1.3 Настоящие Правила и условия могут быть изменены Компанией в любой момент. Пожалуйста, регулярно посещайте раздел “Правила и условия” для того, чтобы не пропустить изменений в пользовании Сайтом.</li>			
+					<li class="modal-about__list-item">1.3 Настоящие Правила и условия могут быть изменены Компанией в любой момент. Пожалуйста, регулярно посещайте раздел “Правила и условия” для того, чтобы не пропустить изменений в пользовании Сайтом.</li>
 				</ul>
 				<h2 class="modal-about__underheader">Пользование сайтом</h2>
 				<ul class="modal-about__list">
 					<li class="modal-about__list-item">1.4 Сайт доступен для игроков из тех стран и географических регионов, где азартные игры в интернете не запрещены законом. Игрок берет на себя ответственность за получение информации о законодательстве в своем регионе перед тем, как начать игру на Сайте. Если Вы являетесь игроком из UK или US, Вам запрещается играть на реальные деньги, включая игру на биткоины. Игроки из Дании, Испании и Франции также не допускаются к игре на Сайте. </li>
 					<li class="modal-about__list-item">Сайт допускает только игроков, достигших совершеннолетия (18 - минимальный возраст игрока), а также игроков, достигших возраста, в котором законодательство их страны позволяет им принимать участие в азартных играх в интернете; <br>Ответственность за владение информацией об ограничении по возрасту в своей стране лежит на самом игроке, как и ответственность убедиться в том, что участвуя в играх, Вы тем самым не нарушаете законы, действие которых на Вас распространяется;</li>
-					<li class="modal-about__list-item">Вам разрешается принимать участие в играх в соответствии с действующим законодательством в юрисдикции Вашего места жительства; <br>Пожалуйта, обратите внимание на то, что игрокам из Канады не разрешается играть в NYX (NextGen) игры. 
-					</li>			
+					<li class="modal-about__list-item">Вам разрешается принимать участие в играх в соответствии с действующим законодательством в юрисдикции Вашего места жительства; <br>Пожалуйта, обратите внимание на то, что игрокам из Канады не разрешается играть в NYX (NextGen) игры.
+					</li>
 				</ul>
 				<h2 class="modal-about__underheader">Доступные игры</h2>
 				<ul class="modal-about__list">
@@ -900,18 +898,18 @@
 				</ul>
 				<h2 class="modal-about__underheader">Исключение отвутственности</h2>
 				<ul class="modal-about__list">
-					<li class="modal-about__list-item">1.9 Игрок должен понимать, что участие в азартных играх на Сайте может привести к потере его средств. Компания не несет ответственность за материальный ущерб, полученный в ходе игры на Сайте.</li>					
+					<li class="modal-about__list-item">1.9 Игрок должен понимать, что участие в азартных играх на Сайте может привести к потере его средств. Компания не несет ответственность за материальный ущерб, полученный в ходе игры на Сайте.</li>
 					<li class="modal-about__list-item">Компания принимает все необходимые меры по защите личной информации игрока от несанкционированного использования и делает ее доступной только тем сторонам, которые вовлечены в предоставление игровых услуг на сайте.</li>
 					<li class="modal-about__list-item">Компания не несет ответственности за то, как информацией распоряжаются третьи лица, например, поставщики программного обеспечения или аффилейты. Эти лица распоряжаются личной информацией игрока в соответствии со своими правилами и условиями (если таковые существуют).</li>
 				</ul>
 				<h2 class="modal-about__underheader">Пользование аккаунтом</h2>
 				<ul class="modal-about__list">
-					<li class="modal-about__list-item">1.10 Каждый игрок имеет право на создание одного аккаунта. Создание более одного аккаунта будет считаться нарушением правил казино и может привести к закрытию аккаунтов и отмене всех выплат. Игрок не имеет права предоставлять информацию и доступ о своем аккаунте третьим лицам (включая несовершеннолетних пользователей). Веб-сайт может быть использован только в личных целях. использование сайта в коммерческих целях строго запрещено.</li>					
+					<li class="modal-about__list-item">1.10 Каждый игрок имеет право на создание одного аккаунта. Создание более одного аккаунта будет считаться нарушением правил казино и может привести к закрытию аккаунтов и отмене всех выплат. Игрок не имеет права предоставлять информацию и доступ о своем аккаунте третьим лицам (включая несовершеннолетних пользователей). Веб-сайт может быть использован только в личных целях. использование сайта в коммерческих целях строго запрещено.</li>
 					<li class="modal-about__list-item">Партнеры не могут вести игровую деятельность. Казино может конфисковать средства с любых партнерских счетов с игровой деятельностью по решению руководства казино.</li>
 				</ul>
 				<h2 class="modal-about__underheader">Борьба с мошенничеством</h2>
 				<ul class="modal-about__list">
-					<li class="modal-about__list-item">1.11 У компании строгая политика по борьбе с мошенничеством. Если игрок подозревается в каких-либо мошеннических действиях, либо его действия говорят о: </li>					
+					<li class="modal-about__list-item">1.11 У компании строгая политика по борьбе с мошенничеством. Если игрок подозревается в каких-либо мошеннических действиях, либо его действия говорят о: </li>
 					<li class="modal-about__list-item">• участии в сговоре с другими игроками <br>
 						• разработке стратегий, направленных на получение выигрышей нечестным путем <br>
 						• мошеннических действиях против других казино либо платежных систем <br>
@@ -930,7 +928,7 @@
 				</ul>
 				<h2 class="modal-about__underheader">Депозиты</h2>
 				<ul class="modal-about__list">
-					<li class="modal-about__list-item">1.12 Darkslot предоставляет целый ряд способов пополнения баланса игрового счета. Для пополнения счета игрок может использовать кредитные и дебетовые карты VISA и MasterCard, а также всевозможные интернет кошельки. Пожалуйста, обратитесь в нашу службу поддержки для того чтобы узнать о подходящем методе депозита для вашего региона проживания.</li>					
+					<li class="modal-about__list-item">1.12 Darkslot предоставляет целый ряд способов пополнения баланса игрового счета. Для пополнения счета игрок может использовать кредитные и дебетовые карты VISA и MasterCard, а также всевозможные интернет кошельки. Пожалуйста, обратитесь в нашу службу поддержки для того чтобы узнать о подходящем методе депозита для вашего региона проживания.</li>
 					<li class="modal-about__list-item">Пожалуйста, обратите внимание, что минимальный депозит составляет 10€/$.</li>
 				</ul>
 				<h2 class="modal-about__underheader">Вывод/возврат средств</h2>
@@ -1037,7 +1035,7 @@
 					<li class="modal-about__list-item">17 Турнир 1000$ в пятницу .Турнир проводится по пятницам с 01:00 до 23:00 (МСК). В турнире принимают участие все клиенты Казино, которые сделали депозит в пятницу после 01:00(МСК) В турнире участвуют все игры из разделов «Слоты». Победители турнира определяются автоматически, исходя из самого крупного значения среднего выигрыша за время турнира.Ваше место зависит от ваших выигрышей поделенных на кол-во раундов(спинов). Минимальное кол-во раундов 500. Все выигрыши требуют отыгрыша х3, кроме первого места, первое место без отыгрыша.</li>
 					<li class="modal-about__list-item">18 Данные правила могут изменятся нами в любое время, следите за нашей бонусной политикой, так же мы вас предупреждать об этом будем заранее по почте.</li>
 				</ul>
-			</div>				
+			</div>
 		</div>
 
 		<div class="modal-close modal-close--out"></div>
@@ -1064,55 +1062,9 @@
 
 	<div id="preloader"></div>
 
-	<script type="text/javascript">
-		var preloader = document.getElementById("preloader");
-		function fadeOutnojquery(el){
-			el.style.opacity = 1;
-			var innerpreloader = setInterval(function() {
-				el.style.opacity = el.style.opacity - 0.05;
-				if (el.style.opacity <=0.05) {
-					clearInterval(innerpreloader);
-					preloader.style.display = "none";
-				}
-			},16);
-		}
-		window.onload = function(){setTimeout(function(){fadeOutnojquery(preloader);
-		},1000);};
-	</script>
-
 	<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
 
 	<script type="text/javascript" src="js/slick.min.js"></script>
-
-	<script type="text/javascript">
-		$('.slider').slick({
-			infinite: true,
-			autoplay: true,
-			autoplaySpeed: 3000,
-			slidesToShow: 1,
-			arrows: true,
-			responsive: [
-			{
-				breakpoint: 788,
-				settings: {
-					infinite: true,
-					autoplay: true,
-					autoplaySpeed: 3000,
-					slidesToShow: 1,
-					arrows: false
-				}
-			}
-			]
-		});
-
-		$('.top-games__wrapper').slick({
-			infinite: true,
-			autoplay: true,
-			autoplaySpeed: 3000,
-			slidesToShow: 7,
-			arrows: false
-		});
-	</script>
 
 	<script type="text/javascript" src="js/tabs.js"></script>
 
@@ -1126,17 +1078,8 @@
 
 	<script type="text/javascript" src="js/jquery.formstyler.min.js"></script>
 
-	<script type="text/javascript">
-		$('select').styler();
-	</script>
-
 	<script type="text/javascript" src="js/jquery.mCustomScrollbar.concat.min.js"></script>
 
-	<script>
-		$(window).on("load",function(){
-			$(".modal-about__scroll-content").mCustomScrollbar();
-		});
-	</script>
-
+	<script type="text/javascript" src="js/main.js"></script>
 </body>
 </html>
