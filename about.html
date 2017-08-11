@@ -7,6 +7,7 @@
 	<title>Dark Slot</title>
 	<link rel="shortcut icon" href="img/favicon.png" type="image/png">
 	<link rel="stylesheet" href="css/style.min.css">
+	<link rel="stylesheet" href="css/animate.css">
 	<link rel="stylesheet" href="css/slick.css">
 	<link rel="stylesheet" href="css/slick-theme.css">
 	<link rel="stylesheet" href="css/jquery.formstyler.css">
@@ -134,53 +135,7 @@
 			</div>
 		</section>
 
-		<section class="slider slider--about">
-			<div class="slide">
-				<div class="slide__image-wrapper">
-					<img src="img/wood-bg.png" alt="slide" class="slide__image">
-				</div>
-
-				<div class="slide__content-wrapper">
-
-					<section class="registration registration--slide">
-						<div class="registration__wrapper">
-
-							<div class="registration-bonus">
-								<h3 class="registration-bonus__header">Зарегистрируйся и получи</h3>
-								<h3 class="registration-bonus__underheader">Приветственный бонус</h3>	
-								<span class="registration-bonus__count anim">1800$</span>
-							</div>
-
-							<div class="registration__character-wrapper">
-								<img src="img/tiger.png" alt="toger" class="registration__character">
-							</div>
-
-							<form action="#" class="registration-form-mini registration-form-mini--slide">
-								<input type="email" placeholder="Email" class="registration-form-mini__email">
-								<input type="text" placeholder="Никнейм" class="registration-form-mini__nickname">
-								<input type="password" placeholder="Пароль" class="registration-form-mini__password">
-								<input type="password" placeholder="Подтверждение пароля" class="registration-form-mini__password-confirm">
-								<select name="" id="bottom-reg-select" class="registration-form-mini__select">
-									<option value="currency" selected disabled>Валюта</option>
-									<option value="rub">Рубли</option>
-									<option value="euro">Евро</option>
-									<option value="dollar">Доллары</option>
-									<option value="btc">Биткоины</option>
-								</select>
-
-								<input type="checkbox" id="bottom-form-checkbox" class="registration-form-mini__checkbox">
-								<label for="bottom-form-checkbox" class="registration-form-mini__label-checkbox">Мне 18 лет и я принимаю Положения и условия</label>
-
-								<input type="submit" class="registration-form-mini__button" value="Регистрация">
-							</form>
-
-							<button class="registration__reg-button">Регистрация</button>
-
-						</div>
-					</section>
-				</div>
-			</div>
-
+				<section class="slider slider--about">
 			<div class="slide">
 				<div class="slide__image-wrapper">
 					<img src="img/slide-image-2.png" alt="slide" class="slide__image">
@@ -193,7 +148,7 @@
 							<span class="slide-bonus__first-line">10$</span>
 							<span class="slide-bonus__second-line">без депозита</span>
 							<span class="slide-bonus__third-line">- за регистрацию -</span>
-							<a href="#" class="slide-bonus__link">Подробнее</a>
+							<button class="slide-bonus__link" id="slider-button-rules">Подробнее</button>
 						</div>
 
 						<form action="#" class="registration-form-mini">
@@ -229,28 +184,71 @@
 					<div class="slide__text">
 						<span class="slide__upper-text">Розыгрыш каждую неделю</span>
 						<h1 class="slide__header">100% кэшбек</h1>
-						<a href="#" class="slide__button">Подробнее</a>
+						<a href="everyweek-cashback.html" class="slide__button">Подробнее</a>
 					</div>
 				</div>
 			</div>
 
 			<div class="slide">
 				<div class="slide__image-wrapper">
-					<a href="day-slot.html">
-						<img src="img/day-slot.jpg" alt="slide" class="slide__image">
-					</a>
+					<img src="img/day-slot.jpg" alt="slide" class="slide__image">
 				</div>
 
 				<div class="slide__button-wrapper">
-					<a href="day-slot.html" class="slide__button slide__button--centered">Подробнее</a>
+					<a href="day-slot.html" class="slide__button slide__button--centered">Играть</a>
 				</div>
-			</div> 
+			</div>
 
 			<div class="slide">
 				<div class="slide__image-wrapper">
-					<a href="free-spins.html">
-						<img src="img/free-spins.png" alt="slide" class="slide__image">
-					</a>
+					<img src="img/wood-bg.png" alt="slide" class="slide__image">
+				</div>
+
+				<div class="slide__content-wrapper">
+
+					<section class="registration registration--slide">
+						<div class="registration__wrapper">
+
+							<div class="registration-bonus">
+								<h3 class="registration-bonus__header">Зарегистрируйся и получи</h3>
+								<h3 class="registration-bonus__underheader">Приветственный бонус</h3>
+								<span class="registration-bonus__count">1800$</span>
+								<a href="bonus.html" class="registration-bonus__details">Подробнее</a>
+							</div>
+
+							<div class="registration__character-wrapper">
+								<img src="img/tiger.png" alt="toger" class="registration__character">
+							</div>
+
+							<form action="#" class="registration-form-mini registration-form-mini--slide">
+								<input type="email" placeholder="Email" class="registration-form-mini__email">
+								<input type="text" placeholder="Никнейм" class="registration-form-mini__nickname">
+								<input type="password" placeholder="Пароль" class="registration-form-mini__password">
+								<input type="password" placeholder="Подтверждение пароля" class="registration-form-mini__password-confirm">
+								<select name="" id="bottom-reg-select" class="registration-form-mini__select">
+									<option value="currency" selected disabled>Валюта</option>
+									<option value="rub">Рубли</option>
+									<option value="euro">Евро</option>
+									<option value="dollar">Доллары</option>
+									<option value="btc">Биткоины</option>
+								</select>
+
+								<input type="checkbox" id="bottom-form-checkbox" class="registration-form-mini__checkbox">
+								<label for="bottom-form-checkbox" class="registration-form-mini__label-checkbox">Мне 18 лет и я принимаю Положения и условия</label>
+
+								<input type="submit" class="registration-form-mini__button" value="Регистрация">
+							</form>
+
+							<button class="registration__reg-button">Регистрация</button>
+
+						</div>
+					</section>
+				</div>
+			</div>
+
+			<div class="slide">
+				<div class="slide__image-wrapper">
+					<img src="img/free-spins.png" alt="slide" class="slide__image">
 				</div>
 
 				<div class="slide__button-wrapper">

@@ -16,8 +16,18 @@ $(document).ready(function () {
 
 	$('#forgot-button').click(function (event) {
 		event.preventDefault();
-		$('.modal--recovery').css('top', '-1000px');
+		$('.modal').css('top', '-1000px');
 		$('.modal--new-password').css('top', '50%')
+	});
+
+	$('#recovery-unlock').click(function () {
+		$('.modal').css('top', '-1000px');
+		$('.modal--unlock').css('top', '50%')
+	});
+
+	$('#recovery-confirm').click(function () {
+		$('.modal').css('top', '-1000px');
+		$('.modal--confirm').css('top', '50%')
 	});
 
 	$('#menu-support, .games__item--support, .modal-form__support').click(function () {
@@ -66,7 +76,7 @@ $(document).ready(function () {
 		$('.modal, .level-modal').css('top', '-1000px')
 	});
 
-	$('.main-nav__dropdown-rules, .games__item--rules, #bonus-rules-button, #day-slot-button, #free-spins-button, #tournament-button').click(function(event) {
+	$('.main-nav__dropdown-rules, .games__item--rules, #bonus-rules-button, #day-slot-button, #free-spins-button, #tournament-button, #slider-button-rules').click(function(event) {
 		event.preventDefault();
 		$('.modal-about--rules').css({'top': '50%'});
 		$('.modal-bg').css({'opacity': '0.8', 'z-index': '100'});

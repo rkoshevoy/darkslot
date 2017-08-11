@@ -7,11 +7,13 @@
 	<title>Dark Slot</title>
 	<link rel="shortcut icon" href="img/favicon.png" type="image/png">
 	<link rel="stylesheet" href="css/style.min.css">
+	<link rel="stylesheet" href="css/animate.css">
 	<link rel="stylesheet" href="css/slick.css">
 	<link rel="stylesheet" href="css/slick-theme.css">
 	<link rel="stylesheet" href="css/jquery.formstyler.css">
 	<link rel="stylesheet" href="css/jquery.mCustomScrollbar.css">
 </head>
+
 <body>
 
 	<header class="header">
@@ -99,7 +101,7 @@
 							<span class="slide-bonus__first-line">10$</span>
 							<span class="slide-bonus__second-line">без депозита</span>
 							<span class="slide-bonus__third-line">- за регистрацию -</span>
-							<a href="#" class="slide-bonus__link">Подробнее</a>
+							<button class="slide-bonus__link" id="slider-button-rules">Подробнее</button>
 						</div>
 
 						<form action="#" class="registration-form-mini">
@@ -128,9 +130,7 @@
 
 			<div class="slide">
 				<div class="slide__image-wrapper">
-				<a href="everyweek-cashback.html">
-						<img src="img/slide-image.png" alt="slide" class="slide__image">
-					</a>
+					<img src="img/slide-image.png" alt="slide" class="slide__image">
 				</div>
 
 				<div class="slide__wrapper">
@@ -144,9 +144,7 @@
 
 			<div class="slide">
 				<div class="slide__image-wrapper">
-					<a href="day-slot.html">
-						<img src="img/day-slot.jpg" alt="slide" class="slide__image">
-					</a>
+					<img src="img/day-slot.jpg" alt="slide" class="slide__image">
 				</div>
 
 				<div class="slide__button-wrapper">
@@ -203,9 +201,7 @@
 
 			<div class="slide">
 				<div class="slide__image-wrapper">
-					<a href="free-spins.html">
-						<img src="img/free-spins.png" alt="slide" class="slide__image">
-					</a>
+					<img src="img/free-spins.png" alt="slide" class="slide__image">
 				</div>
 
 				<div class="slide__button-wrapper">
@@ -576,27 +572,27 @@
 			<div class="fixed-bar__chat"><p>Онлайн-чат</p></div>
 
 			<div class="language_selector">
-			  <div>
-			    <button class="fixed-bar__language" type="button">
-			      <span class="localeWrap">
-			        <span class="flagContainer">
-			          <img class="flagImg" src="./img/flags/flag-ru.png" alt="">
-			        </span>
-			        Русский
-			      </span>
-			      <span class="caret"></span>
-			    </button>
-			    <ul role="menu" class="language_selector__dropdown-menu">
-			      <li class="language_selector__dropdown-menu-item">
-			        <a class="localeWrap">
-			          <span class="flagContainer">
+				<div>
+					<button class="fixed-bar__language" type="button">
+						<span class="localeWrap">
+							<span class="flagContainer">
+								<img class="flagImg" src="./img/flags/flag-ru.png" alt="">
+							</span>
+							Русский
+						</span>
+						<span class="caret"></span>
+					</button>
+					<ul role="menu" class="language_selector__dropdown-menu">
+						<li class="language_selector__dropdown-menu-item">
+							<a class="localeWrap">
+								<span class="flagContainer">
 									<img class="flagImg" src="./img/flags/flag-en.png" alt="">
 								</span>
-			          <span class="flagName">English</span>
-			        </a>
-			      </li>
-			    </ul>
-			  </div>
+								<span class="flagName">English</span>
+							</a>
+						</li>
+					</ul>
+				</div>
 			</div>
 
 
@@ -715,8 +711,36 @@
 				<input type="submit" class="modal-form__button" value="Восстановить пароль" id="forgot-button">
 			</form>
 
-			<span class="modal-form__not-recieve">Не получили инструкций для разблокировки?</span>
-			<span class="modal-form__not-recieve">Не получили инструкций для подтверждения?</span>
+			<span class="modal-form__not-recieve" id="recovery-unlock">Не получили инструкций для разблокировки?</span>
+			<span class="modal-form__not-recieve" id="recovery-confirm">Не получили инструкций для подтверждения?</span>
+		</div>
+
+		<div class="modal-close"></div>
+	</section>
+
+	<section class="modal modal--unlock">
+		<div class="modal__wrapper">
+			<form action="#" class="modal-form modal-form--recovery">
+				<h2 class="modal-form__header">Не получили инструкций по разблокировке?</h2>
+				<p class="modal-form__text">Введите свой электронный адрес, и Вам будут высланы инструкции по замене пароля. <br>По дальнейшим вопросам Вы можете связаться с нами через страницу <span class="modal-form__support">поддержка</span></p>
+
+				<input type="email" class="modal-form__input" placeholder="Email">
+				<input type="submit" class="modal-form__button" value="Получить инструкции">
+			</form>
+		</div>
+
+		<div class="modal-close"></div>
+	</section>
+
+	<section class="modal modal--confirm">
+		<div class="modal__wrapper">
+			<form action="#" class="modal-form modal-form--recovery">
+				<h2 class="modal-form__header">Не получили инструкций для подтверждения?</h2>
+				<p class="modal-form__text">Введите свой электронный адрес, и Вам будут высланы инструкции по замене пароля. <br>По дальнейшим вопросам Вы можете связаться с нами через страницу <span class="modal-form__support">поддержка</span></p>
+
+				<input type="email" class="modal-form__input" placeholder="Email">
+				<input type="submit" class="modal-form__button" value="Получить инструкции">
+			</form>
 		</div>
 
 		<div class="modal-close"></div>

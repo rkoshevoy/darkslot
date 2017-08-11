@@ -405,6 +405,9 @@ form * {
 .slide-bonus__link {
   display: inline-block;
   border-bottom: 1px dashed #fff;
+  background-color: transparent;
+  font-family: SFUIBold;
+  font-size: 14px;
 }
 .tabs {
   position: relative;
@@ -2048,7 +2051,9 @@ form * {
   width: 390px;
 }
 .modal--recovery,
-.modal--new-password {
+.modal--new-password,
+.modal--unlock,
+.modal--confirm {
   width: 500px;
 }
 .modal--activate {
@@ -3915,6 +3920,8 @@ form * {
   border-bottom: 2px dotted #fff;
   text-align: center;
   background-color: transparent;
+  font-family: SFUIBold;
+  font-size: 14px;
 }
 .tables__wrapper {
   width: 1180px;
