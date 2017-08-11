@@ -416,8 +416,41 @@
 				<input type="submit" class="modal-form__button" value="Восстановить пароль" id="forgot-button">
 			</form>
 
-			<span class="modal-form__not-recieve">Не получили инструкций для разблокировки?</span>
-			<span class="modal-form__not-recieve">Не получили инструкций для подтверждения?</span>
+			<span class="modal-form__not-recieve" id="recovery-unlock">Не получили инструкций для разблокировки?</span>
+			<span class="modal-form__not-recieve" id="recovery-confirm">Не получили инструкций для подтверждения?</span>
+		</div>
+
+		<div class="modal-close"></div>
+	</section>
+
+	<section class="modal modal--unlock">
+		<div class="modal__wrapper">
+			<form action="#" class="modal-form modal-form--recovery">
+				<h2 class="modal-form__header">Переслать инструкции для разблокировки</h2>
+				<p class="modal-form__text">Если ваша учётная запись заблокирована, оставьте свой email-адрес, и мы вышлем на него инструкции по разблокированию. <br>По дальнейшим вопросам Вы можете связаться с нами через страницу <span class="modal-form__support">поддержка</span></p>
+
+				<input type="email" class="modal-form__input" placeholder="Email">
+				<input type="submit" class="modal-form__button" value="Переслать инструкции для разблокировки">
+			</form>
+
+			<span class="modal-form__not-recieve modal-form__forgot-pass">Забыли пароль?</span>
+			<span class="modal-form__not-recieve" id="recovery-confirm">Не получили инструкций для подтверждения?</span>
+		</div>
+
+		<div class="modal-close"></div>
+	</section>
+
+	<section class="modal modal--confirm">
+		<div class="modal__wrapper">
+			<form action="#" class="modal-form modal-form--recovery">
+				<h2 class="modal-form__header">Переслать инструкции для подтверждения</h2>
+
+				<input type="email" class="modal-form__input" placeholder="Email">
+				<input type="submit" class="modal-form__button" value="Переслать инструкции для подтверждения">
+			</form>
+
+			<span class="modal-form__not-recieve" id="recovery-unlock">Не получили инструкций для разблокировки?</span>
+			<span class="modal-form__not-recieve modal-form__forgot-pass">Забыли пароль?</span>
 		</div>
 
 		<div class="modal-close"></div>
