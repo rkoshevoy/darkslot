@@ -695,6 +695,7 @@ form * {
   flex-wrap: wrap;
   flex-direction: column;
   text-align: center;
+  width: 240px;
 }
 .winners__avatar {
   display: block;
@@ -4117,11 +4118,13 @@ form * {
   box-shadow: 0 0 20px 0 #000;
 }
 .level-up-page .level-up {
+  position: relative;
   padding: 20px;
+  padding-top: 100px;
 }
 .level-up-page .level-up__header-wrapper {
-  position: relative;
-  top: 0;
+  position: absolute;
+  top: -60px;
 }
 .level-up-page .level-ability {
   width: 368px;
@@ -4139,6 +4142,7 @@ form * {
   top: -90px;
 }
 .level-up__number {
+  position: relative;
   font-size: 150px;
   color: #56c074;
   font-family: SFUIHeavy;
@@ -4170,6 +4174,7 @@ form * {
   text-transform: uppercase;
 }
 .level-up__up-text {
+  position: relative;
   display: block;
   margin-bottom: 25px;
   font-size: 18px;
@@ -6089,6 +6094,13 @@ form * {
   }
   .level-up-page {
     margin-bottom: 40px;
+  }
+  .level-up-page .level-up {
+    padding: 20px;
+  }
+  .level-up-page .level-up__header-wrapper {
+    position: relative;
+    top: 0;
   }
   .level-up-page .level-ability {
     width: 100%;

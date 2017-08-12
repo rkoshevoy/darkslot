@@ -48,11 +48,22 @@
 	}
 
 	.level-up {
+		position: relative;
 		padding: 20px;
+		padding-top: 100px;
+
+		@media @mobile {
+			padding: 20px;
+		}
 
 		&__header-wrapper {
-			position: relative;
-			top: 0;
+			position: absolute;
+			top: -60px;
+
+			@media @mobile {
+				position: relative;
+				top: 0;	
+			}
 		}
 	}
 
@@ -100,6 +111,7 @@
 	}
 
 	&__number {
+		position: relative;
 		font-size: 150px;
 		color: #56c074;
 		font-family: SFUIHeavy;
@@ -160,6 +172,7 @@
 	}
 
 	&__up-text {
+		position: relative;
 		display: block;
 		margin-bottom: 25px;
 		font-size: 18px;
