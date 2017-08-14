@@ -143,7 +143,9 @@ form * {
 }
 .header__auth-user {
   position: relative;
-  padding: 31px 10px;
+  display: flex;
+  align-items: center;
+  padding: 28px 10px;
   padding-right: 35px;
   cursor: pointer;
   transition: 0.1s;
@@ -175,6 +177,22 @@ form * {
   border-bottom: 1px solid #303030;
   transform: rotate(45deg);
   transition: 0.1s;
+}
+.header__user-image {
+  position: relative;
+  margin-right: 10px;
+}
+.header__user-image span {
+  position: absolute;
+  top: -5px;
+  right: -5px;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: #ed383f;
+  font-size: 10px;
+  line-height: 15px;
+  text-align: center;
 }
 .header__dropdown {
   position: absolute;
@@ -209,7 +227,7 @@ form * {
   display: inline-block;
   width: 160px;
   height: 40px;
-  margin-right: 50px;
+  margin-right: 30px;
   background-image: url('../img/logo.png');
   background-position: center;
 }
@@ -4385,7 +4403,7 @@ form * {
     transform: rotate(-45deg);
   }
   .main-nav__logo {
-    margin-left: 150px;
+    margin-left: 20px;
     margin-right: 0;
   }
   .main-nav__list {
