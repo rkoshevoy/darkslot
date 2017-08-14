@@ -16,6 +16,14 @@ $(document).ready(function() {
 		$(this).prevAll().find('.main-nav__dropdown').removeClass('main-nav__item--active');
 	});
 
+	$('#enter-button').click(function(event) {
+		event.preventDefault();
+		$('.header__buttons').css('display', 'none');
+		$('.header__authorized').css('display', 'flex');
+		$('.modal').css('top', '-1000px');		
+		$('.modal-bg').css({'opacity': '0', 'z-index': '-1'});
+	});
+
 	// крестик меню
 
 	$('.main-nav__menu-button, #menu-support').click(function () {

@@ -112,6 +112,10 @@ form * {
   width: 1180px;
   margin: 0 auto;
 }
+.header__authorized {
+  display: none;
+  font-size: 14px;
+}
 .header__first-button {
   padding: 15px 20px;
   margin-top: 15px;
@@ -136,6 +140,38 @@ form * {
 .header__second-button:hover {
   border: 3px solid #0257c8;
   background-color: #0257c8;
+}
+.header__nickname,
+.header__money {
+  position: relative;
+  padding: 31px 10px;
+  padding-right: 35px;
+  cursor: pointer;
+  transition: 0.1s;
+}
+.header__nickname:hover,
+.header__money:hover {
+  background-color: #050505;
+}
+.header__nickname:hover::after,
+.header__money:hover::after {
+  border-color: #fff;
+}
+.header__nickname::after,
+.header__money::after {
+  content: '';
+  position: absolute;
+  top: 33px;
+  right: 15px;
+  width: 8px;
+  height: 8px;
+  border-right: 1px solid #303030;
+  border-bottom: 1px solid #303030;
+  transform: rotate(45deg);
+  transition: 0.1s;
+}
+.header__money {
+  margin-right: 20px;
 }
 .main-nav {
   position: relative;
@@ -226,6 +262,7 @@ form * {
 .main-nav__item {
   position: relative;
   display: inline-block;
+  font-size: 14px;
 }
 .main-nav__item a {
   padding-top: 30px;
@@ -253,7 +290,7 @@ form * {
 }
 .main-nav__dropdown {
   position: absolute;
-  top: 50px;
+  top: 46px;
   width: auto;
   list-style: none;
   opacity: 0;
@@ -2440,7 +2477,7 @@ form * {
 }
 .level-modal--fourth .level-ability__header {
   margin-bottom: 0;
-  line-height: 31px;
+  line-height: 18px;
 }
 .level-modal-bg {
   position: fixed;
@@ -4279,7 +4316,7 @@ form * {
   .main-nav__item--second:hover .main-nav__dropdown,
   .main-nav__item--fifth:hover .main-nav__dropdown {
     z-index: 100;
-    top: 49px;
+    top: 46px;
     opacity: 1;
   }
   .main-nav__item--first:hover .main-nav__dropdown-item a,
@@ -4287,7 +4324,7 @@ form * {
   .main-nav__item--fifth:hover .main-nav__dropdown-item a {
     height: auto;
     padding: 15px;
-    font-size: 16px;
+    font-size: 14px;
   }
 }
 @media (max-width: 1220px) {
@@ -4330,6 +4367,7 @@ form * {
   }
   .main-nav__logo {
     margin-left: 150px;
+    margin-right: 0;
   }
   .main-nav__list {
     position: absolute;
@@ -4380,7 +4418,7 @@ form * {
   .main-nav__item--active .main-nav__dropdown-item a {
     height: auto;
     padding: 15px;
-    font-size: 16px;
+    font-size: 14px;
   }
   .main-nav__item--arrow span {
     padding: 20px;
@@ -6118,7 +6156,10 @@ form * {
   .level-up__number {
     display: inline-block;
     margin-right: 10px;
-    font-size: 100px;
+    font-size: 60px;
+  }
+  .level-up__number img {
+    width: 40px;
   }
   .level-up__greeting-wrapper {
     position: relative;
@@ -6127,11 +6168,14 @@ form * {
     display: inline-block;
   }
   .level-up__greeting {
-    font-size: 20px;
+    font-size: 14px;
     white-space: normal;
   }
   .level-up__level {
-    font-size: 20px;
+    font-size: 18px;
+  }
+  .level-up__up-text {
+    margin-bottom: 10px;
   }
   .level-up__about {
     font-size: 13px;
@@ -6139,11 +6183,15 @@ form * {
   .level-ability {
     width: 100%;
     margin-bottom: 10px;
-    padding: 10px;
+    padding: 5px;
   }
   .level-ability__header {
     margin-bottom: 0;
     font-size: 14px;
+    line-height: 16px;
+  }
+  .level-ability__text {
+    line-height: 14px;
   }
   .level-details__wrapper {
     flex-wrap: wrap;

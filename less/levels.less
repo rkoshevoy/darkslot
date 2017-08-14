@@ -119,7 +119,11 @@
 		@media @mobile {
 			display: inline-block;
 			margin-right: 10px;
-			font-size: 100px;
+			font-size: 60px;
+
+			img {
+				width: 40px;
+			}
 		}
 	}
 
@@ -155,7 +159,7 @@
 		white-space: pre;
 
 		@media @mobile {
-			font-size: 20px;
+			font-size: 14px;
 			white-space: normal;
 		}
 	}
@@ -167,7 +171,7 @@
 		text-transform: uppercase;
 
 		@media @mobile {
-			font-size: 20px;
+			font-size: 18px;
 		}
 	}
 
@@ -177,6 +181,10 @@
 		margin-bottom: 25px;
 		font-size: 18px;
 		font-family: SFUIMedium;
+
+		@media @mobile {
+			margin-bottom: 10px;
+		}
 	}
 
 	&__ability-wrapper {
@@ -210,7 +218,7 @@
 	@media @mobile {
 		width: 100%;
 		margin-bottom: 10px;
-		padding: 10px;
+		padding: 5px;
 	}
 
 	&__header {
@@ -226,6 +234,7 @@
 		@media @mobile {
 			margin-bottom: 0;
 			font-size: 14px;
+			line-height: 16px;
 		}
 	}
 
@@ -233,6 +242,10 @@
 		color: #afaeae;
 		font-size: 14px;
 		line-height: 23px;
+
+		@media @mobile {
+			line-height: 14px;
+		}
 	}
 }
 
