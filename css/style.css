@@ -141,24 +141,30 @@ form * {
   border: 3px solid #0257c8;
   background-color: #0257c8;
 }
-.header__nickname,
-.header__money {
+.header__auth-user {
   position: relative;
   padding: 31px 10px;
   padding-right: 35px;
   cursor: pointer;
   transition: 0.1s;
 }
-.header__nickname:hover,
-.header__money:hover {
+.header__auth-user:nth-child(2) {
+  margin-right: 20px;
+}
+.header__auth-user:hover {
   background-color: #050505;
 }
-.header__nickname:hover::after,
-.header__money:hover::after {
+.header__auth-user:hover::after {
   border-color: #fff;
 }
-.header__nickname::after,
-.header__money::after {
+.header__auth-user:hover .header__dropdown .header__dropdown-item {
+  white-space: pre;
+  padding: 16px 20px;
+  font-size: 14px;
+  line-height: 14px;
+  transition: 0.3s;
+}
+.header__auth-user::after {
   content: '';
   position: absolute;
   top: 33px;
@@ -170,8 +176,21 @@ form * {
   transform: rotate(45deg);
   transition: 0.1s;
 }
-.header__money {
-  margin-right: 20px;
+.header__dropdown {
+  position: absolute;
+  left: 0;
+  top: 78px;
+  list-style: none;
+}
+.header__dropdown-item {
+  padding: 0;
+  font-size: 0;
+  line-height: 0;
+  background-color: rgba(0, 0, 0, 0.85);
+  transition: 0.1s;
+}
+.header__dropdown-item:hover {
+  background-color: #ed383f;
 }
 .main-nav {
   position: relative;
@@ -5020,6 +5039,9 @@ form * {
     padding-left: 10px;
     padding-top: 5px;
     padding-bottom: 5px;
+  }
+  .header__authorized {
+    display: none;
   }
   .header__first-button {
     display: none;
