@@ -481,13 +481,6 @@
 
 .tabs {
   position: relative; }
-  .tabs::after {
-    content: '';
-    position: absolute;
-    top: 70px;
-    width: 100%;
-    height: 1px;
-    background-color: #3d3d3d; }
   .tabs__wrapper {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -645,14 +638,10 @@
         flex-wrap: wrap;
     width: 100%; }
   .tab__variant {
-    display: block;
-    width: 280px;
+    width: 100%;
     height: 160px;
-    margin-right: 20px;
     background-color: #313131;
-    margin-bottom: 20px; }
-    .tab__variant:last-child {
-      display: none; }
+    margin-bottom: 30px; }
     .tab__variant:nth-child(4n) {
       margin-right: 0; }
   .tab__more-button {
@@ -843,8 +832,6 @@
     background-color: #313131; }
     .games-preview__item:nth-of-type(4n) {
       margin-right: 0; }
-    .games-preview__item:last-child {
-      display: none; }
 
 .deposites {
   background-image: url("../../img/bg-deposites.png");
@@ -855,7 +842,6 @@
     padding-top: 230px;
     padding-bottom: 170px; }
   .deposites__header {
-    width: 50%;
     margin-bottom: 40px;
     font-size: 40px;
     line-height: 60px; }
@@ -1904,24 +1890,8 @@
       background-color: #de3137; }
 
 .modal {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: reverse;
-      -ms-flex-direction: row-reverse;
-          flex-direction: row-reverse;
-  position: fixed;
-  z-index: 101;
-  top: -1000px;
-  left: 50%;
-  padding: 20px;
   background-image: url("../../img/reg-bg.jpg");
-  background-size: cover;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-  -webkit-transition: 0.6s;
-  transition: 0.6s; }
+  background-size: cover; }
   .modal__character-wrapper {
     position: absolute; }
   .modal__character {
@@ -4257,8 +4227,8 @@ th {
 
 @font-face {
   font-family: 'Glyphicons Halflings';
-  src: url("bootstrap/assets/fonts/bootstrap/glyphicons-halflings-regular.eot");
-  src: url("bootstrap/assets/fonts/bootstrap/glyphicons-halflings-regular.eot?#iefix") format("embedded-opentype"), url("bootstrap/assets/fonts/bootstrap/glyphicons-halflings-regular.woff2") format("woff2"), url("bootstrap/assets/fonts/bootstrap/glyphicons-halflings-regular.woff") format("woff"), url("bootstrap/assets/fonts/bootstrap/glyphicons-halflings-regular.ttf") format("truetype"), url("bootstrap/assets/fonts/bootstrap/glyphicons-halflings-regular.svg#glyphicons_halflingsregular") format("svg"); }
+  src: url("../fonts/bootstrap/glyphicons-halflings-regular.eot");
+  src: url("../fonts/bootstrap/glyphicons-halflings-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/bootstrap/glyphicons-halflings-regular.woff2") format("woff2"), url("../fonts/bootstrap/glyphicons-halflings-regular.woff") format("woff"), url("../fonts/bootstrap/glyphicons-halflings-regular.ttf") format("truetype"), url("../fonts/bootstrap/glyphicons-halflings-regular.svg#glyphicons_halflingsregular") format("svg"); }
 
 .glyphicon {
   position: relative;

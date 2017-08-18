@@ -1,15 +1,15 @@
 .modal {
-	display: flex;
-	flex-direction: row-reverse;
-	position: fixed;
-	z-index: 101;
-	top: -1000px;
-	left: 50%;
-	padding: 20px;
+	// display: flex;
+	// flex-direction: row-reverse;
+	// position: fixed;
+	// z-index: 101;
+	// top: -1000px;
+	// left: 50%;
+	// padding: 20px;
 	background-image: url('../../img/reg-bg.jpg');
 	background-size: cover;
-	transform: translate(-50%, -50%);
-	transition: 0.6s;
+	// transform: translate(-50%, -50%);
+	// transition: 0.6s;
 
 	// @media @mobile {
 	// 	width: calc(100% - 20px);
@@ -37,7 +37,7 @@
 		// @media @mobile {
 		// 	max-width: ~"calc(100% - 50px)";
 		// }
-	} 
+	}
 
 	&__text {
 		font-size: 14px;
@@ -48,7 +48,7 @@
 	&__button {
 		padding: 20px 45px;
 		border: none;
-		background-color: $main-color; 
+		background-color: $main-color;
 		font-family: SFUIMedium;
 		font-size: 14px;
 		color: #fff;
@@ -140,7 +140,7 @@
 	// 	right: 15px;
 	// 	top: 15px;
 	// 	width: 25px;
-	// 	height: 25px;		
+	// 	height: 25px;
 
 	// 	&::before {
 	// 		width: 30px;
@@ -176,7 +176,7 @@
 	}
 }
 
-.modal--enter {	
+.modal--enter {
 	width: 735px;
 
 	// @media @tablet {
@@ -197,7 +197,7 @@
 	}
 }
 
-.modal--contact {	
+.modal--contact {
 	width: 800px;
 
 	// @media @tablet {
@@ -223,7 +223,7 @@
 .modal--new-password,
 .modal--unlock,
 .modal--confirm {
-	width: 500px;	
+	width: 500px;
 }
 
 .modal--activate {
@@ -247,7 +247,7 @@
 	}
 
 	.modal__wrapper {
-		width: 480px;		
+		width: 480px;
 
 		// @media @tablet {
 		// 	width: 440px;
@@ -351,7 +351,7 @@
 		// 	padding-top: 0;
 		// 	padding-bottom: 0;
 		// }
-	}	
+	}
 
 	&__label-checkbox {
 		display: inline-block;
@@ -585,7 +585,7 @@
 	}
 }
 
-.modal-form--enter {	
+.modal-form--enter {
 	width: 350px;
 
 	.modal-form__input {
@@ -669,15 +669,15 @@
 		background-size: 100%;
 	}
 
-	&__soc--fb {		
+	&__soc--fb {
 		background-image: url('../../img/social-icons/facebook.png');
 	}
 
-	&__soc--vk {		
+	&__soc--vk {
 		background-image: url('../../img/social-icons/vk.png');
 	}
 
-	&__soc--tw {		
+	&__soc--tw {
 		background-image: url('../../img/social-icons/twitter.png');
 	}
 }
@@ -784,7 +784,7 @@
 	// @media @mobile {
 	// 	width: ~"calc(100% - 20px)";
 	// }
-	
+
 	&__wrapper {
 		padding: 30px 20px;
 		padding-right: 5px;
@@ -828,7 +828,7 @@
 
 		a {
 			display: inline-block;
-			color: #cccccc;			
+			color: #cccccc;
 			border-bottom: 1px dashed #cccccc;
 		}
 	}

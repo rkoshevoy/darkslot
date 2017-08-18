@@ -40,7 +40,7 @@
 		}
 
 		// @media @mobile {
-		// 	padding: 10px 12px; 
+		// 	padding: 10px 12px;
 		// }
 	}
 
@@ -70,7 +70,7 @@
 	width: 100%;
 
 	// @media @mobile {
-	// justify-content: space-between;	
+	// justify-content: space-between;
 	// }
 
 	&__item {
@@ -84,9 +84,9 @@
 			margin-right: 0;
 		}
 
-		&:last-child {
-			display: none;
-		}
+		// &:last-child {
+		// 	display: none;
+		// }
 
 		// @media @tablet {
 		// 	width: 240px;
