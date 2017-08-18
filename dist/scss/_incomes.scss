@@ -1,0 +1,156 @@
+.incomes {
+	background-image: url('../../img/bg-deposites.png');
+	background-position: bottom;
+	background-size: cover;
+
+	&__wrapper {
+		// width: 1180px;
+		// margin: 0 auto;
+		padding-bottom: 100px;
+
+		// @media @tablet {
+		// 	width: 748px;
+		// }
+
+		// @media @mobile {
+		// 	.mobile-wrap;
+		// 	padding-bottom: 40px;
+		// } 
+	}
+
+	&__header {
+		position: relative;
+		margin-bottom: 30px;
+		font-family: SFUIHeavy;
+		font-size: 39px;
+		text-align: center;
+
+		&::after {
+			content: '';
+			position: absolute;
+			top: -10px;
+			left: calc(50% - 164px);
+			z-index: -1;
+			width: 328px;
+			height: 70px;
+			background-color: $secondary-color;
+			opacity: 0.8;
+		}
+
+		// @media @mobile {
+		// 	font-size: 30px;
+		// }
+	}
+
+	&__underheader {
+		margin-bottom: 95px;
+		font-family: SFUIHeavy;
+		font-size: 30px;
+		text-align: center;
+
+		// @media @mobile {
+		// 	margin-bottom: 40px;
+		// 	font-size: 24px;
+		// }
+	}
+
+	&__levels-wrapper {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;		
+		margin-bottom: 60px;
+	}
+
+	&__button-wrapper {
+		width: 100%;
+		text-align: center;
+	}
+
+	&__button {
+		display: inline-block;
+		margin: 0 auto;
+		padding: 30px 55px;
+		background-color: $main-color;
+		font-family: SFUIBold;
+		font-size: 18px;
+
+		&:hover {
+			background-color: $main-color-hover;
+		}
+	}
+}
+
+.income {
+	position: relative;
+	min-height: 200px;
+	width: 380px;
+	padding-left: 125px;
+	padding-top: 70px;
+	background-position: left top;
+
+	&::before {
+		content: '';
+		position: absolute;
+		z-index: 1;
+		top: 87px;
+		left: 65px;
+		width: 50px;
+		height: 2px;
+		background-color: #fff;
+	}
+
+	&::after {
+		content: '';
+		position: absolute;
+		z-index: 0;
+		top: 45px;
+		left: 90px;
+		width: 135px;
+		height: 135px;
+		background-color: $main-color;
+		opacity: 0.8;
+	}
+
+	// @media @tablet {
+	// 	width: 340px;
+	// 	margin: 0 auto;
+	// }
+
+	// @media @mobile {
+	// 	width: 100%;
+	// 	max-width: 340px
+	// }
+
+	&__header {
+		position: relative;
+		z-index: 1;
+		margin-bottom: 20px;
+		font-family: SFUIHeavy;
+		font-size: 29px;
+	}
+
+	&__text {
+		position: relative;
+		z-index: 1;
+		font-size: 16px;	
+		line-height: 30px;
+	}
+}
+
+.income--first {
+	background-image: url('../../img/coins.png');
+	background-position: left 25px;
+}
+
+.income--second {
+	background-image: url('../../img/coins-in-bag.png');
+	background-position: left 15px;
+}
+
+.income--third {
+	background-image: url('../../img/chest-coins.png');
+
+	// @media @tablet {
+	// 	background-position: left;
+	// }
+}

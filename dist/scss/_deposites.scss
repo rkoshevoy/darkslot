@@ -1,0 +1,84 @@
+.deposites {
+	background-image: url('../../img/bg-deposites.png');
+	background-size: cover;
+	background-position: bottom;
+
+	&__wrapper {
+		position: relative;
+		padding-top: 230px;
+		padding-bottom: 170px;
+		// width: 1180px;
+		// margin: 0 auto;
+
+		// @media @tablet {
+		// 	width: 748px;
+		// }
+
+		// @media @mobile {
+		// 	.mobile-wrap;
+		// 	text-align: center;
+		// 	padding-top: 100px;
+		// 	// padding-bottom: 400px;
+		// }
+	}
+
+	&__header {
+		width: 50%;
+		margin-bottom: 40px;
+		font-size: 40px;
+		line-height: 60px;
+
+		// @media @tablet {
+		// 	width: 100%;
+		// }
+
+		// @media @mobile {
+		// 	font-size: 32px;
+		// 	line-height: 40px;
+		// }
+	}
+
+	&__button {
+		display: block;
+		width: 280px;
+		padding: 25px;
+		background-color: $main-color;
+		font-family: SFUIBold;
+		font-size: 18px;
+		text-align: center;
+
+		&:hover {
+			background-color: $main-color-hover;
+		}
+
+		// @media @mobile {
+		// 	max-width: 100%;
+		// 	margin: 0 auto;
+		// }
+	}
+
+	&__image-wrapper {
+		position: absolute;
+		top: 220px;
+		right: 0;
+
+		// @media @tablet {
+		// 	top: auto;
+		// 	bottom: 50px;
+		// 	width: 300px;
+		// }
+
+		// @media @mobile {
+		// 	display: none;
+		// 	// width: 300px;
+		// 	// left: 50%;
+		// 	// right: auto;
+		// 	// bottom: 90px;
+		// 	// transform: translatex(-50%);
+		// }
+	}
+
+	&__image {
+		width: 100%;
+	}
+}

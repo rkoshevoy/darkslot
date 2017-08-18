@@ -1,0 +1,346 @@
+.everyweek-cashback {
+	background-image: url('../../img/money-bg-3.png');
+	background-size: contain;
+	background-position: top;
+
+	&__wrapper {
+		position: relative;
+		// width: 1180px;
+		// margin: 0 auto;
+		padding-top: 240px;
+		padding-bottom: 50px;
+		text-align: center;
+
+		// @media @tablet {
+		// 	width: 748px;
+		// 	padding-top: 100px;
+		// }
+
+		// @media @mobile {
+		// 	.mobile-wrap;
+		// }
+	}
+
+	&__header {
+		position: relative;
+		z-index: 1;
+		margin-bottom: 70px;
+		font-size: 36px;
+		text-transform: uppercase;
+		font-family: SFUIHeavy;
+
+		// @media @mobile {
+		// 	margin-bottom: 40px;
+		// 	font-size: 26px;
+		// }
+	}
+
+	&__back-text {
+		position: absolute;
+		z-index: 0;
+		top: 190px;
+		left: 50%;
+		transform: translatex(-50%);
+		font-size: 120px;
+		color: #151515;
+		text-transform: uppercase;
+
+		// @media @tablet {
+		// 	top: 52px;
+		// 	color: #1d1d1d;
+		// }
+
+		// @media @mobile {
+		// 	font-size: 40px;
+		// }
+	}
+
+	&__text {
+		margin-bottom: 65px;
+		font-size: 18px;
+		line-height: 36px;
+
+		// @media @mobile {
+		// 	margin-bottom: 40px;
+		// 	font-size: 16px;
+		// 	line-height: 20px;
+		// }
+
+		span {
+			position: relative;
+
+			&::after {
+				content: '';
+				position: absolute;
+				bottom: -5px;
+				left: 0;
+				width: 100%;
+				height: 3px;
+				background-color: $main-color;
+			}
+
+			// @media @mobile {
+
+			// 	&::after {
+			// 		bottom: -3px;					
+			// 	}
+			// }
+		}
+	}
+
+	&__condition {
+		display: inline-block;
+		padding: 20px;
+		background-color: #333333;
+	}
+
+	&__second-level {
+		display: inline-block;
+		border-bottom: 1px dashed #fff;
+	}
+
+	&__hint {
+		display: inline-block;
+		width: 18px;
+		margin-left: 5px;
+		border-radius: 50%;
+		background-color: $main-color;
+		font-size: 12px;
+		line-height: 18px;
+		cursor: pointer;
+	}
+}
+
+.places {
+	display: flex;
+	justify-content: space-around;
+	margin-bottom: 70px;
+
+	// @media @tablet {
+	// 	flex-wrap: wrap;
+	// }
+
+	// @media @mobile {
+	// 	margin-bottom: 40px;
+	// }
+
+	&__item {
+		width: 320px;
+		padding-top: 40px;
+		padding-bottom: 20px;
+		background-position: center;
+	}
+
+	&__item--second {
+		background-image: url('../../img/second-place.png');
+
+		// @media @tablet {
+		// 	order: 2;
+		// 	width: 50%;
+		// }
+
+		// @media @mobile {
+		// 	width: 100%;
+		// }
+	}
+
+	&__item--first {
+		background-image: url('../../img/first-place.png');
+
+		// @media @tablet {
+		// 	order: 1;
+		// 	width: 100%;
+		// }
+	}
+
+	&__item--third {
+		background-image: url('../../img/third-place.png');
+
+		// @media @tablet {
+		// 	order: 3;
+		// 	width: 50%;
+		// }
+
+		// @media @mobile {
+		// 	width: 100%;
+		// 	padding-top: 20px;
+		// }
+	}
+
+	&__header {
+		font-size: 60px;
+	}
+
+	&__bottom-text {
+		font-size: 18px;
+	}
+}
+
+.broadcast {
+	background-color: #1a1a1a;
+
+	&__wrapper {
+		display: flex;
+		// width: 1180px;
+		// margin: 0 auto;
+		padding: 80px 0;
+
+		// @media @tablet {
+		// 	flex-wrap: wrap;
+		// 	width: 748px;
+		// }
+
+		// @media @mobile {
+		// 	.mobile-wrap;	
+		// 	padding: 40px 10px;
+		// }
+	}
+
+	&__text-wrapper {
+		width: 100%;
+
+		// @media @tablet {
+		// 	margin-bottom: 30px;
+		// 	text-align: center;
+		// }
+	}
+
+	&__header {
+		width: 540px;
+		margin-bottom: 40px;
+		font-size: 20px;
+		line-height: 37px;
+		font-family: SFUIBold;
+		text-transform: uppercase;
+
+		// @media @tablet {
+		// 	width: 100%;
+		// }
+
+		// @media @mobile {
+		// 	font-size: 18px;
+		// 	line-height: 22px;
+		// }
+	}
+
+	&__video-wrapper {
+		flex-shrink: 0;
+		width: 580px;
+		height: 330px;
+		background-color: #141414;
+
+		// @media @tablet {
+		// 	width: 100%;
+		// 	height: 470px;
+		// }
+
+		// @media @mobile {
+		// 	height: 60vw;
+		// }
+	}
+
+	&__button {
+		width: 345px;
+		padding: 25px;
+		background-color: $secondary-color;
+		font-family: SFUIBold;
+		font-size: 16px;
+
+		&:hover {
+			background-color: $secondary-color-hover;
+		}
+
+		// @media @mobile {
+		// 	max-width: 100%;
+		// }
+	}
+}
+
+.cashback-image-wrapper {
+	background-image: url('../../img/live-casino-girl.jpg');
+	background-size: 100%;
+}
+
+.cashback-description {
+
+	&__wrapper {
+		// width: 1180px;
+		// margin: 0 auto;
+		padding-top: 40px;
+		text-align: center;
+
+		// @media @tablet {
+		// 	width: 748px;
+		// }
+
+		// @media @mobile {
+		// 	.mobile-wrap;
+		// }
+	}
+
+	&__header {
+		position: relative;
+		display: inline-block;
+		margin-bottom: 20px;
+		text-align: center;
+		font-size: 36px;
+		text-transform: uppercase;
+
+		&::after {
+			content: '';
+			position: absolute;
+			left: 0;
+			bottom: -3px;
+			width: 100%;
+			height: 4px;
+			background-color: $main-color;
+		}
+	}
+
+	&__bottom {
+		display: block;
+		float: right;
+		width: 540px;
+		margin-bottom: 10px;
+		padding: 50px 20px;
+		background-color: #191919;
+		font-family: SFUIHeavy;
+		font-size: 14px;
+		line-height: 22px;
+
+		// @media @mobile {
+		// 	width: 100%;
+		// }
+	}
+
+	&__text-wrapper {
+		width: 800px;
+		margin: 0 auto;
+		margin-bottom: 20px;
+
+		// @media @tablet {
+		// 	width: 100%;
+		// }
+	}
+
+	&__text {
+		font-size: 24px;
+		text-transform: uppercase;
+		line-height: 22px;
+		text-align: center;
+
+		span {
+			position: relative;
+
+			&::after {
+				content: '';
+				position: absolute;
+				bottom: -3px;
+				left: 0;
+				width: 100%;
+				height: 3px;
+				background-color: $main-color;
+			}
+		}
+	}
+}
