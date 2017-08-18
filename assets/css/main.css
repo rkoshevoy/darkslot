@@ -8481,7 +8481,8 @@ button.close {
 .registration {
   background-image: url("../../img/wood-bg.png");
   background-size: cover;
-  background-position: bottom; }
+  background-position: bottom;
+  position: relative; }
   .registration__wrapper {
     position: relative;
     display: -webkit-box;
