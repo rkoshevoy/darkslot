@@ -1,0 +1,70 @@
+.levels-ability {
+	background-color: #191919;
+
+	&__wrapper {
+		// width: 1180px;
+		// margin: 0 auto;
+		padding-top: 50px;
+		padding-bottom: 50px;
+
+		// @media @tablet {
+		// 	width: 748px;
+		// }
+
+		// @media @mobile {
+		// 	.mobile-wrap;
+		// }
+	}
+}
+
+.ability-table {
+	width: 100%;
+	border-collapse: collapse;
+	font-size: 14px;
+	font-family: SFUIMedium;
+	border: 1px solid #474747;
+
+	&__header {
+		background-color: $secondary-color;
+	}
+
+	&__row {
+		border-bottom: 1px solid #474747;
+	}
+
+	&__cell {
+		width: 120px;
+		padding: 20px;
+		text-align: center;
+
+		&:first-child {			
+			width: 720px;
+			text-align: left;
+		}
+
+		// @media @tablet {	
+
+		// 	&:first-child {			
+		// 		width: 300px;	
+		// 	}	
+		// }
+
+		// @media @mobile {
+		// 	padding: 10px;
+		// }
+
+		img {
+			width: 30px;
+
+			// @media @mobile {
+			// 	width: 20px;
+			// }
+		}
+
+		// span {
+		// 	@media @mobile {
+		// 		display: none;
+		// 	}
+		// }
+	}
+}

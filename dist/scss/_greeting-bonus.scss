@@ -1,0 +1,130 @@
+.greeting-bonus {
+	background-image: url('../../img/money-bg.png');
+	background-size: cover;
+
+	&__wrapper {
+		display: flex;
+		flex-wrap: wrap;
+		// width: 1180px;
+		// margin: 0 auto;
+		padding-top: 110px;
+
+		// @media @tablet {
+		// 	justify-content: space-around;
+		// 	width: 748px;
+		// 	padding-top: 60px;
+		// }
+
+		// @media @mobile {
+		// 	.mobile-wrap;
+		// }
+	}
+
+	&__header {
+		width: 100%;
+		margin-bottom: 10px;
+		font-size: 30px;
+		font-family: SFUIBold;
+		text-align: center;
+		text-transform: uppercase;
+
+		// @media @mobile {
+		// 	font-size: 22px;
+		// }
+	}
+
+	&__count {
+		display: block;
+		width: 100%;
+		margin-bottom: 60px;
+		font-family: SFUIHeavy;
+		font-size: 100px;
+		text-align: center;
+
+		// @media @mobile {
+		// 	font-size: 40px;
+		// }
+	}
+
+	&__button-wrapper {
+		width: 100%;
+		margin-bottom: 90px;
+		text-align: center;
+
+		// @media @tablet {
+		// 	margin-bottom: 50px;
+		// }
+	}
+
+	&__button {
+		width: 380px;
+		padding: 28px;
+		font-family: SFUIBold;
+		font-size: 18px;
+		background-color: $main-color;
+
+		&:hover {
+			background-color: $main-color-hover;
+		}
+
+		// @media @mobile {
+		// 	max-width: 100%;
+		// }
+	}
+}
+
+.deposit {
+	width: 33.33%;
+	margin-bottom: 100px;
+	padding-left: 120px;
+
+	// @media @tablet {
+	// 	width: 50%;
+	// 	margin-bottom: 50px;
+	// }
+
+	// @media @mobile {
+	// 	width: auto;
+	// 	min-height: 80px;
+	// }
+
+	&__percents {
+		display: block;
+		font-family: SFUIBold;
+		font-size: 40px;
+
+		// @media @mobile {
+		// 	font-size: 26px
+		// }
+	}
+
+	&__number {
+		display: block;
+		font-family: SFUIThin;
+		font-size: 25px;
+		text-transform: uppercase;
+
+		// @media @mobile {
+		// 	font-size: 20px
+		// }
+	}
+
+	&__undertext {
+		display: block;
+		font-family: SFUIThin;
+		font-size: 15px;		
+	}
+}
+
+.deposit--first {
+	background-image: url('../../img/coins.png');
+	background-size: 92px;
+}
+
+.deposit--second {
+	background-image: url('../../img/coins-less.png');
+}
+
+.deposit--third {
+	background-image: url('../../img/coins-many.png');
+}

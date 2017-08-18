@@ -1,0 +1,282 @@
+.day-slot-image {
+	width: 100%;
+
+	// @media @mobile {
+	// 	position: relative;
+	// 	height: 55vw;
+	// 	overflow: hidden;
+	// }
+
+	&__inner {
+		width: 100%;
+
+		// @media @mobile {
+		// 	position: absolute;
+		// 	left: -35%;
+		// 	width: 170%;
+		// }
+	}
+}
+
+.day-slot {
+	background-image: url('../../img/money-bg-2.png');
+	background-size: contain;
+
+	&__wrapper {
+		// width: 1180px;
+		// margin: 0 auto;
+		padding-top: 80px;
+		padding-bottom: 110px;
+
+		// @media @tablet {
+		// 	width: 748px;
+		// }
+
+		// @media @mobile {
+		// 	.mobile-wrap;
+		// 	padding-top: 30px;
+		// 	padding-bottom: 40px;
+		// }
+	}
+}
+
+.half-cashback {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+
+	&__text-wrapper {
+		width: 530px;
+		margin-bottom: 100px;
+
+		// @media @tablet {
+		// 	width: 400px;
+		// }
+
+		// @media @mobile {
+		// 	width: 100%;
+		// 	margin-bottom: 40px;
+		// 	text-align: center;
+		// }
+	}
+
+	&__header {
+		margin-bottom: 20px;
+		font-family: SFUIHeavy;
+		font-size: 36px;
+		line-height: 64px;
+
+		// @media @tablet {
+		// 	font-size: 26px;
+		// 	line-height: 40px;
+		// }
+	}
+
+	&__text {
+		font-size: 15px;
+		line-height: 31px;
+
+		// @media @mobile {
+		// 	line-height: 20px;
+		// }
+	}
+
+	&__image {
+		width: 430px;
+		height: 220px;
+		background-color: #181818;
+
+		// @media @tablet {
+		// 	width: 300px;
+		// 	height: 180px;
+		// }
+
+		// @media @mobile {
+		// 	width: 100%;
+		// 	margin-bottom: 40px;
+		// }
+	}
+
+	&__button-wrapper {
+		width: 100%;
+		text-align: center;
+	}
+
+	&__button {
+		width: 280px;
+		margin: 0 auto;
+		margin-bottom: 75px;
+		padding: 25px;
+		background-color: $main-color;
+		font-family: SFUIBold;
+		font-size: 18px;
+
+		&:hover {
+			background-color: $main-color-hover;
+		}
+
+		// @media @mobile {
+		// 	max-width: 100%;
+		// 	margin-bottom: 40px;
+		// }
+	}
+
+	&__article-wrapper {
+		width: 980px;
+		margin: 0 auto;
+		margin-bottom: 50px;
+		text-align: center;
+	}
+
+	&__article {
+		font-size: 16px;
+		line-height: 29px;
+
+		// @media @mobile {
+		// 	line-height: 20px;
+		// }
+	}
+
+	&__button-details {
+		width: 280px;
+		padding: 25px;
+		border: 2px solid $secondary-color;
+		background-color: transparent;
+		font-family: SFUIBold;
+		font-size: 18px;
+
+		&:hover {
+			background-color: $secondary-color-hover;
+		}
+
+		// @media @mobile {
+		// 	max-width: 100%;
+		// }
+	}
+}
+
+.cashback-games {
+
+	&__wrapper {
+		width: 980px;
+		padding-bottom: 120px;
+		margin: 0 auto;
+
+		// @media @tablet {
+		// 	width: 748px;
+		// }
+
+		// @media @mobile {
+		// 	.mobile-wrap;
+		// 	padding-bottom: 40px;
+		// }
+	}
+
+	&__header {
+		margin-bottom: 30px;
+		font-size: 36px;
+		font-family: SFUIHeavy;
+		text-align: center;
+
+		// @media @mobile {
+		// 	margin-bottom: 20px;
+		// 	font-size: 26px;
+		// }
+	}
+
+	&__text {
+		margin-bottom: 70px;
+		font-size: 16px;
+		line-height: 29px;
+		text-align: center;
+
+		// @media @mobile {
+		// 	margin-bottom: 40px;
+		// 	font-size: 20px;
+		// }
+	}
+}
+
+.cashback-game {
+	margin-bottom: 25px;
+	padding: 20px;
+	background-color: #1c1c1c;
+
+	&__wrapper {
+		display: flex;
+
+		// @media @mobile {
+		// 	width: 100%;
+		// 	flex-wrap: wrap;
+		// }
+	}
+
+	&__text-wrapper {
+		width: 100%;
+		padding-right: 20px;	
+
+		// @media @mobile {
+		// 	order: 2;
+		// 	padding-right: 0;
+		// 	text-align: center;
+		// }	
+	}
+
+	&__date-wrapper {
+		padding-left: 55px;
+		margin-bottom: 21px;
+		background-image: url('../../img/mini-calendar.png');
+		text-align: left;
+	}
+
+	&__date {
+		display: block;
+		font-size: 16px;
+		line-height: 22px;
+		font-family: SFUIMedium;
+	}
+
+	&__period {
+		display: block;
+		font-size: 14px;
+		line-height: 22px;
+		color: #999999;
+	}
+
+	&__image {
+		flex-shrink: 0;
+		width: 340px;
+		height: 180px;
+		background-color: #161616;
+
+		// @media @mobile {
+		// 	order: 1;
+		// 	width: 100%;
+		// 	margin-bottom: 20px;
+		// }
+	}
+
+	&__header {
+		margin-bottom: 27px;
+		font-size: 24px;
+		font-family: SFUIBold;
+		text-transform: uppercase;
+	}
+
+	&__button {
+		width: 230px;
+		margin: 0 auto;
+		padding: 20px;
+		background-color: $main-color;
+		font-family: SFUIBold;
+		font-size: 16px;
+
+		&:hover {
+			background-color: $main-color-hover;
+		}
+
+		// @media @mobile {
+		// 	max-width: 100%;
+		// }
+	}
+}

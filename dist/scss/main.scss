@@ -1,3 +1,153 @@
 @import "_variables.scss";
+@import "_fonts.scss";
+@import "_header.scss";
+@import "_slider.scss";
+@import "_tabs.scss";
+@import "_jackpot.scss";
+@import "_last-winners.scss";
+@import "_popular-games.scss";
+@import "_deposites.scss";
+@import "_games.scss";
+@import "_partners.scss";
+@import "_footer.scss";
+@import "_fixed-bar.scss";
+@import "_blog.scss";
+@import "_entry.scss";
+@import "_partner.scss";
+@import "_advantages.scss";
+@import "_incomes.scss";
+@import "_prize.scss";
+@import "_modals.scss";
+@import "_error.scss";
+@import "_registration-form-mini.scss";
+@import "_registration.scss";
+@import "_greeting-bonus.scss";
+@import "_cashback.scss";
+@import "_bonus-more.scss";
+@import "_day-slot.scss";
+@import "_free-spins.scss";
+@import "_timer.scss";
+@import "_condition.scss";
+@import "_everyweek-cashback.scss";
+@import "_about.scss";
+@import "_reload-bonus.scss";
+@import "_tournament.scss";
+@import "_levels.scss";
+@import "_levels-ability.scss";
+
 
 @import "dist/bootstrap/assets/stylesheets/_bootstrap.scss";
+
+
+body {
+	color: #fff;
+	font-family: SFUIRegular;
+	overflow-x: hidden;
+}
+
+* {	
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	background-repeat: no-repeat;
+}
+
+a {
+	text-decoration: none;
+	color: #fff;
+}
+
+button {
+	border: none;
+	color: #fff;
+	cursor: pointer;
+	outline: none;
+	transition: 0.1s;
+}
+
+form { 
+
+	* {
+		-webkit-appearance: none;
+		outline: none;
+		border-radius: 0;
+	}
+}
+
+.main-wrapper {
+	margin-top: 50px;
+	padding-bottom: 50px;
+	background-color: #232323;
+
+	@media (min-width: 788px) {
+		margin-top: 77px;
+	}
+}
+
+.main-wrapper--triangles {	
+	background-image: url('../../img/main-bg.jpg');
+	background-repeat: repeat;
+}
+
+.hidden {
+	display: none;
+}
+
+#preloader {
+	display: block;
+	position: fixed;
+	z-index: 99999;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: url('../../img/preloader.gif') center center no-repeat;
+	background-size: 100% auto;
+	background-color: #0b0b12;
+
+	@media (min-width: 788px) {
+		background-size: 600px;
+	}
+}
+
+.buttons-level {
+
+	&__wrapper {
+		display: flex;
+		justify-content: space-between;
+		flex-wrap: wrap;
+		// width: 1180px;
+		// margin: 0 auto;
+		padding-top: 20px;
+		padding-bottom: 20px;
+
+		// @media @tablet {
+		// 	width: 748px;
+		// }
+
+		// @media @mobile {
+		// 	.mobile-wrap;
+		// }
+	}
+
+	&__button {
+		width: 30%;
+		margin-bottom: 10px;
+		padding: 20px;		
+		background-color: $main-color;
+		font-family: SFUIBold;
+		font-size: 18px;
+
+		&:hover {
+			background-color: $main-color-hover;
+		}
+
+		// @media @tablet {
+		// 	margin-bottom: 10px;
+		// }
+
+		// @media (max-width: 550px) {			
+		// 	width: 100%;
+		// }
+	}
+}

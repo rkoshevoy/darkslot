@@ -1,0 +1,147 @@
+.reload-bonus {
+	background-image: url('../../img/chips-bg.png');
+	background-size: cover;
+
+	&__wrapper {
+		// width: 1180px;
+		// margin: 0 auto;
+		padding-top: 90px;
+
+		// @media @tablet {
+		// 	width: 748px;
+		// } 
+
+		// @media @mobile {
+		// 	.mobile-wrap;
+		// 	padding-top: 40px;
+		// }
+	}
+
+	&__header {
+		position: relative;
+		z-index: 1;
+		margin-bottom: 70px;
+		font-size: 48px;
+		font-family: SFUIHeavy;
+		text-transform: uppercase;
+
+		&::after {
+			content: '';
+			position: absolute;
+			z-index: -1;
+			left: -15px;
+			top: -20px;
+			width: 520px;
+			height: 100px;
+			background-color: $main-color;
+			transform: rotate(-1deg);
+		}
+
+		// @media @mobile {
+		// 	margin-bottom: 30px;
+		// 	padding-top: 10px;
+		// 	padding-bottom: 10px;
+		// 	font-size: 32px;
+		// 	background-color: #ed383f;
+		// 	text-align: center;
+
+		// 	&::after {
+		// 		display: none;
+		// 	}
+		// }
+	}
+
+	&__text-wrapper {
+		width: 800px;		
+		margin-bottom: 80px;
+
+		// @media @tablet {
+		// 	width: 100%;
+		// 	margin-bottom: 40px;
+		// }
+	}
+
+	&__text {
+		font-size: 24px;
+		line-height: 44px;
+
+		// @media @mobile {
+		// 	font-size: 18px;
+		// 	line-height: 22px;
+		// 	text-align: center;
+		// }
+	}
+}
+
+.levels {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	margin-bottom: 70px;
+
+	// @media @tablet {
+	// 	margin-bottom: 40px;
+	// }
+}
+
+.level {
+	position: relative;
+	width: 280px;
+	background-color: #181818;
+
+	// @media @tablet {
+	// 	width: 365px;
+	// 	margin-bottom: 20px;
+	// }
+
+	// @media @mobile {
+	// 	width: ~"calc(50% - 10px)";
+	// }
+
+	// @media (max-width: 550px) {
+	// 	width: 100%;
+	// }
+
+	&__text-wrapper {
+		position: relative;
+		z-index: 1;
+		padding: 35px 30px;
+
+		> * {		
+			display: block;
+		}
+	}
+
+	&__up-text {
+		margin-bottom: 5px;
+		font-size: 24px;
+		font-family: SFUIBold;
+	}
+
+	&__money-amount {
+		font-size: 40px;
+		font-family: SFUIHeavy;
+	}
+
+	&__description {
+		position: absolute;
+		right: -25px;
+		bottom: 45px;
+		font-size: 16px;
+		font-family: SFUIMedium;
+		color: #393939;
+		text-transform: uppercase;
+		transform: rotate(-90deg);
+	}
+
+	&__image-wrapper {
+		position: absolute;
+		z-index: -1;
+		top: -45px;
+		left: 20px;
+	}
+
+	&__image {
+		width: 100%;
+	}
+}
