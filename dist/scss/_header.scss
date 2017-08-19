@@ -5,73 +5,24 @@
 	width: 100%;
 	background-color: #161616;
 
-	&__wrapper {
-		display: flex;
-		align-items: center;
-		justify-content: space-between;
-		// width: 1180px;
-		// margin: 0 auto;
-
-		// @media @tablet {
-		// 	width: 748px;
-		// }
-
-		// @media @mobile {
-		// 	.mobile-wrap;
-		// 	padding-top: 5px;
-		// 	padding-bottom: 5px;
-		// }
-	}
-
-	&__buttons {
-		// display: none;
-	}
-
-	&__authorized {
-		display: none;
-		// display: flex;
-		font-size: 14px;
-
-		// @media (max-width: 788px) {
-		// 	display: none;
-		// }
-	}
-
-	&__first-button {
-		padding: 15px 20px;
-		margin-top: 15px;
-		margin-bottom: 15px;
-		margin-right: 10px;
-		background-color: $main-color;
-		transition: 0.1s;
-		font-size: 16px;
-
+	&__auth {
 		&:hover {
-			background-color: $main-color-hover;
+			background: transparent !important;
 		}
 
-		// @media (max-width: 788px) {
-		// 	display: none;
-		// }
-	}
-	
-	&__second-button {
-		padding: 12px 20px;
-		margin-top: 15px;
-		margin-bottom: 15px;
-		transition: 0.1s;
-		font-size: 16px;
-		background-color: transparent;
-		border: 3px solid $secondary-color;
-
-		&:hover {
-			border: 3px solid $secondary-color-hover;
-			background-color: $secondary-color-hover;
+		button:first-of-type {
+			margin-right: 15px;
 		}
+	}
 
-		// @media (max-width: 788px) {
-		// 	display: none;
-		// }
+	&__deposit-btn {
+		&:hover {
+			background: transparent !important;
+		}
+	}
+
+	.btn {
+		margin: 15px 0;
 	}
 
 	&__auth-user {
@@ -92,7 +43,7 @@
 
 			&::after {
 				border-color: #fff;
-			}	
+			}
 
 			.header__dropdown {
 
@@ -131,7 +82,7 @@
 			width: 15px;
 			height: 15px;
 			border-radius: 50%;
-			background-color: $main-color; 
+			background-color: $main-color;
 			font-size: 10px;
 			line-height: 15px;
 			text-align: center;
@@ -205,7 +156,7 @@
 	// 	width: 100%;
 	// 	justify-content: space-between;
 	// 	align-items: center;
-	// } 
+	// }
 
 	&__mobile-reg {
 		padding: 5px 0;
@@ -221,7 +172,7 @@
 		display: inline-block;
 		width: 160px;
 		height: 40px;
-		margin-right: 30px; 
+		margin-right: 30px;
 		background-image: url('../../img/logo.png');
 		background-position: center;
 
@@ -269,7 +220,7 @@
 	}
 
 	&__search-field {
-		display: block; 
+		display: block;
 		height: 30px;
 		width: 30px;
 		border: none;
@@ -425,7 +376,7 @@
 			span {
 				display: block;
 			}
-		}			
+		}
 	}
 
 	&__item--first,
@@ -564,7 +515,7 @@
 
 				&::after {
 					transform: rotate(45deg);
-				}			
+				}
 			}
 		}
 
@@ -575,7 +526,7 @@
 				&::after {
 					border-color: #fff;
 				}
-			}			
+			}
 		}
 	}
 }

@@ -7,7 +7,14 @@
 // 	padding-left: 10px;
 // }
 
+$text-color: #fff;
+$bg-color: #161616;
 $main-color: #ed383f;
 $main-color-hover: #de3137;
 $secondary-color: #005fdc;
 $secondary-color-hover: #0257c8;
+
+// bootstrap rewrite
+$btn-danger-color:    #fff !default;
+$btn-danger-bg:       $main-color !default;
+$btn-danger-border:   $btn-danger-bg !default;
