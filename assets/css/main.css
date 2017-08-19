@@ -6382,29 +6382,26 @@ button.close {
       background-color: #ed383f;
       -webkit-transition: 0.1s;
       transition: 0.1s; }
-      .switchers__switcher:hover .switchers__image {
-        background-image: url("../../img/sprite-hover.png"); }
   .switchers__switcher--active {
     background-color: #ed383f; }
-    .switchers__switcher--active .switchers__image {
-      background-image: url("../../img/sprite-hover.png"); }
   .switchers__image {
     position: absolute;
     top: 22px;
     left: 10px;
     width: 35px;
     height: 35px;
-    background-image: url("../../img/sprite.png");
     -webkit-transition: 0.1s;
     transition: 0.1s; }
   .switchers__image--first {
-    background-position: -58px 0; }
+    background-image: url("../../img/games-icons/diamond.png"); }
+  .switchers__image--second {
+    background-image: url("../../img/games-icons/cherry.png"); }
   .switchers__image--third {
-    background-position: -112px 0; }
+    background-image: url("../../img/games-icons/bag.png"); }
   .switchers__image--fourth {
-    background-position: -166px 0; }
+    background-image: url("../../img/games-icons/cubes.png"); }
   .switchers__image--fifth {
-    background-position: -222px 0; }
+    background-image: url("../../img/games-icons/roulette.png"); }
 
 .tab {
   display: none;
@@ -7696,8 +7693,48 @@ button.close {
   border: 0; }
 
 .modal-title {
+  position: relative;
   text-transform: uppercase;
   font-size: 2em; }
+  .modal-title .level-up-number {
+    position: absolute;
+    font-size: 150px;
+    color: #56c074;
+    font-family: SFUIHeavy; }
+  .modal-title .level-up-number-first {
+    color: #56c074; }
+  .modal-title .level-up-number-second {
+    color: #d6712d; }
+  .modal-title .level-up-number-third {
+    color: #c2c2c2; }
+  .modal-title .level-up-greeting {
+    display: block;
+    font-size: 26px;
+    font-family: SFUILight;
+    white-space: pre; }
+  .modal-title .level-up-level {
+    display: block;
+    font-size: 30px;
+    font-family: SFUIHeavy;
+    text-transform: uppercase;
+    text-transform: uppercase; }
+  .modal-title .level-ability {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 250px;
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px dashed #005fdc;
+    text-align: center; }
 
 .modal-dialog {
   display: table;
@@ -7726,6 +7763,12 @@ button.close {
   .ds-fl-content-bg .ds-modal-img {
     display: block; }
 
+.ds-fl-content-level {
+  max-width: none;
+  width: 840px; }
+  .ds-fl-content-level .modal-body {
+    padding: 20px; }
+
 .ds-modal-img-wrap {
   max-width: 400px;
   max-height: 400px; }
@@ -7735,6 +7778,11 @@ button.close {
   position: relative;
   bottom: 10px;
   left: -30px; }
+
+.modal-footer {
+  padding: 0;
+  border: none;
+  background-color: #1f2021; }
 
 .modal__character-wrapper {
   position: absolute; }
@@ -9702,8 +9750,7 @@ button.close {
     width: 560px; }
 
 .level-up {
-  padding: 40px 25px;
-  padding-top: 80px; }
+  padding-top: 10px; }
   .level-up__header-wrapper {
     position: absolute;
     left: 20px;
@@ -9749,6 +9796,44 @@ button.close {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap; }
 
+.level-up-header {
+  position: absolute;
+  left: 0;
+  top: -90px; }
+
+.level-up-header__number {
+  position: relative;
+  top: -25px;
+  font-size: 150px;
+  color: #56c074;
+  font-family: SFUIHeavy; }
+
+.level-up-header__number--first {
+  color: #56c074; }
+
+.level-up-header__number--second {
+  color: #d6712d; }
+
+.level-up-header__number--third {
+  color: #c2c2c2; }
+
+.level-up-header__greeting-wrapper {
+  position: absolute;
+  top: 45px;
+  left: 65px; }
+
+.level-up-header__greeting {
+  display: block;
+  font-size: 26px;
+  font-family: SFUILight;
+  white-space: pre; }
+
+.level-up-header__level {
+  display: block;
+  font-size: 30px;
+  font-family: SFUIHeavy;
+  text-transform: uppercase; }
+
 .level-ability {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -9789,14 +9874,14 @@ button.close {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 25px 30px;
-  background-color: rgba(35, 35, 35, 0.85); }
+  padding: 20px; }
 
 .level-details__text {
   font-size: 14px;
   line-height: 24px;
   color: #d0d0d0;
-  font-family: SFUIRegular; }
+  font-family: SFUIRegular;
+  text-align: left; }
 
 .level-details__bottom-text span {
   display: inline-block;

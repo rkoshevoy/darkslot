@@ -89,8 +89,9 @@
 }
 
 .level-up {
-	padding: 40px 25px;
-	padding-top: 80px;	
+	// padding: 40px 25px;
+	// padding-top: 80px;
+	padding-top: 10px;
 
 	// @media @mobile {
 	// 	padding: 10px;
@@ -200,16 +201,96 @@
 	// }
 }
 
-.level-ability {
-	display: flex;
-	flex-wrap: wrap;
-	align-items: center;
-	justify-content: center;
-	width: 250px;
-	margin-bottom: 20px;
-	padding: 10px;
-	border: 1px dashed $secondary-color;
-	text-align: center;
+.level-up-header {
+	position: absolute;
+	left: 0;
+	top: -90px;
+
+		// @media @mobile {
+		// 	position: relative;
+		// 	top: 0;
+		// 	left: 0;
+		// 	display: flex;
+		// 	align-items: center;
+		// }
+	}
+
+	.level-up-header__number {
+		position: relative;
+		top: -25px;
+		font-size: 150px;
+		color: #56c074;
+		font-family: SFUIHeavy;
+
+		// @media @mobile {
+		// 	display: inline-block;
+		// 	margin-right: 10px;
+		// 	font-size: 60px;
+
+		// 	img {
+		// 		width: 40px;
+		// 	}
+		// }
+	}
+
+	.level-up-header__number--first {
+		color: #56c074;		
+	}
+
+	.level-up-header__number--second {
+		color: #d6712d;		
+	}
+
+	.level-up-header__number--third {
+		color: #c2c2c2;		
+	}
+
+	.level-up-header__greeting-wrapper {
+		position: absolute;
+		top: 45px;
+		left: 65px;
+
+		// @media @mobile {
+		// 	position: relative;
+		// 	top: 0;
+		// 	left: 0;
+		// 	display: inline-block;
+		// }
+	}
+
+	.level-up-header__greeting {
+		display: block;
+		font-size: 26px;
+		font-family: SFUILight;
+		white-space: pre;
+
+		// @media @mobile {
+		// 	font-size: 14px;
+		// 	white-space: normal;
+		// }
+	}
+
+	.level-up-header__level {
+		display: block;
+		font-size: 30px;
+		font-family: SFUIHeavy;
+		text-transform: uppercase;
+
+		// @media @mobile {
+		// 	font-size: 18px;
+		// }
+	}
+
+	.level-ability {
+		display: flex;
+		flex-wrap: wrap;
+		align-items: center;
+		justify-content: center;
+		width: 250px;
+		margin-bottom: 20px;
+		padding: 10px;
+		border: 1px dashed $secondary-color;
+		text-align: center;
 
 	// @media @tablet {
 	// 	width: 205px;
@@ -263,8 +344,9 @@
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
-		padding: 25px 30px;
-		background-color: rgba(35, 35, 35, 0.85);
+		padding: 20px;
+		// padding: 25px 30px;
+		// background-color: rgba(35, 35, 35, 0.85);
 
 		// @media @mobile {
 		// 	flex-wrap: wrap;
@@ -277,6 +359,7 @@
 		line-height: 24px;
 		color: #d0d0d0;
 		font-family: SFUIRegular;
+		text-align: left;
 
 		// @media @mobile {
 		// 	width: 100%;
