@@ -30,7 +30,7 @@
 								<span class="icon-bar"></span>
 								<span class="icon-bar"></span>
 							</button>
-
+							<!-- <a class="navbar-brand" href="index.html"><span class="main-nav__logo"></span></a> -->
 							<a class="navbar-brand ds-logo-wrap" href="index.html">
 								<img src="img/logo.png" alt="darkslot-logo" class="ds-logo">
 							</a>
@@ -69,9 +69,9 @@
 									<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">О нас <span class="caret"></span></a>
 									<ul class="dropdown-menu">
 										<li><a href="about.html">О DarkSlot</a></li>
-										<!-- <li><a href="blog.html">Блог</a></li> -->
-										<li><a href="#" role="button" data-toggle="modal" data-target="#modalRules">Положения и условия</a></li>
-										<li><a href="#" role="button" data-toggle="modal" data-target="#modalPolicy">Политика конфиденциальности</a></li>
+										<li><a href="blog.html">Блог</a></li>
+										<li><a href="#" class="main-nav__dropdown-rules" data-toggle="modal" data-target="#modalRules">Положения и условия</a></li>
+										<li><a href="#" class="main-nav__dropdown-policy" data-toggle="modal" data-target="#modalPolicy">Политика конфиденциальности</a></li>
 									</ul>
 								</li>
 							</ul>
@@ -82,42 +82,69 @@
 									<button type="button" class="btn btn-secondary " data-toggle="modal" data-target="#modalSignIn">Вход</button>
 								</li>
 
-								<li class="dropdown">
+								<li class="dropdown ">
 									<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
 										<span class="header__user-image">
 											<img src="img/user-icon.png" alt="user">
 											<span>2</span>
 										</span> Guest <span class="caret"></span></a>
-									<ul class="dropdown-menu">
-										<li><a href="#">list item</a></li>
-										<li><a href="#">list item</a></li>
-										<li><a href="#">list item</a></li>
-										<li><a href="#">list item</a></li>
-										<li><a href="#">list item</a></li>
-										<li><a href="#">list item</a></li>
-									</ul>
-								</li>
-								<li class="dropdown">
-									<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
-										<span class="header__user-image">
-											<img src="img/user-money.png" alt="money">
-										</span> 200 BTC <span class="caret"></span></a>
 										<ul class="dropdown-menu">
-											<li><a href="#">BTC</a></li>
-											<li><a href="#">EUR</a></li>
-											<li><a href="#">USD</a></li>
-											<li><a href="#">RUB</a></li>
+											<li><a href="#">list item</a></li>
+											<li><a href="#">list item</a></li>
+											<li><a href="#">list item</a></li>
+											<li><a href="#">list item</a></li>
+											<li><a href="#">list item</a></li>
+											<li><a href="#">list item</a></li>
 										</ul>
-								</li>
-								<li class="header__deposit-btn"><button type="button" class="btn btn-secondary">Депозит</button></li>
-							</ul>
-						</div><!-- /.navbar-collapse -->
+									</li>
 
-					</div>
+									<!-- <li class="header__auth-user">
+									<div class="header__user-image">
+										<img src="img/user-icon.png" alt="user">
+										<span>2</span>
+									</div>
+									<span></span>
+									<ul class="header__dropdown">
+									<li class="header__dropdown-item">list item 77777</li>
+									<li class="header__dropdown-item">item 222</li>
+									<li class="header__dropdown-item">item 222</li>
+									<li class="header__dropdown-item">item 222</li>
+									<li class="header__dropdown-item">item 222</li>
+								</ul>
+							</li> -->
+							<li class="dropdown ">
+								<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+									<span class="header__user-image">
+										<img src="img/user-money.png" alt="money">
+									</span> 200 BTC <span class="caret"></span></a>
+									<ul class="dropdown-menu">
+										<li><a href="#">BTC</a></li>
+										<li><a href="#">EUR</a></li>
+										<li><a href="#">USD</a></li>
+										<li><a href="#">RUB</a></li>
+									</ul>
+									<!-- <div class="header__user-image">
+									<img src="img/user-money.png" alt="money">
+									</div>
+									<span>200 BTC</span>
+									<ul class="header__dropdown">
+									<li class="header__dropdown-item">Bitcoin</li>
+									<li class="header__dropdown-item">$$$$$$$$</li>
+									<li class="header__dropdown-item">Евро</li>
+									<li class="header__dropdown-item">item</li>
+									<li class="header__dropdown-item">item</li>
+								</ul> -->
+							</li>
+							<li class="header__deposit-btn"><button type="button" class="btn btn-secondary">Депозит</button></li>
+
+						</ul>
+					</div><!-- /.navbar-collapse -->
+
 				</div>
 			</div>
-		</nav>
-	</header>
+		</div>
+	</nav>
+</header>
 
 <div class="main-wrapper main-wrapper--triangles">
 
@@ -405,7 +432,7 @@
 			</div>
 		</section> -->
 
-		<section id="gamesPannel" class="tabs">
+		<!-- <section id="gamesPannel" class="tabs"> -->
 
 			<nav class="navbar navbar-inverse">
 				<div class="container">
@@ -422,12 +449,12 @@
 
 						<!-- Collect the nav links, forms, and other content for toggling -->
 						<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-							<ul class="nav navbar-nav">
-								<li class="active"><a href="#"><span class="switchers__image switchers__image--first"></span> Лобби <span class="sr-only">(current)</span></a></li>
-								<li><a href="#"><span class="switchers__image switchers__image--second"></span> Слоты</a></li>
-								<li><a href="#"><span class="switchers__image switchers__image--third"> Джекпоты</a></li>
-								<li><a href="#"><span class="switchers__image switchers__image--fourth"> Настольные</a></li>
-								<li><a href="#"><span class="switchers__image switchers__image--fifth"> Live диллер</a></li>
+							<ul class="nav navbar-nav navbar-games">
+								<li class="active navbar-games-item"><a href="#">Лобби<span class="sr-only">(current)</span></a></li>
+								<li class="navbar-games-item"><a href="#">Слоты</a></li>
+								<li class="navbar-games-item"><a href="#">Джекпоты</a></li>
+								<li class="navbar-games-item"><a href="#">Настольные</a></li>
+								<li class="navbar-games-item"><a href="#">Live диллер</a></li>
 							</ul>
 
 							<ul class="nav navbar-nav navbar-right">
@@ -488,7 +515,7 @@
 				</div>
 			</div>
 
-		</section>
+		<!-- </section> -->
 
 		<section class="jackpot">
 			<div class="container">
@@ -793,10 +820,10 @@
 		<div class="container-fluid">
 			<div class="fixed-bar">
 				<div class="fixed-bar__wrapper">
-					<div class="fixed-bar__hider"></div>
+					<!-- <div class="fixed-bar__hider"></div>
 					<div class="fixed-bar__shower hidden">
 						<p>Показать бар</p>
-					</div>
+					</div> -->
 					<div class="fixed-bar__top-games-button"><p id="topGamesBtn">Топ-игры</p></div>
 					<form action="#" class="search">
 						<input type="search" class="search__field" placeholder="Поиск">
@@ -1614,12 +1641,14 @@
 							<div class="modal-header">
 								<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
 								<h4 class="modal-title" id="modalSecondLevelLabel">
-									<Sspan class="level-up-header">
-										<span class="level-up-header__number level-up-header__number--second">2</span>
+									<span class="level-up-header-wrap">
+										<span class="level-up-header">
+											<span class="level-up-header__number level-up-header__number--second">2</span>
 
-										<span class="level-up-header__greeting-wrapper">
-											<span class="level-up-header__greeting">Поздравляем, вы получили</span>
-											<span class="level-up-header__level">Уровень</span>
+											<span class="level-up-header__greeting-wrapper">
+												<span class="level-up-header__greeting">Поздравляем, вы получили</span>
+												<span class="level-up-header__level">Уровень</span>
+											</span>
 										</span>
 									</span>
 								</h4>
@@ -1673,12 +1702,14 @@
 							<div class="modal-header">
 								<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
 								<h4 class="modal-title" id="modalThirdLevelLabel">
-									<Sspan class="level-up-header">
-										<span class="level-up-header__number level-up-header__number--third">3</span>
+									<span class="level-up-header-wrap">
+										<span class="level-up-header">
+											<span class="level-up-header__number level-up-header__number--third">3</span>
 
-										<span class="level-up-header__greeting-wrapper">
-											<span class="level-up-header__greeting">Поздравляем, вы получили</span>
-											<span class="level-up-header__level">Уровень</span>
+											<span class="level-up-header__greeting-wrapper">
+												<span class="level-up-header__greeting">Поздравляем, вы получили</span>
+												<span class="level-up-header__level">Уровень</span>
+											</span>
 										</span>
 									</span>
 								</h4>
@@ -1732,12 +1763,14 @@
 							<div class="modal-header">
 								<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
 								<h4 class="modal-title" id="modalFourthLevelLabel">
-									<Sspan class="level-up-header">
-										<span class="level-up-header__number"><img src="img/knight-with-hair.png" alt=""></span>
+									<span class="level-up-header-wrap">
+										<span class="level-up-header">
+											<span class="level-up-header__number"><img src="img/knight-with-hair.png" alt=""></span>
 
-										<span class="level-up-header__greeting-wrapper">
-											<span class="level-up-header__greeting">Поздравляем, у Вас особый уровень</span>
-											<span class="level-up-header__level">Dark Knight</span>
+											<span class="level-up-header__greeting-wrapper">
+												<span class="level-up-header__greeting">Поздравляем, у Вас особый уровень</span>
+												<span class="level-up-header__level">Dark Knight</span>
+											</span>
 										</span>
 									</span>
 								</h4>

@@ -6436,6 +6436,31 @@ button.close {
   display: -ms-flexbox;
   display: flex; }
 
+.navbar-games-item {
+  background-position: 10px center; }
+  .navbar-games-item a {
+    background-position: 10px center; }
+  .navbar-games-item:first-child a {
+    background-image: url("../../img/games-icons/diamond.png"); }
+    .navbar-games-item:first-child a:hover {
+      background-image: url("../../img/games-icons/diamond-hover.png"); }
+  .navbar-games-item:nth-child(2) a {
+    background-image: url("../../img/games-icons/cherry.png"); }
+    .navbar-games-item:nth-child(2) a:hover {
+      background-image: url("../../img/games-icons/cherry-hover.png"); }
+  .navbar-games-item:nth-child(3) a {
+    background-image: url("../../img/games-icons/bag.png"); }
+    .navbar-games-item:nth-child(3) a:hover {
+      background-image: url("../../img/games-icons/bag-hover.png"); }
+  .navbar-games-item:nth-child(4) a {
+    background-image: url("../../img/games-icons/cubes.png"); }
+    .navbar-games-item:nth-child(4) a:hover {
+      background-image: url("../../img/games-icons/cubes-hover.png"); }
+  .navbar-games-item:last-child a {
+    background-image: url("../../img/games-icons/roulette.png"); }
+    .navbar-games-item:last-child a:hover {
+      background-image: url("../../img/games-icons/roulette-hover.png"); }
+
 .jackpot__wrapper {
   position: relative;
   padding-top: 140px;
@@ -6766,7 +6791,7 @@ button.close {
   position: fixed;
   z-index: 20;
   right: 0;
-  bottom: -1px;
+  bottom: 0;
   width: 100%;
   background-color: #313131;
   -webkit-transition: 0.3s;
@@ -7667,7 +7692,6 @@ button.close {
   border: 0; }
 
 .modal-title {
-  position: relative;
   text-transform: uppercase;
   font-size: 2em; }
   .modal-title .level-up-number {
@@ -9794,6 +9818,10 @@ button.close {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap; }
 
+.level-up-header-wrap {
+  display: block;
+  position: relative; }
+
 .level-up-header {
   position: absolute;
   left: 0;
@@ -9992,6 +10020,9 @@ form * {
 .navbar-inverse {
   background-color: #161616;
   border: 0; }
+
+.navbar-inverse .navbar-games > li > a {
+  padding-left: 50px; }
 
 .navbar-nav > li:hover {
   background-color: black; }
