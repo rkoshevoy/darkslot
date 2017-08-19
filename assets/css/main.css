@@ -5829,42 +5829,14 @@ button.close {
   top: 0;
   width: 100%;
   background-color: #161616; }
-  .header__wrapper {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between; }
-  .header__authorized {
-    display: none;
-    font-size: 14px; }
-  .header__first-button {
-    padding: 15px 20px;
-    margin-top: 15px;
-    margin-bottom: 15px;
-    margin-right: 10px;
-    background-color: #ed383f;
-    -webkit-transition: 0.1s;
-    transition: 0.1s;
-    font-size: 16px; }
-    .header__first-button:hover {
-      background-color: #de3137; }
-  .header__second-button {
-    padding: 12px 20px;
-    margin-top: 15px;
-    margin-bottom: 15px;
-    -webkit-transition: 0.1s;
-    transition: 0.1s;
-    font-size: 16px;
-    background-color: transparent;
-    border: 3px solid #005fdc; }
-    .header__second-button:hover {
-      border: 3px solid #0257c8;
-      background-color: #0257c8; }
+  .header__auth:hover {
+    background: transparent !important; }
+  .header__auth button:first-of-type {
+    margin-right: 15px; }
+  .header__deposit-btn:hover {
+    background: transparent !important; }
+  .header .btn {
+    margin: 15px 0; }
   .header__auth-user {
     position: relative;
     display: -webkit-box;
@@ -6545,13 +6517,11 @@ button.close {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    text-align: center;
-    width: 240px; }
+    text-align: center; }
   .winners__avatar {
-    display: block;
-    width: 240px;
+    width: 100%;
     height: 150px;
-    margin-bottom: 18px;
+    margin-bottom: 15px;
     background-color: #424242; }
   .winners__text {
     width: 200px; }
@@ -6622,7 +6592,7 @@ button.close {
       flex-wrap: wrap;
   width: 100%; }
   .games-preview__item {
-    width: 280px;
+    width: 100%;
     height: 155px;
     margin-right: 20px;
     margin-bottom: 20px;
@@ -9959,9 +9929,6 @@ form * {
   background-image: url("../../img/main-bg.jpg");
   background-repeat: repeat; }
 
-.hidden {
-  display: none; }
-
 #preloader {
   display: block;
   position: fixed;
@@ -9976,6 +9943,68 @@ form * {
   @media (min-width: 788px) {
     #preloader {
       background-size: 600px; } }
+
+.dropdown-menu > li > a,
+.dropdown-menu > li > a {
+  padding: 15px;
+  color: #fff;
+  -webkit-transition: .2s;
+  transition: .2s; }
+
+.dropdown-menu > li > a:hover,
+.dropdown-menu > li > a:focus {
+  background-color: #de3137;
+  color: #fff; }
+
+.navbar-inverse {
+  background-color: #161616;
+  border: 0; }
+
+.navbar-nav > li:hover {
+  background-color: black; }
+
+.navbar-nav > li > a {
+  padding: 30px 15px; }
+
+.navbar-inverse .navbar-nav > .open > a,
+.navbar-inverse .navbar-nav > .open > a:hover,
+.navbar-inverse .navbar-nav > .open > a:focus {
+  background-color: black; }
+
+.navbar-nav > li > .dropdown-menu {
+  border: 0;
+  border-radius: 0;
+  padding: 0;
+  background-color: black; }
+
+.navbar-right {
+  margin-right: 0; }
+
+.btn {
+  border: 3px solid #ed383f;
+  border-radius: 0;
+  padding: 10px 15px;
+  font-family: SFUIBold;
+  font-size: 1.2em; }
+
+.btn-danger {
+  background-color: #ed383f;
+  border-color: #ed383f;
+  color: #fff; }
+  .btn-danger:hover {
+    background-color: #de3137;
+    border-color: #de3137; }
+
+.btn-secondary {
+  background-color: transparent;
+  border: 3px solid #005fdc; }
+  .btn-secondary:hover {
+    background-color: #0257c8;
+    border-color: #0257c8;
+    color: #fff; }
+
+.btn-secondary-full {
+  background-color: #005fdc; }
 
 .buttons-level__wrapper {
   display: -webkit-box;

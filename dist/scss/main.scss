@@ -87,10 +87,6 @@ form {
 	background-repeat: repeat;
 }
 
-.hidden {
-	display: none;
-}
-
 #preloader {
 	display: block;
 	position: fixed;
@@ -107,6 +103,86 @@ form {
 		background-size: 600px;
 	}
 }
+// bootstrap
+
+.dropdown-menu > li > a,
+.dropdown-menu > li > a {
+	padding: 15px;
+	color: $text-color;
+	transition: .2s;
+}
+.dropdown-menu > li > a:hover,
+.dropdown-menu > li > a:focus {
+	background-color: $main-color-hover;
+	color: $text-color;
+}
+
+.navbar-inverse {
+  background-color: $bg-color;
+  border: 0;
+}
+
+.navbar-nav > li {
+
+	&:hover {
+		background-color: darken($bg-color, 20%);
+	}
+
+	& > a {
+		padding: 30px 15px;
+	}
+}
+
+.navbar-inverse .navbar-nav > .open > a,
+.navbar-inverse .navbar-nav > .open > a:hover,
+.navbar-inverse .navbar-nav > .open > a:focus {
+	background-color: darken($bg-color, 20%);
+}
+
+.navbar-nav > li > .dropdown-menu {
+	border: 0;
+	border-radius: 0;
+	padding: 0;
+	background-color: darken($bg-color, 20%);
+}
+
+.navbar-right {
+	margin-right: 0;
+}
+
+.btn {
+	border: 3px solid $main-color;
+	border-radius: 0;
+	padding: 10px 15px;
+	font-family: SFUIBold;
+	font-size: 1.2em;
+}
+.btn-danger {
+	background-color: $main-color;
+	border-color: $main-color;
+	color: $text-color;
+
+	&:hover {
+		background-color: $main-color-hover;
+		border-color: $main-color-hover;
+	}
+}
+
+.btn-secondary {
+	background-color: transparent;
+	border: 3px solid $secondary-color;
+
+	&:hover {
+		background-color: $secondary-color-hover;
+		border-color: $secondary-color-hover;
+		color: #fff;
+	}
+}
+
+.btn-secondary-full {
+	background-color: $secondary-color;
+}
+
 
 .buttons-level {
 
