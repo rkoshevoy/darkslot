@@ -301,3 +301,51 @@
 .tab--active {
 	display: flex;
 }
+
+.navbar-games-item {
+	background-position: 10px center;
+
+	a {
+		background-position: 10px center;
+	}
+
+	&:first-child a {
+		background-image: url('../../img/games-icons/diamond.png');
+
+		&:hover {
+			background-image: url('../../img/games-icons/diamond-hover.png');
+		}
+	}
+
+	&:nth-child(2) a {
+		background-image: url('../../img/games-icons/cherry.png');
+
+		&:hover {
+			background-image: url('../../img/games-icons/cherry-hover.png');
+		}
+	}
+
+	&:nth-child(3) a {
+		background-image: url('../../img/games-icons/bag.png');
+
+		&:hover {
+			background-image: url('../../img/games-icons/bag-hover.png');
+		}
+	}
+
+	&:nth-child(4) a {
+		background-image: url('../../img/games-icons/cubes.png');
+
+		&:hover {
+			background-image: url('../../img/games-icons/cubes-hover.png');
+		}
+	}	
+
+	&:last-child a {
+		background-image: url('../../img/games-icons/roulette.png');
+
+		&:hover {
+			background-image: url('../../img/games-icons/roulette-hover.png');
+		}
+	}
+}
