@@ -25,52 +25,6 @@
 		margin: 15px 0;
 	}
 
-	&__auth-user {
-		position: relative;
-		display: flex;
-		align-items: center;
-		padding: 28px 10px;
-		padding-right: 35px;
-		cursor: pointer;
-		transition: 0.1s;
-
-		&:nth-child(2) {
-			margin-right: 20px;
-		}
-
-		&:hover {
-			background-color: #050505;
-
-			&::after {
-				border-color: #fff;
-			}
-
-			.header__dropdown {
-
-				.header__dropdown-item {
-					white-space: pre;
-					padding: 16px 20px;
-					font-size: 14px;
-					line-height: 14px;
-					transition: 0.3s;
-				}
-			}
-		}
-
-		&::after {
-			content: '';
-			position: absolute;
-			top: 33px;
-			right: 15px;
-			width: 8px;
-			height: 8px;
-			border-right: 1px solid #303030;
-			border-bottom: 1px solid #303030;
-			transform: rotate(45deg);
-			transition: 0.1s;
-		}
-	}
-
 	&__user-image {
 		position: relative;
 		margin-right: 10px;
@@ -89,23 +43,100 @@
 		}
 	}
 
-	&__dropdown {
-		position: absolute;
-		left: 0;
-		top: 78px;
-		list-style: none;
+	@media (min-width: 768px) and (max-width: 1200px){
+		.navbar-collapse.collapse {
+	    display: none !important;
+	    height: auto !important;
+	    padding-bottom: 0;
+	    // overflow: visible !important;
+		}
+
+		.navbar-collapse.collapse.in {
+			display: block !important;
+			overflow-y: auto !important;
+			padding-bottom: 15px;
+		}
+
+		.navbar-header,
+		.navbar-nav,
+		.navbar-nav > li {
+			float: none !important;
+		}
+
+		.navbar-right  {
+			border-top: 1px solid #000;
+		}
+
+		.header__deposit-btn {
+			margin-left: 15px;
+		}
+
+		.navbar-fixed-top .navbar-collapse {
+			height: 100vh;
+		}
+
+		.navbar-nav > li > a {
+			padding: 15px;
+			font-size: 1em;
+		}
+
+		.navbar-toggle {
+	    display: block;
+			margin-top: 24px;
+	    margin-bottom: 20px;
+		}
+
+		.navbar-nav .open .dropdown-menu {
+	    position: static;
+	    float: none;
+	    width: auto;
+	    margin-top: 0;
+	    background-color: transparent;
+	    border: 0;
+	    -webkit-box-shadow: none;
+	    box-shadow: none;
+		}
+
+
+		.dropdown-menu > li > a {
+			padding-left: 30px;
+		}
 	}
 
-	&__dropdown-item {
-		padding: 0;
-		font-size: 0;
-		line-height: 0;
-		// padding: 15px 20px;
-		background-color: rgba(0, 0, 0, 0.85);
-		transition: 0.1s;
+	@media (max-width: 768px) {
+		.navbar-fixed-top .navbar-collapse {
+			height: 100vh;
+		}
 
-		&:hover {
-			background-color: $main-color;
+		.navbar-toggle {
+			margin-top: 24px;
+			margin-bottom: 20px;
+		}
+
+		.navbar-nav > li > a {
+			padding: 15px;
+		}
+
+		.header__deposit-btn {
+			margin-left: 15px;
+		}
+
+		.dropdown-menu > li > a {
+			padding-left: 30px;
+		}
+
+		.navbar-nav .open .dropdown-menu > li > a,
+		.navbar-nav .open .dropdown-menu .dropdown-header {
+			padding: 15px;
+		}
+
+		.navbar-inverse .navbar-nav .open .dropdown-menu > li > a {
+			color: $text-color;
+			padding-left: 30px;
+
+			&:hover {
+				background-color: $main-color-hover;
+			}
 		}
 	}
 }
