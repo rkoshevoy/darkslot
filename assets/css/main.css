@@ -7739,6 +7739,10 @@ button.close {
   .ds-fl-content-level .modal-body {
     padding: 20px; }
 
+.ds-fl-content-wide {
+  max-width: none;
+  width: 60vw; }
+
 .ds-modal-img-wrap {
   max-width: 400px;
   max-height: 400px; }
@@ -8253,6 +8257,26 @@ button.close {
     line-height: 22px;
     color: #cccccc; }
     .modal-about__list-item a {
+      display: inline-block;
+      color: #cccccc;
+      border-bottom: 1px dashed #cccccc; }
+
+.rules {
+  height: 300px;
+  overflow-y: scroll; }
+  .rules__underheader {
+    margin-bottom: 10px;
+    font-family: SFUIBold;
+    font-size: 18px;
+    text-transform: uppercase; }
+  .rules__list {
+    list-style: none; }
+  .rules__list-item {
+    margin-bottom: 10px;
+    font-size: 14px;
+    line-height: 22px;
+    color: #cccccc; }
+    .rules__list-item a {
       display: inline-block;
       color: #cccccc;
       border-bottom: 1px dashed #cccccc; }
