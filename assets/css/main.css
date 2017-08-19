@@ -9944,6 +9944,11 @@ form * {
     #preloader {
       background-size: 600px; } }
 
+.ds-logo-wrap {
+  line-height: normal;
+  height: auto;
+  padding: 25.5px 15px; }
+
 .dropdown-menu > li > a,
 .dropdown-menu > li > a {
   padding: 15px;
@@ -9965,6 +9970,9 @@ form * {
 
 .navbar-nav > li > a {
   padding: 30px 15px; }
+
+.navbar-inverse .navbar-nav > li > a {
+  color: #fff; }
 
 .navbar-inverse .navbar-nav > .open > a,
 .navbar-inverse .navbar-nav > .open > a:hover,
@@ -10006,24 +10014,10 @@ form * {
 .btn-secondary-full {
   background-color: #005fdc; }
 
-.buttons-level__wrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  padding-top: 20px;
-  padding-bottom: 20px; }
+@media (min-width: 992px) {
+  .container {
+    width: 100%; } }
 
-.buttons-level__button {
-  width: 30%;
-  margin-bottom: 10px;
-  padding: 20px;
-  background-color: #ed383f;
-  font-family: SFUIBold;
-  font-size: 18px; }
-  .buttons-level__button:hover {
-    background-color: #de3137; }
+@media (min-width: 768px) {
+  .container {
+    width: 100%; } }

@@ -103,6 +103,15 @@ form {
 		background-size: 600px;
 	}
 }
+
+
+.ds-logo-wrap {
+	line-height: normal;
+	height: auto;
+	padding: 25.5px 15px;
+}
+
+
 // bootstrap
 
 .dropdown-menu > li > a,
@@ -131,6 +140,10 @@ form {
 	& > a {
 		padding: 30px 15px;
 	}
+}
+
+.navbar-inverse .navbar-nav > li > a {
+	color: $text-color;
 }
 
 .navbar-inverse .navbar-nav > .open > a,
@@ -184,44 +197,41 @@ form {
 }
 
 
-.buttons-level {
 
-	&__wrapper {
-		display: flex;
-		justify-content: space-between;
-		flex-wrap: wrap;
-		// width: 1180px;
-		// margin: 0 auto;
-		padding-top: 20px;
-		padding-bottom: 20px;
-
-		// @media @tablet {
-		// 	width: 748px;
-		// }
-
-		// @media @mobile {
-		// 	.mobile-wrap;
-		// }
-	}
-
-	&__button {
-		width: 30%;
-		margin-bottom: 10px;
-		padding: 20px;
-		background-color: $main-color;
-		font-family: SFUIBold;
-		font-size: 18px;
-
-		&:hover {
-			background-color: $main-color-hover;
-		}
-
-		// @media @tablet {
-		// 	margin-bottom: 10px;
-		// }
-
-		// @media (max-width: 550px) {
-		// 	width: 100%;
-		// }
+@media (min-width: 992px){
+	.container {
+		width: 100%;
 	}
 }
+@media (min-width: 768px){
+	.container {
+		width: 100%;
+	}
+}
+
+
+// @media (min-width: 768px){
+// 	.navbar-collapse.collapse {
+// 	    display: none !important;
+// 	    height: auto !important;
+// 	    padding-bottom: 0;
+// 	    overflow: visible !important;
+// 	}
+//
+// 	.navbar-toggle {
+// 	    display: block;
+// 	}
+// }
+//
+// @media (min-width: 1200px){
+// 	.navbar-collapse.collapse {
+// 	    display: block !important;
+// 	    height: auto !important;
+// 	    padding-bottom: 0;
+// 	    overflow: visible !important;
+// 	}
+//
+// 	.navbar-toggle {
+// 	    display: none;
+// 	}
+// }

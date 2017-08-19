@@ -24,17 +24,20 @@
 					<div class="col-sm-12">
 						<!-- Brand and toggle get grouped for better mobile display -->
 						<div class="navbar-header">
-							<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+							<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#header-navbar-collapse" aria-expanded="false">
 								<span class="sr-only">Toggle navigation</span>
 								<span class="icon-bar"></span>
 								<span class="icon-bar"></span>
 								<span class="icon-bar"></span>
 							</button>
-							<a class="navbar-brand" href="index.html"><span class="main-nav__logo"></span></a>
+							<!-- <a class="navbar-brand" href="index.html"><span class="main-nav__logo"></span></a> -->
+							<a class="navbar-brand ds-logo-wrap" href="index.html">
+								<img src="img/logo.png" alt="darkslot-logo" class="ds-logo">
+							</a>
 						</div>
 
 						<!-- Collect the nav links, forms, and other content for toggling -->
-						<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+						<div class="collapse navbar-collapse" id="header-navbar-collapse">
 							<ul class="nav navbar-nav">
 								<li class="dropdown">
 									<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Игры <span class="caret"></span></a>
@@ -74,12 +77,12 @@
 							</ul>
 
 							<ul class="nav navbar-nav navbar-right header__user">
-								<li class="header__auth">
+								<li class="header__auth hidden">
 									<button type="button" class="btn btn-danger " data-toggle="modal" data-target="#modalReg">Регистрация</button>
 									<button type="button" class="btn btn-secondary " data-toggle="modal" data-target="#modalSignIn">Вход</button>
 								</li>
 
-								<li class="dropdown  hidden">
+								<li class="dropdown ">
 									<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
 										<span class="header__user-image">
 											<img src="img/user-icon.png" alt="user">
@@ -109,7 +112,7 @@
 									<li class="header__dropdown-item">item 222</li>
 								</ul>
 							</li> -->
-							<li class="dropdown  hidden">
+							<li class="dropdown ">
 								<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
 									<span class="header__user-image">
 										<img src="img/user-money.png" alt="money">
@@ -132,7 +135,7 @@
 									<li class="header__dropdown-item">item</li>
 								</ul> -->
 							</li>
-							<li class="header__deposit-btn hidden"><button type="button" class="btn btn-secondary">Депозит</button></li>
+							<li class="header__deposit-btn"><button type="button" class="btn btn-secondary">Депозит</button></li>
 
 					</ul>
 				</div><!-- /.navbar-collapse -->
@@ -1648,7 +1651,7 @@
 							</div>
 							<div class="modal-body">
 								<div class="level-up">
-									
+
 									<span class="level-up__up-text">Вам доступно:</span>
 
 									<div class="level-up__ability-wrapper">
@@ -1707,7 +1710,7 @@
 							</div>
 							<div class="modal-body">
 								<div class="level-up">
-									
+
 									<span class="level-up__up-text">Вам доступно:</span>
 
 									<div class="level-up__ability-wrapper">
@@ -1766,7 +1769,7 @@
 							</div>
 							<div class="modal-body">
 								<div class="level-up">
-									
+
 									<span class="level-up__up-text">Вам доступно:</span>
 
 									<div class="level-up__ability-wrapper">
