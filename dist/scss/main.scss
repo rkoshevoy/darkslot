@@ -244,10 +244,8 @@ form {
 .navbar-inverse .navbar-games > li > a {
 	padding-left: 50px;
 }
-// .navbar-inverse .navbar-games > .active > a {
-// 	background-color: rgba(0, 0, 0, 0.5);
 
-// 	&:hover {
-// 		background-color: transparent;
-// 	}
-// }
+.carousel-inner > .item > a > img,
+.carousel-inner > .item > img {
+	width: 100%;
+}

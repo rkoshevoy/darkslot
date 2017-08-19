@@ -6229,7 +6229,6 @@ button.close {
     height: 100%; }
 
 .slide-bonus {
-  width: 395px;
   text-align: center; }
   .slide-bonus > span {
     display: block; }
@@ -10080,3 +10079,7 @@ form * {
 
 .navbar-inverse .navbar-games > li > a {
   padding-left: 50px; }
+
+.carousel-inner > .item > a > img,
+.carousel-inner > .item > img {
+  width: 100%; }
