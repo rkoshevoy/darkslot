@@ -2940,34 +2940,33 @@
 .vip-bonus {
   margin-bottom: 60px; }
 
-.bonus-more__wrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  padding-top: 60px;
-  padding-bottom: 75px; }
-
-.bonus-more__text {
-  width: 100%;
-  margin-bottom: 50px;
-  font-family: SFUIHeavy;
-  font-size: 20px;
-  text-align: center; }
-
-.bonus-more__button-wrapper {
-  width: 100%;
-  text-align: center; }
-
-.bonus-more__button {
-  width: 280px;
-  padding: 28px;
-  font-family: SFUIBold;
-  font-size: 18px;
-  background-color: #ed383f; }
-  .bonus-more__button:hover {
-    background-color: #de3137; }
+.bonus-more {
+  padding-bottom: 80px; }
+  .bonus-more__wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    padding-top: 60px;
+    padding-bottom: 75px; }
+  .bonus-more__text {
+    width: 100%;
+    margin-bottom: 50px;
+    font-family: SFUIHeavy;
+    font-size: 20px;
+    text-align: center; }
+  .bonus-more__button-wrapper {
+    width: 100%;
+    text-align: center; }
+  .bonus-more__button {
+    width: 280px;
+    padding: 28px;
+    font-family: SFUIBold;
+    font-size: 18px;
+    background-color: #ed383f; }
+    .bonus-more__button:hover {
+      background-color: #de3137; }
 
 .day-slot-image {
   width: 100%; }
