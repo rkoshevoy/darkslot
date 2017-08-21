@@ -1,8 +1,11 @@
 .registration {
-	background-image: url('../../img/wood-bg.png');
+	background-image: url('../../img/slider-images/slide-wood.png');
 	background-size: cover;
 	background-position: bottom;
 	position: relative;
+		padding-top: 50px;
+		padding-bottom: 40px;
+
 
 	&__wrapper {
 		position: relative;
@@ -10,8 +13,8 @@
 		flex-direction: row-reverse;
 		// width: 1180px;
 		// margin: 0 auto;
-		padding-top: 50px;
-		padding-bottom: 40px;
+		// padding-top: 50px;
+		// padding-bottom: 40px;
 
 		// @media @tablet {
 		// 	width: 748px;

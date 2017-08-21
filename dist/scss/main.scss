@@ -315,7 +315,6 @@ form {
 	}
 }
 
-
 .navbar-inverse .navbar-games > li > a {
 	padding-left: 50px;
 }
@@ -323,4 +322,33 @@ form {
 .carousel-inner > .item > a > img,
 .carousel-inner > .item > img {
 	width: 100%;
+}
+
+.container > .button-row {
+	margin-bottom: 20px;
+
+	h2 {
+		margin-top: 10px;
+	}
+}
+
+.btn-big {
+	padding: 20px;
+}
+
+.btn-wide {
+	padding: 20px 80px;
+}
+
+.about-row {
+	margin-bottom: 40px;
+}
+
+.vertical-center {
+  display: flex;
+  align-items: center;
+}
+
+.bonus-row {
+	margin-bottom: 60px;
 }

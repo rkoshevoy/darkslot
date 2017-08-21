@@ -69,9 +69,9 @@
 	}
 
 	&__image-wrapper {
-		position: absolute;
-		bottom: 0;
-		right: 0;
+		// position: absolute;
+		// bottom: 0;
+		// right: 0;
 
 		// @media @tablet {
 		// 	width: 300px;
@@ -84,6 +84,11 @@
 
 	&__image {
 		width: 100%;
-		margin-bottom: -4px;
+		// margin-bottom: -4px;
 	}
+}
+
+.jack {
+	display: inline-flex;
+	align-items: center;
 }

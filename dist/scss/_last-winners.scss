@@ -1,11 +1,12 @@
 .last-winners {
+	padding: 40px 0; 
 	background-color: #2b2b2b;
 
 	&__wrapper {
 		// width: 1180px;
 		// margin: 0 auto;
-		padding-top: 80px;
-		padding-bottom: 100px;
+		// padding-top: 80px;
+		// padding-bottom: 100px;
 
 		// @media @tablet {
 		// 	width: 748px;
@@ -20,7 +21,7 @@
 	}
 
 	&__header {
-		margin-bottom: 65px;
+		margin-bottom: 40px;
 		font-family: SFUIHeavy;
 		font-size: 24px;
 		text-transform: uppercase;
@@ -43,6 +44,10 @@
 		// 	max-width: 100%;
 		// 	padding: 15px 20px;
 		// }
+	}
+
+	.btn {
+		margin-top: 30px;
 	}
 }
 

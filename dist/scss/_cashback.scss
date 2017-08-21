@@ -1,4 +1,6 @@
 .cashback {
+	padding-top: 45px;
+	padding-bottom: 55px;
 	background-color: #212121;
 
 	&__wrapper {
@@ -20,10 +22,10 @@
 	}
 
 	&__first-line {
-		display: flex;
-		justify-content: space-between;
-		align-items: center;
-		margin-bottom: 80px;
+		// display: flex;
+		// justify-content: space-between;
+		// align-items: center;
+		// margin-bottom: 80px;
 
 		// @media @mobile {
 		// 	flex-wrap: wrap;
@@ -32,9 +34,9 @@
 	}
 
 	&__second-line {
-		display: flex;
-		justify-content: space-around;
-		align-items: center;
+		// display: flex;
+		// justify-content: space-around;
+		// align-items: center;
 
 		// @media @tablet {
 		// 	flex-wrap: wrap;
@@ -219,7 +221,7 @@
 }
 
 .cashback--background {
-	margin-bottom: 30px;
+	margin-bottom: 60px;
 	background-image: url('../../img/vip-bonus-bg.png');
 	background-size: cover;
 
@@ -245,7 +247,7 @@
 
 .cashback-code {
 	display: block;
-	width: 380px;
+	// width: 380px;
 	padding: 30px 23px;
 	border: 2px dashed #fff;
 
@@ -266,4 +268,8 @@
 		font-size: 20px;
 		font-family: SFUIHeavy;
 	}
+}
+
+.vip-bonus {
+	margin-bottom: 60px;
 }
