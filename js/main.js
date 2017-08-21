@@ -15,7 +15,7 @@ window.onload = function(){setTimeout(function(){fadeOutnojquery(preloader);
 $(window).on("load",function(){
   // $('select').styler();
 
-  $(".modal-about__scroll-content").mCustomScrollbar();
+  // $(".modal-about__scroll-content").mCustomScrollbar();
 
   // $('.slider').slick({
   //   infinite: true,

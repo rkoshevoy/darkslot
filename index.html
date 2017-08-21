@@ -6,13 +6,9 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
 	<title>Dark Slot</title>
 	<link rel="shortcut icon" href="img/favicon.png" type="image/png">
-	<!-- <link rel="stylesheet" href="css/style.min.css"> -->
-	<!-- <link rel="stylesheet" href="css/animate.css"> -->
-	<!-- <link rel="stylesheet" href="css/slick.css"> -->
-	<!-- <link rel="stylesheet" href="css/slick-theme.css"> -->
-	<!-- <link rel="stylesheet" href="css/jquery.formstyler.css"> -->
-	<link rel="stylesheet" href="css/jquery.mCustomScrollbar.css">
+	<!-- <link rel="stylesheet" href="css/jquery.mCustomScrollbar.css"> -->
 
+	<link rel="stylesheet" href="assets/css/bootstrap.css">
 	<link rel="stylesheet" href="assets/css/main.css">
 </head>
 <body class="page-home">
@@ -69,7 +65,7 @@
 									<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">О нас <span class="caret"></span></a>
 									<ul class="dropdown-menu">
 										<li><a href="about.html">О DarkSlot</a></li>
-										<li><a href="blog.html">Блог</a></li>
+										<!-- <li><a href="blog.html">Блог</a></li> -->
 										<li><a href="#" class="main-nav__dropdown-rules" data-toggle="modal" data-target="#modalRules">Положения и условия</a></li>
 										<li><a href="#" class="main-nav__dropdown-policy" data-toggle="modal" data-target="#modalPolicy">Политика конфиденциальности</a></li>
 									</ul>
@@ -77,12 +73,12 @@
 							</ul>
 
 							<ul class="nav navbar-nav navbar-right header__user">
-								<li class="header__auth hidden">
+								<li class="header__auth ">
 									<button type="button" class="btn btn-danger " data-toggle="modal" data-target="#modalReg">Регистрация</button>
 									<button type="button" class="btn btn-secondary " data-toggle="modal" data-target="#modalSignIn">Вход</button>
 								</li>
 
-								<li class="dropdown ">
+								<li class="dropdown hidden">
 									<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
 										<span class="header__user-image">
 											<img src="img/user-icon.png" alt="user">
@@ -97,22 +93,7 @@
 											<li><a href="#">list item</a></li>
 										</ul>
 									</li>
-
-									<!-- <li class="header__auth-user">
-									<div class="header__user-image">
-										<img src="img/user-icon.png" alt="user">
-										<span>2</span>
-									</div>
-									<span></span>
-									<ul class="header__dropdown">
-									<li class="header__dropdown-item">list item 77777</li>
-									<li class="header__dropdown-item">item 222</li>
-									<li class="header__dropdown-item">item 222</li>
-									<li class="header__dropdown-item">item 222</li>
-									<li class="header__dropdown-item">item 222</li>
-								</ul>
-							</li> -->
-							<li class="dropdown ">
+							<li class="dropdown hidden">
 								<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
 									<span class="header__user-image">
 										<img src="img/user-money.png" alt="money">
@@ -123,19 +104,8 @@
 										<li><a href="#">USD</a></li>
 										<li><a href="#">RUB</a></li>
 									</ul>
-									<!-- <div class="header__user-image">
-									<img src="img/user-money.png" alt="money">
-									</div>
-									<span>200 BTC</span>
-									<ul class="header__dropdown">
-									<li class="header__dropdown-item">Bitcoin</li>
-									<li class="header__dropdown-item">$$$$$$$$</li>
-									<li class="header__dropdown-item">Евро</li>
-									<li class="header__dropdown-item">item</li>
-									<li class="header__dropdown-item">item</li>
-								</ul> -->
 							</li>
-							<li class="header__deposit-btn"><button type="button" class="btn btn-secondary">Депозит</button></li>
+							<li class="header__deposit-btn hidden"><button type="button" class="btn btn-secondary">Депозит</button></li>
 
 						</ul>
 					</div><!-- /.navbar-collapse -->
@@ -148,59 +118,77 @@
 
 <div class="main-wrapper main-wrapper--triangles">
 
-	<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
-		<!-- Indicators -->
+	<div id="casino-banner" class="carousel slide" data-ride="carousel">
+			<!-- Indicators -->
 		  <!-- <ol class="carousel-indicators">
-		    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-		    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
-		    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
-		    <li data-target="#carousel-example-generic" data-slide-to="3"></li>
-		    <li data-target="#carousel-example-generic" data-slide-to="4"></li>
+		    <li data-target="#casino-banner" data-slide-to="0" class="active"></li>
+		    <li data-target="#casino-banner" data-slide-to="1"></li>
+		    <li data-target="#casino-banner" data-slide-to="2"></li>
+		    <li data-target="#casino-banner" data-slide-to="3"></li>
+		    <li data-target="#casino-banner" data-slide-to="4"></li>
 		  </ol> -->
-
 		  <!-- Wrapper for slides -->
 		  <div class="carousel-inner" role="listbox">
-		  	<div class="item active">
+			  <div class="item active pirate-reg">
 		  		<img src="img/slider-images/slide-lord.png" alt="lord">
-		  		<div class="container">
-		  			<div class="row">
-		  				<div class="col-sm-6">
-		  					<div class="row">
-		  						<div class="col-sm-6">
-		  							<!-- <div class="slide-bonus">
-		  								<span class="slide-bonus__first-line">10$</span>
-		  								<span class="slide-bonus__second-line">без депозита</span>
-		  								<span class="slide-bonus__third-line">- за регистрацию -</span>
-		  								<button class="slide-bonus__link" id="slider-button-rules">Подробнее</button>
-		  							</div> -->
-		  						</div>
 
-		  						<div class="col-sm-6">
-		  							<!-- <form action="#" class="registration-form-mini">
-		  								<input type="email" placeholder="Email" class="registration-form-mini__email">
-		  								<input type="text" placeholder="Никнейм" class="registration-form-mini__nickname">
-		  								<input type="password" placeholder="Пароль" class="registration-form-mini__password">
-		  								<input type="password" placeholder="Подтверждение пароля" class="registration-form-mini__password-confirm">
-		  								<select name="" id="slide-reg-select" class="registration-form-mini__select">
-		  									<option value="currency" selected disabled>Валюта</option>
-		  									<option value="rub">Рубли</option>
-		  									<option value="euro">Евро</option>
-		  									<option value="dollar">Доллары</option>
-		  									<option value="btc">Биткоины</option>
-		  								</select>
+					<div class="carousel-caption">
+			  		<div class="container">
+			  			<div class="row">
+			  				<div class="col-sm-8">
+									<div class="slide-wrap">
+										<div class="row">
+											<div class="col-sm-6">
+												<div class="slide-bonus">
+													<span class="slide-bonus__first-line">10$</span>
+													<span class="slide-bonus__second-line">без депозита</span>
+													<span class="slide-bonus__third-line">- за регистрацию -</span>
+													<a class="ds-link" data-toggle="modal" data-target="#modalRules">Подробнее</a>
+												</div>
+											</div>
 
-		  								<input type="checkbox" id="slide-checkbox" class="registration-form-mini__checkbox">
-		  								<label for="slide-checkbox" class="registration-form-mini__label-checkbox">Мне 18 лет и я принимаю Положения и условия</label>
+											<div class="col-sm-6">
+												<form action="#" class="registration-form-mini">
+													<div class="form-group">
+												    <input type="email" class="form-control" name="" placeholder="Email">
+												  </div>
+													<div class="form-group">
+												    <input type="text" class="form-control" name="" placeholder="Никнейм">
+												  </div>
 
-		  								<input type="submit" class="registration-form-mini__button" value="Регистрация">
-		  								<button class="slide__reg-button">Регистрация</button>
-		  							</form> -->
-		  						</div>
-		  					</div>
-		  				</div>
-		  			</div>
-		  		</div>
-		  	</div>
+													<div class="form-group">
+												    <input type="password" class="form-control" name="" placeholder="Пароль">
+												  </div>
+													<div class="form-group hidden">
+												    <input type="password" class="form-control" name="" placeholder="Подтверждение пароля">
+												  </div>
+
+													<div class="form-group">
+														<select class="form-control" name="">
+															<option value="currency" selected disabled>Валюта</option>
+															<option value="rub">Рубли</option>
+															<option value="euro">Евро</option>
+															<option value="dollar">Доллары</option>
+															<option value="btc">Биткоины</option>
+														</select>
+													</div>
+
+													<div class="form-group">
+														<input type="checkbox" id="slide-checkbox" class="registration-form-mini__checkbox">
+														<label for="slide-checkbox" class="registration-form-mini__label-checkbox">
+															Мне 18 лет и я принимаю <a href="#" class="ds-link" data-toggle="modal" data-target="#modalRules">Положения и условия</a></label>
+												  </div>
+
+													<button class="btn btn-danger btn-full-width">Регистрация</button>
+												</form>
+											</div>
+										</div>
+									</div>
+			  				</div>
+			  			</div>
+			  		</div>
+			  	</div>
+				</div>
 
 		  	<div class="item">
 		  		<img src="img/slider-images/slide-viking.png" alt="viking">
@@ -210,7 +198,7 @@
 		  				<div class="slide__text">
 		  					<span class="slide__upper-text">Розыгрыш каждую неделю</span>
 		  					<h1 class="slide__header">100% кэшбек</h1>
-		  					<a href="everyweek-cashback.html" class="slide__button">Подробнее</a>
+		  					<a href="everyweek-cashback.html" class="btn btn-danger">Подробнее</a>
 		  				</div>
 		  			</div>
 		  		</div>
@@ -218,204 +206,100 @@
 
 		  	<div class="item">
 		  		<img src="img/slider-images/day-slot.jpg" alt="day slot">
-		  		<div class="">
+		  		<div class="carousel-caption">
 
 		  			<div class="slide__button-wrapper">
-		  				<a href="day-slot.html" class="slide__button slide__button--centered">Играть</a>
+		  				<a href="day-slot.html" class="btn btn-danger">Играть</a>
 		  			</div>
 		  		</div>
 		  	</div>
 
-		  	<div class="item">
+		  	<div class="item tiger-reg">
 		  		<img src="img/slider-images/slide-wood.png" alt="wood">
-		  		<div class="">
 
-		  			<div class="slide__content-wrapper">
+					<div class="carousel-caption">
+			  		<div class="container">
+			  			<div class="row">
+								<div class="col-md-6">
 
-		  				<section class="registration registration--slide">
-		  					<div class="registration__wrapper">
+									<div class="registration-bonus">
+										<div class="registration-bonus-content">
+											<h3 class="registration-bonus__header">Зарегистрируйся и получи</h3>
+											<h3 class="registration-bonus__underheader">Приветственный бонус</h3>
+											<span class="registration-bonus__count">1800$</span>
+											<a href="bonus.html" class="ds-link">Подробнее</a>
+										</div>
 
-		  						<div class="registration-bonus">
-		  							<h3 class="registration-bonus__header">Зарегистрируйся и получи</h3>
-		  							<h3 class="registration-bonus__underheader">Приветственный бонус</h3>
-		  							<span class="registration-bonus__count">1800$</span>
-		  							<a href="bonus.html" class="registration-bonus__details">Подробнее</a>
-		  						</div>
+										<div class="registration-bonus-pers">
+											<img src="img/tiger.png" alt="toger" class="registration-bonus-pers-img">
+										</div>
+									</div>
 
-		  						<div class="registration__character-wrapper">
-		  							<img src="img/tiger.png" alt="toger" class="registration__character">
-		  						</div>
+								</div>
 
-		  						<form action="#" class="registration-form-mini registration-form-mini--slide">
-		  							<input type="email" placeholder="Email" class="registration-form-mini__email">
-		  							<input type="text" placeholder="Никнейм" class="registration-form-mini__nickname">
-		  							<input type="password" placeholder="Пароль" class="registration-form-mini__password">
-		  							<input type="password" placeholder="Подтверждение пароля" class="registration-form-mini__password-confirm">
-		  							<select name="" id="bottom-reg-select" class="registration-form-mini__select">
-		  								<option value="currency" selected disabled>Валюта</option>
-		  								<option value="rub">Рубли</option>
-		  								<option value="euro">Евро</option>
-		  								<option value="dollar">Доллары</option>
-		  								<option value="btc">Биткоины</option>
-		  							</select>
+								<div class="col-md-4 col-md-offset-2">
+									<div class="tiger-reg-form">
+										<form action="#" class="registration-form-mini registration-form-mini--slide">
+											<div class="form-group">
+												<input type="email" class="form-control" name="" placeholder="Email">
+											</div>
+											<div class="form-group">
+												<input type="text" class="form-control" name="" placeholder="Никнейм">
+											</div>
 
-		  							<input type="checkbox" id="bottom-form-checkbox" class="registration-form-mini__checkbox">
-		  							<label for="bottom-form-checkbox" class="registration-form-mini__label-checkbox">Мне 18 лет и я принимаю Положения и условия</label>
+											<div class="form-group">
+												<input type="password" class="form-control" name="" placeholder="Пароль">
+											</div>
+											<div class="form-group hidden">
+												<input type="password" class="form-control" name="" placeholder="Подтверждение пароля">
+											</div>
 
-		  							<input type="submit" class="registration-form-mini__button" value="Регистрация">
-		  						</form>
+											<div class="form-group">
+												<select class="form-control" name="">
+													<option value="currency" selected disabled>Валюта</option>
+													<option value="rub">Рубли</option>
+													<option value="euro">Евро</option>
+													<option value="dollar">Доллары</option>
+													<option value="btc">Биткоины</option>
+												</select>
+											</div>
 
-		  						<button class="registration__reg-button">Регистрация</button>
+											<div class="form-group">
+												<input type="checkbox" id="slide-checkbox" class="registration-form-mini__checkbox">
+												<label for="slide-checkbox" class="registration-form-mini__label-checkbox">
+													Мне 18 лет и я принимаю <a href="#" class="ds-link" data-toggle="modal" data-target="#modalRules">Положения и условия</a></label>
+											</div>
 
-		  					</div>
-		  				</section>
-		  			</div>
+			  							<input type="submit" class="btn btn-secondary btn-secondary-full btn-full-width" value="Регистрация">
+			  						</form>
+									</div>
+								</div>
+				  		</div>
+				  	</div>
 		  		</div>
 		  	</div>
 
 		  	<div class="item">
 		  		<img src="img/slider-images/free-spins.png" alt="free spins">
-		  		<div class="">
+		  		<div class="carousel-caption">
 
 		  			<div class="slide__button-wrapper">
-		  				<a href="free-spins.html" class="slide__button slide__button--centered">Подробнее</a>
+		  				<a href="free-spins.html" class="btn btn-danger">Подробнее</a>
 		  			</div>
 		  		</div>
 		  	</div>
 		  </div>
 
 		  <!-- Controls -->
-		  <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+		  <a class="left carousel-control" href="#casino-banner" role="button" data-slide="prev">
 		  	<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
 		  	<span class="sr-only">Previous</span>
 		  </a>
-		  <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+		  <a class="right carousel-control" href="#casino-banner" role="button" data-slide="next">
 		  	<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
 		  	<span class="sr-only">Next</span>
 		  </a>
 		</div>
-
-		<!-- <section class="slider">
-			<div class="slide">
-				<div class="slide__image-wrapper">
-					<img src="img/slide-image-2.png" alt="slide" class="slide__image">
-				</div>
-
-				<div class="slide__form-bg">
-					<div class="slide__form-wrapper">
-
-						<div class="slide-bonus">
-							<span class="slide-bonus__first-line">10$</span>
-							<span class="slide-bonus__second-line">без депозита</span>
-							<span class="slide-bonus__third-line">- за регистрацию -</span>
-							<button class="slide-bonus__link" id="slider-button-rules">Подробнее</button>
-						</div>
-
-						<form action="#" class="registration-form-mini">
-							<input type="email" placeholder="Email" class="registration-form-mini__email">
-							<input type="text" placeholder="Никнейм" class="registration-form-mini__nickname">
-							<input type="password" placeholder="Пароль" class="registration-form-mini__password">
-							<input type="password" placeholder="Подтверждение пароля" class="registration-form-mini__password-confirm">
-							<select name="" id="slide-reg-select" class="registration-form-mini__select">
-								<option value="currency" selected disabled>Валюта</option>
-								<option value="rub">Рубли</option>
-								<option value="euro">Евро</option>
-								<option value="dollar">Доллары</option>
-								<option value="btc">Биткоины</option>
-							</select>
-
-							<input type="checkbox" id="slide-checkbox" class="registration-form-mini__checkbox">
-							<label for="slide-checkbox" class="registration-form-mini__label-checkbox">Мне 18 лет и я принимаю Положения и условия</label>
-
-							<input type="submit" class="registration-form-mini__button" value="Регистрация">
-						</form>
-
-						<button class="slide__reg-button">Регистрация</button>
-					</div>
-				</div>
-			</div>
-
-			<div class="slide">
-				<div class="slide__image-wrapper">
-					<img src="img/slide-image.png" alt="slide" class="slide__image">
-				</div>
-
-				<div class="slide__wrapper">
-					<div class="slide__text">
-						<span class="slide__upper-text">Розыгрыш каждую неделю</span>
-						<h1 class="slide__header">100% кэшбек</h1>
-						<a href="everyweek-cashback.html" class="slide__button">Подробнее</a>
-					</div>
-				</div>
-			</div>
-
-			<div class="slide">
-				<div class="slide__image-wrapper">
-					<img src="img/day-slot.jpg" alt="slide" class="slide__image">
-				</div>
-
-				<div class="slide__button-wrapper">
-					<a href="day-slot.html" class="slide__button slide__button--centered">Играть</a>
-				</div>
-			</div>
-
-			<div class="slide">
-				<div class="slide__image-wrapper">
-					<img src="img/wood-bg.png" alt="slide" class="slide__image">
-				</div>
-
-				<div class="slide__content-wrapper">
-
-					<section class="registration registration--slide">
-						<div class="registration__wrapper">
-
-							<div class="registration-bonus">
-								<h3 class="registration-bonus__header">Зарегистрируйся и получи</h3>
-								<h3 class="registration-bonus__underheader">Приветственный бонус</h3>
-								<span class="registration-bonus__count">1800$</span>
-								<a href="bonus.html" class="registration-bonus__details">Подробнее</a>
-							</div>
-
-							<div class="registration__character-wrapper">
-								<img src="img/tiger.png" alt="toger" class="registration__character">
-							</div>
-
-							<form action="#" class="registration-form-mini registration-form-mini--slide">
-								<input type="email" placeholder="Email" class="registration-form-mini__email">
-								<input type="text" placeholder="Никнейм" class="registration-form-mini__nickname">
-								<input type="password" placeholder="Пароль" class="registration-form-mini__password">
-								<input type="password" placeholder="Подтверждение пароля" class="registration-form-mini__password-confirm">
-								<select name="" id="bottom-reg-select" class="registration-form-mini__select">
-									<option value="currency" selected disabled>Валюта</option>
-									<option value="rub">Рубли</option>
-									<option value="euro">Евро</option>
-									<option value="dollar">Доллары</option>
-									<option value="btc">Биткоины</option>
-								</select>
-
-								<input type="checkbox" id="bottom-form-checkbox" class="registration-form-mini__checkbox">
-								<label for="bottom-form-checkbox" class="registration-form-mini__label-checkbox">Мне 18 лет и я принимаю Положения и условия</label>
-
-								<input type="submit" class="registration-form-mini__button" value="Регистрация">
-							</form>
-
-							<button class="registration__reg-button">Регистрация</button>
-
-						</div>
-					</section>
-				</div>
-			</div>
-
-			<div class="slide">
-				<div class="slide__image-wrapper">
-					<img src="img/free-spins.png" alt="slide" class="slide__image">
-				</div>
-
-				<div class="slide__button-wrapper">
-					<a href="free-spins.html" class="slide__button slide__button--centered">Подробнее</a>
-				</div>
-			</div>
-		</section> -->
 
 		<!-- <section id="gamesPannel" class="tabs"> -->
 
@@ -583,7 +467,7 @@
 						</div>
 					</div>
 				</div>
-				
+
 				<div class="row text-center">
 					<button class="btn btn-danger btn-big">Играть сейчас</button>
 				</div>
@@ -856,517 +740,6 @@
 		</div>
 	</nav>
 
-
-
-	<section class="modal modal--registration">
-		<div class="modal__character-wrapper">
-			<img src="img/rat.png" alt="rat" class="modal__character">
-		</div>
-
-		<div class="modal__wrapper">
-
-			<form action="#" class="modal-form modal-form--registration">
-				<h2 class="modal-form__header">Регистрация</h2>
-
-				<div class="social-enter social-enter--reg">
-					<span class="social-enter__text">Зарегестрироваться с помощью:</span>
-
-					<div class="social-enter__socials">
-						<button class="social-enter__soc social-enter__soc--fb"></button>
-						<button class="social-enter__soc social-enter__soc--vk"></button>
-						<button class="social-enter__soc social-enter__soc--tw"></button>
-					</div>
-				</div>
-
-				<input type="email" name="email" placeholder="Email" class="modal-form__input">
-				<input type="text" name="nickname" placeholder="Никнейм" class="modal-form__input">
-				<input type="password" name="password" placeholder="Пароль" class="modal-form__input">
-				<input type="password" name="password-confirm" placeholder="Подтверждение пароля" class="modal-form__input">
-				<select name="currency" id="currency" class="modal-form__currency">
-					<option value="Валюта" selected disabled>Валюта</option>
-					<option value="rub">Рубли</option>
-					<option value="euro">Евро</option>
-					<option value="dollar">Доллары</option>
-					<option value="btc">Биткоины</option>
-				</select>
-				<input type="text" name="code" placeholder="Бонусный код" class="modal-form__input">
-
-				<div class="modal-form__checkbox-wrapper">
-					<input type="checkbox" id="reg-checkbox" class="modal-form__checkbox">
-					<label for="reg-checkbox" class="modal-form__label-checkbox">Мне есть 18 лет и я принимаю Положения и условия</label>
-				</div>
-
-				<input type="submit" value="Регистрация" class="modal-form__button">
-			</form>
-		</div>
-
-		<div class="modal-close"></div>
-	</section>
-
-	<section class="modal modal--enter">
-		<div class="modal__character-wrapper">
-			<img src="img/bear.png" alt="bear" class="modal__character">
-		</div>
-
-		<div class="modal__wrapper">
-
-			<form action="#" class="modal-form modal-form--enter">
-				<h2 class="modal-form__header">Авторизация</h2>
-
-				<input type="email" class="modal-form__input" placeholder="Email">
-				<input type="password" class="modal-form__input" placeholder="Пароль">
-				<input type="submit" class="modal-form__button" id="enter-button" value="Войти">
-
-				<div class="social-enter">
-					<span class="social-enter__text">Войти с помощью:</span>
-
-					<div class="social-enter__socials">
-						<button class="social-enter__soc social-enter__soc--fb"></button>
-						<button class="social-enter__soc social-enter__soc--vk"></button>
-						<button class="social-enter__soc social-enter__soc--tw"></button>
-					</div>
-				</div>
-			</form>
-
-			<button class="modal-form__forgot-pass">Я забыл пароль</button>
-		</div>
-
-		<div class="modal-close"></div>
-	</section>
-
-	<section class="modal modal--contact">
-		<div class="modal__character-wrapper">
-			<img src="img/tiger.png" alt="tiger" class="modal__character">
-		</div>
-
-		<div class="modal__wrapper">
-
-			<form action="#" class="modal-form modal-form--contact">
-				<h2 class="modal-form__header">Форма контакта</h2>
-				<input type="email" class="modal-form__input" placeholder="Email">
-				<input type="text" class="modal-form__input" placeholder="Тема сообщения">
-				<textarea name="textarea-contact" id="text-contact" cols="30" rows="10" class="modal-form__text-field" placeholder="Текст..."></textarea>
-				<input type="submit" class="modal-form__button" value="Отправить">
-			</form>
-		</div>
-
-		<div class="modal-close"></div>
-	</section>
-
-	<section class="modal modal--recovery">
-		<div class="modal__wrapper">
-			<form action="#" class="modal-form modal-form--recovery">
-				<h2 class="modal-form__header">Забыли пароль?</h2>
-				<p class="modal-form__text">Введите свой электронный адрес, и Вам будут высланы инструкции по замене пароля. <br>По дальнейшим вопросам Вы можете связаться с нами через страницу <span class="modal-form__support">поддержка</span></p>
-
-				<input type="email" class="modal-form__input" placeholder="Email">
-				<input type="submit" class="modal-form__button" value="Восстановить пароль" id="forgot-button">
-			</form>
-
-			<span class="modal-form__not-recieve" id="recovery-unlock">Не получили инструкций для разблокировки?</span>
-			<span class="modal-form__not-recieve" id="recovery-confirm">Не получили инструкций для подтверждения?</span>
-		</div>
-
-		<div class="modal-close"></div>
-	</section>
-
-	<section class="modal modal--unlock">
-		<div class="modal__wrapper">
-			<form action="#" class="modal-form modal-form--recovery">
-				<h2 class="modal-form__header">Переслать инструкции для разблокировки</h2>
-				<p class="modal-form__text">Если ваша учётная запись заблокирована, оставьте свой email-адрес, и мы вышлем на него инструкции по разблокированию. <br>По дальнейшим вопросам Вы можете связаться с нами через страницу <span class="modal-form__support">поддержка</span></p>
-
-				<input type="email" class="modal-form__input" placeholder="Email">
-				<input type="submit" class="modal-form__button" value="Переслать инструкции для разблокировки">
-			</form>
-
-			<span class="modal-form__not-recieve modal-form__forgot-pass">Забыли пароль?</span>
-			<span class="modal-form__not-recieve" id="recovery-confirm">Не получили инструкций для подтверждения?</span>
-		</div>
-
-		<div class="modal-close"></div>
-	</section>
-
-	<section class="modal modal--confirm">
-		<div class="modal__wrapper">
-			<form action="#" class="modal-form modal-form--recovery">
-				<h2 class="modal-form__header">Переслать инструкции для подтверждения</h2>
-
-				<input type="email" class="modal-form__input" placeholder="Email">
-				<input type="submit" class="modal-form__button" value="Переслать инструкции для подтверждения">
-			</form>
-
-			<span class="modal-form__not-recieve" id="recovery-unlock">Не получили инструкций для разблокировки?</span>
-			<span class="modal-form__not-recieve modal-form__forgot-pass">Забыли пароль?</span>
-		</div>
-
-		<div class="modal-close"></div>
-	</section>
-
-	<section class="modal modal--activate">
-		<div class="modal__character-wrapper">
-			<img src="img/brain-monster.png" alt="monster" class="modal__character">
-		</div>
-
-		<div class="modal__wrapper">
-			<h2 class="modal__header">Активируйте свой аккаунт</h2>
-			<p class="modal__text">Мы отправили вам письмо для подтверждения по адресу Frart.ua@gmail.com</p>
-			<p class="modal__text">Пожалуйста, подтвердите свой аккаунт по ссылке. Если Вы не получили письмо в течении нескольких секунд, пожалуйста проверьте папку Спам</p>
-			<button class="modal__button">Переслать письмо с активацией</button>
-		</div>
-
-		<div class="modal-close"></div>
-	</section>
-
-	<section class="modal modal--new-password">
-		<div class="modal__wrapper">
-			<form action="#" class="modal-form modal-form--new-password">
-				<h2 class="modal-form__header">Изменить пароль</h2>
-				<input type="password" class="modal-form__input" placeholder="Новый пароль">
-				<input type="password" class="modal-form__input" placeholder="Повторите новый пароль">
-				<input type="submit" class="modal-form__button">
-			</form>
-		</div>
-
-		<div class="modal-close"></div>
-	</section>
-
-	<!-- <div class="modal-bg"></div> -->
-
-	<section class="level-modal level-modal--second">
-		<div class="level-up">
-			<div class="level-up__header-wrapper">
-				<span class="level-up__number level-up-content__number--second">2</span>
-
-				<div class="level-up__greeting-wrapper">
-					<h3 class="level-up__greeting">Поздравляем, вы получили</h3>
-					<h4 class="level-up__level">Уровень</h4>
-				</div>
-			</div>
-			<span class="level-up__up-text">Вам доступно:</span>
-
-			<div class="level-up__ability-wrapper">
-				<div class="level-ability">
-					<div class="level-ability__header">Кэшбек</div>
-					<p class="level-ability__text">100% кэшбек в слотах и 50% в Live Casino</p>
-				</div>
-				<div class="level-ability">
-					<div class="level-ability__header">Обмен очков 1,5:1</div>
-					<p class="level-ability__text">Обмен производится в личном кабинете</p>
-				</div>
-				<div class="level-ability">
-					<div class="level-ability__header">Релоад бонус в размере 100$</div>
-					<p class="level-ability__text">Или его эквивалент в любой другой валюте.</p>
-				</div>
-			</div>
-		</div>
-
-		<div class="level-details">
-			<div class="level-details__wrapper">
-				<div class="level-details__text">
-					<span class="level-details__up-text">Чтобы получить 3 уровень</span>
-					<br>
-					<span class="level-details__bottom-text">Вы должны набрать <span>30 000 очков</span></span>
-				</div>
-				<a href="levels.html" class="level-details__button">Подробнее об уровнях</a>
-			</div>
-		</div>
-
-		<div class="modal-close modal-close--out"></div>
-	</section>
-
-	<section class="level-modal level-modal--third">
-		<div class="level-up">
-			<div class="level-up__header-wrapper">
-				<span class="level-up__number level-up__number--third">3</span>
-
-				<div class="level-up__greeting-wrapper">
-					<h3 class="level-up__greeting">Поздравляем, вы получили</h3>
-					<h4 class="level-up__level">Уровень</h4>
-				</div>
-			</div>
-
-			<span class="level-up__up-text">Вам доступно:</span>
-
-			<div class="level-up__ability-wrapper">
-				<div class="level-ability">
-					<div class="level-ability__header">Релоад бонус 50% до 200$</div>
-					<p class="level-ability__text">Или его эквивалент в любой другой валюте</p>
-				</div>
-				<div class="level-ability">
-					<div class="level-ability__header">Приоритет</div>
-					<p class="level-ability__text">Приоритетность в службе поддержки</p>
-				</div>
-				<div class="level-ability">
-					<div class="level-ability__header">Обмен очков 2:1</div>
-					<p class="level-ability__text">Обмен производится в личном кабинете</p>
-				</div>
-			</div>
-		</div>
-
-		<div class="level-details">
-			<div class="level-details__wrapper">
-				<div class="level-details__text">
-					<span class="level-details__up-text">Чтобы получить 4 уровень</span>
-					<br>
-					<span class="level-details__bottom-text">Вы должны набрать <span>100 000 очков</span></span>
-				</div>
-				<a href="levels.html" class="level-details__button">Подробнее об уровнях</a>
-			</div>
-		</div>
-
-		<div class="modal-close modal-close--out"></div>
-	</section>
-
-	<section class="level-modal level-modal--fourth">
-		<div class="level-up">
-			<div class="level-up__header-wrapper">
-				<span class="level-up__number"><img src="img/knight-with-hair.png" alt=""></span>
-
-				<div class="level-up__greeting-wrapper">
-					<h3 class="level-up__greeting">Поздравляем! У вас особый уровень</h3>
-					<h4 class="level-up__level">Dark knight</h4>
-				</div>
-			</div>
-			<span class="level-up__up-text">Вам доступно:</span>
-
-			<div class="level-up__ability-wrapper">
-				<div class="level-ability">
-					<div class="level-ability__header">Дарим iPhone 7</div>
-					<p class="level-ability__text">Либо цену на счёт без отыгрыша</p>
-				</div>
-				<div class="level-ability">
-					<div class="level-ability__header">2000$</div>
-					<p class="level-ability__text">Бездепозит с Вейджером X40</p>
-				</div>
-
-				<div class="level-ability">
-					<div class="level-ability__header">Личный менеджер</div>
-				</div>
-				<div class="level-ability">
-					<div class="level-ability__header">Релоад 50% до 2000$</div>
-				</div>
-				<div class="level-ability">
-					<div class="level-ability__header">Приоритетные условия вывода денег</div>
-				</div>
-				<div class="level-ability">
-					<div class="level-ability__header">Обмен очков 3:1</div>
-					<p class="level-ability__text">Обмен производится в личном кабинете</p>
-				</div>
-			</div>
-		</div>
-
-		<div class="modal-close modal-close--out"></div>
-	</section>
-
-	<section class="modal-about modal-about--rules">
-		<div class="modal-about__wrapper">
-			<h1 class="modal-about__header">Правила и условия</h1>
-			<div class="modal-about__scroll-content">
-				<h2 class="modal-about__underheader">1. Основная информация</h2>
-				<ul class="modal-about__list">
-					<li class="modal-about__list-item">1.1 Нижеприведенные Правила и условия вступают в силу с 22 декабря, 2015. Прежде чем воспользоваться Сайтом, пожалуйста, тщательно ознакомьтесь с Правилами и условиями. Начав использование Сайта, Вы соглашаетесь с данными Правилами и условиями.</li>
-					<li class="modal-about__list-item">1.2 Вебсайт Darkslot.com принадлежит компании Direx N.V., зарегистрированной и созданной в соответствии с законодательством Кюрасао и ее дочерним предприятием Direx Limited, зарегистрированными в Республике Кипр по адресу Stasinou 1, MITSI Building 1, 1st Floor, Flat/Office 4, Plateia Eleftherias, Nicosia (далее по тексту “Компания”). Деятельность Direx N.V. лицензирована и попадает под регулирование Antilephone N.V. Регистрационный номер Direx N.V.: 131879, адрес регистрации: E-Commerce Park Vredenberg, Curacao.</li>
-				</ul>
-				<h2 class="modal-about__underheader">Изменение правил и условий</h2>
-				<ul class="modal-about__list">
-					<li class="modal-about__list-item">1.3 Настоящие Правила и условия могут быть изменены Компанией в любой момент. Пожалуйста, регулярно посещайте раздел “Правила и условия” для того, чтобы не пропустить изменений в пользовании Сайтом.</li>
-				</ul>
-				<h2 class="modal-about__underheader">Пользование сайтом</h2>
-				<ul class="modal-about__list">
-					<li class="modal-about__list-item">1.4 Сайт доступен для игроков из тех стран и географических регионов, где азартные игры в интернете не запрещены законом. Игрок берет на себя ответственность за получение информации о законодательстве в своем регионе перед тем, как начать игру на Сайте. Если Вы являетесь игроком из UK или US, Вам запрещается играть на реальные деньги, включая игру на биткоины. Игроки из Дании, Испании и Франции также не допускаются к игре на Сайте. </li>
-					<li class="modal-about__list-item">Сайт допускает только игроков, достигших совершеннолетия (18 - минимальный возраст игрока), а также игроков, достигших возраста, в котором законодательство их страны позволяет им принимать участие в азартных играх в интернете; <br>Ответственность за владение информацией об ограничении по возрасту в своей стране лежит на самом игроке, как и ответственность убедиться в том, что участвуя в играх, Вы тем самым не нарушаете законы, действие которых на Вас распространяется;</li>
-					<li class="modal-about__list-item">Вам разрешается принимать участие в играх в соответствии с действующим законодательством в юрисдикции Вашего места жительства; <br>Пожалуйта, обратите внимание на то, что игрокам из Канады не разрешается играть в NYX (NextGen) игры.
-					</li>
-				</ul>
-				<h2 class="modal-about__underheader">Доступные игры</h2>
-				<ul class="modal-about__list">
-					<li class="modal-about__list-item">1.5 Следующие игры могут быть недоступны для некоторых территорий с определенной юрисдикцией.</li>
-					<li class="modal-about__list-item">Игры NetEnt недоступны для Афганистана, Албании, Алжира, Анголы, Камбоджи, Эквадора, Гайаны, Гонконга, Индонезии, Ирана, Ирака, Израиля, Кувейта, Лаоса, Мьянмы, Намибии, Никарагуа, Северной Кореи, Пакистана, Панамы, Папуа-Новой Гвинеи, Филиппин, Сингапура, Южной Кореи, Судана, Сирии, Тайвани, Уганды, Йемена, Зимбабве, Бельгии, Болгарии, Канады, Дании, Эстонии, Франции, Италии, Мексики, Португалии, Румынии, Испании, Великобритании, Латвии и Литвы.</li>
-					<li class="modal-about__list-item">В дополнение к вышесказанному, Guns'n'Roses, Motorhead и Jimi Hendrix недоступны в Австралии, Азербайджане, Китае, Индии, Малайзии, Катаре, России, Таиланде, Тунисе, Турции, Украине. Aliens недоступны в Японии и Канаде. <br>Кроме того, в нижеперечисленных странах доступны только серии Universal Monsters (Frankenstein, the Bride of Frankenstein, Dracula, The Mummy, The Wolf Man, Creature from the Black Lagoon, The Invisible Man) и Scarface: Андорра, Армения, Азербайджан, Беларусь, Босния И Герцеговина, Бразилия, Грузия, Исландия, Лихтенштейн, Молдова, Монако, Черногория, Норвегия, Россия, Сан-Марино, Сербия, Швейцария, Украина, Хорватия, Македония, Турция, Австрия, Бельгия, Болгария, Кипр, Чешская Республика, Дания, Эстония Италия, Латвия, Литва, Люксембург, Мальта, Нидерланды, Перу, Польша, Португалия, Румыния, Словакия, Словения, Соединенное Королевство, Финляндия, Финляндия, Франция, Испания, Италия.</li>
-					<li class="modal-about__list-item">Игрокам из следующих стран не доступны игры с джекпотом, предлагаемые NetEnt (включая, не ограничиваясь Mega Fortune): Австралия, Азербайджан, Китай, Дания, Индия, Израиль, Италия, Япония, Малайзия, Катар, Россия, Испания, Таиланд, Тунис, Турция, Украина.</li>
-					<li class="modal-about__list-item">Казино предпринимает все усилия, чтобы игроки из этих стран не смогли играть в эти игры, однако если игроки из любой из заявленных стран выиграют джекпот, победа в джекпоте аннулируется.</li>
-					<li class="modal-about__list-item">Игроки из Канады не могут играть в игры NYX (NextGen).
-					</li>
-				</ul>
-				<h2 class="modal-about__underheader">Доступные валюты</h2>
-				<ul class="modal-about__list">
-					<li class="modal-about__list-item">1.6 Вебсайт доступен для игры в следующих валютах: RUB, EUR, USD, SEK, NOK, AUD, CAD и BTC.</li>
-				</ul>
-				<h2 class="modal-about__underheader">Налоги и сборы</h2>
-				<ul class="modal-about__list">
-					<li class="modal-about__list-item">1.7 Игрок несет полную ответственность за оплату всех налогов и сборов, относящихся к его выигрышу, в соответствии с законодательством своей страны.</li>
-				</ul>
-				<h2 class="modal-about__underheader">Правила игры</h2>
-				<ul class="modal-about__list">
-					<li class="modal-about__list-item">1.8 Игрок подтверждает, что он понимает правила игр, которые представлены на Сайте. Пользователь по своему усмотрению узнает проценты выплаты для каждой игры.</li>
-				</ul>
-				<h2 class="modal-about__underheader">Исключение отвутственности</h2>
-				<ul class="modal-about__list">
-					<li class="modal-about__list-item">1.9 Игрок должен понимать, что участие в азартных играх на Сайте может привести к потере его средств. Компания не несет ответственность за материальный ущерб, полученный в ходе игры на Сайте.</li>
-					<li class="modal-about__list-item">Компания принимает все необходимые меры по защите личной информации игрока от несанкционированного использования и делает ее доступной только тем сторонам, которые вовлечены в предоставление игровых услуг на сайте.</li>
-					<li class="modal-about__list-item">Компания не несет ответственности за то, как информацией распоряжаются третьи лица, например, поставщики программного обеспечения или аффилейты. Эти лица распоряжаются личной информацией игрока в соответствии со своими правилами и условиями (если таковые существуют).</li>
-				</ul>
-				<h2 class="modal-about__underheader">Пользование аккаунтом</h2>
-				<ul class="modal-about__list">
-					<li class="modal-about__list-item">1.10 Каждый игрок имеет право на создание одного аккаунта. Создание более одного аккаунта будет считаться нарушением правил казино и может привести к закрытию аккаунтов и отмене всех выплат. Игрок не имеет права предоставлять информацию и доступ о своем аккаунте третьим лицам (включая несовершеннолетних пользователей). Веб-сайт может быть использован только в личных целях. использование сайта в коммерческих целях строго запрещено.</li>
-					<li class="modal-about__list-item">Партнеры не могут вести игровую деятельность. Казино может конфисковать средства с любых партнерских счетов с игровой деятельностью по решению руководства казино.</li>
-				</ul>
-				<h2 class="modal-about__underheader">Борьба с мошенничеством</h2>
-				<ul class="modal-about__list">
-					<li class="modal-about__list-item">1.11 У компании строгая политика по борьбе с мошенничеством. Если игрок подозревается в каких-либо мошеннических действиях, либо его действия говорят о: </li>
-					<li class="modal-about__list-item">• участии в сговоре с другими игроками <br>
-						• разработке стратегий, направленных на получение выигрышей нечестным путем <br>
-						• мошеннических действиях против других казино либо платежных систем <br>
-						• возврате или отказе платежей по кредитным картам <br>
-						• других типах мошенничества <br>
-						• предоставление неверной личной информации в процессе регистрации <br>
-					</li>
-					<li class="modal-about__list-item">В этих случаях казино оставляет за собой право закрыть аккаунт и конфисковать выигрыш. </li>
-					<li class="modal-about__list-item">Если игрок заказал вывод средств, но не сделал ставок на сумму эквивалентную трёхкратному размеру последнего депозита, то казино оставляет за собой право возложить расходы по обработке транзакций на этого игрока: причём как за депозит, так и за вывод средств. В этом случае решение принимается по усмотрению руководства казино.</li>
-					<li class="modal-about__list-item">Администрация казино оставляет за собой право верифицировать своих игроков путем телефонного звонка, если сочтет это необходимой частью проверки. Пока аккаунт игрока не будет проверен путем телефонного разговора, выплата не будет произведена. В случае, если номер телефона является недействительным либо отсутствует, и при этом факт мошенничества имеет место, казино оставляет за собой право закрыть аккаунт и конфисковать выигрыш. Если игрок не пройдет процедуру в течение двух недель с того момента как он/она поставили средства на вывод, аккаунт будет закрыт и выигрыш конфискован. Такие действия могут помочь уменьшить мошеннические действия и избежать негативной практики в будущем.</li>
-					<li class="modal-about__list-item">В случае, если игрок имеет дубликатный аккаунт с бонусами, или же одинаковым ID, или же игра на двух (и более) аккаунтах осуществляется по одной схеме, казино оставляет за собой право заблокировать такие аккаунты и конфисковать выигрыш.</li>
-					<li class="modal-about__list-item">В случае, если игрок воспользовался бездепозитными фриспинами, но при этом страна проживания и IP адрес не совпадают, казино оставляет за собой право заблокировать такие аккаунты и конфисковать выигрыш во избежание негативной практики в будущем.</li>
-					<li class="modal-about__list-item">Если пользователь или группа пользователей уличены в том, что они злоупотребляют бонусными акциями казино, казино оставляет за собой право конфисковать выигрыш и закрыть аккаунт.</li>
-					<li class="modal-about__list-item">Злоупотребление бонусными акциями означает:</li>
-					<li class="modal-about__list-item">- игрок делает максимально разрешенные ставки в играх с высокой дисперсией с целью увеличения баланса; <br>- игрок уменьшает ставку после большого выигрыша и переходит к игре с низкой дисперсией; <br>- игрок делает максимальные депозиты для получения максимальных бонусов; <br>- коэффициент бонусов клиента (депозиты: бонусы) составляет более 50%;</li>
-				</ul>
-				<h2 class="modal-about__underheader">Депозиты</h2>
-				<ul class="modal-about__list">
-					<li class="modal-about__list-item">1.12 Darkslot предоставляет целый ряд способов пополнения баланса игрового счета. Для пополнения счета игрок может использовать кредитные и дебетовые карты VISA и MasterCard, а также всевозможные интернет кошельки. Пожалуйста, обратитесь в нашу службу поддержки для того чтобы узнать о подходящем методе депозита для вашего региона проживания.</li>
-					<li class="modal-about__list-item">Пожалуйста, обратите внимание, что минимальный депозит составляет 10€/$.</li>
-				</ul>
-				<h2 class="modal-about__underheader">Вывод/возврат средств</h2>
-				<ul class="modal-about__list">
-					<li class="modal-about__list-item">1.13 Минимальная сумма для вывода средств составляет 10€/$. Максимальная сумма для вывода зависит от платежной системы, которую вы используете. Если запрашиваемая на вывод сумма денежных средств превышает лимит платежной системы, то выплата будет производиться по частям. Платеж будет проведен в возможно короткие сроки, однако, стоит учитывать, что запрос на некоторые веб-кошельки может занимать около 3 дней.</li>
-					<li class="modal-about__list-item">Лимиты по выводам в неделю составляют 300 000 RUB, €5 000, 2 BTC или эквивалент.</li>
-					<li class="modal-about__list-item">Месячные лимиты составляют 600 000 RUB, €10 000, 5 BTC или эквивалент.</li>
-					<li class="modal-about__list-item">Ваш запрос на вывод будет рассмотрен в течение 2 часов.</li>
-					<li class="modal-about__list-item">Все выигрыши с депозитов в биткоинах должны быть выведены на тот биткоин кошелек, с которого был сделан дпозит.</li>
-					<li class="modal-about__list-item">С повышение Вип уровня ваши лимиты на вывод увеличиваются , а так же могут быть увеличины в индивидуальном порядке.</li>
-					<li class="modal-about__list-item">Веб-сайт поддерживает выплаты при помощи Original Credit Transfer (OCT) от Visa, а также при помощи Payment Transfer от Mastercard. К тому же используемая карта не должна являться корпоративной кредитной картой, а так же должна быть выпущена в разрешенной данными правилами стране.</li>
-					<li class="modal-about__list-item">Для Visa следующие страны не поддерживаются: США, Австралия, Гонконг, Индия, Индонезия, Япония, Корея, Малайзия, Сингапур.</li>
-					<li class="modal-about__list-item">Для Mastercard поддерживаются только следующие страны: Андорра, Австрия, Бельгия, Кипр, Чехия, Дания, Эстония, Франция, Германия, Гибралтар, Греция, Венгрия, Исландия, Ирландия, Италия, Латвия, Люксембург, Мальта, Монако, Голландия, Норвегия, Сан Марино, Словакия, Словения, Испания, Швеция, Швейцария, Турция и Великобритания.</li>
-					<li class="modal-about__list-item">Пожалуйста, обратите внимание, что даже если Ваша страна находится среди поддерживаемых, веб-сайт не может гарантировать успешную транзакцию, так как банк, выпустивший карту, может заблокировать её на своё усмотрение.</li>
-					<li class="modal-about__list-item">Пожалуйста, обратите внимание, что операционная валюта на сайте - евро. Вы не сможете запросить выплату через банк трансфер в долларах США. Выплата через банк трансфер осуществляется в течение 3-5 рабочих дней. Если Вы производите транзакцию в другой валюте, то сумма, списанная с Вашей кредитной карты может быть незначительно выше суммы, отображающейся в момент совершения транзакции. Это связано с валютной конвертацией со стороны Вашего банка и/или систем обработки платежей казино. Кроме того, казино не является финансовым учреждением и не должно рассматриваться как таковое.Средства которые вы внесли в казино могут быть использованы только для игры. Никаких процентов или обменов совершенно быть не может.</li>
-					<li class="modal-about__list-item">Все джекпотные выигрыши будут выплачены в полном объеме без каких-либо лимитов.</li>
-					<li class="modal-about__list-item">Компания оставляет за собой право удерживать выплаты игрока, в случае, если есть необходимость проверить его личность. В случае, если игрок предоставил неверную личную информацию, выплата будет отменена, а аккаунт удален. Игрок будет оповещен о решении казино по электронной почте.</li>
-				</ul>
-				<h2 class="modal-about__underheader">Неактивные счета</h2>
-				<ul class="modal-about__list">
-					<li class="modal-about__list-item">1.14 Если аккаунт игрока находится в неактивном состоянии на протяжении 12 месяцев (пользователь не совершает депозиты, не делает ставки, не выводит средства и т.д.), компания оставляет за собой право закрыть такой аккаунт и изъять доступные средства. Если Ваш аккаунт остается неактивным, казино оставляет за собой право снимать ежемесячную административную плату в размере 10 евро (или эквивалент в другой валюте), до тех пор пока баланс игрока остается положительным. Вы разрешаете казино списывать с этого счета данную сумму (или ее эквивалент) в начале каждого следующего месяца пока Ваш аккаунт остается неактивным. Казино останавливает вычет платы в случае если баланс равен нулю либо учетная запись была повторно активирована.</li>
-				</ul>
-				<h2 class="modal-about__underheader">Конфиденциальность и безопасность</h2>
-				<ul class="modal-about__list">
-					<li class="modal-about__list-item">1.17 Darkslot.com соблюдает все законы о защите данных и не разглашает информацию о своих клиентах.</li>
-				</ul>
-				<h2 class="modal-about__underheader">Сбор личных данных</h2>
-				<ul class="modal-about__list">
-					<li class="modal-about__list-item">1.18 Мы собираем данные об игроке, когда тот проходит регистрацию, вступает с нами в переписку или общается со службой поддержки. Такими данными могут включать: имя игрока, дату рождения, почтовый адрес, адрес электронной почты, IP-адрес, информацию о кредитных и дебетовых картах, а также другую личную информацию. Личные данные игроков доступны работникам компании DarkSlot, разработчикам ПО Direx N.V., платежным системам и любым третьим лицам, которые помогают DarkSlot улучшить свой сервис. Все лица, которые получают доступ к личным данным игроков, обязуются признавать ее конфиденциальной согласно соответствующим договоренностям и законодательству. Личные данные игроков полностью защищены от несанкционированного доступа.</li>
-				</ul>
-				<h2 class="modal-about__underheader">Информация о балансе игрока</h2>
-				<ul class="modal-about__list">
-					<li class="modal-about__list-item">1.19 Darkslot.com сохраняет информацию о депозитах, выигрышах и выводах игроков в полной конфиденциальности и не разглашает ее третьим лицам без предварительного согласия игрока, если иное не предусмотрено законом.</li>
-				</ul>
-				<h2 class="modal-about__underheader">Использование личных данных в маркетинговых целях</h2>
-				<ul class="modal-about__list">
-					<li class="modal-about__list-item">1.20 Darkslot.com использует информацию об игроках в маркетинговых целях. Однако, мы уважаем конфиденциальность наших клиентов. Если игроки не хотят получать рекламные материалы, есть возможность отказаться от этой опции во время регистрации на сайте или в любой момент отписаться от маркетинговых рассылок.</li>
-				</ul>
-				<h2 class="modal-about__underheader">Cookie</h2>
-				<ul class="modal-about__list">
-					<li class="modal-about__list-item">1.21 Darkslot.com использует cookies для того, чтобы сохранять ваши предпочтения и улучшать Ваше времяпровождение в казино.</li>
-					<li class="modal-about__list-item">Если Вы хотите изменить настройки конфиденциальности, свяжитесь со службой поддержки по электронной почте <a href="mailto:support@darkslot.com">support@darkslot.com</a></li>
-				</ul>
-				<h2 class="modal-about__underheader">Разглашение личных</h2>
-				<ul class="modal-about__list">
-					<li class="modal-about__list-item">1.22 Если команда Darkslot.com узнает, что игрок принимает участие в мошеннических действиях, таких как манипуляция игры, мошенничество с платежами, указание неверных личных данных, «отмывание» денег, использование украденных кредитных карт и так далее, компания оставляет за собой право поделиться данными игроков с третьими лицами или выложить их в открытом доступе.</li>
-				</ul>
-				<h2 class="modal-about__underheader">Безопасность личных данных</h2>
-				<ul class="modal-about__list">
-					<li class="modal-about__list-item">1.23 Darkslot.com делает все возможное, чтобы обеспечить на 100% безопасные услуги игрокам и быть уверенными в том, что никакие личные данные не украдены, не утеряны и не использованы некорректно. Мы пользуемся самыми современными технологиями, для того, чтобы обеспечить безопасность личной информации игроков.</li>
-				</ul>
-				<h2 class="modal-about__underheader">Технология SSL</h2>
-				<ul class="modal-about__list">
-					<li class="modal-about__list-item">1.24 Мы используем 128-битную технологию SSL (протокол защиты информации), которую предпочитают юридические и финансовые учреждения для того, чтобы гарантировать безопасность всех транзакций на нашем Сайте.</li>
-				</ul>
-				<h2 class="modal-about__underheader">Система борьбы с мошенничеством</h2>
-				<ul class="modal-about__list">
-					<li class="modal-about__list-item">1.25 Более того, мы используем специальную технику для борьбы с мошенничеством для того, чтобы избежать незаконных финансовых действий на нашем сайте. Все попытки совершить финансовые махинации приводят к мгновенной ликвидации аккаунта.</li>
-				</ul>
-				<h2 class="modal-about__underheader">Доступ к аккаунту игрока</h2>
-				<ul class="modal-about__list">
-					<li class="modal-about__list-item">1.26 Доступ к аккаунту игрока можно получить только с помощью уникального логина и пароля. Игрок несет ответственность за безопасность этих данных и должен убедиться в том, что доступ к аккаунту не может быть получен посторонним лицом.</li>
-				</ul>
-				<h2 class="modal-about__underheader">Ответственная игра</h2>
-				<ul class="modal-about__list">
-					<li class="modal-about__list-item">1.27 В основном, игра в онлайн-казино является развлечением. Однако есть некоторые люди, которые теряют контроль над собой во время игры. Перед тем, как Вы начнете играть, очень важно понять, что азартная игра - это не способ заработать деньги или покрыть долги. Рекомендуется ежедневно отслеживать количество времени и денег, потраченных в онлайн-казино.</li>
-				</ul>
-				<h2 class="modal-about__underheader">Помощь игроманам</h2>
-				<ul class="modal-about__list">
-					<li class="modal-about__list-item">1.28 Если Вам кажется, что Вы начинаете тратить больше денег, чем Вы можете себе позволить, или что игра начинает мешать привычному образу жизни, мы настоятельно рекомендуем предпринять следующие меры, которые могут помочь:</li>
-					<li class="modal-about__list-item">- Самоисключение<br>- Вы можете обратиться в нашу службу поддержки support@darkslot.com и сообщить о Вашем решении прекратить игру на определенный промежуток времени. Мы предпримем все необходимые меры, чтобы ограничить Вам доступ к Сайту и исключить из всех новостных рассылок.<br>- Вы также можете обратиться за помощью в нижеперечисленные организации:</li>
-					<li class="modal-about__list-item">Gambling Anonymous<br>GamCare<br>Gambling Therapy</li>
-				</ul>
-				<h2 class="modal-about__underheader">Защита несовершеннолетних</h2>
-				<ul class="modal-about__list">
-					<li class="modal-about__list-item">1.29 Darkslot.com принимает только игроков, достигших восемнадцатилетнего возраста и использует все доступные методы для того, чтобы исключить регистрацию и игру несовершеннолетних в онлайн-казино. Казино оставляет за собой право потребовать подтверждение личности у любого клиента и, если окажется, что игрок не достиг совершеннолетия, доступ к Cайту будет запрещен. Мы понимаем, что благодаря открытому доступу в интернет, многие несовершеннолетние игроки все равно могут зарегистрироваться на Cайте и играть в онлайн-казино. Поэтому мы настоятельно рекомендуем родителям способствовать запрету доступа для их детей. Пожалуйста, ознакомитесь с соответствующей информацией на следующих сайтах:</li>
-					<li class="modal-about__list-item">
-						<a href="http://www.cyberpatrol.com/">www.cyberpatrol.com</a><br>
-						<a href="http://www.gamblock.com/">www.gamblock.com</a><br>
-						<a href="http://www.solidoak.com/">www.solidoak.com</a><br>
-						<a href="http://www.netnanny.com/">www.netnanny.com</a>
-					</li>
-				</ul>
-				<h2 class="modal-about__underheader">Бонусная логика</h2>
-				<ul class="modal-about__list">
-					<li class="modal-about__list-item">Все бонусы доступны только игрокам darkslot.com .</li>
-					<li class="modal-about__list-item">1 Чтобы иметь право получить любой бонус за депозит, необходимо внести минимальный депозит в $/€10, 500 рублей или 0.02 BTC.</li>
-					<li class="modal-about__list-item">2 Игрок может менять валюту только после выполнения первого этапа приветственного бонуса. Например, если игрок уже сделал депозит в $/€20 или 1000 рублей на первом этапе приветственного бонуса, то позже он может начать использовать Биткоины для второго депозита.</li>
-					<li class="modal-about__list-item">3 Чтобы иметь возможность вывести деньги, все бонусы необходимо отыграть 40 (сорок) раз, если не указано иное. Бездепозитные бонусы и фриспины нужно отыграть 40 (сорок) раз. Минимальный депозит, необходимый для вывода выигрыша, полученного с бездепозитного бонуса или фриспинов составляет $/€10 или 500 рублей.</li>
-					<li class="modal-about__list-item">4. Любой бонус можно отменить до выполнения условий отыгрыша. Пожалуйста, обратитесь в службу поддержки казино DarkSlot, чтобы узнать больше о том, как отменить бонус. Внимание! Во время игры с активным бонусом игрок теряет первыми настоящие деньги.</li>
-					<li class="modal-about__list-item">5. Действие бесплатных бонусов и бонусов за депозиты истекает через 30 дней, если не указано иное.</li>
-					<li class="modal-about__list-item">6. Как бонус, так и выигрыш будут утрачены после истечения срока действия бонуса.</li>
-					<li class="modal-about__list-item">7 Во время игры сделанные ставки снимаются с баланса игрока, но если на балансе средств больше нет, то они начнут сниматься с бонусного баланса.</li>
-					<li class="modal-about__list-item">8 Чтобы делать ставки выше $/€5, 300 рублей или 0.01 BTC, игрок должен выполнить условия отыгрыша бонуса. Это касается и двойных отыгрышей после окончания игрового раунда.Если не указано иное .</li>
-					<li class="modal-about__list-item">9 Максимальный лимит на выводы выигрышей по фриспинам без депозита составляют 100 EUR/USD или 0.050 BTC. Оставшийся баланс будет обнулен. Управление казино DarkSlot имеет право конфисковать любые бонусы или выигрыши, полученные нечестным образом.</li>
-					<li class="modal-about__list-item">10 Имейте в виду, что процент отыгрыша у каждого из видов игр свой: • Настольные игры – Baccarat, Blackjack, Hi-Lo – 5% (за исключением игр с живым дилером) • Видеопокер – 5% • Рулетка, Покер – 5% (за исключением игр с живым дилером) • Слоты – 100% • Джекпотные игры - 0% • В слоте Sugar Pop отыгрыш составляет - 0%.</li>
-					<li class="modal-about__list-item">11 За один раз можно получить только один бонус. Бонусы, относящиеся к депозитам, не складываются. Любые бонусы или выигрыш, полученные путем мошенничества, будут обнулены менеджментом казино DarkSlot.</li>
-					<li class="modal-about__list-item">12 По одному адресу/IP-адресу получать любой из бонусов может лишь один человек, если не указано иное. Вы потеряете как свой выигрыш, так и бонусы, если нарушите это условие.</li>
-					<li class="modal-about__list-item">13 Запрещается откладывать любые игровые раунды, в том числе фриспины и бонусные раунды, на то время, когда Вам больше не нужно отыгрывать бонус и / или вносить новые депозит(ы). В таком случае игрок согласен с тем, что его выигрыш будет обнулен.</li>
-					<li class="modal-about__list-item">14 Если вы выиграли призы в акции Еженедельный 100% кешбек , то первое место не требует отыгрыша и все средства могут быть тут же обналичены. За последующие призовые места, требуется отыгрыш 3х(три) раза поставить сумму призовых. Кешбек выдается без ограничений по сумме.</li>
-					<li class="modal-about__list-item">15 Кешбек 50% в субботу Live casino, вы принимаете участие в данной акции сделав депозит в субботу с 01:00 до 23:59 МСК. И если вы потерпели неудачу в играх с живыми дилерами , то мы возместим вам выигрыш в размере 50% от проигранных реальных средств (бонусные средства не учитываются). Все выигрыши требует отыгрыша х3(три)раза. ДЛЯ ПОЛУЧЕНИЯ КЕШБЕКА напишите нам в службу поддержки support@darkslot.com с темой возврат Live casino.</li>
-					<li class="modal-about__list-item">16 Слот дня во вторник, в той акции вы получаете от нас 50% кешбек в выбранном нами слоте. Для участия в данной акции вы должны во вторник, после 01:00 внести минимальный депозит и вы автоматически становитесь участником акции. После зачисления средств на ваш счет, вы должны их отыграть 3х(три)раза. Максимальная сумма кешбека 2000$</li>
-					<li class="modal-about__list-item">*Для получения кешбека напишите нам в службу поддержки support@darkslot.com с темой возврат, не позднее среды.</li>
-					<li class="modal-about__list-item">*Максимальная сумма кешбека 2000$.</li>
-					<li class="modal-about__list-item">17 Турнир 1000$ в пятницу .Турнир проводится по пятницам с 01:00 до 23:00 (МСК). В турнире принимают участие все клиенты Казино, которые сделали депозит в пятницу после 01:00(МСК) В турнире участвуют все игры из разделов «Слоты». Победители турнира определяются автоматически, исходя из самого крупного значения среднего выигрыша за время турнира.Ваше место зависит от ваших выигрышей поделенных на кол-во раундов(спинов). Минимальное кол-во раундов 500. Все выигрыши требуют отыгрыша х3, кроме первого места, первое место без отыгрыша.</li>
-					<li class="modal-about__list-item">18 Данные правила могут изменятся нами в любое время, следите за нашей бонусной политикой, так же мы вас предупреждать об этом будем заранее по почте.</li>
-				</ul>
-			</div>
-		</div>
-
-		<div class="modal-close modal-close--out"></div>
-	</section>
-
-	<section class="modal-about modal-about--policy">
-		<div class="modal-about__wrapper">
-			<h1 class="modal-about__header">Политика конфиденциальности</h1>
-			<div class="modal-about__scroll-content">
-				<ul class="modal-about__list">
-					<li class="modal-about__list-item">1. Игрок признает и подтверждает обоснованность действий казино DARKSLOT.com при запросе персональных данных игрока, необходимых для доступа к сайту, а также, для обеспечения игроку безопасного и максимально комфортного использования игр.</li>
-					<li class="modal-about__list-item">2. Казино DARKSLOT.com подтверждает, что при сборе персональных данных игрока, на казино DARKSLOT.com распространяется правовая мера "о защите персональных данных" Казино DARKSLOT.com обязано держать в сохранности личную информацию игрока, а также уважать конфиденциальность Игрока в соответствии с передовым деловым опытом и действующим законодательством.</li>
-					<li class="modal-about__list-item">3. Персональные данные игрока будут использоваться казино DARKSLOT.com исключительно для того, чтобы обеспечить игроку доступ к играм и проведения игроком операций, относящихся к использованию игр. Сотрудники казино DARKSLOT получают доступ к персональным данным Игрока исключительно в тех случаях, когда эта информация является необходимым условием для выполнения их служебных обязанностей.</li>
-					<li class="modal-about__list-item">4. Персональные данные игрока не будут переданы третьим лицам, если только подобное не является необходимым для обработки запросов игрока, связанных с использованием игр. Настоящим игрок соглашается на подобную передачу.</li>
-					<li class="modal-about__list-item">5. Игрок имеет право получить доступ к личной информации игрока, хранящейся в казино DARKSLOT.com, отправив запрос в письменном виде. Для принятия всех необходимых мер по обновлению персональных данных игрока, мы просим незамедлительно сообщить нам о любых изменениях в личной информации, хранящейся в казино DARKSLOT.com. В случае, если игрок считает, что информация о нём является неточной, неполной или некорректной, он вправе запросить её исправление. Кроме того, игрок имеет право запросить блокирование или удаление данных, которые были обработаны незаконно.</li>
-					<li class="modal-about__list-item">6. Для удобства пользования сайтом, а также для учёта посещаемости сайта и повышения качества обслуживания, казино DARKSLOT.com собирает cookie-файлы (небольшие информационные файлы), который высылает браузер игрока. Игрок может отключить сбор cookie-файлов (см. инструкции браузера о том, как это сделать), однако, нужно иметь в виду, что отключение сбора cookie-файлов может ограничить возможности игрока в использовании сайта.</li>
-					<li class="modal-about__list-item">7. Сайт регулярно предоставляет информацию об изменениях и/или дополнениях, о новых услугах и акциях, а также обо всём, что, по мнению сайта, может оказаться интересным и полезным для игрока. Если игрок не хочет получать новостные рассылки, он может отказаться от этой услуги в своем аккаунте.</li>
-				</ul>
-			</div>
-		</div>
-
-		<div class="modal-close modal-close--out"></div>
-	</section>
-
-
 	<!-- Инструкция по добавлению модалок -->
 	<!-- Чтоб активировать модалку, любому элементу надо добавить 2 атрибута: data-toggle="modal" data-target="#modalWindow" -->
 	<!-- Шаблон обертки модалки: -->
@@ -1395,15 +768,6 @@
 			 </div>
 			</div>
 		</div>
-
-	<!-- Уже сделаны модалки:
- 			регистрация,
-			авторизация,
-			забыли пароль,
-			поддержка -->
-
-			<!-- Добавляй новые модалки под модалку modalSupport -->
-
 
 			<!-- Auth modals -->
 
@@ -2044,12 +1408,12 @@
 
 			<!-- <script type="text/javascript" src="js/slick.min.js"></script> -->
 			<!-- <script type="text/javascript" src="js/tabs.js"></script> -->
-			<script type="text/javascript" src="js/menu.js"></script>
+			<!-- <script type="text/javascript" src="js/menu.js"></script> -->
 			<!-- <script type="text/javascript" src="js/fixed-bar.js"></script> -->
 			<!-- <script type="text/javascript" src="js/modals.js"></script> -->
 			<script type="text/javascript" src="js/reg-password.js"></script>
 			<!-- <script type="text/javascript" src="js/jquery.formstyler.min.js"></script> -->
-			<script type="text/javascript" src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+			<!-- <script type="text/javascript" src="js/jquery.mCustomScrollbar.concat.min.js"></script> -->
 			<script type="text/javascript" src="js/main.js"></script>
 		</body>
 		</html>
