@@ -1,5 +1,6 @@
 .partners {
 	position: relative;
+		padding: 40px 0;
 
 	&::after {
 		content: '';
@@ -13,7 +14,6 @@
 	&__wrapper {
 		// width: 1180px;
 		// margin: 0 auto;
-		padding: 40px 0;
 
 		// @media @tablet {
 		// 	width: 748px;
@@ -67,7 +67,7 @@
 	}
 
 	&__text {
-		text-align: center;
+		// text-align: center;
 		font-size: 14px;
 		line-height: 22px;
 

@@ -218,7 +218,6 @@ form {
 	}
 }
 
-
 .navbar-inverse .navbar-games > li > a {
 	padding-left: 50px;
 }
@@ -226,4 +225,16 @@ form {
 .carousel-inner > .item > a > img,
 .carousel-inner > .item > img {
 	width: 100%;
+}
+
+.container > .button-row {
+	margin-bottom: 20px;
+
+	h2 {
+		margin-top: 10px;
+	}
+} 
+
+.btn-big {
+	padding: 20px;
 }

@@ -6499,16 +6499,13 @@ button.close {
   right: 0; }
 
 .jackpot__image {
-  width: 100%;
-  margin-bottom: -4px; }
+  width: 100%; }
 
 .last-winners {
+  padding: 40px 0;
   background-color: #2b2b2b; }
-  .last-winners__wrapper {
-    padding-top: 80px;
-    padding-bottom: 100px; }
   .last-winners__header {
-    margin-bottom: 65px;
+    margin-bottom: 40px;
     font-family: SFUIHeavy;
     font-size: 24px;
     text-transform: uppercase; }
@@ -6521,6 +6518,8 @@ button.close {
     line-height: 18px; }
     .last-winners__button:hover {
       background-color: #de3137; }
+  .last-winners .btn {
+    margin-top: 30px; }
 
 .winners {
   display: -webkit-box;
@@ -6567,50 +6566,53 @@ button.close {
     color: #f9515e;
     text-decoration: underline; }
 
-.popular-games__wrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center; }
-
-.popular-games__header {
-  font-family: SFUIHeavy;
-  font-size: 24px;
-  line-height: 24px; }
-
-.popular-games__button {
-  padding: 18px;
-  margin-top: 20px;
-  margin-bottom: 20px;
-  border: 2px solid #005fdc;
-  background-color: transparent; }
-  .popular-games__button:hover {
-    border-color: #0257c8;
-    background-color: #0257c8; }
-
-.popular-games__more-button {
-  display: block;
-  margin: 0 auto;
-  padding: 20px;
-  margin-top: 20px;
-  margin-bottom: 20px;
-  border: 2px solid #005fdc;
-  background-color: transparent;
-  font-family: SFUIBold;
-  font-size: 16px;
-  -webkit-transition: 0.1s;
-  transition: 0.1s;
-  cursor: pointer; }
-  .popular-games__more-button:hover {
-    border-color: #0257c8;
-    background-color: #0257c8; }
+.popular-games {
+  padding: 30px 0; }
+  .popular-games .header-row {
+    margin-bottom: 20px; }
+  .popular-games__wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+  .popular-games__header {
+    font-family: SFUIHeavy;
+    font-size: 24px;
+    line-height: 24px; }
+  .popular-games__button {
+    padding: 18px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: 2px solid #005fdc;
+    background-color: transparent; }
+    .popular-games__button:hover {
+      border-color: #0257c8;
+      background-color: #0257c8; }
+  .popular-games__more-button {
+    display: block;
+    margin: 0 auto;
+    padding: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: 2px solid #005fdc;
+    background-color: transparent;
+    font-family: SFUIBold;
+    font-size: 16px;
+    -webkit-transition: 0.1s;
+    transition: 0.1s;
+    cursor: pointer; }
+    .popular-games__more-button:hover {
+      border-color: #0257c8;
+      background-color: #0257c8; }
+  .popular-games .btn {
+    margin-top: 10px; }
 
 .games-preview {
   display: -webkit-box;
@@ -6629,15 +6631,13 @@ button.close {
       margin-right: 0; }
 
 .deposites {
-  background-image: url("../../img/bg-deposites.png");
-  background-size: cover;
-  background-position: bottom; }
+  padding: 30px 0; }
   .deposites__wrapper {
     position: relative;
     padding-top: 230px;
     padding-bottom: 170px; }
   .deposites__header {
-    margin-bottom: 40px;
+    margin-bottom: 30px;
     font-size: 40px;
     line-height: 60px; }
   .deposites__button {
@@ -6650,15 +6650,12 @@ button.close {
     text-align: center; }
     .deposites__button:hover {
       background-color: #de3137; }
-  .deposites__image-wrapper {
-    position: absolute;
-    top: 220px;
-    right: 0; }
   .deposites__image {
     width: 100%; }
 
 .games {
-  position: relative; }
+  position: relative;
+  padding: 30px 0; }
   .games::before {
     content: '';
     position: absolute;
@@ -6679,9 +6676,7 @@ button.close {
     display: flex;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
-            justify-content: space-between;
-    padding-top: 40px;
-    padding-bottom: 40px; }
+            justify-content: space-between; }
   .games__list-wrapper {
     position: relative;
     display: -webkit-box;
@@ -6691,6 +6686,7 @@ button.close {
   .games__column {
     margin-right: 100px; }
   .games__header {
+    margin-top: 5px;
     margin-bottom: 15px;
     font-size: 18px; }
   .games__list {
@@ -6716,7 +6712,8 @@ button.close {
         flex-shrink: 0; }
   .games__text {
     display: block;
-    margin-bottom: 20px; }
+    margin-bottom: 20px;
+    font-size: 18px; }
   .games__social-list {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -6727,7 +6724,8 @@ button.close {
         margin-right: 0; }
 
 .partners {
-  position: relative; }
+  position: relative;
+  padding: 40px 0; }
   .partners::after {
     content: '';
     position: absolute;
@@ -6735,12 +6733,10 @@ button.close {
     height: 1px;
     bottom: 0;
     background-color: #313131; }
-  .partners__wrapper {
-    padding: 40px 0; }
-    .partners__wrapper img {
-      width: 100%;
-      margin-bottom: 30px;
-      text-align: center; }
+  .partners__wrapper img {
+    width: 100%;
+    margin-bottom: 30px;
+    text-align: center; }
   .partners__images {
     margin-bottom: 40px;
     text-align: center; }
@@ -6751,40 +6747,31 @@ button.close {
       margin: 0 5px 10px 5px;
       vertical-align: middle; }
   .partners__text {
-    text-align: center;
     font-size: 14px;
     line-height: 22px; }
 
-.footer__wrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+.footer {
   padding: 10px 0; }
-
-.footer__copyright {
-  font-size: 13px;
-  line-height: 28px;
-  color: #b0b0b0; }
-
-.footer__development {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center; }
-
-.footer__developer {
-  margin-top: 10px;
-  margin-right: 10px;
-  font-size: 12px;
-  color: #666666; }
+  .footer__wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding: 10px 0; }
+  .footer__copyright {
+    font-size: 13px;
+    line-height: 28px;
+    color: #b0b0b0; }
+  .footer__developer {
+    margin-top: 10px;
+    margin-right: 10px;
+    font-size: 12px;
+    color: #666666; }
 
 .fixed-bar {
   position: fixed;
@@ -8358,6 +8345,7 @@ button.close {
 .registration-form-mini {
   position: relative;
   width: 370px;
+  margin-top: 20px;
   padding: 20px; }
   .registration-form-mini__email, .registration-form-mini__nickname, .registration-form-mini__password, .registration-form-mini__password-confirm {
     width: 100%;
@@ -8548,10 +8536,12 @@ button.close {
       background-color: #0257c8; }
 
 .registration {
-  background-image: url("../../img/wood-bg.png");
+  background-image: url("../../img/slider-images/slide-wood.png");
   background-size: cover;
   background-position: bottom;
-  position: relative; }
+  position: relative;
+  padding-top: 50px;
+  padding-bottom: 40px; }
   .registration__wrapper {
     position: relative;
     display: -webkit-box;
@@ -8560,9 +8550,7 @@ button.close {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: reverse;
         -ms-flex-direction: row-reverse;
-            flex-direction: row-reverse;
-    padding-top: 50px;
-    padding-bottom: 40px; }
+            flex-direction: row-reverse; }
   .registration__character-wrapper {
     position: absolute;
     top: -30px;
@@ -8574,10 +8562,6 @@ button.close {
     display: none; }
 
 .registration-bonus {
-  position: absolute;
-  top: -43px;
-  left: 0;
-  width: 580px;
   padding-top: 50px;
   padding-right: 200px;
   padding-bottom: 60px;
@@ -10090,3 +10074,11 @@ form * {
 .carousel-inner > .item > a > img,
 .carousel-inner > .item > img {
   width: 100%; }
+
+.container > .button-row {
+  margin-bottom: 20px; }
+  .container > .button-row h2 {
+    margin-top: 10px; }
+
+.btn-big {
+  padding: 20px; }
