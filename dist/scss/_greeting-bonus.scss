@@ -1,13 +1,14 @@
 .greeting-bonus {
+	padding-top: 100px;
 	background-image: url('../../img/money-bg.png');
-	background-size: cover;
+	background-size: contain;
 
 	&__wrapper {
 		display: flex;
 		flex-wrap: wrap;
 		// width: 1180px;
 		// margin: 0 auto;
-		padding-top: 110px;
+		// padding-top: 110px;
 
 		// @media @tablet {
 		// 	justify-content: space-around;
@@ -74,8 +75,8 @@
 }
 
 .deposit {
-	width: 33.33%;
-	margin-bottom: 100px;
+	// width: 33.33%;
+	margin-bottom: 60px;
 	padding-left: 120px;
 
 	// @media @tablet {

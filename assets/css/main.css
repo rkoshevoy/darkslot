@@ -8612,15 +8612,15 @@ button.close {
     padding-bottom: 30px; }
 
 .greeting-bonus {
+  padding-top: 100px;
   background-image: url("../../img/money-bg.png");
-  background-size: cover; }
+  background-size: contain; }
   .greeting-bonus__wrapper {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    padding-top: 110px; }
+        flex-wrap: wrap; }
   .greeting-bonus__header {
     width: 100%;
     margin-bottom: 10px;
@@ -8649,8 +8649,7 @@ button.close {
       background-color: #de3137; }
 
 .deposit {
-  width: 33.33%;
-  margin-bottom: 100px;
+  margin-bottom: 60px;
   padding-left: 120px; }
   .deposit__percents {
     display: block;
@@ -8677,32 +8676,14 @@ button.close {
   background-image: url("../../img/coins-many.png"); }
 
 .cashback {
+  padding-top: 45px;
+  padding-bottom: 55px;
   background-color: #212121; }
   .cashback__wrapper {
     width: 1000px;
     margin: 0 auto;
     padding-top: 45px;
     padding-bottom: 55px; }
-  .cashback__first-line {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    margin-bottom: 80px; }
-  .cashback__second-line {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center; }
   .cashback__text-wrapper {
     position: relative;
     padding-top: 55px;
@@ -8809,13 +8790,12 @@ button.close {
       background-color: #de3137; }
 
 .cashback--background {
-  margin-bottom: 30px;
+  margin-bottom: 60px;
   background-image: url("../../img/vip-bonus-bg.png");
   background-size: cover; }
 
 .cashback-code {
   display: block;
-  width: 380px;
   padding: 30px 23px;
   border: 2px dashed #fff; }
   .cashback-code__header {
@@ -8826,6 +8806,9 @@ button.close {
     display: block;
     font-size: 20px;
     font-family: SFUIHeavy; }
+
+.vip-bonus {
+  margin-bottom: 60px; }
 
 .bonus-more__wrapper {
   display: -webkit-box;
@@ -9175,7 +9158,6 @@ button.close {
 
 .condition {
   position: relative;
-  width: 33.33%;
   padding-top: 70px;
   margin-bottom: 120px; }
   .condition::before {
@@ -10076,6 +10058,9 @@ form * {
 .btn-big {
   padding: 20px; }
 
+.btn-wide {
+  padding: 20px 80px; }
+
 .about-row {
   margin-bottom: 40px; }
 
@@ -10086,3 +10071,6 @@ form * {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center; }
+
+.bonus-row {
+  margin-bottom: 60px; }
