@@ -3495,10 +3495,12 @@
       background-color: #ed383f; }
 
 .about {
-  padding-top: 100px;
+  padding: 60px 0;
   background-image: url("../../img/cubes.png");
   background-position: top;
   background-size: contain; }
+  .about-row {
+    margin: 40px 0; }
   .about__header-wrapper {
     width: 500px;
     margin-bottom: 110px;
@@ -4284,9 +4286,6 @@ form * {
 
 .btn-wide {
   padding: 20px 80px; }
-
-.about-row {
-  margin-bottom: 40px; }
 
 .vertical-center {
   display: -webkit-box;

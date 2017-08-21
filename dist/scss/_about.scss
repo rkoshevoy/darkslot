@@ -1,8 +1,12 @@
 .about {
-	padding-top: 100px;
+	padding: 60px 0;
 	background-image: url('../../img/cubes.png');
 	background-position: top;
 	background-size: contain;
+
+	&-row {
+		margin: 40px 0;
+	}
 
 	&__wrapper {
 		// width: 1180px;
