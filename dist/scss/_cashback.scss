@@ -73,6 +73,10 @@
 			background-color: rgba(237, 56, 63, 0.8);
 		}
 
+		img {
+			max-width: 100%;
+		}
+
 		// @media @tablet {
 
 		// 	img {
@@ -170,7 +174,7 @@
 		position: relative;
 		z-index: 1;
 		display: block;
-		width: 390px;
+		// width: 390px;
 		font-size: 18px;
 		line-height: 41px;
 		font-family: SFUIBold;
@@ -179,9 +183,10 @@
 		// 	margin-bottom: 40px;
 		// }
 
-		// @media @mobile {
-		// 	text-align: center;
-		// }
+		@media (max-width: 768px) {
+			font-size: 14px;
+			line-height: 20px
+		}
 	}
 
 	&__red {
@@ -198,6 +203,14 @@
 			width: calc(100% + 20px);
 			height: 35px;
 			background-color: $main-color;
+		}
+
+		@media (max-width: 768px) {
+
+			&::before {
+				top: 0;
+				height: 20px;
+			}
 		}
 	}
 
