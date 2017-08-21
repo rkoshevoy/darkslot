@@ -83,38 +83,40 @@
 										<span class="header__user-image">
 											<img src="img/user-icon.png" alt="user">
 											<span>2</span>
-										</span> Guest <span class="caret"></span></a>
-										<ul class="dropdown-menu">
-											<li><a href="#">list item</a></li>
-											<li><a href="#">list item</a></li>
-											<li><a href="#">list item</a></li>
-											<li><a href="#">list item</a></li>
-											<li><a href="#">list item</a></li>
-											<li><a href="#">list item</a></li>
-										</ul>
-									</li>
-							<li class="dropdown hidden">
-								<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
-									<span class="header__user-image">
-										<img src="img/user-money.png" alt="money">
-									</span> 200 BTC <span class="caret"></span></a>
+										</span> Guest <span class="caret"></span>
+									</a>
+									<ul class="dropdown-menu">
+										<li><a href="#">list item</a></li>
+										<li><a href="#">list item</a></li>
+										<li><a href="#">list item</a></li>
+										<li><a href="#">list item</a></li>
+										<li><a href="#">list item</a></li>
+										<li><a href="#">list item</a></li>
+									</ul>
+								</li>
+								<li class="dropdown hidden">
+									<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+										<span class="header__user-image">
+											<img src="img/user-money.png" alt="money">
+										</span> 200 BTC <span class="caret"></span>
+									</a>
 									<ul class="dropdown-menu">
 										<li><a href="#">BTC</a></li>
 										<li><a href="#">EUR</a></li>
 										<li><a href="#">USD</a></li>
 										<li><a href="#">RUB</a></li>
 									</ul>
-							</li>
-							<li class="header__deposit-btn hidden"><button type="button" class="btn btn-secondary">Депозит</button></li>
+								</li>
+								<li class="header__deposit-btn hidden"><button type="button" class="btn btn-secondary">Депозит</button></li>
 
-						</ul>
-					</div><!-- /.navbar-collapse -->
+							</ul>
+						</div><!-- /.navbar-collapse -->
 
+					</div>
 				</div>
 			</div>
-		</div>
-	</nav>
-</header>
+		</nav>
+	</header>
 
 <div class="main-wrapper main-wrapper--triangles">
 
@@ -303,7 +305,7 @@
 
 		<!-- <section id="gamesPannel" class="tabs"> -->
 
-		<nav class="navbar navbar-inverse">
+		<nav id="games-nav" class="navbar navbar-inverse">
 			<div class="container">
 				<div class="row">
 
@@ -392,35 +394,23 @@
 		<section class="jackpot">
 			<div class="container">
 				<div class="row">
-					<div class="col-sm-7">
-						<div class="jack">
-							<div class="jackpot-wrap">
+					<div class="col-sm-12">
+						<div class="jackpot-wrap">
+							<div class="jackpot-content">
 								<h1 class="jackpot__header">$ 10 000 000,45</h1>
 								<h2 class="jackpot__underheader">Общий джекпот</h2>
 								<button id="gamesJackpot" class="btn btn-danger btn-big">Показать игры с джекпотом</button>
-								<span class="jackpot__background-text">#ничоси</span>
 							</div>
-						</div>
-					</div>
-					<div class="col-sm-5">
-						<div class="jackpot__image-wrapper">
-							<img src="img/viking.png" alt="Викинг" class="jackpot__image">
+
+							<div class="jackpot__image-wrapper">
+								<span class="jackpot__background-text">#ничоси</span>
+								<img src="img/viking.png" alt="Викинг" class="jackpot__image">
+							</div>
 						</div>
 					</div>
 				</div>
 			</div>
 		</section>
-
-		<div class="container">
-			<div class="row">
-				<div class="col-sm-12 text-center" style="padding: 10px;">
-					<button class="btn btn-secondary" data-toggle="modal" data-target="#modalSecondLevel">2 уровень</button>
-					<button class="btn btn-secondary btn-secondary-full" data-toggle="modal" data-target="#modalThirdLevel">3 уровень</button>
-					<button class="btn btn-danger" data-toggle="modal" data-target="#modalFourthLevel">4 уровень</button>
-					<button class="btn btn-danger">Button</button>
-				</div>
-			</div>
-		</div>
 
 		<section class="last-winners">
 			<div class="container">
@@ -474,41 +464,62 @@
 			</div>
 		</section>
 
-		<section class="registration">
+		<section class="registration tiger-reg">
 			<div class="container">
 				<div class="row">
-					<div class="col-sm-6">
+					<div class="col-md-6">
+
 						<div class="registration-bonus">
-							<h3 class="registration-bonus__header">Зарегистрируйся и получи</h3>
-							<h3 class="registration-bonus__underheader">Приветственный бонус</h3>
-							<span class="registration-bonus__count">1800$</span>
+							<div class="registration-bonus-content">
+								<h3 class="registration-bonus__header">Зарегистрируйся и получи</h3>
+								<h3 class="registration-bonus__underheader">Приветственный бонус</h3>
+								<span class="registration-bonus__count">1800$</span>
+								<a href="bonus.html" class="ds-link">Подробнее</a>
+							</div>
+
+							<div class="registration-bonus-pers">
+								<img src="img/tiger.png" alt="toger" class="registration-bonus-pers-img">
+							</div>
 						</div>
 
-						<div class="registration__character-wrapper">
-							<img src="img/tiger.png" alt="toger" class="registration__character">
-						</div>
 					</div>
 
-					<div class="col-sm-offset-2 col-sm-4">
-						<form action="#" class="registration-form-mini registration-form-mini--bottom">
-							<input type="email" placeholder="Email" class="registration-form-mini__email">
-							<input type="text" placeholder="Никнейм" class="registration-form-mini__nickname">
-							<input type="password" placeholder="Пароль" class="registration-form-mini__password">
-							<input type="password" placeholder="Подтверждение пароля" class="registration-form-mini__password-confirm">
-							<select name="" id="bottom-reg-select" class="registration-form-mini__select">
-								<option value="currency" selected disabled>Валюта</option>
-								<option value="rub">Рубли</option>
-								<option value="euro">Евро</option>
-								<option value="dollar">Доллары</option>
-								<option value="btc">Биткоины</option>
-							</select>
+					<div class="col-md-4 col-md-offset-2">
+						<div class="tiger-reg-form">
+							<form action="#" class="registration-form-mini registration-form-mini--slide">
+								<div class="form-group">
+									<input type="email" class="form-control" name="" placeholder="Email">
+								</div>
+								<div class="form-group">
+									<input type="text" class="form-control" name="" placeholder="Никнейм">
+								</div>
 
-							<input type="checkbox" id="bottom-form-checkbox" class="registration-form-mini__checkbox">
-							<label for="bottom-form-checkbox" class="registration-form-mini__label-checkbox">Мне 18 лет и я принимаю Положения и условия</label>
+								<div class="form-group">
+									<input type="password" class="form-control" name="" placeholder="Пароль">
+								</div>
+								<div class="form-group hidden">
+									<input type="password" class="form-control" name="" placeholder="Подтверждение пароля">
+								</div>
 
-							<input type="submit" class="registration-form-mini__button" value="Регистрация">
-							<!-- <button class="btn btn-secondary btn-secondary-full">Регистрация</button> -->
-						</form>
+								<div class="form-group">
+									<select class="form-control" name="">
+										<option value="currency" selected disabled>Валюта</option>
+										<option value="rub">Рубли</option>
+										<option value="euro">Евро</option>
+										<option value="dollar">Доллары</option>
+										<option value="btc">Биткоины</option>
+									</select>
+								</div>
+
+								<div class="form-group">
+									<input type="checkbox" id="slide-checkbox" class="registration-form-mini__checkbox">
+									<label for="slide-checkbox" class="registration-form-mini__label-checkbox">
+										Мне 18 лет и я принимаю <a href="#" class="ds-link" data-toggle="modal" data-target="#modalRules">Положения и условия</a></label>
+								</div>
+
+								<input type="submit" class="btn btn-secondary btn-secondary-full btn-full-width" value="Регистрация">
+							</form>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -564,15 +575,18 @@
 		<section class="deposites">
 			<div class="container">
 				<div class="row">
-					<div class="col-sm-6">
-						<div class="deposites__header">
-							<p>Заработай 45% + до 1000$ за каждый уровень! Уникальной партнерской программы!</p>
-						</div>
-						<a href="partners.html" class="btn btn-danger btn-big">Стать партнером</a>
-					</div>
-					<div class="col-sm-offset-2 col-sm-4">
-						<div class="deposites__image-wrapper">
-							<img src="img/chest.png" alt="chest" class="deposites__image">
+					<div class="col-sm-12">
+						<div class="deposites__wrapper">
+							<div class="deposites__content">
+								<div class="deposites__header">
+									<p>Заработай 45% + до 1000$ за каждый уровень! Уникальной партнерской программы!</p>
+								</div>
+								<a href="partners.html" class="btn btn-danger btn-big">Стать партнером</a>
+							</div>
+
+							<div class="deposites__image-wrapper">
+								<img src="img/chest.png" alt="chest" class="deposites__image">
+							</div>
 						</div>
 					</div>
 				</div>
@@ -584,7 +598,7 @@
 				<div class="row">
 					<div class="col-md-8">
 						<div class="row">
-							<div class="col-md-4">
+							<div class="col-md-3">
 								<h2 class="games__header">Игры</h2>
 								<ul class="games__list">
 									<li class="games__item"><a href="#">NetEnt</a></li>
@@ -626,7 +640,7 @@
 						</div>
 					</div>
 					<div class="col-md-4">
-						<div class="games__social">
+						<div class="games__social text-right">
 							<span class="games__text">Следите за нами</span>
 							<div class="games__social-list">
 								<a href="#" target="blank"><img src="img/social-icons/fb-big.png" alt=""></a>
@@ -644,6 +658,16 @@
 					<div class="games__column"></div>
 				</div>
 			</div> -->
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-12 text-center" style="padding: 10px;">
+						<button class="btn btn-secondary" data-toggle="modal" data-target="#modalSecondLevel">2 уровень</button>
+						<button class="btn btn-secondary btn-secondary-full" data-toggle="modal" data-target="#modalThirdLevel">3 уровень</button>
+						<button class="btn btn-danger" data-toggle="modal" data-target="#modalFourthLevel">4 уровень</button>
+						<button class="btn btn-danger">Button</button>
+					</div>
+				</div>
+			</div>
 		</section>
 
 		<section class="partners">

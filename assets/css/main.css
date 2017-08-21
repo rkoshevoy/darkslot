@@ -633,13 +633,19 @@
   display: -ms-flexbox;
   display: flex; }
 
+#games-nav.navbar-inverse .navbar-nav > .active > a,
+#games-nav.navbar-inverse .navbar-nav > .active > a:hover,
+#games-nav.navbar-inverse .navbar-nav > .active > a:focus,
+#games-nav.navbar-inverse .navbar-nav > li:hover {
+  background-color: #de3137; }
+
 .navbar-games-item {
   background-position: 10px center; }
   .navbar-games-item a {
     background-position: 10px center; }
   .navbar-games-item:first-child a {
     background-image: url("../../img/games-icons/diamond.png"); }
-    .navbar-games-item:first-child a:hover {
+    .navbar-games-item:first-child a:hover, .navbar-games-item:first-child a.active {
       background-image: url("../../img/games-icons/diamond-hover.png"); }
   .navbar-games-item:nth-child(2) a {
     background-image: url("../../img/games-icons/cherry.png"); }
@@ -658,52 +664,58 @@
     .navbar-games-item:last-child a:hover {
       background-image: url("../../img/games-icons/roulette-hover.png"); }
 
-.jackpot__wrapper {
-  position: relative;
-  padding-top: 140px;
-  padding-bottom: 95px; }
-
-.jackpot__header {
-  margin-bottom: 20px;
-  font-size: 80px;
-  line-height: 80px; }
-
-.jackpot__underheader {
-  margin-bottom: 40px;
-  font-size: 37px;
-  color: #aeaeae;
-  text-transform: uppercase; }
-
-.jackpot__button {
-  padding: 30px 65px;
-  background-color: #ed383f;
-  font-family: SFUIBold;
-  font-size: 18px; }
-  .jackpot__button:hover {
-    background-color: #de3137; }
-
-.jackpot__background-text {
-  position: absolute;
-  z-index: -1;
-  top: 20px;
-  left: -30px;
-  font-size: 176px;
-  line-height: 176px;
-  color: #191919; }
-
-.jackpot__image {
-  width: 100%; }
-
-.jack {
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center; }
+.jackpot {
+  margin-top: 60px;
+  height: 500px; }
+  .jackpot-wrap,
+  .jackpot .container,
+  .jackpot .row,
+  .jackpot [class^="col"] {
+    height: 100%; }
+  .jackpot-wrap {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+  .jackpot-content {
+    z-index: 1; }
+  .jackpot__wrapper {
+    position: relative;
+    padding-top: 140px;
+    padding-bottom: 95px; }
+  .jackpot__header {
+    margin-bottom: 20px;
+    font-size: 80px;
+    line-height: 80px;
+    white-space: pre; }
+  .jackpot__underheader {
+    margin-bottom: 40px;
+    font-size: 37px;
+    color: #aeaeae;
+    text-transform: uppercase; }
+  .jackpot__button {
+    padding: 30px 65px;
+    background-color: #ed383f;
+    font-family: SFUIBold;
+    font-size: 18px; }
+    .jackpot__button:hover {
+      background-color: #de3137; }
+  .jackpot__background-text {
+    position: absolute;
+    top: -10px;
+    left: 0;
+    font-size: 12em;
+    color: #000; }
+  .jackpot__image-wrapper {
+    height: 100%; }
+  .jackpot__image {
+    height: 100%;
+    position: relative; }
 
 .last-winners {
-  padding: 40px 0;
+  padding: 80px 0;
   background-color: #2b2b2b; }
   .last-winners__header {
     margin-bottom: 40px;
@@ -832,11 +844,14 @@
       margin-right: 0; }
 
 .deposites {
-  padding: 30px 0; }
+  padding: 60px 0; }
   .deposites__wrapper {
-    position: relative;
-    padding-top: 230px;
-    padding-bottom: 170px; }
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
   .deposites__header {
     margin-bottom: 30px;
     font-size: 40px;
@@ -852,7 +867,8 @@
     .deposites__button:hover {
       background-color: #de3137; }
   .deposites__image {
-    width: 100%; }
+    max-height: 100%;
+    width: auto; }
 
 .games {
   position: relative;
@@ -918,9 +934,12 @@
   .games__social-list {
     display: -webkit-box;
     display: -ms-flexbox;
-    display: flex; }
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end; }
     .games__social-list a {
-      margin-right: 20px; }
+      margin-left: 20px; }
       .games__social-list a::last-child {
         margin-right: 0; }
 
@@ -2584,7 +2603,7 @@
 .registration-form-mini__label-checkbox {
   display: inline-block;
   position: relative;
-  padding-left: 15px;
+  padding-left: 20px;
   margin-bottom: 20px;
   font-size: 13px;
   line-height: 20px;
@@ -2631,130 +2650,6 @@
   transition: 0.1s; }
   .registration-form-mini__button:hover {
     background-color: #de3137; }
-
-.registration-form-mini .jq-selectbox,
-.registration-form-mini .jq-select-multiple {
-  position: relative;
-  display: inline-block; }
-
-.registration-form-mini .jq-selectbox select,
-.registration-form-mini .jq-select-multiple select {
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  margin: 0;
-  padding: 0;
-  opacity: 0; }
-
-.registration-form-mini .jq-selectbox li,
-.registration-form-mini .jq-select-multiple li {
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  white-space: nowrap; }
-
-.registration-form-mini .jq-selectbox {
-  z-index: 10; }
-
-.registration-form-mini .jq-selectbox__select {
-  position: relative; }
-
-.registration-form-mini .jq-selectbox__select-text {
-  overflow: hidden;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  white-space: nowrap;
-  text-overflow: ellipsis; }
-
-.registration-form-mini .jq-selectbox__dropdown {
-  position: absolute; }
-
-.registration-form-mini .jq-selectbox__dropdown ul {
-  position: relative;
-  overflow: auto;
-  overflow-x: hidden;
-  list-style: none;
-  -webkit-overflow-scrolling: touch; }
-
-.registration-form-mini .jq-selectbox {
-  cursor: pointer; }
-
-.registration-form-mini .jq-selectbox__select {
-  position: relative;
-  width: 100%;
-  padding: 13px;
-  background-color: #fff;
-  -webkit-transition: 0.1s;
-  transition: 0.1s; }
-
-.registration-form-mini .jq-selectbox__select::after {
-  content: '';
-  position: absolute;
-  right: 12px;
-  top: 15px;
-  width: 7px;
-  height: 7px;
-  border-top: 1px solid #b7b7b7;
-  border-right: 1px solid #b7b7b7;
-  -webkit-transform: rotate(135deg);
-          transform: rotate(135deg); }
-
-.registration-form-mini .jq-selectbox__select-text {
-  display: block;
-  width: 100%; }
-
-.registration-form-mini .jq-selectbox__dropdown {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  width: 100%;
-  top: 42px;
-  padding-left: 0;
-  background: #FFF; }
-
-.registration-form-mini .jq-selectbox ul {
-  margin: 0;
-  padding: 0; }
-
-.registration-form-mini .jq-selectbox li {
-  min-height: 18px;
-  padding: 5px 12px;
-  color: #231F20;
-  -webkit-transition: 0.1s;
-  transition: 0.1s; }
-
-.registration-form-mini .jq-selectbox li.selected {
-  background-color: #e8e8e8;
-  color: #000; }
-
-.registration-form-mini .jq-selectbox li.disabled {
-  color: #bababa; }
-
-.registration-form-mini .jq-selectbox li.disabled:hover {
-  color: #d5d5d5; }
-
-.registration-form-mini .jq-selectbox li:hover {
-  background-color: #e8e8e8;
-  color: #000; }
-
-.registration-form-mini .jq-selectbox li.option {
-  padding-left: 25px; }
-
-.registration-form-mini--bottom {
-  background-color: rgba(76, 133, 161, 0.7); }
-  .registration-form-mini--bottom .registration-form-mini__button {
-    background-color: #005fdc; }
-    .registration-form-mini--bottom .registration-form-mini__button:hover {
-      background-color: #0257c8; }
-
-.registration-form-mini--slide .registration-form-mini__button {
-  background-color: #005fdc; }
-  .registration-form-mini--slide .registration-form-mini__button:hover {
-    background-color: #0257c8; }
 
 .registration {
   background-image: url("../../img/slider-images/slide-wood.png");
@@ -4205,9 +4100,6 @@ form * {
   background-color: #161616;
   border: 0; }
 
-.navbar-inverse .navbar-games > li > a {
-  padding-left: 50px; }
-
 .navbar-nav > li:hover {
   background-color: black; }
 
@@ -4318,7 +4210,23 @@ form * {
       -ms-flex-align: center;
           align-items: center; }
 
+#casino-banner .tiger-reg .registration-bonus {
+  position: relative;
+  top: 0; }
+  #casino-banner .tiger-reg .registration-bonus .registration-bonus-pers {
+    bottom: -10px; }
+
 #casino-banner .tiger-reg .tiger-reg-form {
+  background-color: rgba(76, 133, 161, 0.7);
+  padding: 15px; }
+
+.registration.tiger-reg .registration-bonus {
+  position: relative;
+  top: -90px; }
+  .registration.tiger-reg .registration-bonus .registration-bonus-pers {
+    bottom: -80px; }
+
+.registration.tiger-reg .tiger-reg-form {
   background-color: rgba(76, 133, 161, 0.7);
   padding: 15px; }
 

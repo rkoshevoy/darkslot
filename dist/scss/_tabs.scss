@@ -302,6 +302,16 @@
 	display: flex;
 }
 
+
+#games-nav {
+	&.navbar-inverse .navbar-nav > .active > a,
+	&.navbar-inverse .navbar-nav > .active > a:hover,
+	&.navbar-inverse .navbar-nav > .active > a:focus,
+	&.navbar-inverse .navbar-nav > li:hover {
+		background-color: $main-color-hover;
+	}
+}
+
 .navbar-games-item {
 	background-position: 10px center;
 
@@ -312,7 +322,8 @@
 	&:first-child a {
 		background-image: url('../../img/games-icons/diamond.png');
 
-		&:hover {
+		&:hover,
+		&.active {
 			background-image: url('../../img/games-icons/diamond-hover.png');
 		}
 	}
@@ -339,7 +350,7 @@
 		&:hover {
 			background-image: url('../../img/games-icons/cubes-hover.png');
 		}
-	}	
+	}
 
 	&:last-child a {
 		background-image: url('../../img/games-icons/roulette.png');

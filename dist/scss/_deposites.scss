@@ -2,25 +2,11 @@
 	// background-image: url('../../img/bg-deposites.png');
 	// background-size: cover;
 	// background-position: bottom;
-	padding: 30px 0;
+	padding: 60px 0;
 
 	&__wrapper {
-		position: relative;
-		padding-top: 230px;
-		padding-bottom: 170px;
-		// width: 1180px;
-		// margin: 0 auto;
-
-		// @media @tablet {
-		// 	width: 748px;
-		// }
-
-		// @media @mobile {
-		// 	.mobile-wrap;
-		// 	text-align: center;
-		// 	padding-top: 100px;
-		// 	// padding-bottom: 400px;
-		// }
+		display: flex;
+		align-items: center;
 	}
 
 	&__header {
@@ -28,15 +14,6 @@
 		margin-bottom: 30px;
 		font-size: 40px;
 		line-height: 60px;
-
-		// @media @tablet {
-		// 	width: 100%;
-		// }
-
-		// @media @mobile {
-		// 	font-size: 32px;
-		// 	line-height: 40px;
-		// }
 	}
 
 	&__button {
@@ -59,27 +36,11 @@
 	}
 
 	&__image-wrapper {
-		// position: absolute;
-		// top: 220px;
-		// right: 0;
 
-		// @media @tablet {
-		// 	top: auto;
-		// 	bottom: 50px;
-		// 	width: 300px;
-		// }
-
-		// @media @mobile {
-		// 	display: none;
-		// 	// width: 300px;
-		// 	// left: 50%;
-		// 	// right: auto;
-		// 	// bottom: 90px;
-		// 	// transform: translatex(-50%);
-		// }
 	}
 
 	&__image {
-		width: 100%;
+		max-height: 100%;
+    width: auto;
 	}
 }

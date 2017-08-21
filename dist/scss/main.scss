@@ -129,10 +129,6 @@ form {
   border: 0;
 }
 
-.navbar-inverse .navbar-games > li > a {
-	padding-left: 50px;
-}
-
 .navbar-nav > li {
 
 	&:hover {
@@ -285,10 +281,34 @@ form {
 	    align-items: center;
 		}
 
+		.registration-bonus {
+			position: relative;
+			top: 0;
+
+			.registration-bonus-pers {
+				bottom: -10px;
+			}
+		}
+
 		.tiger-reg-form {
 			background-color: rgba(76, 133, 161, 0.7);
 			padding: 15px;
 		}
+	}
+}
+
+.registration.tiger-reg {
+	.registration-bonus {
+		position: relative;
+		top: -90px;
+
+		.registration-bonus-pers {
+			bottom: -80px;
+		}
+	}
+	.tiger-reg-form {
+		background-color: rgba(76, 133, 161, 0.7);
+		padding: 15px;
 	}
 }
 
