@@ -13,6 +13,7 @@
 	<!-- <link rel="stylesheet" href="css/jquery.formstyler.css"> -->
 	<link rel="stylesheet" href="css/jquery.mCustomScrollbar.css">
 
+	<link rel="stylesheet" href="assets/css/bootstrap.css">
 	<link rel="stylesheet" href="assets/css/main.css">
 </head>
 <body class="page-home">
@@ -77,12 +78,12 @@
 							</ul>
 
 							<ul class="nav navbar-nav navbar-right header__user">
-								<li class="header__auth hidden">
+								<li class="header__auth ">
 									<button type="button" class="btn btn-danger " data-toggle="modal" data-target="#modalReg">Регистрация</button>
 									<button type="button" class="btn btn-secondary " data-toggle="modal" data-target="#modalSignIn">Вход</button>
 								</li>
 
-								<li class="dropdown ">
+								<li class="dropdown hidden">
 									<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
 										<span class="header__user-image">
 											<img src="img/user-icon.png" alt="user">
@@ -97,22 +98,7 @@
 											<li><a href="#">list item</a></li>
 										</ul>
 									</li>
-
-									<!-- <li class="header__auth-user">
-									<div class="header__user-image">
-										<img src="img/user-icon.png" alt="user">
-										<span>2</span>
-									</div>
-									<span></span>
-									<ul class="header__dropdown">
-									<li class="header__dropdown-item">list item 77777</li>
-									<li class="header__dropdown-item">item 222</li>
-									<li class="header__dropdown-item">item 222</li>
-									<li class="header__dropdown-item">item 222</li>
-									<li class="header__dropdown-item">item 222</li>
-								</ul>
-							</li> -->
-							<li class="dropdown ">
+							<li class="dropdown hidden">
 								<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
 									<span class="header__user-image">
 										<img src="img/user-money.png" alt="money">
@@ -123,19 +109,8 @@
 										<li><a href="#">USD</a></li>
 										<li><a href="#">RUB</a></li>
 									</ul>
-									<!-- <div class="header__user-image">
-									<img src="img/user-money.png" alt="money">
-									</div>
-									<span>200 BTC</span>
-									<ul class="header__dropdown">
-									<li class="header__dropdown-item">Bitcoin</li>
-									<li class="header__dropdown-item">$$$$$$$$</li>
-									<li class="header__dropdown-item">Евро</li>
-									<li class="header__dropdown-item">item</li>
-									<li class="header__dropdown-item">item</li>
-								</ul> -->
 							</li>
-							<li class="header__deposit-btn"><button type="button" class="btn btn-secondary">Депозит</button></li>
+							<li class="header__deposit-btn hidden"><button type="button" class="btn btn-secondary">Депозит</button></li>
 
 						</ul>
 					</div><!-- /.navbar-collapse -->
@@ -148,59 +123,76 @@
 
 <div class="main-wrapper main-wrapper--triangles">
 
-	<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
-		<!-- Indicators -->
+	<div id="casino-banner" class="carousel slide" data-ride="carousel">
+			<!-- Indicators -->
 		  <!-- <ol class="carousel-indicators">
-		    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-		    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
-		    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
-		    <li data-target="#carousel-example-generic" data-slide-to="3"></li>
-		    <li data-target="#carousel-example-generic" data-slide-to="4"></li>
+		    <li data-target="#casino-banner" data-slide-to="0" class="active"></li>
+		    <li data-target="#casino-banner" data-slide-to="1"></li>
+		    <li data-target="#casino-banner" data-slide-to="2"></li>
+		    <li data-target="#casino-banner" data-slide-to="3"></li>
+		    <li data-target="#casino-banner" data-slide-to="4"></li>
 		  </ol> -->
-
 		  <!-- Wrapper for slides -->
 		  <div class="carousel-inner" role="listbox">
-		  	<div class="item active">
+			  <div class="item active pirate-reg">
 		  		<img src="img/slider-images/slide-lord.png" alt="lord">
-		  		<div class="container">
-		  			<div class="row">
-		  				<div class="col-sm-6">
-		  					<div class="row">
-		  						<div class="col-sm-6">
-		  							<!-- <div class="slide-bonus">
-		  								<span class="slide-bonus__first-line">10$</span>
-		  								<span class="slide-bonus__second-line">без депозита</span>
-		  								<span class="slide-bonus__third-line">- за регистрацию -</span>
-		  								<button class="slide-bonus__link" id="slider-button-rules">Подробнее</button>
-		  							</div> -->
-		  						 </div>
+					<div class="carousel-caption">
+			  		<div class="container">
+			  			<div class="row">
+			  				<div class="col-sm-8">
+									<div class="slide-wrap">
+										<div class="row">
+											<div class="col-sm-6">
+												<div class="slide-bonus">
+													<span class="slide-bonus__first-line">10$</span>
+													<span class="slide-bonus__second-line">без депозита</span>
+													<span class="slide-bonus__third-line">- за регистрацию -</span>
+													<a class="ds-link" data-toggle="modal" data-target="#modalRules">Подробнее</a>
+												</div>
+											</div>
 
-		  						<div class="col-sm-6">
-		  							<!-- <form action="#" class="registration-form-mini">
-		  								<input type="email" placeholder="Email" class="registration-form-mini__email">
-		  								<input type="text" placeholder="Никнейм" class="registration-form-mini__nickname">
-		  								<input type="password" placeholder="Пароль" class="registration-form-mini__password">
-		  								<input type="password" placeholder="Подтверждение пароля" class="registration-form-mini__password-confirm">
-		  								<select name="" id="slide-reg-select" class="registration-form-mini__select">
-		  									<option value="currency" selected disabled>Валюта</option>
-		  									<option value="rub">Рубли</option>
-		  									<option value="euro">Евро</option>
-		  									<option value="dollar">Доллары</option>
-		  									<option value="btc">Биткоины</option>
-		  								</select>
+											<div class="col-sm-6">
+												<form action="#" class="registration-form-mini">
+													<div class="form-group">
+												    <input type="email" class="form-control" name="" placeholder="Email">
+												  </div>
+													<div class="form-group">
+												    <input type="text" class="form-control" name="" placeholder="Никнейм">
+												  </div>
 
-		  								<input type="checkbox" id="slide-checkbox" class="registration-form-mini__checkbox">
-		  								<label for="slide-checkbox" class="registration-form-mini__label-checkbox">Мне 18 лет и я принимаю Положения и условия</label>
+													<div class="form-group">
+												    <input type="password" class="form-control" name="" placeholder="Пароль">
+												  </div>
+													<div class="form-group hidden">
+												    <input type="password" class="form-control" name="" placeholder="Подтверждение пароля">
+												  </div>
 
-		  								<input type="submit" class="registration-form-mini__button" value="Регистрация">
-		  								<button class="slide__reg-button">Регистрация</button>
-		  							</form> -->
-		  						</div>
-		  					</div>
-		  				</div>
-		  			</div>
-		  		</div>
-		  	</div>
+													<div class="form-group">
+														<select class="form-control" name="">
+															<option value="currency" selected disabled>Валюта</option>
+															<option value="rub">Рубли</option>
+															<option value="euro">Евро</option>
+															<option value="dollar">Доллары</option>
+															<option value="btc">Биткоины</option>
+														</select>
+													</div>
+
+													<div class="form-group">
+														<input type="checkbox" id="slide-checkbox" class="registration-form-mini__checkbox">
+														<label for="slide-checkbox" class="registration-form-mini__label-checkbox">
+															Мне 18 лет и я принимаю <a href="#" class="ds-link" data-toggle="modal" data-target="#modalRules">Положения и условия</a></label>
+												  </div>
+
+													<button class="btn btn-danger btn-full-width">Регистрация</button>
+												</form>
+											</div>
+										</div>
+									</div>
+			  				</div>
+			  			</div>
+			  		</div>
+			  	</div>
+				</div>
 
 		  	<div class="item">
 		  		<img src="img/slider-images/slide-viking.png" alt="viking">
@@ -210,7 +202,7 @@
 		  				<div class="slide__text">
 		  					<span class="slide__upper-text">Розыгрыш каждую неделю</span>
 		  					<h1 class="slide__header">100% кэшбек</h1>
-		  					<a href="everyweek-cashback.html" class="slide__button">Подробнее</a>
+		  					<a href="everyweek-cashback.html" class="btn btn-danger">Подробнее</a>
 		  				</div>
 		  			</div>
 		  		</div>
@@ -218,78 +210,96 @@
 
 		  	<div class="item">
 		  		<img src="img/slider-images/day-slot.jpg" alt="day slot">
-		  		<div class="">
+		  		<div class="carousel-caption">
 
 		  			<div class="slide__button-wrapper">
-		  				<a href="day-slot.html" class="slide__button slide__button--centered">Играть</a>
+		  				<a href="day-slot.html" class="btn btn-danger">Играть</a>
 		  			</div>
 		  		</div>
 		  	</div>
 
-		  	<div class="item">
+		  	<div class="item tiger-reg">
 		  		<img src="img/slider-images/slide-wood.png" alt="wood">
-		  		<div class="">
 
-		  			<div class="slide__content-wrapper">
+					<div class="carousel-caption">
+			  		<div class="container">
+			  			<div class="row">
+								<div class="col-md-6">
 
-		  				<section class="registration registration--slide">
-		  					<div class="registration__wrapper">
+									<div class="registration-bonus">
+										<div class="registration-bonus-content">
+											<h3 class="registration-bonus__header">Зарегистрируйся и получи</h3>
+											<h3 class="registration-bonus__underheader">Приветственный бонус</h3>
+											<span class="registration-bonus__count">1800$</span>
+											<a href="bonus.html" class="ds-link">Подробнее</a>
+										</div>
 
-		  						<div class="registration-bonus">
-		  							<h3 class="registration-bonus__header">Зарегистрируйся и получи</h3>
-		  							<h3 class="registration-bonus__underheader">Приветственный бонус</h3>
-		  							<span class="registration-bonus__count">1800$</span>
-		  							<a href="bonus.html" class="registration-bonus__details">Подробнее</a>
-		  						</div>
+										<div class="registration-bonus-pers">
+											<img src="img/tiger.png" alt="toger" class="registration-bonus-pers-img">
+										</div>
+									</div>
 
-		  						<div class="registration__character-wrapper">
-		  							<img src="img/tiger.png" alt="toger" class="registration__character">
-		  						</div>
+								</div>
 
-		  						<form action="#" class="registration-form-mini registration-form-mini--slide">
-		  							<input type="email" placeholder="Email" class="registration-form-mini__email">
-		  							<input type="text" placeholder="Никнейм" class="registration-form-mini__nickname">
-		  							<input type="password" placeholder="Пароль" class="registration-form-mini__password">
-		  							<input type="password" placeholder="Подтверждение пароля" class="registration-form-mini__password-confirm">
-		  							<select name="" id="bottom-reg-select" class="registration-form-mini__select">
-		  								<option value="currency" selected disabled>Валюта</option>
-		  								<option value="rub">Рубли</option>
-		  								<option value="euro">Евро</option>
-		  								<option value="dollar">Доллары</option>
-		  								<option value="btc">Биткоины</option>
-		  							</select>
+								<div class="col-md-4 col-md-offset-2">
+									<div class="tiger-reg-form">
+										<form action="#" class="registration-form-mini registration-form-mini--slide">
+											<div class="form-group">
+												<input type="email" class="form-control" name="" placeholder="Email">
+											</div>
+											<div class="form-group">
+												<input type="text" class="form-control" name="" placeholder="Никнейм">
+											</div>
 
-		  							<input type="checkbox" id="bottom-form-checkbox" class="registration-form-mini__checkbox">
-		  							<label for="bottom-form-checkbox" class="registration-form-mini__label-checkbox">Мне 18 лет и я принимаю Положения и условия</label>
+											<div class="form-group">
+												<input type="password" class="form-control" name="" placeholder="Пароль">
+											</div>
+											<div class="form-group hidden">
+												<input type="password" class="form-control" name="" placeholder="Подтверждение пароля">
+											</div>
 
-		  							<input type="submit" class="registration-form-mini__button" value="Регистрация">
-		  						</form>
+											<div class="form-group">
+												<select class="form-control" name="">
+													<option value="currency" selected disabled>Валюта</option>
+													<option value="rub">Рубли</option>
+													<option value="euro">Евро</option>
+													<option value="dollar">Доллары</option>
+													<option value="btc">Биткоины</option>
+												</select>
+											</div>
 
-		  						<button class="registration__reg-button">Регистрация</button>
+											<div class="form-group">
+												<input type="checkbox" id="slide-checkbox" class="registration-form-mini__checkbox">
+												<label for="slide-checkbox" class="registration-form-mini__label-checkbox">
+													Мне 18 лет и я принимаю <a href="#" class="ds-link" data-toggle="modal" data-target="#modalRules">Положения и условия</a></label>
+											</div>
 
-		  					</div>
-		  				</section>
-		  			</div>
+			  							<input type="submit" class="btn btn-secondary btn-secondary-full btn-full-width" value="Регистрация">
+			  						</form>
+									</div>
+								</div>
+				  		</div>
+				  	</div>
 		  		</div>
 		  	</div>
 
 		  	<div class="item">
 		  		<img src="img/slider-images/free-spins.png" alt="free spins">
-		  		<div class="">
+		  		<div class="carousel-caption">
 
 		  			<div class="slide__button-wrapper">
-		  				<a href="free-spins.html" class="slide__button slide__button--centered">Подробнее</a>
+		  				<a href="free-spins.html" class="btn btn-danger">Подробнее</a>
 		  			</div>
 		  		</div>
 		  	</div>
 		  </div>
 
 		  <!-- Controls -->
-		  <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+		  <a class="left carousel-control" href="#casino-banner" role="button" data-slide="prev">
 		  	<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
 		  	<span class="sr-only">Previous</span>
 		  </a>
-		  <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+		  <a class="right carousel-control" href="#casino-banner" role="button" data-slide="next">
 		  	<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
 		  	<span class="sr-only">Next</span>
 		  </a>
@@ -2037,7 +2047,7 @@
 
 			<!-- <script type="text/javascript" src="js/slick.min.js"></script> -->
 			<!-- <script type="text/javascript" src="js/tabs.js"></script> -->
-			<script type="text/javascript" src="js/menu.js"></script>
+			<!-- <script type="text/javascript" src="js/menu.js"></script> -->
 			<!-- <script type="text/javascript" src="js/fixed-bar.js"></script> -->
 			<!-- <script type="text/javascript" src="js/modals.js"></script> -->
 			<script type="text/javascript" src="js/reg-password.js"></script>

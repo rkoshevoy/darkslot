@@ -1,7 +1,7 @@
 .registration-form-mini {
-	position: relative;
-	width: 370px;
-	padding: 20px;
+	// position: relative;
+	// width: 370px;
+	// padding: 20px;
 
 	// @media @tablet {
 	// 	display: none;
@@ -49,10 +49,11 @@
 	&__label-checkbox {
 		display: inline-block;
 		position: relative;
-		padding-left: 30px;
+		padding-left: 15px;
 		margin-bottom: 20px;
-		font-size: 12px;
+		font-size: 13px;
 		line-height: 20px;
+		width: 100%;
 		cursor: pointer;
 
 		// @media @mobile {
@@ -229,9 +230,9 @@
 }
 
 .registration-form-mini--slide {
-	width: 450px;
-	padding-right: 100px;
-	background-color: rgba(76, 133, 161, 0.7);
+	// width: 450px;
+	// padding-right: 100px;
+	// background-color: rgba(76, 133, 161, 0.7);
 
 	.registration-form-mini__button {
 		background-color: $secondary-color;
