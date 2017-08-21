@@ -6493,13 +6493,16 @@ button.close {
   line-height: 176px;
   color: #191919; }
 
-.jackpot__image-wrapper {
-  position: absolute;
-  bottom: 0;
-  right: 0; }
-
 .jackpot__image {
   width: 100%; }
+
+.jack {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
 
 .last-winners {
   padding: 40px 0;
@@ -9370,75 +9373,65 @@ button.close {
       height: 3px;
       background-color: #ed383f; }
 
-.about__wrapper {
+.about {
   padding-top: 100px;
   background-image: url("../../img/cubes.png");
-  background-position: 0 50px;
+  background-position: top;
   background-size: contain; }
+  .about__header-wrapper {
+    width: 500px;
+    margin-bottom: 110px;
+    text-transform: uppercase; }
+  .about__header {
+    margin: 0;
+    font-size: 48px;
+    font-family: SFUIHeavy; }
+  .about__underheader {
+    font-size: 30px; }
+  .about__text {
+    width: 550px;
+    padding-top: 15px;
+    font-size: 14px;
+    line-height: 24px; }
+  .about__dignity-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin-bottom: 40px; }
 
-.about__text-wrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex; }
+.dignity__image {
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  width: 100%;
+  height: 220px;
+  background-position: center; }
 
-.about__header-wrapper {
-  width: 500px;
-  margin-bottom: 110px;
+.dignity__text-wrapper {
+  width: 100%; }
+
+.dignity__header {
+  margin-bottom: 20px;
+  font-size: 20px;
+  font-family: SFUIBold;
   text-transform: uppercase; }
 
-.about__header {
-  font-size: 48px;
-  font-family: SFUIHeavy; }
-
-.about__underheader {
-  font-size: 30px; }
-
-.about__text {
-  width: 550px;
-  padding-top: 15px;
+.dignity__text {
   font-size: 14px;
   line-height: 24px; }
 
-.about__dignity-wrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  margin-bottom: 40px; }
+.dignity-first .dignity__image {
+  background-image: url("../../img/suits-spade.png"); }
 
-.dignity {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  width: 50%; }
-  .dignity:first-child .dignity__image {
-    background-image: url("../../img/suits-spade.png"); }
-  .dignity:nth-child(2) .dignity__image {
-    background-image: url("../../img/suits-diamond.png"); }
-  .dignity:nth-child(3) .dignity__image {
-    background-image: url("../../img/suits-heart.png"); }
-  .dignity:last-child .dignity__image {
-    background-image: url("../../img/suits-club.png"); }
-  .dignity__image {
-    -ms-flex-negative: 0;
-        flex-shrink: 0;
-    width: 200px;
-    height: 220px;
-    background-position: center; }
-  .dignity__text-wrapper {
-    width: 100%; }
-  .dignity__header {
-    margin-bottom: 20px;
-    font-size: 20px;
-    font-family: SFUIBold;
-    text-transform: uppercase; }
-  .dignity__text {
-    font-size: 14px;
-    line-height: 24px; }
+.dignity-second .dignity__image {
+  background-image: url("../../img/suits-diamond.png"); }
+
+.dignity-third .dignity__image {
+  background-image: url("../../img/suits-heart.png"); }
+
+.dignity-fourth .dignity__image {
+  background-image: url("../../img/suits-club.png"); }
 
 .reload-bonus {
   background-image: url("../../img/chips-bg.png");
@@ -10082,3 +10075,14 @@ form * {
 
 .btn-big {
   padding: 20px; }
+
+.about-row {
+  margin-bottom: 40px; }
+
+.vertical-center {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
