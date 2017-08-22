@@ -20,7 +20,7 @@
 
 .free-spins {
 	background-image: url('../../img/hands-card-bg.jpg');
-	background-size: contain;
+	background-size: cover;
 	background-position: center top;
 
 	&__wrapper {
@@ -44,7 +44,8 @@
 	}
 
 	&__header-wrapper {
-		width: 700px;
+		padding-top: 80px;
+		// width: 700px;
 
 		// @media @tablet {
 		// 	width: 500px;
@@ -104,9 +105,10 @@
 	}
 
 	&__coin-image-wrapper {
-		position: absolute;
-		top: 25px;
-		right: 0;
+		padding-top: 30px;
+		// position: absolute;
+		// top: 25px;
+		// right: 0;
 
 		// @media @tablet {
 		// 	width: 200px;
@@ -123,6 +125,8 @@
 }
 
 .statistics {
+	padding-top: 100px;
+	padding-bottom: 140px;
 	background-image: url('../../img/table-bg.jpg');
 	background-size: contain;
 	background-position: center 0;
@@ -215,6 +219,7 @@
 	}
 
 	&__button-wrapper {
+		margin-top: 40px;
 		margin-bottom: 55px;
 		width: 100%;
 		text-align: center;
@@ -237,7 +242,7 @@
 	}
 
 	&__text-wrapper {
-		width: 980px;
+		// width: 980px;
 		margin: 0 auto;
 
 		// @media @tablet {
