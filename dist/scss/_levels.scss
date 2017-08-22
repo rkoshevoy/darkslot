@@ -16,7 +16,7 @@
 	}
 
 	&__header-wrapper {
-		margin-bottom: 80px;
+		margin: 80px 0;
 		text-align: center;
 
 		// @media @mobile {
@@ -52,23 +52,33 @@
 		padding: 20px;
 		padding-top: 100px;
 
+		&-knight {
+			.level-up__header-wrapper {
+				top: -60px;
+			}
+			.level-up__greeting-wrapper {
+				top: 55px;
+		    left: 70px;
+			}
+		}
+
 		// @media @mobile {
 		// 	padding: 20px;
 		// }
 
 		&__header-wrapper {
 			position: absolute;
-			top: -60px;
+			top: -80px;
 
 			// @media @mobile {
 			// 	position: relative;
-			// 	top: 0;	
+			// 	top: 0;
 			// }
 		}
 	}
 
 	.level-ability {
-		width: 368px;
+		width: 100%;
 
 		// @media @tablet {
 		// 	width: 223px;
@@ -101,6 +111,7 @@
 		position: absolute;
 		left: 20px;
 		top: -90px;
+		z-index: 1;
 
 		// @media @mobile {
 		// 	position: relative;
@@ -129,21 +140,21 @@
 	}
 
 	&__number--first {
-		color: #56c074;		
+		color: #56c074;
 	}
 
 	&__number--second {
-		color: #d6712d;		
+		color: #d6712d;
 	}
 
 	&__number--third {
-		color: #c2c2c2;		
+		color: #c2c2c2;
 	}
 
 	&__greeting-wrapper {
 		position: absolute;
-		top: 60px;
-		left: 65px;
+		top: 70px;
+    left: 62px;
 
 		// @media @mobile {
 		// 	position: relative;
@@ -182,6 +193,7 @@
 		margin-bottom: 25px;
 		font-size: 18px;
 		font-family: SFUIMedium;
+		z-index: 1;
 
 		// @media @mobile {
 		// 	margin-bottom: 10px;
@@ -239,15 +251,15 @@
 	}
 
 	.level-up-header__number--first {
-		color: #56c074;		
+		color: #56c074;
 	}
 
 	.level-up-header__number--second {
-		color: #d6712d;		
+		color: #d6712d;
 	}
 
 	.level-up-header__number--third {
-		color: #c2c2c2;		
+		color: #c2c2c2;
 	}
 
 	.level-up-header__greeting-wrapper {
@@ -291,11 +303,12 @@
 		flex-wrap: wrap;
 		align-items: center;
 		justify-content: center;
-		width: 250px;
+		width: 100%;
 		margin-bottom: 20px;
 		padding: 10px;
 		border: 1px dashed $secondary-color;
 		text-align: center;
+		min-height: 100px;
 
 	// @media @tablet {
 	// 	width: 205px;
@@ -326,7 +339,7 @@
 
 	&__text {
 		color: #afaeae;
-		font-size: 14px;
+		font-size: 13px;
 		line-height: 23px;
 
 		// @media @mobile {
@@ -374,7 +387,7 @@
 		// }
 	}
 
-	&__bottom-text {	
+	&__bottom-text {
 
 		span {
 			display: inline-block;

@@ -1,5 +1,6 @@
 .levels-ability {
 	background-color: #191919;
+	padding: 50px 0;
 
 	&__wrapper {
 		// width: 1180px;
@@ -37,16 +38,16 @@
 		padding: 20px;
 		text-align: center;
 
-		&:first-child {			
+		&:first-child {
 			width: 720px;
 			text-align: left;
 		}
 
-		// @media @tablet {	
+		// @media @tablet {
 
-		// 	&:first-child {			
-		// 		width: 300px;	
-		// 	}	
+		// 	&:first-child {
+		// 		width: 300px;
+		// 	}
 		// }
 
 		// @media @mobile {
