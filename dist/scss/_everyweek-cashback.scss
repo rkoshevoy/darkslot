@@ -38,7 +38,7 @@
 	&__back-text {
 		position: absolute;
 		z-index: 0;
-		top: -50px;
+		top: -60px;
 		left: 50%;
 		transform: translatex(-50%);
 		font-size: 120px;
@@ -82,7 +82,7 @@
 			// @media @mobile {
 
 			// 	&::after {
-			// 		bottom: -3px;					
+			// 		bottom: -3px;
 			// 	}
 			// }
 		}
@@ -197,7 +197,7 @@
 		// }
 
 		// @media @mobile {
-		// 	.mobile-wrap;	
+		// 	.mobile-wrap;
 		// 	padding: 40px 10px;
 		// }
 	}
