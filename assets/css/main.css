@@ -2969,18 +2969,17 @@
     .bonus-more__button:hover {
       background-color: #de3137; }
 
-.day-slot-image {
-  width: 100%; }
-  .day-slot-image__inner {
-    width: 100%; }
-
 .day-slot {
-  padding-top: 80px;
+  padding: 80px 0;
   background-image: url("../../img/money-bg-2.png");
   background-size: cover; }
   .day-slot__wrapper {
     padding-top: 80px;
     padding-bottom: 110px; }
+  .day-slot-image {
+    width: 100%; }
+    .day-slot-image__inner {
+      width: 100%; }
 
 .half-cashback {
   display: -webkit-box;

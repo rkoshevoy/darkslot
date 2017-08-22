@@ -6,12 +6,112 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
 	<title>Dark Slot</title>
 	<link rel="shortcut icon" href="img/favicon.png" type="image/png">
-	<!-- <link rel="stylesheet" href="css/jquery.mCustomScrollbar.css"> -->
 
 	<link rel="stylesheet" href="assets/css/bootstrap.css">
 	<link rel="stylesheet" href="assets/css/main.css">
 </head>
 <body>
+
+	<header class="header">
+		<nav class="navbar navbar-inverse navbar-fixed-top">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-12">
+						<div class="navbar-header">
+							<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#header-navbar-collapse" aria-expanded="false">
+								<span class="sr-only">Toggle navigation</span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+							</button>
+							<a class="navbar-brand ds-logo-wrap" href="index.html">
+								<img src="img/logo.png" alt="darkslot-logo" class="ds-logo">
+							</a>
+						</div>
+
+						<div class="collapse navbar-collapse" id="header-navbar-collapse">
+							<ul class="nav navbar-nav">
+								<li class="dropdown">
+									<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Игры <span class="caret"></span></a>
+									<ul class="dropdown-menu">
+										<li><a href="#">Лобби</a></li>
+										<li><a href="#">Слоты</a></li>
+										<li><a href="#">Джекпоты</a></li>
+										<li><a href="#">Настольные</a></li>
+										<li><a href="#">Live диллер</a></li>
+									</ul>
+								</li>
+								<li class="dropdown">
+									<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Акции <span class="caret"></span></a>
+									<ul class="dropdown-menu">
+										<li><a href="bonus.html">Приветственный бонус</a></li>
+										<li><a href="bonus.html#vip-bonus">VIP Bonus</a></li>
+										<li><a href="reload-bonus.html">Reload бонус</a></li>
+										<li><a href="everyweek-cashback.html">Кэшбек</a></li>
+										<li><a href="everyweek-cashback.html#live-casino">Live Casino Cashback</a></li>
+										<li><a href="day-slot.html">Слот дня во вторник</a></li>
+										<li><a href="free-spins.html">Фриспины в четверг</a></li>
+										<li><a href="tournament.html">Darkslot турнир</a></li>
+										<li><a href="levels.html">Уровни игроков</a></li>
+									</ul>
+								</li>
+								<li><a href="#" data-toggle="modal" data-target="#modalSupport">Поддержка</a></li>
+								<li><a href="partners.html">Партнерам</a></li>
+								<li class="dropdown">
+									<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">О нас <span class="caret"></span></a>
+									<ul class="dropdown-menu">
+										<li><a href="about.html">О DarkSlot</a></li>
+										<li><a href="#" class="main-nav__dropdown-rules" data-toggle="modal" data-target="#modalRules">Положения и условия</a></li>
+										<li><a href="#" class="main-nav__dropdown-policy" data-toggle="modal" data-target="#modalPolicy">Политика конфиденциальности</a></li>
+									</ul>
+								</li>
+							</ul>
+
+							<ul class="nav navbar-nav navbar-right header__user">
+								<li class="header__auth ">
+									<button type="button" class="btn btn-danger " data-toggle="modal" data-target="#modalReg">Регистрация</button>
+									<button type="button" class="btn btn-secondary " data-toggle="modal" data-target="#modalSignIn">Вход</button>
+								</li>
+
+								<li class="dropdown hidden">
+									<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+										<span class="header__user-image">
+											<img src="img/user-icon.png" alt="user">
+											<span>2</span>
+										</span> Guest <span class="caret"></span>
+									</a>
+									<ul class="dropdown-menu">
+										<li><a href="#">list item</a></li>
+										<li><a href="#">list item</a></li>
+										<li><a href="#">list item</a></li>
+										<li><a href="#">list item</a></li>
+										<li><a href="#">list item</a></li>
+										<li><a href="#">list item</a></li>
+									</ul>
+								</li>
+								<li class="dropdown hidden">
+									<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+										<span class="header__user-image">
+											<img src="img/user-money.png" alt="money">
+										</span> 200 BTC <span class="caret"></span>
+									</a>
+									<ul class="dropdown-menu">
+										<li><a href="#">BTC</a></li>
+										<li><a href="#">EUR</a></li>
+										<li><a href="#">USD</a></li>
+										<li><a href="#">RUB</a></li>
+									</ul>
+								</li>
+								<li class="header__deposit-btn hidden"><button type="button" class="btn btn-secondary">Депозит</button></li>
+
+							</ul>
+						</div><!-- /.navbar-collapse -->
+
+					</div>
+				</div>
+			</div>
+		</nav>
+	</header>
 
 	<div class="main-wrapper">
 
@@ -32,7 +132,7 @@
 
 						<button class="btn btn-danger btn-wide" id="free-spins-button">Правила и условия</button>
 					</div>
-					
+
 					<div class="col-sm-offset-1 col-sm-4">
 						<div class="free-spins__coin-image-wrapper">
 							<img src="img/free-spins-coin.png" alt="free spins" class="free-spins__coin-image">
@@ -50,7 +150,7 @@
 						<span class="statistics__number">20</span>
 						<span class="statistics__col-text">спинов на депозит 20$ (или эквивалент)</span>
 					</div>
-					
+
 					<div class="col-sm-3 text-center">
 						<span class="statistics__number">50</span>
 						<span class="statistics__col-text">спинов на депозит 50$ (или эквивалент)</span>
@@ -67,7 +167,7 @@
 					</div>
 
 				</div>
-				
+
 				<div class="row">
 					<div class="col-sm-12">
 						<div class="statistics__button-wrapper">
@@ -80,9 +180,174 @@
 					<div class="col-sm-offset-1 col-sm-10">
 						<p class="statistics__text">Данное бонусное предложение доступно только для клиентов  "DARK SLOT". Акция проводится по (День недели) с 01:00 до 23:59 (МСК). Для  участия в акции, необходимо пополнить счет не менее чем на 20$, фри спины будут начислены на счет моментально. Каждый игрок Darkslot может принять участие в акции только один раз на протяжении четверга. Бонус доступен только для одного игрового счета, человека, семью, компьютер или IP-адрес. При подозрении о нарушениях путем множественных регистраций (поддельные счета) все бонусные средства и реальные будут аннулированы. Принимая бонус, клиент соглашается с бонусными условиями, а также с общими правилами и положениями "DARK SLOT", опубликованными на сайте Darkslot.com.</p>
 					</div>
-				</div>				
+				</div>
 			</div>
 		</section>
+
+		<section class="registration tiger-reg">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-6">
+
+						<div class="registration-bonus">
+							<div class="registration-bonus-content">
+								<h3 class="registration-bonus__header">Зарегистрируйся и получи</h3>
+								<h3 class="registration-bonus__underheader">Приветственный бонус</h3>
+								<span class="registration-bonus__count">1800$</span>
+								<a href="bonus.html" class="ds-link">Подробнее</a>
+							</div>
+
+							<div class="registration-bonus-pers">
+								<img src="img/tiger.png" alt="toger" class="registration-bonus-pers-img">
+							</div>
+						</div>
+
+					</div>
+
+					<div class="col-md-4 col-md-offset-2">
+						<div class="tiger-reg-form">
+							<form action="#" class="registration-form-mini registration-form-mini--slide">
+								<div class="form-group">
+									<input type="email" class="form-control" name="" placeholder="Email">
+								</div>
+								<div class="form-group">
+									<input type="text" class="form-control" name="" placeholder="Никнейм">
+								</div>
+
+								<div class="form-group">
+									<input type="password" class="form-control" name="" placeholder="Пароль">
+								</div>
+								<div class="form-group hidden">
+									<input type="password" class="form-control" name="" placeholder="Подтверждение пароля">
+								</div>
+
+								<div class="form-group">
+									<select class="form-control" name="">
+										<option value="currency" selected disabled>Валюта</option>
+										<option value="rub">Рубли</option>
+										<option value="euro">Евро</option>
+										<option value="dollar">Доллары</option>
+										<option value="btc">Биткоины</option>
+									</select>
+								</div>
+
+								<div class="form-group">
+									<input type="checkbox" id="slide-checkbox" class="registration-form-mini__checkbox">
+									<label for="slide-checkbox" class="registration-form-mini__label-checkbox">
+										Мне 18 лет и я принимаю <a href="#" class="ds-link" data-toggle="modal" data-target="#modalRules">Положения и условия</a></label>
+								</div>
+
+								<input type="submit" class="btn btn-secondary btn-secondary-full btn-full-width" value="Регистрация">
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="games">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-8 col-sm-12 col-xs-12">
+						<div class="row">
+							<div class="col-md-3 col-sm-4 col-xs-4">
+								<h2 class="games__header">Игры</h2>
+								<ul class="games__list">
+									<li class="games__item"><a href="#">NetEnt</a></li>
+									<li class="games__item"><a href="#">Amatic</a></li>
+									<li class="games__item"><a href="#">Ezugi</a></li>
+									<li class="games__item"><a href="#">Softswiss</a></li>
+									<li class="games__item"><a href="#">Лобби</a></li>
+									<li class="games__item"><a href="#">Слоты</a></li>
+									<li class="games__item"><a href="#">Джекпот</a></li>
+									<li class="games__item"><a href="#">Настольные</a></li>
+									<li class="games__item"><a href="#">Live диллер</a></li>
+								</ul>
+							</div>
+							<div class="col-md-4 col-sm-4 col-xs-4">
+								<h2 class="games__header">Акции</h2>
+								<ul class="games__list">
+									<li class="games__item"><a href="bonus.html">Приветственный бонус</a></li>
+									<li class="games__item"><a href="bonus.html">VIP Bonus</a></li>
+									<li class="games__item"><a href="reload-bonus.html">Reload бонус</a></li>
+									<li class="games__item"><a href="everyweek-cashback.html">Кэшбек</a></li>
+									<li class="games__item"><a href="everyweek-cashback.html">Live Casino Cashback</a></li>
+									<li class="games__item"><a href="day-slot.html">Слот дня во вторник</a></li>
+									<li class="games__item"><a href="free-spins.html">Фриспины в четверг</a></li>
+									<li class="games__item"><a href="tournament.html">Darkslot турнир</a></li>
+									<li class="games__item"><a href="levels.html">Уровни игроков</a></li>
+								</ul>
+							</div>
+							<div class="col-md-4 col-sm-4 col-xs-4">
+								<h2 class="games__header">О нас</h2>
+								<ul class="games__list">
+									<li class="games__item games__item--policy">Политика конфиденциальности</li>
+									<li class="games__item games__item--rules">Положения и условия</li>
+									<li class="games__item games__item--support">Поддержка</li>
+									<li class="games__item"><a href="partners.html">Партнерам</a></li>
+									<li class="games__item"><a href="about.html">О Darkslot</a></li>
+									<li class="games__item"><a href="blog.html">Блог</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4 col-sm-12 col-xs-12">
+						<div class="games__social text-right">
+							<span class="games__text">Следите за нами</span>
+							<div class="games__social-list">
+								<a href="#" target="blank"><img src="img/social-icons/fb-big.png" alt=""></a>
+								<a href="#" target="blank"><img src="img/social-icons/tw-big.png" alt=""></a>
+								<a href="#" target="blank"><img src="img/social-icons/yt-big.png" alt=""></a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="partners">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-12">
+						<div class="partners__images">
+							<img src="img/partners/1_visa.jpg" alt="visa">
+							<img src="img/partners/2_mastercard.jpg" alt="mastercard">
+							<img src="img/partners/3_skrill.jpg" alt="skrill">
+							<img src="img/partners/4_netever.jpg" alt="netever">
+							<img src="img/partners/5_paysafecard.jpg" alt="pay safe card">
+							<img src="img/partners/6_trustly.svg" alt="trustly">
+							<img src="img/partners/7_zimpler.svg" alt="zimpler">
+							<img src="img/partners/8_responsivegaming.jpg" alt="responsive gaming">
+							<img src="img/partners/9_itechlab.jpg" alt="itech lab">
+							<img src="img/partners/10_safesecure.jpg" alt="safe secure">
+							<img src="img/partners/11_sealofapproval.png" alt="seal of approval">
+							<img src="img/partners/13_softswiss.jpg" alt="softswiss">
+							<img src="img/partners/14_netent.svg" alt="netent">
+							<img src="img/partners/15_amatic.svg" alt="amatic">
+							<img src="img/partners/16_ezugi.svg" alt="ezugi">
+							<img src="img/partners/17_bitcoin.png" alt="bitcoin">
+							<img src="img/partners/18.jpg" alt="18+">
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<p class="partners__text">Вебсайт Darkslot.com принадлежит компании Direx N.V., зарегистрированной и созданной в соответствии с законодательством Кюрасао и ее дочерним предприятием Direx Limited, зарегистрированными в Республике Кипр по адресу Stasinou 1, MITSI Building 1, 1st Floor, Flat/Office 4, Plateia Eleftherias, Nicosia. Деятельность Direx N.V. лицензирована и попадает под регулирование Antilephone N.V. Регистрационный номер Direx N.V.: 131879, адрес регистрации: E-Commerce Park Vredenberg, Curacao</p>
+				</div>
+			</div>
+		</section>
+
+		<footer class="footer">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-offset-6 col-sm-6 text-right">
+						<div class="footer__development">
+							<span class="footer__developer">Дизайн сайта: </span>
+							<a href="http://www.crepla.com/" target="blank"><img src="img/crepla-logo.png" alt="crepla" class="footer__crepla-logo"></a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
 
 	</div>
 
@@ -133,22 +398,8 @@
 	<div id="preloader"></div>
 
 	<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
-
-	<script type="text/javascript" src="js/slick.min.js"></script>
-
-	<script type="text/javascript" src="js/tabs.js"></script>
-
-	<script type="text/javascript" src="js/menu.js"></script>
-
-	<script type="text/javascript" src="js/fixed-bar.js"></script>
-
-	<script type="text/javascript" src="js/modals.js"></script>
-
-	<script type="text/javascript" src="js/reg-password.js"></script>
-
-	<script type="text/javascript" src="js/jquery.formstyler.min.js"></script>
-
-	<script type="text/javascript" src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+	<script src="bootstrap/assets/javascripts/bootstrap.js"></script>
+	<script src="js/jquery.nicescroll.min.js"></script>
 
 	<script type="text/javascript" src="js/main.js"></script>
 </body>
