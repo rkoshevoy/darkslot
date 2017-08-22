@@ -1,11 +1,15 @@
 .partner {
 
+	&-bg {
+		background-image: url('../../img/partners-bg.png');
+		background-size: 100% auto;
+	}
+
 	&__wrapper {
-		position: relative;
-		// width: 1180px;
-		// margin: 0 auto;
-		padding-top: 130px;
-		padding-bottom: 250px;
+		margin: 8vw 0;
+
+		display: flex;
+		align-items: center;
 
 		// @media @tablet {
 		// 	width: 748px;
@@ -21,7 +25,7 @@
 
 	&__text-wrapper {
 		position: relative;
-		width: 690px;
+		max-width: 690px;
 
 		// @media @mobile {
 		// 	width: 100%;
@@ -53,7 +57,6 @@
 	}
 
 	&__text {
-		margin-bottom: 40px;
 		font-size: 30px;
 		line-height: 60px;
 
@@ -65,9 +68,9 @@
 	}
 
 	&__image-wrapper {
-		position: absolute;
-		right: 0;
-		top: 90px;
+		// position: absolute;
+		// right: 0;
+		// top: 90px;
 
 		// @media @tablet {
 		// 	top: 320px;
@@ -81,15 +84,10 @@
 	}
 
 	&__image {
-		width: 100%;
+		max-width: 100%;
 
 		// @media @mobile {
 		// 	display: none;
 		// }
 	}
-}
-
-.partner-bg {
-	background-image: url('../img/partners-bg.png');
-	background-size: 100% auto;
 }

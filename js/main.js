@@ -15,27 +15,23 @@ window.onload = function(){setTimeout(function(){fadeOutnojquery(preloader);
 
 $(function() {
 
+  var niceScrollSettings = {
+    cursorcolor: "#de3137",
+    cursorborder: "1px solid #de3137",
+    cursorborderradius: 0,
+    cursoropacitymax: 0.7,
+    boxzoom: true,
+    touchbehavior: true,
+    autohidemode: "leave",
+    grabcursorenabled: false
+  };
+
+  $('html').niceScroll(niceScrollSettings);
+
   $('#modalPolicy, #modalRules').on('shown.bs.modal', function () {
 
     $(".rules").getNiceScroll().remove();
-    $(".rules").niceScroll(
-      {
-        cursorcolor: "#de3137",
-        cursorborder: "1px solid #de3137",
-        cursorborderradius: 0,
-        cursoropacitymax: 0.7,
-        boxzoom: true,
-        touchbehavior: true,
-        autohidemode: "leave"
-      });
+    $(".rules").niceScroll(niceScrollSettings);
   })
 
 });
-
-// $(document).ready(function() {
-//
-//   $("#modalPolicy").niceScroll(".rules", {cursorcolor:"#F00",cursoropacitymax:0.7,boxzoom:true,touchbehavior:true}); // First scrollable DIV
-//
-//   $(".rules").niceScroll( {cursorcolor:"#F00",cursoropacitymax:0.7,boxzoom:true,touchbehavior:true});
-//
-// });

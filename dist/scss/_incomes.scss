@@ -2,6 +2,7 @@
 	background-image: url('../../img/bg-deposites.png');
 	background-position: bottom;
 	background-size: cover;
+	margin: 60px 0;
 
 	&__wrapper {
 		// width: 1180px;
@@ -15,7 +16,7 @@
 		// @media @mobile {
 		// 	.mobile-wrap;
 		// 	padding-bottom: 40px;
-		// } 
+		// }
 	}
 
 	&__header {
@@ -57,13 +58,14 @@
 	&__levels-wrapper {
 		display: flex;
 		flex-wrap: wrap;
-		justify-content: space-between;		
+		justify-content: space-between;
 		margin-bottom: 60px;
 	}
 
 	&__button-wrapper {
 		width: 100%;
 		text-align: center;
+		margin: 60px 0;
 	}
 
 	&__button {
@@ -132,7 +134,7 @@
 	&__text {
 		position: relative;
 		z-index: 1;
-		font-size: 16px;	
+		font-size: 16px;
 		line-height: 30px;
 	}
 }

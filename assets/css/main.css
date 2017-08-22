@@ -1648,14 +1648,22 @@
   .entry-right .news {
     width: 380px; }
 
+.partner-bg {
+  background-image: url("../../img/partners-bg.png");
+  background-size: 100% auto; }
+
 .partner__wrapper {
-  position: relative;
-  padding-top: 130px;
-  padding-bottom: 250px; }
+  margin: 8vw 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
 
 .partner__text-wrapper {
   position: relative;
-  width: 690px; }
+  max-width: 690px; }
   .partner__text-wrapper span {
     position: relative;
     display: inline-block; }
@@ -1670,91 +1678,69 @@
       background-color: #005fdc; }
 
 .partner__text {
-  margin-bottom: 40px;
   font-size: 30px;
   line-height: 60px; }
 
-.partner__image-wrapper {
-  position: absolute;
-  right: 0;
-  top: 90px; }
-
 .partner__image {
-  width: 100%; }
+  max-width: 100%; }
 
-.partner-bg {
-  background-image: url("../img/partners-bg.png");
-  background-size: 100% auto; }
-
-.advantages__wrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  margin-bottom: 120px; }
-
-.advantages-first__wrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  padding-bottom: 30px; }
-
-.advantages-first__item {
-  width: 380px;
-  text-align: center; }
-
-.advantages-first__text {
+.advantages .advantage__title {
   position: relative;
-  display: block;
-  font-size: 20px; }
-  .advantages-first__text::after {
+  width: 100%;
+  font-size: 20px;
+  text-align: center;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column; }
+  .advantages .advantage__title:after {
     content: '';
-    position: absolute;
-    left: calc(50% - 90px);
-    bottom: -10px;
-    width: 180px;
+    display: block;
+    position: relative;
+    width: 50%;
     height: 3px;
     background-color: #ed383f; }
+  .advantages .advantage__title-text {
+    height: 60px; }
 
-.advantage {
-  width: 380px;
+.advantages .advantage__content {
   text-align: center; }
-  .advantage__image {
-    width: 160px;
-    height: 170px;
-    margin: 0 auto;
-    margin-top: 20px;
-    margin-bottom: 60px;
-    background-size: 100%;
-    background-position: center; }
-  .advantage__header {
-    margin-bottom: 30px;
-    font-size: 30px;
-    text-transform: uppercase; }
-  .advantage__text {
-    font-size: 13px;
-    line-height: 24px; }
 
-.advantage--ads .advantage__image {
-  background-image: url("../../img/anchor.png"); }
+.advantages .advantage__image {
+  width: 150px;
+  height: 150px;
+  margin: 0 auto;
+  margin-top: 30px;
+  margin-bottom: 60px; }
+  .advantages .advantage__image img {
+    max-width: 100%;
+    height: auto;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%); }
 
-.advantage--support .advantage__image {
-  background-image: url("../../img/map.png"); }
+.advantages .advantage__header {
+  margin-bottom: 30px;
+  font-size: 30px;
+  text-transform: uppercase; }
 
-.advantage--rewards .advantage__image {
-  background-image: url("../../img/coins.png"); }
+.advantages .advantage__text {
+  font-size: 13px;
+  line-height: 24px; }
 
 .incomes {
   background-image: url("../../img/bg-deposites.png");
   background-position: bottom;
-  background-size: cover; }
+  background-size: cover;
+  margin: 60px 0; }
   .incomes__wrapper {
     padding-bottom: 100px; }
   .incomes__header {
@@ -1790,7 +1776,8 @@
     margin-bottom: 60px; }
   .incomes__button-wrapper {
     width: 100%;
-    text-align: center; }
+    text-align: center;
+    margin: 60px 0; }
   .incomes__button {
     display: inline-block;
     margin: 0 auto;
@@ -4163,7 +4150,8 @@ form * {
   border-radius: 0;
   padding: 10px 15px;
   font-family: SFUIBold;
-  font-size: 1.2em; }
+  font-size: 1.2em;
+  outline: none; }
 
 .btn-danger {
   background-color: #ed383f;
