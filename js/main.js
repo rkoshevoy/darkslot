@@ -32,6 +32,14 @@ $(function() {
 
     $(".rules").getNiceScroll().remove();
     $(".rules").niceScroll(niceScrollSettings);
-  })
+  });
+
+  $('.header .navbar-togle').on('shown.bs.modal', function () {
+
+    console.log('header .navbar-togle');
+
+    $(".header .navbar-collapse.in").getNiceScroll().remove();
+    $(".header .navbar-collapse.in").niceScroll(niceScrollSettings);
+  });
 
 });
