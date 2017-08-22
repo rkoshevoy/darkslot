@@ -2988,8 +2988,9 @@
     width: 100%; }
 
 .day-slot {
+  padding-top: 80px;
   background-image: url("../../img/money-bg-2.png");
-  background-size: contain; }
+  background-size: cover; }
   .day-slot__wrapper {
     padding-top: 80px;
     padding-bottom: 110px; }
@@ -3004,7 +3005,6 @@
       -ms-flex-pack: justify;
           justify-content: space-between; }
   .half-cashback__text-wrapper {
-    width: 530px;
     margin-bottom: 100px; }
   .half-cashback__header {
     margin-bottom: 20px;
@@ -3015,6 +3015,7 @@
     font-size: 15px;
     line-height: 31px; }
   .half-cashback__image {
+    display: inline-block;
     width: 430px;
     height: 220px;
     background-color: #181818; }
@@ -3093,6 +3094,7 @@
     line-height: 22px;
     color: #999999; }
   .cashback-game__image {
+    display: inline-block;
     -ms-flex-negative: 0;
         flex-shrink: 0;
     width: 340px;
@@ -3226,8 +3228,6 @@
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    width: 500px;
-    margin: 0 auto;
     margin-bottom: 75px;
     text-align: center; }
   .timer__numbers-wrapper {
