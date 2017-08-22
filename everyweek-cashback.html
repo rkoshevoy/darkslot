@@ -196,66 +196,14 @@
 			</div>
 		</div>
 
-		<section class="registration tiger-reg">
-			<div class="container">
-				<div class="row">
-					<div class="col-md-6">
-
-						<div class="registration-bonus">
-							<div class="registration-bonus-content">
-								<h3 class="registration-bonus__header">Зарегистрируйся и получи</h3>
-								<h3 class="registration-bonus__underheader">Приветственный бонус</h3>
-								<span class="registration-bonus__count">1800$</span>
-								<a href="bonus.html" class="ds-link">Подробнее</a>
-							</div>
-
-							<div class="registration-bonus-pers">
-								<img src="img/tiger.png" alt="toger" class="registration-bonus-pers-img">
-							</div>
-						</div>
-
-					</div>
-
-					<div class="col-md-4 col-md-offset-2">
-						<div class="tiger-reg-form">
-							<form action="#" class="registration-form-mini registration-form-mini--slide">
-								<div class="form-group">
-									<input type="email" class="form-control" name="" placeholder="Email">
-								</div>
-								<div class="form-group">
-									<input type="text" class="form-control" name="" placeholder="Никнейм">
-								</div>
-
-								<div class="form-group">
-									<input type="password" class="form-control" name="" placeholder="Пароль">
-								</div>
-								<div class="form-group hidden">
-									<input type="password" class="form-control" name="" placeholder="Подтверждение пароля">
-								</div>
-
-								<div class="form-group">
-									<select class="form-control" name="">
-										<option value="currency" selected disabled>Валюта</option>
-										<option value="rub">Рубли</option>
-										<option value="euro">Евро</option>
-										<option value="dollar">Доллары</option>
-										<option value="btc">Биткоины</option>
-									</select>
-								</div>
-
-								<div class="form-group">
-									<input type="checkbox" id="slide-checkbox" class="registration-form-mini__checkbox">
-									<label for="slide-checkbox" class="registration-form-mini__label-checkbox">
-										Мне 18 лет и я принимаю <a href="#" class="ds-link" data-toggle="modal" data-target="#modalRules">Положения и условия</a></label>
-								</div>
-
-								<input type="submit" class="btn btn-secondary btn-secondary-full btn-full-width" value="Регистрация">
-							</form>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
+		<!-- Section-Registration insertion -->
+		<script>
+			$(document).ready(function(){
+			 	$('#ds-section-registration').load('./_section-registration.html');
+			});
+		</script>
+		<div id="ds-section-registration"></div>
+		<!-- End Section-Registration insertion -->
 
 		<!-- Footer-Wrapper insertion -->
 		<script>
