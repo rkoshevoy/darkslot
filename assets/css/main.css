@@ -2498,7 +2498,7 @@
 .rules {
   height: 300px;
   padding-right: 15px;
-  overflow-y: scroll; }
+  overflow-y: hidden; }
   .rules__underheader {
     margin-bottom: 10px;
     font-family: SFUIBold;

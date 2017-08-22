@@ -1,0 +1,427 @@
+
+<!-- Auth modals -->
+
+<div class="modal fade modalReg" id="modalReg" tabindex="-1" role="dialog" aria-labelledby="modalRegLabel">
+  <div class="modal-dialog" role="document">
+    <div class="ds-fl-content ds-fl-content-bg">
+
+      <div class="ds-modal-img-wrap">
+        <img src="img/rat.png" alt="rat" class="ds-modal-img">
+      </div>
+
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title" id="modalRegLabel">Регистрация</h4>
+        </div>
+
+        <div class="modal-body">
+          <form action="#" class="modal-form modal-form--registration">
+            <div class="social-enter social-enter--reg">
+              <span class="social-enter__text">Зарегестрироваться с помощью:</span>
+
+              <div class="social-enter__socials">
+                <button class="social-enter__soc social-enter__soc--fb"></button>
+                <button class="social-enter__soc social-enter__soc--vk"></button>
+                <button class="social-enter__soc social-enter__soc--tw"></button>
+              </div>
+            </div>
+
+
+            <div class="form-group modal-form__item">
+              <input type="email" class="form-control" name="email" placeholder="Email">
+            </div>
+            <div class="form-group modal-form__item">
+              <input type="text" class="form-control" name="nickname" placeholder="Никнейм">
+            </div>
+
+            <div class="form-group modal-form__item">
+              <input type="password" class="form-control" name="password" placeholder="Пароль">
+            </div>
+            <div class="form-group modal-form__item">
+              <input type="password" class="form-control" name="password_confirm" placeholder="Подтверждение пароля">
+            </div>
+
+            <div class="form-group modal-form__item" name="currency">
+              <select class="form-control" name="">
+                <option value="currency" selected disabled>Валюта</option>
+                <option value="rub">Рубли</option>
+                <option value="euro">Евро</option>
+                <option value="dollar">Доллары</option>
+                <option value="btc">Биткоины</option>
+              </select>
+            </div>
+
+            <div class="form-group modal-form__item">
+              <input type="text" name="bonus_code" placeholder="Бонусный код" class="modal-form__input">
+            </div>
+
+            <div class="form-group">
+              <input type="checkbox" id="slide-checkbox" class="registration-form-mini__checkbox">
+              <label for="slide-checkbox" class="registration-form-mini__label-checkbox">
+                Мне 18 лет и я принимаю <a href="#" class="ds-link" data-toggle="modal" data-target="#modalRules">Положения и условия</a></label>
+            </div>
+
+            <button class="btn btn-danger btn-full-width">Регистрация</button>
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade modalSignIn" id="modalSignIn" tabindex="-1" role="dialog" aria-labelledby="modalSignInLabel">
+  <div class="modal-dialog" role="document">
+    <div class="ds-fl-content ds-fl-content-bg">
+      <div class="ds-modal-img-wrap">
+        <img src="img/bear.png" alt="bear" class="ds-modal-img">
+      </div>
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title" id="modalSignInLabel">Авторизация</h4>
+        </div>
+        <div class="modal-body">
+          <form action="#" class="modal-form modal-form--enter">
+
+            <div class="form-group modal-form__item">
+              <input type="email" class="form-control" name="email" placeholder="Email">
+            </div>
+            <div class="form-group modal-form__item">
+              <input type="password" class="form-control" name="password" placeholder="Пароль">
+            </div>
+
+            <div class="form-group modal-form__item">
+              <button class="btn btn-danger btn-full-width">Войти</button>
+            </div>
+
+            <div class="social-enter">
+              <span class="social-enter__text">Войти с помощью:</span>
+
+              <div class="social-enter__socials">
+                <button class="social-enter__soc social-enter__soc--fb"></button>
+                <button class="social-enter__soc social-enter__soc--vk"></button>
+                <button class="social-enter__soc social-enter__soc--tw"></button>
+              </div>
+            </div>
+          </form>
+
+          <a href="#" role="button" class="ds-link" data-toggle="modal" data-target="#modalRecovery">Я забыл пароль</a>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade modalRecovery" id="modalRecovery" tabindex="-1" role="dialog" aria-labelledby="modalRecoveryLabel">
+  <div class="modal-dialog" role="document">
+    <div class="ds-fl-content">
+      <div class="ds-modal-img-wrap">
+        <img src="" alt="" class="ds-modal-img">
+      </div>
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title" id="modalRecoveryLabel">Забыли пароль?</h4>
+          <!-- <h2 class="modal-form__header">Авторизация</h2> -->
+        </div>
+        <div class="modal-body">
+          <form action="#" class="modal-form modal-form--recovery">
+            <p class="modal-form__text">Введите свой электронный адрес, и Вам будут высланы инструкции по замене пароля. <br>По дальнейшим вопросам Вы можете связаться с нами через страницу <span class="modal-form__support">поддержка</span></p>
+
+            <input type="email" class="modal-form__input" placeholder="Email">
+            <input type="submit" class="modal-form__button" value="Восстановить пароль" id="forgot-button" data-toggle="modal" data-target="#modalNewPass">
+          </form>
+
+          <span class="modal-form__not-recieve" id="recovery-unlock" data-toggle="modal" data-target="#modalUnlock">Не получили инструкций для разблокировки?</span>
+          <span class="modal-form__not-recieve" id="recovery-confirm" data-toggle="modal" data-target="#modalConfirm">Не получили инструкций для подтверждения?</span>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade modalUnlock" id="modalUnlock" tabindex="-1" role="dialog" aria-labelledby="modalUnlockLabel">
+  <div class="modal-dialog" role="document">
+    <div class="ds-fl-content">
+      <div class="ds-modal-img-wrap">
+        <img src="" alt="" class="ds-modal-img">
+      </div>
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title" id="modalUnlockLabel">Переслать инструкции для разблокировки</h4>
+        </div>
+        <div class="modal-body">
+          <form action="#" class="modal-form modal-form--recovery">
+            <p class="modal-form__text">Если ваша учётная запись заблокирована, оставьте свой email-адрес, и мы вышлем на него инструкции по разблокированию. <br>По дальнейшим вопросам Вы можете связаться с нами через страницу <span class="modal-form__support">поддержка</span></p>
+
+            <input type="email" class="modal-form__input" placeholder="Email">
+            <input type="submit" class="modal-form__button" value="Переслать инструкции для разблокировки">
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade modalConfirm" id="modalConfirm" tabindex="-1" role="dialog" aria-labelledby="modalConfirmLabel">
+  <div class="modal-dialog" role="document">
+    <div class="ds-fl-content">
+      <div class="ds-modal-img-wrap">
+        <img src="" alt="" class="ds-modal-img">
+      </div>
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title" id="modalConfirmLabel">Переслать инструкции для подтверждения</h4>
+        </div>
+        <div class="modal-body">
+          <form action="#" class="modal-form modal-form--recovery">
+
+            <input type="email" class="modal-form__input" placeholder="Email">
+            <input type="submit" class="modal-form__button" value="Переслать инструкции для подтверждения">
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade modalNewPass" id="modalNewPass" tabindex="-1" role="dialog" aria-labelledby="modalNewPassLabel">
+  <div class="modal-dialog" role="document">
+    <div class="ds-fl-content">
+      <div class="ds-modal-img-wrap">
+        <img src="" alt="" class="ds-modal-img">
+      </div>
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title" id="modalNewPassLabel">Изменить пароль</h4>
+        </div>
+        <div class="modal-body">
+          <form action="#" class="modal-form modal-form--new-password">
+            <h2 class="modal-form__header">Изменить пароль</h2>
+            <input type="password" class="modal-form__input" placeholder="Новый пароль">
+            <input type="password" class="modal-form__input" placeholder="Повторите новый пароль">
+            <input type="submit" class="modal-form__button">
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- End Auth modals -->
+
+<!-- Levels modals -->
+
+<div class="modal fade modalSecondLevel" id="modalSecondLevel" tabindex="-1" role="dialog" aria-labelledby="modalSecondLevelLabel">
+  <div class="modal-dialog" role="document">
+    <div class="ds-fl-content ds-fl-content-level">
+      <div class="ds-modal-img-wrap">
+        <img src="" alt="" class="ds-modal-img">
+      </div>
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title" id="modalSecondLevelLabel">
+            <span class="level-up-header-wrap">
+              <span class="level-up-header">
+                <span class="level-up-header__number level-up-header__number--second">2</span>
+
+                <span class="level-up-header__greeting-wrapper">
+                  <span class="level-up-header__greeting">Поздравляем, вы получили</span>
+                  <span class="level-up-header__level">Уровень</span>
+                </span>
+              </span>
+            </span>
+          </h4>
+        </div>
+        <div class="modal-body">
+          <div class="level-up">
+
+            <span class="level-up__up-text">Вам доступно:</span>
+
+            <div class="level-up__ability-wrapper">
+              <div class="level-ability">
+                <div class="level-ability__header">Кэшбек</div>
+                <p class="level-ability__text">100% кэшбек в слотах и 50% в Live Casino</p>
+              </div>
+              <div class="level-ability">
+                <div class="level-ability__header">Обмен очков 1,5:1</div>
+                <p class="level-ability__text">Обмен производится в личном кабинете</p>
+              </div>
+              <div class="level-ability">
+                <div class="level-ability__header">Релоад бонус в размере 100$</div>
+                <p class="level-ability__text">Или его эквивалент в любой другой валюте.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="modal-footer">
+          <div class="level-details">
+            <div class="level-details__wrapper">
+              <div class="level-details__text">
+                <span class="level-details__up-text">Чтобы получить 3 уровень</span>
+                <br>
+                <span class="level-details__bottom-text">Вы должны набрать <span>30 000 очков</span></span>
+              </div>
+              <a href="levels.html" class="level-details__button">Подробнее об уровнях</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade modalThirdLevel" id="modalThirdLevel" tabindex="-1" role="dialog" aria-labelledby="modalThirdLevelLabel">
+  <div class="modal-dialog" role="document">
+    <div class="ds-fl-content ds-fl-content-level">
+      <div class="ds-modal-img-wrap">
+        <img src="" alt="" class="ds-modal-img">
+      </div>
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title" id="modalThirdLevelLabel">
+            <span class="level-up-header-wrap">
+              <span class="level-up-header">
+                <span class="level-up-header__number level-up-header__number--third">3</span>
+
+                <span class="level-up-header__greeting-wrapper">
+                  <span class="level-up-header__greeting">Поздравляем, вы получили</span>
+                  <span class="level-up-header__level">Уровень</span>
+                </span>
+              </span>
+            </span>
+          </h4>
+        </div>
+        <div class="modal-body">
+          <div class="level-up">
+
+            <span class="level-up__up-text">Вам доступно:</span>
+
+            <div class="level-up__ability-wrapper">
+              <div class="level-ability">
+                <div class="level-ability__header">Релоад бонус 50% до 200$</div>
+                <p class="level-ability__text">Или его эквивалент в любой другой валюте</p>
+              </div>
+              <div class="level-ability">
+                <div class="level-ability__header">Приоритет</div>
+                <p class="level-ability__text">Приоритетность в службе поддержки</p>
+              </div>
+              <div class="level-ability">
+                <div class="level-ability__header">Обмен очков 2:1</div>
+                <p class="level-ability__text">Обмен производится в личном кабинете</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="modal-footer">
+          <div class="level-details">
+            <div class="level-details__wrapper">
+              <div class="level-details__text">
+                <span class="level-details__up-text">Чтобы получить 4 уровень</span>
+                <br>
+                <span class="level-details__bottom-text">Вы должны набрать <span>100 000 очков</span></span>
+              </div>
+              <a href="levels.html" class="level-details__button">Подробнее об уровнях</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade modalFourthLevel" id="modalFourthLevel" tabindex="-1" role="dialog" aria-labelledby="modalFourthLevelLabel">
+  <div class="modal-dialog" role="document">
+    <div class="ds-fl-content ds-fl-content-level">
+      <div class="ds-modal-img-wrap">
+        <img src="" alt="" class="ds-modal-img">
+      </div>
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title" id="modalFourthLevelLabel">
+            <span class="level-up-header-wrap">
+              <span class="level-up-header">
+                <span class="level-up-header__number"><img src="img/knight-with-hair.png" alt=""></span>
+
+                <span class="level-up-header__greeting-wrapper">
+                  <span class="level-up-header__greeting">Поздравляем, у Вас особый уровень</span>
+                  <span class="level-up-header__level">Dark Knight</span>
+                </span>
+              </span>
+            </span>
+          </h4>
+        </div>
+        <div class="modal-body">
+          <div class="level-up">
+
+            <span class="level-up__up-text">Вам доступно:</span>
+
+            <div class="level-up__ability-wrapper">
+              <div class="level-ability">
+                <div class="level-ability__header">Дарим iPhone 7</div>
+                <p class="level-ability__text">Либо цену на счёт без отыгрыша</p>
+              </div>
+              <div class="level-ability">
+                <div class="level-ability__header">2000$</div>
+                <p class="level-ability__text">Бездепозит с Вейджером X40</p>
+              </div>
+
+              <div class="level-ability">
+                <div class="level-ability__header">Личный менеджер</div>
+              </div>
+              <div class="level-ability">
+                <div class="level-ability__header">Релоад 50% до 2000$</div>
+              </div>
+              <div class="level-ability">
+                <div class="level-ability__header">Приоритетные условия вывода денег</div>
+              </div>
+              <div class="level-ability">
+                <div class="level-ability__header">Обмен очков 3:1</div>
+                <p class="level-ability__text">Обмен производится в личном кабинете</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- End Levels modals -->
+
+<div class="modal fade modalSupport" id="modalSupport" tabindex="-1" role="dialog" aria-labelledby="modalSupportLabel">
+  <div class="modal-dialog" role="document">
+    <div class="ds-fl-content ds-fl-content-bg">
+      <div class="ds-modal-img-wrap">
+        <img src="img/tiger.png" alt="tiger" class="ds-modal-img">
+      </div>
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title" id="modalSupportLabel">Форма контакта</h4>
+        </div>
+        <div class="modal-body">
+          <form action="#" class="modal-form modal-form--contact">
+            <input type="email" class="modal-form__input" placeholder="Email">
+            <input type="text" class="modal-form__input" placeholder="Тема сообщения">
+            <textarea name="textarea-contact" id="text-contact" cols="30" rows="10" class="modal-form__text-field" placeholder="Текст..."></textarea>
+            <input type="submit" class="modal-form__button" value="Отправить">
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>
