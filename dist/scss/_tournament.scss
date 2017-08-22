@@ -1,29 +1,14 @@
-.tournament-bg {
-	background-image: url('../../img/roulette.png');
-	background-size: contain;
-}
-
 .tournament {
 
-	&__wrapper {
-		// width: 1180px;
-		// margin: 0 auto;
-		padding-top: 90px;
-
-		// @media @tablet {
-		// 	width: 748px;
-		// }
-
-		// @media @mobile {
-		// 	.mobile-wrap;
-		// 	padding-top: 40px;
-		// }
+	&-bg {
+		background-image: url('../../img/roulette.png');
+		background-size: contain;
 	}
 
 	&__header {
 		position: relative;
 		z-index: 1;
-		margin-bottom: 80px;
+		margin: 90px 0;
 		text-align: center;
 		font-size: 48px;
 		font-family: SFUIHeavy;
@@ -111,6 +96,8 @@
 
 .tables {
 
+	margin-bottom: 80px;
+
 	&__wrapper {
 		// width: 1180px;
 		// margin: 0 auto;
@@ -138,8 +125,12 @@
 		// }
 	}
 
+	&__condition {
+		margin: 0;
+	}
+
 	&__condition-wrapper {
-		margin-bottom: 50px;
+		margin: 60px 0;
 		padding: 30px;
 		border: 3px dotted #464646;
 		text-align: center;
@@ -162,7 +153,7 @@
 	// }
 
 	&__column {
-		width: 580px;
+		width: 100%;
 		padding-left: 30px;
 		padding-right: 30px;
 		background-color: #212121;
@@ -179,7 +170,7 @@
 		// }
 	}
 
-	&__column--left {		
+	&__column--left {
 		border: 2px solid #d6d62f;
 
 		.prizes-table__item {
@@ -193,7 +184,7 @@
 			}
 
 			&:last-child {
-				background-image: url('../../img/places/cup-third.png');				
+				background-image: url('../../img/places/cup-third.png');
 			}
 
 			// @media @mobile {
@@ -202,7 +193,7 @@
 		}
 	}
 
-	&__column--right {		
+	&__column--right {
 
 		.prizes-table__item {
 
@@ -215,7 +206,7 @@
 			}
 
 			&:last-child {
-				background-image: url('../../img/places/star-sixth.png');				
+				background-image: url('../../img/places/star-sixth.png');
 			}
 
 			// @media @mobile {
@@ -243,7 +234,7 @@
 		font-size: 20px;
 		font-family: SFUIBold;
 		text-transform: uppercase;
-		
+
 		// @media @mobile {
 		// 	padding-top: 20px;
 		// 	padding-bottom: 20px;
@@ -263,10 +254,7 @@
 }
 
 .places-tournament {
-	padding-top: 60px;
-	padding-right: 30px;
-	padding-bottom: 35px;
-	padding-left: 30px;
+	padding: 30px;
 	background-color: #191919;
 
 	// @media @tablet {
@@ -345,7 +333,7 @@
 }
 
 .places-table {
-	width: 540px;
+	width: 100%;
 	border-spacing: 0;
 	border: 1px solid #474747;
 	font-size: 14px;
@@ -404,7 +392,7 @@
 			}
 		}
 	}
-	
+
 	&__cell {
 		padding: 25px 0;
 		border-right: 1px solid #2c2c2c;
@@ -441,28 +429,28 @@
 	}
 
 	&__cell--second {
-		
+
 		&:first-child {
 			background-image: url('../../img/places/cup-second.png');
 		}
 	}
 
 	&__cell--third {
-		
+
 		&:first-child {
 			background-image: url('../../img/places/cup-third.png');
 		}
 	}
 
 	&__cell--fourth {
-		
+
 		&:first-child {
 			background-image: url('../../img/places/star-fourth.png');
 		}
 	}
 
 	&__cell--fifth {
-		
+
 		&:first-child {
 			background-image: url('../../img/places/star-fifth.png');
 		}
