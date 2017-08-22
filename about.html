@@ -128,49 +128,14 @@
 
 	</div>
 
-	<nav class="navbar navbar-default navbar-fixed-bottom">
-		<div class="container-fluid">
-			<div class="fixed-bar">
-				<div class="fixed-bar__wrapper">
-					<!-- <div class="fixed-bar__hider"></div>
-					<div class="fixed-bar__shower hidden">
-						<p>Показать бар</p>
-					</div> -->
-					<div class="fixed-bar__top-games-button"><p id="topGamesBtn">Топ-игры</p></div>
-					<form action="#" class="search">
-						<input type="search" class="search__field" placeholder="Поиск">
-						<div class="search__close"></div>
-					</form>
-					<div class="fixed-bar__chat"><p>Онлайн-чат</p></div>
-
-					<div class="language_selector">
-						<div>
-							<button class="fixed-bar__language" type="button">
-								<span class="localeWrap">
-									<span class="flagContainer">
-										<img class="flagImg" src="./img/flags/flag-ru.png" alt="">
-									</span>
-									Русский
-								</span>
-								<span class="caret"></span>
-							</button>
-							<ul role="menu" class="language_selector__dropdown-menu">
-								<li class="language_selector__dropdown-menu-item">
-									<a class="localeWrap">
-										<span class="flagContainer">
-											<img class="flagImg" src="./img/flags/flag-en.png" alt="">
-										</span>
-										<span class="flagName">English</span>
-									</a>
-								</li>
-							</ul>
-						</div>
-					</div>
-
-				</div>
-			</div>
-		</div>
-	</nav>
+	<!-- Collapse-bottom insertion -->
+	<script>
+		$(document).ready(function(){
+			$('#ds-collapse-bottom').load('./_collapse-bottom.html');
+		});
+	</script>
+	<div id="ds-collapse-bottom"></div>
+	<!-- End Collapse-bottom insertion -->
 
 	<div id="preloader"></div>
 
