@@ -2975,8 +2975,9 @@
     width: 100%; }
 
 .day-slot {
+  padding-top: 80px;
   background-image: url("../../img/money-bg-2.png");
-  background-size: contain; }
+  background-size: cover; }
   .day-slot__wrapper {
     padding-top: 80px;
     padding-bottom: 110px; }
@@ -2991,7 +2992,6 @@
       -ms-flex-pack: justify;
           justify-content: space-between; }
   .half-cashback__text-wrapper {
-    width: 530px;
     margin-bottom: 100px; }
   .half-cashback__header {
     margin-bottom: 20px;
@@ -3002,6 +3002,7 @@
     font-size: 15px;
     line-height: 31px; }
   .half-cashback__image {
+    display: inline-block;
     width: 430px;
     height: 220px;
     background-color: #181818; }
@@ -3080,6 +3081,7 @@
     line-height: 22px;
     color: #999999; }
   .cashback-game__image {
+    display: inline-block;
     -ms-flex-negative: 0;
         flex-shrink: 0;
     width: 340px;
@@ -3107,7 +3109,7 @@
 
 .free-spins {
   background-image: url("../../img/hands-card-bg.jpg");
-  background-size: contain;
+  background-size: cover;
   background-position: center top; }
   .free-spins__wrapper {
     position: relative;
@@ -3115,7 +3117,7 @@
     padding-bottom: 120px;
     background-size: contain; }
   .free-spins__header-wrapper {
-    width: 700px; }
+    padding-top: 80px; }
   .free-spins__header {
     margin-bottom: 20px;
     font-size: 45px;
@@ -3123,6 +3125,7 @@
     font-family: SFUIHeavy;
     text-transform: uppercase; }
   .free-spins__underheader-text {
+    margin-bottom: 30px;
     font-size: 18px;
     line-height: 31px; }
     .free-spins__underheader-text a {
@@ -3139,13 +3142,13 @@
     .free-spins__button:hover {
       background-color: #de3137; }
   .free-spins__coin-image-wrapper {
-    position: absolute;
-    top: 25px;
-    right: 0; }
+    padding-top: 30px; }
   .free-spins__coin-image {
     width: 100%; }
 
 .statistics {
+  padding-top: 100px;
+  padding-bottom: 140px;
   background-image: url("../../img/table-bg.jpg");
   background-size: contain;
   background-position: center 0; }
@@ -3184,6 +3187,7 @@
     font-size: 14px;
     line-height: 23px; }
   .statistics__button-wrapper {
+    margin-top: 40px;
     margin-bottom: 55px;
     width: 100%;
     text-align: center; }
@@ -3196,7 +3200,6 @@
     .statistics__button:hover {
       background-color: #de3137; }
   .statistics__text-wrapper {
-    width: 980px;
     margin: 0 auto; }
   .statistics__text {
     font-size: 14px;
@@ -3213,8 +3216,6 @@
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    width: 500px;
-    margin: 0 auto;
     margin-bottom: 75px;
     text-align: center; }
   .timer__numbers-wrapper {
