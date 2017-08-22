@@ -1,11 +1,12 @@
 .reload-bonus {
+		padding-top: 90px;
 	background-image: url('../../img/chips-bg.png');
 	background-size: cover;
 
 	&__wrapper {
 		// width: 1180px;
 		// margin: 0 auto;
-		padding-top: 90px;
+		// padding-top: 90px;
 
 		// @media @tablet {
 		// 	width: 748px;
@@ -52,7 +53,7 @@
 	}
 
 	&__text-wrapper {
-		width: 800px;		
+		// width: 800px;		
 		margin-bottom: 80px;
 
 		// @media @tablet {
@@ -86,7 +87,8 @@
 
 .level {
 	position: relative;
-	width: 280px;
+	margin-bottom: 40px;
+	// width: 280px;
 	background-color: #181818;
 
 	// @media @tablet {

@@ -3551,10 +3551,9 @@
   background-image: url("../../img/suits-club.png"); }
 
 .reload-bonus {
+  padding-top: 90px;
   background-image: url("../../img/chips-bg.png");
   background-size: cover; }
-  .reload-bonus__wrapper {
-    padding-top: 90px; }
   .reload-bonus__header {
     position: relative;
     z-index: 1;
@@ -3574,7 +3573,6 @@
       -webkit-transform: rotate(-1deg);
               transform: rotate(-1deg); }
   .reload-bonus__text-wrapper {
-    width: 800px;
     margin-bottom: 80px; }
   .reload-bonus__text {
     font-size: 24px;
@@ -3593,7 +3591,7 @@
 
 .level {
   position: relative;
-  width: 280px;
+  margin-bottom: 40px;
   background-color: #181818; }
   .level__text-wrapper {
     position: relative;
