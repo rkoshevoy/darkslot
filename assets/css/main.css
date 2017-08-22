@@ -1992,6 +1992,13 @@
   border: none;
   background-color: #1f2021; }
 
+.modal .close {
+  font-size: 40px;
+  line-height: 1;
+  color: #fff;
+  text-shadow: none;
+  opacity: 1; }
+
 .modal__character-wrapper {
   position: absolute; }
 
@@ -2130,6 +2137,11 @@
     margin-bottom: 40px;
     font-size: 25px;
     text-transform: uppercase; }
+  .modal-form__item {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%; }
+    .modal-form__item > * {
+      width: 100%; }
   .modal-form__text {
     margin-bottom: 20px; }
   .modal-form__input {
@@ -2337,9 +2349,10 @@
     padding-left: 25px; }
 
 .modal-form--registration {
-  width: 560px; }
-  .modal-form--registration .modal-form__input {
-    width: 270px; }
+  max-width: 560px; }
+  .modal-form--registration .modal-form__item {
+    -ms-flex-preferred-size: 48%;
+        flex-basis: 48%; }
 
 .modal-form--enter {
   width: 350px; }
@@ -2497,6 +2510,7 @@
 
 .rules {
   height: 300px;
+  padding-right: 15px;
   overflow-y: scroll; }
   .rules__underheader {
     margin-bottom: 10px;
@@ -4173,6 +4187,12 @@ form * {
 .btn-full-width {
   width: 100%; }
 
+.btn-big {
+  padding: 20px; }
+
+.btn-wide {
+  padding: 20px 80px; }
+
 .ds-link {
   color: #fff;
   border-bottom: 1px dashed #fff;
@@ -4280,12 +4300,6 @@ form * {
   margin-bottom: 20px; }
   .container > .button-row h2 {
     margin-top: 10px; }
-
-.btn-big {
-  padding: 20px; }
-
-.btn-wide {
-  padding: 20px 80px; }
 
 .vertical-center {
   display: -webkit-box;

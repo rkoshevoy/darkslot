@@ -202,6 +202,14 @@ form {
 	width: 100%;
 }
 
+.btn-big {
+	padding: 20px;
+}
+
+.btn-wide {
+	padding: 20px 80px;
+}
+
 .ds-link {
 	color: $text-color;
 	border-bottom: 1px dashed $text-color;
@@ -350,14 +358,6 @@ form {
 	h2 {
 		margin-top: 10px;
 	}
-}
-
-.btn-big {
-	padding: 20px;
-}
-
-.btn-wide {
-	padding: 20px 80px;
 }
 
 .vertical-center {

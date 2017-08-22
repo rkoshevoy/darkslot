@@ -759,7 +759,7 @@
 						если модалка должна быть с jpeg фоном, как в модалке для регистрации
 					 	Также, он задает стиль для модального окна, где кроме формы или текста есть еще картинка перса,
 					 	как в модалке для регистрации rat.jpeg -->
-					 	<div class="ds-fl-content">
+			<div class="ds-fl-content">
 			 	<!-- 	даже если модалка не содержит картинку перса, все равно оставить этот блок,
 			 	а в теге img атрибуты src и alt оставить пустыми -->
 			 	<div class="ds-modal-img-wrap">
@@ -775,9 +775,9 @@
 			 			<!-- Cюда добавить содержимое модалки, без всяких wrap'ов. Например, просто форму -->
 			 		</div>
 			 	</div>
-			 </div>
 			</div>
 		</div>
+	</div>
 
 			<!-- Auth modals -->
 
@@ -807,25 +807,42 @@
 										</div>
 									</div>
 
-									<input type="email" name="email" placeholder="Email" class="modal-form__input">
-									<input type="text" name="nickname" placeholder="Никнейм" class="modal-form__input">
-									<input type="password" name="password" placeholder="Пароль" class="modal-form__input">
-									<input type="password" name="password-confirm" placeholder="Подтверждение пароля" class="modal-form__input">
-									<select name="currency" id="currency" class="modal-form__currency">
-										<option value="Валюта" selected disabled>Валюта</option>
-										<option value="rub">Рубли</option>
-										<option value="euro">Евро</option>
-										<option value="dollar">Доллары</option>
-										<option value="btc">Биткоины</option>
-									</select>
-									<input type="text" name="code" placeholder="Бонусный код" class="modal-form__input">
 
-									<div class="modal-form__checkbox-wrapper">
-										<input type="checkbox" id="reg-checkbox" class="modal-form__checkbox">
-										<label for="reg-checkbox" class="modal-form__label-checkbox">Мне есть 18 лет и я принимаю Положения и условия</label>
+									<div class="form-group modal-form__item">
+										<input type="email" class="form-control" name="email" placeholder="Email">
+									</div>
+									<div class="form-group modal-form__item">
+										<input type="text" class="form-control" name="nickname" placeholder="Никнейм">
 									</div>
 
-									<input type="submit" value="Регистрация" class="modal-form__button">
+									<div class="form-group modal-form__item">
+										<input type="password" class="form-control" name="password" placeholder="Пароль">
+									</div>
+									<div class="form-group modal-form__item">
+										<input type="password" class="form-control" name="password_confirm" placeholder="Подтверждение пароля">
+									</div>
+
+									<div class="form-group modal-form__item" name="currency">
+										<select class="form-control" name="">
+											<option value="currency" selected disabled>Валюта</option>
+											<option value="rub">Рубли</option>
+											<option value="euro">Евро</option>
+											<option value="dollar">Доллары</option>
+											<option value="btc">Биткоины</option>
+										</select>
+									</div>
+
+									<div class="form-group modal-form__item">
+										<input type="text" name="bonus_code" placeholder="Бонусный код" class="modal-form__input">
+									</div>
+
+									<div class="form-group">
+										<input type="checkbox" id="slide-checkbox" class="registration-form-mini__checkbox">
+										<label for="slide-checkbox" class="registration-form-mini__label-checkbox">
+											Мне 18 лет и я принимаю <a href="#" class="ds-link" data-toggle="modal" data-target="#modalRules">Положения и условия</a></label>
+									</div>
+
+									<button class="btn btn-danger btn-full-width">Регистрация</button>
 								</form>
 							</div>
 
@@ -848,9 +865,16 @@
 							<div class="modal-body">
 								<form action="#" class="modal-form modal-form--enter">
 
-									<input type="email" class="modal-form__input" placeholder="Email">
-									<input type="password" class="modal-form__input" placeholder="Пароль">
-									<input type="submit" class="modal-form__button" id="enter-button" value="Войти">
+									<div class="form-group modal-form__item">
+										<input type="email" class="form-control" name="email" placeholder="Email">
+									</div>
+									<div class="form-group modal-form__item">
+										<input type="password" class="form-control" name="password" placeholder="Пароль">
+									</div>
+
+									<div class="form-group modal-form__item">
+										<button class="btn btn-danger btn-full-width">Войти</button>
+									</div>
 
 									<div class="social-enter">
 										<span class="social-enter__text">Войти с помощью:</span>
@@ -863,7 +887,7 @@
 									</div>
 								</form>
 
-								<button class="modal-form__forgot-pass" data-toggle="modal" data-target="#modalRecovery">Я забыл пароль</button>
+								<a href="#" role="button" class="ds-link" data-toggle="modal" data-target="#modalRecovery">Я забыл пароль</a>
 							</div>
 
 						</div>
@@ -1413,10 +1437,9 @@
 			<!-- <div class="level-modal-bg"></div> -->
 			<div id="preloader"></div>
 
-			<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
-			<script type="text/javascript" src="bootstrap/assets/javascripts/bootstrap.js"></script>
-
-			<script type="text/javascript" src="js/reg-password.js"></script>
+			<script src="js/jquery-3.2.1.min.js"></script>
+			<script src="bootstrap/assets/javascripts/bootstrap.js"></script>
+			<script src="js/jquery.nicescroll.min.js"></script>
 
 			<script type="text/javascript" src="js/main.js"></script>
 		</body>
