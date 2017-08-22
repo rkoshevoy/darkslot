@@ -3250,31 +3250,32 @@
     font-size: 14px;
     line-height: 14px; }
 
-.conditions__wrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+.conditions {
   padding-top: 35px;
   padding-bottom: 35px; }
-
-.conditions__header {
-  width: 100%;
-  margin-bottom: 40px;
-  font-size: 30px;
-  font-family: SFUIHeavy;
-  text-transform: uppercase; }
-
-.conditions__text-wrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between; }
+  .conditions__wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    padding-top: 35px;
+    padding-bottom: 35px; }
+  .conditions__header {
+    width: 100%;
+    margin-bottom: 40px;
+    font-size: 30px;
+    font-family: SFUIHeavy;
+    text-transform: uppercase; }
+  .conditions__text-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
 
 .conditions--reload .conditions__wrapper {
   display: block;
@@ -3329,12 +3330,12 @@
   margin-bottom: 20px; }
 
 .everyweek-cashback {
+  padding-top: 200px;
   background-image: url("../../img/money-bg-3.png");
-  background-size: contain;
+  background-size: cover;
   background-position: top; }
   .everyweek-cashback__wrapper {
     position: relative;
-    padding-top: 240px;
     padding-bottom: 50px;
     text-align: center; }
   .everyweek-cashback__header {
@@ -3347,7 +3348,7 @@
   .everyweek-cashback__back-text {
     position: absolute;
     z-index: 0;
-    top: 190px;
+    top: -50px;
     left: 50%;
     -webkit-transform: translatex(-50%);
             transform: translatex(-50%);
@@ -3369,9 +3370,11 @@
         height: 3px;
         background-color: #ed383f; }
   .everyweek-cashback__condition {
-    display: inline-block;
+    margin-bottom: 40px;
     padding: 20px;
     background-color: #333333; }
+  .everyweek-cashback__condition-text {
+    margin: 0; }
   .everyweek-cashback__second-level {
     display: inline-block;
     border-bottom: 1px dashed #fff; }
@@ -3386,14 +3389,8 @@
     cursor: pointer; }
 
 .places {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
   margin-bottom: 70px; }
   .places__item {
-    width: 320px;
     padding-top: 40px;
     padding-bottom: 20px;
     background-position: center; }
@@ -3409,16 +3406,13 @@
     font-size: 18px; }
 
 .broadcast {
+  padding: 80px 0;
   background-color: #1a1a1a; }
   .broadcast__wrapper {
     display: -webkit-box;
     display: -ms-flexbox;
-    display: flex;
-    padding: 80px 0; }
-  .broadcast__text-wrapper {
-    width: 100%; }
+    display: flex; }
   .broadcast__header {
-    width: 540px;
     margin-bottom: 40px;
     font-size: 20px;
     line-height: 37px;
@@ -3427,7 +3421,7 @@
   .broadcast__video-wrapper {
     -ms-flex-negative: 0;
         flex-shrink: 0;
-    width: 580px;
+    width: 100%;
     height: 330px;
     background-color: #141414; }
   .broadcast__button {
@@ -3443,57 +3437,55 @@
   background-image: url("../../img/live-casino-girl.jpg");
   background-size: 100%; }
 
-.cashback-description__wrapper {
-  padding-top: 40px;
-  text-align: center; }
-
-.cashback-description__header {
-  position: relative;
-  display: inline-block;
-  margin-bottom: 20px;
-  text-align: center;
-  font-size: 36px;
-  text-transform: uppercase; }
-  .cashback-description__header::after {
-    content: '';
-    position: absolute;
-    left: 0;
-    bottom: -3px;
-    width: 100%;
-    height: 4px;
-    background-color: #ed383f; }
-
-.cashback-description__bottom {
-  display: block;
-  float: right;
-  width: 540px;
-  margin-bottom: 10px;
-  padding: 50px 20px;
-  background-color: #191919;
-  font-family: SFUIHeavy;
-  font-size: 14px;
-  line-height: 22px; }
-
-.cashback-description__text-wrapper {
-  width: 800px;
-  margin: 0 auto;
-  margin-bottom: 20px; }
-
-.cashback-description__text {
-  font-size: 24px;
-  text-transform: uppercase;
-  line-height: 22px;
-  text-align: center; }
-  .cashback-description__text span {
-    position: relative; }
-    .cashback-description__text span::after {
+.cashback-description {
+  padding-top: 40px; }
+  .cashback-description__wrapper {
+    padding-top: 40px;
+    text-align: center; }
+  .cashback-description__header {
+    position: relative;
+    display: inline-block;
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 36px;
+    text-transform: uppercase; }
+    .cashback-description__header::after {
       content: '';
       position: absolute;
-      bottom: -3px;
       left: 0;
+      bottom: -3px;
       width: 100%;
-      height: 3px;
+      height: 4px;
       background-color: #ed383f; }
+  .cashback-description__bottom {
+    display: block;
+    float: right;
+    margin-bottom: 40px;
+    padding: 50px 20px;
+    background-color: #191919;
+    font-family: SFUIHeavy;
+    font-size: 14px;
+    line-height: 22px; }
+  .cashback-description__text-wrapper {
+    width: 800px;
+    margin: 0 auto;
+    margin-bottom: 20px; }
+  .cashback-description__text {
+    margin-bottom: 40px;
+    font-size: 24px;
+    text-transform: uppercase;
+    line-height: 22px;
+    text-align: center; }
+    .cashback-description__text span {
+      position: relative; }
+      .cashback-description__text span::after {
+        content: '';
+        position: absolute;
+        bottom: -3px;
+        left: 0;
+        width: 100%;
+        height: 3px;
+        background-color: #ed383f; }
 
 .about {
   padding: 60px 0;
