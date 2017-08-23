@@ -411,8 +411,7 @@
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    height: 100%;
-    width: 780px; }
+    height: 100%; }
   .slide__reg-button {
     display: none; }
   .slide__content-wrapper {
@@ -436,21 +435,134 @@
     display: block; }
   .slide-bonus__first-line {
     font-family: SFUIHeavy;
-    font-size: 175px; }
+    font-size: 175px;
+    font-size: 12em;
+    line-height: 1; }
   .slide-bonus__second-line {
     font-family: SFUIBold;
     margin-bottom: 10px;
     font-size: 38px;
+    font-size: 2.7em;
+    line-height: 1.2;
     text-transform: uppercase; }
   .slide-bonus__third-line {
     font-size: 21px;
+    font-size: 1.5em;
+    line-height: 1;
     margin-bottom: 15px; }
   .slide-bonus__link {
     display: inline-block;
     border-bottom: 1px dashed #fff;
     background-color: transparent;
     font-family: SFUIBold;
-    font-size: 14px; }
+    font-size: 1em; }
+
+#casino-banner .carousel-control {
+  width: 10%; }
+
+@media (max-width: 1366px) {
+  #casino-banner .carousel-control {
+    display: none; } }
+
+#casino-banner .pirate-reg .carousel-caption {
+  height: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 0;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+  #casino-banner .pirate-reg .carousel-caption .container,
+  #casino-banner .pirate-reg .carousel-caption .row,
+  #casino-banner .pirate-reg .carousel-caption [class^=col-] {
+    height: 100%; }
+  #casino-banner .pirate-reg .carousel-caption .slide-wrap {
+    padding: 30px 15px;
+    height: 100%; }
+    #casino-banner .pirate-reg .carousel-caption .slide-wrap .registration-form-mini {
+      width: 100%; }
+    #casino-banner .pirate-reg .carousel-caption .slide-wrap [class^="col-"] {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center; }
+    #casino-banner .pirate-reg .carousel-caption .slide-wrap:before {
+      content: '';
+      position: absolute;
+      top: 0;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.5);
+      right: 0;
+      width: 150%; }
+
+#casino-banner .tiger-reg .carousel-caption {
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 0;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+
+#casino-banner .tiger-reg .registration-bonus {
+  position: relative;
+  top: 0; }
+  #casino-banner .tiger-reg .registration-bonus .registration-bonus-pers {
+    bottom: -10px; }
+
+#casino-banner .tiger-reg .tiger-reg-form {
+  background-color: rgba(76, 133, 161, 0.7);
+  padding: 15px; }
+
+.registration.tiger-reg .registration-bonus {
+  position: relative;
+  top: -90px; }
+  .registration.tiger-reg .registration-bonus .registration-bonus-pers {
+    bottom: -80px; }
+
+.registration.tiger-reg .tiger-reg-form {
+  background-color: rgba(76, 133, 161, 0.7);
+  padding: 15px; }
+
+@media (max-width: 1200px) {
+  #casino-banner.carousel .carousel-inner > .item.pirate-reg > img {
+    height: 400px;
+    width: auto;
+    max-width: none; }
+  #casino-banner.carousel .carousel-inner > .item.pirate-reg .slide-bonus__first-line {
+    font-size: 10em; }
+  #casino-banner.carousel .carousel-inner > .item.pirate-reg .slide-bonus__second-line {
+    font-size: 2em; }
+  #casino-banner.carousel .form-control {
+    padding: 10px; }
+  #casino-banner.carousel .form-group {
+    margin-bottom: 10px; } }
+
+@media (max-width: 992px) {
+  #casino-banner.carousel .carousel-inner > .item.pirate-reg > img {
+    position: relative;
+    right: 28%; } }
+
+@media (max-width: 768px) {
+  #casino-banner.carousel .container {
+    width: 100%; }
+    #casino-banner.carousel .container .btn-mobile-reg {
+      margin-top: 15px; } }
 
 .tabs {
   position: relative; }
@@ -4333,75 +4445,6 @@ form * {
   .ds-link:hover, .ds-link:focus {
     color: #e6e6e6;
     text-decoration: none; }
-
-#casino-banner .carousel-control {
-  width: 10%; }
-
-@media (max-width: 1366px) {
-  #casino-banner .carousel-control {
-    display: none; } }
-
-#casino-banner .pirate-reg .carousel-caption {
-  height: 100%;
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  padding: 0;
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center; }
-  #casino-banner .pirate-reg .carousel-caption .container,
-  #casino-banner .pirate-reg .carousel-caption .row,
-  #casino-banner .pirate-reg .carousel-caption [class^=col-] {
-    height: 100%; }
-  #casino-banner .pirate-reg .carousel-caption .slide-wrap {
-    padding: 30px 15px; }
-    #casino-banner .pirate-reg .carousel-caption .slide-wrap:before {
-      content: '';
-      position: absolute;
-      top: 0;
-      height: 100%;
-      background-color: rgba(0, 0, 0, 0.5);
-      right: 0;
-      width: 150%; }
-
-#casino-banner .tiger-reg .carousel-caption {
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  padding: 0;
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center; }
-
-#casino-banner .tiger-reg .registration-bonus {
-  position: relative;
-  top: 0; }
-  #casino-banner .tiger-reg .registration-bonus .registration-bonus-pers {
-    bottom: -10px; }
-
-#casino-banner .tiger-reg .tiger-reg-form {
-  background-color: rgba(76, 133, 161, 0.7);
-  padding: 15px; }
-
-.registration.tiger-reg .registration-bonus {
-  position: relative;
-  top: -90px; }
-  .registration.tiger-reg .registration-bonus .registration-bonus-pers {
-    bottom: -80px; }
-
-.registration.tiger-reg .tiger-reg-form {
-  background-color: rgba(76, 133, 161, 0.7);
-  padding: 15px; }
 
 .form-control {
   border-radius: 0;
