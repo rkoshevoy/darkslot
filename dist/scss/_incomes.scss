@@ -38,9 +38,9 @@
 			opacity: 0.8;
 		}
 
-		// @media @mobile {
-		// 	font-size: 30px;
-		// }
+		@media (max-width: 768px) {
+			font-size: 30px;
+		}
 	}
 
 	&__underheader {
@@ -49,10 +49,10 @@
 		font-size: 30px;
 		text-align: center;
 
-		// @media @mobile {
-		// 	margin-bottom: 40px;
-		// 	font-size: 24px;
-		// }
+		@media (max-width: 768px) {
+			margin-bottom: 40px;
+			font-size: 24px;
+		}
 	}
 
 	&__levels-wrapper {
@@ -113,15 +113,15 @@
 		opacity: 0.8;
 	}
 
-	// @media @tablet {
-	// 	width: 340px;
-	// 	margin: 0 auto;
-	// }
+	@media (max-width: 992px) {
+		width: 100%;
+		margin: 0 auto;
+	}
 
-	// @media @mobile {
-	// 	width: 100%;
-	// 	max-width: 340px
-	// }
+	@media (max-width: 768px) {
+		// width: 100%;
+		max-width: 340px
+	}
 
 	&__header {
 		position: relative;

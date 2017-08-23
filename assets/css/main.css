@@ -1066,9 +1066,12 @@
     bottom: 0;
     background-color: #313131; }
   .partners__wrapper img {
-    width: 100%;
+    max-width: 100%;
     margin-bottom: 30px;
     text-align: center; }
+    @media (max-width: 768px) {
+      .partners__wrapper img {
+        display: none; } }
   .partners__images {
     margin-bottom: 40px;
     text-align: center; }
@@ -1081,6 +1084,9 @@
   .partners__text {
     font-size: 14px;
     line-height: 22px; }
+    @media (max-width: 768px) {
+      .partners__text {
+        line-height: 20px; } }
 
 .footer {
   padding: 10px 0; }
@@ -1766,6 +1772,10 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center; }
+  @media (max-width: 768px) {
+    .partner__wrapper {
+      padding: 0;
+      text-align: center; } }
 
 .partner__text-wrapper {
   position: relative;
@@ -1786,6 +1796,15 @@
 .partner__text {
   font-size: 30px;
   line-height: 60px; }
+  @media (max-width: 768px) {
+    .partner__text {
+      font-size: 25px;
+      line-height: 40px;
+      text-align: center; } }
+
+@media (max-width: 768px) {
+  .partner__image-wrapper {
+    display: none; } }
 
 .partner__image {
   max-width: 100%; }
@@ -1814,9 +1833,16 @@
     background-color: #ed383f; }
   .advantages .advantage__title-text {
     height: 60px; }
+    @media (max-width: 768px) {
+      .advantages .advantage__title-text {
+        height: auto;
+        margin-bottom: 10px; } }
 
 .advantages .advantage__content {
   text-align: center; }
+  @media (max-width: 768px) {
+    .advantages .advantage__content {
+      margin-bottom: 40px; } }
 
 .advantages .advantage__image {
   width: 150px;
@@ -1837,6 +1863,13 @@
   margin-bottom: 30px;
   font-size: 30px;
   text-transform: uppercase; }
+  @media (max-width: 992px) {
+    .advantages .advantage__header {
+      font-size: 26px; } }
+  @media (max-width: 768px) {
+    .advantages .advantage__header {
+      margin-bottom: 20px;
+      font-size: 22px; } }
 
 .advantages .advantage__text {
   font-size: 13px;
@@ -1865,11 +1898,18 @@
       height: 70px;
       background-color: #005fdc;
       opacity: 0.8; }
+    @media (max-width: 768px) {
+      .incomes__header {
+        font-size: 30px; } }
   .incomes__underheader {
     margin-bottom: 95px;
     font-family: SFUIHeavy;
     font-size: 30px;
     text-align: center; }
+    @media (max-width: 768px) {
+      .incomes__underheader {
+        margin-bottom: 40px;
+        font-size: 24px; } }
   .incomes__levels-wrapper {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1920,6 +1960,13 @@
     height: 135px;
     background-color: #ed383f;
     opacity: 0.8; }
+  @media (max-width: 992px) {
+    .income {
+      width: 100%;
+      margin: 0 auto; } }
+  @media (max-width: 768px) {
+    .income {
+      max-width: 340px; } }
   .income__header {
     position: relative;
     z-index: 1;
@@ -3844,6 +3891,9 @@
   padding-top: 90px;
   background-image: url("../../img/chips-bg.png");
   background-size: cover; }
+  @media (max-width: 768px) {
+    .reload-bonus {
+      padding-top: 40px; } }
   .reload-bonus__header {
     position: relative;
     z-index: 1;
