@@ -38,39 +38,39 @@
 			transform: rotate(-1deg);
 		}
 
-		// @media @mobile {
-		// 	margin-bottom: 30px;
-		// 	padding-top: 10px;
-		// 	padding-bottom: 10px;
-		// 	font-size: 32px;
-		// 	background-color: #ed383f;
-		// 	text-align: center;
+		@media (max-width: 768px) {
+			margin-bottom: 30px;
+			padding-top: 10px;
+			padding-bottom: 10px;
+			font-size: 32px;
+			background-color: #ed383f;
+			text-align: center;
 
-		// 	&::after {
-		// 		display: none;
-		// 	}
-		// }
+			&::after {
+				display: none;
+			}
+		}
 	}
 
 	&__text-wrapper {
 		// width: 800px;		
 		margin-bottom: 80px;
 
-		// @media @tablet {
-		// 	width: 100%;
-		// 	margin-bottom: 40px;
-		// }
+		@media (max-width: 1200px) {
+			width: 100%;
+			margin-bottom: 40px;
+		}
 	}
 
 	&__text {
 		font-size: 24px;
 		line-height: 44px;
 
-		// @media @mobile {
-		// 	font-size: 18px;
-		// 	line-height: 22px;
-		// 	text-align: center;
-		// }
+		@media (max-width: 768px) {
+			font-size: 18px;
+			line-height: 22px;
+			text-align: center;
+		}
 	}
 }
 

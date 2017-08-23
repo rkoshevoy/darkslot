@@ -2973,10 +2973,18 @@
   display: block;
   padding: 30px 23px;
   border: 2px dashed #fff; }
+  @media (max-width: 1200px) {
+    .cashback-code {
+      padding: 10px;
+      margin: 0 auto;
+      text-align: center; } }
   .cashback-code__header {
     display: block;
     margin-bottom: 15px;
     font-size: 16px; }
+    @media (max-width: 1200px) {
+      .cashback-code__header {
+        margin-bottom: 10px; } }
   .cashback-code__code {
     display: block;
     font-size: 20px;
@@ -3616,11 +3624,30 @@
       background-color: #ed383f;
       -webkit-transform: rotate(-1deg);
               transform: rotate(-1deg); }
+    @media (max-width: 768px) {
+      .reload-bonus__header {
+        margin-bottom: 30px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        font-size: 32px;
+        background-color: #ed383f;
+        text-align: center; }
+        .reload-bonus__header::after {
+          display: none; } }
   .reload-bonus__text-wrapper {
     margin-bottom: 80px; }
+    @media (max-width: 1200px) {
+      .reload-bonus__text-wrapper {
+        width: 100%;
+        margin-bottom: 40px; } }
   .reload-bonus__text {
     font-size: 24px;
     line-height: 44px; }
+    @media (max-width: 768px) {
+      .reload-bonus__text {
+        font-size: 18px;
+        line-height: 22px;
+        text-align: center; } }
 
 .levels {
   display: -webkit-box;
