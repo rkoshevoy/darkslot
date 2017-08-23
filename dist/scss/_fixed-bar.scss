@@ -235,24 +235,21 @@
 		min-width: 140px;
 
 		&__dropdown-menu {
-			position: absolute;
-			bottom: 100%;
-			list-style-type: none;
-			background-color: #313131;
-			opacity: 0;
-			z-index: -1;
-			transition: .2s;
+			background-color: lighten($bg-color, 10%);
+			border-radius: 0;
+			padding: 0 !important;
+			margin: 0 !important;
+			min-width: 100%;
+			border: 0;
 
 			&-item{
-				padding: 10px 20px;
-				min-width: 140px;
 				cursor: pointer;
 
 				&:hover{
 					background-color: #414141;
 
 					.flagName {
-						color: #fff;
+						color: $text-color;
 					}
 				}
 
@@ -272,10 +269,10 @@
 	}
 
 	.localeWrap {
+		width: 100%;
 		display: inline-flex;
-		justify-content: space-between;
 		align-items: center;
-		font-size: 13px;
+		font-size: .9em;
 	}
 
 	.flagContainer {
@@ -302,7 +299,7 @@
 		padding-right: 15px;
 		margin-left: 1px;
 		border: none;
-		background-color: #313131;
+		background-color: lighten($bg-color, 10%);
 		font-family: SFUIRegular;
 		color: #999999;
 		transition: 0.1s;
@@ -317,8 +314,6 @@
 			}
 		}
 
-
-
 		// @media @mobile {
 		// 	order: 1;
 
@@ -332,7 +327,7 @@
 		}
 
 		span {
-			font-size: 13px;
+			font-size: .9em;
 			line-height: 30px;
 			color: #999999;
 			transition: 0.1s;

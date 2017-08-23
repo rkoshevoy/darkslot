@@ -13,9 +13,10 @@
         </form>
         <div class="fixed-bar__chat"><p>Онлайн-чат</p></div>
 
+
         <div class="language_selector">
-          <div>
-            <button class="fixed-bar__language" type="button">
+          <div class="dropdown">
+            <button id="language-switch" class="fixed-bar__language" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
               <span class="localeWrap">
                 <span class="flagContainer">
                   <img class="flagImg" src="./img/flags/flag-ru.png" alt="">
@@ -24,7 +25,7 @@
               </span>
               <span class="caret"></span>
             </button>
-            <ul role="menu" class="language_selector__dropdown-menu">
+            <ul class="dropdown-menu language_selector__dropdown-menu" aria-labelledby="language-switch">
               <li class="language_selector__dropdown-menu-item">
                 <a class="localeWrap">
                   <span class="flagContainer">
