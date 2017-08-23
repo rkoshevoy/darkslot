@@ -75,7 +75,7 @@ form {
 	padding-bottom: 50px;
 	background-color: #232323;
 
-	@media (max-width: 1200px) {
+	@media (max-width: 788px) {
 		margin-top: 77px;
 	}
 }
@@ -111,6 +111,10 @@ form {
 
 
 // bootstrap
+
+.navbar-fixed-top .navbar-collapse, .navbar-fixed-bottom .navbar-collapse {
+	max-height: calc(100vh - 150px);
+}
 
 .dropdown-menu > li > a,
 .dropdown-menu > li > a {

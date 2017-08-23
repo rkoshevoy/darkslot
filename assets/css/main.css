@@ -4540,7 +4540,7 @@ form * {
   margin-top: 50px;
   padding-bottom: 50px;
   background-color: #232323; }
-  @media (max-width: 1200px) {
+  @media (max-width: 788px) {
     .main-wrapper {
       margin-top: 77px; } }
 
@@ -4567,6 +4567,9 @@ form * {
   line-height: normal;
   height: auto;
   padding: 25.5px 15px; }
+
+.navbar-fixed-top .navbar-collapse, .navbar-fixed-bottom .navbar-collapse {
+  max-height: calc(100vh - 150px); }
 
 .dropdown-menu > li > a,
 .dropdown-menu > li > a {
