@@ -3466,6 +3466,9 @@
 
 .places {
   margin-bottom: 70px; }
+  @media (max-width: 768px) {
+    .places {
+      margin-bottom: 40px; } }
   .places__item {
     padding-top: 40px;
     padding-bottom: 20px;
@@ -3484,6 +3487,9 @@
 .broadcast {
   padding: 80px 0;
   background-color: #1a1a1a; }
+  @media (max-width: 768px) {
+    .broadcast {
+      padding: 40px 0; } }
   .broadcast__wrapper {
     display: -webkit-box;
     display: -ms-flexbox;

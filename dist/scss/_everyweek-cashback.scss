@@ -130,9 +130,9 @@
 	// 	flex-wrap: wrap;
 	// }
 
-	// @media @mobile {
-	// 	margin-bottom: 40px;
-	// }
+	@media (max-width: 768px) {
+		margin-bottom: 40px;
+	}
 
 	&__item {
 		// width: 320px;
@@ -189,6 +189,10 @@
 .broadcast {
 	padding: 80px 0;
 	background-color: #1a1a1a;
+
+	@media (max-width: 768px) {
+		padding: 40px 0;
+	}
 
 	&__wrapper {
 		display: flex;
