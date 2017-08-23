@@ -211,6 +211,12 @@ form {
 	padding: 20px 80px;
 }
 
+@media (max-width: 480px) {
+	.btn {
+		padding: 5px 10px;
+	}
+}
+
 .ds-link {
 	color: $text-color;
 	border-bottom: 1px dashed $text-color;
