@@ -2516,15 +2516,28 @@
       color: #cccccc;
       border-bottom: 1px dashed #cccccc; }
 
-.error {
+.notFound {
   height: 100vh;
   background-color: #232323; }
-  .error > a {
-    display: block;
+  .notFound > a {
     height: 100%;
     text-decoration: none;
-    color: #fff; }
-  .error__wrapper {
+    color: #fff;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+  .notFound-content {
+    height: 400px; }
+    .notFound-content > .row,
+    .notFound-content > .row > [class^="col-"] {
+      height: 100%; }
+  .notFound__wrapper {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -2537,41 +2550,68 @@
         -ms-flex-pack: center;
             justify-content: center;
     height: 100vh; }
-  .error__character {
-    width: 100%; }
-
-.error-text {
-  position: relative;
-  text-align: center; }
-  .error-text__header {
+  .notFound__character {
+    max-width: 100%; }
+  .notFound-textWrap {
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+  .notFound-text {
     position: relative;
-    z-index: 10;
-    margin-bottom: 80px;
-    font-size: 40px;
-    text-transform: uppercase;
-    font-family: SFUIHeavy; }
-    @media (max-width: 768px) {
-      .error-text__header {
-        margin-bottom: 0;
-        font-size: 30px; } }
-  .error-text__bg-text {
-    position: absolute;
-    top: -38px;
-    left: 50%;
-    -webkit-transform: translatex(-50%);
-            transform: translatex(-50%);
-    z-index: 0;
-    font-family: SFUIHeavy;
-    font-size: 132px;
-    line-height: 132px;
-    color: #1c1c1c; }
-  .error-text__underheader {
-    margin-bottom: 25px;
-    font-family: SFUIBold;
-    font-size: 24px; }
-  .error-text__bottom {
-    color: #e6e6e6;
-    font-size: 14px; }
+    text-align: center; }
+    .notFound-text__header {
+      position: relative;
+      z-index: 10;
+      margin-bottom: 80px;
+      font-size: 40px;
+      font-size: 2.9em;
+      text-transform: uppercase;
+      font-family: SFUIHeavy; }
+      @media (max-width: 768px) {
+        .notFound-text__header {
+          margin-bottom: 0;
+          font-size: 30px; } }
+    .notFound-text__bg-text {
+      position: absolute;
+      top: -38px;
+      left: 50%;
+      -webkit-transform: translatex(-50%);
+              transform: translatex(-50%);
+      z-index: 0;
+      font-family: SFUIHeavy;
+      font-size: 132px;
+      font-size: 9.5em;
+      line-height: 1;
+      color: #1c1c1c; }
+    .notFound-text__underheader {
+      margin-bottom: 25px;
+      font-family: SFUIBold;
+      font-size: 24px;
+      font-size: 1.7em; }
+    .notFound-text__bottom {
+      color: #e6e6e6;
+      font-size: 1em; }
+
+@media (max-width: 992px) {
+  .notFound-content {
+    height: auto; } }
+
+@media (max-width: 768px) {
+  .notFound-text {
+    font-size: 12px; }
+    .notFound-text__bg-text {
+      font-size: 8em; } }
+
+@media (max-width: 420px) {
+  .notFound-text__bg-text {
+    font-size: 7em; } }
 
 .registration-form-mini__email, .registration-form-mini__nickname, .registration-form-mini__password, .registration-form-mini__password-confirm {
   width: 100%;
