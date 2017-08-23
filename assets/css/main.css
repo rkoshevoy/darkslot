@@ -3025,6 +3025,9 @@
   padding: 80px 0;
   background-image: url("../../img/money-bg-2.png");
   background-size: cover; }
+  @media (max-width: 768px) {
+    .day-slot {
+      padding: 40px 0; } }
   .day-slot__wrapper {
     padding-top: 80px;
     padding-bottom: 110px; }
@@ -3044,19 +3047,36 @@
           justify-content: space-between; }
   .half-cashback__text-wrapper {
     margin-bottom: 100px; }
+    @media (max-width: 768px) {
+      .half-cashback__text-wrapper {
+        margin-bottom: 40px;
+        text-align: center; } }
   .half-cashback__header {
     margin-bottom: 20px;
     font-family: SFUIHeavy;
     font-size: 36px;
     line-height: 64px; }
+    @media (max-width: 768px) {
+      .half-cashback__header {
+        font-size: 26px;
+        line-height: 40px; } }
   .half-cashback__text {
     font-size: 15px;
     line-height: 31px; }
+    @media (max-width: 768px) {
+      .half-cashback__text {
+        line-height: 20px; } }
   .half-cashback__image {
-    display: inline-block;
+    float: right;
+    display: block;
     width: 430px;
     height: 220px;
     background-color: #181818; }
+    @media (max-width: 768px) {
+      .half-cashback__image {
+        float: none;
+        width: 100%;
+        margin: 0 auto; } }
   .half-cashback__button-wrapper {
     width: 100%;
     text-align: center; }
@@ -3098,17 +3118,29 @@
   font-size: 36px;
   font-family: SFUIHeavy;
   text-align: center; }
+  @media (max-width: 768px) {
+    .cashback-games__header {
+      margin-bottom: 20px;
+      font-size: 26px; } }
 
 .cashback-games__text {
   margin-bottom: 70px;
   font-size: 16px;
   line-height: 29px;
   text-align: center; }
+  @media (max-width: 768px) {
+    .cashback-games__text {
+      margin-bottom: 40px; } }
 
 .cashback-game {
   margin-bottom: 25px;
   padding: 20px;
   background-color: #1c1c1c; }
+  .cashback-game .btn {
+    max-width: 100%; }
+    @media (max-width: 768px) {
+      .cashback-game .btn {
+        margin-bottom: 20px; } }
   .cashback-game__wrapper {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -3132,17 +3164,23 @@
     line-height: 22px;
     color: #999999; }
   .cashback-game__image {
+    float: right;
     display: inline-block;
-    -ms-flex-negative: 0;
-        flex-shrink: 0;
     width: 340px;
-    height: 180px;
+    height: 190px;
     background-color: #161616; }
+    @media (max-width: 768px) {
+      .cashback-game__image {
+        float: none;
+        width: 100%; } }
   .cashback-game__header {
     margin-bottom: 27px;
     font-size: 24px;
     font-family: SFUIBold;
     text-transform: uppercase; }
+    @media (max-width: 768px) {
+      .cashback-game__header {
+        font-size: 18px; } }
   .cashback-game__button {
     width: 230px;
     margin: 0 auto;
@@ -4184,7 +4222,7 @@ form * {
   margin-top: 50px;
   padding-bottom: 50px;
   background-color: #232323; }
-  @media (min-width: 788px) {
+  @media (max-width: 788px) {
     .main-wrapper {
       margin-top: 77px; } }
 

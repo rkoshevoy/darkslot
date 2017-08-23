@@ -3,6 +3,10 @@
 	background-image: url('../../img/money-bg-2.png');
 	background-size: cover;
 
+	@media (max-width: 768px) {
+		padding: 40px 0;
+	}
+
 	&__wrapper {
 		// width: 1180px;
 		// margin: 0 auto;
@@ -54,11 +58,11 @@
 		// 	width: 400px;
 		// }
 
-		// @media @mobile {
-		// 	width: 100%;
-		// 	margin-bottom: 40px;
-		// 	text-align: center;
-		// }
+		@media (max-width: 768px) {
+			// width: 100%;
+			margin-bottom: 40px;
+			text-align: center;
+		}
 	}
 
 	&__header {
@@ -67,26 +71,35 @@
 		font-size: 36px;
 		line-height: 64px;
 
-		// @media @tablet {
-		// 	font-size: 26px;
-		// 	line-height: 40px;
-		// }
+		@media (max-width: 768px) {
+			font-size: 26px;
+			line-height: 40px;
+			// text-align: center;
+		}
 	}
 
 	&__text {
 		font-size: 15px;
 		line-height: 31px;
 
-		// @media @mobile {
-		// 	line-height: 20px;
-		// }
+		@media (max-width: 768px) {
+			line-height: 20px;
+			// text-align: center;
+		}
 	}
 
 	&__image {
-		display: inline-block;
+		float: right;
+		display: block;
 		width: 430px;
 		height: 220px;
 		background-color: #181818;
+
+		@media (max-width: 768px) {
+			float: none;
+			width: 100%;
+			margin: 0 auto;
+		}
 
 		// @media @tablet {
 		// 	width: 300px;
@@ -180,10 +193,10 @@
 		font-family: SFUIHeavy;
 		text-align: center;
 
-		// @media @mobile {
-		// 	margin-bottom: 20px;
-		// 	font-size: 26px;
-		// }
+		@media (max-width: 768px) {
+			margin-bottom: 20px;
+			font-size: 26px;
+		}
 	}
 
 	&__text {
@@ -192,10 +205,10 @@
 		line-height: 29px;
 		text-align: center;
 
-		// @media @mobile {
-		// 	margin-bottom: 40px;
-		// 	font-size: 20px;
-		// }
+		@media (max-width: 768px) {
+			margin-bottom: 40px;
+			// font-size: 20px;
+		}
 	}
 }
 
@@ -203,6 +216,15 @@
 	margin-bottom: 25px;
 	padding: 20px;
 	background-color: #1c1c1c;
+
+	.btn {
+		max-width: 100%;
+
+		@media (max-width: 768px) {
+			margin-bottom: 20px;
+		}
+
+	}
 
 	&__wrapper {
 		display: flex;
@@ -246,17 +268,19 @@
 	}
 
 	&__image {
+		float: right;
 		display: inline-block;
-		flex-shrink: 0;
+		// flex-shrink: 0;
 		width: 340px;
-		height: 180px;
+		height: 190px;
 		background-color: #161616;
 
-		// @media @mobile {
-		// 	order: 1;
-		// 	width: 100%;
-		// 	margin-bottom: 20px;
-		// }
+		@media (max-width: 768px) {
+			float: none;
+			// order: 1;
+			width: 100%;
+			// margin-bottom: 20px;
+		}
 	}
 
 	&__header {
@@ -264,6 +288,10 @@
 		font-size: 24px;
 		font-family: SFUIBold;
 		text-transform: uppercase;
+
+		@media (max-width: 768px) {
+			font-size: 18px;
+		}
 	}
 
 	&__button {
