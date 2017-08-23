@@ -4280,12 +4280,23 @@
   padding: 10px;
   border: 1px dashed #005fdc;
   text-align: center;
-  min-height: 100px; }
+  min-height: 90px; }
+  @media (max-width: 768px) {
+    .level-ability {
+      min-height: none; } }
   .level-ability__header {
     width: 100%;
     font-size: 20px;
     font-family: SFUIHeavy;
     text-transform: uppercase; }
+    @media (max-width: 992px) {
+      .level-ability__header {
+        font-size: 16px; } }
+    @media (max-width: 768px) {
+      .level-ability__header {
+        margin-bottom: 0;
+        font-size: 14px;
+        line-height: 16px; } }
   .level-ability__text {
     color: #afaeae;
     font-size: 13px;
@@ -4346,8 +4357,20 @@
     .ability-table__cell:first-child {
       width: 720px;
       text-align: left; }
+    @media (max-width: 992px) {
+      .ability-table__cell:first-child {
+        width: 300px; } }
+    @media (max-width: 768px) {
+      .ability-table__cell {
+        padding: 10px; } }
     .ability-table__cell img {
       width: 30px; }
+      @media (max-width: 768px) {
+        .ability-table__cell img {
+          width: 20px; } }
+    @media (max-width: 768px) {
+      .ability-table__cell span {
+        display: none; } }
 
 body {
   color: #fff;
