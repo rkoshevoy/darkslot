@@ -25,13 +25,13 @@
 		// }
 		
 		img {
-			width: 100%;
+			max-width: 100%;
 			margin-bottom: 30px;
 			text-align: center;
 
-			// @media @mobile {
-			// 	margin-bottom: 20px;
-			// }
+			@media (max-width: 768px) {
+				display: none;
+			}
 		}
 	}
 
@@ -71,8 +71,8 @@
 		font-size: 14px;
 		line-height: 22px;
 
-		// @media @mobile {
-		// 	line-height: 20px;
-		// }
+		@media (max-width: 768px) {
+			line-height: 20px;
+		}
 	}
 }

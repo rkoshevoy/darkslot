@@ -22,11 +22,20 @@
 
 			&-text {
 				height: 60px;
+
+				@media (max-width: 768px) {
+					height: auto;
+					margin-bottom: 10px; 
+				}
 			}
 		}
 
 		&__content {
 			text-align: center;
+
+			@media (max-width: 768px) {
+				margin-bottom: 40px;
+			}
 		}
 
 		&__image {
@@ -51,10 +60,14 @@
 			font-size: 30px;
 			text-transform: uppercase;
 
-			// @media @mobile {
-			// 	margin-bottom: 20px;
-			// 	font-size: 22px;
-			// }
+			@media (max-width: 992px) {
+				font-size: 26px;
+			}
+
+			@media (max-width: 768px) {
+				margin-bottom: 20px;
+				font-size: 22px;
+			}
 		}
 
 		&__text {

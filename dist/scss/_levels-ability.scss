@@ -43,29 +43,29 @@
 			text-align: left;
 		}
 
-		// @media @tablet {
+		@media (max-width: 992px) {
 
-		// 	&:first-child {
-		// 		width: 300px;
-		// 	}
-		// }
+			&:first-child {
+				width: 300px;
+			}
+		}
 
-		// @media @mobile {
-		// 	padding: 10px;
-		// }
+		@media (max-width: 768px) {
+			padding: 10px;
+		}
 
 		img {
 			width: 30px;
 
-			// @media @mobile {
-			// 	width: 20px;
-			// }
+			@media (max-width: 768px) {
+				width: 20px;
+			}
 		}
 
-		// span {
-		// 	@media @mobile {
-		// 		display: none;
-		// 	}
-		// }
+		span {
+			@media (max-width: 768px) {
+				display: none;
+			}
+		}
 	}
 }
