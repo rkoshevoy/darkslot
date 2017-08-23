@@ -23,6 +23,10 @@
 	background-size: cover;
 	background-position: center top;
 
+	@media (max-width: 768px) {
+		text-align: center;
+	}
+
 	&__wrapper {
 		position: relative;
 		// width: 1180px;
@@ -51,10 +55,11 @@
 		// 	width: 500px;
 		// }
 
-		// @media @mobile {
-		// 	width: 100%;
-		// 	text-align: center;
-		// }
+		@media (max-width: 768px) {
+			width: 100%;
+			padding-top: 40px;
+			text-align: center;
+		}
 	}
 
 	&__header {
@@ -69,16 +74,21 @@
 		// 	line-height: 40px;
 		// }
 
-		// @media @mobile {
-		// 	font-size: 24px;
-		// 	line-height: 30px;
-		// }
+		@media (max-width: 768px) {
+			font-size: 24px;
+			line-height: 30px;
+		}
 	}
 
 	&__underheader-text {
 		margin-bottom: 30px;
 		font-size: 18px;
 		line-height: 31px;
+
+		@media (max-width: 768px) {
+			font-size: 14px;
+			line-height: 20px;
+		}
 
 		a {
 			display: inline-block;
@@ -115,13 +125,13 @@
 		// 	width: 200px;
 		// }
 
-		// @media @mobile {
-		// 	display: none;
-		// }
+		@media (max-width: 768px) {
+			display: none;
+		}
 	}
 
 	&__coin-image {
-		width: 100%;
+		max-width: 100%;
 	}
 }
 
@@ -131,6 +141,10 @@
 	background-image: url('../../img/table-bg.jpg');
 	background-size: contain;
 	background-position: center 0;
+
+	@media (max-width: 768px) {
+		padding: 40px 0;
+	}
 
 	&__wrapper {
 		// width: 1180px;
@@ -209,7 +223,7 @@
 
 	&__col-text {
 		display: block;
-		width: 175px;
+		// width: 175px;
 		margin: 0 auto;
 		font-size: 14px;
 		line-height: 23px;
@@ -257,8 +271,8 @@
 		color: #cccccc;
 		text-align: center;
 
-		// @media @mobile {
-		// 	line-height: 20px;
-		// }
+		@media (max-width: 768px) {
+			line-height: 20px;
+		}
 	}
 }

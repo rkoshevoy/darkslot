@@ -985,6 +985,9 @@
 .games {
   position: relative;
   padding: 30px 0; }
+  @media (max-width: 992px) {
+    .games {
+      text-align: center; } }
   .games::before {
     content: '';
     position: absolute;
@@ -1037,23 +1040,20 @@
     .games__item--support:hover, .games__item--rules:hover, .games__item--policy:hover {
       color: #fff; }
   .games__social {
-    -ms-flex-negative: 0;
-        flex-shrink: 0; }
+    display: inline-block;
+    float: right; }
+    @media (max-width: 993px) {
+      .games__social {
+        float: none;
+        margin: 0 auto; } }
   .games__text {
     display: block;
     margin-bottom: 20px;
     font-size: 18px; }
-  .games__social-list {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: end;
-        -ms-flex-pack: end;
-            justify-content: flex-end; }
-    .games__social-list a {
-      margin-left: 20px; }
-      .games__social-list a::last-child {
-        margin-right: 0; }
+  .games__social-list a {
+    margin-right: 20px; }
+    .games__social-list a::last-child {
+      margin-right: 0; }
 
 .partners {
   position: relative;
@@ -3312,6 +3312,9 @@
   background-image: url("../../img/hands-card-bg.jpg");
   background-size: cover;
   background-position: center top; }
+  @media (max-width: 768px) {
+    .free-spins {
+      text-align: center; } }
   .free-spins__wrapper {
     position: relative;
     padding-top: 100px;
@@ -3319,16 +3322,29 @@
     background-size: contain; }
   .free-spins__header-wrapper {
     padding-top: 80px; }
+    @media (max-width: 768px) {
+      .free-spins__header-wrapper {
+        width: 100%;
+        padding-top: 40px;
+        text-align: center; } }
   .free-spins__header {
     margin-bottom: 20px;
     font-size: 45px;
     line-height: 74px;
     font-family: SFUIHeavy;
     text-transform: uppercase; }
+    @media (max-width: 768px) {
+      .free-spins__header {
+        font-size: 24px;
+        line-height: 30px; } }
   .free-spins__underheader-text {
     margin-bottom: 30px;
     font-size: 18px;
     line-height: 31px; }
+    @media (max-width: 768px) {
+      .free-spins__underheader-text {
+        font-size: 14px;
+        line-height: 20px; } }
     .free-spins__underheader-text a {
       display: inline-block;
       border-bottom: 1px dashed #fff; }
@@ -3344,8 +3360,11 @@
       background-color: #de3137; }
   .free-spins__coin-image-wrapper {
     padding-top: 30px; }
+    @media (max-width: 768px) {
+      .free-spins__coin-image-wrapper {
+        display: none; } }
   .free-spins__coin-image {
-    width: 100%; }
+    max-width: 100%; }
 
 .statistics {
   padding-top: 100px;
@@ -3353,6 +3372,9 @@
   background-image: url("../../img/table-bg.jpg");
   background-size: contain;
   background-position: center 0; }
+  @media (max-width: 768px) {
+    .statistics {
+      padding: 40px 0; } }
   .statistics__wrapper {
     padding-top: 100px;
     padding-bottom: 140px; }
@@ -3383,7 +3405,6 @@
     font-family: SFUIHeavy; }
   .statistics__col-text {
     display: block;
-    width: 175px;
     margin: 0 auto;
     font-size: 14px;
     line-height: 23px; }
@@ -3407,6 +3428,9 @@
     line-height: 25px;
     color: #cccccc;
     text-align: center; }
+    @media (max-width: 768px) {
+      .statistics__text {
+        line-height: 20px; } }
 
 .timer {
   width: 100%; }
@@ -4334,7 +4358,7 @@ form * {
   margin-top: 50px;
   padding-bottom: 50px;
   background-color: #232323; }
-  @media (max-width: 788px) {
+  @media (max-width: 1200px) {
     .main-wrapper {
       margin-top: 77px; } }
 
