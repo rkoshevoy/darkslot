@@ -1,10 +1,18 @@
 .error {
-	background-image: url('../../img/404-bg.png');
-	background-position: calc(50% - 360px) center;
+	height: 100vh;
+	background-color: #232323;
+	// background-image: url('../../img/404-bg.png');
+	// background-position: calc(50% - 360px) center;
 
 	// @media @tablet {
 	// 	background-position: center -200px;
 	// }
+	> a {
+		display: block;
+		height: 100%;
+		text-decoration: none;
+		color: #fff;
+	}
 
 	&__wrapper {
 		display: flex;
@@ -30,7 +38,7 @@
 
 .error-text {
 	position: relative;
-	width: 710px;
+	// width: 710px;
 	text-align: center;
 
 	// @media @mobile {
@@ -38,14 +46,17 @@
 	// }
 
 	&__header {
+		position: relative;
+		z-index: 10;
 		margin-bottom: 80px; 
 		font-size: 40px;
 		text-transform: uppercase;
 		font-family: SFUIHeavy;
 
-		// @media @mobile {
-		// 	margin-bottom: 40px;
-		// }
+		@media (max-width: 768px) {
+			margin-bottom: 0;
+			font-size: 30px;
+		}
 	}
 
 	&__bg-text {
@@ -53,7 +64,7 @@
 		top: -38px;
 		left: 50%;
 		transform: translatex(-50%);
-		z-index: -1;
+		z-index: 0;
 		font-family: SFUIHeavy;
 		font-size: 132px;
 		line-height: 132px;
