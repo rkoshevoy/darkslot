@@ -111,9 +111,9 @@ form {
 
 .game-item {
 	width: 100%;
-  height: 160px;
-  background-color: lighten($bg-color, 10%);
-  margin-bottom: 30px;
+	height: 160px;
+	background-color: lighten($bg-color, 10%);
+	margin-bottom: 30px;
 }
 
 
@@ -136,8 +136,8 @@ form {
 }
 
 .navbar-inverse {
-  background-color: $bg-color;
-  border: 0;
+	background-color: $bg-color;
+	border: 0;
 }
 
 .navbar-nav > li {
@@ -244,8 +244,8 @@ form {
 .form-control {
 	border-radius: 0;
 	padding: 1em;
-  line-height: 1;
-  height: auto;
+	line-height: 1;
+	height: auto;
 }
 
 @media (min-width: 768px){
@@ -266,6 +266,69 @@ form {
 
 .navbar-inverse .navbar-games > li > a {
 	padding-left: 50px;
+	@media (max-width: 400px) {
+		.games-list,
+		.last-winners,
+		.rb-levels-info {
+			[class^="col-"] {
+				width: 100%;
+			}
+		}
+	}
+
+	@media (max-width: 840px) {
+		padding: 20px;
+		background-image: none;
+
+		&:hover {
+			background-image: none;
+		}
+	}
+
+	@media (max-width: 768px) {
+		width: auto;
+		padding: 10px;
+		text-align: center;
+	}
+}
+
+.navbar-games {
+	@media (max-width: 768px) {
+		text-align: center;
+		width: 100%;
+
+		li {
+			display: inline-block;
+		}
+	}
+}
+
+.navbar-provider {
+
+	.dropdown-toggle {
+
+		@media (max-width: 840px) {
+			padding: 20px;
+		}
+
+		@media (max-width: 768px) {
+			display: none;
+		}
+	}
+}
+
+.dropdown-menu-providers {
+
+	@media (max-width: 768px) {
+		display: flex;
+		position: static;
+		width: 100%;
+
+		li {
+			width: 100%;
+			text-align: center;
+		}
+	}
 }
 
 .carousel-inner > .item > a > img,
@@ -282,8 +345,8 @@ form {
 }
 
 .vertical-center {
-  display: flex;
-  align-items: center;
+	display: flex;
+	align-items: center;
 }
 
 .bonus-row {
@@ -305,6 +368,13 @@ form {
     bottom: 0;
 		top: 50%;
 	}
+
+	#vip-bonus .row.vip-bonus + .row{
+		[class^="col-"] {
+			width: 100%;
+			margin-bottom: 15px;
+		}
+	}
 }
 
 
@@ -320,13 +390,6 @@ form {
 	.pre-footer {
 		[class^="col-"] {
 			width: 100%;
-		}
-	}
-
-	#vip-bonus .row.vip-bonus + .row{
-		[class^="col-"] {
-			width: 100%;
-			margin-bottom: 15px;
 		}
 	}
 }

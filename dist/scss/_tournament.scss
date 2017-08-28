@@ -14,10 +14,10 @@
 		font-family: SFUIHeavy;
 		text-transform: uppercase;
 
-		// @media @mobile {
-		// 	margin-bottom: 40px;
-		// 	font-size: 32px;
-		// }
+		@media (max-width: 768px) {
+			margin: 40px 0;
+			font-size: 32px;
+		}
 
 		span {
 			position: relative;
@@ -34,18 +34,18 @@
 				height: 75px;
 			}
 
-			// @media @tablet {
-			// 	&::before {
-			// 		top: 5px;
-			// 		height: 50px;
-			// 	}
-			// }
+			@media (max-width: 1200px) {
+				&::before {
+					top: 5px;
+					height: 50px;
+				}
+			}
 
-			// @media @mobile {
-			// 	&::before {
-			// 		top: -5px;
-			// 	}
-			// }
+			@media (max-width: 768px) {
+				&::before {
+					top: -5px;
+				}
+			}
 		}
 	}
 
@@ -64,9 +64,9 @@
 		// 	width: 700px;
 		// }
 
-		// @media @mobile {
-		// 	width: 100%;
-		// }
+		@media (max-width: 768px) {
+			margin-bottom: 20px;
+		}
 	}
 
 	&__text {
@@ -118,9 +118,9 @@
 		text-align: center;
 		text-transform: uppercase;
 
-		// @media @mobile {
-		// 	margin-bottom: 40px;
-		// }
+		@media (max-width: 768px) {
+			margin-bottom: 40px;
+		}
 	}
 
 	&__condition {
