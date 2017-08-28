@@ -2253,7 +2253,7 @@
 .ds-modal-img-wrap {
   max-width: 400px;
   max-height: 400px; }
-  @media (max-width: 768px) {
+  @media (max-width: 1200px) {
     .ds-modal-img-wrap {
       display: none; } }
 
@@ -2438,6 +2438,10 @@
     .modal-form__input::placeholder {
       font-family: SFUIRegular;
       color: #999999; }
+    @media (max-width: 768px) {
+      .modal-form__input {
+        width: 100%;
+        margin-bottom: 0px; } }
   .modal-form__text-field {
     height: 120px;
     margin-bottom: 20px;
@@ -2476,6 +2480,11 @@
     font-size: 14px;
     line-height: 20px;
     cursor: pointer; }
+    @media (max-width: 768px) {
+      .modal-form__label-checkbox {
+        margin-bottom: 0;
+        font-size: 12px;
+        line-height: 15px; } }
   .modal-form__checkbox {
     position: absolute;
     left: 0;
@@ -2626,12 +2635,22 @@
 
 .modal-form--registration {
   max-width: 560px; }
+  @media (max-width: 768px) {
+    .modal-form--registration {
+      max-width: none; } }
   .modal-form--registration .modal-form__item {
     -ms-flex-preferred-size: 48%;
         flex-basis: 48%; }
+    @media (max-width: 768px) {
+      .modal-form--registration .modal-form__item {
+        -ms-flex-preferred-size: 100%;
+            flex-basis: 100%; } }
 
 .modal-form--enter {
   width: 350px; }
+  @media (max-width: 768px) {
+    .modal-form--enter {
+      width: 100%; } }
   .modal-form--enter .modal-form__input {
     width: 100%; }
   .modal-form--enter .modal-form__button {
@@ -2675,10 +2694,16 @@
   margin-bottom: 25px;
   padding: 12px;
   border: 1px solid #5d5d5d; }
+  @media (max-width: 768px) {
+    .social-enter {
+      margin-bottom: 15px; } }
   .social-enter__text {
     display: block;
     font-size: 14px;
     color: #d9d9d9; }
+    @media (max-width: 768px) {
+      .social-enter__text {
+        font-size: 12px; } }
   .social-enter__socials {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -2949,6 +2974,10 @@
   line-height: 20px;
   width: 100%;
   cursor: pointer; }
+  @media (max-width: 768px) {
+    .registration-form-mini__label-checkbox {
+      margin-bottom: 0;
+      line-height: 16px; } }
 
 .registration-form-mini__checkbox {
   position: absolute;

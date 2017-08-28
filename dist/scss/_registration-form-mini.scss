@@ -56,9 +56,10 @@
 		width: 100%;
 		cursor: pointer;
 
-		// @media @mobile {
-		// 	margin-bottom: 20px;
-		// }
+		@media (max-width: 768px) {
+			margin-bottom: 0;
+			line-height: 16px;
+		}
 	}
 
 	&__checkbox {
