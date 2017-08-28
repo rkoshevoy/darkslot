@@ -88,32 +88,16 @@
 				</div>
 			</div>
 
-			<div class="row">
-				<div class="col-md-3">
-					<div class="tab__variant"></div>
-				</div>
-				<div class="col-md-3">
-					<div class="tab__variant"></div>
-				</div>
-				<div class="col-md-3">
-					<div class="tab__variant"></div>
-				</div>
-				<div class="col-md-3">
-					<div class="tab__variant"></div>
-				</div>
-				<div class="col-md-3">
-					<div class="tab__variant"></div>
-				</div>
-				<div class="col-md-3">
-					<div class="tab__variant"></div>
-				</div>
-				<div class="col-md-3">
-					<div class="tab__variant"></div>
-				</div>
-				<div class="col-md-3">
-					<div class="tab__variant"></div>
-				</div>
-			</div>
+
+			<!-- Carousel insertion -->
+			<script>
+				$(document).ready(function(){
+				 	$('#ds-games-list').load('./_games-list.html');
+				});
+			</script>
+			<div id="ds-games-list"></div>
+			<!-- End Carousel insertion -->
+
 			<div class="row">
 				<div class="col-sm-12 text-center">
 					<div class="btn btn-secondary btn-big">Показать больше</div>
@@ -148,7 +132,7 @@
 			<div class="container">
 				<h2 class="last-winners__header">Последние победители</h2>
 				<div class="row">
-					<div class="col-md-3 col-sm-3">
+					<div class="col-xs-3">
 						<div class="winners__winner">
 							<div class="winners__avatar"></div>
 							<div class="winners__text">
@@ -158,7 +142,7 @@
 							</div>
 						</div>
 					</div>
-					<div class="col-md-3 col-sm-3">
+					<div class="col-xs-3">
 						<div class="winners__winner">
 							<div class="winners__avatar"></div>
 							<div class="winners__text">
@@ -168,7 +152,7 @@
 							</div>
 						</div>
 					</div>
-					<div class="col-md-3 col-sm-3">
+					<div class="col-xs-3">
 						<div class="winners__winner">
 							<div class="winners__avatar"></div>
 							<div class="winners__text">
@@ -178,7 +162,7 @@
 							</div>
 						</div>
 					</div>
-					<div class="col-md-3 col-sm-3">
+					<div class="col-xs-3">
 						<div class="winners__winner">
 							<div class="winners__avatar"></div>
 							<div class="winners__text">
@@ -226,34 +210,16 @@
 						<button class="btn btn-secondary">Случайная игра</button>
 					</div>
 				</div>
-				<div class="row">
-					<!-- <div class="games-preview-->
-					<div class="col-md-3">
-						<div class="games-preview__item"></div>
-					</div>
-					<div class="col-md-3">
-						<div class="games-preview__item"></div>
-					</div>
-					<div class="col-md-3">
-						<div class="games-preview__item"></div>
-					</div>
-					<div class="col-md-3">
-						<div class="games-preview__item"></div>
-					</div>
-					<div class="col-md-3">
-						<div class="games-preview__item"></div>
-					</div>
-					<div class="col-md-3">
-						<div class="games-preview__item"></div>
-					</div>
-					<div class="col-md-3">
-						<div class="games-preview__item"></div>
-					</div>
-					<div class="col-md-3">
-						<div class="games-preview__item"></div>
-					</div>
-					<!-- </div> -->
-				</div>
+
+				<!-- Carousel insertion -->
+				<script>
+					$(document).ready(function(){
+						$('#ds-new-games-list').load('./_games-list.html');
+					});
+				</script>
+				<div id="ds-new-games-list"></div>
+				<!-- End Carousel insertion -->
+
 				<div class="row">
 					<div class="col-sm-12 text-center">
 						<button class="btn btn-secondary btn-big">Показать больше</button>
