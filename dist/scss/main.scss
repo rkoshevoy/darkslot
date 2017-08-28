@@ -292,17 +292,25 @@ form {
 
 
 @media (max-width: 600px) {
-	.games,
-	.last-winners {
+	.games-list,
+	.last-winners,
+	.rb-levels-info {
 		[class^="col-"] {
 			width: 50%;
+		}
+	}
+
+	.pre-footer {
+		[class^="col-"] {
+			width: 100%;
 		}
 	}
 }
 
 @media (max-width: 400px) {
-	.games,
-	.last-winners {
+	.games-list,
+	.last-winners,
+	.rb-levels-info {
 		[class^="col-"] {
 			width: 100%;
 		}

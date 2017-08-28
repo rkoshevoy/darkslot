@@ -88,8 +88,6 @@
     .header .dropdown-menu > li > a {
       padding-left: 30px; } }
   @media (max-width: 768px) {
-    .header .navbar-fixed-top .navbar-collapse {
-      height: 100vh; }
     .header .navbar-toggle {
       margin-top: 24px;
       margin-bottom: 20px; }
@@ -4183,8 +4181,6 @@
   text-align: center; }
 
 .tournament__text-wrapper {
-  width: 980px;
-  margin: 0 auto;
   margin-bottom: 40px;
   text-align: center; }
 
@@ -4277,6 +4273,9 @@
 .places-tournament {
   padding: 30px;
   background-color: #191919; }
+  @media (max-width: 768px) {
+    .places-tournament {
+      padding: 0; } }
   .places-tournament__header {
     position: relative;
     z-index: 1;
@@ -4336,9 +4335,9 @@
     border-bottom: 1px solid #474747;
     text-align: center; }
     .places-table__cell:first-child {
-      padding-left: 30px;
+      padding-left: 20px;
       background-image: url("../../img/places/star-sixth.png");
-      background-position: 20px center;
+      background-position: 5px center;
       background-size: 20px; }
     .places-table__cell:last-child {
       border-right: 0; }
@@ -4790,11 +4789,15 @@ form * {
   margin-bottom: 60px; }
 
 @media (max-width: 600px) {
-  .games [class^="col-"],
-  .last-winners [class^="col-"] {
-    width: 50%; } }
+  .games-list [class^="col-"],
+  .last-winners [class^="col-"],
+  .rb-levels-info [class^="col-"] {
+    width: 50%; }
+  .pre-footer [class^="col-"] {
+    width: 100%; } }
 
 @media (max-width: 400px) {
-  .games [class^="col-"],
-  .last-winners [class^="col-"] {
+  .games-list [class^="col-"],
+  .last-winners [class^="col-"],
+  .rb-levels-info [class^="col-"] {
     width: 100%; } }
