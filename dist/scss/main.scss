@@ -129,8 +129,8 @@ form {
 }
 
 .navbar-inverse {
-  background-color: $bg-color;
-  border: 0;
+	background-color: $bg-color;
+	border: 0;
 }
 
 .navbar-nav > li {
@@ -237,8 +237,8 @@ form {
 .form-control {
 	border-radius: 0;
 	padding: 1em;
-  line-height: 1;
-  height: auto;
+	line-height: 1;
+	height: auto;
 }
 
 @media (min-width: 768px){
@@ -259,6 +259,32 @@ form {
 
 .navbar-inverse .navbar-games > li > a {
 	padding-left: 50px;
+
+	@media (max-width: 840px) {		
+		padding: 20px;
+		background-image: none;
+
+		&:hover {
+			background-image: none;
+		}
+	}
+
+	@media (max-width: 768px) {
+		width: auto;
+		padding: 10px;
+		text-align: center;
+	}
+}
+
+.navbar-games {
+	@media (max-width: 768px) {
+		text-align: center;
+		width: 100%;
+
+		li {
+			display: inline-block;
+		}
+	}
 }
 
 .carousel-inner > .item > a > img,
@@ -274,11 +300,34 @@ form {
 	}
 }
 
-.vertical-center {
-  display: flex;
-  align-items: center;
-}
-
 .bonus-row {
 	margin-bottom: 60px;
+}
+
+.navbar-provider {
+
+	.dropdown-toggle {
+
+		@media (max-width: 840px) {
+			padding: 20px;
+		}
+
+		@media (max-width: 768px) {
+			display: none;
+		}
+	}
+}
+
+.dropdown-menu-providers {
+
+	@media (max-width: 768px) {
+		display: flex;
+		position: static;
+		width: 100%;
+
+		li {
+			width: 100%;
+			text-align: center;
+		}
+	}
 }
