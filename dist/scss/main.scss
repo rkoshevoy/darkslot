@@ -290,6 +290,23 @@ form {
 	margin-bottom: 60px;
 }
 
+@media (max-width: 992px) {
+	.deposit {
+		padding: 100px 0 0 0;
+		background-position-x: 50%;
+    text-align: center;
+	}
+
+	.cashback__not-all + button {
+		padding: 20px;
+	}
+
+	.registration.tiger-reg .registration-bonus .registration-bonus-pers {
+    bottom: 0;
+		top: 50%;
+	}
+}
+
 
 @media (max-width: 600px) {
 	.games-list,
@@ -303,6 +320,13 @@ form {
 	.pre-footer {
 		[class^="col-"] {
 			width: 100%;
+		}
+	}
+
+	#vip-bonus .row.vip-bonus + .row{
+		[class^="col-"] {
+			width: 100%;
+			margin-bottom: 15px;
 		}
 	}
 }

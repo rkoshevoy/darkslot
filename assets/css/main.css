@@ -3230,9 +3230,11 @@
     z-index: 1;
     display: block;
     width: 140px;
+    margin: 0 auto 30px;
     font-size: 30px;
     line-height: 32px;
-    text-transform: uppercase; }
+    text-transform: uppercase;
+    text-align: center; }
     .cashback__not-all::after {
       content: '!';
       position: absolute;
@@ -4761,24 +4763,6 @@ form * {
 
 .navbar-inverse .navbar-games > li > a {
   padding-left: 50px; }
-  @media (max-width: 840px) {
-    .navbar-inverse .navbar-games > li > a {
-      padding: 20px;
-      background-image: none; }
-      .navbar-inverse .navbar-games > li > a:hover {
-        background-image: none; } }
-  @media (max-width: 768px) {
-    .navbar-inverse .navbar-games > li > a {
-      width: auto;
-      padding: 10px;
-      text-align: center; } }
-
-@media (max-width: 768px) {
-  .navbar-games {
-    text-align: center;
-    width: 100%; }
-    .navbar-games li {
-      display: inline-block; } }
 
 .carousel-inner > .item > a > img,
 .carousel-inner > .item > img {
@@ -4789,27 +4773,27 @@ form * {
   .container > .button-row h2 {
     margin-top: 10px; }
 
+.vertical-center {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+
 .bonus-row {
   margin-bottom: 60px; }
 
-@media (max-width: 840px) {
-  .navbar-provider .dropdown-toggle {
-    padding: 20px; } }
-
-@media (max-width: 768px) {
-  .navbar-provider .dropdown-toggle {
-    display: none; } }
-
-@media (max-width: 768px) {
-  .dropdown-menu-providers {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    position: static;
-    width: 100%; }
-    .dropdown-menu-providers li {
-      width: 100%;
-      text-align: center; } }
+@media (max-width: 992px) {
+  .deposit {
+    padding: 100px 0 0 0;
+    background-position-x: 50%;
+    text-align: center; }
+  .cashback__not-all + button {
+    padding: 20px; }
+  .registration.tiger-reg .registration-bonus .registration-bonus-pers {
+    bottom: 0;
+    top: 50%; } }
 
 @media (max-width: 600px) {
   .games-list [class^="col-"],
@@ -4817,7 +4801,10 @@ form * {
   .rb-levels-info [class^="col-"] {
     width: 50%; }
   .pre-footer [class^="col-"] {
-    width: 100%; } }
+    width: 100%; }
+  #vip-bonus .row.vip-bonus + .row [class^="col-"] {
+    width: 100%;
+    margin-bottom: 15px; } }
 
 @media (max-width: 400px) {
   .games-list [class^="col-"],
