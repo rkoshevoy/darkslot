@@ -308,9 +308,10 @@
 		&::after {
 			content: '';
 			position: absolute;
-			left: 0;
-			bottom: -3px;
-			width: 100%;
+			left: 50%;
+			transform: translatex(-50%);
+			bottom: -6px;
+			width: 50%;
 			height: 4px;
 			background-color: $main-color;
 		}

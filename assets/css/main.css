@@ -3918,9 +3918,11 @@
     .cashback-description__header::after {
       content: '';
       position: absolute;
-      left: 0;
-      bottom: -3px;
-      width: 100%;
+      left: 50%;
+      -webkit-transform: translatex(-50%);
+              transform: translatex(-50%);
+      bottom: -6px;
+      width: 50%;
       height: 4px;
       background-color: #ed383f; }
     @media (max-width: 768px) {
@@ -4155,6 +4157,10 @@
   font-size: 48px;
   font-family: SFUIHeavy;
   text-transform: uppercase; }
+  @media (max-width: 768px) {
+    .tournament__header {
+      margin: 40px 0;
+      font-size: 32px; } }
   .tournament__header span {
     position: relative;
     z-index: -1; }
@@ -4167,6 +4173,13 @@
       background-color: #ed383f;
       width: calc(100% + 40px);
       height: 75px; }
+    @media (max-width: 1200px) {
+      .tournament__header span::before {
+        top: 5px;
+        height: 50px; } }
+    @media (max-width: 768px) {
+      .tournament__header span::before {
+        top: -5px; } }
 
 .tournament__text-header {
   font-size: 18px;
@@ -4177,6 +4190,9 @@
 .tournament__text-wrapper {
   margin-bottom: 40px;
   text-align: center; }
+  @media (max-width: 768px) {
+    .tournament__text-wrapper {
+      margin-bottom: 20px; } }
 
 .tournament__text {
   margin-bottom: 10px;
@@ -4203,6 +4219,9 @@
     font-family: SFUIBold;
     text-align: center;
     text-transform: uppercase; }
+    @media (max-width: 768px) {
+      .tables__header {
+        margin-bottom: 40px; } }
   .tables__condition {
     margin: 0; }
   .tables__condition-wrapper {
@@ -4761,6 +4780,11 @@ form * {
 
 .navbar-inverse .navbar-games > li > a {
   padding-left: 50px; }
+  @media (max-width: 400px) {
+    .navbar-inverse .navbar-games > li > a .games-list [class^="col-"],
+    .navbar-inverse .navbar-games > li > a .last-winners [class^="col-"],
+    .navbar-inverse .navbar-games > li > a .rb-levels-info [class^="col-"] {
+      width: 100%; } }
   @media (max-width: 840px) {
     .navbar-inverse .navbar-games > li > a {
       padding: 20px;
@@ -4779,18 +4803,6 @@ form * {
     width: 100%; }
     .navbar-games li {
       display: inline-block; } }
-
-.carousel-inner > .item > a > img,
-.carousel-inner > .item > img {
-  width: 100%; }
-
-.container > .button-row {
-  margin-bottom: 20px; }
-  .container > .button-row h2 {
-    margin-top: 10px; }
-
-.bonus-row {
-  margin-bottom: 60px; }
 
 @media (max-width: 840px) {
   .navbar-provider .dropdown-toggle {
@@ -4811,16 +4823,30 @@ form * {
       width: 100%;
       text-align: center; } }
 
+.carousel-inner > .item > a > img,
+.carousel-inner > .item > img {
+  width: 100%; }
+
+.container > .button-row {
+  margin-bottom: 20px; }
+  .container > .button-row h2 {
+    margin-top: 10px; }
+
+.vertical-center {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+
+.bonus-row {
+  margin-bottom: 60px; }
+
 @media (max-width: 600px) {
   .games-list [class^="col-"],
   .last-winners [class^="col-"],
   .rb-levels-info [class^="col-"] {
     width: 50%; }
   .pre-footer [class^="col-"] {
-    width: 100%; } }
-
-@media (max-width: 400px) {
-  .games-list [class^="col-"],
-  .last-winners [class^="col-"],
-  .rb-levels-info [class^="col-"] {
     width: 100%; } }
