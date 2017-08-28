@@ -2,6 +2,11 @@
 	padding: 80px 0; 
 	background-color: #2b2b2b;
 
+	@media (max-width: 768px) {
+		padding-top: 20px;
+		padding-bottom: 60px;
+	}
+
 	&__wrapper {
 		// width: 1180px;
 		// margin: 0 auto;
@@ -25,6 +30,10 @@
 		font-family: SFUIHeavy;
 		font-size: 24px;
 		text-transform: uppercase;
+
+		@media (max-width: 768px) {
+			text-align: center;
+		}
 	}
 
 	&__button {
@@ -74,9 +83,9 @@
 		// 	width: 50%;
 		// }
 
-		// @media @mobile {
-		// 	width: auto;
-		// }
+		@media (max-width: 768px) {
+			margin-bottom: 20px;
+		}
 	}
 
 	&__avatar {

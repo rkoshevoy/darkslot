@@ -9,11 +9,26 @@
 		align-items: center;
 	}
 
+	@media (max-width: 768px) {
+		&__content {
+			text-align: center;
+		}
+	}
+
 	&__header {
 		// width: 50%;
 		margin-bottom: 30px;
 		font-size: 40px;
 		line-height: 60px;
+
+		@media (max-width: 1200px) {
+			font-size: 30px;
+		}
+
+		@media (max-width: 768px) {
+			font-size: 20px;
+			line-height: 30px;
+		}
 	}
 
 	&__button {
@@ -41,6 +56,14 @@
 
 	&__image {
 		max-height: 100%;
-    width: auto;
+		width: auto;
+
+		@media (max-width: 1200px) {
+			width: 300px;
+		}
+
+		@media (max-width: 768px) {
+			display: none;
+		}
 	}
 }

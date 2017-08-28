@@ -130,6 +130,10 @@
 .ds-modal-img-wrap {
 	max-width: 400px;
 	max-height: 400px;
+
+	@media (max-width: 768px) {
+		display: none;
+	}
 }
 .ds-modal-img {
 	max-width: 100%;

@@ -873,22 +873,40 @@
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center; }
+    @media (max-width: 768px) {
+      .jackpot-wrap {
+        width: 100%;
+        height: auto;
+        text-align: center; } }
   .jackpot-content {
     z-index: 1; }
+    @media (max-width: 768px) {
+      .jackpot-content {
+        width: 100%; } }
   .jackpot__wrapper {
     position: relative;
     padding-top: 140px;
     padding-bottom: 95px; }
+    @media (max-width: 768px) {
+      .jackpot__wrapper {
+        text-align: center; } }
   .jackpot__header {
     margin-bottom: 20px;
     font-size: 80px;
     line-height: 80px;
     white-space: pre; }
+    @media (max-width: 768px) {
+      .jackpot__header {
+        font-size: 36px;
+        line-height: 40px; } }
   .jackpot__underheader {
     margin-bottom: 40px;
     font-size: 37px;
     color: #aeaeae;
     text-transform: uppercase; }
+    @media (max-width: 768px) {
+      .jackpot__underheader {
+        font-size: 20px; } }
   .jackpot__button {
     padding: 30px 65px;
     background-color: #ed383f;
@@ -902,8 +920,15 @@
     left: 0;
     font-size: 12em;
     color: #000; }
+    @media (max-width: 768px) {
+      .jackpot__background-text {
+        top: 40px;
+        font-size: 5em; } }
   .jackpot__image-wrapper {
     height: 100%; }
+    @media (max-width: 768px) {
+      .jackpot__image-wrapper {
+        display: none; } }
   .jackpot__image {
     height: 100%;
     position: relative; }
@@ -911,11 +936,18 @@
 .last-winners {
   padding: 80px 0;
   background-color: #2b2b2b; }
+  @media (max-width: 768px) {
+    .last-winners {
+      padding-top: 20px;
+      padding-bottom: 60px; } }
   .last-winners__header {
     margin-bottom: 40px;
     font-family: SFUIHeavy;
     font-size: 24px;
     text-transform: uppercase; }
+    @media (max-width: 768px) {
+      .last-winners__header {
+        text-align: center; } }
   .last-winners__button {
     width: 280px;
     padding: 25px;
@@ -952,6 +984,9 @@
         -ms-flex-direction: column;
             flex-direction: column;
     text-align: center; }
+    @media (max-width: 768px) {
+      .winners__winner {
+        margin-bottom: 20px; } }
   .winners__avatar {
     width: 100%;
     height: 150px;
@@ -1046,10 +1081,20 @@
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center; }
+  @media (max-width: 768px) {
+    .deposites__content {
+      text-align: center; } }
   .deposites__header {
     margin-bottom: 30px;
     font-size: 40px;
     line-height: 60px; }
+    @media (max-width: 1200px) {
+      .deposites__header {
+        font-size: 30px; } }
+    @media (max-width: 768px) {
+      .deposites__header {
+        font-size: 20px;
+        line-height: 30px; } }
   .deposites__button {
     display: block;
     width: 280px;
@@ -1063,6 +1108,12 @@
   .deposites__image {
     max-height: 100%;
     width: auto; }
+    @media (max-width: 1200px) {
+      .deposites__image {
+        width: 300px; } }
+    @media (max-width: 768px) {
+      .deposites__image {
+        display: none; } }
 
 .games {
   position: relative;
@@ -2202,6 +2253,9 @@
 .ds-modal-img-wrap {
   max-width: 400px;
   max-height: 400px; }
+  @media (max-width: 768px) {
+    .ds-modal-img-wrap {
+      display: none; } }
 
 .ds-modal-img {
   max-width: 100%;
