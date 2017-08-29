@@ -38,7 +38,11 @@
 body {
 	color: #fff;
 	font-family: SFUIRegular;
-	overflow: hidden;
+	overflow-x: hidden;
+
+	// $media (min-width: 1200px) {
+	// 	overflow: auto;
+	// }
 }
 
 * {
@@ -466,7 +470,13 @@ form {
 	.last-winners,
 	.rb-levels-info {
 		[class^="col-"] {
-			width: 100%;
+			width: 50%;
+		}
+	}
+
+	.last-winners {
+		.winners__avatar {
+			height: 100px;
 		}
 	}
 
@@ -474,8 +484,10 @@ form {
 		.container {
 			padding: 0;
 		}
+	}
 
-
+	.game-item {
+		height: 100px;
 	}
 }
 

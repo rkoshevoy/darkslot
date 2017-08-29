@@ -15,6 +15,18 @@ window.onload = function(){setTimeout(function(){fadeOutnojquery(preloader);
 
 $(function() {
 
+  $(".carousel").swipe({
+
+    swipe: function(event, direction, distance, duration, fingerCount, fingerData) {
+
+      if (direction == 'left') $(this).carousel('next');
+      if (direction == 'right') $(this).carousel('prev');
+
+    },
+    allowPageScroll:"vertical"
+
+  });
+
   var niceScrollSettings = {
     cursorcolor: "#de3137",
     cursorborder: "1px solid #de3137",
@@ -28,7 +40,9 @@ $(function() {
     emulatetouch: false // enable cursor-drag scrolling like touch devices in desktop computer
   };
 
-  $('html').niceScroll(niceScrollSettings);
+  if ($(window).width() > 1200) {
+    $('html').niceScroll(niceScrollSettings);
+  }
 
   $('#modalPolicy, #modalRules').on('shown.bs.modal', function () {
 

@@ -14,7 +14,7 @@
 
 		// @media @tablet {
 		// 	width: 748px;
-		// } 
+		// }
 
 		// @media @mobile {
 		// 	.mobile-wrap;
@@ -57,7 +57,7 @@
 	}
 
 	&__text-wrapper {
-		// width: 800px;		
+		// width: 800px;
 		margin-bottom: 80px;
 
 		@media (max-width: 1200px) {
@@ -113,7 +113,7 @@
 		z-index: 1;
 		padding: 35px 30px;
 
-		> * {		
+		> * {
 			display: block;
 		}
 	}
@@ -125,8 +125,12 @@
 	}
 
 	&__money-amount {
-		font-size: 40px;
+		font-size: 3em;
 		font-family: SFUIHeavy;
+
+		@media (max-width: 768px) {
+			font-size: 1.5em;
+		}
 	}
 
 	&__description {
