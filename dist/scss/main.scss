@@ -179,6 +179,10 @@ form {
 	font-family: SFUIBold;
 	font-size: 1.2em;
 	outline: none;
+
+	@media (max-width: 768px) {
+		padding: 10px;
+	}
 }
 .btn-danger {
 	background-color: $main-color;
@@ -216,15 +220,17 @@ form {
 
 .btn-big {
 	padding: 20px;
+
+	@media (max-width: 768px) {
+		padding: 10px;
+	}
 }
 
 .btn-wide {
 	padding: 20px 80px;
-}
 
-@media (max-width: 480px) {
-	.btn {
-		padding: 5px 10px;
+	@media (max-width: 768px) {
+		padding: 10px;
 	}
 }
 
@@ -294,16 +300,26 @@ form {
 
 .navbar-games {
 	@media (max-width: 768px) {
-		text-align: center;
-		width: 100%;
+		display: flex;
+		justify-content: space-around;
+		margin-left: 0;
 
-		li {
-			display: inline-block;
+		.navbar-games-item {
+			width: auto;
+			font-size: 12px;
+
+			.navbar-games-link {
+				padding: 5px;
+			}
 		}
 	}
 }
 
 .navbar-provider {
+
+	@media (max-width: 768px) {
+		margin-left: 0;
+	}
 
 	.dropdown-toggle {
 
