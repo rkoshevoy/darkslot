@@ -375,6 +375,10 @@ form {
 	margin-bottom: 60px;
 }
 
+#header-search-collapse {
+  padding: 15px;
+}
+
 @media (max-width: 992px) {
 	.deposit {
 		padding: 100px 0 0 0;
@@ -413,6 +417,10 @@ form {
 		[class^="col-"] {
 			width: 100%;
 		}
+	}
+
+	.navbar-search .form-control {
+		padding: 10px;
 	}
 
 	.modal.in {
