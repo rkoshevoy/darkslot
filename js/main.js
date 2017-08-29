@@ -21,9 +21,11 @@ $(function() {
     cursorborderradius: 0,
     cursoropacitymax: 0.7,
     boxzoom: true,
-    touchbehavior: true,
     autohidemode: "leave",
-    grabcursorenabled: false
+    grabcursorenabled: false,
+    // horizrailenabled: false,
+    touchbehavior: false, // DEPRECATED!! use "touchemulate"
+    emulatetouch: false // enable cursor-drag scrolling like touch devices in desktop computer
   };
 
   $('html').niceScroll(niceScrollSettings);
