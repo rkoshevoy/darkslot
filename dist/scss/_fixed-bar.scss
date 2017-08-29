@@ -288,7 +288,7 @@
 			position: relative;
 			top: 50%;
 			left: 50%;
-			transform: translate(-50%, -50%);
+			transform: translate(-50%, -60%);
 		}
 	}
 
@@ -316,6 +316,7 @@
 
 		@media (max-width: 768px) {
 			order: 1;
+			width: 100px;
 
 			&:hover {
 				background-color: transparent;
@@ -361,7 +362,11 @@
 	.fixed-bar__language {
 		display: flex;
 		width: 100%;
-	}
+
+		@media (max-width: 768px) {
+			width: 130px;
+		}
+	} 
 
 	.fixed-bar__shower {
 		display: none;

@@ -837,7 +837,8 @@
 .navbar-games-item {
   background-position: 10px center; }
   .navbar-games-item a {
-    background-position: 10px center; }
+    background-position: 10px center;
+    font-size: 10px; }
   .navbar-games-item:first-child a {
     background-image: url("../../img/games-icons/diamond.png"); }
     .navbar-games-item:first-child a:hover, .navbar-games-item:first-child a.active {
@@ -1249,6 +1250,9 @@
     font-size: 13px;
     line-height: 28px;
     color: #b0b0b0; }
+  @media (max-width: 768px) {
+    .footer__development {
+      text-align: center; } }
   .footer__developer {
     margin-top: 10px;
     margin-right: 10px;
@@ -1396,8 +1400,8 @@
       position: relative;
       top: 50%;
       left: 50%;
-      -webkit-transform: translate(-50%, -50%);
-              transform: translate(-50%, -50%); }
+      -webkit-transform: translate(-50%, -60%);
+              transform: translate(-50%, -60%); }
   .fixed-bar__language {
     -webkit-box-align: center;
         -ms-flex-align: center;
@@ -1422,7 +1426,8 @@
       .fixed-bar__language {
         -webkit-box-ordinal-group: 2;
             -ms-flex-order: 1;
-                order: 1; }
+                order: 1;
+        width: 100px; }
         .fixed-bar__language:hover {
           background-color: transparent; } }
     .fixed-bar__language img {
@@ -1452,6 +1457,9 @@
     display: -ms-flexbox;
     display: flex;
     width: 100%; }
+    @media (max-width: 768px) {
+      .fixed-bar .fixed-bar__language {
+        width: 130px; } }
   .fixed-bar .fixed-bar__shower {
     display: none; }
   .fixed-bar .jq-selectbox {
@@ -2254,7 +2262,11 @@
 
 .ds-fl-content-wide {
   max-width: none;
+  margin: 0 auto;
   width: 60vw; }
+  @media (max-width: 768px) {
+    .ds-fl-content-wide {
+      width: 100%; } }
 
 .ds-modal-img-wrap {
   max-width: 400px;
@@ -2840,7 +2852,7 @@
       border-bottom: 1px dashed #cccccc; }
 
 .modal-centered {
-  margin: 0 auto !important; }
+  margin: 0 auto; }
 
 .notFound {
   height: 100vh;
@@ -3369,7 +3381,7 @@
 .day-slot {
   padding: 80px 0;
   background-image: url("../../img/money-bg-2.png");
-  background-size: cover; }
+  background-size: contain; }
   @media (max-width: 768px) {
     .day-slot {
       padding: 40px 0; } }
@@ -3378,8 +3390,18 @@
     padding-bottom: 110px; }
   .day-slot-image {
     width: 100%; }
+    @media (max-width: 768px) {
+      .day-slot-image {
+        position: relative;
+        height: 55vw;
+        overflow: hidden; } }
     .day-slot-image__inner {
       width: 100%; }
+      @media (max-width: 768px) {
+        .day-slot-image__inner {
+          position: absolute;
+          left: -35%;
+          width: 170%; } }
 
 .half-cashback {
   display: -webkit-box;
@@ -3538,8 +3560,18 @@
 
 .free-spins-image {
   width: 100%; }
+  @media (max-width: 768px) {
+    .free-spins-image {
+      position: relative;
+      height: 55vw;
+      overflow: hidden; } }
   .free-spins-image__inner {
     width: 100%; }
+    @media (max-width: 768px) {
+      .free-spins-image__inner {
+        position: absolute;
+        left: -35%;
+        width: 170%; } }
 
 .free-spins {
   background-image: url("../../img/hands-card-bg.jpg");
@@ -4916,8 +4948,9 @@ form * {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     margin-left: 0; }
     .navbar-games .navbar-games-item {
       width: auto;

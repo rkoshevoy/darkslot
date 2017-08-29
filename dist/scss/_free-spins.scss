@@ -1,20 +1,20 @@
 .free-spins-image {
 	width: 100%;
 
-	// @media @mobile {
-	// 	position: relative;
-	// 	height: 55vw;
-	// 	overflow: hidden;
-	// }
+	@media (max-width: 768px) {
+		position: relative;
+		height: 55vw;
+		overflow: hidden;
+	}
 
 	&__inner {
 		width: 100%;
 
-		// @media @mobile {
-		// 	position: absolute;
-		// 	left: -35%;
-		// 	width: 170%;
-		// }
+		@media (max-width: 768px) {
+			position: absolute;
+			left: -35%;
+			width: 170%;
+		}
 	}
 }
 

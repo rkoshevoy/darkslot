@@ -134,7 +134,12 @@
 }
 .ds-fl-content-wide {
 	max-width: none;
+	margin: 0 auto;
 	width: 60vw;
+
+	@media (max-width: 768px) {
+		width: 100%;
+	}
 }
 .ds-modal-img-wrap {
 	max-width: 400px;
@@ -1037,5 +1042,5 @@
 }
 
 .modal-centered {
-	margin: 0 auto !important;
+	margin: 0 auto;
 }

@@ -319,7 +319,7 @@ form {
 .navbar-games {
 	@media (max-width: 768px) {
 		display: flex;
-		justify-content: space-around;
+		justify-content: center;
 		margin-left: 0;
 
 		.navbar-games-item {
