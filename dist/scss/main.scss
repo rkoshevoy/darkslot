@@ -389,6 +389,10 @@ form {
 	margin-bottom: 60px;
 }
 
+#header-search-collapse {
+  padding: 15px;
+}
+
 @media (max-width: 992px) {
 	.deposit {
 		padding: 100px 0 0 0;
@@ -426,6 +430,33 @@ form {
 	.pre-footer {
 		[class^="col-"] {
 			width: 100%;
+		}
+	}
+
+	.navbar-search .form-control {
+		padding: 10px;
+	}
+
+	.modal.in {
+		.modal-dialog {
+	    transform: translate(0, 0);
+		}
+
+		.form-control {
+			padding: 10px;
+		}
+		.modal-form__input {
+	    height: auto;
+	    padding: 10px;
+		}
+
+		.modal-form__text-field {
+			padding: 10px;
+		}
+
+		.social-enter {
+			background-color: rgba(0,0,0,.5);
+			border: 0;
 		}
 	}
 }
