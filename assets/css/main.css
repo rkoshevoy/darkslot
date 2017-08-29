@@ -2839,6 +2839,9 @@
       color: #cccccc;
       border-bottom: 1px dashed #cccccc; }
 
+.modal-centered {
+  margin: 0 auto !important; }
+
 .notFound {
   height: 100vh;
   background-color: #232323; }
@@ -5016,6 +5019,9 @@ form * {
   .header .navbar-toggle-collapsed-search .header-search-button {
     width: 15px;
     height: 15px; }
+
+.header .collapse-search {
+  display: none; }
 
 .header .navbar-search {
   display: none; }
