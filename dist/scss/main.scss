@@ -343,6 +343,11 @@ form {
 		li {
 			width: 100%;
 			text-align: center;
+
+			a {
+				font-size: 12px;
+				padding: 10px;
+			}
 		}
 	}
 }
@@ -373,7 +378,7 @@ form {
 	.deposit {
 		padding: 100px 0 0 0;
 		background-position-x: 50%;
-    text-align: center;
+		text-align: center;
 	}
 
 	.cashback__not-all + button {
@@ -381,7 +386,7 @@ form {
 	}
 
 	.registration.tiger-reg .registration-bonus .registration-bonus-pers {
-    bottom: 0;
+		bottom: 0;
 		top: 50%;
 	}
 
@@ -416,6 +421,35 @@ form {
 	.rb-levels-info {
 		[class^="col-"] {
 			width: 100%;
+		}
+	}
+}
+
+.header {
+	.navbar-toggle-collapsed-search {
+		display: none;
+
+		@media (max-width: 768px) {
+			display: inline-block;
+			padding: 7px 15px;
+		}
+
+		.header-search-button {
+			width: 15px;
+			height: 15px;
+		}
+	}
+	.navbar-search {
+		display: none;
+
+		@media (max-width: 768px) {
+			display: block;
+			width: 100%;
+
+			.search-query {
+				width: 100%;
+				color: #000;
+			}
 		}
 	}
 }
