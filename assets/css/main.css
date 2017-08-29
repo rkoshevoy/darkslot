@@ -2437,7 +2437,7 @@
     @media (max-width: 768px) {
       .modal-form__input {
         width: 100%;
-        margin-bottom: 0px; } }
+        margin-bottom: 15px; } }
   .modal-form__text-field {
     height: 120px;
     margin-bottom: 20px;
@@ -2654,6 +2654,9 @@
 
 .modal-form--contact {
   width: 460px; }
+  @media (max-width: 768px) {
+    .modal-form--contact {
+      width: 100%; } }
   .modal-form--contact .modal-form__input,
   .modal-form--contact .modal-form__text-field {
     width: 100%; }
@@ -4724,6 +4727,9 @@ form * {
   font-family: SFUIBold;
   font-size: 1.2em;
   outline: none; }
+  @media (max-width: 768px) {
+    .btn {
+      padding: 10px; } }
 
 .btn-danger {
   background-color: #ed383f;
@@ -4749,13 +4755,15 @@ form * {
 
 .btn-big {
   padding: 20px; }
+  @media (max-width: 768px) {
+    .btn-big {
+      padding: 10px; } }
 
 .btn-wide {
   padding: 20px 80px; }
-
-@media (max-width: 480px) {
-  .btn {
-    padding: 5px 10px; } }
+  @media (max-width: 768px) {
+    .btn-wide {
+      padding: 10px; } }
 
 .ds-link {
   color: #fff;
@@ -4805,10 +4813,21 @@ form * {
 
 @media (max-width: 768px) {
   .navbar-games {
-    text-align: center;
-    width: 100%; }
-    .navbar-games li {
-      display: inline-block; } }
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    margin-left: 0; }
+    .navbar-games .navbar-games-item {
+      width: auto;
+      font-size: 12px; }
+      .navbar-games .navbar-games-item .navbar-games-link {
+        padding: 5px; } }
+
+@media (max-width: 768px) {
+  .navbar-provider {
+    margin-left: 0; } }
 
 @media (max-width: 840px) {
   .navbar-provider .dropdown-toggle {

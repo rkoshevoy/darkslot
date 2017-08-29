@@ -466,7 +466,7 @@
 
 		@media (max-width: 768px) {
 			width: 100%;
-			margin-bottom: 0px;
+			margin-bottom: 15px;
 		}
 	}
 
@@ -751,9 +751,9 @@
 	// 	width: 350px;
 	// }
 
-	// @media @mobile {
-	// 	width: 100%;
-	// }
+	@media (max-width: 768px) {
+		width: 100%;
+	}
 
 	.modal-form__input,
 	.modal-form__text-field {
