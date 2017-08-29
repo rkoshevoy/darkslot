@@ -1102,8 +1102,8 @@
         font-size: 30px; } }
     @media (max-width: 768px) {
       .deposites__header {
-        font-size: 20px;
-        line-height: 30px; } }
+        font-size: 1.2em;
+        line-height: 1.5; } }
   .deposites__button {
     display: block;
     width: 280px;
@@ -3119,7 +3119,7 @@
 .greeting-bonus {
   padding-top: 100px;
   background-image: url("../../img/money-bg.png");
-  background-size: contain; }
+  background-size: cover; }
   .greeting-bonus__wrapper {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -3277,7 +3277,8 @@
     @media (max-width: 768px) {
       .cashback__advantages {
         font-size: 14px;
-        line-height: 20px; } }
+        line-height: 20px;
+        text-align: center; } }
   .cashback__red {
     position: relative;
     z-index: -1;
@@ -4150,8 +4151,11 @@
     font-size: 24px;
     font-family: SFUIBold; }
   .level__money-amount {
-    font-size: 40px;
+    font-size: 3em;
     font-family: SFUIHeavy; }
+    @media (max-width: 768px) {
+      .level__money-amount {
+        font-size: 1.5em; } }
   .level__description {
     position: absolute;
     right: -25px;
@@ -4356,6 +4360,9 @@
     padding: 20px 0;
     background-color: #005fdc;
     text-align: center; }
+    @media (max-width: 768px) {
+      .places-table__cell-header {
+        padding: 15px 0; } }
     .places-table__cell-header:first-child {
       width: 80px; }
     .places-table__cell-header:nth-child(2) {
@@ -4372,6 +4379,9 @@
     border-right: 1px solid #2c2c2c;
     border-bottom: 1px solid #474747;
     text-align: center; }
+    @media (max-width: 768px) {
+      .places-table__cell {
+        padding: 15px 0; } }
     .places-table__cell:first-child {
       padding-left: 20px;
       background-image: url("../../img/places/star-sixth.png");
@@ -4695,7 +4705,7 @@
 body {
   color: #fff;
   font-family: SFUIRegular;
-  overflow: hidden; }
+  overflow-x: hidden; }
 
 * {
   margin: 0;
@@ -5006,9 +5016,13 @@ form * {
   .games-list [class^="col-"],
   .last-winners [class^="col-"],
   .rb-levels-info [class^="col-"] {
-    width: 100%; }
+    width: 50%; }
+  .last-winners .winners__avatar {
+    height: 100px; }
   #games-nav .container {
-    padding: 0; } }
+    padding: 0; }
+  .game-item {
+    height: 100px; } }
 
 .header .navbar-toggle-collapsed-search {
   display: none; }
