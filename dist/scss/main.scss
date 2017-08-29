@@ -310,6 +310,7 @@ form {
 
 			.navbar-games-link {
 				padding: 5px;
+				white-space: nowrap;
 			}
 		}
 	}
@@ -417,5 +418,13 @@ form {
 		[class^="col-"] {
 			width: 100%;
 		}
+	}
+
+	#games-nav {
+		.container {
+			padding: 0;
+		}
+
+
 	}
 }

@@ -4825,7 +4825,8 @@ form * {
       width: auto;
       font-size: 12px; }
       .navbar-games .navbar-games-item .navbar-games-link {
-        padding: 5px; } }
+        padding: 5px;
+        white-space: nowrap; } }
 
 @media (max-width: 768px) {
   .navbar-provider {
@@ -4896,4 +4897,6 @@ form * {
   .games-list [class^="col-"],
   .last-winners [class^="col-"],
   .rb-levels-info [class^="col-"] {
-    width: 100%; } }
+    width: 100%; }
+  #games-nav .container {
+    padding: 0; } }
