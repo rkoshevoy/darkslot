@@ -952,6 +952,7 @@
     text-transform: uppercase; }
     @media (max-width: 768px) {
       .last-winners__header {
+        font-size: 18px;
         text-align: center; } }
   .last-winners__button {
     width: 280px;
@@ -4849,7 +4850,10 @@ form * {
     width: 100%; }
     .dropdown-menu-providers li {
       width: 100%;
-      text-align: center; } }
+      text-align: center; }
+      .dropdown-menu-providers li a {
+        font-size: 12px;
+        padding: 10px; } }
 
 .carousel-inner > .item > a > img,
 .carousel-inner > .item > img {
@@ -4900,3 +4904,23 @@ form * {
     width: 100%; }
   #games-nav .container {
     padding: 0; } }
+
+.header .navbar-toggle-collapsed-search {
+  display: none; }
+  @media (max-width: 768px) {
+    .header .navbar-toggle-collapsed-search {
+      display: inline-block;
+      padding: 7px 15px; } }
+  .header .navbar-toggle-collapsed-search .header-search-button {
+    width: 15px;
+    height: 15px; }
+
+.header .navbar-search {
+  display: none; }
+  @media (max-width: 768px) {
+    .header .navbar-search {
+      display: block;
+      width: 100%; }
+      .header .navbar-search .search-query {
+        width: 100%;
+        color: #000; } }
