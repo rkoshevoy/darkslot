@@ -1041,6 +1041,9 @@
     background-image: url("../../img/games-icons/cubes-hover.png"); }
   .navbar-games-item.active:last-child a {
     background-image: url("../../img/games-icons/roulette-hover.png"); }
+  @media (max-width: 840px) {
+    .navbar-games-item.active a {
+      background-image: none !important; } }
 
 .jackpot {
   margin-top: 60px;

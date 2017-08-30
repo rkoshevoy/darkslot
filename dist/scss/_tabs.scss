@@ -369,6 +369,7 @@
 	}
 
 	&.active {
+
 		&:first-child a {
 			background-image: url('../../img/games-icons/diamond-hover.png');
 		}
@@ -387,6 +388,12 @@
 
 		&:last-child a {
 			background-image: url('../../img/games-icons/roulette-hover.png');
+		}
+
+		@media (max-width: 840px) {
+			a {
+				background-image: none !important;
+			}
 		}
 	}
 }
