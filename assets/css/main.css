@@ -1441,9 +1441,19 @@
     font-size: 13px;
     line-height: 28px;
     color: #b0b0b0; }
-  @media (max-width: 768px) {
-    .footer__development {
-      text-align: center; } }
+  .footer__development {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end; }
+    @media (max-width: 768px) {
+      .footer__development {
+        text-align: center; } }
   .footer__developer {
     margin-top: 10px;
     margin-right: 10px;
