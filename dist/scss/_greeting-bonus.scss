@@ -3,6 +3,10 @@
 	background-image: url('../../img/money-bg.png');
 	background-size: cover;
 
+	@media (max-width: 768px) {
+		padding-top: 30px;
+	}
+
 	&__wrapper {
 		display: flex;
 		flex-wrap: wrap;

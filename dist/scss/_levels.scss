@@ -103,9 +103,9 @@
 	// padding-top: 80px;
 	padding-top: 10px;
 
-	// @media @mobile {
-	// 	padding: 10px;
-	// }
+	@media (max-width: 768px) {
+		padding: 0;
+	}
 
 	&__header-wrapper {
 		position: absolute;
@@ -128,15 +128,11 @@
 		color: #56c074;
 		font-family: SFUIHeavy;
 
-		// @media @mobile {
-		// 	display: inline-block;
-		// 	margin-right: 10px;
-		// 	font-size: 60px;
-
-		// 	img {
-		// 		width: 40px;
-		// 	}
-		// }
+		@media (max-width: 768px) {
+			img {
+				width: 80px;
+			}
+		}
 	}
 
 	&__number--first {
