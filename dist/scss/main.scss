@@ -35,6 +35,10 @@
 @import "_levels.scss";
 @import "_levels-ability.scss";
 
+html {
+	overflow-x: hidden;
+}
+
 body {
 	color: #fff;
 	font-family: SFUIRegular;

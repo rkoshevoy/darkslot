@@ -4942,6 +4942,9 @@
       .ability-table__cell span {
         display: none; } }
 
+html {
+  overflow-x: hidden; }
+
 body {
   color: #fff;
   font-family: SFUIRegular;
