@@ -2468,7 +2468,7 @@
     .ds-fl-content-level {
       width: 100%; } }
   .ds-fl-content-level .modal-body {
-    padding: 10px; }
+    padding: 20px; }
 
 .ds-fl-content-wide {
   max-width: none;
@@ -3064,11 +3064,8 @@
 .modal-centered {
   margin: 0 auto; }
 
-.modal-header-level {
-  padding: 10px; }
-
 #modalPolicy .modal-title {
-  font-size: 1.3em; }
+  font-size: 1.1em; }
 
 .notFound {
   height: 100vh;
