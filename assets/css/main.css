@@ -1017,20 +1017,30 @@
       background-image: url("../../img/games-icons/diamond-hover.png"); }
   .navbar-games-item:nth-child(2) a {
     background-image: url("../../img/games-icons/cherry.png"); }
-    .navbar-games-item:nth-child(2) a:hover {
+    .navbar-games-item:nth-child(2) a:hover, .navbar-games-item:nth-child(2) a.active {
       background-image: url("../../img/games-icons/cherry-hover.png"); }
   .navbar-games-item:nth-child(3) a {
     background-image: url("../../img/games-icons/bag.png"); }
-    .navbar-games-item:nth-child(3) a:hover {
+    .navbar-games-item:nth-child(3) a:hover, .navbar-games-item:nth-child(3) a.active {
       background-image: url("../../img/games-icons/bag-hover.png"); }
   .navbar-games-item:nth-child(4) a {
     background-image: url("../../img/games-icons/cubes.png"); }
-    .navbar-games-item:nth-child(4) a:hover {
+    .navbar-games-item:nth-child(4) a:hover, .navbar-games-item:nth-child(4) a.active {
       background-image: url("../../img/games-icons/cubes-hover.png"); }
   .navbar-games-item:last-child a {
     background-image: url("../../img/games-icons/roulette.png"); }
-    .navbar-games-item:last-child a:hover {
+    .navbar-games-item:last-child a:hover, .navbar-games-item:last-child a.active {
       background-image: url("../../img/games-icons/roulette-hover.png"); }
+  .navbar-games-item.active:first-child a {
+    background-image: url("../../img/games-icons/diamond-hover.png"); }
+  .navbar-games-item.active:nth-child(2) a {
+    background-image: url("../../img/games-icons/cherry-hover.png"); }
+  .navbar-games-item.active:nth-child(3) a {
+    background-image: url("../../img/games-icons/bag-hover.png"); }
+  .navbar-games-item.active:nth-child(4) a {
+    background-image: url("../../img/games-icons/cubes-hover.png"); }
+  .navbar-games-item.active:last-child a {
+    background-image: url("../../img/games-icons/roulette-hover.png"); }
 
 .jackpot {
   margin-top: 60px;
