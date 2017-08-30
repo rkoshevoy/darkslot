@@ -68,6 +68,10 @@
     display: none; }
   .header .user-unAuthorized .user-authorized-false {
     display: block; }
+  .header .user-unAuthorized .user-mobile .user-authorized-true {
+    display: none; }
+  .header .user-unAuthorized .user-mobile .user-authorized-false {
+    display: block; }
   .header #header-search-collapse {
     padding: 0;
     padding-top: 15px; }
@@ -178,6 +182,8 @@
     width: calc(100% - 70px);
     height: 65px !important; }
   @media (max-width: 768px) {
+    .header ul.user-authorized-true {
+      margin: 0; }
     .header .ds-logo {
       display: none; }
     .header .ds-logo-mobile {
@@ -195,7 +201,7 @@
       top: 0;
       left: 15px;
       right: 15px;
-      width: calc(100% - 70px);
+      width: calc(100% - 80px);
       height: 65px !important;
       background: #161616; }
     .header .navbar-nav > li > a {
@@ -246,8 +252,18 @@
             flex-basis: 24px;
         margin-left: 10px;
         height: 60px; }
-    .header .user-mobile .user-authorized-true > li {
-      height: 60px !important; } }
+    .header #header-search-collapse.collapse,
+    .header #header-search-collapse.collapsing,
+    .header #header-search-collapse.collapse.in {
+      padding-top: 10px;
+      border: 0;
+      height: 60px !important; }
+    .header .user-mobile {
+      height: 60px; }
+      .header .user-mobile .user-authorized-true {
+        margin-bottom: 0; }
+        .header .user-mobile .user-authorized-true > li {
+          height: 60px !important; } }
   @media (max-width: 400px) {
     .header .user-authorized-true .header__user-image {
       display: none; }
@@ -5216,7 +5232,7 @@ form * {
 
 @media (max-width: 500px) {
   .main-wrapper {
-    margin-top: 70px; } }
+    margin-top: 60px; } }
 
 @media (max-width: 400px) {
   .games-list [class^="col-"],
