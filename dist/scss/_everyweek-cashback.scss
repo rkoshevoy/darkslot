@@ -49,13 +49,8 @@
 		color: #151515;
 		text-transform: uppercase;
 
-		// @media @tablet {
-		// 	top: 52px;
-		// 	color: #1d1d1d;
-		// }
-
 		@media (max-width: 768px) {
-			top: 50px;
+			top: -30px;
 			font-size: 40px;
 		}
 	}
@@ -66,7 +61,7 @@
 		line-height: 36px;
 
 		@media (max-width: 768px) {
-			margin-bottom: 40px;
+			margin-bottom: 30px;
 			font-size: 16px;
 			line-height: 20px;
 		}
@@ -157,10 +152,11 @@
 	&__item--first {
 		background-image: url('../../img/first-place.png');
 
-		// @media @tablet {
-		// 	order: 1;
-		// 	width: 100%;
-		// }
+		@media (max-width: 768px) {
+			// order: 1;
+			width: 100%;
+			background-size: contain;
+		}
 	}
 
 	&__item--third {
@@ -235,10 +231,10 @@
 		// 	width: 100%;
 		// }
 
-		// @media @mobile {
-		// 	font-size: 18px;
-		// 	line-height: 22px;
-		// }
+		@media (max-width: 768px) {
+			font-size: 18px;
+			line-height: 22px;
+		}
 	}
 
 	&__video-wrapper {

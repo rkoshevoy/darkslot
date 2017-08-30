@@ -234,6 +234,12 @@
 	.language_selector {
 		min-width: 140px;
 
+		@media (max-width: 768px) {
+			.caret {
+				display: none;
+			}
+		}
+
 		&__dropdown-menu {
 			background-color: lighten($bg-color, 10%);
 			border-radius: 0;

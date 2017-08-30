@@ -808,7 +808,7 @@
   .tiger-reg .col-xs-10 {
     width: 100%; }
   .tiger-reg .registration-bonus {
-    padding: 30px !important; }
+    padding: 15px; }
     .tiger-reg .registration-bonus .registration-bonus-pers {
       display: none; }
     .tiger-reg .registration-bonus .registration-bonus-content {
@@ -1231,7 +1231,7 @@
     line-height: 24px; }
     @media (max-width: 768px) {
       .popular-games__header {
-        font-size: 18px; } }
+        font-size: 16px; } }
   .popular-games__button {
     padding: 18px;
     margin-top: 20px;
@@ -1278,6 +1278,9 @@
 
 .deposites {
   padding: 60px 0; }
+  @media (max-width: 768px) {
+    .deposites {
+      padding: 30px 0; } }
   .deposites__wrapper {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1565,6 +1568,9 @@
     vertical-align: middle; }
   .fixed-bar .language_selector {
     min-width: 140px; }
+    @media (max-width: 768px) {
+      .fixed-bar .language_selector .caret {
+        display: none; } }
     .fixed-bar .language_selector__dropdown-menu {
       background-color: #303030;
       border-radius: 0;
@@ -2142,8 +2148,8 @@
   line-height: 60px; }
   @media (max-width: 768px) {
     .partner__text {
-      font-size: 25px;
-      line-height: 40px;
+      font-size: 22px;
+      line-height: 32px;
       text-align: center; } }
 
 @media (max-width: 768px) {
@@ -2462,7 +2468,7 @@
     .ds-fl-content-level {
       width: 100%; } }
   .ds-fl-content-level .modal-body {
-    padding: 20px; }
+    padding: 10px; }
 
 .ds-fl-content-wide {
   max-width: none;
@@ -3058,6 +3064,9 @@
 .modal-centered {
   margin: 0 auto; }
 
+.modal-header-level {
+  padding: 10px; }
+
 #modalPolicy .modal-title {
   font-size: 1.3em; }
 
@@ -3282,6 +3291,9 @@
   text-align: left;
   left: 0;
   background-color: rgba(237, 56, 63, 0.9); }
+  @media (max-width: 768px) {
+    .registration-bonus {
+      padding: 10px; } }
   .registration-bonus .registration-bonus-content {
     max-width: 60%; }
   .registration-bonus .registration-bonus-pers {
@@ -3339,6 +3351,9 @@
   padding-top: 100px;
   background-image: url("../../img/money-bg.png");
   background-size: cover; }
+  @media (max-width: 768px) {
+    .greeting-bonus {
+      padding-top: 30px; } }
   .greeting-bonus__wrapper {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -3977,6 +3992,10 @@
     font-size: 30px;
     font-family: SFUIHeavy;
     text-transform: uppercase; }
+    @media (max-width: 768px) {
+      .conditions__header {
+        font-size: 26px;
+        text-align: center; } }
   .conditions__text-wrapper {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -4005,7 +4024,7 @@
   @media (max-width: 768px) {
     .condition {
       width: 100%;
-      margin-bottom: 60px;
+      margin-bottom: 40px;
       padding-top: 0;
       padding-left: 10px;
       text-align: center; } }
@@ -4074,7 +4093,7 @@
     text-transform: uppercase; }
     @media (max-width: 768px) {
       .everyweek-cashback__back-text {
-        top: 50px;
+        top: -30px;
         font-size: 40px; } }
   .everyweek-cashback__text {
     margin-bottom: 65px;
@@ -4082,7 +4101,7 @@
     line-height: 36px; }
     @media (max-width: 768px) {
       .everyweek-cashback__text {
-        margin-bottom: 40px;
+        margin-bottom: 30px;
         font-size: 16px;
         line-height: 20px; } }
     .everyweek-cashback__text span {
@@ -4127,6 +4146,10 @@
     background-image: url("../../img/second-place.png"); }
   .places__item--first {
     background-image: url("../../img/first-place.png"); }
+    @media (max-width: 768px) {
+      .places__item--first {
+        width: 100%;
+        background-size: contain; } }
   .places__item--third {
     background-image: url("../../img/third-place.png"); }
   .places__header {
@@ -4153,6 +4176,10 @@
     line-height: 37px;
     font-family: SFUIBold;
     text-transform: uppercase; }
+    @media (max-width: 768px) {
+      .broadcast__header {
+        font-size: 18px;
+        line-height: 22px; } }
   .broadcast__video-wrapper {
     -ms-flex-negative: 0;
         flex-shrink: 0;
@@ -4432,7 +4459,7 @@
   @media (max-width: 768px) {
     .tournament__header {
       margin: 40px 0;
-      font-size: 32px; } }
+      font-size: 30px; } }
   .tournament__header span {
     position: relative;
     z-index: -1; }
@@ -4501,6 +4528,10 @@
     padding: 30px;
     border: 3px dotted #464646;
     text-align: center; }
+    @media (max-width: 768px) {
+      .tables__condition-wrapper {
+        margin-bottom: 30px;
+        padding: 10px; } }
 
 .prizes-table {
   display: -webkit-box;
@@ -4551,6 +4582,12 @@
     font-size: 20px;
     font-family: SFUIBold;
     text-transform: uppercase; }
+    @media (max-width: 768px) {
+      .prizes-table__place {
+        padding-top: 20px;
+        padding-bottom: 20px;
+        padding-left: 55px;
+        font-size: 16px; } }
   .prizes-table__amount {
     font-size: 30px;
     font-family: SFUIHeavy; }
@@ -4568,6 +4605,11 @@
     font-size: 24px;
     font-family: SFUIHeavy;
     text-transform: uppercase; }
+    @media (max-width: 768px) {
+      .places-tournament__header {
+        margin-bottom: 30px;
+        font-size: 20px;
+        text-align: center; } }
     .places-tournament__header span {
       position: relative;
       z-index: -1; }
@@ -4580,6 +4622,11 @@
         width: calc(100% + 30px);
         height: 50px;
         background-color: #ed383f; }
+      @media (max-width: 768px) {
+        .places-tournament__header span::before {
+          left: -10px;
+          width: calc(100% + 20px);
+          height: 45px; } }
   .places-tournament__tables-wrapper {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -4682,6 +4729,9 @@
 
 .level-up {
   padding-top: 10px; }
+  @media (max-width: 768px) {
+    .level-up {
+      padding: 0; } }
   .level-up__header-wrapper {
     position: absolute;
     left: 20px;
@@ -4703,6 +4753,9 @@
     font-size: 150px;
     color: #56c074;
     font-family: SFUIHeavy; }
+    @media (max-width: 768px) {
+      .level-up__number img {
+        width: 80px; } }
   .level-up__number--first {
     color: #56c074; }
   .level-up__number--second {

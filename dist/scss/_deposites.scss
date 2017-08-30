@@ -4,6 +4,10 @@
 	// background-position: bottom;
 	padding: 60px 0;
 
+	@media (max-width: 768px) {
+		padding: 30px 0;
+	}
+
 	&__wrapper {
 		display: flex;
 		align-items: center;
