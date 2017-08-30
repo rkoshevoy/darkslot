@@ -43,6 +43,127 @@
 		}
 	}
 
+	.navbar-toggle {
+		border: 0;
+		margin-top: 17px !important;
+		margin-bottom: 17px !important;
+
+		&:hover,
+		&:active,
+		&:focus {
+			background: transparent;
+		}
+	}
+
+	.user-mobile {
+		display: none;
+	}
+
+	.ds-logo-mobile {
+		display: none;
+	}
+
+	.user-authorized {
+		.user-authorized-true {
+			display: block;
+		}
+
+		.user-authorized-false {
+			display: none;
+		}
+	}
+
+	.user-unAuthorized {
+		.user-authorized-true {
+			display: none;
+		}
+
+		.user-authorized-false {
+			display: block;
+		}
+
+		.user-mobile{
+			.user-authorized-true {
+				display: none;
+			}
+
+			.user-authorized-false {
+				display: block;
+			}
+		}
+	}
+
+	#header-search-collapse {
+	  padding: 0;
+	  padding-top: 15px;
+	}
+
+	@media (max-width: 1200px) {
+		.navbar-toggle {
+			float: left;
+			flex-basis: 50px;
+		}
+
+		.user-mobile {
+			display: block;
+		}
+
+		.navbar-header {
+			display: flex;
+		}
+
+		.user-mobile {
+			display: flex;
+			width: calc(100% - 100px);
+			align-items: center;
+			justify-content: space-between;
+
+			.user-authorized-true {
+				list-style: none;
+		    display: flex;
+		    align-items: center;
+				width: 100%;
+		    justify-content: flex-end;
+
+				> li {
+					margin-left: 15px;
+					height: 80px;
+					display: flex;
+					align-items: center;
+
+					> a {
+						height: 100%;
+						color: $text-color;
+						display: flex;
+				    align-items: center;
+
+						&:hover,
+						&:active,
+						&:focus {
+							text-decoration: none;
+							color: $text-color;
+						}
+					}
+
+					.dropdown-menu {
+						background: #161616;
+						border-radius: 0;
+					}
+				}
+			}
+		}
+
+		.navbar-brand {
+			display: none;
+		}
+
+		#header-navbar-collapse {
+			.header__user {
+				display: none;
+			}
+		}
+	}
+
 	@media (min-width: 768px) and (max-width: 1200px){
 		.navbar-collapse.collapse {
 	    display: none !important;
@@ -103,14 +224,59 @@
 		}
 	}
 
+	&.collapse,
+	&.collapsing,
+	&.collapse.in {
+		position: absolute;
+		top: 0;
+		left: 15px;
+		right: 15px;
+		width: calc(100% - 70px);
+		height: 65px !important;
+	}
+
 	@media (max-width: 768px) {
 		// .navbar-fixed-top .navbar-collapse {
 		// 	height: 100vh;
 		// }
 
+		ul.user-authorized-true {
+			margin: 0;
+		}
+
+		.ds-logo {
+			display: none;
+		}
+		.ds-logo-mobile {
+			display: block;
+		}
+
 		.navbar-toggle {
 			margin-top: 24px;
 			margin-bottom: 20px;
+		}
+
+		.navbar-toggle-collapsed-search {
+			margin-right: 0;
+			margin-left: 15px;
+		}
+
+		#header-search-collapse {
+			.navbar-nav {
+				margin: 0;
+			}
+			&.collapse,
+			&.collapsing,
+			&.collapse.in {
+				position: absolute;
+				top: 0;
+				left: 15px;
+				right: 15px;
+				width: calc(100% - 80px);
+				height: 65px !important;
+				background: #161616;
+
+			}
 		}
 
 		.navbar-nav > li > a {
@@ -139,6 +305,110 @@
 			}
 		}
 	}
+
+	@media (max-width: 600px) {
+		.header-wrap {
+			&.user-authorized {
+				.navbar-header {
+					.user-mobile {
+						font-size: 10px;
+
+						.header__deposit-btn {
+							.btn-secondary {
+								border-width: 1px;
+							}
+						}
+					}
+				}
+			}
+
+			#header-search-collapse.collapse,
+			#header-search-collapse.collapsing,
+			#header-search-collapse.collapse.in {
+				padding-left: 10px;
+				padding-right: 10px;
+				left: 0;
+			  right: 0;
+			  width: calc(100% - 40px);
+			}
+		}
+	}
+
+	@media (max-width: 500px) {
+		.container {
+			padding:0;
+		}
+		.navbar-header {
+			justify-content: space-between;
+
+			> button {
+				&:first-of-type {
+					padding: 0;
+					margin: 0 !important;
+					flex-basis: 24px;
+					margin-right: 10px;
+					height: 60px;
+				}
+
+				&:last-of-type {
+					padding: 0;
+					margin: 0 !important;
+					flex-basis: 24px;
+					margin-left: 10px;
+					height: 60px;
+				}
+			}
+
+		}
+
+		#header-search-collapse.collapse,
+		#header-search-collapse.collapsing,
+		#header-search-collapse.collapse.in {
+			padding-top: 10px;
+			border: 0;
+			height: 60px !important;
+		}
+
+		.user-mobile {
+			height: 60px;
+
+			.user-authorized-true {
+				margin-bottom: 0;
+
+				> li {
+					height: 60px !important;
+				}
+			}
+		}
+
+	}
+
+	@media (max-width: 400px) {
+		.user-authorized-true {
+			.header__user-image{
+				display: none;
+			}
+		}
+
+		.user-unAuthorized {
+			button.user-authorized-false {
+				font-size: 12px;
+				padding: 10px;
+				border-width: 1px;
+			}
+		}
+
+
+
+		.ds-logo-wrap-mobile {
+			width: 24px;
+
+			img {
+				max-width: 100%;
+			}
+		}
+	}
+
 }
 
 .main-nav {

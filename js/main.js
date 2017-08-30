@@ -15,18 +15,6 @@ window.onload = function(){setTimeout(function(){fadeOutnojquery(preloader);
 
 $(function() {
 
-  $(".carousel").swipe({
-
-    swipe: function(event, direction, distance, duration, fingerCount, fingerData) {
-
-      if (direction == 'left') $(this).carousel('next');
-      if (direction == 'right') $(this).carousel('prev');
-
-    },
-    allowPageScroll:"vertical"
-
-  });
-
   var niceScrollSettings = {
     cursorcolor: "#de3137",
     cursorborder: "1px solid #de3137",

@@ -98,7 +98,7 @@
 
 	@media (max-width: 768px) {
 		-webkit-transform: translate(0, 60px);
-		transform: translate(0, 60px);		
+		transform: translate(0, 60px);
 	}
 }
 
@@ -1047,4 +1047,10 @@
 
 .modal-header-level {
 	padding: 10px;
+}
+
+#modalPolicy {
+	.modal-title {
+		font-size: 1.3em;
+	}
 }

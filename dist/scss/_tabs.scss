@@ -318,7 +318,7 @@
 	a {
 		background-position: 10px center;
 
-		@media (max-width: 768px) {			
+		@media (max-width: 768px) {
 			font-size: 10px;
 		}
 	}
@@ -335,7 +335,8 @@
 	&:nth-child(2) a {
 		background-image: url('../../img/games-icons/cherry.png');
 
-		&:hover {
+		&:hover,
+		&.active {
 			background-image: url('../../img/games-icons/cherry-hover.png');
 		}
 	}
@@ -343,7 +344,8 @@
 	&:nth-child(3) a {
 		background-image: url('../../img/games-icons/bag.png');
 
-		&:hover {
+		&:hover,
+		&.active {
 			background-image: url('../../img/games-icons/bag-hover.png');
 		}
 	}
@@ -351,7 +353,8 @@
 	&:nth-child(4) a {
 		background-image: url('../../img/games-icons/cubes.png');
 
-		&:hover {
+		&:hover,
+		&.active {
 			background-image: url('../../img/games-icons/cubes-hover.png');
 		}
 	}
@@ -359,8 +362,38 @@
 	&:last-child a {
 		background-image: url('../../img/games-icons/roulette.png');
 
-		&:hover {
+		&:hover,
+		&.active {
 			background-image: url('../../img/games-icons/roulette-hover.png');
+		}
+	}
+
+	&.active {
+
+		&:first-child a {
+			background-image: url('../../img/games-icons/diamond-hover.png');
+		}
+
+		&:nth-child(2) a {
+			background-image: url('../../img/games-icons/cherry-hover.png');
+		}
+
+		&:nth-child(3) a {
+			background-image: url('../../img/games-icons/bag-hover.png');
+		}
+
+		&:nth-child(4) a {
+			background-image: url('../../img/games-icons/cubes-hover.png');
+		}
+
+		&:last-child a {
+			background-image: url('../../img/games-icons/roulette-hover.png');
+		}
+
+		@media (max-width: 840px) {
+			a {
+				background-image: none !important;
+			}
 		}
 	}
 }

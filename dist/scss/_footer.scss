@@ -30,8 +30,9 @@
 	}
 
 	&__development {
-		// display: flex;
-		// align-items: center;
+		display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
 
 		@media (max-width: 768px) {
 			text-align: center;
