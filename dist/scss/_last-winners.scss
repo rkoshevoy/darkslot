@@ -99,9 +99,9 @@
 	&__text {
 		width: 200px;
 
-		// @media @mobile {
-		// 	width: auto;
-		// }
+		@media (max-width: 992px) {
+			width: auto;
+		}
 	}
 
 	&__name {
