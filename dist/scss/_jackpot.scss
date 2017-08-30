@@ -122,5 +122,12 @@
 	&__image {
 		height: 100%;
     position: relative;
+
+    @media (max-width: 1200px) {
+    	position: absolute;
+    	right: 0;
+    	bottom: 0;
+			height: 275px;
+    }
 	}
 }

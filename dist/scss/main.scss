@@ -529,3 +529,10 @@ form {
 		}
 	}
 }
+
+
+.registration-bonus-pers {
+	@media (max-width: 992px) {
+		display: none;
+	}
+}

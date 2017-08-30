@@ -991,8 +991,10 @@
 .navbar-games-item {
   background-position: 10px center; }
   .navbar-games-item a {
-    background-position: 10px center;
-    font-size: 10px; }
+    background-position: 10px center; }
+    @media (max-width: 768px) {
+      .navbar-games-item a {
+        font-size: 10px; } }
   .navbar-games-item:first-child a {
     background-image: url("../../img/games-icons/diamond.png"); }
     .navbar-games-item:first-child a:hover, .navbar-games-item:first-child a.active {
@@ -1092,6 +1094,12 @@
   .jackpot__image {
     height: 100%;
     position: relative; }
+    @media (max-width: 1200px) {
+      .jackpot__image {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        height: 275px; } }
 
 .last-winners {
   padding: 80px 0;
@@ -1155,6 +1163,9 @@
     background-color: #424242; }
   .winners__text {
     width: 200px; }
+    @media (max-width: 992px) {
+      .winners__text {
+        width: auto; } }
   .winners__name {
     display: block;
     margin-bottom: 10px;
@@ -3520,6 +3531,10 @@
     font-family: SFUIHeavy;
     font-size: 20px;
     text-align: center; }
+    @media (max-width: 768px) {
+      .bonus-more__text {
+        margin-bottom: 30px;
+        font-size: 16px; } }
   .bonus-more__button-wrapper {
     width: 100%;
     text-align: center; }
@@ -5234,3 +5249,7 @@ form * {
       .header .navbar-search .search-query {
         width: 100%;
         color: #000; } }
+
+@media (max-width: 992px) {
+  .registration-bonus-pers {
+    display: none; } }
