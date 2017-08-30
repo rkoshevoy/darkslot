@@ -3058,6 +3058,9 @@
 .modal-centered {
   margin: 0 auto; }
 
+#modalPolicy .modal-title {
+  font-size: 1.3em; }
+
 .notFound {
   height: 100vh;
   background-color: #232323; }
