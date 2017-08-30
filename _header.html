@@ -1,22 +1,73 @@
 <header class="header">
 	<nav class="navbar navbar-inverse navbar-fixed-top">
 		<div class="container">
-			<div class="row">
-				<div class="col-sm-12">
+			<!-- Класс user-unAuthorized заменить на user-authorized для состояния авторизованного пользователя -->
+			<div class="header-wrap user-authorized">
+
 					<div class="navbar-header">
-						<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#header-navbar-collapse" aria-expanded="false">
+						<button style="float: none;" type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#header-navbar-collapse" aria-expanded="false">
 							<span class="sr-only">Toggle navigation</span>
 							<span class="icon-bar"></span>
 							<span class="icon-bar"></span>
 							<span class="icon-bar"></span>
 						</button>
-						<button type="button" class="navbar-toggle collapsed navbar-toggle-collapsed-search" data-toggle="collapse" data-target="#header-search-collapse" aria-expanded="false">
+
+						<div class="user-mobile">
+							<button type="button" class="btn btn-danger user-authorized-false" data-toggle="modal" data-target="#modalReg">Регистрация</button>
+							<a class="ds-logo-wrap-mobile" href="index.html">
+								<img src="img/logo.png" alt="darkslot-logo" class="ds-logo">
+								<img src="img/favicon.png" alt="darkslot-logo" class="ds-logo-mobile">
+							</a>
+							<button type="button" class="btn btn-secondary user-authorized-false" data-toggle="modal" data-target="#modalSignIn">Вход</button>
+
+							<ul class="user-authorized-true">
+								<li class="dropdown ">
+									<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+										<span class="header__user-image">
+											<img src="img/user-icon.png" alt="user">
+											<span>2</span>
+										</span> Guest <span class="caret"></span>
+									</a>
+									<ul class="dropdown-menu">
+										<li><a href="#">list item</a></li>
+										<li><a href="#">list item</a></li>
+										<li><a href="#">list item</a></li>
+										<li><a href="#">list item</a></li>
+										<li><a href="#">list item</a></li>
+										<li><a href="#">list item</a></li>
+									</ul>
+								</li>
+								<li class="dropdown ">
+									<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+										<span class="header__user-image">
+											<img src="img/user-money.png" alt="money">
+										</span> 200 BTC <span class="caret"></span>
+									</a>
+									<ul class="dropdown-menu">
+										<li><a href="#">BTC</a></li>
+										<li><a href="#">EUR</a></li>
+										<li><a href="#">USD</a></li>
+										<li><a href="#">RUB</a></li>
+									</ul>
+								</li>
+								<li class="header__deposit-btn "><button type="button" class="btn btn-secondary">Депозит</button></li>
+
+							</ul>
+
+
+
+
+						</div>
+
+
+						<button style="float: none;" type="button" class="navbar-toggle collapsed navbar-toggle-collapsed-search" data-toggle="collapse" data-target="#header-search-collapse" aria-expanded="false">
 							<span class="sr-only">Toggle navigation</span>
 							<img src="img/magnifier-big.png" alt="magnifier" class="header-search-button">
 						</button>
+
+
 						<a class="navbar-brand ds-logo-wrap" href="index.html">
 							<img src="img/logo.png" alt="darkslot-logo" class="ds-logo">
-							<img src="img/favicon.png" alt="darkslot-logo" class="ds-logo">
 						</a>
 					</div>
 
@@ -59,12 +110,12 @@
 						</ul>
 
 						<ul class="nav navbar-nav navbar-right header__user">
-							<li class="header__auth ">
+							<li class="header__auth user-authorized-false">
 								<button type="button" class="btn btn-danger " data-toggle="modal" data-target="#modalReg">Регистрация</button>
 								<button type="button" class="btn btn-secondary " data-toggle="modal" data-target="#modalSignIn">Вход</button>
 							</li>
 
-							<li class="dropdown hidden">
+							<li class="dropdown user-authorized-true">
 								<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
 									<span class="header__user-image">
 										<img src="img/user-icon.png" alt="user">
@@ -80,7 +131,7 @@
 									<li><a href="#">list item</a></li>
 								</ul>
 							</li>
-							<li class="dropdown hidden">
+							<li class="dropdown user-authorized-true">
 								<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
 									<span class="header__user-image">
 										<img src="img/user-money.png" alt="money">
@@ -93,7 +144,7 @@
 									<li><a href="#">RUB</a></li>
 								</ul>
 							</li>
-							<li class="header__deposit-btn hidden"><button type="button" class="btn btn-secondary">Депозит</button></li>
+							<li class="header__deposit-btn user-authorized-true"><button type="button" class="btn btn-secondary">Депозит</button></li>
 
 						</ul>
 					</div> <!-- /.navbar-collapse -->
@@ -106,7 +157,7 @@
 						</ul>
 					</div>
 
-				</div>
+
 			</div>
 		</div>
 	</nav>

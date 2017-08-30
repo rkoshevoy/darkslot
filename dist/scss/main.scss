@@ -465,6 +465,12 @@ form {
 	}
 }
 
+@media (max-width: 500px) {
+	.main-wrapper {
+		 margin-top: 70px;
+	}
+}
+
 @media (max-width: 400px) {
 	.games-list,
 	.last-winners,
@@ -506,9 +512,9 @@ form {
 		}
 	}
 
-	.collapse-search {
-		display: none;
-	}
+	// .collapse-search {
+	// 	display: none;
+	// }
 	.navbar-search {
 		display: none;
 
