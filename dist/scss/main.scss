@@ -78,6 +78,17 @@ form {
 	}
 }
 
+.ds-logo-wrap,
+.ds-logo-wrap-mobile {
+	max-width: 170px;
+
+	img {
+		max-width: 100%;
+	}
+}
+
+
+
 .main-wrapper {
 	margin-top: 50px;
 	padding-bottom: 50px;
@@ -113,7 +124,7 @@ form {
 .ds-logo-wrap {
 	line-height: normal;
 	height: auto;
-	padding: 25.5px 15px;
+	padding: 20px 15px;
 }
 
 .ds-logo {
@@ -169,8 +180,12 @@ form {
 	}
 
 	& > a {
-		padding: 30px 15px;
+		padding: 28px 15px;
 	}
+}
+
+ul.user-authorized-true {
+	margin: 0;
 }
 
 .navbar-inverse .navbar-nav > li > a {
@@ -425,6 +440,16 @@ form {
 	}
 }
 
+@media (max-width: 768px) {
+	.ds-logo-wrap-mobile {
+		max-width: 30px;
+
+		img {
+			max-width: 100%;
+		}
+	}
+}
+
 
 @media (max-width: 600px) {
 	.games-list,
@@ -467,11 +492,9 @@ form {
 			border: 0;
 		}
 	}
-}
 
-@media (max-width: 500px) {
 	.main-wrapper {
-		 margin-top: 60px;
+		margin-top: 60px;
 	}
 }
 

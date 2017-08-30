@@ -73,8 +73,7 @@
   .header .user-unAuthorized .user-mobile .user-authorized-false {
     display: block; }
   .header #header-search-collapse {
-    padding: 0;
-    padding-top: 15px; }
+    padding: 0; }
   @media (max-width: 1200px) {
     .header .navbar-toggle {
       float: left;
@@ -111,7 +110,6 @@
                 justify-content: flex-end; }
         .header .user-mobile .user-authorized-true > li {
           margin-left: 15px;
-          height: 80px;
           display: -webkit-box;
           display: -ms-flexbox;
           display: flex;
@@ -176,7 +174,7 @@
       padding-left: 30px; } }
   .header.collapse, .header.collapsing, .header.collapse.in {
     position: absolute;
-    top: 0;
+    top: 15px;
     left: 15px;
     right: 15px;
     width: calc(100% - 70px);
@@ -198,7 +196,7 @@
       margin: 0; }
     .header #header-search-collapse.collapse, .header #header-search-collapse.collapsing, .header #header-search-collapse.collapse.in {
       position: absolute;
-      top: 0;
+      top: 15px;
       left: 15px;
       right: 15px;
       width: calc(100% - 80px);
@@ -230,7 +228,7 @@
       padding-right: 10px;
       left: 0;
       right: 0;
-      width: calc(100% - 40px); } }
+      width: calc(100% - 60px); } }
   @media (max-width: 500px) {
     .header .container {
       padding: 0; }
@@ -257,6 +255,8 @@
     .header #header-search-collapse.collapse.in {
       padding-top: 10px;
       border: 0;
+      top: 0;
+      width: calc(100% - 40px) !important;
       height: 60px !important; }
     .header .user-mobile {
       height: 60px; }
@@ -4977,6 +4977,13 @@ form * {
   outline: none;
   border-radius: 0; }
 
+.ds-logo-wrap,
+.ds-logo-wrap-mobile {
+  max-width: 170px; }
+  .ds-logo-wrap img,
+  .ds-logo-wrap-mobile img {
+    max-width: 100%; }
+
 .main-wrapper {
   margin-top: 50px;
   padding-bottom: 50px;
@@ -5007,7 +5014,7 @@ form * {
 .ds-logo-wrap {
   line-height: normal;
   height: auto;
-  padding: 25.5px 15px; }
+  padding: 20px 15px; }
 
 .ds-logo:nth-child(2) {
   display: none; }
@@ -5047,7 +5054,10 @@ form * {
   background-color: black; }
 
 .navbar-nav > li > a {
-  padding: 30px 15px; }
+  padding: 28px 15px; }
+
+ul.user-authorized-true {
+  margin: 0; }
 
 .navbar-inverse .navbar-nav > li > a {
   color: #fff; }
@@ -5236,6 +5246,12 @@ form * {
     width: 100%;
     margin-bottom: 15px; } }
 
+@media (max-width: 768px) {
+  .ds-logo-wrap-mobile {
+    max-width: 30px; }
+    .ds-logo-wrap-mobile img {
+      max-width: 100%; } }
+
 @media (max-width: 600px) {
   .games-list [class^="col-"],
   .last-winners [class^="col-"],
@@ -5257,9 +5273,7 @@ form * {
     padding: 10px; }
   .modal.in .social-enter {
     background-color: rgba(0, 0, 0, 0.5);
-    border: 0; } }
-
-@media (max-width: 500px) {
+    border: 0; }
   .main-wrapper {
     margin-top: 60px; } }
 

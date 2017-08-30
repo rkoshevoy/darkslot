@@ -95,7 +95,7 @@
 
 	#header-search-collapse {
 	  padding: 0;
-	  padding-top: 15px;
+	  // padding-top: 15px;
 	}
 
 	@media (max-width: 1200px) {
@@ -127,7 +127,6 @@
 
 				> li {
 					margin-left: 15px;
-					height: 80px;
 					display: flex;
 					align-items: center;
 
@@ -228,7 +227,7 @@
 	&.collapsing,
 	&.collapse.in {
 		position: absolute;
-		top: 0;
+		top: 15px;
 		left: 15px;
 		right: 15px;
 		width: calc(100% - 70px);
@@ -269,7 +268,7 @@
 			&.collapsing,
 			&.collapse.in {
 				position: absolute;
-				top: 0;
+				top: 15px;
 				left: 15px;
 				right: 15px;
 				width: calc(100% - 80px);
@@ -329,7 +328,7 @@
 				padding-right: 10px;
 				left: 0;
 			  right: 0;
-			  width: calc(100% - 40px);
+			  width: calc(100% - 60px);
 			}
 		}
 	}
@@ -366,6 +365,8 @@
 		#header-search-collapse.collapse.in {
 			padding-top: 10px;
 			border: 0;
+			top: 0;
+			width: calc(100% - 40px) !important;
 			height: 60px !important;
 		}
 
