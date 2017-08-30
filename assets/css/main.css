@@ -837,8 +837,10 @@
 .navbar-games-item {
   background-position: 10px center; }
   .navbar-games-item a {
-    background-position: 10px center;
-    font-size: 10px; }
+    background-position: 10px center; }
+    @media (max-width: 768px) {
+      .navbar-games-item a {
+        font-size: 10px; } }
   .navbar-games-item:first-child a {
     background-image: url("../../img/games-icons/diamond.png"); }
     .navbar-games-item:first-child a:hover, .navbar-games-item:first-child a.active {
