@@ -96,7 +96,7 @@ form {
 	padding-bottom: 50px;
 	background-color: #232323;
 
-	@media (max-width: 788px) {
+	@media (min-width: 788px) {
 		margin-top: 77px;
 	}
 }

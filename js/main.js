@@ -38,22 +38,6 @@ $(function() {
     $(".rules").niceScroll(niceScrollSettings);
   });
 
-  // if ($(window).width() < 400) {
-
-  //   $('#nav-games, #nav-providers').niceScroll({
-  //     cursorcolor: "#de3137",
-  //     cursorwidth: 2,
-  //     cursorborder: "1px solid #de3137",
-  //     cursorborderradius: 0,
-  //     cursoropacitymax: 0.7,
-  //     boxzoom: true,
-  //     autohidemode: false,
-  //     grabcursorenabled: false,
-  //     horizrailenabled: true,
-  //     touchbehavior: true, // DEPRECATED!! use "touchemulate"
-  //     emulatetouch: true // enable cursor-drag scrolling like touch devices in desktop computer
-  //   });
-  // }
-
+  $("#rules-wrap .rules").niceScroll(niceScrollSettings);
 
 });

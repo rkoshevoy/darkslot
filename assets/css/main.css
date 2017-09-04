@@ -8857,6 +8857,9 @@ button.close {
     font-size: 14px;
     line-height: 22px;
     color: #cccccc; }
+    @media (max-width: 768px) {
+      .rules__list-item {
+        line-height: 18px; } }
     .rules__list-item a {
       display: inline-block;
       color: #cccccc;
@@ -8867,6 +8870,10 @@ button.close {
 
 #modalPolicy .modal-title {
   font-size: 1.1em; }
+
+.rules-wrap .rules {
+  height: auto;
+  max-height: 80vh; }
 
 .notFound {
   height: 100vh;
@@ -10839,7 +10846,7 @@ form * {
   margin-top: 50px;
   padding-bottom: 50px;
   background-color: #232323; }
-  @media (max-width: 788px) {
+  @media (min-width: 788px) {
     .main-wrapper {
       margin-top: 77px; } }
 

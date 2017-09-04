@@ -1029,9 +1029,9 @@
 		line-height: 22px;
 		color: #cccccc;
 
-		// @media @mobile {
-		// 	line-height: 18px;
-		// }
+		@media (max-width: 768px) {
+			line-height: 18px;
+		}
 
 		a {
 			display: inline-block;
@@ -1049,4 +1049,11 @@
 	.modal-title {
 		font-size: 1.1em;
 	}
+}
+
+.rules-wrap {
+	.rules {
+		height: auto;
+		max-height: 80vh;
+	}	
 }
