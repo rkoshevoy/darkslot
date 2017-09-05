@@ -221,6 +221,10 @@ ul.user-authorized-true {
 	font-size: 1.2em;
 	outline: none;
 
+	&-mobile-reg {
+		margin-top: 10px;
+	}
+
 	@media (max-width: 768px) {
 		padding: 10px;
 	}
@@ -394,9 +398,26 @@ ul.user-authorized-true {
 	}
 }
 
-.carousel-inner > .item > a > img,
-.carousel-inner > .item > img {
-	width: 100%;
+.carousel-inner {
+	.carousel-caption {
+		bottom: 0;
+	}
+
+	> .item {
+		height: 60vh;
+		background-color: #000;
+
+		> img {
+			position: absolute;
+			height: 100%;
+			width: auto;
+			max-width: none;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+
+		}
+	}
 }
 
 .container > .button-row {
@@ -417,7 +438,7 @@ ul.user-authorized-true {
 }
 
 #header-search-collapse {
-	padding: 15px;
+  padding: 15px;
 }
 
 @media (max-width: 992px) {
@@ -425,6 +446,19 @@ ul.user-authorized-true {
 		padding: 100px 0 0 0;
 		background-position-x: 50%;
 		text-align: center;
+	}
+
+	.carousel-inner .carousel-caption {
+    bottom: -15px;
+	}
+
+	.registration-bonus {
+		padding: 15px;
+		text-align: center;
+
+		.registration-bonus-content {
+			max-width: none;
+		}
 	}
 
 	.cashback__not-all + button {
@@ -476,15 +510,15 @@ ul.user-authorized-true {
 
 	.modal.in {
 		.modal-dialog {
-			transform: translate(0, 0);
+	    transform: translate(0, 0);
 		}
 
 		.form-control {
 			padding: 10px;
 		}
 		.modal-form__input {
-			height: auto;
-			padding: 10px;
+	    height: auto;
+	    padding: 10px;
 		}
 
 		.modal-form__text-field {
@@ -566,36 +600,4 @@ ul.user-authorized-true {
 	@media (max-width: 992px) {
 		display: none;
 	}
-}
-
-.search-result {
-	position: absolute;
-	min-width: 300px;
-	bottom: 100%;
-
-	ul {
-		margin: 0;
-		background-color: #232323;
-		list-style: none;
-
-		li {
-			padding: 10px;
-			cursor: pointer;
-			transition: .1s;
-
-			&:hover {
-				background-color: $main-color;
-			}
-		}
-	}
-}
-
-.header .search-result {
-	bottom: auto;
-	top: 100%;
-}
-
-.visible {
-	z-index: -1;
-	opacity: -1;
 }

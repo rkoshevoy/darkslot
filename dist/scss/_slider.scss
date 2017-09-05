@@ -308,6 +308,7 @@
 		.tiger-reg-form {
 			background-color: rgba(76, 133, 161, 0.7);
 			padding: 15px;
+			width: 100%;
 		}
 	}
 }
@@ -336,12 +337,12 @@
 			// width: auto;
 			// max-width: none;
 
-			height: 500px;
-			width: auto;
-			max-width: none;
-			transform: translateX(-50%);
-			position: relative;
-			left: 50%;
+			// height: 500px;
+			// width: auto;
+			// max-width: none;
+			// transform: translateX(-50%);
+			// position: relative;
+			// left: 50%;
 		}
 
 	}
@@ -350,13 +351,13 @@
 
 @media (max-width: 1200px) {
 
-	.carousel-control {
-		display: none;
-	}
+	// .carousel-control {
+	// 	display: none;
+	// }
 
-	.carousel-indicators {
-		bottom: 0;
-	}
+	// .carousel-indicators {
+	// 	bottom: 0;
+	// }
 
 	#casino-banner.carousel {
 
@@ -401,17 +402,6 @@
 	.registration-bonus {
 		font-size: 12px;
 	}
-
-	#casino-banner.carousel {
-
-		.carousel-inner > .item.pirate-reg {
-
-			> img {
-				position: relative;
-				right: 28%;
-			}
-		}
-	}
 }
 
 @media (max-width: 768px) {
@@ -432,15 +422,6 @@
 	}
 
 	#casino-banner.carousel {
-		.carousel-inner > .item > img {
-			height: 300px;
-			width: auto;
-			max-width: none;
-			transform: translateX(-50%);
-			position: relative;
-			left: 50%;
-		}
-
 		.carousel-inner > .item.pirate-reg {
 			.slide-bonus__first-line {
 				font-size: 7em;
@@ -452,11 +433,6 @@
 		}
 
 		.carousel-inner > .item.tiger-reg {
-			.registration-bonus {
-				padding: 30px;
-				width: 100%;
-			}
-
 			.registration-bonus__count {
 				font-size: 4em;
 				margin-bottom: 10px;
@@ -475,13 +451,7 @@
 
 		.container {
 			width: 100%;
-
-			.btn-mobile-reg {
-				margin: 15px 0 30px;
-			}
 		}
-
-
 	}
 }
 
@@ -489,6 +459,12 @@
 	.tiger-reg {
 
 		.registration-bonus {
+			font-size: 8px;
+
+			&__header {
+				font-size: 1.4em;
+			}
+
 			&__header,
 			&__underheader {
 				margin: 10px 0;
@@ -498,19 +474,51 @@
 				top: 60px;
 			}
 		}
+	}
 
+	.slide__button-wrapper {
+		bottom: 20px;
+	}
+
+	.carousel-caption .btn {
+		padding: 0 10px;
+		font-size: 12px;
+	}
+
+	#casino-banner.carousel .carousel-inner > .item {
+		height: 30vh;
+	}
+
+	#casino-banner.carousel .carousel-inner > .item.pirate-reg .slide-bonus__first-line {
+		font-size: 4em;
 	}
 }
 
 @media (max-width: 480px) {
 	.slide {
 		.slide__text {
-		  left: 30%;
+			left: 45%;
+	    width: 200px;
+			font-size: 8px;
 		}
 
 		// &__header {
 		// 	font-size: 2em;
 		// }
+	}
+
+	.slide-bonus {
+		&__third-line {
+			display: block;
+			margin: 10px 0;
+		}
+
+		.btn{
+			width: auto;
+	    display: block;
+	    margin: 0 auto;
+			margin-top: 10px;
+		}
 	}
 
 	.tiger-reg {
@@ -530,5 +538,17 @@
 			}
 		}
 
+	}
+}
+
+@media (max-width: 350px) {
+	.slide {
+		.slide__text {
+	    width: 150px;
+
+			.btn {
+				padding: 0 10px;
+			}
+		}
 	}
 }

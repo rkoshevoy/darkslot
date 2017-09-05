@@ -6557,7 +6557,8 @@ button.close {
 
 #casino-banner .tiger-reg .tiger-reg-form {
   background-color: rgba(76, 133, 161, 0.7);
-  padding: 15px; }
+  padding: 15px;
+  width: 100%; }
 
 .registration.tiger-reg .registration-bonus {
   position: relative;
@@ -6569,21 +6570,7 @@ button.close {
   background-color: rgba(76, 133, 161, 0.7);
   padding: 15px; }
 
-@media (max-width: 1400px) {
-  #casino-banner.carousel .carousel-inner > .item > img {
-    height: 500px;
-    width: auto;
-    max-width: none;
-    -webkit-transform: translateX(-50%);
-            transform: translateX(-50%);
-    position: relative;
-    left: 50%; } }
-
 @media (max-width: 1200px) {
-  .carousel-control {
-    display: none; }
-  .carousel-indicators {
-    bottom: 0; }
   #casino-banner.carousel .carousel-inner > .item.pirate-reg > img {
     width: auto;
     max-width: none; }
@@ -6600,10 +6587,7 @@ button.close {
   .slide__text {
     left: 40%; }
   .registration-bonus {
-    font-size: 12px; }
-  #casino-banner.carousel .carousel-inner > .item.pirate-reg > img {
-    position: relative;
-    right: 28%; } }
+    font-size: 12px; } }
 
 @media (max-width: 768px) {
   .slide__text {
@@ -6613,21 +6597,10 @@ button.close {
   .slide__header {
     font-size: 3em;
     margin: 10px 0; }
-  #casino-banner.carousel .carousel-inner > .item > img {
-    height: 300px;
-    width: auto;
-    max-width: none;
-    -webkit-transform: translateX(-50%);
-            transform: translateX(-50%);
-    position: relative;
-    left: 50%; }
   #casino-banner.carousel .carousel-inner > .item.pirate-reg .slide-bonus__first-line {
     font-size: 7em; }
   #casino-banner.carousel .carousel-inner > .item.pirate-reg .slide-bonus__second-line {
     font-size: 1.5em; }
-  #casino-banner.carousel .carousel-inner > .item.tiger-reg .registration-bonus {
-    padding: 30px;
-    width: 100%; }
   #casino-banner.carousel .carousel-inner > .item.tiger-reg .registration-bonus__count {
     font-size: 4em;
     margin-bottom: 10px; }
@@ -6638,19 +6611,40 @@ button.close {
     width: 55%;
     right: -20%; }
   #casino-banner.carousel .container {
-    width: 100%; }
-    #casino-banner.carousel .container .btn-mobile-reg {
-      margin: 15px 0 30px; } }
+    width: 100%; } }
 
 @media (max-width: 560px) {
-  .tiger-reg .registration-bonus__header, .tiger-reg .registration-bonus__underheader {
-    margin: 10px 0; }
-  .tiger-reg .registration-bonus .registration-bonus-pers {
-    top: 60px; } }
+  .tiger-reg .registration-bonus {
+    font-size: 8px; }
+    .tiger-reg .registration-bonus__header {
+      font-size: 1.4em; }
+    .tiger-reg .registration-bonus__header, .tiger-reg .registration-bonus__underheader {
+      margin: 10px 0; }
+    .tiger-reg .registration-bonus .registration-bonus-pers {
+      top: 60px; }
+  .slide__button-wrapper {
+    bottom: 20px; }
+  .carousel-caption .btn {
+    padding: 0 10px;
+    font-size: 12px; }
+  #casino-banner.carousel .carousel-inner > .item {
+    height: 30vh; }
+  #casino-banner.carousel .carousel-inner > .item.pirate-reg .slide-bonus__first-line {
+    font-size: 4em; } }
 
 @media (max-width: 480px) {
   .slide .slide__text {
-    left: 30%; }
+    left: 45%;
+    width: 200px;
+    font-size: 8px; }
+  .slide-bonus__third-line {
+    display: block;
+    margin: 10px 0; }
+  .slide-bonus .btn {
+    width: auto;
+    display: block;
+    margin: 0 auto;
+    margin-top: 10px; }
   .tiger-reg .col-xs-10 {
     width: 100%; }
   .tiger-reg .registration-bonus {
@@ -6659,6 +6653,12 @@ button.close {
       display: none; }
     .tiger-reg .registration-bonus .registration-bonus-content {
       max-width: 100%; } }
+
+@media (max-width: 350px) {
+  .slide .slide__text {
+    width: 150px; }
+    .slide .slide__text .btn {
+      padding: 0 10px; } }
 
 .tabs {
   position: relative; }
@@ -8227,6 +8227,9 @@ button.close {
     .prize__button:hover {
       background-color: #de3137; }
 
+[id$="form-reg"] {
+  width: 100%; }
+
 .form-reg {
   font-family: SFUIRegular; }
   .form-reg__socials {
@@ -8236,6 +8239,7 @@ button.close {
     display: inline-block;
     position: relative;
     padding-left: 20px;
+    text-align: left;
     font-size: 13px;
     line-height: 20px;
     width: 100%;
@@ -8282,6 +8286,11 @@ button.close {
       border-right: 1px solid #f38084;
       -webkit-transform: rotate(135deg);
               transform: rotate(135deg); }
+  @media (max-height: 800px) {
+    .form-reg .form-group {
+      margin-bottom: 10px; }
+    .form-reg .form-control {
+      padding: 10px; } }
 
 .modal-content {
   background: transparent;
@@ -10965,6 +10974,8 @@ ul.user-authorized-true {
   font-family: SFUIBold;
   font-size: 1.2em;
   outline: none; }
+  .btn-mobile-reg {
+    margin-top: 10px; }
   @media (max-width: 768px) {
     .btn {
       padding: 10px; } }
@@ -11091,9 +11102,21 @@ ul.user-authorized-true {
         font-size: 12px;
         padding: 10px; } }
 
-.carousel-inner > .item > a > img,
-.carousel-inner > .item > img {
-  width: 100%; }
+.carousel-inner .carousel-caption {
+  bottom: 0; }
+
+.carousel-inner > .item {
+  height: 60vh;
+  background-color: #000; }
+  .carousel-inner > .item > img {
+    position: absolute;
+    height: 100%;
+    width: auto;
+    max-width: none;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%); }
 
 .container > .button-row {
   margin-bottom: 20px; }
@@ -11119,6 +11142,13 @@ ul.user-authorized-true {
     padding: 100px 0 0 0;
     background-position-x: 50%;
     text-align: center; }
+  .carousel-inner .carousel-caption {
+    bottom: -15px; }
+  .registration-bonus {
+    padding: 15px;
+    text-align: center; }
+    .registration-bonus .registration-bonus-content {
+      max-width: none; }
   .cashback__not-all + button {
     padding: 20px; }
   .registration.tiger-reg .registration-bonus .registration-bonus-pers {
@@ -11194,27 +11224,3 @@ ul.user-authorized-true {
 @media (max-width: 992px) {
   .registration-bonus-pers {
     display: none; } }
-
-.search-result {
-  position: absolute;
-  min-width: 300px;
-  bottom: 100%; }
-  .search-result ul {
-    margin: 0;
-    background-color: #232323;
-    list-style: none; }
-    .search-result ul li {
-      padding: 10px;
-      cursor: pointer;
-      -webkit-transition: .1s;
-      transition: .1s; }
-      .search-result ul li:hover {
-        background-color: #ed383f; }
-
-.header .search-result {
-  bottom: auto;
-  top: 100%; }
-
-.visible {
-  z-index: -1;
-  opacity: -1; }
