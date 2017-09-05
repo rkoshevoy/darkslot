@@ -138,6 +138,8 @@ form {
 	}
 }
 
+
+
 .main-wrapper {
 	margin-top: 79px;
 	padding-bottom: 50px;
@@ -265,6 +267,7 @@ ul.user-authorized-true {
 	font-family: SFUIBold;
 	font-size: 1.2em;
 	outline: none;
+	text-align: center;
 
 	&-mobile-reg {
 		margin-top: 10px;
@@ -572,6 +575,10 @@ ul.user-authorized-true {
 		img {
 			max-width: 100%;
 		}
+	}
+
+	.slide .btn {
+		padding: 0 10px;
 	}
 }
 

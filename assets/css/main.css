@@ -11023,7 +11023,8 @@ ul.user-authorized-true {
   padding: 10px 15px;
   font-family: SFUIBold;
   font-size: 1.2em;
-  outline: none; }
+  outline: none;
+  text-align: center; }
   .btn-mobile-reg {
     margin-top: 10px; }
   @media (max-width: 768px) {
@@ -11260,7 +11261,9 @@ ul.user-authorized-true {
   .ds-logo-wrap-mobile {
     max-width: 30px; }
     .ds-logo-wrap-mobile img {
-      max-width: 100%; } }
+      max-width: 100%; }
+  .slide .btn {
+    padding: 0 10px; } }
 
 @media (max-width: 600px) {
   .games-list [class^="col-"],
