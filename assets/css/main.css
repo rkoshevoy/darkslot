@@ -5861,18 +5861,6 @@ button.close {
     display: none; }
   .header .ds-logo-mobile {
     display: none; }
-  .header .user-authorized .user-authorized-true {
-    display: block; }
-  .header .user-authorized .user-authorized-false {
-    display: none; }
-  .header .user-unAuthorized .user-authorized-true {
-    display: none; }
-  .header .user-unAuthorized .user-authorized-false {
-    display: block; }
-  .header .user-unAuthorized .user-mobile .user-authorized-true {
-    display: none; }
-  .header .user-unAuthorized .user-mobile .user-authorized-false {
-    display: block; }
   .header #header-search-collapse {
     padding: 0; }
   @media (max-width: 1200px) {
@@ -5881,57 +5869,13 @@ button.close {
       -ms-flex-preferred-size: 50px;
           flex-basis: 50px; }
     .header .user-mobile {
-      display: block; }
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex; }
     .header .navbar-header {
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex; }
-    .header .user-mobile {
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-      width: calc(100% - 100px);
-      -webkit-box-align: center;
-          -ms-flex-align: center;
-              align-items: center;
-      -webkit-box-pack: justify;
-          -ms-flex-pack: justify;
-              justify-content: space-between; }
-      .header .user-mobile .user-authorized-true {
-        list-style: none;
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        -webkit-box-align: center;
-            -ms-flex-align: center;
-                align-items: center;
-        width: 100%;
-        -webkit-box-pack: end;
-            -ms-flex-pack: end;
-                justify-content: flex-end; }
-        .header .user-mobile .user-authorized-true > li {
-          margin-left: 15px;
-          display: -webkit-box;
-          display: -ms-flexbox;
-          display: flex;
-          -webkit-box-align: center;
-              -ms-flex-align: center;
-                  align-items: center; }
-          .header .user-mobile .user-authorized-true > li > a {
-            height: 100%;
-            color: #fff;
-            display: -webkit-box;
-            display: -ms-flexbox;
-            display: flex;
-            -webkit-box-align: center;
-                -ms-flex-align: center;
-                    align-items: center; }
-            .header .user-mobile .user-authorized-true > li > a:hover, .header .user-mobile .user-authorized-true > li > a:active, .header .user-mobile .user-authorized-true > li > a:focus {
-              text-decoration: none;
-              color: #fff; }
-          .header .user-mobile .user-authorized-true > li .dropdown-menu {
-            background: #161616;
-            border-radius: 0; }
     .header .navbar-brand {
       display: none; }
     .header #header-navbar-collapse .header__user {
@@ -9270,6 +9214,7 @@ button.close {
     padding-bottom: 40px;
     padding-left: 140px;
     background-image: url("../../img/coins-in-bag.png");
+    background-size: contain;
     background-position: left center; }
     .cashback__text-wrapper::before {
       content: '';
@@ -10875,6 +10820,45 @@ form * {
   .ds-logo-wrap-mobile img {
     max-width: 100%; }
 
+.user-unAuthorized .user-authorized-true {
+  display: none !important; }
+
+.user-unAuthorized .user-authorized-false {
+  display: block !important; }
+
+.user-unAuthorized .user-mobile .user-authorized-true {
+  display: none !important; }
+
+.user-unAuthorized .user-mobile .user-authorized-false {
+  display: block !important; }
+
+.user-authorized .user-authorized-true {
+  display: block !important; }
+
+.user-authorized .user-authorized-false {
+  display: none !important; }
+
+.deposit-block {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+  .deposit-block .btn {
+    position: relative;
+    width: auto;
+    display: block;
+    margin: 20px auto; }
+
 .main-wrapper {
   margin-top: 79px;
   padding-bottom: 50px;
@@ -11137,6 +11121,54 @@ ul.user-authorized-true {
 #header-search-collapse {
   padding: 15px; }
 
+@media (max-width: 1200px) {
+  .user-mobile {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: calc(100% - 100px);
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
+    .user-mobile .user-authorized-true {
+      list-style: none;
+      display: -webkit-box !important;
+      display: -ms-flexbox !important;
+      display: flex !important;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      width: 100%;
+      -webkit-box-pack: end;
+          -ms-flex-pack: end;
+              justify-content: flex-end; }
+      .user-mobile .user-authorized-true > li {
+        margin-left: 15px;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center; }
+        .user-mobile .user-authorized-true > li > a {
+          height: 100%;
+          color: #fff;
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-align: center;
+              -ms-flex-align: center;
+                  align-items: center; }
+          .user-mobile .user-authorized-true > li > a:hover, .user-mobile .user-authorized-true > li > a:active, .user-mobile .user-authorized-true > li > a:focus {
+            text-decoration: none;
+            color: #fff; }
+        .user-mobile .user-authorized-true > li .dropdown-menu {
+          background: #161616;
+          border-radius: 0; } }
+
 @media (max-width: 992px) {
   .deposit {
     padding: 100px 0 0 0;
@@ -11189,6 +11221,13 @@ ul.user-authorized-true {
   .main-wrapper {
     margin-top: 60px; } }
 
+@media (max-width: 480px) {
+  .cashback__text-wrapper {
+    padding-top: 0;
+    padding-bottom: 0; }
+    .cashback__text-wrapper:before, .cashback__text-wrapper:after {
+      display: none; } }
+
 @media (max-width: 400px) {
   .games-list [class^="col-"],
   .last-winners [class^="col-"],
@@ -11224,3 +11263,38 @@ ul.user-authorized-true {
 @media (max-width: 992px) {
   .registration-bonus-pers {
     display: none; } }
+
+.search-result {
+  position: absolute;
+  min-width: 300px;
+  bottom: 100%;
+  border: 1px solid #000; }
+  .search-result ul {
+    margin: 0;
+    background-color: #232323;
+    list-style: none; }
+    .search-result ul li {
+      margin-bottom: 2px;
+      padding-right: 10px;
+      cursor: pointer;
+      -webkit-transition: .1s;
+      transition: .1s;
+      line-height: 39px; }
+      .search-result ul li:hover {
+        background-color: #ed383f; }
+      .search-result ul li .game-image {
+        display: inline-block;
+        margin-right: 10px;
+        width: 60px;
+        height: 40px;
+        background-color: #fff;
+        vertical-align: middle; }
+
+.header .search-result {
+  bottom: auto;
+  top: 100%; }
+
+.visible {
+  display: none;
+  z-index: -1;
+  opacity: -1; }

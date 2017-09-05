@@ -15,7 +15,7 @@
     <div class="carousel-caption">
       <div class="container">
         <div class="row">
-          <div class="col-xs-12 col-sm-12 col-md-9">
+          <div class="col-xs-12 col-sm-12 col-md-9 user-authorized-false">
             <div class="slide-wrap">
               <div class="row">
                 <div class="col-xs-12 col-sm-9 col-md-5">
@@ -36,10 +36,20 @@
               			 	$('#ds-slide1-form-reg').load('./_form_registration.html');
               			});
               		</script>
-              		<div id="ds-slide1-form-reg"></div>
+              		<div id="ds-slide1-form-reg user-authorized-false"></div>
               		<!-- End Form registraion -->
 
                 </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-xs-12 col-sm-9 col-md-6 user-authorized-true">
+            <div class="deposit-block">
+              <div class="cashback__text-wrapper">
+                <img src="img/vip-bonus-header.png" alt="" class="cashback__header">
+                <span class="cashback__text">Получите 100% бонусом при депозите 1000$</span>
+                <button class="btn btn-danger btn-full-width" type="button">Депозит</button>
               </div>
             </div>
           </div>
@@ -78,8 +88,19 @@
     <div class="carousel-caption">
       <div class="container">
         <div class="row">
-          <div class="col-xs-12 col-sm-12 col-md-6 registration-bonusWrap">
+          <div class="col-xs-12 col-sm-12 col-md-12 registration-bonusWrap user-authorized-true">
 
+            <div class="slide-wrap deposit-block">
+              <div class="cashback__text-wrapper">
+                <img src="img/vip-bonus-header.png" alt="" class="cashback__header">
+                <span class="cashback__text">Получите 100% бонусом при депозите 1000$</span>
+                <button class="btn btn-danger btn-full-width" type="button">Депозит</button>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="col-xs-12 col-sm-12 col-md-6 registration-bonusWrap user-authorized-false">
             <div class="registration-bonus">
               <div class="registration-bonus-content">
                 <h3 class="registration-bonus__header">Зарегистрируйся и получи</h3>
@@ -93,10 +114,9 @@
                 <img src="img/tiger.png" alt="toger" class="registration-bonus-pers-img">
               </div>
             </div>
-
           </div>
 
-          <div class="col-sm-5 col-md-4 col-md-offset-2 hidden-xs hidden-sm">
+          <div class="col-sm-5 col-md-5 col-md-offset-1 hidden-xs hidden-sm user-authorized-false">
             <div class="tiger-reg-form">
 
               <!-- Form registraion -->

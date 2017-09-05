@@ -63,36 +63,6 @@
 		display: none;
 	}
 
-	.user-authorized {
-		.user-authorized-true {
-			display: block;
-		}
-
-		.user-authorized-false {
-			display: none;
-		}
-	}
-
-	.user-unAuthorized {
-		.user-authorized-true {
-			display: none;
-		}
-
-		.user-authorized-false {
-			display: block;
-		}
-
-		.user-mobile{
-			.user-authorized-true {
-				display: none;
-			}
-
-			.user-authorized-false {
-				display: block;
-			}
-		}
-	}
-
 	#header-search-collapse {
 	  padding: 0;
 	  // padding-top: 15px;
@@ -105,51 +75,11 @@
 		}
 
 		.user-mobile {
-			display: block;
+			display: flex;
 		}
 
 		.navbar-header {
 			display: flex;
-		}
-
-		.user-mobile {
-			display: flex;
-			width: calc(100% - 100px);
-			align-items: center;
-			justify-content: space-between;
-
-			.user-authorized-true {
-				list-style: none;
-		    display: flex;
-		    align-items: center;
-				width: 100%;
-		    justify-content: flex-end;
-
-				> li {
-					margin-left: 15px;
-					display: flex;
-					align-items: center;
-
-					> a {
-						height: 100%;
-						color: $text-color;
-						display: flex;
-				    align-items: center;
-
-						&:hover,
-						&:active,
-						&:focus {
-							text-decoration: none;
-							color: $text-color;
-						}
-					}
-
-					.dropdown-menu {
-						background: #161616;
-						border-radius: 0;
-					}
-				}
-			}
 		}
 
 		.navbar-brand {
