@@ -11194,3 +11194,27 @@ ul.user-authorized-true {
 @media (max-width: 992px) {
   .registration-bonus-pers {
     display: none; } }
+
+.search-result {
+  position: absolute;
+  min-width: 300px;
+  bottom: 100%; }
+  .search-result ul {
+    margin: 0;
+    background-color: #232323;
+    list-style: none; }
+    .search-result ul li {
+      padding: 10px;
+      cursor: pointer;
+      -webkit-transition: .1s;
+      transition: .1s; }
+      .search-result ul li:hover {
+        background-color: #ed383f; }
+
+.header .search-result {
+  bottom: auto;
+  top: 100%; }
+
+.visible {
+  z-index: -1;
+  opacity: -1; }

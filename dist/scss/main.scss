@@ -417,7 +417,7 @@ ul.user-authorized-true {
 }
 
 #header-search-collapse {
-  padding: 15px;
+	padding: 15px;
 }
 
 @media (max-width: 992px) {
@@ -476,15 +476,15 @@ ul.user-authorized-true {
 
 	.modal.in {
 		.modal-dialog {
-	    transform: translate(0, 0);
+			transform: translate(0, 0);
 		}
 
 		.form-control {
 			padding: 10px;
 		}
 		.modal-form__input {
-	    height: auto;
-	    padding: 10px;
+			height: auto;
+			padding: 10px;
 		}
 
 		.modal-form__text-field {
@@ -566,4 +566,36 @@ ul.user-authorized-true {
 	@media (max-width: 992px) {
 		display: none;
 	}
+}
+
+.search-result {
+	position: absolute;
+	min-width: 300px;
+	bottom: 100%;
+
+	ul {
+		margin: 0;
+		background-color: #232323;
+		list-style: none;
+
+		li {
+			padding: 10px;
+			cursor: pointer;
+			transition: .1s;
+
+			&:hover {
+				background-color: $main-color;
+			}
+		}
+	}
+}
+
+.header .search-result {
+	bottom: auto;
+	top: 100%;
+}
+
+.visible {
+	z-index: -1;
+	opacity: -1;
 }
