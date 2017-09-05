@@ -10827,6 +10827,43 @@ button.close {
       .ability-table__cell span {
         display: none; } }
 
+.game-wrap {
+  width: 80vw;
+  margin: 0 auto;
+  height: calc(100vh - 130px); }
+  @media (max-width: 768px) {
+    .game-wrap {
+      width: 100%; } }
+  .game-wrap .game {
+    position: relative;
+    width: calc(100% - 80px);
+    margin: 0 auto;
+    height: 100%;
+    border: 5px solid rgba(255, 255, 255, 0.5);
+    background-color: #000; }
+  .game-wrap .close {
+    position: absolute;
+    top: 15px;
+    right: -45px;
+    width: 30px;
+    height: 30px; }
+    .game-wrap .close::before {
+      content: '';
+      position: absolute;
+      width: 30px;
+      height: 2px;
+      -webkit-transform: rotate(45deg);
+              transform: rotate(45deg);
+      background-color: #fff; }
+    .game-wrap .close::after {
+      content: '';
+      position: absolute;
+      width: 30px;
+      height: 2px;
+      -webkit-transform: rotate(-45deg);
+              transform: rotate(-45deg);
+      background-color: #fff; }
+
 html {
   overflow-x: hidden; }
 
@@ -10870,9 +10907,6 @@ form * {
   margin-top: 79px;
   padding-bottom: 50px;
   background-color: #232323; }
-  @media (min-width: 788px) {
-    .main-wrapper {
-      margin-top: 77px; } }
 
 .main-wrapper--triangles {
   background-image: url("../../img/main-bg.jpg");
@@ -11155,7 +11189,9 @@ ul.user-authorized-true {
     padding: 10px; }
   .modal.in .social-enter {
     background-color: rgba(0, 0, 0, 0.5);
-    border: 0; }
+    border: 0; } }
+
+@media (max-width: 500px) {
   .main-wrapper {
     margin-top: 60px; } }
 
@@ -11198,23 +11234,34 @@ ul.user-authorized-true {
 .search-result {
   position: absolute;
   min-width: 300px;
-  bottom: 100%; }
+  bottom: 100%;
+  border: 1px solid #000; }
   .search-result ul {
     margin: 0;
     background-color: #232323;
     list-style: none; }
     .search-result ul li {
-      padding: 10px;
+      margin-bottom: 2px;
+      padding-right: 10px;
       cursor: pointer;
       -webkit-transition: .1s;
-      transition: .1s; }
+      transition: .1s;
+      line-height: 39px; }
       .search-result ul li:hover {
         background-color: #ed383f; }
+      .search-result ul li .game-image {
+        display: inline-block;
+        margin-right: 10px;
+        width: 60px;
+        height: 40px;
+        background-color: #fff;
+        vertical-align: middle; }
 
 .header .search-result {
   bottom: auto;
   top: 100%; }
 
 .visible {
+  display: none;
   z-index: -1;
   opacity: -1; }

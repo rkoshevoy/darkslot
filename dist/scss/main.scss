@@ -38,6 +38,7 @@
 @import "_tournament.scss";
 @import "_levels.scss";
 @import "_levels-ability.scss";
+@import "_game.scss";
 
 html {
 	overflow-x: hidden;
@@ -97,10 +98,6 @@ form {
 	margin-top: 79px;
 	padding-bottom: 50px;
 	background-color: #232323;
-
-	@media (min-width: 788px) {
-		margin-top: 77px;
-	}
 }
 
 .main-wrapper--triangles {
@@ -496,6 +493,9 @@ ul.user-authorized-true {
 			border: 0;
 		}
 	}
+}
+
+@media (max-width: 500px) {
 
 	.main-wrapper {
 		margin-top: 60px;
@@ -572,6 +572,7 @@ ul.user-authorized-true {
 	position: absolute;
 	min-width: 300px;
 	bottom: 100%;
+	border: 1px solid #000;
 
 	ul {
 		margin: 0;
@@ -579,12 +580,23 @@ ul.user-authorized-true {
 		list-style: none;
 
 		li {
-			padding: 10px;
+			margin-bottom: 2px;
+			padding-right: 10px;
 			cursor: pointer;
 			transition: .1s;
+			line-height: 39px;
 
 			&:hover {
 				background-color: $main-color;
+			}
+
+			.game-image {
+				display: inline-block;
+				margin-right: 10px;
+				width: 60px;
+				height: 40px;
+				background-color: #fff;
+				vertical-align: middle;
 			}
 		}
 	}
@@ -596,6 +608,7 @@ ul.user-authorized-true {
 }
 
 .visible {
+	display: none;
 	z-index: -1;
 	opacity: -1;
 }
