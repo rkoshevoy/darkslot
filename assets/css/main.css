@@ -10781,6 +10781,66 @@ button.close {
       .ability-table__cell span {
         display: none; } }
 
+.game-wrap {
+  width: 80vw;
+  margin: 0 auto;
+  height: calc(100vh - 130px); }
+  @media (max-width: 768px) {
+    .game-wrap {
+      width: 100%; } }
+  .game-wrap .game {
+    position: relative;
+    width: calc(100% - 80px);
+    margin: 0 auto;
+    height: 100%;
+    border: 5px solid rgba(255, 255, 255, 0.5);
+    background-color: #000; }
+  .game-wrap .close {
+    position: absolute;
+    top: 15px;
+    right: -45px;
+    width: 30px;
+    height: 30px; }
+    .game-wrap .close::before {
+      content: '';
+      position: absolute;
+      width: 30px;
+      height: 2px;
+      -webkit-transform: rotate(45deg);
+              transform: rotate(45deg);
+      background-color: #fff; }
+    .game-wrap .close::after {
+      content: '';
+      position: absolute;
+      width: 30px;
+      height: 2px;
+      -webkit-transform: rotate(-45deg);
+              transform: rotate(-45deg);
+      background-color: #fff; }
+
+.payment-table {
+  width: 100%;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.1); }
+  .payment-table td {
+    width: 16.66667%;
+    padding: 10px;
+    border-bottom: 1px solid #000; }
+    @media (max-width: 768px) {
+      .payment-table td td {
+        padding: 5px;
+        width: auto; }
+      .payment-table td:nth-child(2), .payment-table td:nth-child(4), .payment-table td:last-child {
+        display: none; } }
+
+.payment-table-head td {
+  padding: 15px 0;
+  background-color: #005fdc;
+  border-bottom: none; }
+  @media (max-width: 768px) {
+    .payment-table-head td {
+      padding: 5px; } }
+
 html {
   overflow-x: hidden; }
 
