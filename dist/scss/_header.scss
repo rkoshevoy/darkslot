@@ -410,6 +410,38 @@
 		}
 	}
 
+	.search-result {
+		position: absolute;
+		top: 100%;
+		min-width: 300px;
+		max-width: 100%;
+
+		ul {
+			margin: 0;
+			background-color: #232323;
+			list-style: none;
+
+			li {
+				padding: 10px;
+				cursor: pointer;
+				transition: .1s;
+
+				&:hover {
+					background-color: $main-color;
+				}
+			}
+		}
+	}
+
+	.visible {
+		z-index: 1000;
+		opacity: 1;
+	}
+
+	.visible {
+		z-index: -1;
+		opacity: -1;
+	}
 }
 
 .main-nav {

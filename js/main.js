@@ -41,3 +41,19 @@ $(function() {
   $("#rules-wrap .rules").niceScroll(niceScrollSettings);
 
 });
+
+$(document).on('focusin', '.search__field', function() {
+  $('.search .search-result').removeClass('visible')
+});
+
+$(document).on('focusout', '.search__field', function() {
+  $('.search .search-result').addClass('visible')
+});
+
+$(document).on('focusin', '.search-query', function() {
+  $('.header .search-result').removeClass('visible')
+});
+
+$(document).on('focusout', '.search-query', function() {
+  $('.header .search-result').addClass('visible')
+});

@@ -6076,6 +6076,28 @@ button.close {
       width: 24px; }
       .header .ds-logo-wrap-mobile img {
         max-width: 100%; } }
+  .header .search-result {
+    position: absolute;
+    top: 100%;
+    min-width: 300px;
+    max-width: 100%; }
+    .header .search-result ul {
+      margin: 0;
+      background-color: #232323;
+      list-style: none; }
+      .header .search-result ul li {
+        padding: 10px;
+        cursor: pointer;
+        -webkit-transition: .1s;
+        transition: .1s; }
+        .header .search-result ul li:hover {
+          background-color: #ed383f; }
+  .header .visible {
+    z-index: 1000;
+    opacity: 1; }
+  .header .visible {
+    z-index: -1;
+    opacity: -1; }
 
 .main-nav {
   position: relative;
@@ -7635,6 +7657,24 @@ button.close {
       background-color: #fff; }
     .search__close:hover::after {
       background-color: #fff; }
+  .search .search-result {
+    position: absolute;
+    min-width: 300px;
+    bottom: 100%; }
+    .search .search-result ul {
+      margin: 0;
+      background-color: #232323;
+      list-style: none; }
+      .search .search-result ul li {
+        padding: 10px;
+        cursor: pointer;
+        -webkit-transition: .1s;
+        transition: .1s; }
+        .search .search-result ul li:hover {
+          background-color: #ed383f; }
+  .search .visible {
+    z-index: -1;
+    opacity: -1; }
 
 .top-games {
   position: absolute;
@@ -10843,7 +10883,7 @@ form * {
     max-width: 100%; }
 
 .main-wrapper {
-  margin-top: 50px;
+  margin-top: 79px;
   padding-bottom: 50px;
   background-color: #232323; }
   @media (min-width: 788px) {
