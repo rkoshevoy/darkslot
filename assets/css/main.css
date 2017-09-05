@@ -10864,6 +10864,29 @@ button.close {
               transform: rotate(-45deg);
       background-color: #fff; }
 
+.payment-table {
+  width: 100%;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.1); }
+  .payment-table td {
+    width: 16.66667%;
+    padding: 10px;
+    border-bottom: 1px solid #000; }
+    @media (max-width: 768px) {
+      .payment-table td td {
+        padding: 5px;
+        width: auto; }
+      .payment-table td:nth-child(2), .payment-table td:nth-child(4), .payment-table td:last-child {
+        display: none; } }
+
+.payment-table-head td {
+  padding: 15px 0;
+  background-color: #005fdc;
+  border-bottom: none; }
+  @media (max-width: 768px) {
+    .payment-table-head td {
+      padding: 5px; } }
+
 html {
   overflow-x: hidden; }
 

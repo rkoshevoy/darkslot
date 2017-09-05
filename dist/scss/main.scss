@@ -39,6 +39,7 @@
 @import "_levels.scss";
 @import "_levels-ability.scss";
 @import "_game.scss";
+@import "_payments.scss";
 
 html {
 	overflow-x: hidden;
@@ -91,8 +92,6 @@ form {
 		max-width: 100%;
 	}
 }
-
-
 
 .main-wrapper {
 	margin-top: 79px;

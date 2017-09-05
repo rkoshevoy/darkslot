@@ -1,0 +1,38 @@
+.payment-table {
+	width: 100%;
+	text-align: center;
+	background-color: rgba(255, 255, 255, 0.1);
+
+	td {
+		width: 16.66667%;
+		padding: 10px;
+		border-bottom: 1px solid #000;
+
+		@media (max-width: 768px) {
+
+			td {
+				padding: 5px;
+				width: auto;
+			}
+
+			&:nth-child(2),
+			&:nth-child(4),
+			&:last-child {
+				display: none;
+			}
+		}
+	}
+}
+
+.payment-table-head {
+
+	td {
+		padding: 15px 0;
+		background-color: $secondary-color;
+		border-bottom: none;
+
+		@media (max-width: 768px) {
+			padding: 5px;
+		}
+	}
+}
