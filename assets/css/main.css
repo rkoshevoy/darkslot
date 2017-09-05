@@ -6308,6 +6308,51 @@ button.close {
     .main-nav__item--arrow:hover span::after {
       border-color: #fff; }
 
+.socials {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  margin-bottom: 15px;
+  padding: 12px;
+  border: 1px solid #5d5d5d; }
+  @media (max-width: 768px) {
+    .socials {
+      margin-bottom: 15px; } }
+  .socials__text {
+    display: block;
+    font-size: 14px;
+    color: #d9d9d9;
+    text-align: left; }
+    @media (max-width: 768px) {
+      .socials__text {
+        font-size: 12px; } }
+  .socials__btns {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    width: 94px;
+    height: 26px; }
+  .socials__btn {
+    width: 26px;
+    height: 26px;
+    background-size: 100%; }
+    .socials__btn_fb {
+      background-image: url("../../img/social-icons/facebook.png"); }
+    .socials__btn_vk {
+      background-image: url("../../img/social-icons/vk.png"); }
+    .socials__btn_tw {
+      background-image: url("../../img/social-icons/twitter.png"); }
+
 .slider {
   background-color: #232323; }
 
@@ -8182,6 +8227,62 @@ button.close {
     .prize__button:hover {
       background-color: #de3137; }
 
+.form-reg {
+  font-family: SFUIRegular; }
+  .form-reg__socials {
+    background-color: rgba(60, 60, 60, 0.5);
+    border: none; }
+  .form-reg__label_checkbox {
+    display: inline-block;
+    position: relative;
+    padding-left: 20px;
+    font-size: 13px;
+    line-height: 20px;
+    width: 100%;
+    cursor: pointer; }
+    @media (max-width: 768px) {
+      .form-reg__label_checkbox {
+        margin-bottom: 0;
+        line-height: 16px; } }
+    .form-reg__label_checkbox span {
+      margin-left: 5px; }
+  .form-reg__field {
+    width: 100%;
+    margin-bottom: 15px;
+    border: none;
+    padding: 12px 13px;
+    color: #000; }
+    .form-reg__field::-webkit-input-placeholder {
+      color: #999999; }
+    .form-reg__field:-ms-input-placeholder {
+      color: #999999; }
+    .form-reg__field::placeholder {
+      color: #999999; }
+    .form-reg__field_checkbox {
+      position: absolute;
+      left: 0;
+      opacity: 0;
+      cursor: pointer; }
+    .form-reg__field_checkbox:not(checked) + label::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      width: 18px;
+      height: 18px;
+      border: 1px solid #e3e3e3;
+      background-color: #fff; }
+    .form-reg__field_checkbox:checked + label::after {
+      content: '';
+      position: absolute;
+      top: 5px;
+      left: 3px;
+      width: 13px;
+      height: 5px;
+      border-top: 1px solid #f38084;
+      border-right: 1px solid #f38084;
+      -webkit-transform: rotate(135deg);
+              transform: rotate(135deg); }
+
 .modal-content {
   background: transparent;
   -webkit-box-shadow: none;
@@ -8296,6 +8397,22 @@ button.close {
   padding: 0;
   border: none;
   background-color: #1f2021; }
+
+.modal .form-reg {
+  max-width: 560px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+  .modal .form-reg .form-group:not(.form-group_checkbox) {
+    -ms-flex-preferred-size: 49%;
+        flex-basis: 49%; }
+  .modal .form-reg__field {
+    margin: 0; }
 
 .modal .close {
   font-size: 40px;
@@ -8569,98 +8686,6 @@ button.close {
     cursor: pointer;
     transitin: 0.1s;
     text-decoration: underline; }
-  .modal-form .jq-selectbox,
-  .modal-form .jq-select-multiple {
-    position: relative;
-    display: inline-block; }
-  .modal-form .jq-selectbox select,
-  .modal-form .jq-select-multiple select {
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    margin: 0;
-    padding: 0;
-    opacity: 0; }
-  .modal-form .jq-selectbox li,
-  .modal-form .jq-select-multiple li {
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-    white-space: nowrap; }
-  .modal-form .jq-selectbox {
-    z-index: 10; }
-  .modal-form .jq-selectbox__select {
-    position: relative; }
-  .modal-form .jq-selectbox__select-text {
-    overflow: hidden;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-    white-space: nowrap;
-    text-overflow: ellipsis; }
-  .modal-form .jq-selectbox__dropdown {
-    position: absolute; }
-  .modal-form .jq-selectbox__dropdown ul {
-    position: relative;
-    overflow: auto;
-    overflow-x: hidden;
-    list-style: none;
-    -webkit-overflow-scrolling: touch; }
-  .modal-form .jq-selectbox {
-    cursor: pointer; }
-  .modal-form .jq-selectbox__select {
-    position: relative;
-    width: 100%;
-    padding: 15px;
-    background-color: #fff;
-    -webkit-transition: 0.1s;
-    transition: 0.1s; }
-  .modal-form .jq-selectbox__select::after {
-    content: '';
-    position: absolute;
-    right: 12px;
-    top: 17px;
-    width: 7px;
-    height: 7px;
-    border-top: 1px solid #b7b7b7;
-    border-right: 1px solid #b7b7b7;
-    -webkit-transform: rotate(135deg);
-            transform: rotate(135deg); }
-  .modal-form .jq-selectbox__select-text {
-    display: block;
-    width: 100%; }
-  .modal-form .jq-selectbox__dropdown {
-    -webkit-box-sizing: border-box;
-            box-sizing: border-box;
-    width: 100%;
-    top: 47px;
-    padding-left: 0;
-    background: #FFF; }
-  .modal-form .jq-selectbox ul {
-    margin: 0;
-    padding: 0; }
-  .modal-form .jq-selectbox li {
-    min-height: 18px;
-    padding: 5px 12px;
-    color: #231F20;
-    -webkit-transition: 0.1s;
-    transition: 0.1s; }
-  .modal-form .jq-selectbox li.selected {
-    background-color: #e8e8e8;
-    color: #000; }
-  .modal-form .jq-selectbox li.disabled {
-    color: #bababa; }
-  .modal-form .jq-selectbox li.disabled:hover {
-    color: #d5d5d5; }
-  .modal-form .jq-selectbox li:hover {
-    background-color: #e8e8e8;
-    color: #000; }
-  .modal-form .jq-selectbox li.option {
-    padding-left: 25px; }
 
 .modal-form--registration {
   max-width: 560px; }
@@ -8976,8 +9001,8 @@ button.close {
   width: 100%;
   margin-bottom: 18px;
   border: none;
-  padding: 12px 13px;
   font-family: SFUIRegular;
+  padding: 12px 13px;
   color: #000; }
   .registration-form-mini__email::-webkit-input-placeholder, .registration-form-mini__nickname::-webkit-input-placeholder, .registration-form-mini__password::-webkit-input-placeholder, .registration-form-mini__password-confirm::-webkit-input-placeholder {
     font-family: SFUIRegular;
@@ -9070,8 +9095,7 @@ button.close {
   background-size: cover;
   background-position: bottom;
   position: relative;
-  padding-top: 50px;
-  padding-bottom: 40px; }
+  padding: 40px 0; }
   .registration__wrapper {
     position: relative;
     display: -webkit-box;
@@ -10843,7 +10867,7 @@ form * {
     max-width: 100%; }
 
 .main-wrapper {
-  margin-top: 50px;
+  margin-top: 79px;
   padding-bottom: 50px;
   background-color: #232323; }
   @media (min-width: 788px) {

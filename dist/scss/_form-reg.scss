@@ -1,0 +1,71 @@
+.form-reg {
+  font-family: SFUIRegular;
+
+  &__socials {
+  	background-color: rgba(60, 60, 60, 0.5);
+  	border: none;
+  }
+
+  &__label {
+
+    &_checkbox {
+      display: inline-block;
+      position: relative;
+      padding-left: 20px;
+      font-size: 13px;
+      line-height: 20px;
+      width: 100%;
+      cursor: pointer;
+
+      @media (max-width: 768px) {
+        margin-bottom: 0;
+        line-height: 16px;
+      }
+
+      span {
+        margin-left: 5px;
+      }
+    }
+  }
+
+  &__field {
+		width: 100%;
+		margin-bottom: 15px;
+		border: none;
+		padding: 12px 13px;
+		color: #000;
+
+		&::placeholder {
+			color: #999999;
+		}
+
+    &_checkbox {
+  		position: absolute;
+  		left: 0;
+  		opacity: 0;
+  		cursor: pointer;
+  	}
+
+  	&_checkbox:not(checked) + label::before {
+  		content: '';
+  		position: absolute;
+  		left: 0;
+  		width: 18px;
+  		height: 18px;
+  		border: 1px solid #e3e3e3;
+  		background-color: #fff;
+  	}
+
+  	&_checkbox:checked + label::after {
+  		content: '';
+  		position: absolute;
+  		top: 5px;
+  		left: 3px;
+  		width: 13px;
+  		height: 5px;
+  		border-top: 1px solid #f38084;
+  		border-right: 1px solid #f38084;
+  		transform: rotate(135deg);
+  	}
+  }
+}

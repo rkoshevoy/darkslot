@@ -16,56 +16,17 @@
         </div>
 
         <div class="modal-body">
-          <form action="#" class="modal-form modal-form--registration">
-            <div class="social-enter social-enter--reg">
-              <span class="social-enter__text">Зарегестрироваться с помощью:</span>
 
-              <div class="social-enter__socials">
-                <button class="social-enter__soc social-enter__soc--fb"></button>
-                <button class="social-enter__soc social-enter__soc--vk"></button>
-                <button class="social-enter__soc social-enter__soc--tw"></button>
-              </div>
-            </div>
-
-
-            <div class="form-group modal-form__item">
-              <input type="email" class="form-control" name="email" placeholder="Email">
-            </div>
-            <div class="form-group modal-form__item">
-              <input type="text" class="form-control" name="nickname" placeholder="Никнейм">
-            </div>
-
-            <div class="form-group modal-form__item">
-              <input type="password" class="form-control" name="password" placeholder="Пароль">
-            </div>
-            <div class="form-group modal-form__item">
-              <input type="password" class="form-control" name="password_confirm" placeholder="Подтверждение пароля">
-            </div>
-
-            <div class="form-group modal-form__item" name="currency">
-              <select class="form-control" name="">
-                <option value="currency" selected disabled>Валюта</option>
-                <option value="rub">Рубли</option>
-                <option value="euro">Евро</option>
-                <option value="dollar">Доллары</option>
-                <option value="btc">Биткоины</option>
-              </select>
-            </div>
-
-            <div class="form-group modal-form__item">
-              <input type="text" name="bonus_code" placeholder="Бонусный код" class="modal-form__input">
-            </div>
-
-            <div class="form-group">
-              <input type="checkbox" id="slide-checkbox" class="registration-form-mini__checkbox">
-              <label for="slide-checkbox" class="registration-form-mini__label-checkbox">
-                Мне 18 лет и я принимаю <a href="#" class="ds-link" data-toggle="modal" data-target="#modalRules">Положения и условия</a></label>
-              </div>
-
-              <button class="btn btn-danger btn-full-width">Регистрация</button>
-            </form>
+          <!-- Form registraion -->
+      		<script>
+      			$(document).ready(function(){
+      			 	$('#ds-modal-form-reg').load('./_form_registration.html');
+      			});
+      		</script>
+      		<div id="ds-modal-form-reg"></div>
+      		<!-- Form registraion -->
+          
           </div>
-
         </div>
       </div>
     </div>

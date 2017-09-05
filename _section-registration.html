@@ -20,40 +20,16 @@
 
       <div class="col-md-4 col-md-offset-2">
         <div class="tiger-reg-form">
-          <form action="#" class="registration-form-mini registration-form-mini--slide">
-            <div class="form-group">
-              <input type="email" class="form-control" name="" placeholder="Email">
-            </div>
-            <div class="form-group">
-              <input type="text" class="form-control" name="" placeholder="Никнейм">
-            </div>
 
-            <div class="form-group">
-              <input type="password" class="form-control" name="" placeholder="Пароль">
-            </div>
-            
-            <div class="form-group">
-              <input type="password" class="form-control" name="" placeholder="Подтверждение пароля">
-            </div>
+          <!-- Form registraion -->
+      		<script>
+      			$(document).ready(function(){
+      			 	$('#ds-section-form-reg').load('./_form_registration.html');
+      			});
+      		</script>
+      		<div id="ds-section-form-reg"></div>
+      		<!-- Form registraion -->
 
-            <div class="form-group">
-              <select class="form-control" name="">
-                <option value="currency" selected disabled>Валюта</option>
-                <option value="rub">Рубли</option>
-                <option value="euro">Евро</option>
-                <option value="dollar">Доллары</option>
-                <option value="btc">Биткоины</option>
-              </select>
-            </div>
-
-            <div class="form-group">
-              <input type="checkbox" id="slide-checkbox" class="registration-form-mini__checkbox">
-              <label for="slide-checkbox" class="registration-form-mini__label-checkbox">
-                Мне 18 лет и я принимаю <a href="#" class="ds-link" data-toggle="modal" data-target="#modalRules">Положения и условия</a></label>
-            </div>
-
-            <input type="submit" class="btn btn-secondary btn-secondary-full btn-full-width" value="Регистрация">
-          </form>
         </div>
       </div>
     </div>

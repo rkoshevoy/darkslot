@@ -1,0 +1,49 @@
+.socials {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 15px;
+  padding: 12px;
+  border: 1px solid #5d5d5d;
+
+  @media (max-width: 768px) {
+    margin-bottom: 15px;
+  }
+
+  &__text {
+    display: block;
+    font-size: 14px;
+    color: #d9d9d9;
+    text-align: left;
+
+    @media (max-width: 768px) {
+      font-size: 12px;
+    }
+  }
+
+  &__btns {
+    display: flex;
+    justify-content: space-between;
+    width: 94px;
+    height: 26px;
+  }
+
+  &__btn {
+    width: 26px;
+    height: 26px;
+    background-size: 100%;
+
+    &_fb {
+      background-image: url('../../img/social-icons/facebook.png');
+    }
+
+    &_vk {
+      background-image: url('../../img/social-icons/vk.png');
+    }
+
+    &_tw {
+      background-image: url('../../img/social-icons/twitter.png');
+    }
+  }
+}
