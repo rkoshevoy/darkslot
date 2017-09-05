@@ -601,3 +601,48 @@ ul.user-authorized-true {
 		display: none;
 	}
 }
+
+.search-result {
+	position: absolute;
+	min-width: 300px;
+	bottom: 100%;
+	border: 1px solid #000;
+
+	ul {
+		margin: 0;
+		background-color: #232323;
+		list-style: none;
+
+		li {
+			margin-bottom: 2px;
+			padding-right: 10px;
+			cursor: pointer;
+			transition: .1s;
+			line-height: 39px;
+
+			&:hover {
+				background-color: $main-color;
+			}
+
+			.game-image {
+				display: inline-block;
+				margin-right: 10px;
+				width: 60px;
+				height: 40px;
+				background-color: #fff;
+				vertical-align: middle;
+			}
+		}
+	}
+}
+
+.header .search-result {
+	bottom: auto;
+	top: 100%;
+}
+
+.visible {
+	display: none;
+	z-index: -1;
+	opacity: -1;
+}
