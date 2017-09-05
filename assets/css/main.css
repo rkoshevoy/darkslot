@@ -6508,7 +6508,7 @@ button.close {
   position: relative;
   top: -90px; }
   .registration.tiger-reg .registration-bonus .registration-bonus-pers {
-    bottom: -80px; }
+    top: 120px; }
 
 .registration.tiger-reg .tiger-reg-form {
   background-color: rgba(76, 133, 161, 0.7);
@@ -10824,16 +10824,22 @@ form * {
   display: none !important; }
 
 .user-unAuthorized .user-authorized-false {
-  display: block !important; }
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important; }
 
 .user-unAuthorized .user-mobile .user-authorized-true {
   display: none !important; }
 
 .user-unAuthorized .user-mobile .user-authorized-false {
-  display: block !important; }
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important; }
 
 .user-authorized .user-authorized-true {
-  display: block !important; }
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important; }
 
 .user-authorized .user-authorized-false {
   display: none !important; }

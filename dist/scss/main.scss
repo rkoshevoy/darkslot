@@ -97,7 +97,7 @@ form {
 	}
 
 	.user-authorized-false {
-		display: block !important;
+		display: flex !important;
 	}
 
 	.user-mobile{
@@ -106,14 +106,14 @@ form {
 		}
 
 		.user-authorized-false {
-			display: block !important;
+			display: flex !important;
 		}
 	}
 }
 
 .user-authorized {
 	.user-authorized-true {
-		display: block !important;
+		display: flex !important;
 	}
 
 	.user-authorized-false {
