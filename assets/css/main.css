@@ -6463,8 +6463,6 @@ button.close {
   #casino-banner .pirate-reg .carousel-caption .slide-wrap {
     padding: 30px 15px;
     height: 100%; }
-    #casino-banner .pirate-reg .carousel-caption .slide-wrap .registration-form-mini {
-      width: 100%; }
     #casino-banner .pirate-reg .carousel-caption .slide-wrap [class^="col-"] {
       display: -webkit-box;
       display: -ms-flexbox;
@@ -6482,7 +6480,7 @@ button.close {
       height: 100%;
       background-color: rgba(0, 0, 0, 0.5);
       right: 0;
-      width: 150%; }
+      width: 200%; }
 
 #casino-banner .tiger-reg .container,
 #casino-banner .tiger-reg .row,
@@ -11270,6 +11268,12 @@ ul.user-authorized-true {
     text-align: center; }
   .carousel-inner .carousel-caption {
     bottom: -15px; }
+  .pirate-reg .container > .row > .user-authorized-false .pirate-reg-wrap,
+  .tiger-reg .container > .row > .tiger-reg-wrap {
+    display: none !important; }
+  .pirate-reg .slide-wrap {
+    margin: 0 auto;
+    width: 100%; }
   .registration-bonus {
     padding: 15px;
     text-align: center; }
@@ -11322,7 +11326,31 @@ ul.user-authorized-true {
     padding-top: 0;
     padding-bottom: 0; }
     .cashback__text-wrapper:before, .cashback__text-wrapper:after {
-      display: none; } }
+      display: none; }
+  .pirate-reg .slide-bonus {
+    text-align: center;
+    font-size: 10px; } }
+
+@media (max-height: 600px) and (orientation: landscape) {
+  .pirate-reg .slide-bonus {
+    font-size: 7px; }
+  .slide__text {
+    font-size: 8px;
+    left: 50%; }
+  .tiger-reg .registration-bonus {
+    font-size: 7px;
+    text-align: center;
+    padding: 5px 10px;
+    top: 5px; }
+    .tiger-reg .registration-bonus h3 {
+      margin: 10px 0; }
+    .tiger-reg .registration-bonus .btn.user-authorized-false {
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      width: auto;
+      margin: 0 auto;
+      margin-top: 10px; } }
 
 @media (max-width: 400px) {
   .games-list [class^="col-"],
@@ -11334,7 +11362,9 @@ ul.user-authorized-true {
   #games-nav .container {
     padding: 0; }
   .game-item {
-    height: 100px; } }
+    height: 100px; }
+  .pirate-reg .slide-bonus {
+    font-size: 7px; } }
 
 .header .navbar-toggle-collapsed-search {
   display: none; }
