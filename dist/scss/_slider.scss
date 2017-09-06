@@ -171,6 +171,37 @@
 	}
 }
 
+#casino-banner {
+	.item {
+
+		&:first-child {
+			background: url('../../img/slider-images/slide-lord.png') 50% no-repeat;
+			background-size: cover;
+		}
+
+		&:nth-child(2) {
+			background: url('../../img/slider-images/slide-viking.png') 50% no-repeat;
+			background-size: cover;
+		}
+
+		&:nth-child(3) {
+			background: url('../../img/slider-images/day-slot.jpg') 50% no-repeat;
+			background-size: cover;
+		}
+
+		&:nth-child(4) {
+			background: url('../../img/slider-images/slide-wood.png') 50% no-repeat;
+			background-size: cover;
+		}
+
+		&:nth-child(5) {
+			background: url('../../img/slider-images/free-spins.png') 50% no-repeat;
+			background-size: cover;
+		}
+
+	}
+}
+
 .slide-bonus {
 	text-align: center;
 
@@ -452,6 +483,12 @@
 		.container {
 			width: 100%;
 		}
+	}
+}
+
+@media (orientation: portrait) and (max-height: 1024px) {
+	#casino-banner.carousel .carousel-inner > .item {
+		height: 30vh;
 	}
 }
 
