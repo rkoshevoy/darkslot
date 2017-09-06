@@ -10929,6 +10929,7 @@ form * {
   display: none !important; }
 
 .deposit-block {
+  margin: 0 auto;
   height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -10943,6 +10944,8 @@ form * {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center; }
+  .deposit-block .cashback__text-wrapper {
+    background-size: auto; }
   .deposit-block .btn {
     position: relative;
     width: auto;
